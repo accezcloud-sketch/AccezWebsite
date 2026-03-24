@@ -25,6 +25,22 @@ export interface BlogPost extends BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: 'how-to-scale-your-property-portfolio-without-losing-control',
+    title: 'How to Scale Your Property Portfolio Without Losing Control',
+    titleAr: 'كيفية توسيع محفظتك العقارية دون فقدان السيطرة',
+    excerpt: 'Growing from 10 to 100+ units is exciting — until operations start falling apart. Learn how to scale your property portfolio with the right systems, processes, and tools to stay in control at every stage.',
+    excerptAr: 'التوسع من 10 إلى أكثر من 100 وحدة أمر مثير — حتى تبدأ العمليات بالانهيار. تعلم كيفية توسيع محفظتك العقارية بالأنظمة والعمليات والأدوات المناسبة للبقاء مسيطراً في كل مرحلة.',
+    date: '2026-03-18',
+    author: 'Accez Team',
+    authorAr: 'فريق أكسيز',
+    coverImage: '/images/blog/pm2.jpg',
+    category: 'Industry Insights',
+    categoryAr: 'رؤى الصناعة',
+    tags: ['Scaling', 'Property Management', 'Portfolio Growth', 'Saudi Arabia', 'Efficiency'],
+    tagsAr: ['التوسع', 'إدارة العقارات', 'نمو المحفظة', 'المملكة العربية السعودية', 'الكفاءة'],
+    readingTime: '10 min read',
+  },
+  {
     slug: 'property-managers-guide-to-automating-without-losing-control',
     title: "The Property Manager's Guide to Automating Without Losing Control",
     titleAr: 'دليل مدير العقارات للأتمتة دون فقدان السيطرة',
