@@ -210,7 +210,7 @@ export default function BlogPostClient({ slug }: BlogPostClientProps) {
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12 bg-gray-200">
               <Image
                 src={post.coverImage}
-                alt={language === 'ar' ? post.titleAr : post.title}
+                alt={post.coverImageAlt}
                 fill
                 className="object-cover"
                 priority

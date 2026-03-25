@@ -153,7 +153,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                     <div className="relative aspect-[16/10] overflow-hidden bg-gray-200">
                       <Image
                         src={post.coverImage}
-                        alt={language === 'ar' ? post.titleAr : post.title}
+                        alt={post.coverImageAlt}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
