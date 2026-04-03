@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { type BlogPostMeta } from '@/lib/blog-data'
+import { type BlogPostMeta } from '@/lib/blog'
 
 interface BlogListClientProps {
   posts: BlogPostMeta[]

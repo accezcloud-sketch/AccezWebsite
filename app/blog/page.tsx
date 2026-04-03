@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BlogListClient from '@/components/BlogListClient'
-import { blogPosts, blogCategories, blogTags } from '@/lib/blog-data'
+import { getAllPosts, getAllCategories, getAllTags } from '@/lib/blog'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -21,25 +21,29 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  name: 'Accez Cloud Blog',
-  description:
-    'Property management insights, tips, and tutorials from the Accez Cloud team.',
-  url: 'https://accez.cloud/blog',
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: blogPosts.map((post, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      url: `https://accez.cloud/blog/${post.slug}`,
-      name: post.title,
-    })),
-  },
-}
-
 export default function BlogPage() {
+  const blogPosts = getAllPosts()
+  const blogCategories = getAllCategories()
+  const blogTags = getAllTags()
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Accez Cloud Blog',
+    description:
+      'Property management insights, tips, and tutorials from the Accez Cloud team.',
+    url: 'https://accez.cloud/blog',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: blogPosts.map((post, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: `https://accez.cloud/blog/${post.slug}`,
+        name: post.title,
+      })),
+    },
+  }
+
   return (
     <main className="min-h-screen bg-gray-50">
       <script

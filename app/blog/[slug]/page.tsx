@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
-import { blogPosts } from '@/lib/blog-data'
+import { getAllPosts, getPostBySlug } from '@/lib/blog'
 
 export function generateStaticParams() {
-  return blogPosts.map((post) => ({
+  return getAllPosts().map((post) => ({
     slug: post.slug,
   }))
 }
@@ -14,7 +14,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
-  const post = blogPosts.find((p) => p.slug === slug)
+  const post = getAllPosts().find((p) => p.slug === slug)
 
   if (!post) {
     return {
@@ -135,7 +135,7 @@ const howToSteps: Record<string, { name: string; text: string }[]> = {
   ],
 }
 
-function getBlogPostingSchema(post: (typeof blogPosts)[number]) {
+function getBlogPostingSchema(post: ReturnType<typeof getAllPosts>[number]) {
   const imageUrl = post.coverImage.startsWith('http')
     ? post.coverImage
     : `https://accez.cloud${post.coverImage}`
@@ -174,7 +174,7 @@ function getBlogPostingSchema(post: (typeof blogPosts)[number]) {
 }
 
 function getHowToSchema(
-  post: (typeof blogPosts)[number],
+  post: ReturnType<typeof getAllPosts>[number],
   steps: { name: string; text: string }[]
 ) {
   const imageUrl = post.coverImage.startsWith('http')
@@ -198,16 +198,17 @@ function getHowToSchema(
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
-  const post = blogPosts.find((p) => p.slug === slug)
+  const postMeta = getAllPosts().find((p) => p.slug === slug)
+  const fullPost = getPostBySlug(slug)
 
   const schemas: object[] = []
 
-  if (post) {
-    schemas.push(getBlogPostingSchema(post))
+  if (postMeta) {
+    schemas.push(getBlogPostingSchema(postMeta))
 
-    const steps = howToSteps[post.slug]
+    const steps = howToSteps[postMeta.slug]
     if (steps) {
-      schemas.push(getHowToSchema(post, steps))
+      schemas.push(getHowToSchema(postMeta, steps))
     }
   }
 
@@ -220,7 +221,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      <BlogPostClient slug={slug} />
+      <BlogPostClient post={fullPost} />
     </>
   )
 }

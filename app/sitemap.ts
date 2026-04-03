@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { blogPosts } from '@/lib/blog-data'
+import { getAllPosts } from '@/lib/blog'
 
 export const dynamic = 'force-static'
 
@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+  const blogPages: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly',

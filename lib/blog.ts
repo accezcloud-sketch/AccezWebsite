@@ -17,6 +17,7 @@ export interface BlogPost {
   author: string
   authorAr: string
   coverImage: string
+  coverImageAlt: string
   category: string
   categoryAr: string
   tags: string[]
@@ -34,6 +35,7 @@ export interface BlogPostMeta {
   author: string
   authorAr: string
   coverImage: string
+  coverImageAlt: string
   category: string
   categoryAr: string
   tags: string[]
@@ -66,6 +68,7 @@ export function getAllPosts(): BlogPostMeta[] {
         author: data.author || '',
         authorAr: data.authorAr || data.author || '',
         coverImage: data.coverImage || '/images/blog/default.jpg',
+        coverImageAlt: data.coverImageAlt || data.title || '',
         category: data.category || 'General',
         categoryAr: data.categoryAr || data.category || 'عام',
         tags: data.tags || [],
@@ -81,7 +84,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
   try {
     const fullPath = path.join(blogDirectory, `${slug}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const { data, content } = matter(fileContents)
+    const { data, content: rawContent } = matter(fileContents)
+    const content = rawContent.replace(/\r\n/g, '\n')
     const stats = readingTime(content)
 
     // Split content by language marker if present
@@ -106,6 +110,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       author: data.author || '',
       authorAr: data.authorAr || data.author || '',
       coverImage: data.coverImage || '/images/blog/default.jpg',
+      coverImageAlt: data.coverImageAlt || data.title || '',
       category: data.category || 'General',
       categoryAr: data.categoryAr || data.category || 'عام',
       tags: data.tags || [],

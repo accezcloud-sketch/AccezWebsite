@@ -1,20 +1,18 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { getPostBySlug, type BlogPost } from '@/lib/blog-data'
+import { type BlogPost } from '@/lib/blog'
 
 interface BlogPostClientProps {
-  slug: string
+  post: BlogPost | null
 }
 
-export default function BlogPostClient({ slug }: BlogPostClientProps) {
+export default function BlogPostClient({ post }: BlogPostClientProps) {
   const { language } = useLanguage()
-  const [post, setPost] = useState<BlogPost | null>(null)
 
   const content = {
     en: {
@@ -38,13 +36,6 @@ export default function BlogPostClient({ slug }: BlogPostClientProps) {
   }
 
   const t = content[language]
-
-  useEffect(() => {
-    if (slug) {
-      const foundPost = getPostBySlug(slug)
-      setPost(foundPost)
-    }
-  }, [slug])
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)

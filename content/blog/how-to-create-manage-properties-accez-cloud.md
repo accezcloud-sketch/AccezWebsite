@@ -7,6 +7,7 @@ date: "2024-12-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/create-properties.jpg"
+coverImageAlt: "Accez.Cloud property creation dashboard showing property details form and image upload"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"
 tags: ["Property Management", "Getting Started", "Tutorial", "Properties"]
