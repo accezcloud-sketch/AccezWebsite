@@ -207,6 +207,19 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 priority
               />
             </div>
+            {post.coverImageCredit && post.coverImageCreditUrl && (
+              <p className="text-sm text-gray-500 -mt-10 mb-12 text-center">
+                Photo by{' '}
+                <a
+                  href={post.coverImageCreditUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gray-700"
+                >
+                  {post.coverImageCredit}
+                </a>
+              </p>
+            )}
 
             {/* Content */}
             <div
