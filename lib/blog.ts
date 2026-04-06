@@ -18,6 +18,8 @@ export interface BlogPost {
   authorAr: string
   coverImage: string
   coverImageAlt: string
+  coverImageCredit?: string
+  coverImageCreditUrl?: string
   category: string
   categoryAr: string
   tags: string[]
@@ -36,6 +38,8 @@ export interface BlogPostMeta {
   authorAr: string
   coverImage: string
   coverImageAlt: string
+  coverImageCredit?: string
+  coverImageCreditUrl?: string
   category: string
   categoryAr: string
   tags: string[]
@@ -69,6 +73,8 @@ export function getAllPosts(): BlogPostMeta[] {
         authorAr: data.authorAr || data.author || '',
         coverImage: data.coverImage || '/images/blog/default.jpg',
         coverImageAlt: data.coverImageAlt || data.title || '',
+        coverImageCredit: data.coverImageCredit || undefined,
+        coverImageCreditUrl: data.coverImageCreditUrl || undefined,
         category: data.category || 'General',
         categoryAr: data.categoryAr || data.category || 'عام',
         tags: data.tags || [],
@@ -111,6 +117,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       authorAr: data.authorAr || data.author || '',
       coverImage: data.coverImage || '/images/blog/default.jpg',
       coverImageAlt: data.coverImageAlt || data.title || '',
+      coverImageCredit: data.coverImageCredit || undefined,
+      coverImageCreditUrl: data.coverImageCreditUrl || undefined,
       category: data.category || 'General',
       categoryAr: data.categoryAr || data.category || 'عام',
       tags: data.tags || [],
