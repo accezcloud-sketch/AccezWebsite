@@ -79,24 +79,25 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
         </LanguageProvider>
+        <iframe
+          src="https://accez-chatbot-production.up.railway.app/widget"
+          style={{
+            position: 'fixed',
+            bottom: 0,
+            right: 0,
+            width: '400px',
+            height: '600px',
+            border: 'none',
+            zIndex: 9999,
+            background: 'transparent',
+          }}
+          allow="clipboard-write"
+        />
         <Script
           id="accez-chatbot"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              fetch("https://accez-chatbot-production.up.railway.app/widget")
-                .then(r => r.text())
-                .then(html => {
-                  var div = document.createElement("div");
-                  div.innerHTML = html;
-                  document.body.appendChild(div);
-                  div.querySelectorAll("script").forEach(function(s) {
-                    var ns = document.createElement("script");
-                    ns.textContent = s.textContent;
-                    document.body.appendChild(ns);
-                  });
-                });
-
               window.__accezSubmitLead = function(data) {
                 var iframe = document.createElement("iframe");
                 iframe.name = "sf-lead-iframe";
