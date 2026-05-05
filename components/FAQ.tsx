@@ -42,8 +42,8 @@ export default function FAQ() {
     {
       question: 'Can I cancel my subscription at any time?',
       questionAr: 'هل يمكنني إلغاء اشتراكي في أي وقت؟',
-      answer: 'Yes, you can cancel your subscription at any time with no cancellation fees or penalties. If you cancel during your 14-day trial period, you will not be charged. We also offer a 30-day money-back guarantee.',
-      answerAr: 'نعم، يمكنك إلغاء اشتراكك في أي وقت بدون رسوم أو عقوبات إلغاء. إذا ألغيت خلال فترة التجربة المجانية لمدة 14 يومًا، فلن يتم تحصيل أي رسوم منك. نقدم أيضًا ضمان استرداد الأموال لمدة 30 يومًا.',
+      answer: 'Yes, you can cancel your subscription at any time with no cancellation fees or penalties. If you cancel during your 14-day free trial, you will not be charged.',
+      answerAr: 'نعم، يمكنك إلغاء اشتراكك في أي وقت بدون رسوم أو عقوبات إلغاء. إذا ألغيت خلال فترة التجربة المجانية لمدة 14 يومًا، فلن يتم تحصيل أي رسوم منك.',
     },
   ]
 

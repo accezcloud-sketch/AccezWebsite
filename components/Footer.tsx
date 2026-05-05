@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
@@ -103,8 +104,8 @@ export default function Footer() {
           <p>&copy; {currentYear} Accez.cloud. {t.footer.allRightsReserved}</p>
           <p className="mt-2 text-sm">{t.footer.companyInfo}</p>
           <div className="mt-4 space-x-4">
-            <a href="https://portal.accez.cloud/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t.footer.privacy}</a>
-            <a href="https://portal.accez.cloud/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t.footer.terms}</a>
+            <Link href="/privacy" className="hover:text-white transition-colors">{t.footer.privacy}</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">{t.footer.terms}</Link>
           </div>
         </div>
       </div>
