@@ -3,6 +3,7 @@ import { Inter, Cairo } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import { Analytics } from '@/components/Analytics'
+import ChatbotWidget from '@/components/ChatbotWidget'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -79,20 +80,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
         </LanguageProvider>
-        <iframe
-          src="https://accez-chatbot-production.up.railway.app/widget"
-          style={{
-            position: 'fixed',
-            bottom: 0,
-            right: 0,
-            width: '400px',
-            height: '600px',
-            border: 'none',
-            zIndex: 9999,
-            background: 'transparent',
-          }}
-          allow="clipboard-write"
-        />
+        <ChatbotWidget />
         <Script
           id="accez-chatbot"
           strategy="afterInteractive"
