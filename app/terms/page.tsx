@@ -148,12 +148,14 @@ export default function TermsPage() {
                   <p>
                     Keep your login details secure and don&apos;t share them. You&apos;re
                     responsible for everything that happens under your account. If you think
-                    someone else has accessed it, email us right away at{' '}
+                    someone else has accessed it, message us on WhatsApp right away at{' '}
                     <a
-                      href="mailto:contact@accez.cloud"
+                      href="https://wa.me/18444603371"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-blue-600 hover:underline"
                     >
-                      contact@accez.cloud
+                      +1 (844) 460-3371
                     </a>
                     .
                   </p>
@@ -297,12 +299,14 @@ export default function TermsPage() {
                       <strong>Cloud Valley LLC</strong>
                     </div>
                     <div>
-                      Email:{' '}
+                      WhatsApp:{' '}
                       <a
-                        href="mailto:contact@accez.cloud"
+                        href="https://wa.me/18444603371"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue-600 hover:underline"
                       >
-                        contact@accez.cloud
+                        +1 (844) 460-3371
                       </a>
                     </div>
                     <div>Anas Bin Malik, Almalqa, Riyadh, KSA</div>

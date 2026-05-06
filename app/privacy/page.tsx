@@ -218,12 +218,14 @@ export default function PrivacyPage() {
                     <li>Control cookies through your browser settings.</li>
                   </ul>
                   <p className="mt-4">
-                    To make a request, email{' '}
+                    To make a request, message us on WhatsApp at{' '}
                     <a
-                      href="mailto:contact@accez.cloud"
+                      href="https://wa.me/18444603371"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-blue-600 hover:underline"
                     >
-                      contact@accez.cloud
+                      +1 (844) 460-3371
                     </a>
                     .
                   </p>
@@ -261,12 +263,14 @@ export default function PrivacyPage() {
                       <strong>Cloud Valley LLC</strong>
                     </div>
                     <div>
-                      Email:{' '}
+                      WhatsApp:{' '}
                       <a
-                        href="mailto:contact@accez.cloud"
+                        href="https://wa.me/18444603371"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue-600 hover:underline"
                       >
-                        contact@accez.cloud
+                        +1 (844) 460-3371
                       </a>
                     </div>
                     <div>Anas Bin Malik, Almalqa, Riyadh, KSA</div>

@@ -112,7 +112,7 @@ export const ar = {
   contact: {
     title: 'تواصل معنا',
     subtitle: 'هل لديك أسئلة حول Accez؟ يسعدنا سماعك. أرسل لنا رسالة وسنرد في أقرب وقت ممكن.',
-    email: 'البريد الإلكتروني',
+    whatsapp: 'واتساب',
     office: 'المكتب',
     officeDetails: 'تواصل معنا للحصول على تفاصيل الموقع',
     businessHours: 'ساعات العمل',

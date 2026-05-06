@@ -112,7 +112,7 @@ export const en = {
   contact: {
     title: 'Get in Touch',
     subtitle: "Have questions about Accez? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
-    email: 'Email',
+    whatsapp: 'WhatsApp',
     office: 'Office',
     officeDetails: 'Contact us for location details',
     businessHours: 'Business Hours',
