@@ -56,7 +56,7 @@ export default function Contact() {
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-gray-900 transition-colors"
                       >
-                        +1 (844) 460-3371
+                        (844) 460-3371
                       </a>
                     </div>
                   </div>

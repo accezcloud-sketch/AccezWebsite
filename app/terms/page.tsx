@@ -155,7 +155,7 @@ export default function TermsPage() {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline"
                     >
-                      +1 (844) 460-3371
+                      (844) 460-3371
                     </a>
                     .
                   </p>
@@ -306,7 +306,7 @@ export default function TermsPage() {
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline"
                       >
-                        +1 (844) 460-3371
+                        (844) 460-3371
                       </a>
                     </div>
                     <div>Anas Bin Malik, Almalqa, Riyadh, KSA</div>
