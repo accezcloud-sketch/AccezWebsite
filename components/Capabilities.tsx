@@ -2,7 +2,10 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import FadeUp from '@/components/animations/FadeUp'
+import RevealLine from '@/components/animations/RevealLine'
 
 interface Capability {
   id: string
@@ -130,18 +133,22 @@ export default function Capabilities() {
   return (
     <section className="py-20 bg-gray-50" id="capabilities">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {t.sectionTitle}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t.sectionSubtitle}
-          </p>
-        </div>
+        <FadeUp>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              {t.sectionTitle}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              {t.sectionSubtitle}
+            </p>
+          </div>
+        </FadeUp>
+
+        <RevealLine className="w-full max-w-7xl mx-auto my-8" delay={0.1} />
 
         <div className="max-w-7xl mx-auto">
           {/* Mobile Layout - Buttons with inline content */}
-          <div className="lg:hidden space-y-2">
+          <FadeUp delay={0.15} className="lg:hidden space-y-2">
             {capabilities.map((capability, index) => (
               <div key={capability.id}>
                 <button
@@ -202,12 +209,12 @@ export default function Capabilities() {
                 )}
               </div>
             ))}
-          </div>
+          </FadeUp>
 
           {/* Desktop Layout - Side by side */}
           <div className="hidden lg:grid grid-cols-12 gap-8 items-start">
             {/* Left side - Tab buttons */}
-            <div className="col-span-4 space-y-2">
+            <FadeUp delay={0.15} className="col-span-4 space-y-2">
               {capabilities.map((capability, index) => (
                 <button
                   key={capability.id}
@@ -234,10 +241,16 @@ export default function Capabilities() {
                   </span>
                 </button>
               ))}
-            </div>
+            </FadeUp>
 
             {/* Right side - Content */}
-            <div className="col-span-8">
+            <motion.div
+              key={activeTab}
+              className="col-span-8"
+              initial={{ opacity: 0, x: 16 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
+            >
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="relative aspect-[2/1] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                   <Image
@@ -257,7 +270,7 @@ export default function Capabilities() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

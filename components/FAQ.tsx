@@ -2,7 +2,9 @@
 
 import { useState } from 'react'
 import Script from 'next/script'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import FadeUp from '@/components/animations/FadeUp'
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
@@ -74,59 +76,69 @@ export default function FAQ() {
 
       <section className="py-20 bg-white" id="faq">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              {t.faq.title}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.faq.subtitle}
-            </p>
-          </div>
+          <FadeUp>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                {t.faq.title}
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                {t.faq.subtitle}
+              </p>
+            </div>
+          </FadeUp>
 
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
-              >
-                <button
-                  className="w-full text-left p-6 focus:outline-none rounded-lg"
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                >
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold text-gray-900 pr-8">
-                      {language === 'ar' ? faq.questionAr : faq.question}
-                    </h3>
-                    <svg
-                      className={`w-6 h-6 text-gray-500 transform transition-transform duration-200 flex-shrink-0 ${
-                        openIndex === index ? 'rotate-180' : ''
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                </button>
-
+              <FadeUp key={index} delay={index * 0.07}>
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-96' : 'max-h-0'
-                  }`}
+                  className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
                 >
-                  <div className="px-6 pb-6">
-                    <p className="text-gray-600 leading-relaxed">
-                      {language === 'ar' ? faq.answerAr : faq.answer}
-                    </p>
-                  </div>
+                  <button
+                    className="w-full text-left p-6 focus:outline-none rounded-lg"
+                    onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  >
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-lg font-semibold text-gray-900 pr-8">
+                        {language === 'ar' ? faq.questionAr : faq.question}
+                      </h3>
+                      <svg
+                        className={`w-6 h-6 text-gray-500 transform transition-transform duration-200 flex-shrink-0 ${
+                          openIndex === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {openIndex === index && (
+                      <motion.div
+                        key="answer"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
+                        style={{ overflow: 'hidden' }}
+                      >
+                        <div className="px-6 pb-6">
+                          <p className="text-gray-600 leading-relaxed">
+                            {language === 'ar' ? faq.answerAr : faq.answer}
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>

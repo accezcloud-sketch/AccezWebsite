@@ -98,6 +98,15 @@ html {
   background: #555;
 }
 
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* Chatbot widget fixes */
 #chat-input {
   color: #000 !important;

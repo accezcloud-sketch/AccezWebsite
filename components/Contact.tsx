@@ -3,6 +3,8 @@
 import { useEffect } from 'react'
 import Script from 'next/script'
 import { useLanguage } from '@/contexts/LanguageContext'
+import FadeUp from '@/components/animations/FadeUp'
+import RevealLine from '@/components/animations/RevealLine'
 
 export default function Contact() {
   const { t } = useLanguage()
@@ -31,9 +33,10 @@ export default function Contact() {
       <section className="py-20 bg-white" id="contact">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            <RevealLine className="w-full mb-10" delay={0.05} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Left side - Contact Info */}
-              <div>
+              <FadeUp>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                   {t.contact.title}
                 </h2>
@@ -86,10 +89,10 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </FadeUp>
 
               {/* Right side - Salesforce Web-to-Lead Form */}
-              <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
+              <FadeUp delay={0.15} className="bg-gray-50 rounded-2xl p-8 shadow-lg">
                 <form
                   action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D41000002kA0p"
                   method="POST"
@@ -216,7 +219,7 @@ export default function Contact() {
                     {t.contact.sendMessage}
                   </button>
                 </form>
-              </div>
+              </FadeUp>
             </div>
           </div>
         </div>

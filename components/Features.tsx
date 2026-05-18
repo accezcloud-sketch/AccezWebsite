@@ -1,6 +1,9 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import FadeUp from '@/components/animations/FadeUp'
+import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 
 export default function Features() {
   const { language } = useLanguage()
@@ -85,19 +88,25 @@ export default function Features() {
   return (
     <section className="py-20 bg-white" id="features">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {t.title}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t.subtitle}
-          </p>
-        </div>
+        <FadeUp>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              {t.title}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              {t.subtitle}
+            </p>
+          </div>
+        </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <StaggerGrid
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          staggerDelay={0.09}
+        >
           {t.features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={staggerItem}
               className="group p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
@@ -109,9 +118,9 @@ export default function Features() {
               <p className="text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </StaggerGrid>
       </div>
     </section>
   )

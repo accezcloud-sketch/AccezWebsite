@@ -1,7 +1,10 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import FadeUp from '@/components/animations/FadeUp'
+import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 
 interface Feature {
   textKey: string
@@ -189,6 +192,7 @@ export default function Pricing() {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="pricing">
       <div className="container mx-auto px-4">
+        <FadeUp>
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t.pricing.title}
@@ -224,15 +228,20 @@ export default function Pricing() {
             </button>
           </div>
         </div>
+        </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <StaggerGrid
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"
+          staggerDelay={0.12}
+        >
           {plans.map((plan, index) => {
             const pricing = isYearly ? plan.yearly : plan.monthly
             const isCustom = pricing.price === 'Custom'
 
             return (
-              <div
+              <motion.div
                 key={index}
+                variants={staggerItem}
                 className={`relative bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ${
                   plan.popular ? 'ring-2 ring-gray-900' : 'border border-gray-200'
                 }`}
@@ -349,10 +358,10 @@ export default function Pricing() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </StaggerGrid>
 
         <div className="text-center mt-12">
           <p className="text-gray-600">
