@@ -182,13 +182,15 @@ export default function Capabilities() {
                 {/* Inline content for mobile - shown below selected button */}
                 {activeTab === index && (
                   <div className="mt-2 bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div className="relative aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                    <div className="relative aspect-[2/1] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                       <Image
                         src={capability.image}
                         alt={language === 'ar' ? capability.titleAr : capability.title}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                         sizes="100vw"
+                        quality={100}
+                        unoptimized
                       />
                     </div>
                     <div className="p-4">
@@ -237,13 +239,15 @@ export default function Capabilities() {
             {/* Right side - Content */}
             <div className="col-span-8">
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="relative aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                <div className="relative aspect-[2/1] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                   <Image
                     src={activeCapability.image}
                     alt={language === 'ar' ? activeCapability.titleAr : activeCapability.title}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="66vw"
+                    quality={100}
+                    unoptimized
                     priority={activeTab === 0}
                   />
                 </div>
