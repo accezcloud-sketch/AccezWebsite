@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Cairo } from 'next/font/google'
+import { Inter, Cairo, Manrope } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import { Analytics } from '@/components/Analytics'
@@ -8,6 +8,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', weight: ['400', '500', '600', '700', '800'] })
 
 export const metadata: Metadata = {
   title: {
@@ -76,7 +77,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={`${inter.variable} ${cairo.variable} font-sans`}>
+      <body className={`${inter.variable} ${cairo.variable} ${manrope.variable} font-sans`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
