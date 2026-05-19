@@ -76,7 +76,7 @@ const CONTENT = {
       typewriter: ['Property Managers', 'Vacation Rental Hosts', 'HOA Teams'],
       subtitle:
         'One unified platform for 400+ channel integrations, automated rent collection, maintenance scheduling, and a built-in service marketplace that adds 15–30% revenue on day one.',
-      ctaPrimary: 'Start free 14-day trial',
+      ctaPrimary: 'Get started free',
       ctaSecondary: 'Watch demo',
       partnersIntro: 'Syncs with 400+ platforms including',
       mock: {
@@ -107,7 +107,7 @@ const CONTENT = {
       typewriter: ['مدراء العقارات', 'مضيفي الإيجارات السياحية', 'فرق اتحاد الملاك'],
       subtitle:
         'منصة موحدة تضم أكثر من 400 قناة متكاملة، تحصيل آلي للإيجارات، جدولة الصيانة، وسوق خدمات مدمج يضيف 15–30% من الإيرادات من اليوم الأول.',
-      ctaPrimary: 'ابدأ تجربة مجانية لمدة 14 يومًا',
+      ctaPrimary: 'ابدأ مجانًا',
       ctaSecondary: 'شاهد العرض التوضيحي',
       partnersIntro: 'متكاملة مع أكثر من 400 منصة بما في ذلك',
       mock: {
