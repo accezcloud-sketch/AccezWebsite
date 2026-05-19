@@ -72,68 +72,68 @@ const PARTNERS = [
 
 const CONTENT = {
   en: {
-      headlineLead: 'Smarter property management for',
-      typewriter: ['Property Managers', 'Vacation Rental Hosts', 'HOA Teams'],
-      subtitle:
-        'One unified platform for 400+ channel integrations, automated rent collection, maintenance scheduling, and a built-in service marketplace that adds 15–30% revenue on day one.',
-      ctaPrimary: 'Get started free',
-      ctaSecondary: 'Watch demo',
-      partnersIntro: 'Syncs with 400+ platforms including',
-      mock: {
-        url: 'portal.accez.cloud',
-        stats: [
-          { label: 'Active listings', value: '47', delta: '+3', color: '#6366f1' },
-          { label: 'Monthly revenue', value: '$24.8k', delta: '+18%', color: '#06b6d4' },
-          { label: 'Occupancy rate', value: '91%', delta: '+5%', color: '#10b981' },
-        ],
-        deltaSuffix: 'this mo.',
-        chartTitle: 'Revenue · last 7 days',
-        chartDelta: '↑ 18.4%',
-        dayLabels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-        bookingsTitle: 'Recent bookings',
-        bookings: [
-          { name: 'Sarah M.', channel: 'Airbnb', nights: '3 nights', status: 'check-in', statusColor: '#6366f1' },
-          { name: 'James K.', channel: 'Booking.com', nights: '5 nights', status: 'confirmed', statusColor: '#10b981' },
-          { name: 'Layla R.', channel: 'VRBO', nights: '2 nights', status: 'pending', statusColor: '#f59e0b' },
-        ],
-        syncStatus: 'All 400+ channels synced · Last updated 2 min ago',
-        notif: '🎉 New booking — Airbnb · $340',
-        pillValue: '+$3,240 this week',
-        pillLabel: 'Marketplace commissions',
-      },
+    headlineLead: 'Smarter property management for',
+    typewriter: ['Property Managers', 'Vacation Rental Hosts', 'HOA Teams'],
+    subtitle:
+      'One unified platform for 400+ channel integrations, automated rent collection, maintenance scheduling, and a built-in service marketplace that adds 15–30% revenue on day one.',
+    ctaPrimary: 'Get started free',
+    ctaSecondary: 'Watch demo',
+    partnersIntro: 'Syncs with 400+ platforms including',
+    mock: {
+      url: 'portal.accez.cloud',
+      stats: [
+        { label: 'Active listings', value: '47', delta: '+3', color: '#6366f1' },
+        { label: 'Monthly revenue', value: '$24.8k', delta: '+18%', color: '#06b6d4' },
+        { label: 'Occupancy rate', value: '91%', delta: '+5%', color: '#10b981' },
+      ],
+      deltaSuffix: 'this mo.',
+      chartTitle: 'Revenue · last 7 days',
+      chartDelta: '↑ 18.4%',
+      dayLabels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+      bookingsTitle: 'Recent bookings',
+      bookings: [
+        { name: 'Sarah M.', channel: 'Airbnb', nights: '3 nights', status: 'check-in', statusColor: '#6366f1' },
+        { name: 'James K.', channel: 'Booking.com', nights: '5 nights', status: 'confirmed', statusColor: '#10b981' },
+        { name: 'Layla R.', channel: 'VRBO', nights: '2 nights', status: 'pending', statusColor: '#f59e0b' },
+      ],
+      syncStatus: 'All 400+ channels synced · Last updated 2 min ago',
+      notif: '🎉 New booking — Airbnb · $340',
+      pillValue: '+$3,240 this week',
+      pillLabel: 'Marketplace commissions',
     },
-    ar: {
-      headlineLead: 'إدارة عقارية أذكى لـ',
-      typewriter: ['مدراء العقارات', 'مضيفي الإيجارات السياحية', 'فرق اتحاد الملاك'],
-      subtitle:
-        'منصة موحدة تضم أكثر من 400 قناة متكاملة، تحصيل آلي للإيجارات، جدولة الصيانة، وسوق خدمات مدمج يضيف 15–30% من الإيرادات من اليوم الأول.',
-      ctaPrimary: 'ابدأ مجانًا',
-      ctaSecondary: 'شاهد العرض التوضيحي',
-      partnersIntro: 'متكاملة مع أكثر من 400 منصة بما في ذلك',
-      mock: {
-        url: 'portal.accez.cloud',
-        stats: [
-          { label: 'القوائم النشطة', value: '47', delta: '+3', color: '#6366f1' },
-          { label: 'الإيرادات الشهرية', value: '24.8k $', delta: '+18%', color: '#06b6d4' },
-          { label: 'معدل الإشغال', value: '91%', delta: '+5%', color: '#10b981' },
-        ],
-        deltaSuffix: 'هذا الشهر',
-        chartTitle: 'الإيرادات · آخر 7 أيام',
-        chartDelta: '↑ 18.4%',
-        dayLabels: ['ح', 'ن', 'ث', 'ر', 'خ', 'ج', 'س'],
-        bookingsTitle: 'الحجوزات الأخيرة',
-        bookings: [
-          { name: 'سارة م.', channel: 'Airbnb', nights: '3 ليالٍ', status: 'تسجيل دخول', statusColor: '#6366f1' },
-          { name: 'جيمس ك.', channel: 'Booking.com', nights: '5 ليالٍ', status: 'مؤكد', statusColor: '#10b981' },
-          { name: 'ليلى ر.', channel: 'VRBO', nights: 'ليلتان', status: 'قيد الانتظار', statusColor: '#f59e0b' },
-        ],
-        syncStatus: 'تمت مزامنة جميع القنوات الـ 400+ · آخر تحديث منذ دقيقتين',
-        notif: '🎉 حجز جديد — Airbnb · 340 $',
-        pillValue: '+3,240 $ هذا الأسبوع',
-        pillLabel: 'عمولات السوق',
-      },
+  },
+  ar: {
+    headlineLead: 'إدارة عقارية أذكى لـ',
+    typewriter: ['مدراء العقارات', 'مضيفي الإيجارات السياحية', 'فرق اتحاد الملاك'],
+    subtitle:
+      'منصة موحدة تضم أكثر من 400 قناة متكاملة، تحصيل آلي للإيجارات، جدولة الصيانة، وسوق خدمات مدمج يضيف 15–30% من الإيرادات من اليوم الأول.',
+    ctaPrimary: 'ابدأ مجانًا',
+    ctaSecondary: 'شاهد العرض التوضيحي',
+    partnersIntro: 'متكاملة مع أكثر من 400 منصة بما في ذلك',
+    mock: {
+      url: 'portal.accez.cloud',
+      stats: [
+        { label: 'القوائم النشطة', value: '47', delta: '+3', color: '#6366f1' },
+        { label: 'الإيرادات الشهرية', value: '24.8k $', delta: '+18%', color: '#06b6d4' },
+        { label: 'معدل الإشغال', value: '91%', delta: '+5%', color: '#10b981' },
+      ],
+      deltaSuffix: 'هذا الشهر',
+      chartTitle: 'الإيرادات · آخر 7 أيام',
+      chartDelta: '↑ 18.4%',
+      dayLabels: ['ح', 'ن', 'ث', 'ر', 'خ', 'ج', 'س'],
+      bookingsTitle: 'الحجوزات الأخيرة',
+      bookings: [
+        { name: 'سارة م.', channel: 'Airbnb', nights: '3 ليالٍ', status: 'تسجيل دخول', statusColor: '#6366f1' },
+        { name: 'جيمس ك.', channel: 'Booking.com', nights: '5 ليالٍ', status: 'مؤكد', statusColor: '#10b981' },
+        { name: 'ليلى ر.', channel: 'VRBO', nights: 'ليلتان', status: 'قيد الانتظار', statusColor: '#f59e0b' },
+      ],
+      syncStatus: 'تمت مزامنة جميع القنوات الـ 400+ · آخر تحديث منذ دقيقتين',
+      notif: '🎉 حجز جديد — Airbnb · 340 $',
+      pillValue: '+3,240 $ هذا الأسبوع',
+      pillLabel: 'عمولات السوق',
     },
-  } as const
+  },
+} as const
 
 export default function Hero() {
   const { language, isRTL } = useLanguage()
@@ -157,7 +157,11 @@ export default function Hero() {
           0%,100% { transform: translate(0, 0) scale(1); }
           50%      { transform: translate(50px,40px) scale(1.06); }
         }
-        @keyframes float {
+        @keyframes float-mobile {
+          0%,100% { transform: translateY(0px); }
+          50%      { transform: translateY(-10px); }
+        }
+        @keyframes float-desktop {
           0%,100% { transform: translateY(0px) rotate(-1.5deg); }
           50%      { transform: translateY(-18px) rotate(-0.5deg); }
         }
@@ -194,7 +198,11 @@ export default function Hero() {
         .orb-2 { animation: orb-2 22s ease-in-out infinite; }
         .orb-3 { animation: orb-3 15s ease-in-out infinite; }
 
-        .card-float { animation: float 6s ease-in-out infinite; }
+        /* Card float: translate-only on small screens, rotate+translate on desktop */
+        .card-float { animation: float-mobile 5s ease-in-out infinite; }
+        @media (min-width: 1024px) {
+          .card-float { animation: float-desktop 6s ease-in-out infinite; }
+        }
 
         .shimmer-bar {
           background: linear-gradient(
@@ -229,9 +237,11 @@ export default function Hero() {
         }
         .tw-line {
           display: inline-block;
-          min-height: 1.1em;
+          min-height: 1.15em;
           white-space: pre;
           vertical-align: top;
+          word-break: break-word;
+          overflow-wrap: break-word;
         }
 
         .btn-glow:hover {
@@ -264,6 +274,15 @@ export default function Hero() {
         }
         .tw-cursor.pause { animation: none; opacity: 1; }
 
+        /* Lighten orb effect on phones to avoid heavy GPU & visible bleed */
+        @media (max-width: 767px) {
+          .orb-1, .orb-2, .orb-3 {
+            animation-duration: 25s;
+            opacity: 0.15;
+          }
+          .grain-overlay { animation: none; }
+        }
+
         @media (prefers-reduced-motion: reduce) {
           .orb-1, .orb-2, .orb-3, .card-float, .shimmer-bar, .grain-overlay,
           .marquee-track, .tw-cursor {
@@ -273,32 +292,39 @@ export default function Hero() {
       `}</style>
 
       <section
-        className="relative min-h-screen overflow-hidden"
+        className="relative min-h-screen overflow-hidden w-full"
         style={{ background: '#080c18' }}
         dir={isRTL ? 'rtl' : 'ltr'}
       >
+        {/* Orbs — clamped so they don't cause horizontal scroll on phones */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div
-            className="orb-1 absolute rounded-full opacity-30 blur-[120px]"
+            className="orb-1 absolute rounded-full blur-[80px] sm:blur-[120px]"
             style={{
-              width: 700, height: 700,
-              top: '-15%', left: '-10%',
+              width: 'min(700px, 120vw)',
+              height: 'min(700px, 120vw)',
+              top: '-15%',
+              left: '-20%',
               background: 'radial-gradient(circle, #6366f1 0%, #4f46e5 40%, transparent 70%)',
             }}
           />
           <div
-            className="orb-2 absolute rounded-full opacity-20 blur-[100px]"
+            className="orb-2 absolute rounded-full blur-[70px] sm:blur-[100px]"
             style={{
-              width: 600, height: 600,
-              top: '20%', right: '-8%',
+              width: 'min(600px, 100vw)',
+              height: 'min(600px, 100vw)',
+              top: '20%',
+              right: '-20%',
               background: 'radial-gradient(circle, #06b6d4 0%, #0891b2 40%, transparent 70%)',
             }}
           />
           <div
-            className="orb-3 absolute rounded-full opacity-20 blur-[140px]"
+            className="orb-3 absolute rounded-full blur-[80px] sm:blur-[140px]"
             style={{
-              width: 500, height: 500,
-              bottom: '-10%', left: '35%',
+              width: 'min(500px, 90vw)',
+              height: 'min(500px, 90vw)',
+              bottom: '-10%',
+              left: '30%',
               background: 'radial-gradient(circle, #d946ef 0%, #a21caf 40%, transparent 70%)',
             }}
           />
@@ -315,34 +341,34 @@ export default function Hero() {
           aria-hidden="true"
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-28 pb-20 lg:pt-36 lg:pb-28">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-24 pb-16 lg:pt-36 lg:pb-28">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-            <div className="hero-body flex flex-col items-start">
-
+            {/* LEFT: Text column */}
+            <div className="hero-body flex flex-col items-center text-center lg:items-start lg:text-left w-full">
               <h1
-                className="hero-display anim-fade-up-2 text-white leading-[1.05] tracking-tight mb-6"
-                style={{ fontSize: 'clamp(38px, 5.5vw, 70px)', fontWeight: 800 }}
+                className="hero-display anim-fade-up-2 text-white leading-[1.08] tracking-tight mb-5 w-full"
+                style={{ fontSize: 'clamp(30px, 8vw, 70px)', fontWeight: 800 }}
               >
                 {t.headlineLead}
                 <br />
                 <span className="tw-line">
-                  <span className="grad-text">{displayText || ' '}</span>
+                  <span className="grad-text">{displayText || ' '}</span>
                   <span className={`tw-cursor${isTyping ? ' pause' : ''}`} aria-hidden="true" />
                 </span>
               </h1>
 
               <p
-                className="anim-fade-up-3 text-slate-400 leading-relaxed max-w-lg mb-10"
-                style={{ fontSize: 'clamp(16px, 1.6vw, 19px)' }}
+                className="anim-fade-up-3 text-slate-400 leading-relaxed w-full max-w-lg mx-auto lg:mx-0 mb-8"
+                style={{ fontSize: 'clamp(15px, 2vw, 19px)' }}
               >
                 {t.subtitle}
               </p>
 
-              <div className="anim-fade-up-4 flex flex-wrap gap-3 mb-12">
+              <div className="anim-fade-up-4 flex flex-col sm:flex-row flex-wrap gap-3 mb-10 w-full sm:w-auto items-stretch sm:items-center lg:items-start">
                 <a
                   href="https://portal.accez.cloud/sign-up"
-                  className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
+                  className="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: 'linear-gradient(135deg,#6366f1 0%,#4f46e5 100%)',
                     fontSize: 15,
@@ -360,7 +386,7 @@ export default function Hero() {
                   href="https://www.youtube.com/watch?v=wBE2eZ8qnzc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-slate-300 transition-all duration-200 hover:text-white hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-slate-300 transition-all duration-200 hover:text-white hover:-translate-y-0.5"
                   style={{
                     background: 'rgba(255,255,255,.05)',
                     border: '1px solid rgba(255,255,255,.1)',
@@ -378,7 +404,7 @@ export default function Hero() {
               </div>
 
               <div className="anim-fade-up-5 mt-2 w-full overflow-hidden">
-                <p className="text-xs text-slate-600 uppercase tracking-widest mb-4 font-medium">
+                <p className="text-xs text-slate-600 uppercase tracking-widest mb-4 font-medium text-center lg:text-left">
                   {t.partnersIntro}
                 </p>
                 <div
@@ -399,163 +425,219 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="relative flex justify-center lg:justify-end lg:pr-4">
-              <div
-                className="absolute inset-0 rounded-3xl blur-[80px] opacity-30 pointer-events-none"
-                style={{ background: 'radial-gradient(circle at 50% 50%, #6366f1, #06b6d4, transparent 70%)' }}
-                aria-hidden="true"
-              />
-
-              <div
-                className="card-float card-tilt relative w-full max-w-md rounded-2xl overflow-hidden"
-                style={{
-                  background: 'rgba(15,23,42,.9)',
-                  border: '1px solid rgba(255,255,255,.1)',
-                  boxShadow: '0 30px 64px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.06)',
-                  backdropFilter: 'blur(20px)',
-                }}
-                dir="ltr"
-              >
+            {/* RIGHT: Floating mockup */}
+            <div className="relative flex flex-col items-center lg:items-end w-full lg:pr-4 mt-4 lg:mt-0">
+              <div className="relative w-full max-w-[420px] lg:max-w-md">
+                {/* Glow */}
                 <div
-                  className="shimmer-bar px-4 py-3 flex items-center justify-between"
+                  className="absolute inset-0 rounded-3xl blur-[60px] sm:blur-[80px] opacity-25 sm:opacity-30 pointer-events-none"
                   style={{
-                    background: 'linear-gradient(90deg,#1e1b4b,#1e3a5f,#0f172a)',
-                    borderBottom: '1px solid rgba(255,255,255,.07)',
+                    background: 'radial-gradient(circle at 50% 50%, #6366f1, #06b6d4, transparent 70%)',
+                  }}
+                  aria-hidden="true"
+                />
+
+                <div
+                  className="card-float card-tilt relative rounded-2xl overflow-hidden"
+                  style={{
+                    background: 'rgba(15,23,42,.9)',
+                    border: '1px solid rgba(255,255,255,.1)',
+                    boxShadow: '0 20px 48px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.06)',
+                    backdropFilter: 'blur(20px)',
+                  }}
+                  dir="ltr"
+                >
+                  {/* Header bar */}
+                  <div
+                    className="shimmer-bar px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between"
+                    style={{
+                      background: 'linear-gradient(90deg,#1e1b4b,#1e3a5f,#0f172a)',
+                      borderBottom: '1px solid rgba(255,255,255,.07)',
+                    }}
+                  >
+                    <div className="flex gap-1.5">
+                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80" />
+                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80" />
+                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80" />
+                    </div>
+                    <span className="text-[10px] sm:text-[11px] text-slate-500 font-mono tracking-wider">
+                      {t.mock.url}
+                    </span>
+                    <div className="w-10 sm:w-12" />
+                  </div>
+
+                  <div className="p-3 sm:p-5 space-y-3 sm:space-y-4" dir={isRTL ? 'rtl' : 'ltr'}>
+                    {/* Stat tiles */}
+                    <div className="grid grid-cols-3 gap-1.5 sm:gap-3">
+                      {t.mock.stats.map(({ label, value, delta, color }) => (
+                        <div
+                          key={label}
+                          className="rounded-lg sm:rounded-xl p-2 sm:p-3"
+                          style={{
+                            background: 'rgba(255,255,255,.04)',
+                            border: '1px solid rgba(255,255,255,.06)',
+                          }}
+                        >
+                          <p className="text-[9px] sm:text-[10px] text-slate-500 mb-0.5 sm:mb-1 leading-tight">{label}</p>
+                          <p className="text-white font-bold text-sm sm:text-lg leading-none mb-0.5 sm:mb-1">{value}</p>
+                          <p className="text-[9px] sm:text-[10px] font-semibold" style={{ color }}>
+                            {delta} {t.mock.deltaSuffix}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Bar chart */}
+                    <div
+                      className="rounded-lg sm:rounded-xl p-2.5 sm:p-3"
+                      style={{
+                        background: 'rgba(255,255,255,.04)',
+                        border: '1px solid rgba(255,255,255,.06)',
+                      }}
+                    >
+                      <div className="flex items-center justify-between mb-2 sm:mb-3">
+                        <span className="text-[10px] sm:text-[11px] text-slate-400 font-medium">{t.mock.chartTitle}</span>
+                        <span className="text-[10px] sm:text-[11px] text-green-400 font-semibold">{t.mock.chartDelta}</span>
+                      </div>
+                      <div className="flex items-end gap-1 sm:gap-1.5 h-10 sm:h-14">
+                        {[55, 72, 48, 90, 65, 88, 100].map((h, i) => (
+                          <div key={i} className="flex-1">
+                            <div
+                              className="w-full rounded-sm"
+                              style={{
+                                height: `${h * 0.38}px`,
+                                background: i === 6
+                                  ? 'linear-gradient(to top, #6366f1, #818cf8)'
+                                  : 'rgba(99,102,241,.25)',
+                              }}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex justify-between mt-1">
+                        {t.mock.dayLabels.map((d, i) => (
+                          <span key={i} className="flex-1 text-center text-[8px] sm:text-[9px] text-slate-600">{d}</span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Recent bookings */}
+                    <div
+                      className="rounded-lg sm:rounded-xl p-2.5 sm:p-3"
+                      style={{
+                        background: 'rgba(255,255,255,.04)',
+                        border: '1px solid rgba(255,255,255,.06)',
+                      }}
+                    >
+                      <p className="text-[10px] sm:text-[11px] text-slate-400 font-medium mb-2 sm:mb-3">{t.mock.bookingsTitle}</p>
+                      <div className="space-y-2 sm:space-y-2.5">
+                        {t.mock.bookings.map(({ name, channel, nights, status, statusColor }) => (
+                          <div key={name} className="flex items-center gap-2">
+                            <div
+                              className="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center text-white text-[8px] sm:text-[9px] font-bold flex-shrink-0"
+                              style={{
+                                background: statusColor + '33',
+                                border: `1px solid ${statusColor}55`,
+                              }}
+                            >
+                              {name[0]}
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <p className="text-white text-[10px] sm:text-[11px] font-medium truncate">{name}</p>
+                              <p className="text-slate-500 text-[9px] sm:text-[10px] truncate">{channel} · {nights}</p>
+                            </div>
+                            <span
+                              className="px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[9px] font-semibold capitalize flex-shrink-0"
+                              style={{
+                                background: statusColor + '22',
+                                color: statusColor,
+                              }}
+                            >
+                              {status}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Sync status */}
+                    <div
+                      className="flex items-center gap-2 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg"
+                      style={{
+                        background: 'rgba(16,185,129,.08)',
+                        border: '1px solid rgba(16,185,129,.2)',
+                      }}
+                    >
+                      <div className="relative w-2 h-2 flex-shrink-0">
+                        <div className="absolute inset-0 rounded-full bg-green-400" />
+                        <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60" />
+                      </div>
+                      <span className="text-[10px] sm:text-[11px] text-green-400 font-medium truncate">{t.mock.syncStatus}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating pills — DESKTOP ONLY (absolutely positioned, can clip on mobile) */}
+                <div
+                  className={`hidden lg:flex absolute -top-4 items-center gap-2.5 px-3.5 py-2 rounded-full text-xs font-semibold text-white ${
+                    isRTL ? '-left-6' : '-right-6'
+                  }`}
+                  style={{
+                    background: 'linear-gradient(135deg,#6366f1,#4f46e5)',
+                    boxShadow: '0 8px 24px rgba(99,102,241,.5)',
+                    border: '1px solid rgba(255,255,255,.15)',
+                    animation: 'fade-up .7s .8s both ease-out',
                   }}
                 >
-                  <div className="flex gap-1.5">
-                    <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                    <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                  </div>
-                  <span className="text-[11px] text-slate-500 font-mono tracking-wider">{t.mock.url}</span>
-                  <div className="w-12" />
+                  {t.mock.notif}
                 </div>
 
-                <div className="p-5 space-y-4" dir={isRTL ? 'rtl' : 'ltr'}>
-                  <div className="grid grid-cols-3 gap-3">
-                    {t.mock.stats.map(({ label, value, delta, color }) => (
-                      <div
-                        key={label}
-                        className="rounded-xl p-3"
-                        style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.06)' }}
-                      >
-                        <p className="text-[10px] text-slate-500 mb-1 leading-tight">{label}</p>
-                        <p className="text-white font-bold text-lg leading-none mb-1">{value}</p>
-                        <p className="text-[10px] font-semibold" style={{ color }}>{delta} {t.mock.deltaSuffix}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div
-                    className="rounded-xl p-3"
-                    style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.06)' }}
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-[11px] text-slate-400 font-medium">{t.mock.chartTitle}</span>
-                      <span className="text-[11px] text-green-400 font-semibold">{t.mock.chartDelta}</span>
-                    </div>
-                    <div className="flex items-end gap-1.5 h-14">
-                      {[55, 72, 48, 90, 65, 88, 100].map((h, i) => (
-                        <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                          <div
-                            className="w-full rounded-sm transition-all"
-                            style={{
-                              height: `${h * 0.48}px`,
-                              background: i === 6
-                                ? 'linear-gradient(to top, #6366f1, #818cf8)'
-                                : 'rgba(99,102,241,.25)',
-                            }}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                    <div className="flex justify-between mt-1.5">
-                      {t.mock.dayLabels.map((d, i) => (
-                        <span key={i} className="flex-1 text-center text-[9px] text-slate-600">{d}</span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div
-                    className="rounded-xl p-3"
-                    style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.06)' }}
-                  >
-                    <p className="text-[11px] text-slate-400 font-medium mb-3">{t.mock.bookingsTitle}</p>
-                    <div className="space-y-2.5">
-                      {t.mock.bookings.map(({ name, channel, nights, status, statusColor }) => (
-                        <div key={name} className="flex items-center gap-2.5">
-                          <div
-                            className="w-6 h-6 rounded-full flex items-center justify-center text-white text-[9px] font-bold flex-shrink-0"
-                            style={{ background: statusColor + '33', border: `1px solid ${statusColor}55` }}
-                          >
-                            {name[0]}
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-white text-[11px] font-medium truncate">{name}</p>
-                            <p className="text-slate-500 text-[10px]">{channel} · {nights}</p>
-                          </div>
-                          <span
-                            className="px-2 py-0.5 rounded-full text-[9px] font-semibold capitalize flex-shrink-0"
-                            style={{ background: statusColor + '22', color: statusColor }}
-                          >
-                            {status}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg"
-                    style={{ background: 'rgba(16,185,129,.08)', border: '1px solid rgba(16,185,129,.2)' }}
-                  >
-                    <div className="relative w-2 h-2 flex-shrink-0">
-                      <div className="absolute inset-0 rounded-full bg-green-400" />
-                      <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60" />
-                    </div>
-                    <span className="text-[11px] text-green-400 font-medium">{t.mock.syncStatus}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={`absolute -top-4 flex items-center gap-2.5 px-3.5 py-2 rounded-full text-xs font-semibold text-white ${
-                  isRTL ? '-left-4 lg:-left-6' : '-right-4 lg:-right-6'
-                }`}
-                style={{
-                  background: 'linear-gradient(135deg,#6366f1,#4f46e5)',
-                  boxShadow: '0 8px 24px rgba(99,102,241,.5)',
-                  border: '1px solid rgba(255,255,255,.15)',
-                  animation: 'fade-up .7s .8s both ease-out',
-                }}
-              >
-                {t.mock.notif}
-              </div>
-
-              <div
-                className={`absolute -bottom-5 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl ${
-                  isRTL ? '-right-4 lg:-right-6' : '-left-4 lg:-left-6'
-                }`}
-                style={{
-                  background: 'rgba(15,23,42,.95)',
-                  border: '1px solid rgba(255,255,255,.1)',
-                  boxShadow: '0 12px 32px rgba(0,0,0,.4)',
-                  backdropFilter: 'blur(12px)',
-                  animation: 'fade-up .7s .95s both ease-out',
-                }}
-              >
                 <div
-                  className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'rgba(16,185,129,.15)' }}
+                  className={`hidden lg:flex absolute -bottom-5 items-center gap-2.5 px-3.5 py-2.5 rounded-2xl ${
+                    isRTL ? '-right-6' : '-left-6'
+                  }`}
+                  style={{
+                    background: 'rgba(15,23,42,.95)',
+                    border: '1px solid rgba(255,255,255,.1)',
+                    boxShadow: '0 12px 32px rgba(0,0,0,.4)',
+                    backdropFilter: 'blur(12px)',
+                    animation: 'fade-up .7s .95s both ease-out',
+                  }}
                 >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M2 10l3-3 2.5 2.5L11 4" stroke="#10b981" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <div
+                    className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ background: 'rgba(16,185,129,.15)' }}
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M2 10l3-3 2.5 2.5L11 4" stroke="#10b981" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white text-xs font-semibold">{t.mock.pillValue}</p>
+                    <p className="text-slate-500 text-[10px]">{t.mock.pillLabel}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-white text-xs font-semibold">{t.mock.pillValue}</p>
-                  <p className="text-slate-500 text-[10px]">{t.mock.pillLabel}</p>
+              </div>
+
+              {/* Inline pill strip — MOBILE/TABLET ONLY (replaces clipping absolute pills) */}
+              <div className="flex lg:hidden gap-2 mt-4 w-full max-w-[420px]">
+                <div
+                  className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-white text-center"
+                  style={{ background: 'linear-gradient(135deg,#6366f1,#4f46e5)' }}
+                >
+                  {t.mock.notif}
+                </div>
+                <div
+                  className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl"
+                  style={{
+                    background: 'rgba(15,23,42,.95)',
+                    border: '1px solid rgba(255,255,255,.1)',
+                  }}
+                >
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M2 8l2.5-2.5 2 2L10 3" stroke="#10b981" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <span className="text-green-400 font-semibold text-xs">{t.mock.pillValue}</span>
                 </div>
               </div>
             </div>
