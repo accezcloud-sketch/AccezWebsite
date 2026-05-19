@@ -118,6 +118,9 @@ export const ar = {
 
   // Contact
   contact: {
+    eyebrow: 'تواصل',
+    titleLead: 'لديك أسئلة؟',
+    titleAccent: 'دعنا نتحدث.',
     title: 'تواصل معنا',
     subtitle: 'هل لديك أسئلة حول Accez؟ يسعدنا سماعك. أرسل لنا رسالة وسنرد في أقرب وقت ممكن.',
     whatsapp: 'واتساب',

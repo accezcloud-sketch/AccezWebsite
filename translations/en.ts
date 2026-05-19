@@ -118,6 +118,9 @@ export const en = {
 
   // Contact
   contact: {
+    eyebrow: 'Contact',
+    titleLead: 'Have questions?',
+    titleAccent: "Let's talk.",
     title: 'Get in Touch',
     subtitle: "Have questions about Accez? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
     whatsapp: 'WhatsApp',
