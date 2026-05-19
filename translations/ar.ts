@@ -121,6 +121,8 @@ export const ar = {
     title: 'تواصل معنا',
     subtitle: 'هل لديك أسئلة حول Accez؟ يسعدنا سماعك. أرسل لنا رسالة وسنرد في أقرب وقت ممكن.',
     whatsapp: 'واتساب',
+    whatsappCta: 'تواصل معنا عبر واتساب',
+    whatsappReply: 'نرد عادة خلال دقائق',
     office: 'المكتب',
     officeDetails: 'تواصل معنا للحصول على تفاصيل الموقع',
     businessHours: 'ساعات العمل',
