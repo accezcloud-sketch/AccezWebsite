@@ -114,6 +114,19 @@ export const en = {
   faq: {
     title: 'Frequently Asked Questions',
     subtitle: 'Find answers to common questions about Accez',
+    eyebrow: 'FAQ',
+    titleLead: 'Questions we get',
+    titleAccent: 'all the time',
+    helpText: "Can't find what you're looking for?",
+    helpLink: 'Chat with our team',
+    bottomCtaTitle: 'Still have questions?',
+    bottomCtaButton: 'Chat with us',
+    catAll: 'All',
+    catGettingStarted: 'Getting Started',
+    catChannels: 'Channels & Integrations',
+    catPricing: 'Pricing & Billing',
+    catMarketplace: 'Service Marketplace',
+    catSecurity: 'Security & Data',
   },
 
   // Contact
@@ -167,7 +180,6 @@ export const en = {
     financialReports: 'Financial Reports',
     communicationTools: 'Communication Tools',
     support: 'Support',
-    helpCenter: 'Help Center',
     contact: 'Contact',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',

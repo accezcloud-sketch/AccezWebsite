@@ -114,6 +114,19 @@ export const ar = {
   faq: {
     title: 'الأسئلة الشائعة',
     subtitle: 'اعثر على إجابات للأسئلة الشائعة حول Accez',
+    eyebrow: 'الأسئلة الشائعة',
+    titleLead: 'أسئلة',
+    titleAccent: 'نسمعها دائمًا',
+    helpText: 'لم تجد ما تبحث عنه؟',
+    helpLink: 'تواصل مع فريقنا',
+    bottomCtaTitle: 'لا تزال لديك أسئلة؟',
+    bottomCtaButton: 'تواصل معنا',
+    catAll: 'الكل',
+    catGettingStarted: 'البدء',
+    catChannels: 'القنوات والتكاملات',
+    catPricing: 'الأسعار والفوترة',
+    catMarketplace: 'سوق الخدمات',
+    catSecurity: 'الأمان والبيانات',
   },
 
   // Contact
@@ -167,7 +180,6 @@ export const ar = {
     financialReports: 'التقارير المالية',
     communicationTools: 'أدوات الاتصال',
     support: 'الدعم',
-    helpCenter: 'مركز المساعدة',
     contact: 'اتصل بنا',
     privacy: 'سياسة الخصوصية',
     terms: 'شروط الخدمة',

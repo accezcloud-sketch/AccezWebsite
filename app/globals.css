@@ -80,6 +80,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Ensure hash-jumps land below the fixed navbar */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
