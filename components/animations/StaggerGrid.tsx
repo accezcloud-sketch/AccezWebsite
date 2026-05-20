@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView, type Variants } from 'framer-motion'
 
 interface StaggerGridProps {
   children: React.ReactNode
@@ -10,7 +10,7 @@ interface StaggerGridProps {
   initialDelay?: number
 }
 
-const container = (staggerDelay: number, initialDelay: number) => ({
+const container = (staggerDelay: number, initialDelay: number): Variants => ({
   hidden: {},
   show: {
     transition: {
@@ -20,13 +20,15 @@ const container = (staggerDelay: number, initialDelay: number) => ({
   },
 })
 
-const item = {
+const EASE_OUT: [number, number, number, number] = [0.21, 0.47, 0.32, 0.98]
+
+const item: Variants = {
   hidden: { opacity: 0, y: 32, scale: 0.97 },
   show: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.55, ease: [0.21, 0.47, 0.32, 0.98] },
+    transition: { duration: 0.55, ease: EASE_OUT },
   },
 }
 
