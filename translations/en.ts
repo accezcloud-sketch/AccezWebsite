@@ -138,7 +138,6 @@ export const en = {
     subtitle: "Have questions about Accez? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
     whatsapp: 'WhatsApp',
     whatsappCta: 'Chat on WhatsApp',
-    whatsappReply: 'Usually replies in minutes',
     office: 'Office',
     officeDetails: 'Contact us for location details',
     businessHours: 'Business Hours',
