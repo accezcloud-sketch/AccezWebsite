@@ -36,9 +36,9 @@ const FAQS: FaqItem[] = [
     question: 'How much does Accez.cloud cost?',
     questionAr: 'كم تكلفة Accez.cloud؟',
     answer:
-      'We offer flexible plans starting from $10/month for the Basic plan (3 properties with unlimited units). Our Professional plan is $40/month (10 properties with unlimited units), and we offer custom Enterprise solutions for larger portfolios. Our Free plan lets you try the platform with no credit card required.',
+      'We offer flexible plans starting from SAR 40/month for the Basic plan (3 properties with unlimited units). Our Professional plan is SAR 150/month (10 properties with unlimited units), and we offer custom Enterprise solutions for larger portfolios. Our Free plan lets you try the platform with no credit card required.',
     answerAr:
-      'نقدم خطط مرنة تبدأ من 10 دولارات شهريًا للخطة الأساسية (3 عقارات بوحدات غير محدودة). خطتنا الاحترافية هي 40 دولارًا شهريًا (10 عقارات بوحدات غير محدودة)، ونقدم حلول مؤسسات مخصصة للمحافظ الأكبر. خطتنا المجانية تتيح لك تجربة المنصة بدون الحاجة لبطاقة ائتمان.',
+      'نقدم خطط مرنة تبدأ من 40 ريال شهريًا للخطة الأساسية (3 عقارات بوحدات غير محدودة). خطتنا الاحترافية هي 150 ريال شهريًا (10 عقارات بوحدات غير محدودة)، ونقدم حلول مؤسسات مخصصة للمحافظ الأكبر. خطتنا المجانية تتيح لك تجربة المنصة بدون الحاجة لبطاقة ائتمان.',
   },
   {
     category: 'channelsIntegrations',

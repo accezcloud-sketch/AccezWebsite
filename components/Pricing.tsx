@@ -19,8 +19,6 @@ interface PlanConfig {
   descKey: 'freeDescription' | 'basicDescription' | 'professionalDescription' | 'enterpriseDescription'
   monthly: { price: number | 'Custom'; originalPrice: number | null }
   yearly: { price: number | 'Custom'; originalPrice: number | null }
-  monthlyAr: { price: number | 'Custom'; originalPrice: number | null }
-  yearlyAr: { price: number | 'Custom'; originalPrice: number | null }
   highlight: boolean
   showLaunchDiscount: boolean
   accentColor: string
@@ -43,8 +41,6 @@ const PLANS: PlanConfig[] = [
     descKey: 'freeDescription',
     monthly: { price: 0, originalPrice: null },
     yearly: { price: 0, originalPrice: null },
-    monthlyAr: { price: 0, originalPrice: null },
-    yearlyAr: { price: 0, originalPrice: null },
     highlight: false,
     showLaunchDiscount: false,
     accentColor: '#64748b',
@@ -71,10 +67,8 @@ const PLANS: PlanConfig[] = [
     id: 'basic',
     nameKey: 'basic',
     descKey: 'basicDescription',
-    monthly: { price: 10, originalPrice: 20 },
-    yearly: { price: 120, originalPrice: 240 },
-    monthlyAr: { price: 40, originalPrice: 80 },
-    yearlyAr: { price: 480, originalPrice: 960 },
+    monthly: { price: 40, originalPrice: 80 },
+    yearly: { price: 480, originalPrice: 960 },
     highlight: false,
     showLaunchDiscount: true,
     accentColor: '#0ea5e9',
@@ -101,10 +95,8 @@ const PLANS: PlanConfig[] = [
     id: 'professional',
     nameKey: 'professional',
     descKey: 'professionalDescription',
-    monthly: { price: 40, originalPrice: 80 },
-    yearly: { price: 480, originalPrice: 960 },
-    monthlyAr: { price: 150, originalPrice: 300 },
-    yearlyAr: { price: 1800, originalPrice: 3600 },
+    monthly: { price: 150, originalPrice: 300 },
+    yearly: { price: 1800, originalPrice: 3600 },
     highlight: true,
     showLaunchDiscount: true,
     accentColor: '#6366f1',
@@ -134,8 +126,6 @@ const PLANS: PlanConfig[] = [
     descKey: 'enterpriseDescription',
     monthly: { price: 'Custom', originalPrice: null },
     yearly: { price: 'Custom', originalPrice: null },
-    monthlyAr: { price: 'Custom', originalPrice: null },
-    yearlyAr: { price: 'Custom', originalPrice: null },
     highlight: false,
     showLaunchDiscount: false,
     accentColor: '#06b6d4',
@@ -169,7 +159,7 @@ export default function Pricing() {
   const getText = (key: string) => tp[key] ?? key
 
   const formatPrice = (amount: number) =>
-    language === 'ar' ? `${amount} ريال` : `$${amount}`
+    language === 'ar' ? `${amount} ريال` : `SAR ${amount}`
 
   return (
     <section
@@ -285,9 +275,7 @@ export default function Pricing() {
           staggerDelay={0.12}
         >
           {PLANS.map((plan) => {
-            const pricing = language === 'ar'
-              ? (isYearly ? plan.yearlyAr : plan.monthlyAr)
-              : (isYearly ? plan.yearly : plan.monthly)
+            const pricing = isYearly ? plan.yearly : plan.monthly
             const isCustom = pricing.price === 'Custom'
             const periodLabel = isYearly ? tp.perYear : tp.perMonth
 
