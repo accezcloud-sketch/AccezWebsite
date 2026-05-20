@@ -2,7 +2,10 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import FadeUp from '@/components/animations/FadeUp'
+import RevealLine from '@/components/animations/RevealLine'
 
 interface Capability {
   id: string
@@ -16,7 +19,7 @@ interface Capability {
 
 export default function Capabilities() {
   const [activeTab, setActiveTab] = useState(0)
-  const { language } = useLanguage()
+  const { language, isRTL } = useLanguage()
 
   const capabilities: Capability[] = [
     {
@@ -112,15 +115,19 @@ export default function Capabilities() {
     },
   ]
 
-  const activeCapability = capabilities[activeTab]
+  const activeCapability = capabilities[activeTab >= 0 ? activeTab : 0]
 
   const content = {
     en: {
-      sectionTitle: 'Powerful Capabilities',
+      eyebrow: 'Capabilities',
+      titleLead: 'Powerful tools,',
+      titleAccent: 'one platform',
       sectionSubtitle: 'Everything you need to manage your properties efficiently',
     },
     ar: {
-      sectionTitle: 'إمكانيات قوية',
+      eyebrow: 'الإمكانيات',
+      titleLead: 'أدوات قوية،',
+      titleAccent: 'منصة واحدة',
       sectionSubtitle: 'كل ما تحتاجه لإدارة عقاراتك بكفاءة',
     },
   }
@@ -128,118 +135,207 @@ export default function Capabilities() {
   const t = content[language]
 
   return (
-    <section className="py-20 bg-gray-50" id="capabilities">
+    <section className="py-20" id="capabilities" style={{ background: '#080c18' }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {t.sectionTitle}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t.sectionSubtitle}
-          </p>
-        </div>
+        <FadeUp>
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div
+                className="h-px w-8"
+                style={{ background: isRTL
+                  ? 'linear-gradient(to left, transparent, #6366f1)'
+                  : 'linear-gradient(to right, transparent, #6366f1)' }}
+              />
+              <span
+                className="text-xs font-semibold tracking-widest uppercase"
+                style={{ color: '#818cf8' }}
+              >
+                {t.eyebrow}
+              </span>
+              <div
+                className="h-px w-8"
+                style={{ background: isRTL
+                  ? 'linear-gradient(to right, transparent, #6366f1)'
+                  : 'linear-gradient(to left, transparent, #6366f1)' }}
+              />
+            </div>
+
+            <h2
+              className="text-white font-bold text-center leading-tight tracking-tight mb-4"
+              style={{
+                fontSize: 'clamp(28px, 4vw, 44px)',
+                fontFamily: 'var(--font-manrope), var(--font-inter), system-ui, sans-serif',
+                fontWeight: 800,
+              }}
+            >
+              {t.titleLead}{' '}
+              <span
+                style={{
+                  background: 'linear-gradient(135deg, #818cf8, #c084fc)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
+              >
+                {t.titleAccent}
+              </span>
+            </h2>
+
+            <p
+              className="text-slate-400 text-center max-w-xl mx-auto leading-relaxed"
+              style={{ fontSize: 17 }}
+            >
+              {t.sectionSubtitle}
+            </p>
+          </div>
+        </FadeUp>
+
+        <RevealLine className="w-full max-w-7xl mx-auto my-8" delay={0.1} />
 
         <div className="max-w-7xl mx-auto">
           {/* Mobile Layout - Buttons with inline content */}
-          <div className="lg:hidden space-y-2">
-            {capabilities.map((capability, index) => (
-              <div key={capability.id}>
-                <button
-                  onClick={() => setActiveTab(activeTab === index ? -1 : index)}
-                  className={`w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left ${
-                    activeTab === index
-                      ? 'bg-gray-900 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
-                  }`}
-                >
-                  <div
-                    className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-                      activeTab === index
-                        ? 'bg-gray-700'
-                        : 'bg-gray-100'
-                    }`}
+          <FadeUp delay={0.15} className="lg:hidden space-y-2">
+            {capabilities.map((capability, index) => {
+              const isActive = activeTab === index
+              return (
+                <div key={capability.id}>
+                  <button
+                    onClick={() => setActiveTab(isActive ? -1 : index)}
+                    className="w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left"
+                    style={{
+                      background: isActive
+                        ? 'rgba(99,102,241,0.12)'
+                        : 'rgba(255,255,255,0.03)',
+                      border: isActive
+                        ? '1px solid rgba(99,102,241,0.35)'
+                        : '1px solid rgba(255,255,255,0.07)',
+                    }}
                   >
-                    <span className={activeTab === index ? 'text-white' : 'text-gray-900'}>
-                      {capability.icon}
+                    <div
+                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
+                      style={{
+                        background: isActive
+                          ? 'rgba(99,102,241,0.18)'
+                          : 'rgba(255,255,255,0.05)',
+                      }}
+                    >
+                      <span style={{ color: isActive ? '#818cf8' : '#94a3b8' }}>
+                        {capability.icon}
+                      </span>
+                    </div>
+                    <span
+                      className="font-medium flex-1"
+                      style={{ color: isActive ? '#f1f5f9' : '#cbd5e1' }}
+                    >
+                      {language === 'ar' ? capability.titleAr : capability.title}
                     </span>
-                  </div>
-                  <span className="font-medium flex-1">
-                    {language === 'ar' ? capability.titleAr : capability.title}
-                  </span>
-                  {/* Chevron indicator */}
-                  <svg
-                    className={`w-5 h-5 transition-transform duration-300 ${
-                      activeTab === index ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
+                    <svg
+                      className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      style={{ color: isActive ? '#818cf8' : '#64748b' }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
 
-                {/* Inline content for mobile - shown below selected button */}
-                {activeTab === index && (
-                  <div className="mt-2 bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div className="relative aspect-[2/1] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
-                      <Image
-                        src={capability.image}
-                        alt={language === 'ar' ? capability.titleAr : capability.title}
-                        fill
-                        className="object-contain"
-                        sizes="100vw"
-                        quality={100}
-                        unoptimized
-                      />
+                  {isActive && (
+                    <div
+                      className="mt-2 rounded-2xl overflow-hidden"
+                      style={{
+                        background: 'rgba(255,255,255,0.03)',
+                        border: '1px solid rgba(255,255,255,0.07)',
+                        boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
+                      }}
+                    >
+                      <div className="relative aspect-[2/1] overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}>
+                        <Image
+                          src={capability.image}
+                          alt={language === 'ar' ? capability.titleAr : capability.title}
+                          fill
+                          className="object-contain"
+                          sizes="100vw"
+                          quality={100}
+                          unoptimized
+                        />
+                      </div>
+                      <div className="p-4">
+                        <p className="text-slate-300 leading-relaxed text-sm">
+                          {language === 'ar' ? capability.descriptionAr : capability.description}
+                        </p>
+                      </div>
                     </div>
-                    <div className="p-4">
-                      <p className="text-gray-600 leading-relaxed text-sm">
-                        {language === 'ar' ? capability.descriptionAr : capability.description}
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+                  )}
+                </div>
+              )
+            })}
+          </FadeUp>
 
           {/* Desktop Layout - Side by side */}
           <div className="hidden lg:grid grid-cols-12 gap-8 items-start">
-            {/* Left side - Tab buttons */}
-            <div className="col-span-4 space-y-2">
-              {capabilities.map((capability, index) => (
-                <button
-                  key={capability.id}
-                  onClick={() => setActiveTab(index)}
-                  className={`w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left ${
-                    activeTab === index
-                      ? 'bg-gray-900 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
-                  }`}
-                >
-                  <div
-                    className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-                      activeTab === index
-                        ? 'bg-gray-700'
-                        : 'bg-gray-100'
-                    }`}
+            <FadeUp delay={0.15} className="col-span-4 space-y-2">
+              {capabilities.map((capability, index) => {
+                const isActive = activeTab === index
+                return (
+                  <button
+                    key={capability.id}
+                    onClick={() => setActiveTab(index)}
+                    className="w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left hover:-translate-y-0.5"
+                    style={{
+                      background: isActive
+                        ? 'rgba(99,102,241,0.12)'
+                        : 'rgba(255,255,255,0.03)',
+                      border: isActive
+                        ? '1px solid rgba(99,102,241,0.35)'
+                        : '1px solid rgba(255,255,255,0.07)',
+                      boxShadow: isActive
+                        ? '0 4px 24px rgba(99,102,241,0.18)'
+                        : 'none',
+                    }}
                   >
-                    <span className={activeTab === index ? 'text-white' : 'text-gray-900'}>
-                      {capability.icon}
+                    <div
+                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
+                      style={{
+                        background: isActive
+                          ? 'rgba(99,102,241,0.18)'
+                          : 'rgba(255,255,255,0.05)',
+                      }}
+                    >
+                      <span style={{ color: isActive ? '#818cf8' : '#94a3b8' }}>
+                        {capability.icon}
+                      </span>
+                    </div>
+                    <span
+                      className="font-medium"
+                      style={{ color: isActive ? '#f1f5f9' : '#cbd5e1' }}
+                    >
+                      {language === 'ar' ? capability.titleAr : capability.title}
                     </span>
-                  </div>
-                  <span className="font-medium">
-                    {language === 'ar' ? capability.titleAr : capability.title}
-                  </span>
-                </button>
-              ))}
-            </div>
+                  </button>
+                )
+              })}
+            </FadeUp>
 
-            {/* Right side - Content */}
-            <div className="col-span-8">
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="relative aspect-[2/1] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+            <motion.div
+              key={activeTab}
+              className="col-span-8"
+              initial={{ opacity: 0, x: 16 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
+            >
+              <div
+                className="rounded-2xl overflow-hidden"
+                style={{
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(255,255,255,0.07)',
+                  boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
+                }}
+              >
+                <div
+                  className="relative aspect-[2/1] overflow-hidden"
+                  style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}
+                >
                   <Image
                     src={activeCapability.image}
                     alt={language === 'ar' ? activeCapability.titleAr : activeCapability.title}
@@ -252,12 +348,12 @@ export default function Capabilities() {
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-slate-300 leading-relaxed">
                     {language === 'ar' ? activeCapability.descriptionAr : activeCapability.description}
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

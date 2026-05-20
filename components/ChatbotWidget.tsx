@@ -52,7 +52,7 @@ export default function ChatbotWidget() {
       className={`fixed bottom-0 right-0 z-[9999] border-0 bg-transparent transition-[width,height] duration-200 ${
         isOpen
           ? 'w-full h-[100dvh] md:w-[400px] md:h-[600px]'
-          : 'w-[90px] h-[90px] md:w-[400px] md:h-[600px]'
+          : 'w-[90px] h-[90px] md:w-[110px] md:h-[110px]'
       }`}
       allow="clipboard-write"
     />
