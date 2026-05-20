@@ -98,7 +98,7 @@ export default function Header() {
             </button>
 
             <Link
-              href="#pricing"
+              href="/#pricing"
               className={[
                 'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300',
                 'hover:-translate-y-0.5',
@@ -168,7 +168,7 @@ export default function Header() {
                 ))}
 
                 <Link
-                  href="#pricing"
+                  href="/#pricing"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-5 py-2.5 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 transition-all duration-200 text-center mt-2 shadow-lg shadow-indigo-500/20"
                 >
