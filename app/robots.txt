@@ -1,4 +1,35 @@
+# Search engines: full access to real content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Everyone else: allowed, but throttled and kept out of internal artifacts
 User-agent: *
 Allow: /
+# Next.js client-side prefetch / RSC segment payloads — not real pages,
+# no reason for crawlers to fetch them.
+Disallow: /*__next
+Disallow: /*_next/data
+# Slow down generic crawlers (honored by Bing, Yandex, etc.; ignored by Google)
+Crawl-delay: 10
+
+# Heavy commercial SEO crawlers that generate large volumes of requests
+# with no benefit to this site. Remove any you actually want to allow.
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
 
 Sitemap: https://accez.cloud/sitemap.xml

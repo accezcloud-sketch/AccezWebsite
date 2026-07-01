@@ -147,6 +147,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}`}
+                    prefetch={false}
                     className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group ${isHidden ? 'hidden' : ''}`}
                   >
                     {/* Cover Image */}

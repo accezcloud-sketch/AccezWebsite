@@ -147,6 +147,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           <p className="text-gray-600 mb-8">{t.notFoundDesc}</p>
           <Link
             href="/blog"
+            prefetch={false}
             className="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-200"
           >
             {t.backToBlog}
@@ -166,7 +167,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       {/* Back to Blog */}
       <div className="bg-white border-b">
         <div className="container mx-auto px-4 py-4">
-          <Link href="/blog" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <Link href="/blog" prefetch={false} className="text-gray-600 hover:text-gray-900 transition-colors">
             {t.backToBlog}
           </Link>
         </div>
@@ -234,6 +235,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                   <Link
                     key={index}
                     href={`/blog?tag=${post.tags[index]}`}
+                    prefetch={false}
                     className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition-colors"
                   >
                     #{tag}

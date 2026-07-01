@@ -66,6 +66,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
+            prefetch={false}
             className="flex items-center gap-2 text-2xl font-bold text-white"
             style={{ transition: 'opacity 0.3s ease', opacity: atTop ? 0.9 : 1 }}
           >
@@ -99,6 +100,7 @@ export default function Header() {
 
             <Link
               href="/#pricing"
+              prefetch={false}
               className={[
                 'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300',
                 'hover:-translate-y-0.5',
@@ -169,6 +171,7 @@ export default function Header() {
 
                 <Link
                   href="/#pricing"
+                  prefetch={false}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-5 py-2.5 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 transition-all duration-200 text-center mt-2 shadow-lg shadow-indigo-500/20"
                 >

@@ -62,6 +62,7 @@ export default function ThankYou() {
           {/* Back Button */}
           <Link
             href="/"
+            prefetch={false}
             className="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-200"
           >
             {t.backHome}

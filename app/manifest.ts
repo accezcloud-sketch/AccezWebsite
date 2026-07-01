@@ -11,14 +11,17 @@ export default function manifest(): MetadataRoute.Manifest {
     display: 'standalone',
     background_color: '#ffffff',
     theme_color: '#2563eb',
+    // Point at an asset that actually exists. The previous /icon-192.png and
+    // /icon-512.png files were missing, so every browser/crawler that fetched
+    // the manifest generated 404 edge requests.
     icons: [
       {
-        src: '/icon-192.png',
+        src: '/images/accez-logo.png',
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        src: '/icon-512.png',
+        src: '/images/accez-logo.png',
         sizes: '512x512',
         type: 'image/png',
       },
