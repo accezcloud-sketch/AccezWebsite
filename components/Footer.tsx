@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { PORTAL_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 
 export default function Footer() {
@@ -66,13 +67,23 @@ export default function Footer() {
     },
   ]
 
-  const columns = [
+  type FooterLink = { label: string; href: string; external?: boolean }
+
+  const columns: Array<{ heading: string; links: FooterLink[] }> = [
     {
       heading: t.footer.product,
       links: [
         { label: t.footer.features, href: '/#features' },
         { label: t.footer.pricing, href: '/#pricing' },
         { label: t.footer.integrations, href: '#' },
+      ],
+    },
+    {
+      heading: t.footer.forServiceProviders,
+      links: [
+        { label: t.footer.howItWorks, href: '/#service-providers' },
+        { label: t.footer.becomeProvider, href: PORTAL_SIGN_UP, external: true },
+        { label: t.footer.providerFaq, href: '/#faq' },
       ],
     },
     {
@@ -116,9 +127,9 @@ export default function Footer() {
 
       <FadeUp distance={20}>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 lg:gap-12 py-14 lg:py-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 py-14 lg:py-16">
             {/* Brand column */}
-            <div className="col-span-2 sm:col-span-3 md:col-span-2 flex flex-col gap-5">
+            <div className="col-span-2 md:col-span-4 lg:col-span-2 flex flex-col gap-5">
               <Link href="/" prefetch={false} className="inline-flex items-center gap-2.5 w-fit">
                 <Image
                   src="/images/accez-logo.png"
@@ -172,10 +183,11 @@ export default function Footer() {
                   {heading}
                 </h4>
                 <ul className="flex flex-col gap-2.5">
-                  {links.map(({ label, href }) => (
+                  {links.map(({ label, href, external }) => (
                     <li key={`${heading}-${label}`}>
                       <a
                         href={href}
+                        {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                         className="text-slate-500 text-sm transition-colors duration-150 hover:text-slate-300 inline-flex items-center gap-1 group"
                       >
                         <span

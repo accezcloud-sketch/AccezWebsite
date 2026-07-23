@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Capabilities from '@/components/Capabilities'
+import ServiceProviders from '@/components/ServiceProviders'
 import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
@@ -15,7 +16,7 @@ const jsonLd = {
   alternateName: 'Accez Cloud',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
-  description: 'Accez is the smart property management platform with 400+ channel integrations, automated rent collection, maintenance scheduling, and marketplace services.',
+  description: 'Accez is the smart property management platform with 400+ channel integrations, automated rent collection, maintenance scheduling, and marketplace services. Service providers can create a provider account to publish services and receive booking requests from properties.',
   url: 'https://accez.cloud',
   provider: {
     '@type': 'Organization',
@@ -33,6 +34,8 @@ const jsonLd = {
     'Maintenance Scheduling',
     'Marketplace Services',
     'Property Analytics',
+    'Service Provider Accounts',
+    'Services Booking Marketplace',
   ],
 }
 
@@ -48,6 +51,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Capabilities />
+        <ServiceProviders />
         <Pricing />
         <FAQ />
         <Contact />

@@ -4,8 +4,17 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { PORTAL_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
+import ImageCarousel, { type CarouselSlide } from '@/components/ImageCarousel'
+
+interface CapabilityCta {
+  label: string
+  labelAr: string
+  href: string
+  variant: 'primary' | 'secondary'
+}
 
 interface Capability {
   id: string
@@ -14,7 +23,15 @@ interface Capability {
   titleAr: string
   description: string
   descriptionAr: string
+  /** Single screenshot. Ignored when `slides` is set. */
   image: string
+  /** Optional multi image carousel, shown instead of `image`. */
+  slides?: CarouselSlide[]
+  /** Optional badge shown next to the tab label (e.g. "New"). */
+  badge?: string
+  badgeAr?: string
+  /** Optional action buttons rendered under the capability description. */
+  ctas?: CapabilityCta[]
 }
 
 export default function Capabilities() {
@@ -44,9 +61,80 @@ export default function Capabilities() {
       ),
       title: 'Services Booking',
       titleAr: 'حجز الخدمات',
-      description: 'Enable tenants to book amenities and services directly through the platform. From gym reservations to cleaning services, create additional revenue streams while improving tenant satisfaction and engagement.',
-      descriptionAr: 'تمكين المستأجرين من حجز المرافق والخدمات مباشرة من خلال المنصة. من حجوزات الصالة الرياضية إلى خدمات التنظيف، أنشئ مصادر دخل إضافية مع تحسين رضا المستأجرين وتفاعلهم.',
+      description: 'Enable tenants to book amenities and services directly through the platform. From gym reservations to cleaning services, create additional revenue streams while improving tenant satisfaction and engagement. Services are delivered by providers on the Accez marketplace, and any independent business can join as one.',
+      descriptionAr: 'تمكين المستأجرين من حجز المرافق والخدمات مباشرة من خلال المنصة. من حجوزات الصالة الرياضية إلى خدمات التنظيف، أنشئ مصادر دخل إضافية مع تحسين رضا المستأجرين وتفاعلهم. تُقدَّم الخدمات عبر مقدمي الخدمات في سوق أكسيز، ويمكن لأي نشاط تجاري مستقل الانضمام إليه.',
       image: '/capabilities/services.png',
+      ctas: [
+        {
+          label: 'Become a Service Provider',
+          labelAr: 'انضم كمقدم خدمة',
+          href: PORTAL_SIGN_UP,
+          variant: 'primary',
+        },
+        {
+          label: 'How it works',
+          labelAr: 'كيف تعمل',
+          href: '/#service-providers',
+          variant: 'secondary',
+        },
+      ],
+    },
+    {
+      id: 'providers',
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      ),
+      title: 'Service Providers',
+      titleAr: 'مقدمو الخدمات',
+      badge: 'New',
+      badgeAr: 'جديد',
+      description: 'Any independent business can create a Service Provider account on Accez: salons and barbers, spas and wellness studios, fitness coaches, photographers, home services and more. Providers build a listing with photos, category, location and opening hours, price each service in SAR, then take instant bookings from customers on the Accez marketplace and manage them from a dedicated provider dashboard.',
+      descriptionAr: 'يمكن لأي نشاط تجاري مستقل إنشاء حساب مقدم خدمة على أكسيز: صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون، الخدمات المنزلية وغيرها. يجهّز مقدم الخدمة صفحته بالصور والفئة والموقع وساعات العمل، ويسعّر كل خدمة بالريال، ثم يستقبل حجوزات فورية من العملاء عبر سوق أكسيز ويديرها من لوحة تحكم مخصصة.',
+      image: '/capabilities/service-providers/1.png',
+      slides: [
+        {
+          src: '/capabilities/service-providers/1.png',
+          caption: 'The Accez marketplace',
+          captionAr: 'سوق أكسيز',
+        },
+        {
+          src: '/capabilities/service-providers/2.png',
+          caption: 'Your services, prices and reviews',
+          captionAr: 'خدماتك وأسعارك وتقييماتك',
+        },
+        {
+          src: '/capabilities/service-providers/3.png',
+          caption: 'Customers choose their services',
+          captionAr: 'العملاء يختارون خدماتهم',
+        },
+        {
+          src: '/capabilities/service-providers/4.png',
+          caption: 'They pick a date and time',
+          captionAr: 'يختارون التاريخ والوقت',
+        },
+        {
+          src: '/capabilities/service-providers/5.png',
+          caption: 'Review and confirm the booking',
+          captionAr: 'مراجعة الحجز وتأكيده',
+        },
+      ],
+      ctas: [
+        {
+          label: 'Create a provider account',
+          labelAr: 'أنشئ حساب مقدم خدمة',
+          href: PORTAL_SIGN_UP,
+          variant: 'primary',
+        },
+        {
+          label: 'How it works',
+          labelAr: 'كيف تعمل',
+          href: '/#service-providers',
+          variant: 'secondary',
+        },
+      ],
     },
     {
       id: 'channels',
@@ -133,6 +221,63 @@ export default function Capabilities() {
   }
 
   const t = content[language]
+
+  const renderCtas = (ctas?: CapabilityCta[]) => {
+    if (!ctas?.length) return null
+    return (
+      <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-5">
+        {ctas.map((cta) => {
+          const isExternal = cta.href.startsWith('http')
+          const isPrimary = cta.variant === 'primary'
+          return (
+            <a
+              key={cta.href + cta.label}
+              href={cta.href}
+              {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              className={[
+                'inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold',
+                'transition-all duration-200 hover:-translate-y-0.5',
+                isPrimary ? 'text-white' : 'text-slate-300 hover:text-white',
+              ].join(' ')}
+              style={{
+                fontSize: 14,
+                background: isPrimary
+                  ? 'linear-gradient(135deg,#6366f1 0%,#4f46e5 100%)'
+                  : 'rgba(255,255,255,.05)',
+                border: isPrimary ? '1px solid transparent' : '1px solid rgba(255,255,255,.1)',
+                boxShadow: isPrimary ? '0 4px 20px rgba(99,102,241,0.25)' : 'none',
+              }}
+            >
+              {language === 'ar' ? cta.labelAr : cta.label}
+              <svg
+                width="15" height="15" viewBox="0 0 16 16" fill="none"
+                style={{ transform: isRTL ? 'scaleX(-1)' : undefined }}
+                aria-hidden="true"
+              >
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          )
+        })}
+      </div>
+    )
+  }
+
+  const renderBadge = (capability: Capability) => {
+    if (!capability.badge) return null
+    return (
+      <span
+        className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider flex-shrink-0"
+        style={{
+          background: 'rgba(16,185,129,0.14)',
+          border: '1px solid rgba(16,185,129,0.3)',
+          color: '#34d399',
+        }}
+      >
+        {language === 'ar' ? capability.badgeAr : capability.badge}
+      </span>
+    )
+  }
 
   return (
     <section className="py-20" id="capabilities" style={{ background: '#080c18' }}>
@@ -224,10 +369,11 @@ export default function Capabilities() {
                       </span>
                     </div>
                     <span
-                      className="font-medium flex-1"
+                      className="font-medium flex-1 flex items-center gap-2"
                       style={{ color: isActive ? '#f1f5f9' : '#cbd5e1' }}
                     >
                       {language === 'ar' ? capability.titleAr : capability.title}
+                      {renderBadge(capability)}
                     </span>
                     <svg
                       className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}
@@ -249,21 +395,31 @@ export default function Capabilities() {
                         boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
                       }}
                     >
-                      <div className="relative aspect-[2/1] overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}>
-                        <Image
-                          src={capability.image}
+                      {capability.slides ? (
+                        <ImageCarousel
+                          slides={capability.slides}
                           alt={language === 'ar' ? capability.titleAr : capability.title}
-                          fill
-                          className="object-contain"
-                          sizes="100vw"
-                          quality={100}
-                          unoptimized
+                          language={language}
+                          isRTL={isRTL}
                         />
-                      </div>
+                      ) : (
+                        <div className="relative aspect-[2/1] overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}>
+                          <Image
+                            src={capability.image}
+                            alt={language === 'ar' ? capability.titleAr : capability.title}
+                            fill
+                            className="object-contain"
+                            sizes="100vw"
+                            quality={100}
+                            unoptimized
+                          />
+                        </div>
+                      )}
                       <div className="p-4">
                         <p className="text-slate-300 leading-relaxed text-sm">
                           {language === 'ar' ? capability.descriptionAr : capability.description}
                         </p>
+                        {renderCtas(capability.ctas)}
                       </div>
                     </div>
                   )}
@@ -307,10 +463,11 @@ export default function Capabilities() {
                       </span>
                     </div>
                     <span
-                      className="font-medium"
+                      className="font-medium flex items-center gap-2"
                       style={{ color: isActive ? '#f1f5f9' : '#cbd5e1' }}
                     >
                       {language === 'ar' ? capability.titleAr : capability.title}
+                      {renderBadge(capability)}
                     </span>
                   </button>
                 )
@@ -332,25 +489,35 @@ export default function Capabilities() {
                   boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
                 }}
               >
-                <div
-                  className="relative aspect-[2/1] overflow-hidden"
-                  style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}
-                >
-                  <Image
-                    src={activeCapability.image}
+                {activeCapability.slides ? (
+                  <ImageCarousel
+                    slides={activeCapability.slides}
                     alt={language === 'ar' ? activeCapability.titleAr : activeCapability.title}
-                    fill
-                    className="object-contain"
-                    sizes="66vw"
-                    quality={100}
-                    unoptimized
-                    priority={activeTab === 0}
+                    language={language}
+                    isRTL={isRTL}
                   />
-                </div>
+                ) : (
+                  <div
+                    className="relative aspect-[2/1] overflow-hidden"
+                    style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}
+                  >
+                    <Image
+                      src={activeCapability.image}
+                      alt={language === 'ar' ? activeCapability.titleAr : activeCapability.title}
+                      fill
+                      className="object-contain"
+                      sizes="66vw"
+                      quality={100}
+                      unoptimized
+                      priority={activeTab === 0}
+                    />
+                  </div>
+                )}
                 <div className="p-6">
                   <p className="text-slate-300 leading-relaxed">
                     {language === 'ar' ? activeCapability.descriptionAr : activeCapability.description}
                   </p>
+                  {renderCtas(activeCapability.ctas)}
                 </div>
               </div>
             </motion.div>

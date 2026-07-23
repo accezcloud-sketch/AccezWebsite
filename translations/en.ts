@@ -2,6 +2,7 @@ export const en = {
   // Header
   header: {
     features: 'Features',
+    forProviders: 'For Providers',
     pricing: 'Pricing',
     faq: 'FAQ',
     blog: 'Blog',
@@ -173,6 +174,10 @@ export const en = {
     about: 'About',
     careers: 'Careers',
     blog: 'Blog',
+    forServiceProviders: 'Service Providers',
+    howItWorks: 'How It Works',
+    becomeProvider: 'Become a Provider',
+    providerFaq: 'Provider FAQ',
     manageResources: 'Manage Resources',
     propertyDashboard: 'Property Dashboard',
     tenantManagement: 'Tenant Management',

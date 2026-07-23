@@ -32,6 +32,7 @@ export default function Header() {
 
   const navItems = [
     { name: t.header.features, href: '/#features' },
+    { name: t.header.forProviders, href: '/#service-providers' },
     { name: t.header.pricing, href: '/#pricing' },
     { name: t.header.faq, href: '/#faq' },
     { name: t.header.blog, href: '/blog' },
@@ -80,8 +81,9 @@ export default function Header() {
             Accez.cloud
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation — `lg` (not `md`) so the 7 links have room to
+              sit on one line; tablets fall back to the mobile menu below. */}
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
             {navItems.map((item) => (
               <a key={item.name} href={item.href} className={linkClass}>
                 {item.name}
@@ -90,7 +92,7 @@ export default function Header() {
           </nav>
 
           {/* Right side - Language Toggle & CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
               className={linkClass}
@@ -114,7 +116,7 @@ export default function Header() {
           </div>
 
           {/* Mobile - Language Toggle & Menu Button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
               className="p-2 text-slate-300 hover:text-white font-medium transition-colors duration-200"
@@ -149,7 +151,7 @@ export default function Header() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.28, ease: [0.21, 0.47, 0.32, 0.98] }}
-              className="md:hidden overflow-hidden"
+              className="lg:hidden overflow-hidden"
               style={{
                 backgroundColor: 'rgba(8,12,24,0.97)',
                 backdropFilter: 'blur(20px)',

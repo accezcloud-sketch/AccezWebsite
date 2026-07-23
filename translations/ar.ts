@@ -2,6 +2,7 @@ export const ar = {
   // Header
   header: {
     features: 'المميزات',
+    forProviders: 'لمقدمي الخدمات',
     pricing: 'الأسعار',
     faq: 'الأسئلة الشائعة',
     blog: 'المدونة',
@@ -173,6 +174,10 @@ export const ar = {
     about: 'عن الشركة',
     careers: 'الوظائف',
     blog: 'المدونة',
+    forServiceProviders: 'مقدمو الخدمات',
+    howItWorks: 'كيف تعمل',
+    becomeProvider: 'انضم كمقدم خدمة',
+    providerFaq: 'أسئلة مقدمي الخدمات',
     manageResources: 'إدارة الموارد',
     propertyDashboard: 'لوحة تحكم العقارات',
     tenantManagement: 'إدارة المستأجرين',

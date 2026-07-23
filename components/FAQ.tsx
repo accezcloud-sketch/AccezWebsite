@@ -59,6 +59,33 @@ const FAQS: FaqItem[] = [
       'يربط سوق الخدمات لدينا مالكي العقارات بمقدمي الخدمات المحليين للتنظيف والصيانة والإصلاحات وخدمات أخرى. يمكن لمديري العقارات كسب عمولة تتراوح بين 15-30% على كل معاملة، مما يخلق مصدر دخل جديد خلال السنة الأولى.',
   },
   {
+    category: 'serviceMarketplace',
+    question: 'Who can become a service provider on Accez?',
+    questionAr: 'من يمكنه أن يصبح مقدم خدمة على أكسيز؟',
+    answer:
+      'Any independent business, not only property related trades. Salons and barbers, spas and wellness studios, fitness coaches, photographers and home services all list on the Accez marketplace. Service Provider is its own account type, completely separate from a property manager account.',
+    answerAr:
+      'أي نشاط تجاري مستقل، وليس فقط المهن المرتبطة بالعقارات. صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون والخدمات المنزلية، جميعهم يظهرون في سوق أكسيز. مقدم الخدمة هو نوع حساب مستقل تمامًا عن حساب مدير العقارات.',
+  },
+  {
+    category: 'serviceMarketplace',
+    question: 'How do I register as a service provider?',
+    questionAr: 'كيف أسجل كمقدم خدمة؟',
+    answer:
+      'Go to the Accez registration page at portal.accez.cloud/sign-up. You will be asked to choose the account you want to create: Property Manager or Service Provider. Pick the Service Provider card and your provider account is created straight away, then build your listing with your photos, category, location, opening hours and priced services.',
+    answerAr:
+      'انتقل إلى صفحة التسجيل في أكسيز على portal.accez.cloud/sign-up. سيُطلب منك اختيار نوع الحساب الذي تريد إنشاءه: مدير عقارات أو مقدم خدمة. اختر بطاقة مقدم الخدمة ليتم إنشاء حسابك فورًا، ثم جهّز صفحتك بالصور والفئة والموقع وساعات العمل والخدمات المسعّرة.',
+  },
+  {
+    category: 'serviceMarketplace',
+    question: 'How do customers find and book me?',
+    questionAr: 'كيف يجدني العملاء ويحجزون خدماتي؟',
+    answer:
+      'Your business gets its own public listing on the Accez marketplace. Customers browse by category such as Beauty, Spa and Wellness, Fitness, Photography and Home services, search by name, or find you on the map. They see your service list with durations and prices in SAR, book inside your opening hours, and can leave a rating and review afterwards.',
+    answerAr:
+      'يحصل نشاطك على صفحة عامة خاصة به في سوق أكسيز. يتصفح العملاء حسب الفئة مثل التجميل والمنتجعات الصحية واللياقة والتصوير والخدمات المنزلية، أو يبحثون بالاسم، أو يجدونك على الخريطة. يرون قائمة خدماتك بمددها وأسعارها بالريال، ويحجزون ضمن ساعات عملك، ويمكنهم ترك تقييم ومراجعة بعد ذلك.',
+  },
+  {
     category: 'securityData',
     question: 'Is my property and tenant data secure?',
     questionAr: 'هل بيانات عقاري والمستأجرين آمنة؟',
