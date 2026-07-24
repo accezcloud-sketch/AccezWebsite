@@ -71,6 +71,18 @@ section {
   overflow-x: hidden;
 }
 
+/* Responsive safety nets */
+img, video { max-width: 100%; }
+
+/* Scrollable area with no visible scrollbar (still scrolls via wheel/touch). */
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Keep the third-party reCAPTCHA widget (fixed ~304px) inside phone widths */
+@media (max-width: 420px) {
+  .g-recaptcha { transform: scale(0.85); transform-origin: center; }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -111,7 +123,7 @@ section {
   border-radius: 12px; padding: 1em 1.2em; overflow-x: auto;
 }
 .blog-content pre code { background: none; border: none; padding: 0; color: var(--text-muted); }
-.blog-content img { border-radius: 12px; margin-top: 1.5em; margin-bottom: 1.5em; }
+.blog-content img { max-width: 100%; height: auto; border-radius: 12px; margin-top: 1.5em; margin-bottom: 1.5em; }
 .blog-content hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 
 /* Font families */

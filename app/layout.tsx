@@ -14,11 +14,11 @@ const poppins = Poppins({ subsets: ['latin'], variable: '--font-heading', weight
 
 export const metadata: Metadata = {
   title: {
-    default: 'Accez | Smart Property Management Platform - Accez Cloud',
-    template: '%s | Accez Cloud',
+    default: 'Accez | All-in-One Property Management for Saudi Arabia',
+    template: '%s | Accez',
   },
-  description: 'Accez is the smart property management platform with 400+ channel integrations, automated rent collection, maintenance scheduling, and marketplace services. Accez Cloud helps property managers generate 15-30% additional revenue.',
-  keywords: ['Accez', 'Accez Cloud', 'Accez property management', 'property management', 'vacation rental', 'Airbnb management', 'booking management', 'rent collection', 'property software', 'SaaS', 'HOA management'],
+  description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. All-in-one property operations for Saudi Arabia, in Arabic and English.',
+  keywords: ['Accez', 'Accez Cloud', 'property management Saudi Arabia', 'property management software Riyadh', 'all-in-one property platform', 'owner management', 'HOA management', 'hotel management', 'serviced apartments', 'real estate sales CRM', 'Arabic property software', 'property operations'],
   authors: [{ name: 'Accez Cloud' }],
   creator: 'Accez Cloud',
   publisher: 'Accez Cloud',
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     apple: '/images/accez-logo.png',
   },
   openGraph: {
-    title: 'Accez | Smart Property Management Platform',
-    description: 'Accez Cloud - Streamline property operations with 400+ channel integrations, automated rent collection, and revenue-generating marketplace.',
+    title: 'Accez | All-in-One Property Management for Saudi Arabia',
+    description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. Built for Saudi operators, in Arabic and English.',
     type: 'website',
-    siteName: 'Accez Cloud',
+    siteName: 'Accez',
     url: 'https://accez.cloud',
     locale: 'en_US',
     images: [
@@ -43,14 +43,14 @@ export const metadata: Metadata = {
         url: 'https://accez.cloud/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Accez Cloud - Smart Property Management Platform',
+        alt: 'Accez, all-in-one property management for Saudi Arabia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Accez | Smart Property Management Platform',
-    description: 'Accez Cloud - Smart property management with 400+ channel integrations and automated operations.',
+    title: 'Accez | All-in-One Property Management for Saudi Arabia',
+    description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. Built for Saudi operators, in Arabic and English.',
     images: ['https://accez.cloud/images/og-image.png'],
   },
   robots: {

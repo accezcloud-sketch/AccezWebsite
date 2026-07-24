@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPostMeta } from '@/lib/blog'
+import Select from '@/components/ui/Select'
 
 interface BlogListClientProps {
   posts: BlogPostMeta[]
@@ -13,7 +14,7 @@ interface BlogListClientProps {
 }
 
 export default function BlogListClient({ posts, categories, tags }: BlogListClientProps) {
-  const { language } = useLanguage()
+  const { language, isRTL } = useLanguage()
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [selectedTag, setSelectedTag] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState('')
@@ -89,10 +90,23 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
 
   return (
     <>
-      {/* Filters Section */}
-      <section className="py-8" style={{ background: 'var(--bg)', borderBottom: '1px solid var(--border)' }}>
+      {/* Filters Section — sticky under the navbar so Search / Categories /
+          Tags stay reachable while browsing posts. */}
+      <section
+        className="md:sticky md:top-16 z-20 py-5"
+        style={{
+          background: 'rgba(9,19,28,0.9)',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+          borderBottom: '1px solid var(--border)',
+          // Override the global `section { overflow-x: hidden }` (which forces
+          // overflow-y to `auto` and clips the open dropdown at this section's
+          // bottom edge). This section has no horizontal-overflow risk.
+          overflow: 'visible',
+        }}
+      >
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center justify-between">
             <div className="w-full md:w-1/3">
               <input
                 type="text"
@@ -103,21 +117,23 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                 style={controlStyle}
               />
             </div>
-            <div className="w-full md:w-auto">
-              <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)} className={controlClass} style={controlStyle}>
-                <option value="all">{t.allCategories}</option>
-                {categories.map((category) => (
-                  <option key={category.en} value={category.en}>{language === 'ar' ? category.ar : category.en}</option>
-                ))}
-              </select>
+            <div className="w-full md:w-52">
+              <Select
+                value={selectedCategory}
+                onChange={setSelectedCategory}
+                ariaLabel={t.allCategories}
+                isRTL={isRTL}
+                options={[{ value: 'all', label: t.allCategories }, ...categories.map((c) => ({ value: c.en, label: language === 'ar' ? c.ar : c.en }))]}
+              />
             </div>
-            <div className="w-full md:w-auto">
-              <select value={selectedTag} onChange={(e) => setSelectedTag(e.target.value)} className={controlClass} style={controlStyle}>
-                <option value="all">{t.allTags}</option>
-                {tags.map((tag) => (
-                  <option key={tag.en} value={tag.en}>{language === 'ar' ? tag.ar : tag.en}</option>
-                ))}
-              </select>
+            <div className="w-full md:w-52">
+              <Select
+                value={selectedTag}
+                onChange={setSelectedTag}
+                ariaLabel={t.allTags}
+                isRTL={isRTL}
+                options={[{ value: 'all', label: t.allTags }, ...tags.map((tg) => ({ value: tg.en, label: language === 'ar' ? tg.ar : tg.en }))]}
+              />
             </div>
           </div>
         </div>

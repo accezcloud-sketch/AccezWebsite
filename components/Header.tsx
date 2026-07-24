@@ -92,8 +92,10 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-            {/* Product dropdown */}
-            <div className="relative" onMouseEnter={openProduct} onMouseLeave={scheduleClose}>
+            {/* Product dropdown — the wrapper spans the full navbar height so
+                top-full lands at the divider, and paddingTop on the panel adds
+                a clean gap that stays part of the hover area. */}
+            <div className="relative h-16 flex items-center" onMouseEnter={openProduct} onMouseLeave={scheduleClose}>
               <button
                 type="button"
                 className={`${linkClass} inline-flex items-center gap-1`}
@@ -111,11 +113,15 @@ export default function Header() {
               <AnimatePresence>
                 {productOpen && (
                   <motion.div
-                    initial={{ opacity: 0, y: 8 }}
+                    initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 8 }}
+                    exit={{ opacity: 0, y: 6 }}
                     transition={{ duration: 0.16, ease: [0.21, 0.47, 0.32, 0.98] }}
-                    className="absolute top-full start-0 mt-3 w-[320px] rounded-2xl overflow-hidden p-2"
+                    className="absolute top-full start-0"
+                    style={{ paddingTop: 12 }}
+                  >
+                  <div
+                    className="w-[320px] rounded-2xl overflow-hidden p-2"
                     style={{
                       background: 'rgba(13, 23, 35, 0.97)',
                       border: '1px solid var(--border-hi)',
@@ -148,6 +154,7 @@ export default function Header() {
                     >
                       {language === 'ar' ? 'كل الوحدات ←' : 'All modules →'}
                     </a>
+                  </div>
                   </motion.div>
                 )}
               </AnimatePresence>
