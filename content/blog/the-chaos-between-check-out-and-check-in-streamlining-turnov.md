@@ -18,7 +18,7 @@ tagsAr: ["إدارة الممتلكات", "تحويلات الضيوف", "الك
 
 The moment a guest checks out is often the start of an adrenaline-fueled race against time, a chaotic scramble where efficiency can easily be overshadowed by last-minute panics. It's a paradox: the end of one successful booking simultaneously ignites the pressure for the next, demanding immediate perfection.
 
-This critical window between guest departure and the next arrival is arguably the most vulnerable point in the entire guest lifecycle. It's a period characterized by a multitude of tasks that must be completed with precision and speed – cleaning, maintenance checks, restocking, quality assurance, and preparing for the next guest's seamless entry. Any slip-up here can cascade into a negative guest experience, damage online reviews, and ultimately impact revenue.
+This critical window between guest departure and the next arrival is arguably the most vulnerable point in the entire guest lifecycle. It's a period characterized by a multitude of tasks that must be completed with precision and speed, cleaning, maintenance checks, restocking, quality assurance, and preparing for the next guest's seamless entry. Any slip-up here can cascade into a negative guest experience, damage online reviews, and ultimately impact revenue.
 
 ## The Breakdown in the Turnover Process: Why It Fails
 

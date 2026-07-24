@@ -54,7 +54,7 @@ const FAQS: FaqItem[] = [
     question: 'How can I earn additional revenue with the service marketplace?',
     questionAr: 'كيف يمكنني كسب إيرادات إضافية من سوق الخدمات؟',
     answer:
-      'Our service marketplace connects property owners with local service providers for cleaning, maintenance, repairs, and other services. Property managers can earn 15–30% commission on every transaction, creating a new revenue stream within the first year.',
+      'Our service marketplace connects property owners with local service providers for cleaning, maintenance, repairs, and other services. Property managers can earn 15 to 30% commission on every transaction, creating a new revenue stream within the first year.',
     answerAr:
       'يربط سوق الخدمات لدينا مالكي العقارات بمقدمي الخدمات المحليين للتنظيف والصيانة والإصلاحات وخدمات أخرى. يمكن لمديري العقارات كسب عمولة تتراوح بين 15-30% على كل معاملة، مما يخلق مصدر دخل جديد خلال السنة الأولى.',
   },
@@ -165,13 +165,13 @@ export default function FAQ() {
       <section
         id="faq"
         className="relative py-20 px-4 sm:px-6 lg:px-12 overflow-hidden"
-        style={{ background: '#080c18' }}
+        style={{ background: 'var(--bg)' }}
       >
         {/* Background glow */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse, rgba(99,102,241,0.05) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse, rgba(49, 159, 212,0.05) 0%, transparent 70%)',
           }}
           aria-hidden="true"
         />
@@ -182,20 +182,20 @@ export default function FAQ() {
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, #6366f1)'
-                  : 'linear-gradient(to right, transparent, #6366f1)' }}
+                  ? 'linear-gradient(to left, transparent, var(--accent))'
+                  : 'linear-gradient(to right, transparent, var(--accent))' }}
               />
               <span
                 className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: '#818cf8' }}
+                style={{ color: 'var(--accent-hi)' }}
               >
                 {tf.eyebrow}
               </span>
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, #6366f1)'
-                  : 'linear-gradient(to left, transparent, #6366f1)' }}
+                  ? 'linear-gradient(to right, transparent, var(--accent))'
+                  : 'linear-gradient(to left, transparent, var(--accent))' }}
               />
             </div>
 
@@ -203,14 +203,14 @@ export default function FAQ() {
               className="text-white font-bold text-center leading-tight tracking-tight mb-4"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
-                fontFamily: 'var(--font-manrope), var(--font-inter), system-ui, sans-serif',
+                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
                 fontWeight: 800,
               }}
             >
               {tf.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #818cf8, #c084fc)',
+                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -227,7 +227,7 @@ export default function FAQ() {
               {tf.helpText}{' '}
               <a
                 href="#contact"
-                className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2 transition-colors"
+                className="text-[#7FCDEF] hover:text-[#A9DDF3] underline underline-offset-2 transition-colors"
               >
                 {tf.helpLink}
               </a>
@@ -247,9 +247,9 @@ export default function FAQ() {
                 style={
                   activeCategory === key
                     ? {
-                        background: 'rgba(99,102,241,0.18)',
-                        border: '1px solid rgba(99,102,241,0.4)',
-                        color: '#818cf8',
+                        background: 'rgba(49, 159, 212,0.18)',
+                        border: '1px solid rgba(49, 159, 212,0.4)',
+                        color: 'var(--accent-hi)',
                       }
                     : {
                         background: 'rgba(255,255,255,0.04)',
@@ -272,9 +272,9 @@ export default function FAQ() {
                   <div
                     className="rounded-xl overflow-hidden transition-all duration-200"
                     style={{
-                      background: isOpen ? 'rgba(99,102,241,0.06)' : 'rgba(255,255,255,0.03)',
+                      background: isOpen ? 'rgba(49, 159, 212,0.06)' : 'rgba(255,255,255,0.03)',
                       border: isOpen
-                        ? '1px solid rgba(99,102,241,0.25)'
+                        ? '1px solid rgba(49, 159, 212,0.25)'
                         : '1px solid rgba(255,255,255,0.07)',
                     }}
                   >
@@ -286,7 +286,7 @@ export default function FAQ() {
                       <div className="flex items-start gap-3 min-w-0">
                         <span
                           className="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0"
-                          style={{ background: '#6366f1' }}
+                          style={{ background: '#319fd4' }}
                         />
                         <span
                           className="font-medium text-white leading-snug"
@@ -348,8 +348,8 @@ export default function FAQ() {
             <div
               className="flex flex-col sm:flex-row items-center justify-between gap-5 rounded-2xl px-6 py-5"
               style={{
-                background: 'rgba(99,102,241,0.07)',
-                border: '1px solid rgba(99,102,241,0.18)',
+                background: 'rgba(49, 159, 212,0.07)',
+                border: '1px solid rgba(49, 159, 212,0.18)',
               }}
             >
               <div className="text-center sm:text-start">
@@ -361,8 +361,8 @@ export default function FAQ() {
                 href="#contact"
                 className="w-full sm:w-auto flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-                  boxShadow: '0 4px 16px rgba(99,102,241,0.3)',
+                  background: 'linear-gradient(135deg, #319fd4, #2678a6)',
+                  boxShadow: '0 4px 16px rgba(49, 159, 212,0.3)',
                 }}
               >
                 {tf.bottomCtaButton}

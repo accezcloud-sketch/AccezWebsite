@@ -229,7 +229,7 @@ export default function TermsPage() {
                   </h2>
                   <p>
                     You own the content and data you put into Accez. You give us permission to
-                    use it as needed to provide the service — for example, to host it, sync it
+                    use it as needed to provide the service, for example, to host it, sync it
                     with channels, and show it back to you in the app.
                   </p>
                 </section>
@@ -261,7 +261,7 @@ export default function TermsPage() {
                   </h2>
                   <p>
                     To the maximum extent allowed by law, Cloud Valley LLC isn&apos;t liable for
-                    indirect or consequential damages — things like lost profits, lost data, or
+                    indirect or consequential damages, things like lost profits, lost data, or
                     business losses.
                   </p>
                   <p className="mt-4">

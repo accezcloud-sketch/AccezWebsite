@@ -45,19 +45,25 @@ export default function BlogPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
 
-      {/* Hero Section — server-rendered, fully crawlable */}
-      <section className="bg-gray-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Insights, tips, and updates about property management
+      {/* Hero Section, server-rendered, fully crawlable */}
+      <section className="relative overflow-hidden page-top pb-12" style={{ background: 'var(--bg)' }}>
+        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '100%', background: 'radial-gradient(120% 70% at 50% 0%, #18384A 0%, rgba(24,56,74,0.3) 30%, transparent 62%)' }} aria-hidden="true" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
+            Blog
+          </span>
+          <h1 className="text-white font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 48px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+            Property insights for Saudi operators
+          </h1>
+          <p className="max-w-2xl mx-auto leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>
+            Insights, tips and updates about running property in the Kingdom.
           </p>
         </div>
       </section>

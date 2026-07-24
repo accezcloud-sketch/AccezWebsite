@@ -54,7 +54,7 @@ The widespread adoption of **WhatsApp, with over 77% penetration in Saudi Arabia
 
 Accez.Cloud empowers property managers to not only meet but exceed the 24-hour response imperative, transforming tenant communication from a point of friction into a driver of satisfaction. By centralizing operations and automating key processes, Accez.Cloud ensures that no tenant inquiry is ever overlooked.
 
-- **Unified Communication Hub**: Consolidate all tenant communications – emails, calls, messages, and portal inquiries – into a single, easily manageable platform, ensuring nothing falls through the cracks.
+- **Unified Communication Hub**: Consolidate all tenant communications, emails, calls, messages, and portal inquiries, into a single, easily manageable platform, ensuring nothing falls through the cracks.
 - **Automated Acknowledgments and Status Updates**: Instantly confirm receipt of tenant requests and provide automated updates on their progress, managing expectations and reducing follow-up calls.
 - **Smart Ticket Routing and Prioritization**: Intelligent systems categorize and assign repair and maintenance requests to the most appropriate team members or vendors, expediting resolution times.
 - **Tenant Self-Service Portal**: Empower tenants with a portal to submit requests, track their status, and access important documents, reducing inbound query volume for your team.
@@ -112,7 +112,7 @@ Boost your tenant satisfaction and operational efficiency. Visit portal.accez.cl
 
 تمكّن Accez.Cloud مديري العقارات ليس فقط من تلبية، بل تجاوز، متطلبات الرد خلال 24 ساعة، محولةً تواصل المستأجرين من نقطة احتكاك إلى محرك للرضا. من خلال مركزية العمليات وأتمتة العمليات الرئيسية، تضمن Accez.Cloud عدم إغفال أي استفسار من المستأجر.
 
-- **مركز اتصال موحد**: دمج جميع اتصالات المستأجرين – رسائل البريد الإلكتروني والمكالمات والرسائل واستفسارات البوابة – في منصة واحدة سهلة الإدارة، مما يضمن عدم ضياع أي شيء.
+- **مركز اتصال موحد**: دمج جميع اتصالات المستأجرين، رسائل البريد الإلكتروني والمكالمات والرسائل واستفسارات البوابة، في منصة واحدة سهلة الإدارة، مما يضمن عدم ضياع أي شيء.
 - **إشعارات الاستلام والتحديثات التلقائية للحالة**: تأكيد استلام طلبات المستأجرين فورًا وتقديم تحديثات تلقائية حول تقدمها، مما يدير التوقعات ويقلل من مكالمات المتابعة.
 - **توجيه التذاكر الذكي وتحديد الأولويات**: تصنف الأنظمة الذكية طلبات الإصلاح والصيانة وتعينها إلى أعضاء الفريق أو الموردين الأكثر ملاءمة، مما يسرع من أوقات الحل.
 - **بوابة الخدمة الذاتية للمستأجر**: تمكين المستأجرين من خلال بوابة لتقديم الطلبات وتتبع حالتها والوصول إلى المستندات الهامة، مما يقلل من حجم الاستفسارات الواردة لفريقك.

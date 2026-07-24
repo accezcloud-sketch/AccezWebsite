@@ -71,34 +71,37 @@ export default function Footer() {
 
   const columns: Array<{ heading: string; links: FooterLink[] }> = [
     {
-      heading: t.footer.product,
+      heading: t.footer.solutions,
       links: [
-        { label: t.footer.features, href: '/#features' },
-        { label: t.footer.pricing, href: '/#pricing' },
-        { label: t.footer.integrations, href: '#' },
+        { label: t.footer.platform, href: '/#platform' },
+        { label: language === 'ar' ? 'الملاك والمدفوعات' : 'Owners & payouts', href: '/owners' },
+        { label: language === 'ar' ? 'المبيعات والمشاريع' : 'Sales & projects', href: '/sales' },
+        { label: language === 'ar' ? 'المجتمعات واتحاد الملاك' : 'Communities & HOA', href: '/communities' },
+        { label: language === 'ar' ? 'الفنادق والشقق المخدومة' : 'Hotels & serviced apartments', href: '/hotels' },
       ],
     },
     {
       heading: t.footer.forServiceProviders,
       links: [
-        { label: t.footer.howItWorks, href: '/#service-providers' },
+        { label: t.footer.howItWorks, href: '/service-providers' },
+        { label: t.footer.providerPricing, href: '/service-providers#provider-pricing' },
         { label: t.footer.becomeProvider, href: PORTAL_SIGN_UP, external: true },
-        { label: t.footer.providerFaq, href: '/#faq' },
       ],
     },
     {
-      heading: t.footer.manageResources,
+      heading: t.footer.product,
       links: [
-        { label: t.footer.propertyDashboard, href: '/#capabilities' },
-        { label: t.footer.tenantManagement, href: '/#capabilities' },
-        { label: t.footer.financialReports, href: '/#capabilities' },
-        { label: t.footer.communicationTools, href: '/#capabilities' },
+        { label: t.footer.pricing, href: '/#pricing' },
+        { label: t.footer.integrations, href: '/#trust' },
+        { label: t.footer.about, href: '/about' },
+        { label: t.footer.blog, href: '/blog' },
       ],
     },
     {
       heading: t.footer.support,
       links: [
         { label: t.header.faq, href: '/#faq' },
+        { label: t.footer.support, href: '/support' },
         { label: t.footer.contact, href: '/#contact' },
       ],
     },
@@ -111,7 +114,7 @@ export default function Footer() {
         className="absolute top-0 left-0 right-0 h-px"
         style={{
           background:
-            'linear-gradient(90deg, transparent, rgba(99,102,241,0.4), rgba(192,132,252,0.4), transparent)',
+            'linear-gradient(90deg, transparent, rgba(49, 159, 212,0.4), rgba(95, 184, 232,0.4), transparent)',
         }}
       />
 
@@ -120,7 +123,7 @@ export default function Footer() {
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] rounded-full pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse, rgba(99,102,241,0.04) 0%, transparent 70%)',
+            'radial-gradient(ellipse, rgba(49, 159, 212,0.04) 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />
@@ -130,7 +133,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 py-14 lg:py-16">
             {/* Brand column */}
             <div className="col-span-2 md:col-span-4 lg:col-span-2 flex flex-col gap-5">
-              <Link href="/" prefetch={false} className="inline-flex items-center gap-2.5 w-fit">
+              <Link href="/" prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4]">
                 <Image
                   src="/images/accez-logo.png"
                   alt="Accez Logo"
@@ -140,7 +143,7 @@ export default function Footer() {
                 />
                 <span
                   className="font-bold text-white text-lg"
-                  style={{ fontFamily: 'var(--font-manrope), var(--font-inter), system-ui, sans-serif' }}
+                  style={{ fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif' }}
                 >
                   Accez.cloud
                 </span>
@@ -191,7 +194,7 @@ export default function Footer() {
                         className="text-slate-500 text-sm transition-colors duration-150 hover:text-slate-300 inline-flex items-center gap-1 group"
                       >
                         <span
-                          className="opacity-0 group-hover:opacity-100 transition-opacity text-indigo-500 -ms-3 group-hover:ms-0 duration-200"
+                          className="opacity-0 group-hover:opacity-100 transition-opacity text-[#7FCDEF] -ms-3 group-hover:ms-0 duration-200"
                           aria-hidden="true"
                         >
                           ›

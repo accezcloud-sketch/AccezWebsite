@@ -30,7 +30,7 @@ Successful property managers, those who effortlessly handle larger portfolios, d
 
 ### Embracing Technology for Centralized Operations
 
-High-performing managers recognize that disparate spreadsheets, endless email chains, and paper-based systems are relics of a bygone era. They adopt integrated property management software that acts as a central nervous system for their entire operation. This platform consolidates all critical information – tenant details, lease terms, maintenance history, financial records, and communication logs – into a single, accessible dashboard. This centralization drastically reduces the time spent searching for information and minimizes the risk of errors. It allows for real-time visibility into every aspect of the portfolio, from outstanding invoices to upcoming inspections, enabling proactive rather than reactive management.
+High-performing managers recognize that disparate spreadsheets, endless email chains, and paper-based systems are relics of a bygone era. They adopt integrated property management software that acts as a central nervous system for their entire operation. This platform consolidates all critical information, tenant details, lease terms, maintenance history, financial records, and communication logs, into a single, accessible dashboard. This centralization drastically reduces the time spent searching for information and minimizes the risk of errors. It allows for real-time visibility into every aspect of the portfolio, from outstanding invoices to upcoming inspections, enabling proactive rather than reactive management.
 
 ### Streamlining Communication and Tenant Engagement
 
@@ -86,7 +86,7 @@ Visit portal.accez.cloud
 
 ### تبني التكنولوجيا للعمليات المركزية
 
-يدرك المديرون ذوو الأداء العالي أن جداول البيانات المنفصلة، وسلاسل البريد الإلكتروني التي لا نهاية لها، والأنظمة الورقية هي بقايا حقبة ماضية. إنهم يتبنون برامج إدارة العقارات المتكاملة التي تعمل كنظام عصبي مركزي لعملياتهم بأكملها. يجمع هذا النظام الأساسي جميع المعلومات الهامة – تفاصيل المستأجرين، وشروط الإيجار، وسجل الصيانة، والسجلات المالية، وسجلات الاتصالات – في لوحة تحكم واحدة يسهل الوصول إليها. تقلل هذه المركزية بشكل كبير من الوقت المستغرق في البحث عن المعلومات وتقلل من مخاطر الأخطاء. يسمح ذلك برؤية في الوقت الفعلي لكل جانب من جوانب المحفظة، بدءًا من الفواتير المستحقة وصولاً إلى عمليات التفتيش القادمة، مما يتيح الإدارة الاستباقية بدلاً من التفاعلية.
+يدرك المديرون ذوو الأداء العالي أن جداول البيانات المنفصلة، وسلاسل البريد الإلكتروني التي لا نهاية لها، والأنظمة الورقية هي بقايا حقبة ماضية. إنهم يتبنون برامج إدارة العقارات المتكاملة التي تعمل كنظام عصبي مركزي لعملياتهم بأكملها. يجمع هذا النظام الأساسي جميع المعلومات الهامة، تفاصيل المستأجرين، وشروط الإيجار، وسجل الصيانة، والسجلات المالية، وسجلات الاتصالات، في لوحة تحكم واحدة يسهل الوصول إليها. تقلل هذه المركزية بشكل كبير من الوقت المستغرق في البحث عن المعلومات وتقلل من مخاطر الأخطاء. يسمح ذلك برؤية في الوقت الفعلي لكل جانب من جوانب المحفظة، بدءًا من الفواتير المستحقة وصولاً إلى عمليات التفتيش القادمة، مما يتيح الإدارة الاستباقية بدلاً من التفاعلية.
 
 ### تبسيط الاتصالات ومشاركة المستأجرين
 

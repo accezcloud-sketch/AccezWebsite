@@ -8,6 +8,8 @@ import { PORTAL_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 import ImageCarousel, { type CarouselSlide } from '@/components/ImageCarousel'
+import CapabilityStack from '@/components/CapabilityStack'
+
 
 interface CapabilityCta {
   label: string
@@ -74,7 +76,7 @@ export default function Capabilities() {
         {
           label: 'How it works',
           labelAr: 'كيف تعمل',
-          href: '/#service-providers',
+          href: '/service-providers',
           variant: 'secondary',
         },
       ],
@@ -131,7 +133,7 @@ export default function Capabilities() {
         {
           label: 'How it works',
           labelAr: 'كيف تعمل',
-          href: '/#service-providers',
+          href: '/service-providers',
           variant: 'secondary',
         },
       ],
@@ -242,10 +244,10 @@ export default function Capabilities() {
               style={{
                 fontSize: 14,
                 background: isPrimary
-                  ? 'linear-gradient(135deg,#6366f1 0%,#4f46e5 100%)'
+                  ? 'linear-gradient(135deg,#319fd4 0%,#2678a6 100%)'
                   : 'rgba(255,255,255,.05)',
                 border: isPrimary ? '1px solid transparent' : '1px solid rgba(255,255,255,.1)',
-                boxShadow: isPrimary ? '0 4px 20px rgba(99,102,241,0.25)' : 'none',
+                boxShadow: isPrimary ? '0 4px 20px rgba(49, 159, 212,0.25)' : 'none',
               }}
             >
               {language === 'ar' ? cta.labelAr : cta.label}
@@ -280,7 +282,7 @@ export default function Capabilities() {
   }
 
   return (
-    <section className="py-20" id="capabilities" style={{ background: '#080c18' }}>
+    <section className="py-20" id="capabilities" style={{ background: 'var(--bg)' }}>
       <div className="container mx-auto px-4">
         <FadeUp>
           <div className="text-center mb-10">
@@ -288,20 +290,20 @@ export default function Capabilities() {
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, #6366f1)'
-                  : 'linear-gradient(to right, transparent, #6366f1)' }}
+                  ? 'linear-gradient(to left, transparent, var(--accent))'
+                  : 'linear-gradient(to right, transparent, var(--accent))' }}
               />
               <span
                 className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: '#818cf8' }}
+                style={{ color: 'var(--accent-hi)' }}
               >
                 {t.eyebrow}
               </span>
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, #6366f1)'
-                  : 'linear-gradient(to left, transparent, #6366f1)' }}
+                  ? 'linear-gradient(to right, transparent, var(--accent))'
+                  : 'linear-gradient(to left, transparent, var(--accent))' }}
               />
             </div>
 
@@ -309,14 +311,14 @@ export default function Capabilities() {
               className="text-white font-bold text-center leading-tight tracking-tight mb-4"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
-                fontFamily: 'var(--font-manrope), var(--font-inter), system-ui, sans-serif',
+                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
                 fontWeight: 800,
               }}
             >
               {t.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #818cf8, #c084fc)',
+                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -349,10 +351,10 @@ export default function Capabilities() {
                     className="w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left"
                     style={{
                       background: isActive
-                        ? 'rgba(99,102,241,0.12)'
+                        ? 'rgba(49, 159, 212,0.12)'
                         : 'rgba(255,255,255,0.03)',
                       border: isActive
-                        ? '1px solid rgba(99,102,241,0.35)'
+                        ? '1px solid rgba(49, 159, 212,0.35)'
                         : '1px solid rgba(255,255,255,0.07)',
                     }}
                   >
@@ -360,11 +362,11 @@ export default function Capabilities() {
                       className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
                       style={{
                         background: isActive
-                          ? 'rgba(99,102,241,0.18)'
+                          ? 'rgba(49, 159, 212,0.18)'
                           : 'rgba(255,255,255,0.05)',
                       }}
                     >
-                      <span style={{ color: isActive ? '#818cf8' : '#94a3b8' }}>
+                      <span style={{ color: isActive ? '#5fb8e8' : '#94a3b8' }}>
                         {capability.icon}
                       </span>
                     </div>
@@ -380,7 +382,7 @@ export default function Capabilities() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      style={{ color: isActive ? '#818cf8' : '#64748b' }}
+                      style={{ color: isActive ? '#5fb8e8' : '#64748b' }}
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -428,100 +430,71 @@ export default function Capabilities() {
             })}
           </FadeUp>
 
-          {/* Desktop Layout - Side by side */}
-          <div className="hidden lg:grid grid-cols-12 gap-8 items-start">
-            <FadeUp delay={0.15} className="col-span-4 space-y-2">
-              {capabilities.map((capability, index) => {
-                const isActive = activeTab === index
-                return (
-                  <button
-                    key={capability.id}
-                    onClick={() => setActiveTab(index)}
-                    className="w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left hover:-translate-y-0.5"
-                    style={{
-                      background: isActive
-                        ? 'rgba(99,102,241,0.12)'
-                        : 'rgba(255,255,255,0.03)',
-                      border: isActive
-                        ? '1px solid rgba(99,102,241,0.35)'
-                        : '1px solid rgba(255,255,255,0.07)',
-                      boxShadow: isActive
-                        ? '0 4px 24px rgba(99,102,241,0.18)'
-                        : 'none',
-                    }}
-                  >
-                    <div
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{
-                        background: isActive
-                          ? 'rgba(99,102,241,0.18)'
-                          : 'rgba(255,255,255,0.05)',
-                      }}
-                    >
-                      <span style={{ color: isActive ? '#818cf8' : '#94a3b8' }}>
-                        {capability.icon}
-                      </span>
+          {/* Desktop Layout - Click through card stack */}
+          <FadeUp delay={0.15} className="hidden lg:block max-w-5xl mx-auto">
+            <CapabilityStack
+              activeIndex={activeTab >= 0 ? activeTab : 0}
+              onSelect={setActiveTab}
+              items={capabilities.map((capability, index) => ({
+                id: capability.id,
+                label: language === 'ar' ? capability.titleAr : capability.title,
+                dotColor: 'var(--accent-hi)',
+                badge: renderBadge(capability),
+                body: (
+                  <div className="grid grid-cols-12 gap-6 h-full">
+                    {/* Copy */}
+                    <div className="col-span-5 flex flex-col h-full min-h-0">
+                      <p
+                        className="text-slate-300 leading-relaxed overflow-y-auto"
+                        style={{ fontSize: 14.5 }}
+                      >
+                        {language === 'ar'
+                          ? capability.descriptionAr
+                          : capability.description}
+                      </p>
+                      <div className="mt-auto">{renderCtas(capability.ctas)}</div>
                     </div>
-                    <span
-                      className="font-medium flex items-center gap-2"
-                      style={{ color: isActive ? '#f1f5f9' : '#cbd5e1' }}
-                    >
-                      {language === 'ar' ? capability.titleAr : capability.title}
-                      {renderBadge(capability)}
-                    </span>
-                  </button>
-                )
-              })}
-            </FadeUp>
 
-            <motion.div
-              key={activeTab}
-              className="col-span-8"
-              initial={{ opacity: 0, x: 16 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
-            >
-              <div
-                className="rounded-2xl overflow-hidden"
-                style={{
-                  background: 'rgba(255,255,255,0.03)',
-                  border: '1px solid rgba(255,255,255,0.07)',
-                  boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
-                }}
-              >
-                {activeCapability.slides ? (
-                  <ImageCarousel
-                    slides={activeCapability.slides}
-                    alt={language === 'ar' ? activeCapability.titleAr : activeCapability.title}
-                    language={language}
-                    isRTL={isRTL}
-                  />
-                ) : (
-                  <div
-                    className="relative aspect-[2/1] overflow-hidden"
-                    style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}
-                  >
-                    <Image
-                      src={activeCapability.image}
-                      alt={language === 'ar' ? activeCapability.titleAr : activeCapability.title}
-                      fill
-                      className="object-contain"
-                      sizes="66vw"
-                      quality={100}
-                      unoptimized
-                      priority={activeTab === 0}
-                    />
+                    {/* Visual */}
+                    <div className="col-span-7 flex items-center min-h-0">
+                      <div
+                        className="w-full rounded-xl overflow-hidden"
+                        style={{
+                          background: 'rgba(255,255,255,0.03)',
+                          border: '1px solid rgba(255,255,255,0.07)',
+                        }}
+                      >
+                        {capability.slides ? (
+                          <ImageCarousel
+                            slides={capability.slides}
+                            alt={language === 'ar' ? capability.titleAr : capability.title}
+                            language={language}
+                            isRTL={isRTL}
+                          />
+                        ) : (
+                          <div
+                            className="relative aspect-[2/1] overflow-hidden"
+                            style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}
+                          >
+                            <Image
+                              src={capability.image}
+                              alt={language === 'ar' ? capability.titleAr : capability.title}
+                              fill
+                              className="object-contain"
+                              sizes="50vw"
+                              quality={100}
+                              unoptimized
+                              priority={index === 0}
+                            />
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                )}
-                <div className="p-6">
-                  <p className="text-slate-300 leading-relaxed">
-                    {language === 'ar' ? activeCapability.descriptionAr : activeCapability.description}
-                  </p>
-                  {renderCtas(activeCapability.ctas)}
-                </div>
-              </div>
-            </motion.div>
-          </div>
+                ),
+              }))}
+            />
+          </FadeUp>
         </div>
       </div>
     </section>

@@ -2,28 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------------------------------------------------------------
+   Design tokens — reconciled to the Accez product design system
+
+   Source of truth: Accez `Design System.docx` (navy #102634, action blue
+   #319FD4, Poppins headings / Inter body). The marketing site keeps a dark
+   premium canvas (product app is light), but shares the brand accent and
+   navy family so site → app reads as one identity. One accent only; semantic
+   colour (green) is reserved for state, never decoration.
+   --------------------------------------------------------------------------- */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  /* Surfaces — dark navy canvas (user-chosen #09131C) */
+  --bg:          #09131C;
+  --bg-alt:      #0C1A24;
+  --surface:     rgba(255, 255, 255, 0.035);
+  --surface-hi:  rgba(255, 255, 255, 0.06);
+  --border:      rgba(255, 255, 255, 0.08);
+  --border-hi:   rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text:        #F2F5F8;
+  --text-muted:  #95A3B2;
+  --text-faint:  #5E6B78;
+
+  /* Brand accent — Accez action blue */
+  --accent:      #319FD4;  /* primary buttons & links */
+  --accent-hi:   #7FCDEF;  /* bright tint for icons/text on dark */
+  --accent-dim:  rgba(49, 159, 212, 0.13);
+  --accent-line: rgba(49, 159, 212, 0.30);
+
+  /* Semantic — state only (Success token from the product system) */
+  --ok:          #2ED08A;
+  --ok-dim:      rgba(46, 208, 138, 0.12);
+
+  /* Spacing scale — one source of truth for page rhythm.
+     --nav-h:    fixed navbar height (matches h-16).
+     --page-top: distance from the top of the page to the first heading.
+                 = navbar height + a comfortable gap, so EVERY page's first
+                 section starts at the identical y offset below the navbar.
+     --section-y: standard vertical padding between sections, used everywhere. */
+  --nav-h:       4rem;
+  --page-top:    7.5rem;   /* 120px: 64px navbar + 56px gap */
+  --section-y:   5rem;     /* 80px */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Shared section rhythm — apply so pages cannot drift.
+   .page-top  → first section of any page (clears the fixed navbar consistently).
+   .section-y → standard section top+bottom padding. */
+.page-top  { padding-top: var(--page-top); }
+.section-y { padding-top: var(--section-y); padding-bottom: var(--section-y); }
+@media (min-width: 1024px) {
+  :root { --page-top: 8.5rem; } /* 136px on desktop for a bit more breathing room */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background: var(--bg);
 }
 
 /* Prevent absolutely positioned decorations from causing horizontal scroll */
@@ -42,6 +76,43 @@ section {
     text-wrap: balance;
   }
 }
+
+/* Rendered blog markdown, styled for the dark theme (no typography plugin). */
+.blog-content { color: var(--text-muted); font-size: 17px; line-height: 1.75; }
+.blog-content > * + * { margin-top: 1.15em; }
+.blog-content h2 {
+  color: #fff; font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 700; font-size: 1.6em; line-height: 1.25; margin-top: 1.8em; margin-bottom: 0.5em;
+}
+.blog-content h3 {
+  color: #fff; font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 600; font-size: 1.3em; line-height: 1.3; margin-top: 1.6em; margin-bottom: 0.4em;
+}
+.blog-content h4 { color: #fff; font-weight: 600; font-size: 1.1em; margin-top: 1.4em; }
+.blog-content p, .blog-content li { color: var(--text-muted); }
+.blog-content strong { color: var(--text); font-weight: 600; }
+.blog-content a { color: var(--accent-hi); text-decoration: underline; text-underline-offset: 2px; }
+.blog-content a:hover { color: #fff; }
+.blog-content ul, .blog-content ol { padding-inline-start: 1.4em; }
+.blog-content ul { list-style: disc; }
+.blog-content ol { list-style: decimal; }
+.blog-content li { margin-top: 0.4em; }
+.blog-content li::marker { color: var(--accent); }
+.blog-content blockquote {
+  border-inline-start: 3px solid var(--accent-line);
+  padding-inline-start: 1em; color: var(--text); font-style: italic;
+}
+.blog-content code {
+  background: var(--surface-hi); border: 1px solid var(--border);
+  padding: 0.1em 0.4em; border-radius: 6px; font-size: 0.9em; color: var(--accent-hi);
+}
+.blog-content pre {
+  background: var(--bg-alt); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1em 1.2em; overflow-x: auto;
+}
+.blog-content pre code { background: none; border: none; padding: 0; color: var(--text-muted); }
+.blog-content img { border-radius: 12px; margin-top: 1.5em; margin-bottom: 1.5em; }
+.blog-content hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 
 /* Font families */
 .font-sans {
@@ -96,22 +167,27 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar — was a light-theme scrollbar sitting on a dark site */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 5px;
+  border: 2px solid var(--bg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.14) var(--bg);
 }
 
 /* Respect user motion preferences */

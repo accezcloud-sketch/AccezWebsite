@@ -72,65 +72,69 @@ const PARTNERS = [
 
 const CONTENT = {
   en: {
-    headlineLead: 'Smarter property management for',
-    typewriter: ['Property Managers', 'Vacation Rental Hosts', 'HOA Teams'],
+    headlineLead: 'One platform to run',
+    typewriter: ['residential communities', 'vacation rentals', 'hotels & serviced apartments', 'commercial properties', 'owner portfolios'],
     subtitle:
-      'One unified platform for 400+ channel integrations, automated rent collection, maintenance scheduling, and a built-in service marketplace that adds 15–30% revenue on day one.',
-    ctaPrimary: 'Get started free',
-    ctaSecondary: 'Watch demo',
-    partnersIntro: 'Syncs with 400+ platforms including',
+      'Accez runs the whole operation. Reservations and rent, maintenance and housekeeping, owners and payouts, sales, and a built-in service marketplace. Arabic and English, built for property operators across Saudi Arabia.',
+    ctaPrimary: 'Book a demo',
+    ctaSecondary: 'Start free',
+    partnersIntro: 'Syncs with 400+ booking channels including',
     mock: {
       url: 'portal.accez.cloud',
       stats: [
-        { label: 'Active listings', value: '47', delta: '+3', color: '#6366f1' },
-        { label: 'Monthly revenue', value: '$24.8k', delta: '+18%', color: '#06b6d4' },
-        { label: 'Occupancy rate', value: '91%', delta: '+5%', color: '#10b981' },
+        { label: 'Active listings',  value: '47',     delta: '+3'   },
+        { label: 'Monthly revenue',  value: '$24.8k', delta: '+18%' },
+        { label: 'Occupancy rate',   value: '91%',    delta: '+5%'  },
       ],
       deltaSuffix: 'this mo.',
-      chartTitle: 'Revenue · last 7 days',
-      chartDelta: '↑ 18.4%',
+      chartTitle: 'Revenue',
+      chartRange: 'Last 7 days',
+      chartDelta: '18.4%',
       dayLabels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
       bookingsTitle: 'Recent bookings',
       bookings: [
-        { name: 'Sarah M.', channel: 'Airbnb', nights: '3 nights', status: 'check-in', statusColor: '#6366f1' },
-        { name: 'James K.', channel: 'Booking.com', nights: '5 nights', status: 'confirmed', statusColor: '#10b981' },
-        { name: 'Layla R.', channel: 'VRBO', nights: '2 nights', status: 'pending', statusColor: '#f59e0b' },
+        { name: 'Sarah M.', channel: 'Airbnb',      nights: '3 nights', status: 'Check in',  state: 'active'    },
+        { name: 'James K.', channel: 'Booking.com', nights: '5 nights', status: 'Confirmed', state: 'confirmed' },
+        { name: 'Layla R.', channel: 'VRBO',        nights: '2 nights', status: 'Pending',   state: 'pending'   },
       ],
-      syncStatus: 'All 400+ channels synced · Last updated 2 min ago',
-      notif: '🎉 New booking — Airbnb · $340',
-      pillValue: '+$3,240 this week',
-      pillLabel: 'Marketplace commissions',
+      syncStatus: 'All 400+ channels synced',
+      syncMeta: 'Updated 2 min ago',
+      notif: 'New booking · Airbnb · $340',
+      pillValue: '+$3,240',
+      pillLabel: 'Marketplace commissions this week',
     },
   },
   ar: {
-    headlineLead: 'إدارة عقارية أذكى لـ',
-    typewriter: ['مدراء العقارات', 'مضيفي الإيجارات السياحية', 'فرق اتحاد الملاك'],
+    headlineLead: 'منصة واحدة لإدارة',
+    typewriter: ['المجمعات السكنية', 'الإيجارات السياحية', 'الفنادق والشقق المخدومة', 'العقارات التجارية', 'محافظ الملاك'],
     subtitle:
-      'منصة موحدة تضم أكثر من 400 قناة متكاملة، تحصيل آلي للإيجارات، جدولة الصيانة، وسوق خدمات مدمج يضيف 15–30% من الإيرادات من اليوم الأول.',
-    ctaPrimary: 'ابدأ مجانًا',
-    ctaSecondary: 'شاهد العرض التوضيحي',
-    partnersIntro: 'متكاملة مع أكثر من 400 منصة بما في ذلك',
+      'تدير أكسيز العملية بالكامل. الحجوزات والإيجارات، الصيانة والتدبير الفندقي، الملاك والمدفوعات، المبيعات، وسوق خدمات مدمج. بالعربية والإنجليزية، مبنية لمشغّلي العقارات في السعودية.',
+    ctaPrimary: 'اطلب عرضًا توضيحيًا',
+    ctaSecondary: 'ابدأ مجانًا',
+    partnersIntro: 'متكاملة مع أكثر من 400 قناة حجز بما في ذلك',
     mock: {
       url: 'portal.accez.cloud',
       stats: [
-        { label: 'القوائم النشطة', value: '47', delta: '+3', color: '#6366f1' },
-        { label: 'الإيرادات الشهرية', value: '24.8k $', delta: '+18%', color: '#06b6d4' },
-        { label: 'معدل الإشغال', value: '91%', delta: '+5%', color: '#10b981' },
+        { label: 'القوائم النشطة',   value: '47',     delta: '+3'   },
+        { label: 'الإيرادات الشهرية', value: '24.8k $', delta: '+18%' },
+        { label: 'معدل الإشغال',      value: '91%',    delta: '+5%'  },
       ],
       deltaSuffix: 'هذا الشهر',
-      chartTitle: 'الإيرادات · آخر 7 أيام',
-      chartDelta: '↑ 18.4%',
+      chartTitle: 'الإيرادات',
+      chartRange: 'آخر 7 أيام',
+      chartDelta: '18.4%',
       dayLabels: ['ح', 'ن', 'ث', 'ر', 'خ', 'ج', 'س'],
       bookingsTitle: 'الحجوزات الأخيرة',
       bookings: [
-        { name: 'سارة م.', channel: 'Airbnb', nights: '3 ليالٍ', status: 'تسجيل دخول', statusColor: '#6366f1' },
-        { name: 'جيمس ك.', channel: 'Booking.com', nights: '5 ليالٍ', status: 'مؤكد', statusColor: '#10b981' },
-        { name: 'ليلى ر.', channel: 'VRBO', nights: 'ليلتان', status: 'قيد الانتظار', statusColor: '#f59e0b' },
+        { name: 'سارة م.',  channel: 'Airbnb',      nights: '3 ليالٍ', status: 'تسجيل دخول', state: 'active'    },
+        { name: 'جيمس ك.', channel: 'Booking.com', nights: '5 ليالٍ', status: 'مؤكد',       state: 'confirmed' },
+        { name: 'ليلى ر.',  channel: 'VRBO',        nights: 'ليلتان',  status: 'قيد الانتظار', state: 'pending'  },
       ],
-      syncStatus: 'تمت مزامنة جميع القنوات الـ 400+ · آخر تحديث منذ دقيقتين',
-      notif: '🎉 حجز جديد — Airbnb · 340 $',
-      pillValue: '+3,240 $ هذا الأسبوع',
-      pillLabel: 'عمولات السوق',
+      syncStatus: 'تمت مزامنة جميع القنوات الـ 400+',
+      syncMeta: 'آخر تحديث منذ دقيقتين',
+      notif: 'حجز جديد · Airbnb · 340 $',
+      pillValue: '+3,240 $',
+      pillLabel: 'عمولات السوق هذا الأسبوع',
     },
   },
 } as const
@@ -222,30 +226,35 @@ export default function Hero() {
           animation: grain 8s steps(1) infinite;
         }
 
-        .hero-display { font-family: var(--font-manrope), var(--font-inter), system-ui, sans-serif; }
+        .hero-display { font-family: var(--font-heading), var(--font-inter), system-ui, sans-serif; }
         .hero-body    { font-family: var(--font-inter), system-ui, sans-serif; }
         [dir="rtl"] .hero-display,
         [dir="rtl"] .hero-body { font-family: var(--font-cairo), system-ui, sans-serif; }
 
+        /* Rotating headline word. Kept inside one hue family so every phrase
+           it cycles through reads the same weight, instead of jumping from
+           cyan to magenta mid-sentence. */
         .grad-text {
-          background: linear-gradient(135deg, #a5f3fc 0%, #818cf8 45%, #f0abfc 100%);
-          background-size: 200% 200%;
-          background-position: 50% 50%;
+          background: linear-gradient(135deg, #a9ddf3 0%, #5fb8e8 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
         }
+        /* Rotating headline line: allowed to wrap (was white-space:pre, which
+           forced one line and let long phrases like "hotels & serviced
+           apartments" overflow the column and slide under the mockup). A fixed
+           min-height reserves space for the longest phrase (2 lines) so the
+           block below never jumps as the word swaps. */
         .tw-line {
-          display: inline-block;
-          min-height: 1.15em;
-          white-space: pre;
-          vertical-align: top;
-          word-break: break-word;
+          display: block;
+          min-height: 2.3em;
+          white-space: normal;
           overflow-wrap: break-word;
+          word-break: normal;
         }
 
         .btn-glow:hover {
-          box-shadow: 0 0 0 3px rgba(99,102,241,.3), 0 8px 32px rgba(99,102,241,.4);
+          box-shadow: 0 0 0 3px rgba(49, 159, 212,.3), 0 8px 32px rgba(49, 159, 212,.4);
         }
 
         .card-tilt { transition: transform .4s cubic-bezier(.23,1,.32,1), box-shadow .4s; }
@@ -266,7 +275,7 @@ export default function Hero() {
           display: inline-block;
           width: 4px;
           height: .85em;
-          background: #a5b4fc;
+          background: #7fcdef;
           border-radius: 2px;
           margin-inline-start: 6px;
           vertical-align: middle;
@@ -293,62 +302,30 @@ export default function Hero() {
 
       <section
         className="relative min-h-screen overflow-hidden w-full"
-        style={{ background: '#080c18' }}
+        style={{ background: 'var(--bg)' }}
         dir={isRTL ? 'rtl' : 'ltr'}
       >
-        {/* Orbs — clamped so they don't cause horizontal scroll on phones */}
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div
-            className="orb-1 absolute rounded-full blur-[80px] sm:blur-[120px]"
-            style={{
-              width: 'min(700px, 120vw)',
-              height: 'min(700px, 120vw)',
-              top: '-15%',
-              left: '-20%',
-              background: 'radial-gradient(circle, #6366f1 0%, #4f46e5 40%, transparent 70%)',
-            }}
-          />
-          <div
-            className="orb-2 absolute rounded-full blur-[70px] sm:blur-[100px]"
-            style={{
-              width: 'min(600px, 100vw)',
-              height: 'min(600px, 100vw)',
-              top: '20%',
-              right: '-20%',
-              background: 'radial-gradient(circle, #06b6d4 0%, #0891b2 40%, transparent 70%)',
-            }}
-          />
-          <div
-            className="orb-3 absolute rounded-full blur-[80px] sm:blur-[140px]"
-            style={{
-              width: 'min(500px, 90vw)',
-              height: 'min(500px, 90vw)',
-              bottom: '-10%',
-              left: '30%',
-              background: 'radial-gradient(circle, #d946ef 0%, #a21caf 40%, transparent 70%)',
-            }}
-          />
-        </div>
-
-        <div className="grain-overlay absolute inset-0 pointer-events-none opacity-[0.04]" aria-hidden="true" />
-
+        {/* Signature top wash, #18384A fading into the #09131C canvas.
+            No dot grid, no grain (removed at the user's request). */}
         <div
-          className="absolute inset-0 pointer-events-none opacity-[0.07]"
+          className="absolute inset-x-0 top-0 pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
-            backgroundSize: '32px 32px',
+            height: '75%',
+            background:
+              'radial-gradient(125% 75% at 50% 0%, #18384A 0%, rgba(24,56,74,0.32) 30%, transparent 62%)',
           }}
           aria-hidden="true"
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-24 pb-16 lg:pt-36 lg:pb-28">
+        <div className="page-top relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pb-16 lg:pb-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-            {/* LEFT: Text column */}
-            <div className="hero-body flex flex-col items-center text-center lg:items-start lg:text-left w-full">
+            {/* LEFT: Text column. min-w-0 keeps it from overflowing the grid
+                column when the rotating word is long. */}
+            <div className="hero-body flex flex-col items-center text-center lg:items-start lg:text-left w-full min-w-0">
               <h1
-                className="hero-display anim-fade-up-2 text-white leading-[1.08] tracking-tight mb-5 w-full"
-                style={{ fontSize: 'clamp(30px, 8vw, 70px)', fontWeight: 800 }}
+                className="hero-display anim-fade-up-2 text-white leading-[1.08] tracking-tight mb-5 w-full min-w-0"
+                style={{ fontSize: 'clamp(28px, 5.2vw, 52px)', fontWeight: 800 }}
               >
                 {t.headlineLead}
                 <br />
@@ -367,10 +344,10 @@ export default function Hero() {
 
               <div className="anim-fade-up-4 flex flex-col sm:flex-row flex-wrap gap-3 mb-10 w-full sm:w-auto items-stretch sm:items-center lg:items-start">
                 <a
-                  href="https://portal.accez.cloud/sign-up"
+                  href="/#contact"
                   className="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    background: 'linear-gradient(135deg,#6366f1 0%,#4f46e5 100%)',
+                    background: 'linear-gradient(135deg,#319fd4 0%,#2678a6 100%)',
                     fontSize: 15,
                   }}
                 >
@@ -383,9 +360,7 @@ export default function Hero() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.youtube.com/watch?v=wBE2eZ8qnzc"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="https://portal.accez.cloud/sign-up"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-slate-300 transition-all duration-200 hover:text-white hover:-translate-y-0.5"
                   style={{
                     background: 'rgba(255,255,255,.05)',
@@ -393,13 +368,13 @@ export default function Hero() {
                     fontSize: 15,
                   }}
                 >
+                  {t.ctaSecondary}
                   <svg
                     width="16" height="16" viewBox="0 0 16 16" fill="none"
                     style={{ transform: isRTL ? 'scaleX(-1)' : undefined }}
                   >
-                    <polygon points="5,3 13,8 5,13" fill="currentColor" />
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  {t.ctaSecondary}
                 </a>
               </div>
 
@@ -409,7 +384,10 @@ export default function Hero() {
                 </p>
                 <div
                   className="overflow-hidden"
-                  style={{ maskImage: 'linear-gradient(90deg,transparent,black 10%,black 90%,transparent)' }}
+                  style={{
+                    maskImage: 'linear-gradient(90deg, transparent 0%, black 12%, black 88%, transparent 100%)',
+                    WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 12%, black 88%, transparent 100%)',
+                  }}
                 >
                   <div className="marquee-track">
                     {[...PARTNERS, ...PARTNERS].map((name, i) => (
@@ -430,9 +408,9 @@ export default function Hero() {
               <div className="relative w-full max-w-[420px] lg:max-w-md">
                 {/* Glow */}
                 <div
-                  className="absolute inset-0 rounded-3xl blur-[60px] sm:blur-[80px] opacity-25 sm:opacity-30 pointer-events-none"
+                  className="absolute inset-0 rounded-3xl blur-[60px] sm:blur-[80px] opacity-30 pointer-events-none"
                   style={{
-                    background: 'radial-gradient(circle at 50% 50%, #6366f1, #06b6d4, transparent 70%)',
+                    background: 'radial-gradient(circle at 50% 40%, rgba(49, 159, 212,0.7), transparent 68%)',
                   }}
                   aria-hidden="true"
                 />
@@ -449,39 +427,39 @@ export default function Hero() {
                 >
                   {/* Header bar */}
                   <div
-                    className="shimmer-bar px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between"
+                    className="px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between"
                     style={{
-                      background: 'linear-gradient(90deg,#1e1b4b,#1e3a5f,#0f172a)',
-                      borderBottom: '1px solid rgba(255,255,255,.07)',
+                      background: 'rgba(255,255,255,0.025)',
+                      borderBottom: '1px solid rgba(255,255,255,.06)',
                     }}
                   >
                     <div className="flex gap-1.5">
-                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80" />
-                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80" />
-                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80" />
+                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(255,255,255,0.16)' }} />
+                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(255,255,255,0.12)' }} />
+                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(255,255,255,0.09)' }} />
                     </div>
-                    <span className="text-[10px] sm:text-[11px] text-slate-500 font-mono tracking-wider">
+                    <span className="text-[10px] sm:text-[11px] font-medium tracking-wide" style={{ color: 'var(--text-faint)' }}>
                       {t.mock.url}
                     </span>
                     <div className="w-10 sm:w-12" />
                   </div>
 
-                  <div className="p-3 sm:p-5 space-y-3 sm:space-y-4" dir={isRTL ? 'rtl' : 'ltr'}>
+                  <div className="p-3 sm:p-5 space-y-3" dir={isRTL ? 'rtl' : 'ltr'}>
                     {/* Stat tiles */}
-                    <div className="grid grid-cols-3 gap-1.5 sm:gap-3">
-                      {t.mock.stats.map(({ label, value, delta, color }) => (
+                    <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5">
+                      {t.mock.stats.map(({ label, value, delta }) => (
                         <div
                           key={label}
                           className="rounded-lg sm:rounded-xl p-2 sm:p-3"
                           style={{
-                            background: 'rgba(255,255,255,.04)',
-                            border: '1px solid rgba(255,255,255,.06)',
+                            background: 'rgba(255,255,255,.03)',
+                            border: '1px solid rgba(255,255,255,.055)',
                           }}
                         >
-                          <p className="text-[9px] sm:text-[10px] text-slate-500 mb-0.5 sm:mb-1 leading-tight">{label}</p>
-                          <p className="text-white font-bold text-sm sm:text-lg leading-none mb-0.5 sm:mb-1">{value}</p>
-                          <p className="text-[9px] sm:text-[10px] font-semibold" style={{ color }}>
-                            {delta} {t.mock.deltaSuffix}
+                          <p className="text-[9px] sm:text-[10px] mb-1 leading-tight truncate" style={{ color: 'var(--text-faint)' }}>{label}</p>
+                          <p className="text-white font-semibold text-sm sm:text-lg leading-none mb-1 tracking-tight">{value}</p>
+                          <p className="text-[9px] sm:text-[10px] font-medium" style={{ color: 'var(--ok)' }}>
+                            {delta} <span style={{ color: 'var(--text-faint)' }}>{t.mock.deltaSuffix}</span>
                           </p>
                         </div>
                       ))}
@@ -489,155 +467,181 @@ export default function Hero() {
 
                     {/* Bar chart */}
                     <div
-                      className="rounded-lg sm:rounded-xl p-2.5 sm:p-3"
+                      className="rounded-lg sm:rounded-xl p-2.5 sm:p-3.5"
                       style={{
-                        background: 'rgba(255,255,255,.04)',
-                        border: '1px solid rgba(255,255,255,.06)',
+                        background: 'rgba(255,255,255,.03)',
+                        border: '1px solid rgba(255,255,255,.055)',
                       }}
                     >
-                      <div className="flex items-center justify-between mb-2 sm:mb-3">
-                        <span className="text-[10px] sm:text-[11px] text-slate-400 font-medium">{t.mock.chartTitle}</span>
-                        <span className="text-[10px] sm:text-[11px] text-green-400 font-semibold">{t.mock.chartDelta}</span>
+                      <div className="flex items-start justify-between mb-3">
+                        <div>
+                          <p className="text-[11px] sm:text-xs text-white font-medium leading-none mb-1">{t.mock.chartTitle}</p>
+                          <p className="text-[9px] sm:text-[10px]" style={{ color: 'var(--text-faint)' }}>{t.mock.chartRange}</p>
+                        </div>
+                        <span
+                          className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[9px] sm:text-[10px] font-medium"
+                          style={{ background: 'var(--ok-dim)', color: 'var(--ok)' }}
+                        >
+                          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
+                            <path d="M4 6.5v-5M1.8 3.7 4 1.5l2.2 2.2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                          {t.mock.chartDelta}
+                        </span>
                       </div>
                       <div className="flex items-end gap-1 sm:gap-1.5 h-10 sm:h-14">
                         {[55, 72, 48, 90, 65, 88, 100].map((h, i) => (
                           <div key={i} className="flex-1">
                             <div
-                              className="w-full rounded-sm"
+                              className="w-full rounded-[3px]"
                               style={{
                                 height: `${h * 0.38}px`,
-                                background: i === 6
-                                  ? 'linear-gradient(to top, #6366f1, #818cf8)'
-                                  : 'rgba(99,102,241,.25)',
+                                background: i === 6 ? 'var(--accent)' : 'rgba(49, 159, 212,.22)',
                               }}
                             />
                           </div>
                         ))}
                       </div>
-                      <div className="flex justify-between mt-1">
+                      <div className="flex justify-between mt-1.5">
                         {t.mock.dayLabels.map((d, i) => (
-                          <span key={i} className="flex-1 text-center text-[8px] sm:text-[9px] text-slate-600">{d}</span>
+                          <span key={i} className="flex-1 text-center text-[8px] sm:text-[9px]" style={{ color: 'var(--text-faint)' }}>{d}</span>
                         ))}
                       </div>
                     </div>
 
                     {/* Recent bookings */}
                     <div
-                      className="rounded-lg sm:rounded-xl p-2.5 sm:p-3"
+                      className="rounded-lg sm:rounded-xl p-2.5 sm:p-3.5"
                       style={{
-                        background: 'rgba(255,255,255,.04)',
-                        border: '1px solid rgba(255,255,255,.06)',
+                        background: 'rgba(255,255,255,.03)',
+                        border: '1px solid rgba(255,255,255,.055)',
                       }}
                     >
-                      <p className="text-[10px] sm:text-[11px] text-slate-400 font-medium mb-2 sm:mb-3">{t.mock.bookingsTitle}</p>
+                      <p className="text-[11px] sm:text-xs text-white font-medium mb-2.5 sm:mb-3">{t.mock.bookingsTitle}</p>
                       <div className="space-y-2 sm:space-y-2.5">
-                        {t.mock.bookings.map(({ name, channel, nights, status, statusColor }) => (
-                          <div key={name} className="flex items-center gap-2">
-                            <div
-                              className="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center text-white text-[8px] sm:text-[9px] font-bold flex-shrink-0"
-                              style={{
-                                background: statusColor + '33',
-                                border: `1px solid ${statusColor}55`,
-                              }}
-                            >
-                              {name[0]}
+                        {t.mock.bookings.map(({ name, channel, nights, status, state }) => {
+                          const dot =
+                            state === 'confirmed' ? 'var(--ok)'
+                            : state === 'active'  ? 'var(--accent-hi)'
+                            : 'rgba(255,255,255,0.28)'
+                          return (
+                            <div key={name} className="flex items-center gap-2.5">
+                              <div
+                                className="w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center text-[9px] sm:text-[10px] font-semibold flex-shrink-0"
+                                style={{
+                                  background: 'rgba(255,255,255,0.06)',
+                                  color: 'var(--text-muted)',
+                                }}
+                              >
+                                {name[0]}
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <p className="text-white text-[10px] sm:text-[11px] font-medium truncate leading-tight">{name}</p>
+                                <p className="text-[9px] sm:text-[10px] truncate" style={{ color: 'var(--text-faint)' }}>{channel} · {nights}</p>
+                              </div>
+                              <span
+                                className="inline-flex items-center gap-1.5 text-[9px] sm:text-[10px] font-medium flex-shrink-0"
+                                style={{ color: 'var(--text-muted)' }}
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full" style={{ background: dot }} />
+                                {status}
+                              </span>
                             </div>
-                            <div className="flex-1 min-w-0">
-                              <p className="text-white text-[10px] sm:text-[11px] font-medium truncate">{name}</p>
-                              <p className="text-slate-500 text-[9px] sm:text-[10px] truncate">{channel} · {nights}</p>
-                            </div>
-                            <span
-                              className="px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[9px] font-semibold capitalize flex-shrink-0"
-                              style={{
-                                background: statusColor + '22',
-                                color: statusColor,
-                              }}
-                            >
-                              {status}
-                            </span>
-                          </div>
-                        ))}
+                          )
+                        })}
                       </div>
                     </div>
 
                     {/* Sync status */}
                     <div
-                      className="flex items-center gap-2 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg"
+                      className="flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-lg"
                       style={{
-                        background: 'rgba(16,185,129,.08)',
-                        border: '1px solid rgba(16,185,129,.2)',
+                        background: 'rgba(255,255,255,.03)',
+                        border: '1px solid rgba(255,255,255,.055)',
                       }}
                     >
-                      <div className="relative w-2 h-2 flex-shrink-0">
-                        <div className="absolute inset-0 rounded-full bg-green-400" />
-                        <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60" />
+                      <div className="relative w-1.5 h-1.5 flex-shrink-0">
+                        <div className="absolute inset-0 rounded-full" style={{ background: 'var(--ok)' }} />
+                        <div className="absolute inset-0 rounded-full animate-ping opacity-60" style={{ background: 'var(--ok)' }} />
                       </div>
-                      <span className="text-[10px] sm:text-[11px] text-green-400 font-medium truncate">{t.mock.syncStatus}</span>
+                      <span className="text-[10px] sm:text-[11px] font-medium truncate" style={{ color: 'var(--text-muted)' }}>
+                        {t.mock.syncStatus}
+                      </span>
+                      <span className="text-[9px] sm:text-[10px] ms-auto flex-shrink-0" style={{ color: 'var(--text-faint)' }}>
+                        {t.mock.syncMeta}
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                {/* Floating pills — DESKTOP ONLY (absolutely positioned, can clip on mobile) */}
+                {/* Floating pills, DESKTOP ONLY (absolutely positioned, can clip on mobile) */}
                 <div
-                  className={`hidden lg:flex absolute -top-4 items-center gap-2.5 px-3.5 py-2 rounded-full text-xs font-semibold text-white ${
+                  className={`hidden lg:flex absolute -top-4 items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium ${
                     isRTL ? '-left-6' : '-right-6'
                   }`}
                   style={{
-                    background: 'linear-gradient(135deg,#6366f1,#4f46e5)',
-                    boxShadow: '0 8px 24px rgba(99,102,241,.5)',
-                    border: '1px solid rgba(255,255,255,.15)',
+                    background: 'rgba(16,18,28,.92)',
+                    border: '1px solid var(--accent-line)',
+                    boxShadow: '0 10px 30px rgba(0,0,0,.45)',
+                    backdropFilter: 'blur(12px)',
+                    color: 'var(--text)',
                     animation: 'fade-up .7s .8s both ease-out',
                   }}
                 >
+                  <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--accent-hi)' }} />
                   {t.mock.notif}
                 </div>
 
                 <div
-                  className={`hidden lg:flex absolute -bottom-5 items-center gap-2.5 px-3.5 py-2.5 rounded-2xl ${
+                  className={`hidden lg:flex absolute -bottom-5 items-center gap-3 px-3.5 py-2.5 rounded-xl ${
                     isRTL ? '-right-6' : '-left-6'
                   }`}
                   style={{
-                    background: 'rgba(15,23,42,.95)',
+                    background: 'rgba(16,18,28,.92)',
                     border: '1px solid rgba(255,255,255,.1)',
-                    boxShadow: '0 12px 32px rgba(0,0,0,.4)',
+                    boxShadow: '0 12px 32px rgba(0,0,0,.45)',
                     backdropFilter: 'blur(12px)',
                     animation: 'fade-up .7s .95s both ease-out',
                   }}
                 >
                   <div
                     className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(16,185,129,.15)' }}
+                    style={{ background: 'var(--accent-dim)' }}
                   >
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path d="M2 10l3-3 2.5 2.5L11 4" stroke="#10b981" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M2 10l3-3 2.5 2.5L11 4" stroke="var(--accent-hi)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white text-xs font-semibold">{t.mock.pillValue}</p>
-                    <p className="text-slate-500 text-[10px]">{t.mock.pillLabel}</p>
+                    <p className="text-white text-sm font-semibold leading-none mb-1 tracking-tight">{t.mock.pillValue}</p>
+                    <p className="text-[10px]" style={{ color: 'var(--text-faint)' }}>{t.mock.pillLabel}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Inline pill strip — MOBILE/TABLET ONLY (replaces clipping absolute pills) */}
+              {/* Inline pill strip, MOBILE/TABLET ONLY (replaces clipping absolute pills) */}
               <div className="flex lg:hidden gap-2 mt-4 w-full max-w-[420px]">
                 <div
-                  className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-white text-center"
-                  style={{ background: 'linear-gradient(135deg,#6366f1,#4f46e5)' }}
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl text-xs font-medium text-center"
+                  style={{
+                    background: 'rgba(255,255,255,.04)',
+                    border: '1px solid var(--accent-line)',
+                    color: 'var(--text)',
+                  }}
                 >
+                  <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: 'var(--accent-hi)' }} />
                   {t.mock.notif}
                 </div>
                 <div
                   className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl"
                   style={{
-                    background: 'rgba(15,23,42,.95)',
+                    background: 'rgba(255,255,255,.04)',
                     border: '1px solid rgba(255,255,255,.1)',
                   }}
                 >
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 8l2.5-2.5 2 2L10 3" stroke="#10b981" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M2 8l2.5-2.5 2 2L10 3" stroke="var(--accent-hi)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  <span className="text-green-400 font-semibold text-xs">{t.mock.pillValue}</span>
+                  <span className="font-semibold text-xs" style={{ color: 'var(--text)' }}>{t.mock.pillValue}</span>
                 </div>
               </div>
             </div>
@@ -646,7 +650,7 @@ export default function Hero() {
 
         <div
           className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-          style={{ background: 'linear-gradient(to bottom, transparent, #080c18)' }}
+          style={{ background: 'linear-gradient(to bottom, transparent, var(--bg))' }}
           aria-hidden="true"
         />
       </section>

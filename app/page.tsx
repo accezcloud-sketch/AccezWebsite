@@ -1,8 +1,10 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import Features from '@/components/Features'
+import Ecosystem from '@/components/Ecosystem'
+import ProductScope from '@/components/ProductScope'
 import Capabilities from '@/components/Capabilities'
 import ServiceProviders from '@/components/ServiceProviders'
+import Trust from '@/components/Trust'
 import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
@@ -16,7 +18,7 @@ const jsonLd = {
   alternateName: 'Accez Cloud',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
-  description: 'Accez is the smart property management platform with 400+ channel integrations, automated rent collection, maintenance scheduling, and marketplace services. Service providers can create a provider account to publish services and receive booking requests from properties.',
+  description: 'Accez is the all-in-one property operations platform for Saudi Arabia, reservations and rent, maintenance and housekeeping, owner management and payouts, sales, HOA/communities, hotels and serviced apartments, and a built-in service marketplace, in Arabic and English.',
   url: 'https://accez.cloud',
   provider: {
     '@type': 'Organization',
@@ -25,17 +27,19 @@ const jsonLd = {
   },
   offers: {
     '@type': 'AggregateOffer',
-    priceCurrency: 'USD',
+    priceCurrency: 'SAR',
     availability: 'https://schema.org/InStock',
   },
   featureList: [
-    '400+ Channel Integrations',
-    'Automated Rent Collection',
-    'Maintenance Scheduling',
-    'Marketplace Services',
-    'Property Analytics',
-    'Service Provider Accounts',
-    'Services Booking Marketplace',
+    'Reservations & 400+ Channel Sync',
+    'Automated Rent & Payments',
+    'Owner Management & Payouts',
+    'Sales & Developer Projects',
+    'HOA & Community Management',
+    'Hotels & Serviced Apartments',
+    'Maintenance & Housekeeping',
+    'Service Marketplace',
+    'Reports & Analytics',
   ],
 }
 
@@ -49,9 +53,11 @@ export default function Home() {
       <main className="min-h-screen">
         <Header />
         <Hero />
-        <Features />
+        <Ecosystem />
+        <ProductScope />
         <Capabilities />
         <ServiceProviders />
+        <Trust />
         <Pricing />
         <FAQ />
         <Contact />

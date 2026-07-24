@@ -18,7 +18,7 @@ tagsAr: ["إدارة العقارات", "السمعة عبر الإنترنت", 
 
 Every property manager knows the sinking feeling. You’ve poured your heart and soul into managing a property, ensuring tenant satisfaction, and maintaining impeccable standards. Then, it happens: a one-star review appears, detailing a grievance that feels unfair or, worse, completely unfounded. It’s a moment that can send a shiver down your spine, threatening to tarnish months of hard work.
 
-The digital age has amplified the impact of customer feedback. A single negative comment, if left unaddressed or handled poorly, can snowball into a significant dent in your online reputation. Potential tenants and owners, armed with search engines and review sites, often make decisions based on these digital testimonials. For property managers in a competitive market like Saudi Arabia, where trust and reliability are paramount, managing online sentiment is no longer optional – it's essential.
+The digital age has amplified the impact of customer feedback. A single negative comment, if left unaddressed or handled poorly, can snowball into a significant dent in your online reputation. Potential tenants and owners, armed with search engines and review sites, often make decisions based on these digital testimonials. For property managers in a competitive market like Saudi Arabia, where trust and reliability are paramount, managing online sentiment is no longer optional, it's essential.
 
 ## The Anatomy of a Bad Review
 

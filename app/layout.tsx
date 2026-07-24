@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Cairo, Manrope } from 'next/font/google'
+import { Inter, Cairo, Poppins } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import { Analytics } from '@/components/Analytics'
@@ -8,7 +8,9 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
-const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', weight: ['400', '500', '600', '700', '800'] })
+// Poppins is the Accez product heading face (per Design System.docx). Mapped
+// to the existing --font-heading variable so every heading picks it up.
+const poppins = Poppins({ subsets: ['latin'], variable: '--font-heading', weight: ['400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
   title: {
@@ -77,7 +79,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={`${inter.variable} ${cairo.variable} ${manrope.variable} font-sans`}>
+      <body className={`${inter.variable} ${cairo.variable} ${poppins.variable} font-sans`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

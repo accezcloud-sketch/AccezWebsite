@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'Privacy Policy for Accez.cloud — how Cloud Valley LLC collects, uses, shares, and protects information from property managers and tenants who use the Accez platform.',
+    'Privacy Policy for Accez.cloud, how Cloud Valley LLC collects, uses, shares, and protects information from property managers and tenants who use the Accez platform.',
   alternates: {
     canonical: '/privacy',
   },
@@ -121,20 +121,20 @@ export default function PrivacyPage() {
                   <p>We collect the following types of information:</p>
                   <ul className="list-disc pl-6 mt-4 space-y-2">
                     <li>
-                      <strong>Account info</strong> — your name, email, phone number, and company
+                      <strong>Account info</strong>, your name, email, phone number, and company
                       details when you sign up.
                     </li>
                     <li>
-                      <strong>Property and booking data</strong> — listings, pricing, calendars,
+                      <strong>Property and booking data</strong>, listings, pricing, calendars,
                       and guest information you upload or that we sync from channels like Airbnb,
                       Booking.com, Vrbo, and Expedia.
                     </li>
                     <li>
-                      <strong>Payment info</strong> — handled by our payment provider. We
+                      <strong>Payment info</strong>, handled by our payment provider. We
                       don&apos;t store full card numbers ourselves.
                     </li>
                     <li>
-                      <strong>Usage data</strong> — IP address, browser, pages visited, and
+                      <strong>Usage data</strong>, IP address, browser, pages visited, and
                       similar information collected through cookies and analytics.
                     </li>
                   </ul>
@@ -172,16 +172,16 @@ export default function PrivacyPage() {
                   <p>We share your information only with:</p>
                   <ul className="list-disc pl-6 mt-4 space-y-2">
                     <li>
-                      <strong>Booking platform partners</strong> — to sync your listings and
+                      <strong>Booking platform partners</strong>, to sync your listings and
                       bookings.
                     </li>
                     <li>
-                      <strong>Service providers</strong> — for payment processing, hosting, email
+                      <strong>Service providers</strong>, for payment processing, hosting, email
                       delivery, and analytics. They can only use the data to help us run the
                       service.
                     </li>
                     <li>
-                      <strong>Authorities</strong> — when required by law.
+                      <strong>Authorities</strong>, when required by law.
                     </li>
                   </ul>
                   <p className="mt-4">

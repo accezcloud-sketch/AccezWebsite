@@ -12,7 +12,7 @@ interface RevealLineProps {
 export default function RevealLine({
   className,
   delay = 0,
-  color = 'rgba(99,102,241,0.4)',
+  color = 'rgba(49, 159, 212,0.4)',
 }: RevealLineProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-40px 0px' })

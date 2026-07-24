@@ -28,7 +28,7 @@ export default function Contact() {
   }, [])
 
   const inputClass =
-    'w-full px-4 py-3 rounded-lg text-white placeholder:text-slate-500 transition-all duration-200 outline-none focus:ring-2 focus:ring-indigo-500/60 focus:border-transparent'
+    'w-full px-4 py-3 rounded-lg text-white placeholder:text-slate-500 transition-all duration-200 outline-none focus:ring-2 focus:ring-[#319FD4]/60 focus:border-transparent'
 
   const inputStyle: React.CSSProperties = {
     background: 'rgba(255,255,255,0.04)',
@@ -39,7 +39,7 @@ export default function Contact() {
     <>
       <Script src="https://www.google.com/recaptcha/api.js" strategy="lazyOnload" />
 
-      <section className="py-20" id="contact" style={{ background: '#080c18' }}>
+      <section className="py-20" id="contact" style={{ background: 'var(--bg)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <FadeUp>
@@ -48,20 +48,20 @@ export default function Contact() {
                   <div
                     className="h-px w-8"
                     style={{ background: isRTL
-                      ? 'linear-gradient(to left, transparent, #6366f1)'
-                      : 'linear-gradient(to right, transparent, #6366f1)' }}
+                      ? 'linear-gradient(to left, transparent, var(--accent))'
+                      : 'linear-gradient(to right, transparent, var(--accent))' }}
                   />
                   <span
                     className="text-xs font-semibold tracking-widest uppercase"
-                    style={{ color: '#818cf8' }}
+                    style={{ color: 'var(--accent-hi)' }}
                   >
                     {tc.eyebrow}
                   </span>
                   <div
                     className="h-px w-8"
                     style={{ background: isRTL
-                      ? 'linear-gradient(to right, transparent, #6366f1)'
-                      : 'linear-gradient(to left, transparent, #6366f1)' }}
+                      ? 'linear-gradient(to right, transparent, var(--accent))'
+                      : 'linear-gradient(to left, transparent, var(--accent))' }}
                   />
                 </div>
 
@@ -69,14 +69,14 @@ export default function Contact() {
                   className="text-white font-bold text-center leading-tight tracking-tight mb-4"
                   style={{
                     fontSize: 'clamp(28px, 4vw, 44px)',
-                    fontFamily: 'var(--font-manrope), var(--font-inter), system-ui, sans-serif',
+                    fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
                     fontWeight: 800,
                   }}
                 >
                   {tc.titleLead}{' '}
                   <span
                     style={{
-                      background: 'linear-gradient(135deg, #818cf8, #c084fc)',
+                      background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundClip: 'text',
@@ -129,11 +129,11 @@ export default function Contact() {
                     <div
                       className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                       style={{
-                        background: 'rgba(99,102,241,0.12)',
-                        border: '1px solid rgba(99,102,241,0.25)',
+                        background: 'rgba(49, 159, 212,0.12)',
+                        border: '1px solid rgba(49, 159, 212,0.25)',
                       }}
                     >
-                      <svg className="w-5 h-5" fill="none" stroke="#818cf8" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5" fill="none" stroke="#5fb8e8" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -289,8 +289,8 @@ export default function Contact() {
                       name="submit"
                       className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                       style={{
-                        background: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-                        boxShadow: '0 4px 20px rgba(99,102,241,0.35)',
+                        background: 'linear-gradient(135deg, #319fd4, #2678a6)',
+                        boxShadow: '0 4px 20px rgba(49, 159, 212,0.35)',
                       }}
                     >
                       {tc.sendMessage}

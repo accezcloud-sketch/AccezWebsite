@@ -117,7 +117,7 @@ export default function ImageCarousel({
               border: '1px solid rgba(255,255,255,0.1)',
             }}
           >
-            <span className="font-bold" style={{ color: '#818cf8' }}>
+            <span className="font-bold" style={{ color: '#5fb8e8' }}>
               {index + 1}/{total}
             </span>
             <span className="mx-2 opacity-30">|</span>
@@ -178,7 +178,7 @@ export default function ImageCarousel({
               style={{
                 width: i === index ? 22 : 7,
                 height: 7,
-                background: i === index ? '#6366f1' : 'rgba(255,255,255,0.18)',
+                background: i === index ? '#319fd4' : 'rgba(255,255,255,0.18)',
               }}
             />
           ))}

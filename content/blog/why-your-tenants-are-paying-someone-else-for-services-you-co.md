@@ -18,7 +18,7 @@ tagsAr: ["إدارة الممتلكات", "خدمات المستأجرين", "م
 
 It’s a common paradox in property management: tenants are actively paying third-party vendors for services that you, the property manager, could easily provide, often more efficiently and at a better value. This isn't just about convenience for your tenants; it represents a significant, untapped revenue stream and a missed opportunity to deepen tenant loyalty and control the quality of services impacting your properties.
 
-This phenomenon of tenants seeking external solutions for everyday needs—from minor repairs to access control or even utility management—is more than just an operational oversight. It signifies a gap in communication, a lack of integrated service offerings, and ultimately, a drain on both tenant satisfaction and your own potential profitability. When tenants bypass the property management office for these services, they are implicitly signaling that their current options are either more accessible, better advertised, or perceived as more reliable than what's currently being offered or communicated.
+This phenomenon of tenants seeking external solutions for everyday needs, from minor repairs to access control or even utility management, is more than just an operational oversight. It signifies a gap in communication, a lack of integrated service offerings, and ultimately, a drain on both tenant satisfaction and your own potential profitability. When tenants bypass the property management office for these services, they are implicitly signaling that their current options are either more accessible, better advertised, or perceived as more reliable than what's currently being offered or communicated.
 
 ## The Hidden Costs of Third-Party Services
 
@@ -48,7 +48,7 @@ Moreover, compliance with regulations like those mandated by **Ejar** necessitat
 
 Accez.Cloud is designed to empower property managers to reclaim lost revenue and enhance tenant satisfaction by providing a robust platform for integrated service delivery. We enable you to become the preferred provider for all tenant needs.
 
--   **Centralized Service Request Management:** Consolidate all tenant service requests—from maintenance to amenity bookings—into one easy-to-manage dashboard.
+-   **Centralized Service Request Management:** Consolidate all tenant service requests, from maintenance to amenity bookings, into one easy-to-manage dashboard.
 -   **Integrated Vendor and In-House Team Management:** Seamlessly dispatch tasks to your internal maintenance teams or approved third-party vendors, ensuring quality control and timely execution.
 -   **Automated Billing and Payment Processing:** Generate invoices for provided services directly within the platform and process payments through secure, integrated gateways like Mada and SADAD.
 -   **Tenant Self-Service Portal:** Offer tenants a branded portal where they can submit requests, track progress, and pay for services, mirroring the convenience they seek.
@@ -76,7 +76,7 @@ Unlock your property's full revenue potential and elevate tenant experience. [Vi
 
 إنها مفارقة شائعة في إدارة الممتلكات: يدفع المستأجرون بنشاط لمقدمي خدمات خارجيين مقابل خدمات يمكنك، بصفتك مديرًا للعقار، تقديمها بسهولة، غالبًا بكفاءة أعلى وبتكلفة أفضل. هذا لا يتعلق فقط بالراحة لمستأجريك؛ بل يمثل تيار إيرادات كبير وغير مستغل وفرصة ضائعة لتعميق ولاء المستأجرين والتحكم في جودة الخدمات التي تؤثر على عقاراتك.
 
-هذه الظاهرة المتمثلة في لجوء المستأجرين إلى حلول خارجية لتلبية الاحتياجات اليومية — بدءًا من الإصلاحات البسيطة إلى التحكم في الوصول أو حتى إدارة المرافق — هي أكثر من مجرد إشراف تشغيلي. إنها تشير إلى فجوة في التواصل، ونقص في عروض الخدمات المتكاملة، وفي النهاية، استنزاف لرضا المستأجرين وربحيتك المحتملة. عندما يتجاوز المستأجرون مكتب إدارة العقارات لهذه الخدمات، فإنهم يشيرون ضمنيًا إلى أن خياراتهم الحالية إما أكثر سهولة في الوصول إليها، أو تم الإعلان عنها بشكل أفضل، أو يُنظر إليها على أنها أكثر موثوقية مما يتم تقديمه أو الإعلان عنه حاليًا.
+هذه الظاهرة المتمثلة في لجوء المستأجرين إلى حلول خارجية لتلبية الاحتياجات اليومية، بدءًا من الإصلاحات البسيطة إلى التحكم في الوصول أو حتى إدارة المرافق، هي أكثر من مجرد إشراف تشغيلي. إنها تشير إلى فجوة في التواصل، ونقص في عروض الخدمات المتكاملة، وفي النهاية، استنزاف لرضا المستأجرين وربحيتك المحتملة. عندما يتجاوز المستأجرون مكتب إدارة العقارات لهذه الخدمات، فإنهم يشيرون ضمنيًا إلى أن خياراتهم الحالية إما أكثر سهولة في الوصول إليها، أو تم الإعلان عنها بشكل أفضل، أو يُنظر إليها على أنها أكثر موثوقية مما يتم تقديمه أو الإعلان عنه حاليًا.
 
 ## التكاليف الخفية للخدمات الخارجية
 
@@ -106,7 +106,7 @@ Unlock your property's full revenue potential and elevate tenant experience. [Vi
 
 تم تصميم Accez.Cloud لتمكين مديري العقارات من استعادة الإيرادات المفقودة وتعزيز رضا المستأجرين من خلال توفير منصة قوية لتقديم الخدمات المتكاملة. نحن نمكّنك من أن تصبح المزود المفضل لجميع احتياجات المستأجرين.
 
--   **إدارة مركزية لطلبات الخدمات:** اجمع كل طلبات خدمات المستأجرين — من الصيانة إلى حجوزات المرافق — في لوحة تحكم واحدة سهلة الإدارة.
+-   **إدارة مركزية لطلبات الخدمات:** اجمع كل طلبات خدمات المستأجرين، من الصيانة إلى حجوزات المرافق، في لوحة تحكم واحدة سهلة الإدارة.
 -   **إدارة متكاملة للبائعين وفرق العمل الداخلية:** أرسل المهام بسلاسة لفرق الصيانة الداخلية أو البائعين المعتمدين، مع ضمان مراقبة الجودة والتنفيذ في الوقت المناسب.
 -   **الفواتير الآلية ومعالجة الدفع:** قم بإنشاء فواتير للخدمات المقدمة مباشرة داخل المنصة وقم بمعالجة المدفوعات من خلال بوابات آمنة ومتكاملة مثل مدى وسداد.
 -   **بوابة الخدمة الذاتية للمستأجر:** قدم للمستأجرين بوابة ذات علامة تجارية حيث يمكنهم تقديم الطلبات وتتبع التقدم والدفع مقابل الخدمات، مما يعكس الراحة التي يبحثون عنها.

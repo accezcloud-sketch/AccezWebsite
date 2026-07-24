@@ -2,7 +2,7 @@
 title: "Accez.Cloud vs Saudi Property Management Platforms"
 titleAr: "Accez.Cloud مقارنة بمنصات إدارة العقارات السعودية"
 excerpt: "Compare Accez.Cloud with top Saudi property management platforms. See how its three-sided marketplace and revenue generation set it apart from competitors."
-excerptAr: "اكتشف ما يميز Accez في مشهد التكنولوجيا العقارية السعودي — من نهج السوق ثلاثي الأطراف إلى توليد الإيرادات المدمج للمديرين."
+excerptAr: "اكتشف ما يميز Accez في مشهد التكنولوجيا العقارية السعودي، من نهج السوق ثلاثي الأطراف إلى توليد الإيرادات المدمج للمديرين."
 date: "2026-01-21"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -103,7 +103,7 @@ Yes. Unlike platforms that specialize in one or the other (Mabaat for short-term
 
 ### What is the marketplace feature and how does it generate revenue?
 
-Accez.Cloud's marketplace connects residents with local service providers — home services, food delivery, retail, and more — directly through the platform. Property managers earn a commission on every transaction, transforming property management from a cost center into a revenue-generating operation. This is a feature no other Saudi property management platform currently offers.
+Accez.Cloud's marketplace connects residents with local service providers, home services, food delivery, retail, and more, directly through the platform. Property managers earn a commission on every transaction, transforming property management from a cost center into a revenue-generating operation. This is a feature no other Saudi property management platform currently offers.
 
 ### Is Accez.Cloud suitable for small property managers?
 
@@ -214,7 +214,7 @@ Yardi و Buildium منصات عالمية صُممت أساساً للأسواق
 
 ### ما هي ميزة السوق وكيف تولد الإيرادات؟
 
-يربط سوق Accez.Cloud المقيمين بمقدمي الخدمات المحليين — الخدمات المنزلية وتوصيل الطعام والتجزئة والمزيد — مباشرة عبر المنصة. يكسب مديرو العقارات عمولة على كل معاملة، مما يحول إدارة العقارات من مركز تكلفة إلى عملية مولدة للإيرادات. هذه ميزة لا تقدمها أي منصة إدارة عقارات سعودية أخرى حالياً.
+يربط سوق Accez.Cloud المقيمين بمقدمي الخدمات المحليين، الخدمات المنزلية وتوصيل الطعام والتجزئة والمزيد، مباشرة عبر المنصة. يكسب مديرو العقارات عمولة على كل معاملة، مما يحول إدارة العقارات من مركز تكلفة إلى عملية مولدة للإيرادات. هذه ميزة لا تقدمها أي منصة إدارة عقارات سعودية أخرى حالياً.
 
 ### هل Accez.Cloud مناسب لمديري العقارات الصغار؟
 

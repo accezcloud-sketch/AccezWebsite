@@ -42,7 +42,7 @@ Once the images have hooked them, it’s the **description that seals the deal**
 #### Essential Information Every Listing Needs
 
 *   **Accurate Property Details:** Size (in square meters or feet), number of bedrooms and bathrooms, floor level, and any unique architectural features.
-*   **Key Amenities:** List everything that makes your property desirable – air conditioning, heating, built-in wardrobes, modern kitchen appliances, laundry facilities, parking availability (covered, dedicated, street), and any smart home features.
+*   **Key Amenities:** List everything that makes your property desirable, air conditioning, heating, built-in wardrobes, modern kitchen appliances, laundry facilities, parking availability (covered, dedicated, street), and any smart home features.
 *   **Location, Location, Location:** This is arguably the most critical factor for many tenants. Detail the neighborhood's advantages: proximity to schools, universities, hospitals, shopping centers, public transportation links (metro stations, bus routes), and major employment hubs. In Saudi Arabia, proximity to key business districts, lifestyle destinations like malls, and important institutions is highly valued.
 *   **Community Features:** If the property is part of a larger complex, highlight communal amenities such as swimming pools, gyms, security services, green spaces, children's play areas, and community centers. These add significant value and appeal.
 

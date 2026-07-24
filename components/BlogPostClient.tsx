@@ -12,7 +12,7 @@ interface BlogPostClientProps {
 }
 
 export default function BlogPostClient({ post }: BlogPostClientProps) {
-  const { language } = useLanguage()
+  const { language, isRTL } = useLanguage()
 
   const content = {
     en: {
@@ -161,82 +161,68 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   const postContent = language === 'ar' ? post.contentAr : post.content
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen" style={{ background: 'var(--bg)' }} dir={isRTL ? 'rtl' : 'ltr'}>
       <Header />
 
-      {/* Back to Blog */}
-      <div className="bg-white border-b">
+      {/* Back to Blog (clears the fixed navbar via --nav-h) */}
+      <div style={{ paddingTop: 'var(--nav-h)', borderBottom: '1px solid var(--border)', background: 'var(--bg)' }}>
         <div className="container mx-auto px-4 py-4">
-          <Link href="/blog" prefetch={false} className="text-gray-600 hover:text-gray-900 transition-colors">
+          <Link href="/blog" prefetch={false} className="inline-flex items-center gap-1.5 transition-colors" style={{ color: 'var(--text-muted)' }}>
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" style={{ transform: isRTL ? 'scaleX(-1)' : undefined }} aria-hidden="true">
+              <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
             {t.backToBlog}
           </Link>
         </div>
       </div>
 
-      {/* Article Header */}
-      <article className="bg-white">
+      {/* Article */}
+      <article style={{ background: 'var(--bg)' }}>
         <div className="container mx-auto px-4 py-12">
-          <div className="max-w-4xl mx-auto">
-            {/* Category */}
+          <div className="max-w-3xl mx-auto">
             <div className="mb-4">
-              <span className="bg-gray-900 text-white text-sm px-4 py-1 rounded-full">
+              <span className="text-white text-sm px-4 py-1 rounded-full font-medium" style={{ background: 'var(--accent)' }}>
                 {language === 'ar' ? post.categoryAr : post.category}
               </span>
             </div>
 
-            {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-white font-bold mb-6 tracking-tight" style={{ fontSize: 'clamp(28px, 4.5vw, 44px)', lineHeight: 1.15, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
               {language === 'ar' ? post.titleAr : post.title}
             </h1>
 
-            {/* Meta */}
-            <div className="flex flex-wrap items-center gap-4 text-gray-500 mb-8">
+            <div className="flex flex-wrap items-center gap-3 mb-8" style={{ color: 'var(--text-faint)' }}>
               <span>{t.by} {language === 'ar' ? post.authorAr : post.author}</span>
-              <span>•</span>
+              <span>·</span>
               <span>{formatDate(post.date)}</span>
-              <span>•</span>
+              <span>·</span>
               <span>{post.readingTime.replace('min read', t.minRead)}</span>
             </div>
 
-            {/* Cover Image */}
-            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12 bg-gray-200">
-              <Image
-                src={post.coverImage}
-                alt={post.coverImageAlt}
-                fill
-                className="object-cover"
-                priority
-              />
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10" style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)' }}>
+              <Image src={post.coverImage} alt={post.coverImageAlt} fill className="object-cover" priority />
             </div>
             {post.coverImageCredit && post.coverImageCreditUrl && (
-              <p className="text-sm text-gray-500 -mt-10 mb-12 text-center">
+              <p className="text-sm -mt-8 mb-10 text-center" style={{ color: 'var(--text-faint)' }}>
                 Photo by{' '}
-                <a
-                  href={post.coverImageCreditUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gray-700"
-                >
+                <a href={post.coverImageCreditUrl} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: 'var(--accent-hi)' }}>
                   {post.coverImageCredit}
                 </a>
               </p>
             )}
 
             {/* Content */}
-            <div
-              className="prose prose-lg max-w-none"
-              dangerouslySetInnerHTML={{ __html: renderMarkdown(postContent) }}
-            />
+            <div className="blog-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(postContent) }} />
 
             {/* Tags */}
-            <div className="mt-12 pt-8 border-t">
+            <div className="mt-12 pt-8" style={{ borderTop: '1px solid var(--border)' }}>
               <div className="flex flex-wrap gap-2">
                 {(language === 'ar' ? post.tagsAr : post.tags).map((tag, index) => (
                   <Link
                     key={index}
                     href={`/blog?tag=${post.tags[index]}`}
                     prefetch={false}
-                    className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition-colors"
+                    className="px-4 py-2 rounded-full text-sm transition-colors"
+                    style={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}
                   >
                     #{tag}
                   </Link>
@@ -245,28 +231,24 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             </div>
 
             {/* Share */}
-            <div className="mt-8 pt-8 border-t">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.shareArticle}</h3>
-              <div className="flex gap-4">
+            <div className="mt-8 pt-8" style={{ borderTop: '1px solid var(--border)' }}>
+              <h3 className="text-lg font-semibold text-white mb-4">{t.shareArticle}</h3>
+              <div className="flex gap-3">
                 <a
                   href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(language === 'ar' ? post.titleAr : post.title)}&url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+                  target="_blank" rel="noopener noreferrer" aria-label="Share on X"
+                  className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                  style={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                  </svg>
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
                 <a
                   href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+                  target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"
+                  className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                  style={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                  </svg>
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
               </div>
             </div>

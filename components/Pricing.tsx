@@ -43,7 +43,7 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 0, originalPrice: null },
     highlight: false,
     showLaunchDiscount: false,
-    accentColor: '#64748b',
+    accentColor: '#319fd4',
     borderColor: 'rgba(255,255,255,0.07)',
     bgColor: 'rgba(255,255,255,0.02)',
     glowShadow: '0 1px 3px rgba(0,0,0,0.2)',
@@ -71,7 +71,7 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 480, originalPrice: 960 },
     highlight: false,
     showLaunchDiscount: true,
-    accentColor: '#0ea5e9',
+    accentColor: '#319fd4',
     borderColor: 'rgba(255,255,255,0.07)',
     bgColor: 'rgba(255,255,255,0.02)',
     glowShadow: '0 1px 3px rgba(0,0,0,0.2)',
@@ -99,10 +99,10 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 1800, originalPrice: 3600 },
     highlight: true,
     showLaunchDiscount: true,
-    accentColor: '#6366f1',
-    borderColor: 'rgba(99,102,241,0.4)',
-    bgColor: 'rgba(99,102,241,0.06)',
-    glowShadow: '0 0 0 1px rgba(99,102,241,0.2), 0 20px 60px rgba(99,102,241,0.2), 0 4px 16px rgba(0,0,0,0.3)',
+    accentColor: '#319fd4',
+    borderColor: 'rgba(49, 159, 212,0.4)',
+    bgColor: 'rgba(49, 159, 212,0.06)',
+    glowShadow: '0 0 0 1px rgba(49, 159, 212,0.2), 0 20px 60px rgba(49, 159, 212,0.2), 0 4px 16px rgba(0,0,0,0.3)',
     ctaStyle: 'primary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -128,7 +128,7 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 'Custom', originalPrice: null },
     highlight: false,
     showLaunchDiscount: false,
-    accentColor: '#06b6d4',
+    accentColor: '#319fd4',
     borderColor: 'rgba(255,255,255,0.07)',
     bgColor: 'rgba(255,255,255,0.02)',
     glowShadow: '0 1px 3px rgba(0,0,0,0.2)',
@@ -165,7 +165,7 @@ export default function Pricing() {
     <section
       className="py-20 pricing-section"
       id="pricing"
-      style={{ background: '#080c18' }}
+      style={{ background: 'var(--bg)' }}
     >
       <style>{`
         @media (max-width: 767px) {
@@ -183,20 +183,20 @@ export default function Pricing() {
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, #6366f1)'
-                  : 'linear-gradient(to right, transparent, #6366f1)' }}
+                  ? 'linear-gradient(to left, transparent, var(--accent))'
+                  : 'linear-gradient(to right, transparent, var(--accent))' }}
               />
               <span
                 className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: '#818cf8' }}
+                style={{ color: 'var(--accent-hi)' }}
               >
                 {tp.eyebrow}
               </span>
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, #6366f1)'
-                  : 'linear-gradient(to left, transparent, #6366f1)' }}
+                  ? 'linear-gradient(to right, transparent, var(--accent))'
+                  : 'linear-gradient(to left, transparent, var(--accent))' }}
               />
             </div>
 
@@ -205,14 +205,14 @@ export default function Pricing() {
               className="text-white font-bold text-center leading-tight tracking-tight mb-3"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
-                fontFamily: 'var(--font-manrope), var(--font-inter), system-ui, sans-serif',
+                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
                 fontWeight: 800,
               }}
             >
               {tp.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #818cf8, #c084fc)',
+                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -241,10 +241,10 @@ export default function Pricing() {
 
               <button
                 onClick={() => setIsYearly(!isYearly)}
-                className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+                className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                 style={{
                   background: isYearly
-                    ? 'linear-gradient(135deg, #6366f1, #4f46e5)'
+                    ? 'linear-gradient(135deg, #319fd4, #2678a6)'
                     : 'rgba(255,255,255,0.1)',
                   border: '1px solid rgba(255,255,255,0.12)',
                   transition: 'background 0.3s ease',
@@ -303,7 +303,7 @@ export default function Pricing() {
                     className="absolute top-0 left-0 right-0 h-[3px]"
                     style={{
                       background: plan.highlight
-                        ? 'linear-gradient(90deg, #6366f1, #818cf8, #a78bfa)'
+                        ? 'linear-gradient(90deg, #319fd4, #5fb8e8, #5fb8e8)'
                         : `linear-gradient(90deg, ${plan.accentColor}66, transparent)`,
                     }}
                   />
@@ -314,9 +314,9 @@ export default function Pricing() {
                       <span
                         className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase"
                         style={{
-                          background: 'rgba(99,102,241,0.15)',
-                          border: '1px solid rgba(99,102,241,0.35)',
-                          color: '#818cf8',
+                          background: 'rgba(49, 159, 212,0.15)',
+                          border: '1px solid rgba(49, 159, 212,0.35)',
+                          color: 'var(--accent-hi)',
                         }}
                       >
                         {tp.popular}
@@ -387,7 +387,7 @@ export default function Pricing() {
                         style={{
                           background: 'rgba(16,185,129,0.08)',
                           border: '1px solid rgba(16,185,129,0.18)',
-                          color: '#34d399',
+                          color: 'var(--ok)',
                         }}
                       >
                         {tp.launchDiscount}
@@ -402,9 +402,9 @@ export default function Pricing() {
                       style={
                         plan.ctaStyle === 'primary'
                           ? {
-                              background: 'linear-gradient(135deg, #6366f1, #4f46e5)',
+                              background: 'linear-gradient(135deg, #319fd4, #2678a6)',
                               color: '#fff',
-                              boxShadow: '0 4px 20px rgba(99,102,241,0.35)',
+                              boxShadow: '0 4px 20px rgba(49, 159, 212,0.35)',
                             }
                           : {
                               background: 'rgba(255,255,255,0.05)',
@@ -445,14 +445,14 @@ export default function Pricing() {
                             className="mt-0.5 w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0"
                             style={{
                               background: plan.highlight
-                                ? 'rgba(99,102,241,0.15)'
+                                ? 'rgba(49, 159, 212,0.15)'
                                 : 'rgba(16,185,129,0.12)',
                             }}
                           >
                             <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
                               <path
                                 d="M1.5 4.5l2 2 4-4"
-                                stroke={plan.highlight ? '#818cf8' : '#34d399'}
+                                stroke="#7fcdef"
                                 strokeWidth="1.4"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
