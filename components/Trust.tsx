@@ -27,7 +27,7 @@ const INTEGRATIONS: IntegrationGroup[] = [
   {
     label: 'Payments',
     labelAr: 'المدفوعات',
-    items: ['Mada', 'Stripe', 'Checkout.com'],
+    items: ['Stripe', 'Checkout.com'],
   },
   {
     label: 'Communications',
@@ -54,10 +54,11 @@ const POINTS: TrustPoint[] = [
   },
   {
     icon: CreditCard,
-    title: 'Mada & card payments',
-    titleAr: 'مدفوعات مدى والبطاقات',
-    desc: 'Collect rent, fees and bookings via Mada and international cards.',
-    descAr: 'حصّل الإيجارات والرسوم والحجوزات عبر مدى والبطاقات الدولية.',
+    title: 'Card payments',
+    titleAr: 'مدفوعات بالبطاقات',
+    desc: 'Collect rent, fees and bookings through secure online card payments.',
+    descAr: 'حصّل الإيجارات والرسوم والحجوزات عبر مدفوعات بطاقات آمنة عبر الإنترنت.',
+
   },
   {
     icon: ShieldCheck,

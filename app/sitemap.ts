@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${baseUrl}/modules`, lastModified: STATIC_LAST_MODIFIED, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/about`, lastModified: STATIC_LAST_MODIFIED, changeFrequency: 'monthly' as const, priority: 0.6 },
-    ...['owners', 'sales', 'communities', 'hotels'].map((slug) => ({
+    ...['owners', 'sales', 'hotels'].map((slug) => ({
       url: `${baseUrl}/${slug}`,
       lastModified: STATIC_LAST_MODIFIED,
       changeFrequency: 'monthly' as const,

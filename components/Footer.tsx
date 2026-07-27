@@ -76,7 +76,6 @@ export default function Footer() {
         { label: t.footer.platform, href: '/#platform' },
         { label: language === 'ar' ? 'الملاك والمدفوعات' : 'Owners & payouts', href: '/owners' },
         { label: language === 'ar' ? 'المبيعات والمشاريع' : 'Sales & projects', href: '/sales' },
-        { label: language === 'ar' ? 'المجتمعات واتحاد الملاك' : 'Communities & HOA', href: '/communities' },
         { label: language === 'ar' ? 'الفنادق والشقق المخدومة' : 'Hotels & serviced apartments', href: '/hotels' },
       ],
     },

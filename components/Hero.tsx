@@ -75,7 +75,7 @@ const CONTENT = {
     headlineLead: 'One platform to run',
     typewriter: ['residential communities', 'vacation rentals', 'hotels & serviced apartments', 'commercial properties', 'owner portfolios'],
     subtitle:
-      'Accez runs the whole operation. Reservations and rent, maintenance and housekeeping, owners and payouts, sales, and a built-in service marketplace. Arabic and English, built for property operators across Saudi Arabia.',
+      'Accez runs the whole operation. Reservations and channels, work orders, owners and payouts, sales and contracts, and a built-in service marketplace. Arabic and English, built for property operators across Saudi Arabia.',
     ctaPrimary: 'Book a demo',
     ctaSecondary: 'Start free',
     partnersIntro: 'Syncs with 400+ booking channels including',
@@ -108,7 +108,7 @@ const CONTENT = {
     headlineLead: 'منصة واحدة لإدارة',
     typewriter: ['المجمعات السكنية', 'الإيجارات السياحية', 'الفنادق والشقق المخدومة', 'العقارات التجارية', 'محافظ الملاك'],
     subtitle:
-      'تدير أكسيز العملية بالكامل. الحجوزات والإيجارات، الصيانة والتدبير الفندقي، الملاك والمدفوعات، المبيعات، وسوق خدمات مدمج. بالعربية والإنجليزية، مبنية لمشغّلي العقارات في السعودية.',
+      'تدير أكسيز العملية بالكامل. الحجوزات والقنوات، أوامر العمل، الملاك والمدفوعات، المبيعات والعقود، وسوق خدمات مدمج. بالعربية والإنجليزية، مبنية لمشغّلي العقارات في السعودية.',
     ctaPrimary: 'اطلب عرضًا توضيحيًا',
     ctaSecondary: 'ابدأ مجانًا',
     partnersIntro: 'متكاملة مع أكثر من 400 قناة حجز بما في ذلك',

@@ -3,17 +3,13 @@
 import { motion } from 'framer-motion'
 import {
   CalendarCheck,
-  Building2,
-  Wrench,
   Hotel,
-  CreditCard,
-  Wallet,
-  ReceiptText,
-  BarChart3,
+  Wrench,
+  Building2,
   TrendingUp,
-  UsersRound,
-  Store,
-  MessageSquare,
+  FileSignature,
+  Wallet,
+  Megaphone,
   type LucideIcon,
 } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -37,42 +33,37 @@ export interface Pillar {
   modules: Module[]
 }
 
-// Three pillars covering the real product surface, verified against the PMS
-// route/API set. The modules the marketing site used to hide, owners &
-// payouts, sales/CRM, HOA/communities, hotels & serviced apartments, are
-// first-class here.
+// Pillars mirror the product's real domains after the rental/sale property
+// split. Every name and description is verified against the PMS routes/APIs
+// [inspected 2026-07-24]. Nothing here is aspirational.
 export const PILLARS: Pillar[] = [
   {
-    key: 'operations',
-    heading: 'Operations',
-    headingAr: 'العمليات',
+    key: 'lodging',
+    heading: 'Lodging & bookings',
+    headingAr: 'الإقامة والحجوزات',
     modules: [
-      { icon: CalendarCheck, title: 'Reservations & channels', titleAr: 'الحجوزات والقنوات', desc: 'One calendar synced across 400+ booking channels.', descAr: 'تقويم واحد متزامن عبر أكثر من 400 قناة حجز.' },
-      { icon: Building2, title: 'Properties & units', titleAr: 'العقارات والوحدات', desc: 'Every asset type in one portfolio view.', descAr: 'كل أنواع الأصول في عرض محفظة واحد.' },
-      { icon: Wrench, title: 'Maintenance & housekeeping', titleAr: 'الصيانة والتدبير', desc: 'Work orders and turnovers, request to done.', descAr: 'أوامر العمل والتجهيز، من الطلب إلى الإنجاز.' },
+      { icon: CalendarCheck, title: 'Reservations & channels', titleAr: 'الحجوزات والقنوات', desc: 'One booking calendar synced across 400+ channels.', descAr: 'تقويم حجوزات واحد متزامن عبر أكثر من 400 قناة.' },
       { icon: Hotel, title: 'Hotels & serviced apartments', titleAr: 'الفنادق والشقق المخدومة', desc: 'Room types, rates and a built-in channel manager.', descAr: 'أنواع الغرف والأسعار ومدير قنوات مدمج.', href: '/hotels' },
+      { icon: Wrench, title: 'Work orders', titleAr: 'أوامر العمل', desc: 'Track maintenance work orders from request to done.', descAr: 'تتبّع أوامر صيانة العمل من الطلب إلى الإنجاز.' },
     ],
   },
   {
-    key: 'finance',
-    heading: 'Money & owners',
-    headingAr: 'المال والملاك',
+    key: 'realestate',
+    heading: 'Real estate & sales',
+    headingAr: 'العقارات والمبيعات',
     modules: [
-      { icon: CreditCard, title: 'Rent & payments', titleAr: 'الإيجارات والمدفوعات', desc: 'Automated collection and reconciliation.', descAr: 'تحصيل ومطابقة آليان.' },
+      { icon: Building2, title: 'Properties & units', titleAr: 'العقارات والوحدات', desc: 'Rental and sale properties, each with its own units.', descAr: 'عقارات للإيجار وللبيع، لكلٍ منها وحداتها.' },
+      { icon: TrendingUp, title: 'Sales & projects', titleAr: 'المبيعات والمشاريع', desc: 'A lead-to-handover pipeline for units and off-plan projects.', descAr: 'مسار من العميل حتى التسليم للوحدات ومشاريع البيع على الخارطة.', href: '/sales' },
+      { icon: FileSignature, title: 'Contracts & e-signing', titleAr: 'العقود والتوقيع الإلكتروني', desc: 'Printable contracts with buyer e-signature and a public signing link.', descAr: 'عقود قابلة للطباعة مع توقيع إلكتروني للمشتري ورابط توقيع عام.' },
+    ],
+  },
+  {
+    key: 'ownersgrowth',
+    heading: 'Owners & marketing',
+    headingAr: 'الملاك والتسويق',
+    modules: [
       { icon: Wallet, title: 'Owners & payouts', titleAr: 'الملاك والمدفوعات', desc: 'Owner earnings, statements and payouts.', descAr: 'أرباح الملاك وكشوفهم ومدفوعاتهم.', href: '/owners' },
-      { icon: ReceiptText, title: 'Billing & subscriptions', titleAr: 'الفوترة والاشتراكات', desc: 'Plans, invoices and add-ons in one ledger.', descAr: 'الخطط والفواتير والإضافات في سجل واحد.' },
-      { icon: BarChart3, title: 'Reports & analytics', titleAr: 'التقارير والتحليلات', desc: 'Occupancy, revenue and performance, live.', descAr: 'الإشغال والإيرادات والأداء، مباشرة.' },
-    ],
-  },
-  {
-    key: 'growth',
-    heading: 'Growth & community',
-    headingAr: 'النمو والمجتمع',
-    modules: [
-      { icon: TrendingUp, title: 'Sales & developer projects', titleAr: 'المبيعات ومشاريع المطورين', desc: 'A sales pipeline for units and off-plan projects.', descAr: 'مسار مبيعات للوحدات ومشاريع البيع على الخارطة.', href: '/sales' },
-      { icon: UsersRound, title: 'Communities & HOA', titleAr: 'المجتمعات واتحاد الملاك', desc: 'Announcements, feed and resident engagement.', descAr: 'الإعلانات والمنشورات وتفاعل السكان.', href: '/communities' },
-      { icon: Store, title: 'Service marketplace', titleAr: 'سوق الخدمات', desc: 'Residents book vetted providers; you earn.', descAr: 'يحجز السكان مقدمي خدمات موثوقين، وأنت تربح.', href: '/service-providers' },
-      { icon: MessageSquare, title: 'Campaigns & messaging', titleAr: 'الحملات والمراسلة', desc: 'Inbox, SMS and marketing in one place.', descAr: 'صندوق وارد ورسائل نصية وتسويق في مكان واحد.' },
+      { icon: Megaphone, title: 'Marketing campaigns', titleAr: 'الحملات التسويقية', desc: 'Run ad campaigns with media and budgets, powered by credits.', descAr: 'شغّل حملات إعلانية بالوسائط والميزانيات، مدعومة بالرصيد.' },
     ],
   },
 ]

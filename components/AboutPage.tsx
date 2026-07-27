@@ -9,7 +9,7 @@ import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 interface Value { icon: LucideIcon; title: string; titleAr: string; desc: string; descAr: string }
 
 const VALUES: Value[] = [
-  { icon: Layers, title: 'One platform, not five tools', titleAr: 'منصة واحدة، لا خمس أدوات', desc: 'Reservations, rent, owners, sales, communities and hotels belong in one system, so operators stop stitching spreadsheets together.', descAr: 'الحجوزات والإيجارات والملاك والمبيعات والمجتمعات والفنادق تنتمي إلى نظام واحد، ليتوقف المشغّلون عن الجمع بين جداول البيانات.' },
+  { icon: Layers, title: 'One platform, not five tools', titleAr: 'منصة واحدة، لا خمس أدوات', desc: 'Reservations, work orders, owners, sales, contracts and hotels belong in one system, so operators stop stitching spreadsheets together.', descAr: 'الحجوزات وأوامر العمل والملاك والمبيعات والعقود والفنادق تنتمي إلى نظام واحد، ليتوقف المشغّلون عن الجمع بين جداول البيانات.' },
   { icon: Languages, title: 'Arabic-first, not translated', titleAr: 'العربية أولًا، لا مُترجمة', desc: 'Every screen works natively in Arabic and English, right-to-left throughout, built for how the region actually works.', descAr: 'كل شاشة تعمل بشكل أصيل بالعربية والإنجليزية، مع دعم كامل للكتابة من اليمين لليسار، مبنية لطريقة عمل المنطقة فعلًا.' },
   { icon: MapPin, title: 'Built in Saudi Arabia', titleAr: 'مبنية في السعودية', desc: 'From Riyadh, for Saudi operators, close to the market, the regulations and the people we build for.', descAr: 'من الرياض، لمشغّلي العقارات في السعودية، قريبون من السوق والأنظمة والأشخاص الذين نبني لهم.' },
 ]
@@ -21,7 +21,7 @@ const CONTENT = {
     titleAccent: 'property in Saudi Arabia',
     intro: 'Accez is an all-in-one property operations platform built for the Middle East, with Saudi Arabia at its core. From vacation rentals and residential communities to hotels, developer sales and owner management, Accez brings the whole operation into one system, in Arabic and English.',
     storyHeading: 'Why we built it',
-    story: 'Property operators in the region were running their business across booking channels, spreadsheets, chat apps and disconnected tools, losing time and money in the gaps between them. Accez replaces that patchwork with one platform that covers reservations, rent and payments, maintenance and housekeeping, owners and payouts, sales, communities and hotels. One account, every module, turned on as you need it.',
+    story: 'Property operators in the region were running their business across booking channels, spreadsheets, chat apps and disconnected tools, losing time and money in the gaps between them. Accez replaces that patchwork with one platform that covers reservations and channels, work orders, rental and sale properties, sales, contracts, owners and payouts, and hotels. One account, every module, turned on as you need it.',
     valuesHeading: 'What we believe',
     company: 'Company',
     companyName: 'Cloud Valley LLC dba Accez.cloud',
@@ -40,7 +40,7 @@ const CONTENT = {
     titleAccent: 'في المملكة العربية السعودية',
     intro: 'أكسيز منصة شاملة لعمليات العقارات مبنية للشرق الأوسط، والسعودية في صميمها. من الإيجارات السياحية والمجمعات السكنية إلى الفنادق ومبيعات المطوّرين وإدارة الملاك، تجمع أكسيز العملية بالكامل في نظام واحد، بالعربية والإنجليزية.',
     storyHeading: 'لماذا بنيناها',
-    story: 'كان مشغّلو العقارات في المنطقة يديرون أعمالهم عبر قنوات الحجز وجداول البيانات وتطبيقات المحادثة وأدوات غير مترابطة، يخسرون الوقت والمال في الفجوات بينها. تستبدل أكسيز هذا التشتت بمنصة واحدة تغطي الحجوزات والإيجارات والمدفوعات والصيانة والتدبير والملاك والمدفوعات والمبيعات والمجتمعات والفنادق. حساب واحد، وكل الوحدات، تُفعّل حسب حاجتك.',
+    story: 'كان مشغّلو العقارات في المنطقة يديرون أعمالهم عبر قنوات الحجز وجداول البيانات وتطبيقات المحادثة وأدوات غير مترابطة، يخسرون الوقت والمال في الفجوات بينها. تستبدل أكسيز هذا التشتت بمنصة واحدة تغطي الحجوزات والقنوات وأوامر العمل والعقارات للإيجار وللبيع والمبيعات والعقود والملاك والمدفوعات والفنادق. حساب واحد، وكل الوحدات، تُفعّل حسب حاجتك.',
     valuesHeading: 'بماذا نؤمن',
     company: 'الشركة',
     companyName: 'شركة وادي السحاب، أكسيز.كلاود',

@@ -12,7 +12,6 @@ interface MenuItem { name: string; nameAr: string; href: string; desc: string; d
 const PRODUCT_MENU: MenuItem[] = [
   { name: 'Owners & payouts', nameAr: 'الملاك والمدفوعات', href: '/owners', desc: 'Portal, ledger and Stripe payouts', descAr: 'بوابة وسجل ومدفوعات' },
   { name: 'Sales & projects', nameAr: 'المبيعات والمشاريع', href: '/sales', desc: 'Developer projects and pipeline', descAr: 'مشاريع المطورين ومسار المبيعات' },
-  { name: 'Communities & HOA', nameAr: 'المجتمعات واتحاد الملاك', href: '/communities', desc: 'Feed, polls and engagement', descAr: 'موجز واستطلاعات وتفاعل' },
   { name: 'Hotels & serviced apartments', nameAr: 'الفنادق والشقق المخدومة', href: '/hotels', desc: 'Room types and channel manager', descAr: 'أنواع الغرف ومدير القنوات' },
   { name: 'Service providers', nameAr: 'مقدمو الخدمات', href: '/service-providers', desc: 'List on the Accez marketplace', descAr: 'أدرج في سوق أكسيز' },
 ]

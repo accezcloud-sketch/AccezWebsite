@@ -6,7 +6,7 @@ import AboutPage from '@/components/AboutPage'
 export const metadata: Metadata = {
   title: 'About Accez | All-in-one property platform, built in Riyadh',
   description:
-    'Accez is an all-in-one property operations platform built in Riyadh, Saudi Arabia by Cloud Valley LLC, reservations, rent, owners, sales, communities and hotels in one system, in Arabic and English.',
+    'Accez is an all-in-one property operations platform built in Riyadh, Saudi Arabia by Cloud Valley LLC, reservations, work orders, owners, sales, contracts and hotels in one system, in Arabic and English.',
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'About Accez',

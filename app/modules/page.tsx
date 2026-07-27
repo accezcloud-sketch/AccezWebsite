@@ -6,7 +6,7 @@ import ModulesPage from '@/components/ModulesPage'
 export const metadata: Metadata = {
   title: 'Product modules | Everything Accez runs',
   description:
-    'Explore every Accez module: reservations and channels, properties and units, maintenance and housekeeping, hotels, rent and payments, owners and payouts, billing, reports, sales, communities and HOA, the service marketplace, and campaigns.',
+    'Explore every Accez module: reservations and channels, hotels and serviced apartments, work orders, rental and sale properties, sales and developer projects, contracts and e-signing, owners and payouts, and marketing campaigns.',
   alternates: { canonical: '/modules' },
   openGraph: {
     title: 'Product modules | Accez',

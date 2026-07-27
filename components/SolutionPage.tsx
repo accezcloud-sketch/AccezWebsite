@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import {
   LayoutDashboard, ReceiptText, Wallet, BarChart3,
   Building2, TrendingUp, RefreshCw, Layers,
-  UsersRound, MessageSquare, ListChecks,
   Hotel, Sparkles, KeyRound, Check,
   type LucideIcon,
 } from 'lucide-react'
@@ -39,12 +38,12 @@ export const SOLUTIONS: Record<string, Solution> = {
     heroPoints: [
       { en: 'Owner portal: units, reservations and invoices', ar: 'بوابة المالك: الوحدات والحجوزات والفواتير' },
       { en: 'Owner ledger, balances and statements', ar: 'سجل المالك والأرصدة والكشوف' },
-      { en: 'Payouts via Stripe, tracked to paid', ar: 'مدفوعات عبر Stripe، متتبَّعة حتى السداد' },
+      { en: 'Payouts tracked from pending to paid', ar: 'مدفوعات متتبَّعة من المعلّق إلى المسدَّد' },
     ],
     features: [
       { icon: LayoutDashboard, title: 'Owner portal', titleAr: 'بوابة المالك', desc: 'Owners log in to see their units, reservations, invoices and earnings, no more emailed spreadsheets.', descAr: 'يسجّل الملاك الدخول لرؤية وحداتهم وحجوزاتهم وفواتيرهم وأرباحهم، دون جداول تُرسل بالبريد.' },
       { icon: ReceiptText, title: 'Ledger & statements', titleAr: 'السجل والكشوف', desc: 'Every charge and payout on one ledger, with clean statements owners can trust.', descAr: 'كل رسم ودفعة في سجل واحد، مع كشوف واضحة يثق بها الملاك.' },
-      { icon: Wallet, title: 'Payouts, tracked', titleAr: 'مدفوعات متتبَّعة', desc: 'Create payouts from pending balances, pay via Stripe, and mark them paid, nothing slips.', descAr: 'أنشئ المدفوعات من الأرصدة المعلّقة، وادفع عبر Stripe، وحدّدها كمدفوعة، دون أي تفويت.' },
+      { icon: Wallet, title: 'Payouts, tracked', titleAr: 'مدفوعات متتبَّعة', desc: 'Create payouts from pending balances and mark them paid, nothing slips.', descAr: 'أنشئ المدفوعات من الأرصدة المعلّقة وحدّدها كمدفوعة، دون أي تفويت.' },
       { icon: BarChart3, title: 'Owner analytics', titleAr: 'تحليلات المالك', desc: 'Show each owner how their units are performing, live.', descAr: 'اعرض لكل مالك أداء وحداته، مباشرة.' },
     ],
     capsHeading: 'What owners and managers get', capsHeadingAr: 'ما يحصل عليه الملاك والمديرون',
@@ -52,7 +51,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       { en: 'Owner dashboard & portal', ar: 'لوحة وبوابة المالك' },
       { en: 'Per-owner ledger and balances', ar: 'سجل وأرصدة لكل مالك' },
       { en: 'Owner statements', ar: 'كشوف الملاك' },
-      { en: 'Stripe onboarding & payouts', ar: 'تفعيل Stripe والمدفوعات' },
+      { en: 'Owner balances and payout creation', ar: 'أرصدة الملاك وإنشاء المدفوعات' },
       { en: 'Pending-to-paid payout tracking', ar: 'تتبّع المدفوعات من المعلّق إلى المسدَّد' },
       { en: 'Owner invoices & reservations', ar: 'فواتير وحجوزات الملاك' },
       { en: 'Per-owner performance analytics', ar: 'تحليلات أداء لكل مالك' },
@@ -87,35 +86,6 @@ export const SOLUTIONS: Record<string, Solution> = {
       { en: 'Arabic & English', ar: 'العربية والإنجليزية' },
     ],
     ctaTitle: 'Move your sales off the spreadsheet.', ctaTitleAr: 'انقل مبيعاتك من جداول البيانات.',
-  },
-
-  communities: {
-    eyebrow: 'Communities & HOA', eyebrowAr: 'المجتمعات واتحاد الملاك',
-    title: 'Run communities residents', titleAr: 'أدر مجتمعات',
-    accent: 'actually engage with', accentAr: 'يتفاعل معها السكان',
-    subtitle: 'Group your properties into communities and give residents a feed worth opening, announcements, polls and conversation, not another ignored WhatsApp group.',
-    subtitleAr: 'اجمع عقاراتك في مجتمعات وامنح السكان موجزًا يستحق الفتح، إعلانات واستطلاعات ونقاشات، لا مجرد مجموعة واتساب أخرى مهملة.',
-    heroPoints: [
-      { en: 'Communities that group your properties', ar: 'مجتمعات تجمع عقاراتك' },
-      { en: 'A resident feed with posts and polls', ar: 'موجز للسكان بالمنشورات والاستطلاعات' },
-      { en: 'Comments and reactions, in one place', ar: 'التعليقات والتفاعلات في مكان واحد' },
-    ],
-    features: [
-      { icon: UsersRound, title: 'Communities', titleAr: 'المجتمعات', desc: 'Group properties into communities and manage them together.', descAr: 'اجمع العقارات في مجتمعات وأدرها معًا.' },
-      { icon: MessageSquare, title: 'Resident feed', titleAr: 'موجز السكان', desc: 'Post announcements and updates residents actually see.', descAr: 'انشر إعلانات وتحديثات يراها السكان فعلًا.' },
-      { icon: ListChecks, title: 'Polls & reactions', titleAr: 'الاستطلاعات والتفاعلات', desc: 'Run polls, collect votes, and let residents comment and like.', descAr: 'أجرِ استطلاعات واجمع الأصوات ودع السكان يعلّقون ويتفاعلون.' },
-      { icon: Building2, title: 'One platform', titleAr: 'منصة واحدة', desc: 'Community engagement lives in the same platform as operations.', descAr: 'تفاعل المجتمع في المنصة نفسها التي تدير العمليات.' },
-    ],
-    capsHeading: 'Inside communities', capsHeadingAr: 'داخل المجتمعات',
-    capabilities: [
-      { en: 'Create & manage communities', ar: 'إنشاء وإدارة المجتمعات' },
-      { en: 'Assign properties to a community', ar: 'إسناد العقارات إلى مجتمع' },
-      { en: 'Resident feed & announcements', ar: 'موجز السكان والإعلانات' },
-      { en: 'Comments and likes', ar: 'التعليقات والإعجابات' },
-      { en: 'Polls with vote tracking', ar: 'استطلاعات مع تتبّع الأصوات' },
-      { en: 'Community content library', ar: 'مكتبة محتوى المجتمع' },
-    ],
-    ctaTitle: 'Give your residents a feed they open.', ctaTitleAr: 'امنح سكانك موجزًا يفتحونه.',
   },
 
   hotels: {

@@ -18,7 +18,7 @@ const jsonLd = {
   alternateName: 'Accez Cloud',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
-  description: 'Accez is the all-in-one property operations platform for Saudi Arabia, reservations and rent, maintenance and housekeeping, owner management and payouts, sales, HOA/communities, hotels and serviced apartments, and a built-in service marketplace, in Arabic and English.',
+  description: 'Accez is the all-in-one property operations platform for Saudi Arabia. Reservations and channels, work orders, rental and sale properties, sales and developer projects, contracts and e-signing, owner payouts, hotels and serviced apartments, in Arabic and English.',
   url: 'https://accez.cloud',
   provider: {
     '@type': 'Organization',
@@ -32,14 +32,14 @@ const jsonLd = {
   },
   featureList: [
     'Reservations & 400+ Channel Sync',
-    'Automated Rent & Payments',
+    'Rental & Sale Properties',
     'Owner Management & Payouts',
     'Sales & Developer Projects',
-    'HOA & Community Management',
+    'Contracts & E-signing',
     'Hotels & Serviced Apartments',
-    'Maintenance & Housekeeping',
+    'Work Orders',
     'Service Marketplace',
-    'Reports & Analytics',
+    'Marketing Campaigns',
   ],
 }
 
