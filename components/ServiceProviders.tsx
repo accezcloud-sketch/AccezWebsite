@@ -11,7 +11,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { PORTAL_SIGN_UP } from '@/lib/links'
+import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
@@ -45,7 +45,7 @@ const CONTENT = {
       {
         title: 'Create your provider account',
         description:
-          'Open the Accez registration page and choose the Service Provider card. This is a separate account type from a property manager, and it is created straight away.',
+          'Open the Service Provider sign-up. This is a separate account type from a property manager, and it is created straight away.',
       },
       {
         title: 'Build your listing',
@@ -115,7 +115,7 @@ const CONTENT = {
       {
         title: 'أنشئ حساب مقدم الخدمة',
         description:
-          'افتح صفحة التسجيل في أكسيز واختر بطاقة مقدم خدمة. هذا نوع حساب مستقل عن حساب مدير العقارات، ويتم إنشاؤه فورًا.',
+          'افتح صفحة تسجيل مقدمي الخدمات. هذا نوع حساب مستقل عن حساب مدير العقارات، ويُنشأ فورًا.',
       },
       {
         title: 'جهّز صفحتك',
@@ -334,7 +334,7 @@ export default function ServiceProviders() {
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-8">
               <a
-                href={PORTAL_SIGN_UP}
+                href={PROVIDER_SIGN_UP}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="sp-btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"

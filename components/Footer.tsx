@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { PORTAL_SIGN_UP } from '@/lib/links'
+import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 
 export default function Footer() {
@@ -84,7 +84,7 @@ export default function Footer() {
       links: [
         { label: t.footer.howItWorks, href: '/service-providers' },
         { label: t.footer.providerPricing, href: '/service-providers#provider-pricing' },
-        { label: t.footer.becomeProvider, href: PORTAL_SIGN_UP, external: true },
+        { label: t.footer.becomeProvider, href: PROVIDER_SIGN_UP, external: true },
       ],
     },
     {

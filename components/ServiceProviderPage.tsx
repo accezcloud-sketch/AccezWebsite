@@ -14,7 +14,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { PORTAL_SIGN_UP } from '@/lib/links'
+import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
@@ -77,7 +77,7 @@ const CONTENT = {
     stepsTitleLead: 'Live on Accez in',
     stepsTitleAccent: 'three steps',
     steps: [
-      { title: 'Create your provider account', description: 'Open the Accez registration page and choose the Service Provider card. It is a separate account type, created straight away.' },
+      { title: 'Create your provider account', description: 'Open the Service Provider sign-up. It is a separate account type, created straight away.' },
       { title: 'Build your listing', description: 'Add your business name, photos, category, location and opening hours, then list each service with its own duration and price.' },
       { title: 'Take bookings', description: 'Your listing goes live on the marketplace. Bookings are instant and every one reaches your provider dashboard.' },
     ],
@@ -171,7 +171,7 @@ const CONTENT = {
     stepsTitleLead: 'حيّ على أكسيز في',
     stepsTitleAccent: 'ثلاث خطوات',
     steps: [
-      { title: 'أنشئ حساب مقدم الخدمة', description: 'افتح صفحة التسجيل في أكسيز واختر بطاقة مقدم خدمة. إنه نوع حساب مستقل، ويُنشأ فورًا.' },
+      { title: 'أنشئ حساب مقدم الخدمة', description: 'افتح صفحة تسجيل مقدمي الخدمات. إنه نوع حساب مستقل، ويُنشأ فورًا.' },
       { title: 'جهّز صفحتك', description: 'أضف اسم نشاطك وصورك وفئتك وموقعك وساعات العمل، ثم أدرج كل خدمة بمدتها وسعرها.' },
       { title: 'استقبل الحجوزات', description: 'تظهر صفحتك في السوق. الحجوزات فورية، ويصل كل حجز إلى لوحة تحكم مقدم الخدمة.' },
     ],
@@ -306,7 +306,7 @@ export default function ServiceProviderPage() {
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                 <a
-                  href={PORTAL_SIGN_UP}
+                  href={PROVIDER_SIGN_UP}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="spp-btn inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
@@ -441,7 +441,7 @@ export default function ServiceProviderPage() {
                   </div>
 
                   <a
-                    href={PORTAL_SIGN_UP}
+                    href={PROVIDER_SIGN_UP}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5 mb-6"
@@ -488,7 +488,7 @@ export default function ServiceProviderPage() {
                 <h2 className="text-white font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{t.ctaTitle}</h2>
                 <p className="max-w-xl mx-auto mb-8" style={{ fontSize: 16, color: 'var(--text-muted)' }}>{t.ctaSubtitle}</p>
                 <a
-                  href={PORTAL_SIGN_UP}
+                  href={PROVIDER_SIGN_UP}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="spp-btn inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { PORTAL_SIGN_UP } from '@/lib/links'
+import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 import ImageCarousel, { type CarouselSlide } from '@/components/ImageCarousel'
@@ -70,7 +70,7 @@ export default function Capabilities() {
         {
           label: 'Become a Service Provider',
           labelAr: 'انضم كمقدم خدمة',
-          href: PORTAL_SIGN_UP,
+          href: PROVIDER_SIGN_UP,
           variant: 'primary',
         },
         {
@@ -127,7 +127,7 @@ export default function Capabilities() {
         {
           label: 'Create a provider account',
           labelAr: 'أنشئ حساب مقدم خدمة',
-          href: PORTAL_SIGN_UP,
+          href: PROVIDER_SIGN_UP,
           variant: 'primary',
         },
         {

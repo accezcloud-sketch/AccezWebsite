@@ -18,5 +18,12 @@
  */
 export const PORTAL_SIGN_UP = 'https://portal.accez.cloud/sign-up'
 
+/**
+ * Dedicated Service Provider sign-up. All provider-facing CTAs (the homepage
+ * Service Providers section, the /service-providers page, the "Become a
+ * Service Provider" capability CTAs, and the footer) point here.
+ */
+export const PROVIDER_SIGN_UP = 'https://portal.accez.cloud/sp/signup'
+
 /** Property manager portal (existing product). */
 export const PORTAL = 'https://portal.accez.cloud'

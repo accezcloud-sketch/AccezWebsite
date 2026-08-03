@@ -72,9 +72,9 @@ const FAQS: FaqItem[] = [
     question: 'How do I register as a service provider?',
     questionAr: 'كيف أسجل كمقدم خدمة؟',
     answer:
-      'Go to the Accez registration page at portal.accez.cloud/sign-up. You will be asked to choose the account you want to create: Property Manager or Service Provider. Pick the Service Provider card and your provider account is created straight away, then build your listing with your photos, category, location, opening hours and priced services.',
+      'Go to the Service Provider sign-up at portal.accez.cloud/sp/signup. Your provider account is created there, then you build your listing with your photos, category, location, opening hours and priced services.',
     answerAr:
-      'انتقل إلى صفحة التسجيل في أكسيز على portal.accez.cloud/sign-up. سيُطلب منك اختيار نوع الحساب الذي تريد إنشاءه: مدير عقارات أو مقدم خدمة. اختر بطاقة مقدم الخدمة ليتم إنشاء حسابك فورًا، ثم جهّز صفحتك بالصور والفئة والموقع وساعات العمل والخدمات المسعّرة.',
+      'انتقل إلى تسجيل مقدمي الخدمات على portal.accez.cloud/sp/signup. يُنشأ حسابك هناك، ثم تجهّز صفحتك بالصور والفئة والموقع وساعات العمل والخدمات المسعّرة.',
   },
   {
     category: 'serviceMarketplace',
