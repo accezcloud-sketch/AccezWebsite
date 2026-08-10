@@ -80,6 +80,53 @@ export function alternatesFor(route: string, locale: Locale) {
 }
 
 /**
+ * Routes that exist in Arabic.
+ *
+ * /privacy and /terms are intentionally absent: the legal text has no Arabic
+ * translation, so links to them must stay on the English URL rather than point
+ * at an /ar page that would 404.
+ */
+const AR_ROUTES = new Set([
+  '',
+  'modules',
+  'owners',
+  'sales',
+  'hotels',
+  'service-providers',
+  'about',
+  'support',
+  'blog',
+])
+
+/**
+ * Localise an internal href for the active language.
+ *
+ * Internal links were all hardcoded to the English path, so on an Arabic page
+ * every navigation click — the header, the footer, a blog card — dropped the
+ * reader back into English. That breaks the reading experience and, for search
+ * engines, leaks link signals out of the Arabic version of the site.
+ *
+ * Anything external, already-prefixed, or without an Arabic equivalent is
+ * returned untouched. Hashes and query strings are preserved.
+ */
+export function localeHref(href: string, locale: Locale): string {
+  if (locale === DEFAULT_LOCALE) return href
+  if (!href.startsWith('/')) return href // external URL, mailto, tel
+  if (href === '/ar' || href.startsWith('/ar/')) return href // already localised
+
+  const [pathAndQuery, hash] = href.split('#')
+  const [path, query] = pathAndQuery.split('?')
+  const clean = path.replace(/^\/+|\/+$/g, '')
+  const head = clean.split('/')[0]
+
+  // Blog posts (blog/<slug>) exist in Arabic; check the first segment.
+  if (!AR_ROUTES.has(clean) && !AR_ROUTES.has(head)) return href
+
+  const localised = clean ? `/ar/${clean}/` : '/ar/'
+  return localised + (query ? `?${query}` : '') + (hash ? `#${hash}` : '')
+}
+
+/**
  * Map any in-app path to its counterpart in the other locale.
  * Used by the header language toggle, which must NAVIGATE between URLs rather
  * than swap content in place — swapping in place is what made the Arabic

@@ -16,6 +16,7 @@ import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 import ImageCarousel, { type CarouselSlide } from '@/components/ImageCarousel'
+import { localeHref } from '@/lib/i18n'
 
 const STEP_ICONS: LucideIcon[] = [UserPlus, ClipboardList, CalendarCheck]
 
@@ -354,7 +355,7 @@ export default function ServiceProviders() {
               </a>
 
               <a
-                href="/service-providers"
+                href={localeHref("/service-providers", language)}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: 'var(--surface)',

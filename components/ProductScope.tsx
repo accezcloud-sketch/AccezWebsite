@@ -15,6 +15,7 @@ import {
 import { useLanguage } from '@/contexts/LanguageContext'
 import FadeUp from '@/components/animations/FadeUp'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
+import { localeHref } from '@/lib/i18n'
 
 export interface Module {
   icon: LucideIcon
@@ -160,7 +161,7 @@ export default function ProductScope() {
                     return (
                       <motion.div key={m.title} variants={staggerItem}>
                         {m.href ? (
-                          <a href={m.href} className={cls} style={st}>{inner}</a>
+                          <a href={localeHref(m.href, language)} className={cls} style={st}>{inner}</a>
                         ) : (
                           <div className={cls} style={st}>{inner}</div>
                         )}

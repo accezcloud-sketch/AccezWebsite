@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPostMeta } from '@/lib/blog'
 import Select from '@/components/ui/Select'
+import { localeHref } from '@/lib/i18n'
 
 interface BlogListClientProps {
   posts: BlogPostMeta[]
@@ -153,7 +154,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                 return (
                   <Link
                     key={post.slug}
-                    href={`/blog/${post.slug}`}
+                    href={localeHref(`/blog/${post.slug}`, language)}
                     prefetch={false}
                     className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 ${isHidden ? 'hidden' : ''}`}
                     style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}

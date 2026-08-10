@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPost } from '@/lib/blog'
+import { localeHref } from '@/lib/i18n'
 
 interface BlogPostClientProps {
   post: BlogPost | null
@@ -16,7 +17,9 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
 
   const content = {
     en: {
-      backToBlog: '← Back to Blog',
+      // No arrow character here — the link renders an SVG arrow beside it.
+      // Having both produced a visible double arrow: "← ← Back to Blog".
+      backToBlog: 'Back to Blog',
       by: 'By',
       minRead: 'min read',
       shareArticle: 'Share this article',
@@ -25,7 +28,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       notFoundDesc: 'The blog post you are looking for does not exist.',
     },
     ar: {
-      backToBlog: '→ العودة للمدونة',
+      backToBlog: 'العودة للمدونة',
       by: 'بواسطة',
       minRead: 'دقيقة قراءة',
       shareArticle: 'شارك هذه المقالة',
@@ -165,7 +168,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{t.notFound}</h1>
           <p className="text-gray-600 mb-8">{t.notFoundDesc}</p>
           <Link
-            href="/blog"
+            href={localeHref("/blog", language)}
             prefetch={false}
             className="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-200"
           >
@@ -186,7 +189,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       {/* Back to Blog (clears the fixed navbar via --nav-h) */}
       <div style={{ paddingTop: 'var(--nav-h)', borderBottom: '1px solid var(--border)', background: 'var(--bg)' }}>
         <div className="container mx-auto px-4 py-4">
-          <Link href="/blog" prefetch={false} className="inline-flex items-center gap-1.5 transition-colors" style={{ color: 'var(--text-muted)' }}>
+          <Link href={localeHref("/blog", language)} prefetch={false} className="inline-flex items-center gap-1.5 transition-colors" style={{ color: 'var(--text-muted)' }}>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" style={{ transform: isRTL ? 'scaleX(-1)' : undefined }} aria-hidden="true">
               <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -238,7 +241,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 {(language === 'ar' ? post.tagsAr : post.tags).map((tag, index) => (
                   <Link
                     key={index}
-                    href={`/blog?tag=${post.tags[index]}`}
+                    href={localeHref(`/blog?tag=${post.tags[index]}`, language)}
                     prefetch={false}
                     className="px-4 py-2 rounded-full text-sm transition-colors"
                     style={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}

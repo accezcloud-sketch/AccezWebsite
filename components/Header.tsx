@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { localeHref } from '@/lib/i18n'
 
 interface MenuItem { name: string; nameAr: string; href: string; desc: string; descAr: string }
 
@@ -79,7 +80,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
-            href="/"
+            href={localeHref("/", language)}
             prefetch={false}
             aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'}
             className="flex items-center gap-2 text-2xl font-bold text-white rounded-lg hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
@@ -131,7 +132,7 @@ export default function Header() {
                     {PRODUCT_MENU.map((m) => (
                       <a
                         key={m.href}
-                        href={m.href}
+                        href={localeHref(m.href, language)}
                         onClick={() => setProductOpen(false)}
                         className="block rounded-xl px-3 py-2.5 transition-colors duration-150"
                         style={{ color: 'var(--text)' }}
@@ -144,7 +145,7 @@ export default function Header() {
                     ))}
                     <div className="my-1.5 h-px" style={{ background: 'var(--border)' }} />
                     <a
-                      href="/modules"
+                      href={localeHref("/modules", language)}
                       onClick={() => setProductOpen(false)}
                       className="block rounded-xl px-3 py-2.5 text-sm font-semibold transition-colors duration-150"
                       style={{ color: 'var(--accent-hi)' }}
@@ -160,7 +161,7 @@ export default function Header() {
             </div>
 
             {navItems.map((item) => (
-              <a key={item.name} href={item.href} className={linkClass}>{item.name}</a>
+              <a key={item.name} href={localeHref(item.href, language)} className={linkClass}>{item.name}</a>
             ))}
           </nav>
 
@@ -170,7 +171,7 @@ export default function Header() {
               {language === 'en' ? 'العربية' : 'English'}
             </button>
             <Link
-              href="/#contact"
+              href={localeHref("/#contact", language)}
               prefetch={false}
               className="px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'var(--accent)', boxShadow: scrolled ? '0 6px 20px rgba(49,159,212,0.25)' : 'none' }}
@@ -223,11 +224,11 @@ export default function Header() {
                   {mobileProductOpen && (
                     <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden ps-3 flex flex-col gap-1 border-s" style={{ borderColor: 'var(--border)' }}>
                       {PRODUCT_MENU.map((m) => (
-                        <a key={m.href} href={m.href} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-400 hover:text-white text-sm py-1.5 transition-colors">
+                        <a key={m.href} href={localeHref(m.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-400 hover:text-white text-sm py-1.5 transition-colors">
                           {language === 'ar' ? m.nameAr : m.name}
                         </a>
                       ))}
-                      <a href="/modules" onClick={() => setIsMobileMenuOpen(false)} className="text-sm py-1.5 font-medium" style={{ color: 'var(--accent-hi)' }}>
+                      <a href={localeHref("/modules", language)} onClick={() => setIsMobileMenuOpen(false)} className="text-sm py-1.5 font-medium" style={{ color: 'var(--accent-hi)' }}>
                         {language === 'ar' ? 'كل الوحدات ←' : 'All modules →'}
                       </a>
                     </motion.div>
@@ -235,13 +236,13 @@ export default function Header() {
                 </AnimatePresence>
 
                 {navItems.map((item) => (
-                  <a key={item.name} href={item.href} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-2">
+                  <a key={item.name} href={localeHref(item.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-2">
                     {item.name}
                   </a>
                 ))}
 
                 <Link
-                  href="/#contact"
+                  href={localeHref("/#contact", language)}
                   prefetch={false}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-5 py-2.5 text-white font-semibold rounded-lg transition-all duration-200 text-center mt-2"

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { localeHref } from '@/lib/i18n'
 
 const TYPING_SPEED = 95
 const DELETING_SPEED = 55
@@ -361,7 +362,7 @@ export default function Hero() {
 
               <div className="anim-fade-up-4 flex flex-col sm:flex-row flex-wrap gap-3 mb-10 w-full sm:w-auto items-stretch sm:items-center lg:items-start">
                 <a
-                  href="/#contact"
+                  href={localeHref("/#contact", language)}
                   className="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                   style={{
                     background: 'linear-gradient(135deg,#319fd4 0%,#2678a6 100%)',

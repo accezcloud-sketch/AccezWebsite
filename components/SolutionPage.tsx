@@ -11,6 +11,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
+import { localeHref } from '@/lib/i18n'
 
 interface Feature { icon: LucideIcon; title: string; titleAr: string; desc: string; descAr: string }
 interface Bi { en: string; ar: string }
@@ -155,10 +156,10 @@ export default function SolutionPage({ slug }: { slug: keyof typeof SOLUTIONS })
               </h1>
               <p className="leading-relaxed max-w-lg mb-8" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{L(s.subtitle, s.subtitleAr)}</p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <a href="/#contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>
+                <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>
                   {L('Book a demo', 'اطلب عرضًا توضيحيًا')}{arrow}
                 </a>
-                <a href="/modules" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>
+                <a href={localeHref("/modules", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>
                   {L('See all modules', 'كل الوحدات')}
                 </a>
               </div>
@@ -247,7 +248,7 @@ export default function SolutionPage({ slug }: { slug: keyof typeof SOLUTIONS })
                 <h2 className="text-white font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{L(s.ctaTitle, s.ctaTitleAr)}</h2>
                 <p className="max-w-xl mx-auto mb-8" style={{ fontSize: 16, color: 'var(--text-muted)' }}>{L('See it on your own portfolio, book a walkthrough with the Accez team.', 'شاهدها على محفظتك، احجز جولة مع فريق أكسيز.')}</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="/#contact" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>
+                  <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>
                     {L('Book a demo', 'اطلب عرضًا توضيحيًا')}{arrow}
                   </a>
                   <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>

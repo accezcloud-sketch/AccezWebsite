@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { localeHref } from '@/lib/i18n'
 
 export default function ThankYou() {
   const { language } = useLanguage()
@@ -61,7 +62,7 @@ export default function ThankYou() {
 
           {/* Back Button */}
           <Link
-            href="/"
+            href={localeHref("/", language)}
             prefetch={false}
             className="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-200"
           >

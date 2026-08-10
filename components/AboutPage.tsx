@@ -5,6 +5,7 @@ import { MapPin, Languages, Layers, Building2, type LucideIcon } from 'lucide-re
 import { useLanguage } from '@/contexts/LanguageContext'
 import FadeUp from '@/components/animations/FadeUp'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
+import { localeHref } from '@/lib/i18n'
 
 interface Value { icon: LucideIcon; title: string; titleAr: string; desc: string; descAr: string }
 
@@ -155,7 +156,7 @@ export default function AboutPage() {
                 <h2 className="text-white font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{t.ctaTitle}</h2>
                 <p className="max-w-xl mx-auto mb-8" style={{ fontSize: 16, color: 'var(--text-muted)' }}>{t.ctaSub}</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="/#contact" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>{t.ctaPrimary}{arrow}</a>
+                  <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>{t.ctaPrimary}{arrow}</a>
                   <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>{t.ctaSecondary}</a>
                 </div>
               </div>

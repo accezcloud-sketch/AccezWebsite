@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
+import { localeHref } from '@/lib/i18n'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -132,7 +133,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 py-14 lg:py-16">
             {/* Brand column */}
             <div className="col-span-2 md:col-span-4 lg:col-span-2 flex flex-col gap-5">
-              <Link href="/" prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4]">
+              <Link href={localeHref("/", language)} prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4]">
                 <Image
                   src="/images/accez-logo.png"
                   alt="Accez Logo"
@@ -188,7 +189,7 @@ export default function Footer() {
                   {links.map(({ label, href, external }) => (
                     <li key={`${heading}-${label}`}>
                       <a
-                        href={href}
+                        href={external ? href : localeHref(href, language)}
                         {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                         className="text-slate-500 text-sm transition-colors duration-150 hover:text-slate-300 inline-flex items-center gap-1 group"
                       >
