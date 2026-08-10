@@ -6,7 +6,7 @@ excerptAr: "اكتشف لماذا يعتبر تأخر دفع الإيجارات 
 date: "2026-04-28"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-proble.jpg"
+coverImage: "/images/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-proble.webp"
 coverImageAlt: "Property manager reviewing documents at a desk"
 coverImageCredit: "Photo by Erik Mclean on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-black-and-white-photo-of-a-parking-sign-qhbo_CdJMos"

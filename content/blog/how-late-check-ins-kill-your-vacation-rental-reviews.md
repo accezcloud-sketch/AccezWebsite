@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يؤثر تأخير تسجيل الوصول سلب
 date: "2026-05-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-late-check-ins-kill-your-vacation-rental-reviews.jpg"
+coverImage: "/images/blog/how-late-check-ins-kill-your-vacation-rental-reviews.webp"
 coverImageAlt: "Property manager looking stressed at a laptop with a calendar icon"
 coverImageCredit: "Photo by Courtney Chestnut on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-and-gray-houses-zeq7Ms-Dgn8"

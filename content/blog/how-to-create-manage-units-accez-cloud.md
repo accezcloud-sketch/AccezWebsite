@@ -6,7 +6,7 @@ excerptAr: "دليل لإنشاء وإدارة الوحدات الإيجارية
 date: "2024-12-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm5.jpg"
+coverImage: "/images/blog/pm5.webp"
 coverImageAlt: "Accez.Cloud unit management interface showing long-term and short-term rental unit options"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"

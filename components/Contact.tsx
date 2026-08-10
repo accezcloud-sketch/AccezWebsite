@@ -170,7 +170,7 @@ export default function Contact() {
                       value='{"keyname":"AccezV2","fallback":"true","orgId":"00D41000002kA0p","ts":""}'
                     />
                     <input type="hidden" name="oid" value="00D41000002kA0p" />
-                    <input type="hidden" name="retURL" value="https://accez.cloud/thankyou" />
+                    <input type="hidden" name="retURL" value="https://www.accez.cloud/thankyou" />
                     <input type="hidden" name="recordType" id="recordType" value="012Pm000004jdap" />
                     <input type="hidden" name="lead_source" value="Web" />
 

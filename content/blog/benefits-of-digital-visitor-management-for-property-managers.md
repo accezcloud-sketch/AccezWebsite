@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف تمكّن حلول إدارة الزوار الر
 date: "2026-04-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm3.jpg"
+coverImage: "/images/blog/pm3.webp"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["Property Management", "Saudi Arabia", "Digital Transformation", "Visitor Management", "Real Estate"]

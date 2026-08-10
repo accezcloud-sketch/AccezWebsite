@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { alternatesFor } from '@/lib/i18n'
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({
@@ -23,21 +24,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
-  const title = post.title
-  const description = post.excerpt.length > 160
-    ? post.excerpt.slice(0, 157) + '...'
-    : post.excerpt
-  const url = `https://accez.cloud/blog/${post.slug}`
+  // Prefer explicit SERP overrides when the post declares them; otherwise fall
+  // back to the title/excerpt exactly as before.
+  const title = post.metaTitle || post.title
+  const rawDescription = post.metaDescription || post.excerpt
+  const description =
+    rawDescription.length > 160 ? rawDescription.slice(0, 157) + '...' : rawDescription
+  const url = `https://www.accez.cloud/blog/${post.slug}`
+  // Social preview image — NOT the same as the on-page image.
+  //
+  // Cover images are served as WebP on the page (roughly half the bytes), but
+  // Facebook, LinkedIn and X do not reliably render WebP in link previews. The
+  // original JPEG is still on disk for exactly this reason, so we hand social
+  // crawlers the raster version and keep the WebP for real visitors.
   const imageUrl = post.coverImage.startsWith('http')
     ? post.coverImage
-    : `https://accez.cloud${post.coverImage}`
+    : `https://www.accez.cloud${post.coverImage.replace(/\.webp$/, '.jpg')}`
 
   return {
     title,
     description,
-    alternates: {
-      canonical: `/blog/${post.slug}`,
-    },
+    alternates: alternatesFor(`blog/${post.slug}`, 'en'),
     openGraph: {
       title,
       description,
@@ -65,7 +72,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-// HowTo steps for the 3 tutorial posts
+// HowTo structured data was removed from this file.
+//
+// Google deprecated HowTo rich results on mobile in August 2023 and on desktop
+// in September 2023. The markup produced nothing in Search for these three
+// tutorial posts, so it was dead weight in every page's HTML.
+//
+// The step definitions below are retained deliberately: they are an accurate
+// written record of the product flows, and they are the source material if
+// these tutorials are ever rewritten as proper step-by-step page content —
+// which IS still worth doing, because clear ordered steps are exactly the kind
+// of passage AI answers retrieve, with or without markup.
 const howToSteps: Record<string, { name: string; text: string }[]> = {
   'how-to-create-manage-work-orders-accez-cloud': [
     {
@@ -136,9 +153,31 @@ const howToSteps: Record<string, { name: string; text: string }[]> = {
 }
 
 function getBlogPostingSchema(post: ReturnType<typeof getAllPosts>[number]) {
+  // Raster rather than WebP, matching the Open Graph tags above. Google does
+  // accept WebP in structured data, but the JPEG is the safest common
+  // denominator across every consumer of this markup.
   const imageUrl = post.coverImage.startsWith('http')
     ? post.coverImage
-    : `https://accez.cloud${post.coverImage}`
+    : `https://www.accez.cloud${post.coverImage.replace(/\.webp$/, '.jpg')}`
+
+  // Google's "Who created it" guidance asks for a named human with verifiable
+  // credentials. When a post declares `authorUrl` in its frontmatter we emit a
+  // `Person` with a `sameAs` link; otherwise we keep the house `Organization`
+  // byline, which is valid markup but a much weaker trust signal.
+  const author = post.authorUrl
+    ? {
+        '@type': 'Person',
+        name: post.author,
+        url: post.authorUrl,
+        sameAs: [post.authorUrl],
+        ...(post.authorRole ? { jobTitle: post.authorRole } : {}),
+        worksFor: { '@id': 'https://www.accez.cloud/#organization' },
+      }
+    : {
+        '@type': 'Organization',
+        name: post.author,
+        url: 'https://www.accez.cloud',
+      }
 
   return {
     '@context': 'https://schema.org',
@@ -147,52 +186,44 @@ function getBlogPostingSchema(post: ReturnType<typeof getAllPosts>[number]) {
     description: post.excerpt,
     image: imageUrl,
     datePublished: post.date,
-    dateModified: post.date,
-    author: {
-      '@type': 'Organization',
-      name: post.author,
-      url: 'https://accez.cloud',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Accez Cloud',
-      url: 'https://accez.cloud',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://accez.cloud/images/accez-logo.png',
-      },
-    },
+    // Was hardcoded to `post.date`, so genuine edits were invisible to Google.
+    // Now reflects the optional `updated` frontmatter field when present.
+    dateModified: post.updated || post.date,
+    author,
+    publisher: { '@id': 'https://www.accez.cloud/#organization' },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://accez.cloud/blog/${post.slug}`,
+      '@id': `https://www.accez.cloud/blog/${post.slug}`,
     },
     keywords: post.tags.join(', '),
     articleSection: post.category,
+    // The English article is what is served at this URL. When Arabic gets its
+    // own /ar routes this becomes per-route rather than a constant.
     inLanguage: 'en',
-    url: `https://accez.cloud/blog/${post.slug}`,
+    url: `https://www.accez.cloud/blog/${post.slug}`,
   }
 }
 
-function getHowToSchema(
-  post: ReturnType<typeof getAllPosts>[number],
-  steps: { name: string; text: string }[]
-) {
-  const imageUrl = post.coverImage.startsWith('http')
-    ? post.coverImage
-    : `https://accez.cloud${post.coverImage}`
-
+/**
+ * Breadcrumbs for the natural hierarchy: home -> blog -> post.
+ *
+ * Cheap, reliably rendered by Google, and it changes how the URL path is
+ * displayed in results — a click-through improvement rather than a ranking one.
+ */
+function getBreadcrumbSchema(post: ReturnType<typeof getAllPosts>[number]) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: post.title,
-    description: post.excerpt,
-    image: imageUrl,
-    step: steps.map((step, index) => ({
-      '@type': 'HowToStep',
-      position: index + 1,
-      name: step.name,
-      text: step.text,
-    })),
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.accez.cloud/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.accez.cloud/blog/' },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: `https://www.accez.cloud/blog/${post.slug}/`,
+      },
+    ],
   }
 }
 
@@ -205,11 +236,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   if (postMeta) {
     schemas.push(getBlogPostingSchema(postMeta))
-
-    const steps = howToSteps[postMeta.slug]
-    if (steps) {
-      schemas.push(getHowToSchema(postMeta, steps))
-    }
+    schemas.push(getBreadcrumbSchema(postMeta))
   }
 
   return (

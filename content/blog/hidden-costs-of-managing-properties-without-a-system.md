@@ -6,7 +6,7 @@ excerptAr: "تسريبات الوقت وتكاليف دوران المستأجر
 date: "2026-02-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm2.jpg"
+coverImage: "/images/blog/pm2.webp"
 coverImageAlt: "Chart showing hidden costs of manual property management including turnover and vacancy losses"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

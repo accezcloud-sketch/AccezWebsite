@@ -6,7 +6,7 @@ excerptAr: "بعيدًا عن تحصيل الإيجار، اكتشف الرغب�
 date: "2026-04-28"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/what-property-owners-really-want-from-their-managers.jpg"
+coverImage: "/images/blog/what-property-owners-really-want-from-their-managers.webp"
 coverImageAlt: "Property manager and owner discussing a building"
 coverImageCredit: "Photo by Samuel Regan-Asante on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/brown-and-white-concrete-building-vm9RsNdXlUE"

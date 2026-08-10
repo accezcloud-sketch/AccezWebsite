@@ -6,7 +6,7 @@ excerptAr: "بسّط إدارة الصيانة مع أوامر العمل في A
 date: "2026-01-19"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm3.jpg"
+coverImage: "/images/blog/pm3.webp"
 coverImageAlt: "Accez.Cloud work order creation form showing maintenance request details and status tracking"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"

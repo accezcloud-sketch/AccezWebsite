@@ -6,7 +6,7 @@ excerptAr: "رؤية المملكة 2030 الطموحة لا تحول الاقت
 date: "2026-05-27"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/why-vision-2030-is-creating-a-new-kind-of-property-manager.jpg"
+coverImage: "/images/blog/why-vision-2030-is-creating-a-new-kind-of-property-manager.webp"
 coverImageAlt: "modern city skyline with diverse buildings"
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-house-shaped-keychain-hanging-from-a-key-chain-6TIlcP5af08"

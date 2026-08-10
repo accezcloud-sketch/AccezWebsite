@@ -6,7 +6,7 @@ excerptAr: "هل سئمت من إرسال تقارير إدارة الممتلك
 date: "2026-05-29"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-monthly-report-nobody-reads-and-what-to-send-instead.jpg"
+coverImage: "/images/blog/the-monthly-report-nobody-reads-and-what-to-send-instead.webp"
 coverImageAlt: "Infographic showing declining engagement with traditional reports"
 coverImageCredit: "Photo by Kelly Sikkema on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/the-word-monday-is-cut-out-of-white-paper-KJpPFhOEWFc"

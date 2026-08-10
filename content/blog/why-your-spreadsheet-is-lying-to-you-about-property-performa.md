@@ -6,7 +6,7 @@ excerptAr: "اكشف الحقيقة وراء بيانات أداء عقارات�
 date: "2026-06-06"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa.jpg"
+coverImage: "/images/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa.webp"
 coverImageAlt: "Chart showing property performance metrics"
 coverImageCredit: "Photo by Annie Spratt on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-close-up-of-a-paper-with-numbers-on-it-tuJ3tXSayco"

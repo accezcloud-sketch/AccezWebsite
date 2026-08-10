@@ -6,7 +6,7 @@ excerptAr: "توقف عن التنقل بين المنصات التي لا حص�
 date: "2026-05-12"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/one-inbox-to-rule-them-all-centralizing-property-communicati.jpg"
+coverImage: "/images/blog/one-inbox-to-rule-them-all-centralizing-property-communicati.webp"
 coverImageAlt: "Illustration of a central inbox with various communication icons flowing into it"
 coverImageCredit: "Photo by Brett Jordan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-close-up-of-an-open-book-on-a-table-LnvXzv2De5M"

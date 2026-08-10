@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكن لمديري العقارات تحويل 
 date: "2026-06-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/from-cost-center-to-profit-center-monetizing-property-servic.jpg"
+coverImage: "/images/blog/from-cost-center-to-profit-center-monetizing-property-servic.webp"
 coverImageAlt: "Property manager looking at financial reports and a growth chart"
 coverImageCredit: "Photo by Towfiqu barbhuiya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/man-holding-model-house-at-desk-with-calculator-05XcCfTOzN4"

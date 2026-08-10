@@ -6,7 +6,7 @@ excerptAr: "التعليقات السلبية لا مفر منها. تعلم ك�
 date: "2026-07-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/bad-reviews-happen-how-to-respond-without-damaging-your-repu.jpg"
+coverImage: "/images/blog/bad-reviews-happen-how-to-respond-without-damaging-your-repu.webp"
 coverImageAlt: "Property manager responding to online review"
 coverImageCredit: "Photo by Towfiqu barbhuiya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-row-of-yellow-stars-sitting-on-top-of-a-blue-and-pink-surface-0ZUoBtLw3y4"

@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     description:
       'How Cloud Valley LLC collects, uses, shares, and protects information from property managers and tenants who use the Accez platform.',
     type: 'article',
-    url: 'https://accez.cloud/privacy',
+    url: 'https://www.accez.cloud/privacy',
     siteName: 'Accez Cloud',
     images: [
       {
-        url: 'https://accez.cloud/images/og-image.png',
+        url: 'https://www.accez.cloud/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Accez Cloud - Privacy Policy',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Accez Cloud',
     description:
       'How Cloud Valley LLC collects, uses, shares, and protects information from property managers and tenants who use the Accez platform.',
-    images: ['https://accez.cloud/images/og-image.png'],
+    images: ['https://www.accez.cloud/images/og-image.png'],
   },
 }
 

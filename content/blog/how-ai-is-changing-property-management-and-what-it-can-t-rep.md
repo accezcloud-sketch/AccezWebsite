@@ -6,7 +6,7 @@ excerptAr: "استكشف كيف يُحدث الذكاء الاصطناعي تح�
 date: "2026-04-07"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-ai-is-changing-property-management-and-what-it-can-t-rep.jpg"
+coverImage: "/images/blog/how-ai-is-changing-property-management-and-what-it-can-t-rep.webp"
 coverImageAlt: "A graphic representing AI and property management integration"
 coverImageCredit: "Photo by Marija Zaric on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-sticker-on-the-side-of-a-wall-AXL7xerPCUU"

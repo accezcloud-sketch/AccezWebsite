@@ -6,7 +6,7 @@ excerptAr: "تجاوز التقارير الأساسية لتعزيز الثقة
 date: "2026-07-06"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/owner-communication-that-builds-trust-not-just-reports.jpg"
+coverImage: "/images/blog/owner-communication-that-builds-trust-not-just-reports.webp"
 coverImageAlt: "Property manager communicating with a client"
 coverImageCredit: "Photo by Joshua Hoehne on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/black-and-brown-happy-new-year-text-rIUx_Q9_axw"

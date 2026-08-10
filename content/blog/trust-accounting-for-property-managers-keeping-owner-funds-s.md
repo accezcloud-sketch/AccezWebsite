@@ -6,7 +6,7 @@ excerptAr: "اكتشف الأهمية الحاسمة للمحاسبة الائت
 date: "2026-08-03"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/trust-accounting-for-property-managers-keeping-owner-funds-s.jpg"
+coverImage: "/images/blog/trust-accounting-for-property-managers-keeping-owner-funds-s.webp"
 coverImageAlt: "Image of a secure financial ledger with property icons"
 coverImageCredit: "Photo by Kelly Sikkema on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-holding-paper-near-pen-and-calculator-xoU52jUVUXA"

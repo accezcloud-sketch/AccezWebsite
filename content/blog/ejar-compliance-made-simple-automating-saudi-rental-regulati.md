@@ -6,7 +6,7 @@ excerptAr: "يمكن أن يكون التنقل في لوائح الإيجار �
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati.jpg"
+coverImage: "/images/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati.webp"
 coverImageAlt: "Property manager using a laptop with digital documents"
 coverImageCredit: "Photo by MD ENAMUL HAQUE TETU on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/an-aerial-view-of-a-city-with-a-highway-Qxa1iPcoXW4"

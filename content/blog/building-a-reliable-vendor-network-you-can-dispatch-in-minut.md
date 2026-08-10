@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكنك بناء شبكة موردين تستج
 date: "2026-08-09"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minut.jpg"
+coverImage: "/images/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minut.webp"
 coverImageAlt: "property manager on phone coordinating with vendor"
 coverImageCredit: "Photo by Shubham Dhage on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-colorful-toy-on-a-table-cA4JoSyY8VM"

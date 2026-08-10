@@ -6,7 +6,7 @@ excerptAr: "اكتشف الحاجز الخفي الذي يمنع مديري ال
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-10-unit-ceiling-why-most-property-managers-can-t-scale.jpg"
+coverImage: "/images/blog/the-10-unit-ceiling-why-most-property-managers-can-t-scale.webp"
 coverImageAlt: "Property manager looking at a small building with limited units"
 coverImageCredit: "Photo by Brett Jordan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/close-up-of-text-in-a-book-about-religious-structures-jfvPDWTsudE"

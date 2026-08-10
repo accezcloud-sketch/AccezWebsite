@@ -6,7 +6,7 @@ excerptAr: "في عالم إدارة العقارات سريع الخطى، يع
 date: "2026-04-29"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-5-metrics-every-property-manager-should-check-daily.jpg"
+coverImage: "/images/blog/the-5-metrics-every-property-manager-should-check-daily.webp"
 coverImageAlt: "Property manager reviewing data on a laptop"
 coverImageCredit: "Photo by Tony Hand on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-number-5-illustration-P3uJUQ62uXE"

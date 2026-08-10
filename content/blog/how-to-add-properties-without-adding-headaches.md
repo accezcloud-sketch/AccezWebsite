@@ -6,7 +6,7 @@ excerptAr: "يمكن أن تصبح إدارة محافظ العقارات مره
 date: "2026-06-14"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-add-properties-without-adding-headaches.jpg"
+coverImage: "/images/blog/how-to-add-properties-without-adding-headaches.webp"
 coverImageAlt: "man reviewing property documents at a desk"
 coverImageCredit: "Photo by Brett Jordan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/close-up-of-an-open-book-with-text-visible-VyzZf4bR6lA"

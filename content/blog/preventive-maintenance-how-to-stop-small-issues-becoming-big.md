@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكن للصيانة الاستباقية أن 
 date: "2026-08-07"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/preventive-maintenance-how-to-stop-small-issues-becoming-big.jpg"
+coverImage: "/images/blog/preventive-maintenance-how-to-stop-small-issues-becoming-big.webp"
 coverImageAlt: "Illustration of a toolbox and gears representing preventive maintenance"
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/hand-holding-key-over-house-models-GQn9GnMkVQg"

@@ -6,7 +6,7 @@ excerptAr: "محادثات واتساب المتناثرة تكلفك الوقت
 date: "2026-02-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm7.jpg"
+coverImage: "/images/blog/pm7.webp"
 coverImageAlt: "Unified property communication dashboard replacing scattered WhatsApp conversations"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

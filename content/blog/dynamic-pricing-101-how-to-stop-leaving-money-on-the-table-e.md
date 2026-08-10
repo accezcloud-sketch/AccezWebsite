@@ -6,7 +6,7 @@ excerptAr: "يكافح مديرو العقارات غالبًا مع التسع�
 date: "2026-07-08"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-e.jpg"
+coverImage: "/images/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-e.webp"
 coverImageAlt: "Illustration of a graph showing upward rental price trends with a dollar sign"
 coverImageCredit: "Photo by Lucas on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-single-100-dollar-bill-rests-on-a-wooden-table-RndI4pxgJbQ"

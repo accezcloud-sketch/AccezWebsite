@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكن لمديري العقارات فتح مص
 date: "2026-06-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w.jpg"
+coverImage: "/images/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w.webp"
 coverImageAlt: "property manager reviewing a digital dashboard"
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-house-shaped-keychain-hanging-from-a-key-chain-6TIlcP5af08"

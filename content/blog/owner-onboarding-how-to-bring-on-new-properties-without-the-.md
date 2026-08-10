@@ -6,7 +6,7 @@ excerptAr: "هل سئمت من الغرق في الأوراق عند إلحاق 
 date: "2026-07-28"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/owner-onboarding-how-to-bring-on-new-properties-without-the-.jpg"
+coverImage: "/images/blog/owner-onboarding-how-to-bring-on-new-properties-without-the-.webp"
 coverImageAlt: "Digital dashboard for property management"
 coverImageCredit: "Photo by Wesley Tingey on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/stacks-of-paper-documents-and-file-folders-snNHKZ-mGfE"

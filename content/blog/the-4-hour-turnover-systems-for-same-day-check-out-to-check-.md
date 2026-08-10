@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف تحقق انتقالات ضيوف سريعة ال
 date: "2026-06-12"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-.jpg"
+coverImage: "/images/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-.webp"
 coverImageAlt: "property manager overseeing a seamless check-in process"
 coverImageCredit: "Photo by Brett Jordan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/close-up-of-text-in-a-book-with-handwritten-notes-wzGFZwU708A"

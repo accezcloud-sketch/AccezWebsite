@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يفقد مديرو العقارات الإيرا�
 date: "2026-06-04"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/why-your-tenants-are-paying-someone-else-for-services-you-co.jpg"
+coverImage: "/images/blog/why-your-tenants-are-paying-someone-else-for-services-you-co.webp"
 coverImageAlt: "Property manager looking at data"
 coverImageCredit: "Photo by Markus Winkler on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/black-and-white-braille-typewriter-EX9QVVFtQxw"

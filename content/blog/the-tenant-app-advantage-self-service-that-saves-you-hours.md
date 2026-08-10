@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكن لتطبيق مستأجر مخصص إحد
 date: "2026-05-04"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-tenant-app-advantage-self-service-that-saves-you-hours.jpg"
+coverImage: "/images/blog/the-tenant-app-advantage-self-service-that-saves-you-hours.webp"
 coverImageAlt: "Property manager using a laptop with app interface"
 coverImageCredit: "Photo by Markus Winkler on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-holding-black-android-smartphone-cpdX2eedmiw"

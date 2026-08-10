@@ -6,7 +6,7 @@ excerptAr: "يواجه مديرو العقارات غالبًا صعوبة في 
 date: "2026-06-30"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf.jpg"
+coverImage: "/images/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf.webp"
 coverImageAlt: "a dashboard showing tenant communication metrics"
 coverImageCredit: "Photo by Nelson Ndongala on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/shallow-focus-photo-of-no-trespassing-signage-CgJ1xSay37g"

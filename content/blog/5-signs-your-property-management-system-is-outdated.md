@@ -6,7 +6,7 @@ excerptAr: "هل برنامج إدارة العقارات الخاص بك يعي
 date: "2026-01-27"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm1.jpg"
+coverImage: "/images/blog/pm1.webp"
 coverImageAlt: "Outdated property management system compared to modern cloud-based platform interface"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

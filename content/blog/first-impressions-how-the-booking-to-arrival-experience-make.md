@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف تؤثر الرحلة من الحجز إلى ال�
 date: "2026-07-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/first-impressions-how-the-booking-to-arrival-experience-make.jpg"
+coverImage: "/images/blog/first-impressions-how-the-booking-to-arrival-experience-make.webp"
 coverImageAlt: "Property manager checking a booking on a tablet"
 coverImageCredit: "Photo by appshunter.io on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-blue-samsung-phone-with-the-logo-of-bookking-com-on-it-X7n9AVM71Z8"

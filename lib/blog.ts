@@ -14,8 +14,41 @@ export interface BlogPost {
   content: string
   contentAr: string
   date: string
+  /**
+   * Date of the last substantive edit, as `YYYY-MM-DD`.
+   *
+   * Optional. When absent we fall back to `date`, which is what the schema did
+   * unconditionally before — meaning genuine updates were invisible to Google.
+   * Only set this when the content actually changed; Google names artificially
+   * refreshed dates as a search-engine-first signal.
+   */
+  updated?: string
+  /**
+   * Optional SERP overrides.
+   *
+   * When absent, the page falls back to `title` / `excerpt` (previous
+   * behaviour). Setting these lets whoever plans the content decide exactly
+   * what Google shows, instead of the description being a blind 157-character
+   * slice of the opening paragraph.
+   */
+  metaTitle?: string
+  metaTitleAr?: string
+  metaDescription?: string
+  metaDescriptionAr?: string
+  /** Target query this post is written for. Editorial reference, not output. */
+  primaryKeyword?: string
   author: string
   authorAr: string
+  /**
+   * Public profile URL for a named human author (LinkedIn, personal site).
+   *
+   * When present, the article is marked up with schema.org `Person` instead of
+   * `Organization`, which is what Google's "Who created it" guidance asks for.
+   * Leave unset for house-authored posts and the markup stays `Organization`.
+   */
+  authorUrl?: string
+  /** Job title, e.g. "Head of Operations". Used in Person markup. */
+  authorRole?: string
   coverImage: string
   coverImageAlt: string
   coverImageCredit?: string
@@ -34,8 +67,16 @@ export interface BlogPostMeta {
   excerpt: string
   excerptAr: string
   date: string
+  updated?: string
+  metaTitle?: string
+  metaTitleAr?: string
+  metaDescription?: string
+  metaDescriptionAr?: string
+  primaryKeyword?: string
   author: string
   authorAr: string
+  authorUrl?: string
+  authorRole?: string
   coverImage: string
   coverImageAlt: string
   coverImageCredit?: string
@@ -69,6 +110,14 @@ export function getAllPosts(): BlogPostMeta[] {
         excerpt: data.excerpt || '',
         excerptAr: data.excerptAr || data.excerpt || '',
         date: data.date || '',
+        updated: data.updated || undefined,
+        metaTitle: data.metaTitle || undefined,
+        metaTitleAr: data.metaTitleAr || undefined,
+        metaDescription: data.metaDescription || undefined,
+        metaDescriptionAr: data.metaDescriptionAr || undefined,
+        primaryKeyword: data.primaryKeyword || undefined,
+        authorUrl: data.authorUrl || undefined,
+        authorRole: data.authorRole || undefined,
         author: data.author || '',
         authorAr: data.authorAr || data.author || '',
         coverImage: data.coverImage || '/images/blog/default.jpg',
@@ -113,6 +162,14 @@ export function getPostBySlug(slug: string): BlogPost | null {
       content: contentEn,
       contentAr: contentAr,
       date: data.date || '',
+      updated: data.updated || undefined,
+      metaTitle: data.metaTitle || undefined,
+      metaTitleAr: data.metaTitleAr || undefined,
+      metaDescription: data.metaDescription || undefined,
+      metaDescriptionAr: data.metaDescriptionAr || undefined,
+      primaryKeyword: data.primaryKeyword || undefined,
+      authorUrl: data.authorUrl || undefined,
+      authorRole: data.authorRole || undefined,
       author: data.author || '',
       authorAr: data.authorAr || data.author || '',
       coverImage: data.coverImage || '/images/blog/default.jpg',

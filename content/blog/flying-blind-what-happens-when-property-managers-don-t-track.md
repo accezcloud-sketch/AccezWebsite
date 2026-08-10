@@ -6,7 +6,7 @@ excerptAr: "يعمل العديد من مديري العقارات بالحدس�
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/flying-blind-what-happens-when-property-managers-don-t-track.jpg"
+coverImage: "/images/blog/flying-blind-what-happens-when-property-managers-don-t-track.webp"
 coverImageAlt: "Manager looking at a blank screen with question marks floating around"
 coverImageCredit: "Photo by Maksim Tarasov on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-printer-paper-on-brown-wooden-table-p1kYI_kzySQ"

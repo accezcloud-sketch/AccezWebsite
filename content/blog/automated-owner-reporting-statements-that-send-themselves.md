@@ -6,7 +6,7 @@ excerptAr: "هل سئمت من مطاردة تقارير الملاك؟ اكتش
 date: "2026-07-30"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/automated-owner-reporting-statements-that-send-themselves.jpg"
+coverImage: "/images/blog/automated-owner-reporting-statements-that-send-themselves.webp"
 coverImageAlt: "A manager looking at a tablet displaying financial reports with a satisfied expression"
 coverImageCredit: "Photo by Stephen Dawson on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs"

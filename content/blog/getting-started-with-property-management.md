@@ -6,7 +6,7 @@ excerptAr: "تعرف على كيف يمكن لبرنامج إدارة العقا
 date: "2024-12-15"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/property-management.jpg"
+coverImage: "/images/blog/property-management.webp"
 category: "Getting Started"
 categoryAr: "البدء"
 tags: ["Property Management", "Software", "Beginner Guide"]

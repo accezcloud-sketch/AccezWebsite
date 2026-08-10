@@ -1,73 +1,52 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import { localeUrl } from '@/lib/i18n'
 
 export const dynamic = 'force-static'
 
-const baseUrl = 'https://accez.cloud'
+const baseUrl = 'https://www.accez.cloud'
 
 // Stable last-modified for static pages. Using a fixed date (instead of
 // `new Date()`) keeps the sitemap byte-identical between builds, so crawlers
 // don't re-crawl every URL after every deploy (which wastes edge requests).
 const STATIC_LAST_MODIFIED = '2026-07-01'
 
+// NOTE ON `changeFrequency` AND `priority`:
+// Google has stated publicly that it ignores both. They are kept off this
+// sitemap deliberately — they created a false impression that crawl behaviour
+// was being steered when it wasn't. `lastModified` IS used, so that stays.
+//
+// URLs include the trailing slash to match `trailingSlash: true` in
+// next.config.js and the canonical tags the pages emit. A sitemap that
+// disagrees with the canonical wastes a crawl on the redirect.
 export default function sitemap(): MetadataRoute.Sitemap {
-  // IMPORTANT: only list pages that actually exist. Previously this listed
-  // /pricing, /features and /about — none of which are real routes — so every
-  // crawler that read the sitemap generated 404 edge requests. Pricing/features
-  // are anchor sections on the home page (/#pricing, /#features), not pages.
+  // Routes that exist in BOTH languages. /privacy and /terms are English-only
+  // (the legal text has no Arabic translation), so they are listed once and
+  // deliberately have no /ar counterpart — an Arabic URL serving English legal
+  // text would be worse than no Arabic URL at all.
+  const bilingual = ['', 'modules', 'owners', 'sales', 'hotels', 'service-providers', 'about', 'support', 'blog']
+  const englishOnly = ['privacy', 'terms']
+
   const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
+    ...bilingual.flatMap((route) => [
+      { url: localeUrl(route, 'en'), lastModified: STATIC_LAST_MODIFIED },
+      { url: localeUrl(route, 'ar'), lastModified: STATIC_LAST_MODIFIED },
+    ]),
+    ...englishOnly.map((route) => ({
+      url: localeUrl(route, 'en'),
       lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/service-providers`,
-      lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    { url: `${baseUrl}/modules`, lastModified: STATIC_LAST_MODIFIED, changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${baseUrl}/about`, lastModified: STATIC_LAST_MODIFIED, changeFrequency: 'monthly' as const, priority: 0.6 },
-    ...['owners', 'sales', 'hotels'].map((slug) => ({
-      url: `${baseUrl}/${slug}`,
-      lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
     })),
-    {
-      url: `${baseUrl}/support`,
-      lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: STATIC_LAST_MODIFIED,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
   ]
 
-  const blogPages: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.date || STATIC_LAST_MODIFIED,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }))
+  // Every post exists in both languages: the Arabic translation ships in the
+  // same .md file, split on the <!-- AR --> marker.
+  const blogPages: MetadataRoute.Sitemap = getAllPosts().flatMap((post) => {
+    const lastModified = post.updated || post.date || STATIC_LAST_MODIFIED
+    return [
+      { url: localeUrl(`blog/${post.slug}`, 'en'), lastModified },
+      { url: localeUrl(`blog/${post.slug}`, 'ar'), lastModified },
+    ]
+  })
 
   return [...staticPages, ...blogPages]
 }

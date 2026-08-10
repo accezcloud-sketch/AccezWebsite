@@ -6,7 +6,7 @@ excerptAr: "تعامل مع التحديات الفريدة لإدارة الم�
 date: "2026-07-04"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/managing-expat-tenants-in-saudi-arabia-communication-across-.jpg"
+coverImage: "/images/blog/managing-expat-tenants-in-saudi-arabia-communication-across-.webp"
 coverImageAlt: "Property manager communicating with an expat tenant in Saudi Arabia"
 coverImageCredit: "Photo by Ibrahim Abdullah on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-very-tall-building-in-the-middle-of-a-city-_UxsPARhtOg"

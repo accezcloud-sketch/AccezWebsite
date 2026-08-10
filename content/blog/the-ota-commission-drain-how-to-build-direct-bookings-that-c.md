@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيفية تجاوز عمولات وكالات السف�
 date: "2026-07-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-ota-commission-drain-how-to-build-direct-bookings-that-c.jpg"
+coverImage: "/images/blog/the-ota-commission-drain-how-to-build-direct-bookings-that-c.webp"
 coverImageAlt: "graphic depicting financial growth and direct booking success"
 coverImageCredit: "Photo by Brett Jordan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-scrabble-of-words-spelling-commit-or-quit-out-guEsIJBDWjM"

@@ -6,7 +6,7 @@ excerptAr: "لا تدع الأصول ضعيفة الأداء تسحب استثم
 date: "2026-06-28"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-spot-a-problem-property-before-it-drains-your-portfol.jpg"
+coverImage: "/images/blog/how-to-spot-a-problem-property-before-it-drains-your-portfol.webp"
 coverImageAlt: "property manager looking at financial reports"
 coverImageCredit: "Photo by Tech Daily on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/black-flat-screen-computer-monitor-vxTWpu14zeM"

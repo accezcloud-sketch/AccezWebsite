@@ -6,7 +6,7 @@ excerptAr: "تعلم ما يجب أتمتته وما يجب إبقاؤه بشر�
 date: "2026-02-19"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm5.jpg"
+coverImage: "/images/blog/pm5.webp"
 coverImageAlt: "Automated property management workflow with human oversight checkpoints"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

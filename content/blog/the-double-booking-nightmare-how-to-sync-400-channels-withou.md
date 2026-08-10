@@ -6,7 +6,7 @@ excerptAr: "غالباً ما يتنقل مديرو العقارات بين مئ
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-double-booking-nightmare-how-to-sync-400-channels-withou.jpg"
+coverImage: "/images/blog/the-double-booking-nightmare-how-to-sync-400-channels-withou.webp"
 coverImageAlt: "Property manager looking stressed at a desk covered in papers and screens"
 coverImageCredit: "Photo by Marija Zaric on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-picture-of-a-sign-on-a-wall-that-says-in-the-opposite-direction-you-might-uO8nfhorfWA"

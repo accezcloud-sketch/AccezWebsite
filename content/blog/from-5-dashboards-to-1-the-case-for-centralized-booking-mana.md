@@ -6,7 +6,7 @@ excerptAr: "يدير مديرو العقارات منصات متعددة، مم�
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana.jpg"
+coverImage: "/images/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana.webp"
 coverImageAlt: "Graphic showing multiple dashboards consolidating into one central dashboard"
 coverImageCredit: "Photo by prashant hiremath on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/employer-dashboard-showing-application-trends-and-key-metrics-phS1wAgXOQI"

@@ -6,7 +6,7 @@ excerptAr: "قم بتبسيط تواصلك مع الضيوف باستخدام ه
 date: "2026-07-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-guest-messaging-templates-every-vacation-rental-manager-.jpg"
+coverImage: "/images/blog/the-guest-messaging-templates-every-vacation-rental-manager-.webp"
 coverImageAlt: "A hand holding a smartphone displaying a guest messaging interface"
 coverImageCredit: "Photo by Chen Mizrach on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/woman-sits-on-brown-wooden-beach-chair-jL6PTWI7h18"

@@ -6,7 +6,7 @@ excerptAr: "هل تدير منصات حجز متعددة وتفوتك الإير
 date: "2026-04-19"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm-default.jpg"
+coverImage: "/images/blog/pm-default.webp"
 coverImageAlt: "Illustration of property manager juggling different booking platforms"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

@@ -6,7 +6,7 @@ excerptAr: "التوسع من 10 إلى أكثر من 100 وحدة أمر مثي
 date: "2026-03-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/property-management-image.jpg"
+coverImage: "/images/blog/property-management-image.webp"
 coverImageAlt: "Property manager reviewing portfolio growth strategy on a digital dashboard"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

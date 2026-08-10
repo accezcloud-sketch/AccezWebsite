@@ -6,7 +6,7 @@ excerptAr: "اكتشف الأخطاء الشائعة في التعامل مع ط
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-maintenance-request-black-hole-why-tenants-feel-ignored.jpg"
+coverImage: "/images/blog/the-maintenance-request-black-hole-why-tenants-feel-ignored.webp"
 coverImageAlt: "Tenant frustrated with unanswered maintenance requests"
 coverImageCredit: "Photo by Qdomness R3alm on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/black-and-white-round-ornament-lDtGPs6cHcU"

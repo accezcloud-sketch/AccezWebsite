@@ -52,7 +52,7 @@ export default function Capabilities() {
       titleAr: 'إدارة الحجوزات',
       description: 'Manage all vacation rentals with our comprehensive property management software. From single apartments to large portfolios, streamline centralized bookings and performance tracking. Additionally, our platform provides detailed analytics for data-driven decisions.',
       descriptionAr: 'إدارة جميع إيجارات العطلات مع برنامج إدارة العقارات الشامل. من الشقق الفردية إلى المحافظ الكبيرة، قم بتبسيط الحجوزات المركزية وتتبع الأداء. بالإضافة إلى ذلك، توفر منصتنا تحليلات مفصلة لاتخاذ قرارات مبنية على البيانات.',
-      image: '/capabilities/booking.png',
+      image: '/capabilities/booking.webp',
     },
     {
       id: 'services',
@@ -65,7 +65,7 @@ export default function Capabilities() {
       titleAr: 'حجز الخدمات',
       description: 'Enable tenants to book amenities and services directly through the platform. From gym reservations to cleaning services, create additional revenue streams while improving tenant satisfaction and engagement. Services are delivered by providers on the Accez marketplace, and any independent business can join as one.',
       descriptionAr: 'تمكين المستأجرين من حجز المرافق والخدمات مباشرة من خلال المنصة. من حجوزات الصالة الرياضية إلى خدمات التنظيف، أنشئ مصادر دخل إضافية مع تحسين رضا المستأجرين وتفاعلهم. تُقدَّم الخدمات عبر مقدمي الخدمات في سوق أكسيز، ويمكن لأي نشاط تجاري مستقل الانضمام إليه.',
-      image: '/capabilities/services.png',
+      image: '/capabilities/services.webp',
       ctas: [
         {
           label: 'Become a Service Provider',
@@ -95,30 +95,30 @@ export default function Capabilities() {
       badgeAr: 'جديد',
       description: 'Any independent business can create a Service Provider account on Accez: salons and barbers, spas and wellness studios, fitness coaches, photographers, home services and more. Providers build a listing with photos, category, location and opening hours, price each service in SAR, then take instant bookings from customers on the Accez marketplace and manage them from a dedicated provider dashboard.',
       descriptionAr: 'يمكن لأي نشاط تجاري مستقل إنشاء حساب مقدم خدمة على أكسيز: صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون، الخدمات المنزلية وغيرها. يجهّز مقدم الخدمة صفحته بالصور والفئة والموقع وساعات العمل، ويسعّر كل خدمة بالريال، ثم يستقبل حجوزات فورية من العملاء عبر سوق أكسيز ويديرها من لوحة تحكم مخصصة.',
-      image: '/capabilities/service-providers/1.png',
+      image: '/capabilities/service-providers/1.webp',
       slides: [
         {
-          src: '/capabilities/service-providers/1.png',
+          src: '/capabilities/service-providers/1.webp',
           caption: 'The Accez marketplace',
           captionAr: 'سوق أكسيز',
         },
         {
-          src: '/capabilities/service-providers/2.png',
+          src: '/capabilities/service-providers/2.webp',
           caption: 'Your services, prices and reviews',
           captionAr: 'خدماتك وأسعارك وتقييماتك',
         },
         {
-          src: '/capabilities/service-providers/3.png',
+          src: '/capabilities/service-providers/3.webp',
           caption: 'Customers choose their services',
           captionAr: 'العملاء يختارون خدماتهم',
         },
         {
-          src: '/capabilities/service-providers/4.png',
+          src: '/capabilities/service-providers/4.webp',
           caption: 'They pick a date and time',
           captionAr: 'يختارون التاريخ والوقت',
         },
         {
-          src: '/capabilities/service-providers/5.png',
+          src: '/capabilities/service-providers/5.webp',
           caption: 'Review and confirm the booking',
           captionAr: 'مراجعة الحجز وتأكيده',
         },
@@ -149,7 +149,7 @@ export default function Capabilities() {
       titleAr: 'تكوين القنوات',
       description: 'Connect and sync with 400+ booking channels including Airbnb, Booking.com, Expedia, and VRBO. Manage availability, rates, and reservations from a single dashboard with real-time synchronization.',
       descriptionAr: 'الاتصال والمزامنة مع أكثر من 400 قناة حجز بما في ذلك Airbnb و Booking.com و Expedia و VRBO. إدارة التوافر والأسعار والحجوزات من لوحة تحكم واحدة مع المزامنة في الوقت الفعلي.',
-      image: '/capabilities/channels.png',
+      image: '/capabilities/channels.webp',
     },
     {
       id: 'analytics',
@@ -162,7 +162,7 @@ export default function Capabilities() {
       titleAr: 'الإيرادات والتحليلات',
       description: 'Track performance metrics, occupancy rates, and revenue across all properties. Generate comprehensive reports with actionable insights to optimize pricing strategies and maximize returns.',
       descriptionAr: 'تتبع مقاييس الأداء ومعدلات الإشغال والإيرادات عبر جميع العقارات. إنشاء تقارير شاملة مع رؤى قابلة للتنفيذ لتحسين استراتيجيات التسعير وتعظيم العوائد.',
-      image: '/capabilities/analytics.png',
+      image: '/capabilities/analytics.webp',
     },
     {
       id: 'workorders',
@@ -175,7 +175,7 @@ export default function Capabilities() {
       titleAr: 'إدارة أوامر العمل',
       description: 'Streamline maintenance workflows from request to completion. Assign tasks to vendors, track progress in real-time, and maintain a complete history of all property maintenance activities.',
       descriptionAr: 'تبسيط سير عمل الصيانة من الطلب إلى الإنجاز. تعيين المهام للموردين، تتبع التقدم في الوقت الفعلي، والحفاظ على سجل كامل لجميع أنشطة صيانة العقارات.',
-      image: '/capabilities/workorders.png',
+      image: '/capabilities/workorders.webp',
     },
     {
       id: 'units',
@@ -188,7 +188,7 @@ export default function Capabilities() {
       titleAr: 'إدارة وحدات العقارات',
       description: 'Organize and manage all property units with detailed profiles including amenities, photos, and specifications. Track unit status, lease terms, and tenant information in one centralized location.',
       descriptionAr: 'تنظيم وإدارة جميع وحدات العقارات مع ملفات تعريف مفصلة تشمل المرافق والصور والمواصفات. تتبع حالة الوحدة وشروط الإيجار ومعلومات المستأجر في موقع مركزي واحد.',
-      image: '/capabilities/units.png',
+      image: '/capabilities/units.webp',
     },
     {
       id: 'communications',
@@ -201,7 +201,7 @@ export default function Capabilities() {
       titleAr: 'الاتصالات',
       description: 'Centralize all tenant communications in one inbox. Send announcements, respond to inquiries, and maintain conversation history. Automated messaging keeps tenants informed about important updates.',
       descriptionAr: 'مركزة جميع اتصالات المستأجرين في صندوق وارد واحد. إرسال الإعلانات، الرد على الاستفسارات، والحفاظ على سجل المحادثات. الرسائل الآلية تبقي المستأجرين على اطلاع بالتحديثات المهمة.',
-      image: '/capabilities/communications.png',
+      image: '/capabilities/communications.webp',
     },
   ]
 

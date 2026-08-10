@@ -6,7 +6,7 @@ excerptAr: "اكتشف أسرار إنشاء قوائم عقارات تخطف ا
 date: "2026-04-06"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/property-listings-that-convert-what-tenants-actually-look-fo.jpg"
+coverImage: "/images/blog/property-listings-that-convert-what-tenants-actually-look-fo.webp"
 coverImageAlt: "A landlord showcasing a modern apartment listing"
 coverImageCredit: "Photo by Gene Gallin on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-private-property-sign-posted-on-a-wooden-post-o8ulKV-7_Ow"

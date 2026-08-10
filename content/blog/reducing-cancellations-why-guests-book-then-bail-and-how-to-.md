@@ -6,7 +6,7 @@ excerptAr: "اكتشف الأسباب الخفية وراء إلغاءات ال�
 date: "2026-07-12"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/reducing-cancellations-why-guests-book-then-bail-and-how-to-.jpg"
+coverImage: "/images/blog/reducing-cancellations-why-guests-book-then-bail-and-how-to-.webp"
 coverImageAlt: "A frustrated property manager looking at a calendar with many cancellations marked"
 coverImageCredit: "Photo by Markus Winkler on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/green-and-white-typewriter-on-black-textile-7EwWeNyzSwQ"

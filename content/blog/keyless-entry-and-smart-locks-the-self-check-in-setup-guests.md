@@ -6,7 +6,7 @@ excerptAr: "يكافح مديرو العقارات لتلبية توقعات ا�
 date: "2026-07-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/keyless-entry-and-smart-locks-the-self-check-in-setup-guests.jpg"
+coverImage: "/images/blog/keyless-entry-and-smart-locks-the-self-check-in-setup-guests.webp"
 coverImageAlt: "A modern front door with a smart lock"
 coverImageCredit: "Photo by Sebastian Scholz (Nuki) on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/gold-apple-iphone-smartphone-held-at-the-door-IJkSskfEqrM"

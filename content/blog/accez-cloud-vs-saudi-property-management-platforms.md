@@ -6,7 +6,7 @@ excerptAr: "اكتشف ما يميز Accez في مشهد التكنولوجيا 
 date: "2026-01-21"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm6.jpg"
+coverImage: "/images/blog/pm6.webp"
 coverImageAlt: "Side-by-side comparison of Accez.Cloud features versus competing Saudi property management platforms"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

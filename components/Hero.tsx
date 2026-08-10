@@ -11,17 +11,34 @@ const PAUSE_AFTER_DELETE = 500
 type Phase = 'typing' | 'pausing' | 'deleting' | 'waiting'
 
 function useTypewriter(strings: readonly string[]) {
-  const [displayText, setDisplayText] = useState('')
+  // SEO: seed with the FIRST phrase rather than an empty string.
+  //
+  // This is the H1 of the homepage. Starting empty meant the server-rendered
+  // HTML contained only the lead-in — "One platform to run" — an incomplete
+  // sentence with no product category and no keywords. Googlebot renders
+  // JavaScript so it eventually saw the full text, but the H1 is one of the
+  // signals Google uses to build the title link, and AI crawlers (GPTBot,
+  // ClaudeBot, PerplexityBot) do not execute JavaScript at all, so they only
+  // ever saw the fragment.
+  //
+  // Seeding means the static HTML now reads "One platform to run residential
+  // communities" — a complete, meaningful heading — and the animation takes
+  // over on hydration exactly as before.
+  const first = strings[0] ?? ''
+  const [displayText, setDisplayText] = useState(first)
   const [stringIndex, setStringIndex] = useState(0)
-  const [phase, setPhase] = useState<Phase>('typing')
-  const [charIndex, setCharIndex] = useState(0)
+  const [phase, setPhase] = useState<Phase>('pausing')
+  const [charIndex, setCharIndex] = useState(first.length)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
-    setDisplayText('')
+    // Language switch: restart from the new set's first phrase, already typed,
+    // so the heading is never momentarily blank.
+    const next = strings[0] ?? ''
+    setDisplayText(next)
     setStringIndex(0)
-    setCharIndex(0)
-    setPhase('typing')
+    setCharIndex(next.length)
+    setPhase('pausing')
   }, [strings])
 
   useEffect(() => {

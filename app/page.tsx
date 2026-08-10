@@ -10,6 +10,14 @@ import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
+import type { Metadata } from 'next'
+import { alternatesFor } from '@/lib/i18n'
+
+// The root layout deliberately no longer sets a canonical (it was being
+// inherited by every page). The homepage declares its own here.
+export const metadata: Metadata = {
+  alternates: alternatesFor('', 'en'),
+}
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -19,16 +27,28 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description: 'Accez is the all-in-one property operations platform for Saudi Arabia. Reservations and channels, work orders, rental and sale properties, sales and developer projects, contracts and e-signing, owner payouts, hotels and serviced apartments, in Arabic and English.',
-  url: 'https://accez.cloud',
+  url: 'https://www.accez.cloud',
   provider: {
-    '@type': 'Organization',
-    name: 'Accez Cloud',
-    url: 'https://accez.cloud',
+    // Reference the site-wide Organization defined in app/layout.tsx rather
+    // than restating it, so both blocks describe the same entity.
+    '@id': 'https://www.accez.cloud/#organization',
   },
+  // Prices mirror the published plans in components/Pricing.tsx: a free tier,
+  // then 40 and 150 SAR/month, plus a custom enterprise plan. An AggregateOffer
+  // previously declared a currency with NO price at all, which is incomplete
+  // markup — Google requires offers.price for SoftwareApplication.
+  //
+  // Note: full rich-result eligibility ALSO needs aggregateRating or review.
+  // Those are deliberately absent because Accez has no published review data,
+  // and inventing ratings violates Google's structured data guidelines.
   offers: {
     '@type': 'AggregateOffer',
     priceCurrency: 'SAR',
+    lowPrice: 0,
+    highPrice: 150,
+    offerCount: 4,
     availability: 'https://schema.org/InStock',
+    url: 'https://www.accez.cloud/#pricing',
   },
   featureList: [
     'Reservations & 400+ Channel Sync',

@@ -6,7 +6,7 @@ excerptAr: "اكتشف مصدر إيرادات خفي يمكنه تعزيز أع
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-revenue-stream-property-managers-don-t-know-they-re-miss.jpg"
+coverImage: "/images/blog/the-revenue-stream-property-managers-don-t-know-they-re-miss.webp"
 coverImageAlt: "Image of a property manager reviewing documents with a slight smile"
 coverImageCredit: "Photo by Brett Jordan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/close-up-of-a-page-from-a-book-with-handwritten-notes-HAOfzAhfYRI"

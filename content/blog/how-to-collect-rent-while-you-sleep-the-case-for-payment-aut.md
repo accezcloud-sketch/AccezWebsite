@@ -6,7 +6,7 @@ excerptAr: "هل سئمت من مطاردة مدفوعات الإيجار؟ اك
 date: "2026-05-31"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut.jpg"
+coverImage: "/images/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut.webp"
 coverImageAlt: "Illustration of a clock with coins flowing into a secure vault"
 coverImageCredit: "Photo by CardMapr.nl on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-holding-black-android-smartphone-XH2JFgT4Abc"

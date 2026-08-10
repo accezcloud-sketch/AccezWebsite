@@ -6,7 +6,7 @@ excerptAr: "اكتشف أسرار تعظيم إيرادات العقارات ا�
 date: "2026-07-14"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/occupancy-rate-vs-revpar-the-revenue-metrics-vacation-rental.jpg"
+coverImage: "/images/blog/occupancy-rate-vs-revpar-the-revenue-metrics-vacation-rental.webp"
 coverImageAlt: "graph showing occupancy rate and revpar with arrows"
 coverImageCredit: "Photo by Luke Chesser on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00"

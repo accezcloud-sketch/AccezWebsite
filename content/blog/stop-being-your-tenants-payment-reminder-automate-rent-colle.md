@@ -6,7 +6,7 @@ excerptAr: "هل سئمت من ملاحقة مدفوعات الإيجار؟ اك
 date: "2026-06-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle.jpg"
+coverImage: "/images/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle.webp"
 coverImageAlt: "Property manager looking stressed at a desk with bills"
 coverImageCredit: "Photo by Aaron Sousa on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-wooden-framed-glass-window-xlCmFoIS3oE"

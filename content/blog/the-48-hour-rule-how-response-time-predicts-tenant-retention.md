@@ -6,7 +6,7 @@ excerptAr: "اكتشف الرابط الحاسم بين أوقات استجاب�
 date: "2026-06-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention.jpg"
+coverImage: "/images/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention.webp"
 coverImageAlt: "Property manager responding to tenant inquiry"
 coverImageCredit: "Photo by Djim Loic on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/analog-clock-at-12-am-ft0-Xu4nTvA"

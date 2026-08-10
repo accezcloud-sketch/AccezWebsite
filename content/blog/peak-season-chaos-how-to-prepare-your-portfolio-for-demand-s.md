@@ -6,7 +6,7 @@ excerptAr: "غالبًا ما يكافح مديرو العقارات مع الا
 date: "2026-07-16"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-s.jpg"
+coverImage: "/images/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-s.webp"
 coverImageAlt: "A busy property management office with team members working on computers and handling phone calls"
 coverImageCredit: "Photo by Maxim Hopman on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk"

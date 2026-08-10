@@ -6,7 +6,7 @@ excerptAr: "كل ما يحتاج الملاك معرفته عن برنامج إ�
 date: "2024-12-15"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm7.jpg"
+coverImage: "/images/blog/pm7.webp"
 coverImageAlt: "Property management software dashboard showing rent collection, maintenance tracking, and tenant communication features"
 category: "Getting Started"
 categoryAr: "البدء"

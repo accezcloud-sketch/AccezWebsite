@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكن لطلبات الصيانة التي يت
 date: "2026-04-29"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-untracked-maintenance-requests-become-5-000-turnovers.jpg"
+coverImage: "/images/blog/how-untracked-maintenance-requests-become-5-000-turnovers.webp"
 coverImageAlt: "Property manager looking at a ledger"
 coverImageCredit: "Photo by Phillip Flores on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/no-unauthorised-access-sign-on-glass-door-t3V7BGwqluU"

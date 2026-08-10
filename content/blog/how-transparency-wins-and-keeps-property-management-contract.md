@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف تبني الشفافية الثقة وتؤمن ع
 date: "2026-06-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-transparency-wins-and-keeps-property-management-contract.jpg"
+coverImage: "/images/blog/how-transparency-wins-and-keeps-property-management-contract.webp"
 coverImageAlt: "Property management contract with a magnifying glass highlighting transparency"
 coverImageCredit: "Photo by Cytonn Photography on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-writing-on-white-paper-GJao3ZTX9gU"

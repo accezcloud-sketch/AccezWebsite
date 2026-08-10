@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف تدير 50 عقارًا بنفس السهولة �
 date: "2026-05-21"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/managing-50-properties-with-the-same-effort-as-10.jpg"
+coverImage: "/images/blog/managing-50-properties-with-the-same-effort-as-10.webp"
 coverImageAlt: "A modern apartment building with a person managing tasks on a tablet"
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-house-shaped-keychain-hanging-from-a-key-chain-6TIlcP5af08"

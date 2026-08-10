@@ -6,7 +6,7 @@ excerptAr: "اكتشف استراتيجيات عملية لمديري العقا
 date: "2026-04-29"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-generate-15-30-additional-revenue-without-adding-prop.jpg"
+coverImage: "/images/blog/how-to-generate-15-30-additional-revenue-without-adding-prop.webp"
 coverImageAlt: "Laptop displaying financial charts and property icons"
 coverImageCredit: "Photo by Phillip Flores on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/no-unauthorised-access-sign-on-glass-door-t3V7BGwqluU"

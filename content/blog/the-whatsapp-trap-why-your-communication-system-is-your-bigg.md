@@ -6,7 +6,7 @@ excerptAr: "يعتمد مديرو العقارات غالبًا على واتس�
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg.jpg"
+coverImage: "/images/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg.webp"
 coverImageAlt: "A padlock superimposed on a WhatsApp logo"
 coverImageCredit: "Photo by Grant Davies on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-phone-with-a-whatsapp-sticker-next-to-a-keyboard-CT4heitDqYQ"

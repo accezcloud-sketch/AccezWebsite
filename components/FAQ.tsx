@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Script from 'next/script'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import FadeUp from '@/components/animations/FadeUp'
@@ -133,18 +132,19 @@ export default function FAQ() {
       ? FAQS
       : FAQS.filter((f) => f.category === activeCategory)
 
-  const faqStructuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: FAQS.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  }
+  // FAQPage structured data was removed here, for two independent reasons:
+  //
+  //  1. The feature is gone. Google restricted FAQ rich results to government
+  //     and health sites in September 2023, stopped showing them entirely on
+  //     7 May 2026, and removed the documentation in June 2026. The markup
+  //     produced nothing in Search.
+  //  2. It never reached the HTML anyway. It was injected with next/script,
+  //     which runs client-side, so `FAQPage` did not appear in the built
+  //     output at all and was invisible to every non-rendering crawler.
+  //
+  // The FAQ *content* below is untouched and still valuable — it answers real
+  // buyer questions and is exactly the kind of passage AI answers retrieve.
+  // Only the dead markup is gone.
 
   const allCategories: Array<{ key: CategoryKey | 'all'; label: string }> = [
     { key: 'all', label: tf.catAll },
@@ -156,12 +156,6 @@ export default function FAQ() {
 
   return (
     <>
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
-      />
-
       <section
         id="faq"
         className="relative py-20 px-4 sm:px-6 lg:px-12 overflow-hidden"

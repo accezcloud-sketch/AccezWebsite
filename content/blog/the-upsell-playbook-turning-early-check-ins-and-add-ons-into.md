@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف يمكن لمديري العقارات الأذك�
 date: "2026-07-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons-into.jpg"
+coverImage: "/images/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons-into.webp"
 coverImageAlt: "property manager reviewing a digital dashboard with revenue figures"
 coverImageCredit: "Photo by Kanchanara on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/gold-round-coin-on-white-and-pink-paper-uPr7iJUUobE"

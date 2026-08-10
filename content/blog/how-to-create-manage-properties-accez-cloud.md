@@ -6,7 +6,7 @@ excerptAr: "تعلم كيفية إنشاء ونشر وتعديل العقارا�
 date: "2024-12-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/create-properties.jpg"
+coverImage: "/images/blog/create-properties.webp"
 coverImageAlt: "Accez.Cloud property creation dashboard showing property details form and image upload"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"

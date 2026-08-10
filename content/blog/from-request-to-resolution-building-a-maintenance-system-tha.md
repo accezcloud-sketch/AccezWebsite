@@ -6,7 +6,7 @@ excerptAr: "اكتشف أسرار نظام صيانة مبسط، يحول إدا
 date: "2026-06-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/from-request-to-resolution-building-a-maintenance-system-tha.jpg"
+coverImage: "/images/blog/from-request-to-resolution-building-a-maintenance-system-tha.webp"
 coverImageAlt: "hand holding a wrench with a cloud icon"
 coverImageCredit: "Photo by Jacob McGowin on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-chalkboard-with-the-word-request-written-on-it-NQn-Y-rJJU0"

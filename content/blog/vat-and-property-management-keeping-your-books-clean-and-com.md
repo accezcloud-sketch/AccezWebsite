@@ -6,7 +6,7 @@ excerptAr: "تنقل في تعقيدات ضريبة القيمة المضافة 
 date: "2026-08-01"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/vat-and-property-management-keeping-your-books-clean-and-com.jpg"
+coverImage: "/images/blog/vat-and-property-management-keeping-your-books-clean-and-com.webp"
 coverImageAlt: "Illustration of financial documents and property keys"
 coverImageCredit: "Photo by freddie marriage on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/assorted-title-novel-book-lot-w8JiSVyjy-8"

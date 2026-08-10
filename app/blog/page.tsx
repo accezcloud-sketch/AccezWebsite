@@ -3,20 +3,21 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BlogListClient from '@/components/BlogListClient'
 import { getAllPosts, getAllCategories, getAllTags } from '@/lib/blog'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Blog',
   description:
     'Property management insights, tips, and tutorials from the Accez Cloud team. Learn how to scale your portfolio, automate operations, and manage properties in Saudi Arabia.',
-  alternates: {
-    canonical: '/blog',
-  },
+  // Reciprocal hreflang. Google ignores the whole annotation set unless each
+  // language version points back at the others.
+  alternates: alternatesFor('blog', 'en'),
   openGraph: {
     title: 'Blog | Accez Cloud',
     description:
       'Property management insights, tips, and tutorials from the Accez Cloud team.',
     type: 'website',
-    url: 'https://accez.cloud/blog',
+    url: 'https://www.accez.cloud/blog',
     siteName: 'Accez Cloud',
   },
 }
@@ -32,13 +33,13 @@ export default function BlogPage() {
     name: 'Accez Cloud Blog',
     description:
       'Property management insights, tips, and tutorials from the Accez Cloud team.',
-    url: 'https://accez.cloud/blog',
+    url: 'https://www.accez.cloud/blog',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: blogPosts.map((post, index) => ({
         '@type': 'ListItem',
         position: index + 1,
-        url: `https://accez.cloud/blog/${post.slug}`,
+        url: `https://www.accez.cloud/blog/${post.slug}`,
         name: post.title,
       })),
     },

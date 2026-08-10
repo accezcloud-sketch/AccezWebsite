@@ -6,7 +6,7 @@ excerptAr: "اكتشف كيف تتسبب استراتيجيات إدارة ال�
 date: "2026-04-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po.jpg"
+coverImage: "/images/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po.webp"
 coverImageAlt: "Property manager looking frustrated at multiple booking screens"
 coverImageCredit: "Photo by Markus Winkler on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/scrabble-tiles-spelling-vacation-on-a-wooden-surface-Yo4lMSnOn6c"

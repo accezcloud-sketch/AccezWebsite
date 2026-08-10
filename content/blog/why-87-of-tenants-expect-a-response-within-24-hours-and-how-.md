@@ -6,7 +6,7 @@ excerptAr: "اكتشف لماذا يتوقع 87٪ من المستأجرين رد
 date: "2026-06-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-.jpg"
+coverImage: "/images/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-.webp"
 coverImageAlt: "Property manager looking at a digital dashboard"
 coverImageCredit: "Photo by SOULSANA on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/scrabble-chips-forming-shift-happens-word-near-white-feather-V5DBwOOv0bo"

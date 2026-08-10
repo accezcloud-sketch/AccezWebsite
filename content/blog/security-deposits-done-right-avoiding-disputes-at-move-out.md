@@ -6,7 +6,7 @@ excerptAr: "تعرف على كيفية إدارة ودائع التأمين بف
 date: "2026-08-05"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/security-deposits-done-right-avoiding-disputes-at-move-out.jpg"
+coverImage: "/images/blog/security-deposits-done-right-avoiding-disputes-at-move-out.webp"
 coverImageAlt: "Property manager reviewing documents"
 coverImageCredit: "Photo by Sasun Bughdaryan on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-padlock-and-dollar-bills-rest-on-a-computer-keyboard-EijSXGU3_tE"

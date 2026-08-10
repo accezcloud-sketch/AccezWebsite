@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     description:
       'The Terms & Conditions that govern your use of the Accez.cloud property management platform.',
     type: 'article',
-    url: 'https://accez.cloud/terms',
+    url: 'https://www.accez.cloud/terms',
     siteName: 'Accez Cloud',
     images: [
       {
-        url: 'https://accez.cloud/images/og-image.png',
+        url: 'https://www.accez.cloud/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Accez Cloud - Terms & Conditions',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | Accez Cloud',
     description:
       'The Terms & Conditions that govern your use of the Accez.cloud property management platform.',
-    images: ['https://accez.cloud/images/og-image.png'],
+    images: ['https://www.accez.cloud/images/og-image.png'],
   },
 }
 

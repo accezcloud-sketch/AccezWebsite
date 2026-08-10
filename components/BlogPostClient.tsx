@@ -125,6 +125,25 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         return leadingParagraph + `<ol class="my-4 space-y-2">${listLines.join('\n')}</ol>`
       }
 
+      // Blockquote — used for the summary block at the top of each post.
+      //
+      // Added because that summary is a self-contained answer to the article's
+      // main question, written to be quotable. Without this branch the leading
+      // "> " would render as a literal character on the page.
+      if (block.match(/^>\s?/m)) {
+        const inner = block
+          .split('\n')
+          .map((line) => line.replace(/^>\s?/, ''))
+          .join(' ')
+          .trim()
+          .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+          .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
+          .replace(/\*(.*?)\*/g, '<em>$1</em>')
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
+
+        return `<blockquote class="blog-summary my-6 ps-4 border-s-4 border-blue-500 bg-blue-50 py-4 pe-4 rounded-e-lg"><p class="text-gray-800 leading-relaxed m-0">${inner}</p></blockquote>`
+      }
+
       // Regular paragraph - apply inline formatting
       let processed = block
         .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="text-gray-900"><em>$1</em></strong>')

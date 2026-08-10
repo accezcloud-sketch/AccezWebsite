@@ -24,11 +24,11 @@ const BENEFIT_ICONS: LucideIcon[] = [Store, Tag, Star]
 
 /** The real marketplace + booking flow, shown in the section carousel. */
 const SLIDES: CarouselSlide[] = [
-  { src: '/capabilities/service-providers/1.png', caption: 'The Accez marketplace',            captionAr: 'سوق أكسيز' },
-  { src: '/capabilities/service-providers/2.png', caption: 'Your services, prices and reviews', captionAr: 'خدماتك وأسعارك وتقييماتك' },
-  { src: '/capabilities/service-providers/3.png', caption: 'Customers choose their services',   captionAr: 'العملاء يختارون خدماتهم' },
-  { src: '/capabilities/service-providers/4.png', caption: 'They pick a date and time',         captionAr: 'يختارون التاريخ والوقت' },
-  { src: '/capabilities/service-providers/5.png', caption: 'Review and confirm the booking',    captionAr: 'مراجعة الحجز وتأكيده' },
+  { src: '/capabilities/service-providers/1.webp', caption: 'The Accez marketplace',            captionAr: 'سوق أكسيز' },
+  { src: '/capabilities/service-providers/2.webp', caption: 'Your services, prices and reviews', captionAr: 'خدماتك وأسعارك وتقييماتك' },
+  { src: '/capabilities/service-providers/3.webp', caption: 'Customers choose their services',   captionAr: 'العملاء يختارون خدماتهم' },
+  { src: '/capabilities/service-providers/4.webp', caption: 'They pick a date and time',         captionAr: 'يختارون التاريخ والوقت' },
+  { src: '/capabilities/service-providers/5.webp', caption: 'Review and confirm the booking',    captionAr: 'مراجعة الحجز وتأكيده' },
 ]
 
 const CONTENT = {
