@@ -11,7 +11,7 @@ excerptAr: "تمثل إدارة التدبير المنزلي عبر عقارا�
 date: "2026-08-13"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-sy.jpg"
+coverImage: "/images/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-sy.webp"
 coverImageAlt: "A person managing multiple property locations on a digital interface"
 coverImageCredit: "Photo by Annie Spratt on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/the-girl-in-the-hat-book-page-Wvxoh9dj3Oo"

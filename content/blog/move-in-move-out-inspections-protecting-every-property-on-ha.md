@@ -11,7 +11,7 @@ excerptAr: "تعد فحوصات الدخول والخروج الشاملة ضر�
 date: "2026-08-11"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/move-in-move-out-inspections-protecting-every-property-on-ha.jpg"
+coverImage: "/images/blog/move-in-move-out-inspections-protecting-every-property-on-ha.webp"
 coverImageAlt: "Person holding a clipboard with a checklist"
 coverImageCredit: "Photo by Tierra Mallorca on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-and-red-wooden-house-miniature-on-brown-table-rgJ1J8SDEAY"

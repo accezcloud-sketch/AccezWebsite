@@ -22,8 +22,12 @@ export const PORTAL_SIGN_UP = 'https://portal.accez.cloud/sign-up'
  * Dedicated Service Provider sign-up. All provider-facing CTAs (the homepage
  * Service Providers section, the /service-providers page, the "Become a
  * Service Provider" capability CTAs, and the footer) point here.
+ *
+ * Moved from portal.accez.cloud to its own provider.* subdomain. The old
+ * portal.accez.cloud/sp/signup path now returns 404, so every provider CTA on
+ * the site was dead until this changed.
  */
-export const PROVIDER_SIGN_UP = 'https://portal.accez.cloud/sp/signup'
+export const PROVIDER_SIGN_UP = 'https://provider.accez.cloud/sp/signup'
 
 /** Property manager portal (existing product). */
 export const PORTAL = 'https://portal.accez.cloud'
