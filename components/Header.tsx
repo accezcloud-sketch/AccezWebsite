@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
-import { PORTAL_LOGIN, PROVIDER_LOGIN, PORTAL_SIGN_UP, PROVIDER_SIGN_UP } from '@/lib/links'
+import { PORTAL_LOGIN, PROVIDER_LOGIN } from '@/lib/links'
 
 interface MenuItem { name: string; nameAr: string; href: string; desc: string; descAr: string }
 
@@ -202,7 +202,16 @@ export default function Header() {
                     transition={{ duration: 0.16 }}
                     className="absolute end-0 top-full pt-3 w-[19rem] z-50"
                   >
-                    <div className="rounded-2xl p-2 shadow-2xl" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                    <div
+                      className="rounded-2xl p-2"
+                      style={{
+                        // Opaque. --surface is rgba(255,255,255,.035), which is
+                        // near-transparent and let page text bleed through the menu.
+                        background: '#111C26',
+                        border: '1px solid var(--border-hi)',
+                        boxShadow: '0 24px 48px -12px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.4)',
+                      }}
+                    >
                       <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white/5">
                         <span className="block text-sm font-semibold text-white">{t.header.signInPM}</span>
                         <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{t.header.signInPMDesc}</span>
@@ -211,15 +220,7 @@ export default function Header() {
                         <span className="block text-sm font-semibold text-white">{t.header.signInSP}</span>
                         <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{t.header.signInSPDesc}</span>
                       </a>
-                      <div className="mx-3 my-2 h-px" style={{ background: 'var(--border)' }} />
-                      <p className="px-3 pb-1 text-[0.7rem] uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>{t.header.newToAccez}</p>
-                      <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2 text-sm transition-colors duration-150 hover:bg-white/5" style={{ color: 'var(--accent-hi)' }}>
-                        {t.header.createPM}
-                      </a>
-                      <a href={PROVIDER_SIGN_UP} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2 text-sm transition-colors duration-150 hover:bg-white/5" style={{ color: 'var(--accent-hi)' }}>
-                        {t.header.createSP}
-                      </a>
-                    </div>
+                      </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -308,15 +309,6 @@ export default function Header() {
                   </a>
                   <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-1.5">
                     {t.header.signInSP}
-                  </a>
-                  <p className="text-[0.7rem] uppercase tracking-wider pt-2 pb-1" style={{ color: 'var(--text-muted)' }}>
-                    {t.header.newToAccez}
-                  </p>
-                  <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-sm py-1.5" style={{ color: 'var(--accent-hi)' }}>
-                    {t.header.createPM}
-                  </a>
-                  <a href={PROVIDER_SIGN_UP} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-sm py-1.5" style={{ color: 'var(--accent-hi)' }}>
-                    {t.header.createSP}
                   </a>
                 </div>
 

@@ -48,7 +48,7 @@ export default function PrivacyContent() {
           We do not sell personal data. Card details never reach our servers &mdash; Stripe handles
           them. Much of the data in the platform belongs to the business that uploaded it, not to
           us, and in those cases you should contact that business first. You can reach us any time
-          at <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a>.
+          at <a href="/support/">our support form</a>.
         </p>
       </LegalCallout>
 
@@ -270,7 +270,7 @@ export default function PrivacyContent() {
             ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
             ['AI features (see section 17)', 'The message content processed by that feature'],
           ]}
-          caption="We contract each of these to process data only on our instructions and to protect it. A current list of named sub-processors is available on request from privacy@accez.cloud."
+          caption="We contract each of these to process data only on our instructions and to protect it. A current list of named sub-processors is available on request through our support form."
         />
 
         <h3>Other disclosures</h3>
@@ -314,7 +314,7 @@ export default function PrivacyContent() {
         </p>
         <p>
           You can ask us which safeguard applies to a particular transfer by writing to{' '}
-          <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a>.
+          <a href="/support/">our support form</a>.
         </p>
       </S>
 
@@ -362,7 +362,7 @@ export default function PrivacyContent() {
         </ul>
         <p>
           No system is completely secure, and we do not claim otherwise. If you find a vulnerability,
-          please report it to <a href="mailto:security@accez.cloud">security@accez.cloud</a> rather
+          please report it to <a href="/support/">our support form</a> rather
           than disclosing it publicly, and we will work with you on it.
         </p>
       </S>
@@ -385,7 +385,7 @@ export default function PrivacyContent() {
         </p>
         <LegalCallout title="How long we take">
           <p>
-            Write to <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a>. We respond{' '}
+            Write to <a href="/support/">our support form</a>. We respond{' '}
             <strong>within 30 days</strong>. If a request is unusually complex we may extend by up
             to a further <strong>30 days</strong>, and we will tell you before the first period ends
             and explain why.
@@ -508,7 +508,7 @@ export default function PrivacyContent() {
         <p>
           <strong>Contact that business first</strong> to access, correct or delete your data, or to
           ask why it was collected. If you cannot reach them, or they do not respond, write to us at{' '}
-          <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a> and we will help you identify
+          <a href="/support/">our support form</a> and we will help you identify
           the right party and pass your request on.
         </p>
       </S>
@@ -516,7 +516,7 @@ export default function PrivacyContent() {
       <S id="complaints" title="19. Complaints">
         <p>
           If you are unhappy with how we have handled your personal data, tell us first at{' '}
-          <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a>. We will acknowledge your
+          <a href="/support/">our support form</a>. We will acknowledge your
           complaint, investigate, and respond with our findings and what we intend to do.
         </p>
         <p>
@@ -549,11 +549,11 @@ export default function PrivacyContent() {
         </p>
         <p>
           Privacy and data protection:{' '}
-          <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a>
+          <a href="/support/">our support form</a>
           <br />
-          Security reports: <a href="mailto:security@accez.cloud">security@accez.cloud</a>
+          Security reports: <a href="/support/">our support form</a>
           <br />
-          General support: <a href="mailto:support@accez.cloud">support@accez.cloud</a>
+          General support: <a href="/support/">our support form</a>
         </p>
       </S>
     </LegalLayout>

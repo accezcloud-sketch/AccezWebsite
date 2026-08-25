@@ -170,7 +170,7 @@ export default function TermsContent() {
         <p>
           You are responsible for everything done under your account. Keep your credentials secure,
           enable the account protections we offer, and tell us promptly at{' '}
-          <a href="mailto:support@accez.cloud">support@accez.cloud</a> if you believe your account
+          <a href="/support/">our support form</a> if you believe your account
           has been compromised.
         </p>
         <p>
@@ -727,10 +727,10 @@ export default function TermsContent() {
         </p>
         <p>
           General and contractual enquiries:{' '}
-          <a href="mailto:support@accez.cloud">support@accez.cloud</a>
+          <a href="/support/">our support form</a>
           <br />
           Privacy and data protection:{' '}
-          <a href="mailto:privacy@accez.cloud">privacy@accez.cloud</a>
+          <a href="/support/">our support form</a>
         </p>
       </S>
     </LegalLayout>

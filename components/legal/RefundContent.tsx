@@ -167,7 +167,7 @@ export default function RefundContent() {
         </ul>
         <p>
           Requests for a subscription refund should go to{' '}
-          <a href="mailto:billing@accez.cloud">billing@accez.cloud</a> with the invoice reference.
+          <a href="/support/">our support form</a> with the invoice reference.
         </p>
       </S>
 
@@ -210,7 +210,7 @@ export default function RefundContent() {
           Property managers should take this into account when setting cancellation policies and
           pricing. If you believe a platform fee should be returned in a particular case &mdash; for
           example where a booking was cancelled because of a platform fault &mdash; contact{' '}
-          <a href="mailto:billing@accez.cloud">billing@accez.cloud</a> and we will review it.
+          <a href="/support/">our support form</a> and we will review it.
         </p>
       </S>
 
@@ -236,7 +236,7 @@ export default function RefundContent() {
             ],
             [
               'An Accez subscriber',
-              <>Email <a key="e" href="mailto:billing@accez.cloud">billing@accez.cloud</a> with your invoice reference.</>,
+              <>Contact us through <a key="e" href="/support/">our support form</a> with your invoice reference.</>,
             ],
           ]}
         />
@@ -329,9 +329,9 @@ export default function RefundContent() {
         </p>
         <p>
           Billing and subscription refunds:{' '}
-          <a href="mailto:billing@accez.cloud">billing@accez.cloud</a>
+          <a href="/support/">our support form</a>
           <br />
-          General support: <a href="mailto:support@accez.cloud">support@accez.cloud</a>
+          General support: <a href="/support/">our support form</a>
         </p>
         <p>
           Related documents: <a href="/terms/">Terms of Service</a> &middot;{' '}
