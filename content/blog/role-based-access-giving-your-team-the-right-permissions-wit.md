@@ -11,7 +11,7 @@ excerptAr: "أمن عملياتك العقارية من خلال تطبيق ال
 date: "2026-08-25"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/role-based-access-giving-your-team-the-right-permissions-wit.jpg"
+coverImage: "/images/blog/role-based-access-giving-your-team-the-right-permissions-wit.webp"
 coverImageAlt: "A stylized graphic representing secure data access with locks and digital interfaces."
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-house-shaped-keychain-hanging-from-a-key-chain-6TIlcP5af08"

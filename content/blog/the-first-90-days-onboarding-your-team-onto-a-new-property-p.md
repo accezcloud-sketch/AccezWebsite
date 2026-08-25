@@ -11,7 +11,7 @@ excerptAr: "يعد تدريب فريق العمل بنجاح على منصة ع�
 date: "2026-08-21"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-p.jpg"
+coverImage: "/images/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-p.webp"
 coverImageAlt: "A diverse team collaborating around a laptop screen displaying a property management dashboard"
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-house-shaped-keychain-hanging-from-a-key-chain-6TIlcP5af08"

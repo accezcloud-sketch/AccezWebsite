@@ -11,7 +11,7 @@ excerptAr: "اكتشف استراتيجيات فعالة لتسعير خدمات
 date: "2026-08-15"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-price-your-property-management-services-for-profit.jpg"
+coverImage: "/images/blog/how-to-price-your-property-management-services-for-profit.webp"
 coverImageAlt: "A calculator and a building blueprint"
 coverImageCredit: "Photo by Towfiqu barbhuiya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/man-holding-model-house-at-desk-with-calculator-05XcCfTOzN4"

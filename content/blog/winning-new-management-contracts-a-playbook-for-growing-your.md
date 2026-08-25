@@ -11,7 +11,7 @@ excerptAr: "وسّع محفظة إدارة العقارات الخاصة بك ب
 date: "2026-08-17"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/winning-new-management-contracts-a-playbook-for-growing-your.jpg"
+coverImage: "/images/blog/winning-new-management-contracts-a-playbook-for-growing-your.webp"
 coverImageAlt: "A person holding a contract with a handshake"
 coverImageCredit: "Photo by Amina Atar on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/two-people-shaking-hands-over-a-piece-of-paper-4mEyvORkbN0"

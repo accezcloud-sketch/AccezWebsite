@@ -11,7 +11,7 @@ excerptAr: "يمكن أن يؤدي التحول إلى المنصات الرقم
 date: "2026-08-19"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-convince-skeptical-owners-to-switch-to-a-digital-plat.jpg"
+coverImage: "/images/blog/how-to-convince-skeptical-owners-to-switch-to-a-digital-plat.webp"
 coverImageAlt: "A handshake over a tablet displaying property management data"
 coverImageCredit: "Photo by Towfiqu barbhuiya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/man-holding-model-house-at-desk-with-calculator-05XcCfTOzN4"

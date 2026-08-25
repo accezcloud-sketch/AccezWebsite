@@ -11,7 +11,7 @@ excerptAr: "في عالم اليوم سريع الخطى، يحتاج مديرو
 date: "2026-08-23"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-.jpg"
+coverImage: "/images/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-.webp"
 coverImageAlt: "A person's hand holding a smartphone displaying a property management dashboard"
 coverImageCredit: "Photo by Balázs Kétyi on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/smartphone-displaying-environmental-data-dashboard-sScmok4Iq1o"
