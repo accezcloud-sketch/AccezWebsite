@@ -12,6 +12,14 @@ export const en = {
     bookDemo: 'Book a demo',
     product: 'Product',
     about: 'About',
+    signIn: 'Sign in',
+    signInPM: 'Property Manager',
+    signInPMDesc: 'Manage properties, bookings and owners',
+    signInSP: 'Service Provider',
+    signInSPDesc: 'Manage your listing and bookings',
+    newToAccez: 'New to Accez?',
+    createPM: 'Create a property manager account',
+    createSP: 'List your business as a provider',
   },
 
   // Hero

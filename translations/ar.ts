@@ -12,6 +12,14 @@ export const ar = {
     bookDemo: 'اطلب عرضًا توضيحيًا',
     product: 'المنتج',
     about: 'من نحن',
+    signIn: 'تسجيل الدخول',
+    signInPM: 'مدير العقارات',
+    signInPMDesc: 'إدارة العقارات والحجوزات والملاك',
+    signInSP: 'مقدم الخدمة',
+    signInSPDesc: 'إدارة صفحتك وحجوزاتك',
+    newToAccez: 'جديد في أكسيز؟',
+    createPM: 'إنشاء حساب مدير عقارات',
+    createSP: 'أدرج نشاطك كمقدم خدمة',
   },
 
   // Hero

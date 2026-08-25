@@ -31,3 +31,9 @@ export const PROVIDER_SIGN_UP = 'https://provider.accez.cloud/sp/signup'
 
 /** Property manager portal (existing product). */
 export const PORTAL = 'https://portal.accez.cloud'
+
+/** Property manager portal sign-in (existing customers). */
+export const PORTAL_LOGIN = 'https://portal.accez.cloud/login'
+
+/** Service provider sign-in (existing providers). Pairs with PROVIDER_SIGN_UP. */
+export const PROVIDER_LOGIN = 'https://provider.accez.cloud/sp/login'

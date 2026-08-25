@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
+import { PORTAL_LOGIN, PROVIDER_LOGIN, PORTAL_SIGN_UP, PROVIDER_SIGN_UP } from '@/lib/links'
 
 interface MenuItem { name: string; nameAr: string; href: string; desc: string; descAr: string }
 
@@ -20,6 +21,7 @@ const PRODUCT_MENU: MenuItem[] = [
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [productOpen, setProductOpen] = useState(false)
+  const [signInOpen, setSignInOpen] = useState(false)
   const [mobileProductOpen, setMobileProductOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [atTop, setAtTop] = useState(true)
@@ -170,6 +172,59 @@ export default function Header() {
             <button onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')} className={linkClass}>
               {language === 'en' ? 'العربية' : 'English'}
             </button>
+
+            {/* Sign in: one control, two destinations. Property managers and
+                service providers use different portals, so the menu names the
+                role rather than making the visitor guess which one is theirs. */}
+            <div
+              className="relative"
+              onMouseEnter={() => setSignInOpen(true)}
+              onMouseLeave={() => setSignInOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setSignInOpen((v) => !v)}
+                aria-expanded={signInOpen}
+                aria-haspopup="true"
+                className={`${linkClass} inline-flex items-center gap-1.5`}
+              >
+                {t.header.signIn}
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" className={`transition-transform duration-200 ${signInOpen ? 'rotate-180' : ''}`}>
+                  <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+              <AnimatePresence>
+                {signInOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 6 }}
+                    transition={{ duration: 0.16 }}
+                    className="absolute end-0 top-full pt-3 w-[19rem] z-50"
+                  >
+                    <div className="rounded-2xl p-2 shadow-2xl" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                      <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white/5">
+                        <span className="block text-sm font-semibold text-white">{t.header.signInPM}</span>
+                        <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{t.header.signInPMDesc}</span>
+                      </a>
+                      <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white/5">
+                        <span className="block text-sm font-semibold text-white">{t.header.signInSP}</span>
+                        <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{t.header.signInSPDesc}</span>
+                      </a>
+                      <div className="mx-3 my-2 h-px" style={{ background: 'var(--border)' }} />
+                      <p className="px-3 pb-1 text-[0.7rem] uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>{t.header.newToAccez}</p>
+                      <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2 text-sm transition-colors duration-150 hover:bg-white/5" style={{ color: 'var(--accent-hi)' }}>
+                        {t.header.createPM}
+                      </a>
+                      <a href={PROVIDER_SIGN_UP} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2 text-sm transition-colors duration-150 hover:bg-white/5" style={{ color: 'var(--accent-hi)' }}>
+                        {t.header.createSP}
+                      </a>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             <Link
               href={localeHref("/#contact", language)}
               prefetch={false}
@@ -240,6 +295,30 @@ export default function Header() {
                     {item.name}
                   </a>
                 ))}
+
+                {/* Sign in — same two destinations as the desktop menu, laid
+                    out flat because a nested dropdown inside a mobile drawer is
+                    an extra tap for no benefit. */}
+                <div className="mt-3 pt-3 flex flex-col gap-1" style={{ borderTop: '1px solid var(--border)' }}>
+                  <p className="text-[0.7rem] uppercase tracking-wider pb-1" style={{ color: 'var(--text-muted)' }}>
+                    {t.header.signIn}
+                  </p>
+                  <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-1.5">
+                    {t.header.signInPM}
+                  </a>
+                  <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-1.5">
+                    {t.header.signInSP}
+                  </a>
+                  <p className="text-[0.7rem] uppercase tracking-wider pt-2 pb-1" style={{ color: 'var(--text-muted)' }}>
+                    {t.header.newToAccez}
+                  </p>
+                  <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-sm py-1.5" style={{ color: 'var(--accent-hi)' }}>
+                    {t.header.createPM}
+                  </a>
+                  <a href={PROVIDER_SIGN_UP} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-sm py-1.5" style={{ color: 'var(--accent-hi)' }}>
+                    {t.header.createSP}
+                  </a>
+                </div>
 
                 <Link
                   href={localeHref("/#contact", language)}
