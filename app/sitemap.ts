@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // deliberately have no /ar counterpart — an Arabic URL serving English legal
   // text would be worse than no Arabic URL at all.
   const bilingual = ['', 'modules', 'owners', 'sales', 'hotels', 'service-providers', 'about', 'support', 'blog']
-  const englishOnly = ['privacy', 'terms']
+  const englishOnly = ['privacy', 'terms', 'refund-policy']
 
   const staticPages: MetadataRoute.Sitemap = [
     ...bilingual.flatMap((route) => [

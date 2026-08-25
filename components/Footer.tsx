@@ -235,6 +235,13 @@ export default function Footer() {
               >
                 {t.footer.terms}
               </Link>
+              <Link
+                href="/refund-policy"
+                prefetch={false}
+                className="hover:text-slate-400 transition-colors duration-150"
+              >
+                {language === 'ar' ? 'سياسة الاسترداد' : 'Refunds'}
+              </Link>
               <div className="flex items-center gap-1.5">
                 <span className="text-slate-600">🌐</span>
                 <button

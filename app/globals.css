@@ -220,3 +220,33 @@ section[id] {
 #chat-input::-webkit-scrollbar {
   display: none !important;
 }
+
+/* ── Legal documents ──────────────────────────────────────────────────────
+   Terms, Privacy and Refund pages. These are long-form reading, so the body
+   gets a comfortable measure and generous leading rather than the tighter
+   marketing type used elsewhere. Scoped to .legal-doc so nothing else moves. */
+.legal-doc .legal-body {
+  color: var(--text-muted);
+  font-size: 15.5px;
+  line-height: 1.75;
+  max-width: 68ch;
+}
+.legal-doc .legal-body strong { color: var(--text); font-weight: 600; }
+.legal-doc .legal-body a {
+  color: var(--accent-hi);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-doc .legal-body a:hover { color: #fff; }
+.legal-doc .legal-body ul,
+.legal-doc .legal-body ol { padding-inline-start: 1.35rem; display: flex; flex-direction: column; gap: .5rem; }
+.legal-doc .legal-body ul { list-style: disc; }
+.legal-doc .legal-body ol { list-style: decimal; }
+.legal-doc .legal-body h3 {
+  color: var(--text);
+  font-weight: 650;
+  font-size: 17px;
+  margin-top: 1.75rem;
+  margin-bottom: .5rem;
+}
+.legal-doc .legal-body table { max-width: none; }
