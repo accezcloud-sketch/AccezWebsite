@@ -82,9 +82,9 @@ export function alternatesFor(route: string, locale: Locale) {
 /**
  * Routes that exist in Arabic.
  *
- * /privacy and /terms are intentionally absent: the legal text has no Arabic
- * translation, so links to them must stay on the English URL rather than point
- * at an /ar page that would 404.
+ * Anything not listed here stays on its English URL, because prefixing a route
+ * that has no Arabic page produces a 404 — and a 404 under /ar used to trigger
+ * a redirect loop (see the guard in contexts/LanguageContext.tsx).
  */
 const AR_ROUTES = new Set([
   '',
@@ -96,6 +96,9 @@ const AR_ROUTES = new Set([
   'about',
   'support',
   'blog',
+  'terms',
+  'privacy',
+  'refund-policy',
 ])
 
 /**

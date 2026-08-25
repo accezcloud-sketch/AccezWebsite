@@ -20,12 +20,12 @@ const STATIC_LAST_MODIFIED = '2026-07-01'
 // next.config.js and the canonical tags the pages emit. A sitemap that
 // disagrees with the canonical wastes a crawl on the redirect.
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Routes that exist in BOTH languages. /privacy and /terms are English-only
-  // (the legal text has no Arabic translation), so they are listed once and
-  // deliberately have no /ar counterpart — an Arabic URL serving English legal
-  // text would be worse than no Arabic URL at all.
-  const bilingual = ['', 'modules', 'owners', 'sales', 'hotels', 'service-providers', 'about', 'support', 'blog']
-  const englishOnly = ['privacy', 'terms', 'refund-policy']
+  // Every static route now exists in both languages, including the legal pages.
+  const bilingual = [
+    '', 'modules', 'owners', 'sales', 'hotels', 'service-providers', 'about',
+    'support', 'blog', 'terms', 'privacy', 'refund-policy',
+  ]
+  const englishOnly: string[] = []
 
   const staticPages: MetadataRoute.Sitemap = [
     ...bilingual.flatMap((route) => [

@@ -12,7 +12,11 @@
       "Bash(curl:*)",
       "Bash(mkdir:*)",
       "Bash(npm run build:*)",
-      "Bash(xargs grep -l \"contact\\\\|form\")"
+      "Bash(xargs grep -l \"contact\\\\|form\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --no-sandbox --window-size=1440,11000 --virtual-time-budget=18000 --run-all-compositor-stages-before-draw --screenshot=new.png \"http://localhost:8932/dev_preview.html\")",
+      "Bash(python3 -c ' *)",
+      "Bash(sed -i '' \"s/businessHoursDetails: 'Monday - Friday: 9am - 6pm',/businessHoursDetails: 'Monday to Friday, 9am to 6pm',/\" translations/en.ts)",
+      "Bash(sed -i '' \"s/businessHoursDetails: 'الاثنين - الجمعة: 9 صباحًا - 6 مساءً',/businessHoursDetails: 'الأحد إلى الخميس، 9 صباحًا إلى 6 مساءً',/\" translations/ar.ts)"
     ],
     "deny": [],
     "ask": []

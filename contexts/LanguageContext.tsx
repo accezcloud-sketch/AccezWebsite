@@ -125,10 +125,27 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
         saved = null
       }
 
+      const here = pathname || '/'
+
+      /**
+       * Never redirect to the URL we are already on.
+       *
+       * Without this guard the site loops. A URL like /ar/terms/ that has no
+       * Arabic route renders the ROOT not-found page, which sits outside
+       * app/ar/layout.tsx — so routeLanguage is undefined and this detection
+       * runs. It reads the saved 'ar' preference, computes the Arabic
+       * counterpart of /ar/terms/, which is /ar/terms/ itself, and replaces the
+       * URL with the same URL. That 404s again, the effect runs again, and the
+       * page refreshes forever.
+       */
+      const go = (target: string) => {
+        if (target !== here) router.replace(target)
+      }
+
       // An explicit choice always wins — never override the visitor.
       if (saved === 'en') return
       if (saved === 'ar') {
-        router.replace(counterpartPath(pathname || '/', 'ar'))
+        go(counterpartPath(here, 'ar'))
         return
       }
 
@@ -141,7 +158,7 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
         // Send Gulf visitors to the real Arabic URL instead of swapping the
         // content underneath them. Googlebot crawls from US IPs so it is not
         // redirected, and keeps indexing the English page at this URL.
-        router.replace(counterpartPath(pathname || '/', 'ar'))
+        go(counterpartPath(here, 'ar'))
       }
     }
 
