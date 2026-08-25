@@ -710,11 +710,6 @@ export default function TermsContent() {
           <strong>No third-party rights.</strong> No person other than the parties has any right to
           enforce these Terms.
         </p>
-        <p>
-          <strong>Language.</strong> These Terms are published in English. If we publish a
-          translation and there is a conflict, the version that governs will be identified in that
-          translation.
-        </p>
       </S>
 
       <S id="contact" title="24. How to contact us">

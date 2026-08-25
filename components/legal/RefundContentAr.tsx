@@ -42,13 +42,6 @@ export default function RefundContentAr() {
         </p>
       </LegalCallout>
 
-      <LegalCallout tone="warning" title="اللغة المعتمدة">
-        <p>
-          هذه ترجمة عربية للنسخة الإنجليزية، مقدَّمة لتيسير الاطلاع. وفي حال التعارض،{' '}
-          <strong>تكون النسخة الإنجليزية هي المعتمدة</strong>. يمكنك الاطلاع عليها في{' '}
-          <a href="/refund-policy/">صفحة سياسة الاسترداد بالإنجليزية</a>.
-        </p>
-      </LegalCallout>
 
       <S id="overview" title="١. نظرة عامة — أي سياسة تنطبق عليك">
         <LegalTable

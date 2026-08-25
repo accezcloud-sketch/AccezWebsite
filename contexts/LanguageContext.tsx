@@ -68,10 +68,24 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
   const router = useRouter()
   const pathname = usePathname()
 
-  // Seeded from the route when the route pins a language, so the very first
-  // server-rendered paint is already in the right language — no flash, and no
-  // dependency on JavaScript for the content to be correct.
-  const [language, setLanguageState] = useState<Language>(routeLanguage ?? 'en')
+  /**
+   * The URL is the single source of truth for the active language.
+   *
+   * This provider is mounted in the ROOT layout, which never unmounts during
+   * client-side navigation. Deriving the language from state alone meant that
+   * once a visitor switched to Arabic on an English URL, the root provider held
+   * 'ar' for the rest of the session: clicking "English" from /ar/privacy/ only
+   * reset the NESTED provider inside app/ar/layout.tsx, which then unmounted,
+   * leaving the stale root provider to render the header in Arabic and set
+   * dir="rtl" on an English page.
+   *
+   * Deriving it from the pathname makes both providers always agree, and makes
+   * every navigation self-correcting.
+   */
+  const urlLanguage: Language =
+    routeLanguage ?? (pathname === '/ar' || pathname?.startsWith('/ar/') ? 'ar' : 'en')
+
+  const [language, setLanguageState] = useState<Language>(urlLanguage)
 
   /**
    * Switching language is now a NAVIGATION, not a state flip.
@@ -96,13 +110,13 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
     [language, pathname, router]
   )
 
-  // Keep state in sync when the route itself changes language (back button,
-  // internal link into the other locale).
+  // Keep state in sync whenever the URL changes language — the toggle, an
+  // internal link into the other locale, the back button, or a redirect.
   useEffect(() => {
-    if (routeLanguage && routeLanguage !== language) {
-      setLanguageState(routeLanguage)
+    if (urlLanguage !== language) {
+      setLanguageState(urlLanguage)
     }
-  }, [routeLanguage, language])
+  }, [urlLanguage, language])
 
   useEffect(() => {
     // Only the unpinned (English) routes auto-detect. On a pinned /ar route the
