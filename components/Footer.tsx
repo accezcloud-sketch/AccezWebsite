@@ -105,6 +105,14 @@ export default function Footer() {
         { label: t.footer.contact, href: '/#contact' },
       ],
     },
+    {
+      heading: language === 'ar' ? 'السياسات' : 'Policies',
+      links: [
+        { label: t.footer.terms, href: '/terms' },
+        { label: t.footer.privacy, href: '/privacy' },
+        { label: language === 'ar' ? 'الاسترداد والإلغاء' : 'Refund & Cancellation', href: '/refund-policy' },
+      ],
+    },
   ]
 
   return (
@@ -130,9 +138,9 @@ export default function Footer() {
 
       <FadeUp distance={20}>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 py-14 lg:py-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-12 py-14 lg:py-16">
             {/* Brand column */}
-            <div className="col-span-2 md:col-span-4 lg:col-span-2 flex flex-col gap-5">
+            <div className="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col gap-5">
               <Link href={localeHref("/", language)} prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4]">
                 <Image
                   src="/images/accez-logo.png"
@@ -221,27 +229,6 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/privacy"
-                prefetch={false}
-                className="hover:text-slate-400 transition-colors duration-150"
-              >
-                {t.footer.privacy}
-              </Link>
-              <Link
-                href="/terms"
-                prefetch={false}
-                className="hover:text-slate-400 transition-colors duration-150"
-              >
-                {t.footer.terms}
-              </Link>
-              <Link
-                href="/refund-policy"
-                prefetch={false}
-                className="hover:text-slate-400 transition-colors duration-150"
-              >
-                {language === 'ar' ? 'سياسة الاسترداد' : 'Refunds'}
-              </Link>
               <div className="flex items-center gap-1.5">
                 <span className="text-slate-600">🌐</span>
                 <button

@@ -229,7 +229,11 @@ section[id] {
   color: var(--text-muted);
   font-size: 15.5px;
   line-height: 1.75;
-  max-width: 68ch;
+  /* No measure cap. The document column itself sets the width now, so text
+     runs edge to edge like a printed contract. The old 68ch cap left roughly a
+     third of the column empty on the trailing side, which is what made the
+     page look thin. */
+  max-width: none;
 }
 .legal-doc .legal-body strong { color: var(--text); font-weight: 600; }
 .legal-doc .legal-body a {

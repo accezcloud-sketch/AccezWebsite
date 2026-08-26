@@ -9,33 +9,6 @@ import LegalLayout, {
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
-const sections = [
-  { id: 'about', title: '1. Who we are and what this covers' },
-  { id: 'roles', title: '2. Account types and your role' },
-  { id: 'venue', title: '3. What Accez does and does not do' },
-  { id: 'eligibility', title: '4. Eligibility and your account' },
-  { id: 'subscriptions', title: '5. Subscriptions, plans and free usage' },
-  { id: 'payments', title: '6. Payments, Stripe and merchant of record' },
-  { id: 'fees', title: '7. Platform fees and commission' },
-  { id: 'payouts', title: '8. Payouts and owner settlement' },
-  { id: 'tax', title: '9. Tax and invoicing' },
-  { id: 'refunds', title: '10. Refunds, cancellations and chargebacks' },
-  { id: 'providers', title: '11. Service providers on the marketplace' },
-  { id: 'customer-content', title: '12. Your content, your customers, your policies' },
-  { id: 'acceptable-use', title: '13. Acceptable use' },
-  { id: 'integrations', title: '14. Third-party services and integrations' },
-  { id: 'data', title: '15. Data protection' },
-  { id: 'ip', title: '16. Intellectual property' },
-  { id: 'availability', title: '17. Availability, support and changes' },
-  { id: 'warranties', title: '18. Disclaimers' },
-  { id: 'liability', title: '19. Limitation of liability' },
-  { id: 'indemnity', title: '20. Indemnity' },
-  { id: 'suspension', title: '21. Suspension and termination' },
-  { id: 'law', title: '22. Governing law and disputes' },
-  { id: 'general', title: '23. General' },
-  { id: 'contact', title: '24. How to contact us' },
-]
-
 export default function TermsContent() {
   return (
     <LegalLayout
@@ -43,7 +16,6 @@ export default function TermsContent() {
       subtitle="The agreement between you and Cloud Valley LLC governing your use of the Accez platform and the Accez service marketplace."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      sections={sections}
     >
       <LegalCallout title="Read this first">
         <p>
@@ -211,9 +183,18 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="payments" title="6. Payments, Stripe and merchant of record">
+      <S id="payments" title="6. Payments, our processor and merchant of record">
         <p>
-          Card payments are processed by <strong>Stripe</strong>. Where you receive money through
+          Card payments are handled by a licensed third-party{' '}
+          <strong>payment processor</strong>. Our payment processor is currently{' '}
+          <strong>Stripe</strong>, and every reference to Stripe in these Terms means the payment
+          processor we use at that time. We may appoint an additional or different payment
+          processor. If we do, we will identify it in your account before it is used for your
+          transactions, and the processor&apos;s own agreement and fees will apply in place of the
+          ones described here. Changing processor does not change the platform fees we charge.
+        </p>
+        <p>
+          Where you receive money through
           the platform &mdash; as a property manager or a service provider &mdash; you must
           complete Stripe onboarding and are bound by the{' '}
           <a href="https://stripe.com/legal/connect-account" target="_blank" rel="noopener noreferrer">
@@ -283,12 +264,36 @@ export default function TermsContent() {
           </li>
           <li>it is calculated before tax unless stated otherwise in your account.</li>
         </ul>
-        <LegalCallout tone="warning" title="Payment processing fees are separate and are not ours">
+        <LegalCallout tone="warning" title="Payment processing fees are set by the processor, not by us">
           <p>
-            Stripe charges its own processing fee on each transaction, and an additional currency
-            conversion fee where a payment is taken in a currency other than your settlement
-            currency. These are Stripe&apos;s charges, not ours, and are borne by the party
-            receiving the funds. Current rates are published by Stripe and may change.
+            Our payment processor (currently Stripe) charges its own fees on each transaction.
+            These are the processor&apos;s charges, not ours. They are deducted by the processor
+            and are borne by the party receiving the funds. We do not add any charge of our own on
+            top of them &mdash; our charges are the platform fees described above.
+          </p>
+          <p>Depending on the transaction, the processor&apos;s fees can include:</p>
+          <LegalTable
+            head={['Processor fee', 'When it applies']}
+            rows={[
+              [
+                'Base processing fee',
+                'On every successful card transaction. Normally a percentage of the amount plus a small fixed amount per transaction.',
+              ],
+              [
+                'Cross-border (international) card fee',
+                'Where the payer\u2019s card was issued in a country other than the country in which our processing account is established. Our current processor does not offer accounts established in Saudi Arabia, so you should expect this fee to apply to most Saudi-issued cards.',
+              ],
+              [
+                'Currency conversion fee',
+                'Where a payment is taken in one currency and settled in another \u2014 for example, a payment presented in Saudi riyals and settled in a different currency.',
+              ],
+            ]}
+            caption="The processor publishes its current rates and may change them. The exact fee charged on any individual transaction is shown by the processor and, where applicable, in your dashboard."
+          />
+          <p>
+            We do not set these rates, do not control them and cannot waive them. If we change
+            payment processor, the fees that apply may change, and the processor then in use will
+            be identified in your account.
           </p>
         </LegalCallout>
         <p>
@@ -586,6 +591,15 @@ export default function TermsContent() {
       </S>
 
       <S id="liability" title="19. Limitation of liability">
+        <LegalCallout tone="warning" title="What this section does not limit">
+          <p>
+            Nothing in this section limits or excludes: (a) liability for death or personal injury
+            caused by negligence; (b) liability for fraud or fraudulent misrepresentation; (c) any
+            right to compensation you have under the Personal Data Protection Law, which is a
+            statutory right and is not capped by this agreement; or (d) any remedy that consumer
+            protection law gives you and does not allow to be limited by contract.
+          </p>
+        </LegalCallout>
         <p>To the fullest extent permitted by law:</p>
         <ul>
           <li>
@@ -676,6 +690,12 @@ export default function TermsContent() {
         <p>
           Nothing in this section prevents either party from seeking urgent injunctive or interim
           relief from any court of competent jurisdiction.
+        </p>
+        <p>
+          <strong>If you are a consumer.</strong> Nothing in this section removes any right you have
+          to bring a claim before the court or authority that consumer protection law makes
+          available to you, or requires you to give up a protection that law does not allow to be
+          given up by contract.
         </p>
       </S>
 

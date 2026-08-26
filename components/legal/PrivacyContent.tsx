@@ -9,30 +9,6 @@ import LegalLayout, {
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
-const sections = [
-  { id: 'scope', title: '1. Who we are and what this covers' },
-  { id: 'roles', title: '2. Controller or processor — which applies' },
-  { id: 'what-we-collect', title: '3. What we collect' },
-  { id: 'sources', title: '4. Where it comes from' },
-  { id: 'why', title: '5. Why we use it, and our legal basis' },
-  { id: 'mandatory', title: '6. What is required and what is optional' },
-  { id: 'sharing', title: '7. Who we share it with' },
-  { id: 'transfers', title: '8. Transfers outside Saudi Arabia' },
-  { id: 'storage', title: '9. Where it is stored and for how long' },
-  { id: 'security', title: '10. How we protect it' },
-  { id: 'rights', title: '11. Your rights and how to use them' },
-  { id: 'consent', title: '12. Withdrawing consent' },
-  { id: 'marketing', title: '13. Marketing messages' },
-  { id: 'cookies', title: '14. Cookies and similar technologies' },
-  { id: 'breach', title: '15. If something goes wrong' },
-  { id: 'capacity', title: '16. Children and people without full legal capacity' },
-  { id: 'automated', title: '17. Automated decisions and AI features' },
-  { id: 'customers', title: '18. If your data was uploaded by a business' },
-  { id: 'complaints', title: '19. Complaints' },
-  { id: 'changes', title: '20. Changes to this policy' },
-  { id: 'contact', title: '21. Contact us' },
-]
-
 export default function PrivacyContent() {
   return (
     <LegalLayout
@@ -40,9 +16,8 @@ export default function PrivacyContent() {
       subtitle="How Cloud Valley LLC collects, uses, shares and protects personal data in the Accez platform and marketplace, and the rights you have under the Saudi Personal Data Protection Law."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      sections={sections}
     >
-      <LegalCallout title="The short version">
+      <LegalCallout title="Summary">
         <p>
           We collect what we need to run a property operations platform and a service marketplace.
           We do not sell personal data. Card details never reach our servers &mdash; Stripe handles
@@ -270,7 +245,7 @@ export default function PrivacyContent() {
             ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
             ['AI features (see section 17)', 'The message content processed by that feature'],
           ]}
-          caption="We contract each of these to process data only on our instructions and to protect it. A current list of named sub-processors is available on request through our support form."
+          caption="We contract each of these to process data only on our instructions and to protect it. The named providers in each category can change — for example, if we appoint an additional payment processor — and a current list of named sub-processors is available on request through our support form."
         />
 
         <h3>Other disclosures</h3>

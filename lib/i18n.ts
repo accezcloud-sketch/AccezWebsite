@@ -113,20 +113,36 @@ const AR_ROUTES = new Set([
  * returned untouched. Hashes and query strings are preserved.
  */
 export function localeHref(href: string, locale: Locale): string {
-  if (locale === DEFAULT_LOCALE) return href
   if (!href.startsWith('/')) return href // external URL, mailto, tel
-  if (href === '/ar' || href.startsWith('/ar/')) return href // already localised
 
   const [pathAndQuery, hash] = href.split('#')
   const [path, query] = pathAndQuery.split('?')
+  const suffix = (query ? `?${query}` : '') + (hash ? `#${hash}` : '')
   const clean = path.replace(/^\/+|\/+$/g, '')
+
+  /**
+   * Normalise the trailing slash for EVERY locale, not just Arabic.
+   *
+   * next.config.js sets `trailingSlash: true`, so /about is served as a 308
+   * redirect to /about/. Internal links were written without the slash, which
+   * meant every header, footer and in-page link cost the visitor an extra
+   * round trip, and made crawlers spend part of their budget on redirects
+   * instead of pages. Anything that looks like a file (a dot in the last
+   * segment) is left alone.
+   */
+  const isFile = clean.split('/').pop()?.includes('.') ?? false
+  const withSlash = (p: string) => (p === '' ? '/' : isFile ? `/${p}` : `/${p}/`)
+
+  if (locale === DEFAULT_LOCALE) return withSlash(clean) + suffix
+  if (href === '/ar' || href.startsWith('/ar/')) return href // already localised
+
   const head = clean.split('/')[0]
 
   // Blog posts (blog/<slug>) exist in Arabic; check the first segment.
-  if (!AR_ROUTES.has(clean) && !AR_ROUTES.has(head)) return href
+  if (!AR_ROUTES.has(clean) && !AR_ROUTES.has(head)) return withSlash(clean) + suffix
 
-  const localised = clean ? `/ar/${clean}/` : '/ar/'
-  return localised + (query ? `?${query}` : '') + (hash ? `#${hash}` : '')
+  const localised = clean ? (isFile ? `/ar/${clean}` : `/ar/${clean}/`) : '/ar/'
+  return localised + suffix
 }
 
 /**

@@ -6,17 +6,11 @@ import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
 
-export interface LegalSection {
-  id: string
-  title: string
-}
-
 interface LegalLayoutProps {
   title: string
   subtitle: string
   lastUpdated: string
   effectiveDate?: string
-  sections: LegalSection[]
   children: ReactNode
 }
 
@@ -38,10 +32,26 @@ export default function LegalLayout({
   subtitle,
   lastUpdated,
   effectiveDate,
-  sections,
   children,
 }: LegalLayoutProps) {
   const { language } = useLanguage()
+
+  /**
+   * Chrome labels. These were hardcoded English, so an Arabic reader saw
+   * "Legal", "Effective:", "Last updated:", "Contents" and the English policy
+   * names on an otherwise fully Arabic page — and those labels sit on the
+   * version a Saudi court would read.
+   */
+  const ar = language === 'ar'
+  const L = {
+    legal: ar ? 'قانوني' : 'Legal',
+    effective: ar ? 'تاريخ النفاذ:' : 'Effective:',
+    updated: ar ? 'آخر تحديث:' : 'Last updated:',
+    contents: ar ? 'المحتويات' : 'Contents',
+    terms: ar ? 'شروط الخدمة' : 'Terms of Service',
+    privacy: ar ? 'سياسة الخصوصية' : 'Privacy Policy',
+    refund: ar ? 'سياسة الاسترداد والإلغاء' : 'Refund & Cancellation',
+  }
 
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
@@ -59,17 +69,7 @@ export default function LegalLayout({
           aria-hidden="true"
         />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <span
-              className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5"
-              style={{
-                background: 'var(--accent-dim)',
-                border: '1px solid var(--accent-line)',
-                color: 'var(--accent-hi)',
-              }}
-            >
-              Legal
-            </span>
+          <div className="mx-auto" style={{ maxWidth: 820 }}>
             <h1
               className="text-white font-bold tracking-tight mb-4"
               style={{
@@ -87,14 +87,14 @@ export default function LegalLayout({
               className="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm"
               style={{ color: 'var(--text-muted)' }}
             >
-              {effectiveDate && (
+              {effectiveDate && effectiveDate !== lastUpdated && (
                 <span>
-                  Effective:{' '}
+                  {L.effective}{' '}
                   <span style={{ color: 'var(--text)' }}>{effectiveDate}</span>
                 </span>
               )}
               <span>
-                Last updated: <span style={{ color: 'var(--text)' }}>{lastUpdated}</span>
+                {L.updated} <span style={{ color: 'var(--text)' }}>{lastUpdated}</span>
               </span>
             </div>
           </div>
@@ -104,52 +104,28 @@ export default function LegalLayout({
       {/* Body */}
       <section className="pb-20" style={{ borderTop: '1px solid var(--border)' }}>
         <div className="container mx-auto px-4 pt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-[248px_minmax(0,1fr)] gap-10 max-w-6xl mx-auto">
-            {/* Contents rail */}
-            <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
-              <nav aria-label="Contents">
-                <h2
-                  className="text-xs font-semibold uppercase tracking-[0.14em] mb-4"
-                  style={{ color: 'var(--text-muted)' }}
-                >
-                  Contents
-                </h2>
-                <ol className="space-y-0">
-                  {sections.map((s, i) => (
-                    <li
-                      key={s.id}
-                      style={{ borderTop: i === 0 ? 'none' : '1px solid var(--border)' }}
-                    >
-                      <a
-                        href={`#${s.id}`}
-                        className="block py-2 text-sm leading-snug transition-colors hover:text-white"
-                        style={{ color: 'var(--text-muted)' }}
-                      >
-                        {s.title}
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-
-                <div
-                  className="mt-8 pt-6 flex flex-col gap-2 text-sm"
-                  style={{ borderTop: '1px solid var(--border)' }}
-                >
-                  <a href={localeHref('/terms', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
-                    Terms of Service
-                  </a>
-                  <a href={localeHref('/privacy', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
-                    Privacy Policy
-                  </a>
-                  <a href={localeHref('/refund-policy', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
-                    Refund &amp; Cancellation
-                  </a>
-                </div>
-              </nav>
-            </aside>
-
-            {/* Document */}
+          {/* Single column. The contents rail that used to sit beside this was
+              removed: the document reads as one block with a single left and
+              right edge, the way a printed contract does. The three sibling
+              links it carried are repeated below the document instead. */}
+          <div className="mx-auto" style={{ maxWidth: 820 }}>
             <article className="legal-doc min-w-0">{children}</article>
+
+            <nav
+              aria-label={L.contents}
+              className="mt-16 pt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm"
+              style={{ borderTop: '1px solid var(--border)' }}
+            >
+              <a href={localeHref('/terms', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
+                {L.terms}
+              </a>
+              <a href={localeHref('/privacy', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
+                {L.privacy}
+              </a>
+              <a href={localeHref('/refund-policy', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
+                {L.refund}
+              </a>
+            </nav>
           </div>
         </div>
       </section>

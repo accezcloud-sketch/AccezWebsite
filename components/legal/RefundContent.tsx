@@ -9,21 +9,6 @@ import LegalLayout, {
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
-const sections = [
-  { id: 'overview', title: '1. Overview — which policy applies to you' },
-  { id: 'reservations', title: '2. Unit reservations and stays' },
-  { id: 'marketplace', title: '3. Marketplace service bookings' },
-  { id: 'deposits', title: '4. Deposits and part payments' },
-  { id: 'subscriptions', title: '5. Accez subscription fees' },
-  { id: 'fees-on-refund', title: '6. What happens to fees when money is refunded' },
-  { id: 'how-to-request', title: '7. How to request a refund' },
-  { id: 'timing', title: '8. How long a refund takes' },
-  { id: 'chargebacks', title: '9. Chargebacks and payment disputes' },
-  { id: 'sales', title: '10. Property sale payments' },
-  { id: 'exceptions', title: '11. Exceptions and unusual circumstances' },
-  { id: 'contact', title: '12. Contact' },
-]
-
 export default function RefundContent() {
   return (
     <LegalLayout
@@ -31,7 +16,6 @@ export default function RefundContent() {
       subtitle="How cancellations and refunds work across reservations, marketplace bookings and Accez subscriptions — including who bears which fees."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      sections={sections}
     >
       <LegalCallout title="The one thing to understand first">
         <p>
@@ -79,7 +63,7 @@ export default function RefundContent() {
         </p>
         <p>Where a unit has no specific policy, this default applies, based on how far ahead of check-in you cancel:</p>
         <LegalTable
-          head={['Notice given before check-in', 'Refund of the amount paid']}
+          head={['Notice given before check-in', 'Refund of the amount paid, before processing fees']}
           rows={[
             ['30 days or more', <strong key="1">100%</strong>],
             ['14 to 29 days', '75%'],
@@ -89,15 +73,17 @@ export default function RefundContent() {
             ['Less than 24 hours', <strong key="2">No refund</strong>],
             ['After check-in has begun', <strong key="3">No refund</strong>],
           ]}
-          caption="Percentages apply to the amount actually paid. The payment processing fee is deducted — see section 6."
+          caption="Percentages apply to the amount actually paid. Payment processing fees are not returned by the payment processor when a payment is refunded, so the amount that reaches you is the percentage shown less those fees — see section 6. This means a '100%' refund returns the full price but not the processing fee."
         />
         <h3>If the property manager cancels</h3>
         <p>
           Where the <strong>property manager</strong> cancels rather than the guest, a more generous
           scale applies, because the cancellation was not your decision. In that case you receive a
-          full refund if the cancellation happens well before check-in, and a substantial refund at
-          shorter notice. The exact amount is calculated by the platform and shown on the
-          cancellation record.
+          refund of the full price if the cancellation happens well before check-in, and a
+          substantial refund at shorter notice. Payment processing fees are still not returned by
+          the payment processor, so the same deduction described above applies unless the property
+          manager chooses to cover it. The exact amount is calculated by the platform and shown on
+          the cancellation record.
         </p>
       </S>
 
