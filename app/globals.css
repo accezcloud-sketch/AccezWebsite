@@ -254,3 +254,24 @@ section[id] {
   margin-bottom: .5rem;
 }
 .legal-doc .legal-body table { max-width: none; }
+
+/* Legal document audience views.
+   Both versions are always in the HTML — search engines and the AI crawlers
+   that never run JavaScript must see every clause — and the version the reader
+   did not choose is hidden here rather than dropped from the markup. */
+.legal-doc[data-audience='pm'] [data-for='sp'],
+.legal-doc[data-audience='sp'] [data-for='pm'] { display: none; }
+
+.legal-doc .legal-only { margin-block: 1rem; }
+.legal-doc .legal-only-tag {
+  display: inline-block;
+  margin-bottom: .4rem;
+  padding: .15rem .55rem;
+  border: 1px solid var(--accent-line);
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent-hi);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}

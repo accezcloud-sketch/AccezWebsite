@@ -4,6 +4,7 @@ import LegalLayout, {
   LegalSectionBlock as S,
   LegalCallout,
   LegalTable,
+  Only,
 } from '@/components/LegalLayout'
 import { REFUND_AUDIENCE } from '@/components/legal/audience'
 
@@ -118,23 +119,27 @@ export default function RefundContent() {
       </S>
 
       <S id="deposits" title="4. Deposits and part payments">
-        <p>
-          Some bookings are taken with a deposit, with the balance payable later or directly to the
-          provider. Where a deposit was taken through the platform:
-        </p>
+        <Only for="sp">
+          <p>
+            Some bookings are taken with a deposit, with the balance payable later or directly to the
+            provider. Where a deposit was taken through the platform:
+          </p>
+        </Only>
         <ul>
           <li>refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value;</li>
           <li>platform fees are charged proportionately on the deposit, so a refund reverses them proportionately; and</li>
           <li>any balance you paid directly to a provider outside the platform is a matter between you and that provider &mdash; we have no record of it and cannot refund it.</li>
         </ul>
         <h3>Security deposits on tenancies</h3>
-        <p>
-          Security deposits recorded against a lease are <strong>record-keeping entries</strong>.
-          The platform tracks the amount and whether it is refundable, but it does{' '}
-          <strong>not</strong> hold or move that money. Return of a security deposit is entirely a
-          matter between the tenant and the property manager, under the tenancy agreement and
-          applicable law.
-        </p>
+        <Only for="pm">
+          <p>
+            Security deposits recorded against a lease are <strong>record-keeping entries</strong>.
+            The platform tracks the amount and whether it is refundable, but it does{' '}
+            <strong>not</strong> hold or move that money. Return of a security deposit is entirely a
+            matter between the tenant and the property manager, under the tenancy agreement and
+            applicable law.
+          </p>
+        </Only>
       </S>
 
       <S id="subscriptions" title="5. Accez subscription fees">
@@ -194,12 +199,14 @@ export default function RefundContent() {
             ],
           ]}
         />
-        <p>
-          Property managers should take this into account when setting cancellation policies and
-          pricing. If you believe a platform fee should be returned in a particular case &mdash; for
-          example where a booking was cancelled because of a platform fault &mdash; contact{' '}
-          <a href="/support/">our support form</a> and we will review it.
-        </p>
+        <Only for="pm">
+          <p>
+            Property managers should take this into account when setting cancellation policies and
+            pricing. If you believe a platform fee should be returned in a particular case &mdash; for
+            example where a booking was cancelled because of a platform fault &mdash; contact{' '}
+            <a href="/support/">our support form</a> and we will review it.
+          </p>
+        </Only>
       </S>
 
       <S id="how-to-request" title="7. How to request a refund">

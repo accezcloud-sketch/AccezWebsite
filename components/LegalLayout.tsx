@@ -1,7 +1,7 @@
 'use client'
 
-import { ReactNode, createContext, useContext, useState } from 'react'
-import type { Audience } from '@/components/legal/audience'
+import { ReactNode, createContext, useContext, useEffect, useState } from 'react'
+import { AUDIENCE_STORAGE_KEY, type Audience, type AudienceView } from '@/components/legal/audience'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -11,8 +11,8 @@ import { localeHref } from '@/lib/i18n'
  * The audience the reader has selected, plus this document's section map.
  * Sections read both to decide whether to render in full or collapsed.
  */
-const AudienceContext = createContext<{ selected: Audience; map: Record<string, Audience> }>({
-  selected: 'all',
+const AudienceContext = createContext<{ view: AudienceView; map: Record<string, Audience> }>({
+  view: 'pm',
   map: {},
 })
 
@@ -47,7 +47,35 @@ export default function LegalLayout({
   children,
   audienceMap = {},
 }: LegalLayoutProps) {
-  const [audience, setAudience] = useState<Audience>('all')
+  /**
+   * Which version of the document the reader is looking at.
+   *
+   * Seeded to 'pm' so the server-rendered HTML is deterministic, then
+   * corrected from the reader's last choice after mount. Note that BOTH
+   * versions are always present in the HTML and the inactive one is hidden in
+   * CSS — if the other audience's clauses were dropped from the markup they
+   * would be invisible to search engines and to the AI crawlers that never run
+   * JavaScript, and a reader could argue a term was never published to them.
+   */
+  const [view, setView] = useState<AudienceView>('pm')
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(AUDIENCE_STORAGE_KEY)
+      if (saved === 'pm' || saved === 'sp') setView(saved)
+    } catch {
+      // Storage blocked — the default view is still correct.
+    }
+  }, [])
+
+  const chooseView = (next: AudienceView) => {
+    setView(next)
+    try {
+      localStorage.setItem(AUDIENCE_STORAGE_KEY, next)
+    } catch {
+      // Preference simply will not persist.
+    }
+  }
   const { language } = useLanguage()
 
   /**
@@ -65,17 +93,18 @@ export default function LegalLayout({
     terms: ar ? 'شروط الخدمة' : 'Terms of Service',
     privacy: ar ? 'سياسة الخصوصية' : 'Privacy Policy',
     refund: ar ? 'سياسة الاسترداد والإلغاء' : 'Refund & Cancellation',
-    showing: ar ? 'اعرض البنود التي تخص:' : 'Show the sections that apply to:',
-    all: ar ? 'الجميع' : 'Everyone',
     pm: ar ? 'إدارة الأملاك' : 'Property management',
-    sp: ar ? 'مقدمي الخدمات' : 'Service providers',
-    note: ar
-      ? 'لا يُحذف أي بند. البنود التي لا تخص اختيارك تُطوى ويمكن فتحها بالضغط عليها.'
-      : 'Nothing is removed. Sections that do not apply to your choice collapse to a single line and open when you click them.',
+    sp: ar ? 'مقدمو الخدمات' : 'Service provider',
+    readingPm: ar
+      ? 'أنت تقرأ نسخة إدارة الأملاك من هذه الوثيقة.'
+      : 'You are reading the property management version of this document.',
+    readingSp: ar
+      ? 'أنت تقرأ نسخة مقدّمي الخدمات من هذه الوثيقة.'
+      : 'You are reading the service provider version of this document.',
+    switchHint: ar ? 'بدّل بالأعلى لعرض النسخة الأخرى.' : 'Switch above to read the other version.',
   }
 
-  const OPTIONS: { value: Audience; label: string }[] = [
-    { value: 'all', label: L.all },
+  const OPTIONS: { value: AudienceView; label: string }[] = [
     { value: 'pm', label: L.pm },
     { value: 'sp', label: L.sp },
   ]
@@ -136,47 +165,43 @@ export default function LegalLayout({
               right edge, the way a printed contract does. The three sibling
               links it carried are repeated below the document instead. */}
           <div className="mx-auto" style={{ maxWidth: 820 }}>
-            {/* Audience filter. The documents are largely shared between
-                property managers and service providers, so rather than
-                publishing two near-identical contracts we tag the sections
-                that differ and let the reader narrow the view. Nothing is
-                ever removed from the page — see the note below the control. */}
-            <div
-              className="mb-10 rounded-xl p-4"
-              style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
-            >
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                <span className="text-sm" style={{ color: 'var(--text-muted)' }}>{L.showing}</span>
-                <div
-                  role="group"
-                  className="inline-flex rounded-lg overflow-hidden"
-                  style={{ border: '1px solid var(--border-hi)' }}
-                >
-                  {OPTIONS.map((o) => {
-                    const active = audience === o.value
-                    return (
-                      <button
-                        key={o.value}
-                        type="button"
-                        aria-pressed={active}
-                        onClick={() => setAudience(o.value)}
-                        className="px-3 py-1.5 text-sm font-medium transition-colors"
-                        style={{
-                          background: active ? 'var(--accent)' : 'transparent',
-                          color: active ? '#fff' : 'var(--text-muted)',
-                        }}
-                      >
-                        {o.label}
-                      </button>
-                    )
-                  })}
-                </div>
+            {/* Which version you are reading. Two views only — a combined
+                view is what made these documents confusing in the first place. */}
+            <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+                {view === 'pm' ? L.readingPm : L.readingSp}{' '}
+                <span style={{ color: 'var(--text-faint)' }}>{L.switchHint}</span>
+              </p>
+              <div
+                role="group"
+                className="inline-flex rounded-lg overflow-hidden shrink-0 ms-auto"
+                style={{ border: '1px solid var(--border-hi)' }}
+              >
+                {OPTIONS.map((o) => {
+                  const active = view === o.value
+                  return (
+                    <button
+                      key={o.value}
+                      type="button"
+                      aria-pressed={active}
+                      onClick={() => chooseView(o.value)}
+                      className="px-3.5 py-2 text-sm font-semibold transition-colors"
+                      style={{
+                        background: active ? 'var(--accent)' : 'transparent',
+                        color: active ? '#fff' : 'var(--text-muted)',
+                      }}
+                    >
+                      {o.label}
+                    </button>
+                  )
+                })}
               </div>
-              <p className="mt-2.5 text-xs" style={{ color: 'var(--text-faint)' }}>{L.note}</p>
             </div>
 
-            <AudienceContext.Provider value={{ selected: audience, map: audienceMap }}>
-              <article className="legal-doc min-w-0">{children}</article>
+            <AudienceContext.Provider value={{ view, map: audienceMap }}>
+              <article className="legal-doc min-w-0" data-audience={view}>
+                {children}
+              </article>
             </AudienceContext.Provider>
 
             <nav
@@ -214,51 +239,24 @@ export function LegalSectionBlock({
   children: ReactNode
 }) {
   const { language } = useLanguage()
-  const { selected, map } = useContext(AudienceContext)
-  const [expanded, setExpanded] = useState(false)
+  const { map } = useContext(AudienceContext)
 
   const ar = language === 'ar'
   const audience = map[id] ?? 'all'
-  const applies = selected === 'all' || audience === 'all' || audience === selected
 
   const badge =
     audience === 'pm'
       ? ar
         ? 'يخص إدارة الأملاك'
-        : 'Property management'
+        : 'Property management only'
       : audience === 'sp'
         ? ar
           ? 'يخص مقدمي الخدمات'
-          : 'Service providers'
+          : 'Service providers only'
         : null
 
-  /**
-   * A section outside the reader's selection collapses to one line rather than
-   * disappearing. Removing clauses from the page would let someone argue a term
-   * was never presented to them, which is exactly the kind of gap these
-   * documents exist to close.
-   */
-  if (!applies && !expanded) {
-    return (
-      <section id={id} className="scroll-mt-28 mb-4">
-        <button
-          type="button"
-          onClick={() => setExpanded(true)}
-          className="w-full text-start rounded-lg px-3 py-2.5 text-sm transition-colors"
-          style={{ background: 'var(--surface)', border: '1px dashed var(--border-hi)', color: 'var(--text-faint)' }}
-        >
-          {title}
-          {badge && <span className="mx-2">·</span>}
-          {badge}
-          <span className="mx-2">·</span>
-          {ar ? 'اضغط للعرض' : 'click to read'}
-        </button>
-      </section>
-    )
-  }
-
   return (
-    <section id={id} className="scroll-mt-28 mb-14">
+    <section id={id} data-for={audience} className="scroll-mt-28 mb-14">
       <h2
         className="text-white font-bold tracking-tight mb-2"
         style={{
@@ -371,5 +369,32 @@ export function LegalTable({
         </figcaption>
       )}
     </figure>
+  )
+}
+
+
+/**
+ * Wraps a paragraph, list item or callout that speaks to one audience only.
+ *
+ * Section-level tagging is not enough on its own: measuring the documents
+ * showed a third of the Refund policy differs between the two audiences
+ * *inside* sections that both need to read. Those are the passages that made
+ * a reader ask "is this about me or the other one?".
+ *
+ * Like whole sections, the content stays in the HTML and is hidden in CSS, so
+ * search engines and non-JavaScript crawlers still see both versions.
+ */
+export function Only({ for: audience, children }: { for: 'pm' | 'sp'; children: ReactNode }) {
+  const { language } = useLanguage()
+  const ar = language === 'ar'
+  const label =
+    audience === 'pm'
+      ? ar ? 'إدارة الأملاك' : 'Property management'
+      : ar ? 'مقدمو الخدمات' : 'Service providers'
+  return (
+    <div data-for={audience} className="legal-only">
+      <span className="legal-only-tag">{label}</span>
+      {children}
+    </div>
   )
 }

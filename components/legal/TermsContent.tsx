@@ -4,6 +4,7 @@ import LegalLayout, {
   LegalSectionBlock as S,
   LegalCallout,
   LegalTable,
+  Only,
 } from '@/components/LegalLayout'
 import { TERMS_AUDIENCE } from '@/components/legal/audience'
 
@@ -186,26 +187,37 @@ export default function TermsContent() {
           any subscription fee. Fees are deducted at the time the transaction is processed, before
           funds reach you.
         </p>
-        <p>The fee depends on the type of transaction and, for marketplace providers, on the plan:</p>
-        <LegalTable
-          head={['Transaction type', 'Fee basis']}
-          rows={[
-            ['Unit reservations', 'A percentage of the reservation value, set out in your account.'],
-            [
-              'Resident and guest service bookings',
-              'A percentage of the booking value, set out in your account.',
-            ],
-            [
-              'Marketplace provider bookings',
-              'A commission that varies by provider plan tier, shown in your provider dashboard before you list.',
-            ],
-            [
-              'Providers on a subscription billing model',
-              'No per-transaction commission; a flat recurring fee applies instead.',
-            ],
-          ]}
-          caption="The rates applicable to your account are shown in the platform and in your order form. We may agree different rates with individual providers."
-        />
+        <Only for="pm">
+          <p>The fee depends on the type of transaction:</p>
+          <LegalTable
+            head={['Transaction type', 'Fee basis']}
+            rows={[
+              ['Unit reservations', 'A percentage of the reservation value, set out in your account.'],
+              [
+                'Resident and guest service bookings',
+                'A percentage of the booking value, set out in your account.',
+              ],
+            ]}
+            caption="The rates applicable to your account are shown in the platform and in your order form."
+          />
+        </Only>
+        <Only for="sp">
+          <p>The fee depends on the type of transaction and on your plan:</p>
+          <LegalTable
+            head={['Transaction type', 'Fee basis']}
+            rows={[
+              [
+                'Marketplace bookings',
+                'A commission that varies by provider plan tier, shown in your provider dashboard before you list.',
+              ],
+              [
+                'Providers on a subscription billing model',
+                'No per-transaction commission; a flat recurring fee applies instead.',
+              ],
+            ]}
+            caption="The rates applicable to your account are shown in the platform and in your provider dashboard. We may agree different rates with individual providers."
+          />
+        </Only>
         <p><strong>How the fee is calculated:</strong></p>
         <ul>
           <li>

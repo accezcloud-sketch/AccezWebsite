@@ -16,7 +16,14 @@
  * Sections not listed here are 'all' — that is the safe default, because a
  * clause wrongly tagged as someone else's problem is worse than an untagged one.
  */
+/** Who a clause speaks to. 'all' is content that applies to both audiences. */
 export type Audience = 'pm' | 'sp' | 'all'
+
+/** The two views a reader can choose between. There is no combined view: the
+ *  whole point is that a reader never has to work out which half is theirs. */
+export type AudienceView = 'pm' | 'sp'
+
+export const AUDIENCE_STORAGE_KEY = 'accez.legal.audience'
 
 /** Property-manager-only and provider-only sections, by document. */
 export const TERMS_AUDIENCE: Record<string, Audience> = {
@@ -27,7 +34,6 @@ export const TERMS_AUDIENCE: Record<string, Audience> = {
 
 export const REFUND_AUDIENCE: Record<string, Audience> = {
   reservations: 'pm',
-  deposits: 'pm',
   sales: 'pm',
   marketplace: 'sp',
 }
