@@ -61,6 +61,27 @@ export default function TermsContent() {
           Accez provides software and a venue. That distinction matters, and this section states it
           plainly rather than leaving it to be inferred.
         </p>
+        <Only for="pm">
+          <p>
+            <strong>What you get.</strong> The property manager portal is operations software for
+            your business: property, unit and room records, leases and tenancies, reservations and
+            stays, work orders and maintenance, staff with schedules and task assignment, resident
+            and guest communication including message and email templates, a customer record, owner
+            earnings statements and payout records, and billing for your own subscription. You
+            operate your properties with it. We do not operate them with you.
+          </p>
+        </Only>
+        <Only for="sp">
+          <p>
+            <strong>What you get.</strong> Two things. A <strong>listing on the Accez
+            marketplace</strong>, where customers browse businesses, pick a service and a time and
+            book you; and the <strong>service provider portal</strong>, where you set up your
+            business profile and venue, publish services with their durations and prices, manage
+            your calendar and availability, add staff with their schedules and assign bookings to
+            them, and see your bookings and billing. We list you and take the booking. We do not
+            perform the service, set your prices, or employ you or your staff.
+          </p>
+        </Only>
         <p><strong>We do not:</strong></p>
         <ul>
           <li>
@@ -109,10 +130,29 @@ export default function TermsContent() {
 
       <S id="subscriptions" title="4. Subscriptions, plans and free usage">
         <p>
-          Paid plans are billed in advance through Stripe on a recurring basis and{' '}
+          Paid plans are billed in advance through our payment processor on a recurring basis and{' '}
           <strong>renew automatically</strong> until cancelled. Cancelling takes effect at the end
           of the period you have already paid for; you keep access until then.
         </p>
+        <Only for="sp">
+          <p>
+            <strong>Provider plan tiers.</strong> Provider listings run on tiers &mdash; a free tier
+            and paid tiers. The tiers available to you, their prices and what each includes are shown
+            in the plan picker when you set up your business and in your billing page afterwards.
+            Some features are limited on the free and entry tiers. Choosing a paid plan takes you to
+            the payment processor&apos;s checkout.
+          </p>
+          <LegalCallout tone="warning" title="The free tier costs a commission instead of a fee">
+            <p>
+              The free tier has <strong>no time limit and no recurring fee</strong>. Instead, we
+              charge a commission of <strong>5% of the value of each booking</strong> you take
+              through the marketplace while you are on it. Paid tiers carry a lower commission or,
+              on a subscription billing model, none at all. The commission that applies to your
+              account is shown in your provider dashboard before you list, and any change is shown
+              there before it takes effect.
+            </p>
+          </LegalCallout>
+        </Only>
         <p>
           Plan changes are prorated by Stripe. Where a plan includes usage limits &mdash; for
           example the number of properties, units, residents, staff seats, check-ins or work orders

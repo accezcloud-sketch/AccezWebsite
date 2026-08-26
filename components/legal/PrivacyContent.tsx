@@ -4,6 +4,7 @@ import LegalLayout, {
   LegalSectionBlock as S,
   LegalCallout,
   LegalTable,
+  Only,
 } from '@/components/LegalLayout'
 import { PRIVACY_AUDIENCE } from '@/components/legal/audience'
 
@@ -62,13 +63,26 @@ export default function PrivacyContent() {
           tax certificate.
         </p>
 
-        <h3>Property and operational data</h3>
-        <p>
-          Property, unit and room records, leases and tenancies, reservations and stays, guest
-          details, work orders and maintenance requests with photographs, service bookings, owner
-          statements and earnings records, and sale or brokerage records where those modules are
-          used.
-        </p>
+        <Only for="pm">
+          <h3>Property and operational data</h3>
+          <p>
+            Property, unit and room records, leases and tenancies, reservations and stays, resident
+            and guest details, work orders and maintenance requests with photographs, staff records,
+            schedules and task assignments, resident service bookings, owner statements, earnings
+            and payout records, customer records, and sale or brokerage records where those modules
+            are used.
+          </p>
+        </Only>
+        <Only for="sp">
+          <h3>Business and booking data</h3>
+          <p>
+            Your business profile and venue details, the services you list with their descriptions,
+            durations and prices, your opening hours and calendar availability, your staff records
+            with their schedules, assigned tasks and bookings, and the bookings customers make with
+            you &mdash; including the customer&apos;s name and contact details, what they booked,
+            when, and the amount paid.
+          </p>
+        </Only>
 
         <h3>Payment data</h3>
         <p>
@@ -90,11 +104,22 @@ export default function PrivacyContent() {
           together with the phone numbers involved. Support tickets and any correspondence with us.
         </p>
 
-        <h3>Content you upload</h3>
-        <p>
-          Photographs, documents, listings, reviews and ratings, community posts, and signatures
-          captured on-screen where a contract is signed electronically.
-        </p>
+        <Only for="pm">
+          <h3>Content you upload</h3>
+          <p>
+            Photographs of properties and units, lease and sale documents, listings, email and
+            message templates, community posts, and signatures captured on-screen where a contract
+            is signed electronically.
+          </p>
+        </Only>
+        <Only for="sp">
+          <h3>Content you upload</h3>
+          <p>
+            Photographs of your venue and work, your service listings and descriptions, business
+            documents such as a commercial registration, and the reviews and ratings customers
+            leave against your listing.
+          </p>
+        </Only>
 
         <h3>Technical data</h3>
         <p>
