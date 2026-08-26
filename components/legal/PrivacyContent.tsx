@@ -191,7 +191,7 @@ export default function PrivacyContent() {
           head={['Category', 'What they receive']}
           rows={[
             ['Payment processing', 'Name, email, phone, transaction and verification data'],
-            ['SMS, WhatsApp and voice messaging', 'Phone number and message content'],
+            ['SMS and WhatsApp messaging', 'Phone number and message content'],
             ['Email delivery', 'Recipient address and message content'],
             ['File and media storage', 'Uploaded images and documents'],
             ['Error monitoring and diagnostics', 'Technical data, and an account identifier'],
@@ -199,7 +199,6 @@ export default function PrivacyContent() {
             ['Mapping and address lookup', 'The address or coordinates being looked up'],
             ['Channel management for reservations', 'Reservation and guest details for connected properties'],
             ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
-            ['AI features (see section 16)', 'The message content processed by that feature'],
           ]}
           caption="We contract each of these to process data only on our instructions and to protect it. The named providers in each category can change — for example, if we appoint an additional payment processor — and a current list of named sub-processors is available on request through our support form."
         />
@@ -220,16 +219,7 @@ export default function PrivacyContent() {
           </li>
         </ul>
 
-        <LegalCallout tone="warning" title="Calendar feeds share booking details">
-          <p>
-            If you subscribe to a calendar feed from the platform in an external calendar
-            application, the booking details in that feed &mdash; which can include a
-            customer&apos;s name, contact details and booking notes &mdash; become available to the
-            provider of that calendar. Only share a feed link with people who should see that
-            information.
-          </p>
-        </LegalCallout>
-      </S>
+              </S>
 
       <S id="transfers" title="7. Transfers outside Saudi Arabia">
         <p>
@@ -289,7 +279,6 @@ export default function PrivacyContent() {
           <li>role-based access controls, so people see only what their role requires;</li>
           <li>separation between the data of different businesses using the platform;</li>
           <li>account protections including verification codes, optional two-factor authentication and lockout after repeated failed sign-ins; and</li>
-          <li>keeping card data entirely outside our systems by using a certified payment processor.</li>
         </ul>
         <p>
           No system is completely secure, and we do not claim otherwise. If you find a vulnerability,
@@ -338,31 +327,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="marketing" title="12. Marketing messages">
-        <p>
-          We send marketing about our own services only where you have given{' '}
-          <strong>prior consent</strong>, given separately and not bundled into acceptance of our
-          terms.
-        </p>
-        <p>
-          Every marketing message identifies us clearly as the sender and includes a way to stop
-          receiving them. Opting out is <strong>free</strong> and takes effect promptly. Service
-          messages that are necessary to operate your account &mdash; booking confirmations,
-          security alerts, invoices &mdash; are not marketing and continue regardless.
-        </p>
-        <LegalCallout tone="warning" title="If you send marketing through Accez">
-          <p>
-            Businesses using the platform to contact residents, guests or customers are responsible
-            for obtaining the consent Saudi law requires, identifying themselves as the sender,
-            honouring opt-outs immediately, and observing the restricted hours that apply to
-            promotional messages in the Kingdom. Consent buried in your own terms or privacy policy{' '}
-            <strong>does not satisfy the anti-spam rules</strong>. You must be able to produce
-            evidence of consent.
-          </p>
-        </LegalCallout>
-      </S>
-
-      <S id="cookies" title="13. Cookies and similar technologies">
+      <S id="cookies" title="12. Cookies and similar technologies">
         <p>We use a small number of browser technologies:</p>
         <ul>
           <li>
@@ -381,7 +346,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="breach" title="14. If something goes wrong">
+      <S id="breach" title="13. If something goes wrong">
         <p>
           If a personal data breach occurs that may cause harm to personal data, or to a person&apos;s
           rights or interests, we notify the <strong>Saudi Data &amp; AI Authority (SDAIA) within 72
@@ -398,7 +363,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="capacity" title="15. Children and people without full legal capacity">
+      <S id="capacity" title="14. Children and people without full legal capacity">
         <p>
           Accez is a business platform and is not directed at children. We do not knowingly create
           accounts for people who lack full legal capacity to consent.
@@ -416,21 +381,30 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="automated" title="16. Automated decisions and AI features">
+      <S id="automated" title="15. Our support chatbot">
         <p>
-          We do not make decisions that produce legal effects for you, or similarly significant
-          effects, based solely on automated processing without human involvement.
+          Our website carries a <strong>support chatbot</strong> in the corner of the page. It is an
+          automated assistant, not a person, and we do not present it as one.
         </p>
         <p>
-          Some features use automated processing or artificial intelligence &mdash; for example
-          assisting with message drafting or replies. Where an automated system is used to
-          communicate with you, we will make that clear rather than presenting it as a person.
-          Content processed by an AI feature is sent to the provider of that feature for that
-          purpose only. If you would rather deal with a person, ask, and we will route you to one.
+          The chatbot runs as a separate service, so <strong>what you type into it is sent to that
+          service</strong> in order to generate a reply, together with the technical information any
+          web request carries. We use it to answer questions about Accez and to pass you to our team
+          when it cannot. Please do not enter passwords, card numbers or identity document numbers
+          into it &mdash; use <a href="/support/">our support form</a> for anything sensitive.
+        </p>
+        <p>
+          You never have to use it. If you would rather deal with a person, say so and we will route
+          you to one, or use the support form instead.
+        </p>
+        <p>
+          Separately, and whatever tools we use: <strong>we do not make decisions that produce legal
+          effects for you, or similarly significant effects, based solely on automated processing
+          without human involvement.</strong>
         </p>
       </S>
 
-      <S id="customers" title="17. If your data was uploaded by a business">
+      <S id="customers" title="16. If your data was uploaded by a business">
         <p>
           If you are a tenant, resident, guest, owner, staff member or marketplace customer, the
           business you deal with decided to collect your data and decided why. In law they are the
@@ -444,7 +418,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="complaints" title="18. Complaints">
+      <S id="complaints" title="17. Complaints">
         <p>
           If you are unhappy with how we have handled your personal data, tell us first at{' '}
           <a href="/support/">our support form</a>. We will acknowledge your
@@ -461,7 +435,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="changes" title="19. Changes to this policy">
+      <S id="changes" title="18. Changes to this policy">
         <p>
           We update this policy when our practices change or the law changes. The date at the top
           always shows the current version. For material changes we give reasonable notice before
@@ -470,7 +444,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="contact" title="20. Contact us">
+      <S id="contact" title="19. Contact us">
         <p>
           <strong>Cloud Valley LLC</strong>
           <br />
