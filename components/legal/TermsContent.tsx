@@ -53,54 +53,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="roles" title="2. Account types and your role">
-        <p>
-          Different people use Accez for very different purposes, and your obligations depend on
-          which role you hold. Where a section below applies to only one role, it says so.
-        </p>
-        <LegalTable
-          head={['Role', 'Who this is', 'Primary relationship']}
-          rows={[
-            [
-              <strong key="a">Property manager</strong>,
-              'The subscribing business managing properties, units, leases, reservations and staff.',
-              'Our paying customer. Controls its own tenants, owners and staff data.',
-            ],
-            [
-              <strong key="b">Staff member</strong>,
-              'A person the property manager adds to its account, with permissions the manager sets.',
-              'Acts for the property manager, who remains responsible for them.',
-            ],
-            [
-              <strong key="c">Property owner</strong>,
-              'An owner of units managed on the platform, with read access to statements and earnings.',
-              'Onboarded by the property manager, not by us.',
-            ],
-            [
-              <strong key="d">Resident, tenant or guest</strong>,
-              'An occupant of a managed unit, or a guest of a reservation.',
-              'Their tenancy or stay is with the property manager, not with Accez.',
-            ],
-            [
-              <strong key="e">Service provider</strong>,
-              'An independent business listing services on the marketplace.',
-              'An independent contractor. Not our employee, agent or partner.',
-            ],
-            [
-              <strong key="f">Marketplace customer</strong>,
-              'A person booking a service from a provider.',
-              'Their contract for the service is with the provider, not with Accez.',
-            ],
-          ]}
-        />
-        <p>
-          If you hold more than one role, the terms for each apply to that activity. A property
-          manager is responsible for everyone it invites onto its account, including staff, and for
-          the accuracy of the data it uploads about owners, residents and tenants.
-        </p>
-      </S>
-
-      <S id="venue" title="3. What Accez does and does not do">
+      <S id="venue" title="2. What Accez does and does not do">
         <p>
           Accez provides software and a venue. That distinction matters, and this section states it
           plainly rather than leaving it to be inferred.
@@ -120,7 +73,6 @@ export default function TermsContent() {
             made through the platform;
           </li>
           <li>act as a real estate broker, letting agent, or property manager; or</li>
-          <li>act as a bank, and we do not provide banking, lending or insurance services.</li>
         </ul>
         <LegalCallout tone="warning" title="Disputes about the underlying service or tenancy">
           <p>
@@ -133,7 +85,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="eligibility" title="4. Eligibility and your account">
+      <S id="eligibility" title="3. Eligibility and your account">
         <p>
           You must have full legal capacity to enter into contracts, and be using the platform for
           business or professional purposes, not purely personal ones. Accounts are for named
@@ -152,7 +104,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="subscriptions" title="5. Subscriptions, plans and free usage">
+      <S id="subscriptions" title="4. Subscriptions, plans and free usage">
         <p>
           Paid plans are billed in advance through Stripe on a recurring basis and{' '}
           <strong>renew automatically</strong> until cancelled. Cancelling takes effect at the end
@@ -183,7 +135,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="payments" title="6. Payments, our processor and merchant of record">
+      <S id="payments" title="5. Payments, our processor and merchant of record">
         <p>
           Card payments are handled by a licensed third-party{' '}
           <strong>payment processor</strong>. Our payment processor is currently{' '}
@@ -226,7 +178,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="fees" title="7. Platform fees and commission">
+      <S id="fees" title="6. Platform fees and commission">
         <p>
           We charge a platform fee on transactions processed through the platform, in addition to
           any subscription fee. Fees are deducted at the time the transaction is processed, before
@@ -262,7 +214,6 @@ export default function TermsContent() {
             where a booking is taken with a partial deposit, the fee is charged proportionately on
             the amount actually collected;
           </li>
-          <li>it is calculated before tax unless stated otherwise in your account.</li>
         </ul>
         <LegalCallout tone="warning" title="Payment processing fees are set by the processor, not by us">
           <p>
@@ -277,18 +228,18 @@ export default function TermsContent() {
             rows={[
               [
                 'Base processing fee',
-                'On every successful card transaction. Normally a percentage of the amount plus a small fixed amount per transaction.',
+                'On every successful card transaction. Currently 2.9% of the amount plus USD 0.30 per successful transaction.',
               ],
               [
                 'Cross-border (international) card fee',
-                'Where the payer\u2019s card was issued in a country other than the country in which our processing account is established. Our current processor does not offer accounts established in Saudi Arabia, so you should expect this fee to apply to most Saudi-issued cards.',
+                'Currently an additional 1.5%. It applies where the payer\u2019s card was issued in a country other than the country in which our processing account is established. Our current processor does not offer accounts established in Saudi Arabia, so you should expect this fee to apply to most Saudi-issued cards.',
               ],
               [
                 'Currency conversion fee',
-                'Where a payment is taken in one currency and settled in another \u2014 for example, a payment presented in Saudi riyals and settled in a different currency.',
+                'Currently an additional 1%. It applies where a payment is taken in one currency and settled in another \u2014 for example, a payment presented in Saudi riyals and settled in a different currency. The exchange rate itself is the live market rate at the time of the transaction; only this 1% fee is fixed.',
               ],
             ]}
-            caption="The processor publishes its current rates and may change them. The exact fee charged on any individual transaction is shown by the processor and, where applicable, in your dashboard."
+            caption="Rates shown are the processor\u2019s published rates as at 26 August 2026 and are reproduced here for guidance only. The processor sets and may change them at any time; its published schedule prevails over this table. Where all three apply to one payment they are cumulative. The exact fee charged on any individual transaction is shown by the processor and, where applicable, in your dashboard."
           />
           <p>
             We do not set these rates, do not control them and cannot waive them. If we change
@@ -302,7 +253,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="payouts" title="8. Payouts and owner settlement">
+      <S id="payouts" title="7. Payouts">
         <p>
           Funds owed to you accumulate in your connected Stripe account after platform fees and
           processing fees are deducted. <strong>Payouts are initiated on request</strong> through
@@ -315,34 +266,13 @@ export default function TermsContent() {
           refund window, where we are investigating suspected fraud or a breach of these Terms, or
           where we are required to do so by law or by Stripe.
         </p>
-        <LegalCallout tone="warning" title="Money owed to property owners is settled off the platform">
-          <p>
-            Owner earnings and statements are calculated and recorded in the platform, but{' '}
-            <strong>Accez does not transfer money to property owners</strong>. Amounts owed to an
-            owner are recorded as ledger entries, and the property manager pays the owner directly
-            by its own means and records the payment in the platform.
-          </p>
-          <p>
-            This means the obligation to pay an owner is the{' '}
-            <strong>property manager&apos;s alone</strong>. We do not hold owner funds in trust, do
-            not act as escrow agent or stakeholder, and give no undertaking as to when an owner will
-            be paid. Property managers remain responsible for complying with any client-money,
-            trust-accounting or licensing rules that apply to them.
-          </p>
-        </LegalCallout>
       </S>
 
-      <S id="tax" title="9. Tax and invoicing">
+      <S id="tax" title="8. Tax and invoicing">
         <p>
           You are responsible for determining, charging, collecting, reporting and remitting all
           taxes arising from your own sales, tenancies and services, including value added tax at
           the applicable Saudi rate, and for issuing compliant tax invoices to your customers.
-        </p>
-        <p>
-          Where you provide us with a VAT registration number and rate, the platform will apply
-          them to your transactions. The rate applied to a booking is recorded at the time of the
-          booking, so that a later change to your rate does not retrospectively alter past records.{' '}
-          <strong>You are responsible for the accuracy of the tax settings on your account.</strong>
         </p>
         <p>
           Amounts we charge you may be exclusive of tax, in which case applicable tax is added. We
@@ -350,7 +280,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="refunds" title="10. Refunds, cancellations and chargebacks">
+      <S id="refunds" title="9. Refunds, cancellations and chargebacks">
         <p>
           Refund entitlements differ depending on what was booked. They are set out in full in our{' '}
           <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>, which forms part of these
@@ -364,10 +294,6 @@ export default function TermsContent() {
           <li>
             <strong>Marketplace bookings</strong> follow the cancellation policy the provider has
             configured. If a provider has not configured one, no refund is due on cancellation.
-          </li>
-          <li>
-            <strong>Subscription fees</strong> are non-refundable except as stated in that policy or
-            required by law.
           </li>
         </ul>
         <p>
@@ -384,7 +310,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="providers" title="11. Service providers on the marketplace">
+      <S id="providers" title="10. Service providers on the marketplace">
         <p>This section applies to service providers listing on the Accez marketplace.</p>
         <p>
           You are an <strong>independent business</strong>. Nothing in these Terms creates an
@@ -416,7 +342,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="customer-content" title="12. Your content, your customers, your policies">
+      <S id="customer-content" title="11. Your content, your customers, your policies">
         <p>
           You keep ownership of everything you upload &mdash; property and unit records, documents,
           photographs, contracts, listings and messages (&ldquo;<strong>Your Content</strong>&rdquo;).
@@ -442,7 +368,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="acceptable-use" title="13. Acceptable use">
+      <S id="acceptable-use" title="12. Acceptable use">
         <p>You must not, and must not permit anyone else to:</p>
         <ul>
           <li>use the platform for anything unlawful, or in breach of Saudi law;</li>
@@ -469,7 +395,7 @@ export default function TermsContent() {
         </ul>
       </S>
 
-      <S id="integrations" title="14. Third-party services and integrations">
+      <S id="integrations" title="13. Third-party services and integrations">
         <p>
           The platform interoperates with third-party services, including payment processing,
           messaging and email delivery, media storage, mapping, error monitoring, and channel
@@ -491,7 +417,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="data" title="15. Data protection">
+      <S id="data" title="14. Data protection">
         <p>
           Our handling of personal data is described in the{' '}
           <a href="/privacy/">Privacy Policy</a>. In summary, and for the purposes of the Saudi
@@ -520,7 +446,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="ip" title="16. Intellectual property">
+      <S id="ip" title="15. Intellectual property">
         <p>
           The platform, its software, design, documentation and trade marks are owned by us or our
           licensors. We grant you a limited, non-exclusive, non-transferable, revocable right to use
@@ -537,7 +463,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="availability" title="17. Availability, support and changes">
+      <S id="availability" title="16. Availability, support and changes">
         <p>
           We aim to keep the platform available and to resolve problems promptly, but we do not
           guarantee uninterrupted or error-free operation. Maintenance, third-party outages and
@@ -560,7 +486,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="warranties" title="18. Disclaimers">
+      <S id="warranties" title="17. Disclaimers">
         <p>
           To the fullest extent permitted by law, the platform is provided{' '}
           <strong>&ldquo;as is&rdquo; and &ldquo;as available&rdquo;</strong>, and we disclaim all
@@ -590,7 +516,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="liability" title="19. Limitation of liability">
+      <S id="liability" title="18. Limitation of liability">
         <LegalCallout tone="warning" title="What this section does not limit">
           <p>
             Nothing in this section limits or excludes: (a) liability for death or personal injury
@@ -625,7 +551,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="indemnity" title="20. Indemnity">
+      <S id="indemnity" title="19. Indemnity">
         <p>
           You will indemnify and hold harmless Cloud Valley LLC, its affiliates, officers and
           employees against claims, losses, liabilities, damages, costs and reasonable legal fees
@@ -647,8 +573,8 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="suspension" title="21. Suspension and termination">
-        <p>You may stop using the platform at any time, and cancel a subscription as described in section 5.</p>
+      <S id="suspension" title="20. Suspension and termination">
+        <p>You may stop using the platform at any time, and cancel a subscription as described in section 4.</p>
         <p>
           We may suspend or restrict access immediately where we reasonably believe it is necessary
           to prevent fraud, protect the platform or its users, comply with law or a request from
@@ -675,7 +601,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="law" title="22. Governing law and disputes">
+      <S id="law" title="21. Governing law and disputes">
         <p>
           These Terms and any dispute arising out of or in connection with them, including
           non-contractual disputes, are governed by the laws of the{' '}
@@ -699,7 +625,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="general" title="23. General">
+      <S id="general" title="22. General">
         <p>
           <strong>Entire agreement.</strong> These Terms, the Privacy Policy, the Refund &amp;
           Cancellation Policy and any order form you sign form the whole agreement between us on
@@ -732,7 +658,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="contact" title="24. How to contact us">
+      <S id="contact" title="23. How to contact us">
         <p>
           <strong>Cloud Valley LLC</strong>
           <br />
