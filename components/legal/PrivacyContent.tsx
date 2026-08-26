@@ -22,7 +22,7 @@ export default function PrivacyContent() {
     >
       <LegalCallout title="Summary">
         <p>
-          We collect what we need to run a property operations platform and a service marketplace.
+          We collect what we need to run the platform.
           We do not sell personal data. Card details never reach our servers &mdash; Stripe handles
           them. Much of the data in the platform belongs to the business that uploaded it, not to
           us, and in those cases you should contact that business first. You can reach us any time
@@ -36,8 +36,8 @@ export default function PrivacyContent() {
           <strong>1010637845</strong>, Riyadh, Kingdom of Saudi Arabia.
         </p>
         <p>
-          This policy covers personal data processed through the Accez website, platform, portals,
-          mobile applications and the Accez service marketplace. It is written to meet the
+          This policy covers personal data processed through the Accez website, platform, portals
+          and mobile applications. It is written to meet the
           requirements of the <strong>Saudi Personal Data Protection Law</strong> (Royal Decree
           M/19, as amended) and its Implementing Regulations.
         </p>
@@ -58,9 +58,8 @@ export default function PrivacyContent() {
 
         <h3>Identity documents</h3>
         <p>
-          Where an account type or a check-in flow requires it, images of identity documents such
-          as an ID card or passport, and business documents such as a commercial registration or
-          tax certificate.
+          Where your account type requires it, images of identity documents such as an ID card or
+          passport, and business documents such as a commercial registration or tax certificate.
         </p>
 
         <Only for="pm">
@@ -107,7 +106,7 @@ export default function PrivacyContent() {
         <Only for="pm">
           <h3>Content you upload</h3>
           <p>
-            Photographs of properties and units, lease and sale documents, listings, email and
+            Photographs of properties and units, lease and sale documents, email and
             message templates, community posts, and signatures captured on-screen where a contract
             is signed electronically.
           </p>
@@ -130,7 +129,7 @@ export default function PrivacyContent() {
 
         <h3>Business location data</h3>
         <p>
-          Coordinates of properties, units and provider venues, so they can appear on a map.{' '}
+          Coordinates of the locations you record, so they can appear on a map.{' '}
           <strong>We do not track the live location of any person&apos;s device.</strong>
         </p>
       </S>
@@ -138,15 +137,22 @@ export default function PrivacyContent() {
       <S id="sources" title="3. Where it comes from">
         <ul>
           <li><strong>From you</strong> — when you register, complete a profile, make or accept a booking, upload content, or contact us.</li>
-          <li>
-            <strong>From a business using Accez</strong> — a property manager or service provider
-            may add you as a resident, tenant, owner, staff member or customer. In that case we
-            receive your data from them.
-          </li>
-          <li>
+          <Only for="pm" as="li">
+            <strong>From a business using Accez</strong> — a property manager may add you as a
+            resident, tenant, owner or staff member. In that case we receive your data from them.
+          </Only>
+          <Only for="sp" as="li">
+            <strong>From a business using Accez</strong> — a service provider may add you as a
+            customer or a staff member. In that case we receive your data from them.
+          </Only>
+          <Only for="pm" as="li">
             <strong>From connected services</strong> — for example, guest details supplied by a
             connected reservation channel, or verification status supplied by Stripe.
-          </li>
+          </Only>
+          <Only for="sp" as="li">
+            <strong>From connected services</strong> — for example, verification status supplied by
+            Stripe.
+          </Only>
           <li><strong>Automatically</strong> — technical data generated as you use the platform.</li>
         </ul>
         <p>
@@ -157,21 +163,40 @@ export default function PrivacyContent() {
       </S>
 
       <S id="why" title="4. Why we use it, and our legal basis">
-        <LegalTable
-          head={['Purpose', 'Legal basis']}
-          rows={[
-            ['Creating and administering your account', 'Performance of a contract with you'],
-            ['Providing the platform and its features', 'Performance of a contract'],
-            ['Processing payments, payouts, refunds and disputes', 'Performance of a contract; legal obligation'],
-            ['Sending service messages — confirmations, reminders, alerts', 'Performance of a contract'],
-            ['Support and troubleshooting', 'Performance of a contract; legitimate interest'],
-            ['Security, fraud detection and abuse prevention', 'Legitimate interest; legal obligation'],
-            ['Keeping records and issuing invoices', 'Legal obligation'],
-            ['Improving and developing the platform', 'Legitimate interest'],
-            ['Marketing about our own services', 'Your consent'],
-            ['Responding to lawful requests from authorities', 'Legal obligation'],
-          ]}
-        />
+        <Only for="pm">
+          <LegalTable
+            head={['Purpose', 'Legal basis']}
+            rows={[
+              ['Creating and administering your account', 'Performance of a contract with you'],
+              ['Running the property manager portal — properties, units, leases, reservations, work orders and staff', 'Performance of a contract'],
+              ['Recording owner earnings and payout records', 'Performance of a contract'],
+              ['Processing payments, payouts, refunds and disputes', 'Performance of a contract; legal obligation'],
+              ['Sending service messages — confirmations, reminders, alerts', 'Performance of a contract'],
+              ['Support and troubleshooting', 'Performance of a contract; legitimate interest'],
+              ['Security, fraud detection and abuse prevention', 'Legitimate interest; legal obligation'],
+              ['Keeping records and issuing invoices', 'Legal obligation'],
+              ['Improving and developing the platform', 'Legitimate interest'],
+              ['Responding to lawful requests from authorities', 'Legal obligation'],
+            ]}
+          />
+        </Only>
+        <Only for="sp">
+          <LegalTable
+            head={['Purpose', 'Legal basis']}
+            rows={[
+              ['Creating and administering your account', 'Performance of a contract with you'],
+              ['Publishing your listing on the marketplace so customers can find and book you', 'Performance of a contract'],
+              ['Running the provider portal — services, calendar, availability, staff and bookings', 'Performance of a contract'],
+              ['Processing payments, payouts and commission', 'Performance of a contract; legal obligation'],
+              ['Sending service messages — booking confirmations, reminders, alerts', 'Performance of a contract'],
+              ['Support and troubleshooting', 'Performance of a contract; legitimate interest'],
+              ['Security, fraud detection and abuse prevention', 'Legitimate interest; legal obligation'],
+              ['Keeping records and issuing invoices', 'Legal obligation'],
+              ['Improving and developing the platform', 'Legitimate interest'],
+              ['Responding to lawful requests from authorities', 'Legal obligation'],
+            ]}
+          />
+        </Only>
         <p>
           Where we rely on legitimate interest, we first assess and document whether that interest
           is outweighed by your rights and interests, and we do not rely on it for special
@@ -192,7 +217,7 @@ export default function PrivacyContent() {
         </p>
         <p>
           Other data is <strong>optional</strong>: a profile photograph, a secondary phone number,
-          or optional fields in a property or listing record. Not providing it will not stop you
+          or optional fields in a record you create. Not providing it will not stop you
           using the platform, though some features may be less useful.
         </p>
         <p>
@@ -204,29 +229,59 @@ export default function PrivacyContent() {
       <S id="sharing" title="6. Who we share it with">
         <p>We do not sell personal data. We share it only as described here.</p>
 
-        <h3>The business you are dealing with</h3>
-        <p>
-          If you are a resident, tenant, guest, owner or customer, your data is visible to the
-          property manager or service provider you are dealing with. That is the point of the
-          platform.
-        </p>
+        <Only for="pm">
+          <h3>The business you are dealing with</h3>
+          <p>
+            If you are a resident, tenant, guest or owner, your data is visible to the property
+            manager you are dealing with. That is the point of the platform.
+          </p>
+        </Only>
+        <Only for="sp">
+          <h3>The business you are dealing with</h3>
+          <p>
+            If you are a customer who booked a service, your data is visible to the provider you
+            booked with. That is the point of the marketplace.
+          </p>
+        </Only>
 
-        <h3>Service providers who process data on our behalf</h3>
-        <LegalTable
-          head={['Category', 'What they receive']}
-          rows={[
-            ['Payment processing', 'Name, email, phone, transaction and verification data'],
-            ['SMS and WhatsApp messaging', 'Phone number and message content'],
-            ['Email delivery', 'Recipient address and message content'],
-            ['File and media storage', 'Uploaded images and documents'],
-            ['Error monitoring and diagnostics', 'Technical data, and an account identifier'],
-            ['Bot and abuse protection', 'Technical signals from your browser'],
-            ['Mapping and address lookup', 'The address or coordinates being looked up'],
-            ['Channel management for reservations', 'Reservation and guest details for connected properties'],
-            ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
-          ]}
-          caption="We contract each of these to process data only on our instructions and to protect it. The named providers in each category can change — for example, if we appoint an additional payment processor — and a current list of named sub-processors is available on request through our support form."
-        />
+        <h3>Vendors that process data for us</h3>
+        <p>
+          These are our own suppliers, not other businesses using Accez. Each is contracted to
+          process data only on our instructions and to protect it.
+        </p>
+        <Only for="pm">
+          <LegalTable
+            head={['Category', 'What they receive']}
+            rows={[
+              ['Payment processing', 'Name, email, phone, transaction and verification data'],
+              ['SMS and WhatsApp messaging', 'Phone number and message content'],
+              ['Email delivery', 'Recipient address and message content'],
+              ['File and media storage', 'Uploaded images and documents'],
+              ['Error monitoring and diagnostics', 'Technical data, and an account identifier'],
+              ['Bot and abuse protection', 'Technical signals from your browser'],
+              ['Mapping and address lookup', 'The address or coordinates being looked up'],
+              ['Channel management for reservations', 'Reservation and guest details for connected properties'],
+              ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
+            ]}
+            caption="The named suppliers in each category can change — for example, if we appoint an additional payment processor — and a current list is available on request through our support form."
+          />
+        </Only>
+        <Only for="sp">
+          <LegalTable
+            head={['Category', 'What they receive']}
+            rows={[
+              ['Payment processing', 'Name, email, phone, transaction and verification data'],
+              ['SMS and WhatsApp messaging', 'Phone number and message content'],
+              ['Email delivery', 'Recipient address and message content'],
+              ['File and media storage', 'Uploaded images and documents'],
+              ['Error monitoring and diagnostics', 'Technical data, and an account identifier'],
+              ['Bot and abuse protection', 'Technical signals from your browser'],
+              ['Mapping and address lookup', 'The address or coordinates being looked up'],
+              ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
+            ]}
+            caption="The named suppliers in each category can change — for example, if we appoint an additional payment processor — and a current list is available on request through our support form."
+          />
+        </Only>
 
         <h3>Other disclosures</h3>
         <ul>
@@ -393,11 +448,13 @@ export default function PrivacyContent() {
           Accez is a business platform and is not directed at children. We do not knowingly create
           accounts for people who lack full legal capacity to consent.
         </p>
-        <p>
-          A guest record on a reservation may include a minor travelling with an adult. In that
-          case the data is provided by the responsible adult or by the property manager, and must be
-          limited to what the stay actually requires.
-        </p>
+        <Only for="pm">
+          <p>
+            A guest record on a reservation may include a minor travelling with an adult. In that
+            case the data is provided by the responsible adult or by the property manager, and must be
+            limited to what the stay actually requires.
+          </p>
+        </Only>
         <p>
           Where a person lacks full legal capacity, rights under this policy are exercised by their
           legal guardian, and a guardian&apos;s consent must not be used in a way that harms that
@@ -431,7 +488,7 @@ export default function PrivacyContent() {
 
       <S id="customers" title="16. If your data was uploaded by a business">
         <p>
-          If you are a tenant, resident, guest, owner, staff member or marketplace customer, the
+          If a business using Accez put your data into the platform, the
           business you deal with decided to collect your data and decided why. In law they are the
           controller and we are the processor acting on their instructions.
         </p>

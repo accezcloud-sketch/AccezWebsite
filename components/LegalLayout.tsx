@@ -270,21 +270,10 @@ export function LegalSectionBlock({
   const ar = language === 'ar'
   const audience = map[id] ?? 'all'
 
-  const badge =
-    audience === 'pm'
-      ? ar
-        ? 'يخص إدارة الأملاك'
-        : 'Property management only'
-      : audience === 'sp'
-        ? ar
-          ? 'يخص مقدمي الخدمات'
-          : 'Service providers only'
-        : null
-
   return (
     <section id={id} data-for={audience} className="scroll-mt-28 mb-14">
       <h2
-        className="text-white font-bold tracking-tight mb-2"
+        className="text-white font-bold tracking-tight mb-4"
         style={{
           fontSize: 'clamp(20px, 2.4vw, 26px)',
           fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -292,14 +281,6 @@ export function LegalSectionBlock({
       >
         {title}
       </h2>
-      {badge && (
-        <span
-          className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold mb-4"
-          style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}
-        >
-          {badge}
-        </span>
-      )}
       <div className="legal-body space-y-4">{children}</div>
     </section>
   )
@@ -420,15 +401,11 @@ export function Only({
   as?: 'div' | 'li'
   children: ReactNode
 }) {
-  const { language } = useLanguage()
-  const ar = language === 'ar'
-  const label =
-    audience === 'pm'
-      ? ar ? 'إدارة الأملاك' : 'Property management'
-      : ar ? 'مقدمو الخدمات' : 'Service providers'
+  // No label. Choosing a version renders that version's document; a chip saying
+  // which audience a paragraph belongs to only makes sense in a combined view,
+  // and there is no combined view.
   return (
     <Tag data-for={audience} className="legal-only">
-      <span className="legal-only-tag">{label}</span>
       {children}
     </Tag>
   )

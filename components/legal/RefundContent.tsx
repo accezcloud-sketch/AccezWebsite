@@ -22,10 +22,10 @@ export default function RefundContent() {
     >
       <LegalCallout title="The one thing to understand first">
         <p>
-          Accez processes payments, but Accez is <strong>not the seller</strong> of the stay or the
-          service you booked. The cancellation terms that apply to a booking are set by the{' '}
-          <strong>property manager or service provider</strong> you booked with. This policy
-          explains how those terms are applied, what the defaults are when none has been set, and
+          Accez processes payments, but Accez is <strong>not the seller</strong> of what was
+          booked. The cancellation terms that apply to a booking are set by{' '}
+          <strong>the business the booking was made with</strong>. This policy
+          explains how those terms are applied, what applies when none has been set, and
           how fees are handled.
         </p>
       </LegalCallout>
@@ -78,57 +78,41 @@ export default function RefundContent() {
           has been set, <strong>it takes precedence</strong> and is shown to you before you confirm
           the booking. Always check it at the time of booking.
         </p>
-        <p>Where a unit has no specific policy, this default applies, based on how far ahead of check-in you cancel:</p>
-        <LegalTable
-          head={['Notice given before check-in', 'Refund of the amount paid, before processing fees']}
-          rows={[
-            ['30 days or more', <strong key="1">100%</strong>],
-            ['14 to 29 days', '75%'],
-            ['7 to 13 days', '50%'],
-            ['3 to 6 days', '25%'],
-            ['24 to 48 hours', '10%'],
-            ['Less than 24 hours', <strong key="2">No refund</strong>],
-            ['After check-in has begun', <strong key="3">No refund</strong>],
-          ]}
-          caption="Percentages apply to the amount actually paid. Payment processing fees are not returned by the payment processor when a payment is refunded, so the amount that reaches you is the percentage shown less those fees — see section 6. This means a '100%' refund returns the full price but not the processing fee."
-        />
-        <h3>If the property manager cancels</h3>
         <p>
-          Where the <strong>property manager</strong> cancels rather than the guest, a more generous
-          scale applies, because the cancellation was not your decision. In that case you receive a
-          refund of the full price if the cancellation happens well before check-in, and a
-          substantial refund at shorter notice. Payment processing fees are still not returned by
-          the payment processor, so the same deduction described above applies unless the property
-          manager chooses to cover it. The exact amount is calculated by the platform and shown on
-          the cancellation record.
+          The platform lets you set that policy however you choose, including a scale that varies
+          with how much notice the guest gives before check-in. Whatever you set is what applies.
+        </p>
+        <LegalCallout tone="warning" title="Accez does not impose a cancellation policy">
+          <p>
+            We do not set a standard refund scale and we do not apply one on your behalf where you
+            have not configured a policy. The terms that apply to a booking are the terms you
+            published for that unit and that were shown to the guest before they confirmed. If you
+            have not set any, there is no refund entitlement created by this policy.
+          </p>
+        </LegalCallout>
+        <p>
+          Payment processing fees are not returned by the payment processor when a payment is
+          refunded, so the amount that reaches the guest is the amount you approve less those fees
+          &mdash; see section 6.
         </p>
       </S>
 
       <S id="marketplace" title="3. Marketplace service bookings">
-        <p>
-          Each service provider configures its own cancellation policy, covering how far in advance
-          you must cancel for a full refund, what partial refund applies inside that window, and
-          what happens if you do not attend.
-        </p>
-        <p>The policy is shown before you confirm a booking. When you cancel, the platform quotes the refund due under that provider&apos;s policy before you confirm the cancellation.</p>
-        <LegalCallout tone="warning" title="If a provider has not configured a policy">
+        <LegalCallout tone="warning" title="Cancelled service bookings are not refunded">
           <p>
-            If a provider has not set a cancellation policy, or the booking has no scheduled start
-            time recorded, the platform quotes <strong>no refund</strong>. This is the system&apos;s
-            conservative default, not a judgement about the merits. If you believe a refund is fair
-            in those circumstances, contact the provider directly &mdash; they can issue a refund
-            manually, in full or in part, at any time.
+            A marketplace service booking is <strong>not refundable</strong>. If the customer
+            cancels, no refund is due and Accez does not process one. This applies whether the
+            customer cancels well ahead of the appointment or does not attend at all.
           </p>
         </LegalCallout>
-        <h3>Non-attendance</h3>
         <p>
-          Where the booking start time has passed and you did not attend, the provider&apos;s
-          no-show terms apply, which may be a reduced refund or none.
+          This is stated to the customer before they confirm a booking, so nobody is surprised by it
+          after the fact.
         </p>
-        <h3>Partial refunds</h3>
         <p>
-          Providers can issue partial refunds up to the amount actually charged. Where you paid only
-          a deposit, refunds are limited to that deposit.
+          You may still choose to return money to a customer yourself, outside the platform, if you
+          decide the circumstances warrant it. That is your decision and your cost; Accez neither
+          requires it nor funds it.
         </p>
       </S>
 
@@ -142,10 +126,10 @@ export default function RefundContent() {
         <ul>
           <li>refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value;</li>
           <li>platform fees are charged proportionately on the deposit, so a refund reverses them proportionately; and</li>
-          <li>any balance you paid directly to a provider outside the platform is a matter between you and that provider &mdash; we have no record of it and cannot refund it.</li>
+          <Only for="sp" as="li">any balance a customer paid you directly, outside the platform, is a matter between you and that customer &mdash; we have no record of it and cannot refund it.</Only>
         </ul>
-        <h3>Security deposits on tenancies</h3>
         <Only for="pm">
+          <h3>Security deposits on tenancies</h3>
           <p>
             Security deposits recorded against a lease are <strong>record-keeping entries</strong>.
             The platform tracks the amount and whether it is refundable, but it does{' '}
@@ -190,13 +174,15 @@ export default function RefundContent() {
           is refunded. The only exception is a payment cancelled very soon after it is taken, which
           may be processed as a reversal, in which case no processing fee is retained.
         </p>
-        <LegalCallout tone="warning" title="Processing fees on reservation refunds">
-          <p>
-            For unit reservation refunds, the processing fee retained by the payment processor is{' '}
-            <strong>deducted from the refund</strong>. The refund record shows the deduction, so you
-            can see exactly what was withheld and why.
-          </p>
-        </LegalCallout>
+        <Only for="pm">
+          <LegalCallout tone="warning" title="Processing fees on reservation refunds">
+            <p>
+              For unit reservation refunds, the processing fee retained by the payment processor is{' '}
+              <strong>deducted from the refund</strong>. The refund record shows the deduction, so
+              you can see exactly what was withheld and why.
+            </p>
+          </LegalCallout>
+        </Only>
 
         <h3>Accez platform fees</h3>
         <p>The treatment differs by booking type, and we would rather state that plainly than let it be discovered later:</p>
@@ -274,22 +260,43 @@ export default function RefundContent() {
 
       <S id="timing" title="8. How long a refund takes">
         <p>
-          Once approved, a refund is submitted to the payment processor promptly. From there the
-          timing is controlled by your bank or card issuer, and typically takes several business
-          days to appear on your statement.
+          Once approved, the refund is submitted to our payment processor, which submits it to the
+          customer&apos;s bank or card issuer. <strong>From that point the timing is set by the
+          processor and the bank, not by us.</strong> The figures below are the payment
+          processor&apos;s own published statements about its refund handling.
         </p>
+        <LegalTable
+          head={['What the payment processor states', 'Time it gives']}
+          rows={[
+            [
+              'A refund appears on the customer\u2019s statement as a credit',
+              'Approximately 5\u201310 business days after the refund is submitted, depending on the bank',
+            ],
+            [
+              'A failed refund is returned by the bank and added back to the account balance',
+              'Up to 30 days from when the refund was requested',
+            ],
+            [
+              'A trace reference for the refund (ARN, STAN or RRN) becomes available',
+              'Up to 7 business days after the refund is initiated, where the financial partner supports one',
+            ],
+          ]}
+          caption="These are the payment processor\u2019s published figures at the date of this policy and it may change them. We do not control them and cannot shorten them."
+        />
+        <LegalCallout title="A refund issued soon after payment looks different">
+          <p>
+            The payment processor states that a refund issued shortly after the original charge is
+            handled as a <strong>reversal</strong> rather than a refund: the original charge drops
+            off the statement and <strong>no separate credit is issued</strong>. A trace reference
+            is not available for a reversal, because the original charge is not processed.
+          </p>
+        </LegalCallout>
         <p>
-          Refunds issued very soon after the original payment may appear as the original charge
-          disappearing from your statement, rather than as a separate credit.
-        </p>
-        <p>
-          In rare cases a refund can fail &mdash; for example a closed account. The funds return to
-          us, and we will contact you to arrange another way to return them.
-        </p>
-        <p>
-          Where a refund cannot be processed automatically because the original payment record is
-          incomplete, it is flagged for manual handling and may take longer. We will tell you if
-          that applies to your refund.
+          A refund can fail where the bank or card issuer cannot process it &mdash; for example a
+          closed or cancelled account. The amount returns to us within the period above, and we will
+          then contact you to arrange another way to return it. Refunds to an expired or cancelled
+          card are handled by the card issuer, which usually credits a replacement card or, if there
+          is none, returns the money by another route.
         </p>
       </S>
 
@@ -327,13 +334,13 @@ export default function RefundContent() {
 
       <S id="exceptions" title="11. Exceptions and unusual circumstances">
         <p>
-          A property manager or service provider may choose to issue a more generous refund than
+          A business using Accez may choose to issue a more generous refund than
           their policy requires. Nothing here prevents that.
         </p>
         <p>
-          Where a stay or service could not go ahead because of circumstances outside everyone&apos;s
-          control &mdash; a natural event, an official restriction, a utility failure making a
-          property uninhabitable &mdash; we encourage the parties to reach a fair outcome, and we
+          Where what was booked could not go ahead because of circumstances outside
+          everyone&apos;s control &mdash; a natural event, an official restriction, a utility
+          failure &mdash; we encourage the parties to reach a fair outcome, and we
           will support a manager or provider who chooses to refund in full. Accez does not decide
           those cases, and does not fund refunds beyond what was collected through the platform.
         </p>

@@ -33,7 +33,7 @@ export default function TermsContent() {
 
       <S id="about" title="1. Who we are and what this covers">
         <p>
-          Accez is a property operations platform operated by <strong>Cloud Valley LLC</strong>{' '}
+          Accez is operated by <strong>Cloud Valley LLC</strong>{' '}
           (&ldquo;Accez&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;), a company registered in the
           Kingdom of Saudi Arabia under commercial registration number{' '}
           <strong>1010637845</strong>.
@@ -41,10 +41,9 @@ export default function TermsContent() {
         <p>These Terms govern your use of:</p>
         <ul>
           <li>the Accez web platform, portals and mobile applications;</li>
-          <li>
-            the <strong>Accez marketplace</strong>, where independent service providers list
-            services and residents, guests and other customers book them; and
-          </li>
+          <Only for="sp" as="li">
+            the <strong>Accez marketplace</strong>, where customers browse and book services; and
+          </Only>
           <li>any related APIs, integrations and support we provide.</li>
         </ul>
         <p>
@@ -58,7 +57,7 @@ export default function TermsContent() {
 
       <S id="venue" title="2. What Accez does and does not do">
         <p>
-          Accez provides software and a venue. That distinction matters, and this section states it
+          Accez provides software and a place for others to transact. That distinction matters, and this section states it
           plainly rather than leaving it to be inferred.
         </p>
         <Only for="pm">
@@ -84,25 +83,27 @@ export default function TermsContent() {
         </Only>
         <p><strong>We do not:</strong></p>
         <ul>
-          <li>
+          <Only for="pm" as="li">
             own, lease, manage, inspect or maintain any property, unit or room listed on the
             platform;
-          </li>
-          <li>
-            perform any cleaning, maintenance, salon, spa, fitness, photography or other service
-            offered by a service provider;
-          </li>
-          <li>
-            act as a party to any lease, tenancy, reservation, sale contract or service booking
-            made through the platform;
-          </li>
-          <li>act as a real estate broker, letting agent, or property manager; or</li>
+          </Only>
+          <Only for="pm" as="li">
+            act as a party to any lease, tenancy, reservation or sale contract made through the
+            platform;
+          </Only>
+          <Only for="pm" as="li">act as a real estate broker, letting agent, or property manager; or</Only>
+          <Only for="sp" as="li">
+            perform, supervise or inspect any service you list &mdash; cleaning, maintenance, salon,
+            spa, fitness, photography or anything else;
+          </Only>
+          <Only for="sp" as="li">act as a party to any booking a customer makes with you;</Only>
+          <Only for="sp" as="li">employ you or your staff, or act as your agent; or</Only>
         </ul>
-        <LegalCallout tone="warning" title="Disputes about the underlying service or tenancy">
+        <LegalCallout tone="warning" title="Disputes about what was booked or supplied">
           <p>
-            Any dispute about the condition of a property, the quality or safety of a service, a
-            cancellation, a deposit, an eviction, or the conduct of a manager, owner, resident,
-            guest or provider is <strong>between those parties</strong>. We are not a party to it
+            Any dispute about what was booked or supplied &mdash; its condition, quality or safety,
+            a cancellation, a deposit, or the conduct of anyone involved &mdash; is{' '}
+            <strong>between those parties</strong>. We are not a party to it
             and do not adjudicate it. We may, at our discretion, provide records held on the
             platform to help the parties resolve it.
           </p>
@@ -122,9 +123,9 @@ export default function TermsContent() {
           has been compromised.
         </p>
         <p>
-          Where you add other people to your account &mdash; staff, residents, owners or employees
-          &mdash; you confirm you have the authority and the lawful basis to provide their
-          information to us, and you are responsible for what they do on the platform.
+          Where you add other people to your account, you confirm you have the authority and the
+          lawful basis to provide their information to us, and you are responsible for what they do
+          on the platform.
         </p>
       </S>
 
@@ -147,18 +148,24 @@ export default function TermsContent() {
               The free tier has <strong>no time limit and no recurring fee</strong>. Instead, we
               charge a commission of <strong>5% of the value of each booking</strong> you take
               through the marketplace while you are on it. Paid tiers carry a lower commission or,
-              on a subscription billing model, none at all. The commission that applies to your
-              account is shown in your provider dashboard before you list, and any change is shown
-              there before it takes effect.
+              on a subscription billing model, none at all.
             </p>
           </LegalCallout>
         </Only>
-        <p>
-          Plan changes are prorated by Stripe. Where a plan includes usage limits &mdash; for
-          example the number of properties, units, residents, staff seats, check-ins or work orders
-          &mdash; those limits are enforced by the platform, and exceeding them may require an
-          upgrade or an additional seat purchase.
-        </p>
+        <Only for="pm">
+          <p>
+            Plan changes are prorated. Where a plan includes usage limits &mdash; for example the
+            number of properties, units, residents, staff seats, check-ins or work orders &mdash;
+            those limits are enforced by the platform, and exceeding them may require an upgrade or
+            an additional seat purchase.
+          </p>
+        </Only>
+        <Only for="sp">
+          <p>
+            Plan changes are prorated. Where a tier gates a feature or sets a limit, the platform
+            enforces that, and going beyond it requires changing tier.
+          </p>
+        </Only>
         <LegalCallout title="Free usage is limited by capacity, not by time">
           <p>
             Our free tier is not a countdown trial that expires. It is ongoing access with
@@ -190,8 +197,7 @@ export default function TermsContent() {
         </p>
         <p>
           Where you receive money through
-          the platform &mdash; as a property manager or a service provider &mdash; you must
-          complete Stripe onboarding and are bound by the{' '}
+          the platform, you must complete Stripe onboarding and are bound by the{' '}
           <a href="https://stripe.com/legal/connect-account" target="_blank" rel="noopener noreferrer">
             Stripe Connected Account Agreement
           </a>{' '}
@@ -221,7 +227,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="fees" title="6. Platform fees and commission">
+      <S id="fees" title="6. Platform fees">
         <p>
           We charge a platform fee on transactions processed through the platform, in addition to
           any subscription fee. Fees are deducted at the time the transaction is processed, before
@@ -260,45 +266,47 @@ export default function TermsContent() {
         </Only>
         <p><strong>How the fee is calculated:</strong></p>
         <ul>
-          <li>
+          <Only for="sp" as="li">
             it is charged on the service subtotal. <strong>Tips are not subject to platform fees</strong>{' '}
-            and pass in full to the provider;
-          </li>
+            and pass to you in full;
+          </Only>
           <li>
             where a booking is taken with a partial deposit, the fee is charged proportionately on
             the amount actually collected;
           </li>
         </ul>
-        <LegalCallout tone="warning" title="Payment processing fees are set by the processor, not by us">
+        <LegalCallout tone="warning" title="Payment processing fees are set by Stripe, not by us">
           <p>
-            Our payment processor (currently Stripe) charges its own fees on each transaction.
-            These are the processor&apos;s charges, not ours. They are deducted by the processor
-            and are borne by the party receiving the funds. We do not add any charge of our own on
-            top of them &mdash; our charges are the platform fees described above.
+            Stripe charges its own fees on each transaction. They are deducted by Stripe, borne by
+            the party receiving the funds, and we add nothing on top. The rates below are Stripe&apos;s
+            published rates &mdash; each links to the page we took it from.
           </p>
-          <p>Depending on the transaction, the processor&apos;s fees can include:</p>
           <LegalTable
-            head={['Processor fee', 'When it applies']}
+            head={['Stripe fee', 'Rate', 'Source']}
             rows={[
               [
-                'Base processing fee',
-                'On every successful card transaction. Currently 2.9% of the amount plus USD 0.30 per successful transaction.',
+                'Base, per successful card transaction',
+                <strong key="r1">2.9% + USD 0.30</strong>,
+                <a key="s1" href="https://stripe.com/pricing" target="_blank" rel="noopener noreferrer">stripe.com/pricing</a>,
               ],
               [
-                'Cross-border (international) card fee',
-                'Currently an additional 1.5%. It applies where the payer\u2019s card was issued in a country other than the country in which our processing account is established. Our current processor does not offer accounts established in Saudi Arabia, so you should expect this fee to apply to most Saudi-issued cards.',
+                'International card (issued outside our account\u2019s country)',
+                <strong key="r2">+ 1.5%</strong>,
+                <a key="s2" href="https://stripe.com/pricing" target="_blank" rel="noopener noreferrer">stripe.com/pricing</a>,
               ],
               [
-                'Currency conversion fee',
-                'Currently an additional 1%. It applies where a payment is taken in one currency and settled in another \u2014 for example, a payment presented in Saudi riyals and settled in a different currency. The exchange rate itself is the live market rate at the time of the transaction; only this 1% fee is fixed.',
+                'Currency conversion',
+                <strong key="r3">+ 1%</strong>,
+                <a key="s3" href="https://stripe.com/pricing" target="_blank" rel="noopener noreferrer">stripe.com/pricing</a>,
               ],
             ]}
-            caption="Rates shown are the processor\u2019s published rates as at 26 August 2026 and are reproduced here for guidance only. The processor sets and may change them at any time; its published schedule prevails over this table. Where all three apply to one payment they are cumulative. The exact fee charged on any individual transaction is shown by the processor and, where applicable, in your dashboard."
+            caption="Stripe\u2019s published rates as at 26 August 2026. Stripe sets them and may change them; its published page prevails over this table. The three are cumulative where all apply. Stripe does not offer accounts established in Saudi Arabia, so the international card fee applies to most Saudi-issued cards."
           />
           <p>
-            We do not set these rates, do not control them and cannot waive them. If we change
-            payment processor, the fees that apply may change, and the processor then in use will
-            be identified in your account.
+            Stripe does not return its processing fee when a payment is refunded (
+            <a href="https://docs.stripe.com/refunds" target="_blank" rel="noopener noreferrer">docs.stripe.com/refunds</a>
+            ). If we change payment processor, the fees that apply may change and the processor then
+            in use will be identified in your account.
           </p>
         </LegalCallout>
         <p>
@@ -325,7 +333,7 @@ export default function TermsContent() {
       <S id="tax" title="8. Tax and invoicing">
         <p>
           You are responsible for determining, charging, collecting, reporting and remitting all
-          taxes arising from your own sales, tenancies and services, including value added tax at
+          taxes arising from your own sales and services, including value added tax at
           the applicable Saudi rate, and for issuing compliant tax invoices to your customers.
         </p>
         <p>
@@ -344,10 +352,6 @@ export default function TermsContent() {
           <Only for="pm" as="li">
             <strong>Unit reservations</strong> follow the cancellation policy set for the unit, or a
             default sliding scale based on notice given before check-in.
-          </Only>
-          <Only for="sp" as="li">
-            <strong>Marketplace bookings</strong> follow the cancellation policy you configure. If
-            you have not configured one, no refund is due on cancellation.
           </Only>
         </ul>
         <p>
@@ -400,7 +404,7 @@ export default function TermsContent() {
         <Only for="pm">
           <p>
             You keep ownership of everything you upload &mdash; property and unit records,
-            documents, photographs, contracts, listings and messages
+            documents, photographs, contracts and messages
             (&ldquo;<strong>Your Content</strong>&rdquo;).
           </p>
         </Only>
@@ -417,19 +421,19 @@ export default function TermsContent() {
           sell Your Content and do not use it to advertise to your customers.
         </p>
         <p>
-          <strong>Legal text you publish to your own residents and guests</strong> &mdash; house
-          rules, guest policies, check-in policies, and any privacy or terms text you configure for
-          your properties &mdash; is <strong>your</strong> content and your responsibility. We host
-          and display it; we do not review it, and we are not responsible for its legality,
-          accuracy or enforceability.
+          <strong>Legal text you publish to your own customers</strong> is <strong>your</strong>{' '}
+          content and your responsibility. We host and display it; we do not review it, and we are
+          not responsible for its legality, accuracy or enforceability.
         </p>
-        <p>
-          The same applies to lease and sale contract documents generated from templates in the
-          platform. The platform assembles a document from the information and clauses{' '}
-          <strong>you</strong> supply. It is not legal advice, we do not verify that a document is
-          valid or enforceable in your jurisdiction, and you should have your contract templates
-          reviewed by a qualified lawyer.
-        </p>
+        <Only for="pm">
+          <p>
+            The same applies to lease and sale contract documents generated from templates in the
+            platform. The platform assembles a document from the information and clauses{' '}
+            <strong>you</strong> supply. It is not legal advice, we do not verify that a document is
+            valid or enforceable in your jurisdiction, and you should have your contract templates
+            reviewed by a qualified lawyer.
+          </p>
+        </Only>
       </S>
 
       <S id="acceptable-use" title="12. Acceptable use">
@@ -437,19 +441,20 @@ export default function TermsContent() {
         <ul>
           <li>use the platform for anything unlawful, or in breach of Saudi law;</li>
           <li>upload content that is fraudulent, defamatory, obscene, or infringes someone&apos;s rights;</li>
-          <li>list a service you are not licensed or qualified to perform;</li>
-          <li>misrepresent a property, unit, price, availability or service;</li>
+          <Only for="sp" as="li">list a service you are not licensed or qualified to perform;</Only>
+          <Only for="pm" as="li">misrepresent a property, unit, price or availability;</Only>
+          <Only for="sp" as="li">misrepresent a service, its price, its duration or your availability;</Only>
           <li>
             upload personal data about another person without a lawful basis, or upload special
             categories of data where you have no lawful basis to do so;
           </li>
           <li>
-            send marketing to residents, guests or customers without the consent required by Saudi
-            law, or use contact details obtained through the platform for unrelated marketing;
+            send marketing to anyone without the consent required by Saudi law, or use contact
+            details obtained through the platform for unrelated marketing;
           </li>
           <li>
-            attempt to circumvent platform fees by moving a booking introduced through the
-            marketplace off-platform in order to avoid commission;
+            attempt to circumvent platform fees by taking a booking introduced through the platform
+            off-platform in order to avoid them;
           </li>
           <li>
             probe, scan, penetration-test, scrape, reverse-engineer or overload the platform, or
@@ -462,23 +467,26 @@ export default function TermsContent() {
       <S id="integrations" title="13. Third-party services and integrations">
         <p>
           The platform interoperates with third-party services, including payment processing,
-          messaging and email delivery, media storage, mapping, error monitoring, and channel
-          management for reservations. Those services are operated by their providers under their
+          messaging and email delivery, media storage, mapping and error monitoring. Those services are operated by their providers under their
           own terms, and we are not responsible for their acts, omissions, availability or pricing.
         </p>
+        <Only for="pm">
         <LegalCallout title="How reservation channels actually connect">
-          <p>
-            Reservation synchronisation with external booking channels operates through{' '}
-            <strong>calendar feed import and export</strong> and through a connected channel
-            management service. We describe it this way deliberately: it does not depend on us
-            holding an account or a direct API relationship with any particular booking site, and
-            we make no commitment that any specific channel is or will remain connected.
-          </p>
-          <p>
-            Where you connect a third-party account, you confirm you are entitled to do so and that
-            doing so does not breach that provider&apos;s terms.
-          </p>
+          <Only for="pm">
+            <p>
+              Reservation synchronisation with external booking channels operates through{' '}
+              <strong>calendar feed import and export</strong> and through a connected channel
+              management service. It does not depend on us holding an account or a direct API
+              relationship with any particular booking site, and we make no commitment that any
+              specific channel is or will remain connected.
+            </p>
+          </Only>
         </LegalCallout>
+        </Only>
+        <p>
+          Where you connect a third-party account, you confirm you are entitled to do so and that
+          doing so does not breach that service&apos;s terms.
+        </p>
       </S>
 
       <S id="data" title="14. Data protection">
@@ -565,10 +573,14 @@ export default function TermsContent() {
         <p>We specifically do not warrant that:</p>
         <ul>
           <li>the platform will be uninterrupted, secure or free of errors;</li>
-          <li>
-            any property manager, owner, resident, guest, service provider or customer is
-            trustworthy, licensed, solvent or suitable;
-          </li>
+          <Only for="pm" as="li">
+            any owner, resident, guest or customer you deal with is trustworthy, licensed, solvent
+            or suitable;
+          </Only>
+          <Only for="sp" as="li">
+            any customer who books you is trustworthy, or that any business listed alongside you is
+            licensed, solvent or suitable;
+          </Only>
           <li>
             any document, contract or report generated by the platform is legally valid, complete
             or enforceable; or
@@ -594,28 +606,15 @@ export default function TermsContent() {
             protection law gives you and does not allow to be limited by contract.
           </p>
         </LegalCallout>
-        <p>To the fullest extent permitted by law:</p>
-        <ul>
-          <li>
-            neither party is liable for indirect, incidental, special, consequential or punitive
-            loss, or for loss of profit, revenue, goodwill, business opportunity, or loss or
-            corruption of data, however arising; and
-          </li>
-          <li>
-            our total aggregate liability arising out of or relating to these Terms and your use of
-            the platform, whether in contract, tort (including negligence) or otherwise, is limited
-            to <strong>the greater of</strong> (a) the total fees you paid us in the{' '}
-            <strong>three months</strong> immediately before the event giving rise to the claim,
-            and (b) <strong>SAR 1,000</strong>.
-          </li>
-        </ul>
         <p>
-          We are not liable for losses arising from the goods, services, tenancies, sales,
-          reservations, pricing, policies, conduct, acts or omissions of any property manager,
-          owner, resident, guest, service provider or customer, or from any dispute between them.
+          To the fullest extent permitted by law, neither party is liable for indirect, incidental,
+          special, consequential or punitive loss, or for loss of profit, revenue, goodwill,
+          business opportunity, or loss or corruption of data, however arising.
         </p>
         <p>
-          These limits apply in aggregate, not per incident, and survive termination.
+          We are not liable for losses arising from what any other user of the platform sells,
+          supplies, prices or agrees, or from their conduct, acts or omissions, or from any dispute
+          between them.
         </p>
       </S>
 
@@ -627,8 +626,10 @@ export default function TermsContent() {
         </p>
         <ul>
           <li>your use of the platform;</li>
-          <li>Your Content, listings, contract templates and customer-facing policies;</li>
-          <li>your goods, services, tenancies, sales, reservations or bookings;</li>
+          <Only for="pm" as="li">Your Content, contract templates and customer-facing policies;</Only>
+          <Only for="sp" as="li">Your Content, your listings and your customer-facing policies;</Only>
+          <Only for="pm" as="li">your tenancies, sales, reservations or stays;</Only>
+          <Only for="sp" as="li">the services you provide and the bookings you accept;</Only>
           <li>your breach of these Terms or of any applicable law; or</li>
           <li>
             your handling of personal data, including any claim by a person whose data you uploaded.
