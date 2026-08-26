@@ -5,6 +5,7 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
 } from '@/components/LegalLayout'
+import { REFUND_AUDIENCE } from '@/components/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
@@ -16,6 +17,7 @@ export default function RefundContentAr() {
       subtitle="كيف يعمل الإلغاء والاسترداد في حجوزات الوحدات وحجوزات السوق واشتراكات أكسيز، ومن يتحمل أي رسوم."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
+      audienceMap={REFUND_AUDIENCE}
     >
       <LegalCallout title="الأمر الأهم الذي ينبغي فهمه أولًا">
         <p>

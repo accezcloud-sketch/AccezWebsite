@@ -5,6 +5,7 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
 } from '@/components/LegalLayout'
+import { PRIVACY_AUDIENCE } from '@/components/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
@@ -16,6 +17,7 @@ export default function PrivacyContent() {
       subtitle="How Cloud Valley LLC collects, uses, shares and protects personal data in the Accez platform and marketplace, and the rights you have under the Saudi Personal Data Protection Law."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
+      audienceMap={PRIVACY_AUDIENCE}
     >
       <LegalCallout title="Summary">
         <p>

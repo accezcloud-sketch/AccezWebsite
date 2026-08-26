@@ -1,12 +1,24 @@
 'use client'
 
-import { ReactNode } from 'react'
+import { ReactNode, createContext, useContext, useState } from 'react'
+import type { Audience } from '@/components/legal/audience'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
 
+/**
+ * The audience the reader has selected, plus this document's section map.
+ * Sections read both to decide whether to render in full or collapsed.
+ */
+const AudienceContext = createContext<{ selected: Audience; map: Record<string, Audience> }>({
+  selected: 'all',
+  map: {},
+})
+
 interface LegalLayoutProps {
+  /** Section id -> audience. Anything absent is treated as 'all'. */
+  audienceMap?: Record<string, Audience>
   title: string
   subtitle: string
   lastUpdated: string
@@ -33,7 +45,9 @@ export default function LegalLayout({
   lastUpdated,
   effectiveDate,
   children,
+  audienceMap = {},
 }: LegalLayoutProps) {
+  const [audience, setAudience] = useState<Audience>('all')
   const { language } = useLanguage()
 
   /**
@@ -51,7 +65,20 @@ export default function LegalLayout({
     terms: ar ? 'شروط الخدمة' : 'Terms of Service',
     privacy: ar ? 'سياسة الخصوصية' : 'Privacy Policy',
     refund: ar ? 'سياسة الاسترداد والإلغاء' : 'Refund & Cancellation',
+    showing: ar ? 'اعرض البنود التي تخص:' : 'Show the sections that apply to:',
+    all: ar ? 'الجميع' : 'Everyone',
+    pm: ar ? 'إدارة الأملاك' : 'Property management',
+    sp: ar ? 'مقدمي الخدمات' : 'Service providers',
+    note: ar
+      ? 'لا يُحذف أي بند. البنود التي لا تخص اختيارك تُطوى ويمكن فتحها بالضغط عليها.'
+      : 'Nothing is removed. Sections that do not apply to your choice collapse to a single line and open when you click them.',
   }
+
+  const OPTIONS: { value: Audience; label: string }[] = [
+    { value: 'all', label: L.all },
+    { value: 'pm', label: L.pm },
+    { value: 'sp', label: L.sp },
+  ]
 
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
@@ -109,7 +136,48 @@ export default function LegalLayout({
               right edge, the way a printed contract does. The three sibling
               links it carried are repeated below the document instead. */}
           <div className="mx-auto" style={{ maxWidth: 820 }}>
-            <article className="legal-doc min-w-0">{children}</article>
+            {/* Audience filter. The documents are largely shared between
+                property managers and service providers, so rather than
+                publishing two near-identical contracts we tag the sections
+                that differ and let the reader narrow the view. Nothing is
+                ever removed from the page — see the note below the control. */}
+            <div
+              className="mb-10 rounded-xl p-4"
+              style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
+            >
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                <span className="text-sm" style={{ color: 'var(--text-muted)' }}>{L.showing}</span>
+                <div
+                  role="group"
+                  className="inline-flex rounded-lg overflow-hidden"
+                  style={{ border: '1px solid var(--border-hi)' }}
+                >
+                  {OPTIONS.map((o) => {
+                    const active = audience === o.value
+                    return (
+                      <button
+                        key={o.value}
+                        type="button"
+                        aria-pressed={active}
+                        onClick={() => setAudience(o.value)}
+                        className="px-3 py-1.5 text-sm font-medium transition-colors"
+                        style={{
+                          background: active ? 'var(--accent)' : 'transparent',
+                          color: active ? '#fff' : 'var(--text-muted)',
+                        }}
+                      >
+                        {o.label}
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+              <p className="mt-2.5 text-xs" style={{ color: 'var(--text-faint)' }}>{L.note}</p>
+            </div>
+
+            <AudienceContext.Provider value={{ selected: audience, map: audienceMap }}>
+              <article className="legal-doc min-w-0">{children}</article>
+            </AudienceContext.Provider>
 
             <nav
               aria-label={L.contents}
@@ -145,10 +213,54 @@ export function LegalSectionBlock({
   title: string
   children: ReactNode
 }) {
+  const { language } = useLanguage()
+  const { selected, map } = useContext(AudienceContext)
+  const [expanded, setExpanded] = useState(false)
+
+  const ar = language === 'ar'
+  const audience = map[id] ?? 'all'
+  const applies = selected === 'all' || audience === 'all' || audience === selected
+
+  const badge =
+    audience === 'pm'
+      ? ar
+        ? 'يخص إدارة الأملاك'
+        : 'Property management'
+      : audience === 'sp'
+        ? ar
+          ? 'يخص مقدمي الخدمات'
+          : 'Service providers'
+        : null
+
+  /**
+   * A section outside the reader's selection collapses to one line rather than
+   * disappearing. Removing clauses from the page would let someone argue a term
+   * was never presented to them, which is exactly the kind of gap these
+   * documents exist to close.
+   */
+  if (!applies && !expanded) {
+    return (
+      <section id={id} className="scroll-mt-28 mb-4">
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="w-full text-start rounded-lg px-3 py-2.5 text-sm transition-colors"
+          style={{ background: 'var(--surface)', border: '1px dashed var(--border-hi)', color: 'var(--text-faint)' }}
+        >
+          {title}
+          {badge && <span className="mx-2">·</span>}
+          {badge}
+          <span className="mx-2">·</span>
+          {ar ? 'اضغط للعرض' : 'click to read'}
+        </button>
+      </section>
+    )
+  }
+
   return (
     <section id={id} className="scroll-mt-28 mb-14">
       <h2
-        className="text-white font-bold tracking-tight mb-4"
+        className="text-white font-bold tracking-tight mb-2"
         style={{
           fontSize: 'clamp(20px, 2.4vw, 26px)',
           fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -156,6 +268,14 @@ export function LegalSectionBlock({
       >
         {title}
       </h2>
+      {badge && (
+        <span
+          className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold mb-4"
+          style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}
+        >
+          {badge}
+        </span>
+      )}
       <div className="legal-body space-y-4">{children}</div>
     </section>
   )

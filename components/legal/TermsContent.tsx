@@ -5,6 +5,7 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
 } from '@/components/LegalLayout'
+import { TERMS_AUDIENCE } from '@/components/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
@@ -16,6 +17,7 @@ export default function TermsContent() {
       subtitle="The agreement between you and Cloud Valley LLC governing your use of the Accez platform and the Accez service marketplace."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
+      audienceMap={TERMS_AUDIENCE}
     >
       <LegalCallout title="Read this first">
         <p>

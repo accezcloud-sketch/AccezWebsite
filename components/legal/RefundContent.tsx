@@ -5,6 +5,7 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
 } from '@/components/LegalLayout'
+import { REFUND_AUDIENCE } from '@/components/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
@@ -16,6 +17,7 @@ export default function RefundContent() {
       subtitle="How cancellations and refunds work across reservations, marketplace bookings and Accez subscriptions — including who bears which fees."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
+      audienceMap={REFUND_AUDIENCE}
     >
       <LegalCallout title="The one thing to understand first">
         <p>

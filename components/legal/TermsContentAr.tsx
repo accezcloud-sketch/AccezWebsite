@@ -5,6 +5,7 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
 } from '@/components/LegalLayout'
+import { TERMS_AUDIENCE } from '@/components/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
@@ -16,6 +17,7 @@ export default function TermsContentAr() {
       subtitle="الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لمنصة أكسيز وسوق الخدمات التابع لها."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
+      audienceMap={TERMS_AUDIENCE}
     >
       <LegalCallout title="اقرأ هذا أولًا">
         <p>

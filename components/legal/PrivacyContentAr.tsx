@@ -5,6 +5,7 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
 } from '@/components/LegalLayout'
+import { PRIVACY_AUDIENCE } from '@/components/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
@@ -16,6 +17,7 @@ export default function PrivacyContentAr() {
       subtitle="كيف تجمع شركة كلاود فالي البيانات الشخصية في منصة أكسيز وسوق الخدمات وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
+      audienceMap={PRIVACY_AUDIENCE}
     >
       <LegalCallout title="الخلاصة">
         <p>
