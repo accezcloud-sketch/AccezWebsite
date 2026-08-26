@@ -301,14 +301,14 @@ export default function TermsContent() {
           Terms. In summary:
         </p>
         <ul>
-          <li>
+          <Only for="pm" as="li">
             <strong>Unit reservations</strong> follow the cancellation policy set for the unit, or a
             default sliding scale based on notice given before check-in.
-          </li>
-          <li>
-            <strong>Marketplace bookings</strong> follow the cancellation policy the provider has
-            configured. If a provider has not configured one, no refund is due on cancellation.
-          </li>
+          </Only>
+          <Only for="sp" as="li">
+            <strong>Marketplace bookings</strong> follow the cancellation policy you configure. If
+            you have not configured one, no refund is due on cancellation.
+          </Only>
         </ul>
         <p>
           <strong>Chargebacks.</strong> If a customer disputes a card payment, the disputed amount
@@ -357,10 +357,20 @@ export default function TermsContent() {
       </S>
 
       <S id="customer-content" title="11. Your content, your customers, your policies">
-        <p>
-          You keep ownership of everything you upload &mdash; property and unit records, documents,
-          photographs, contracts, listings and messages (&ldquo;<strong>Your Content</strong>&rdquo;).
-        </p>
+        <Only for="pm">
+          <p>
+            You keep ownership of everything you upload &mdash; property and unit records,
+            documents, photographs, contracts, listings and messages
+            (&ldquo;<strong>Your Content</strong>&rdquo;).
+          </p>
+        </Only>
+        <Only for="sp">
+          <p>
+            You keep ownership of everything you upload &mdash; your service listings, descriptions,
+            pricing, photographs, documents and messages
+            (&ldquo;<strong>Your Content</strong>&rdquo;).
+          </p>
+        </Only>
         <p>
           You grant us a licence to host, store, copy, transmit, display and process Your Content
           strictly to operate and support the platform for you, and to comply with law. We do not
@@ -438,11 +448,15 @@ export default function TermsContent() {
           Personal Data Protection Law:
         </p>
         <ul>
-          <li>
+          <Only for="pm" as="li">
             for personal data you upload about your tenants, residents, owners, staff and
             customers, <strong>you</strong> decide the purposes and means, and we process it on
             your instructions;
-          </li>
+          </Only>
+          <Only for="sp" as="li">
+            for personal data you hold about your own customers and staff, <strong>you</strong>{' '}
+            decide the purposes and means, and we process it on your instructions;
+          </Only>
           <li>
             for account, billing, security and product-improvement data, and for data relating to
             people who deal with Accez directly, <strong>we</strong> determine the purposes; and

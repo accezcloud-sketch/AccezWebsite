@@ -95,13 +95,10 @@ export default function LegalLayout({
     refund: ar ? 'سياسة الاسترداد والإلغاء' : 'Refund & Cancellation',
     pm: ar ? 'إدارة الأملاك' : 'Property management',
     sp: ar ? 'مقدمو الخدمات' : 'Service provider',
-    readingPm: ar
-      ? 'أنت تقرأ نسخة إدارة الأملاك من هذه الوثيقة.'
-      : 'You are reading the property management version of this document.',
-    readingSp: ar
-      ? 'أنت تقرأ نسخة مقدّمي الخدمات من هذه الوثيقة.'
-      : 'You are reading the service provider version of this document.',
-    switchHint: ar ? 'بدّل بالأعلى لعرض النسخة الأخرى.' : 'Switch above to read the other version.',
+    versionOf: ar ? 'اختر النسخة التي تخصّك' : 'Choose the version that applies to you',
+    pmDesc: ar ? 'بوابة إدارة الأملاك' : 'Property manager portal',
+    spDesc: ar ? 'سوق مقدّمي الخدمات' : 'Service provider marketplace',
+    reading: ar ? 'أنت تقرأ الآن:' : 'You are reading:',
   }
 
   const OPTIONS: { value: AudienceView; label: string }[] = [
@@ -165,33 +162,62 @@ export default function LegalLayout({
               right edge, the way a printed contract does. The three sibling
               links it carried are repeated below the document instead. */}
           <div className="mx-auto" style={{ maxWidth: 820 }}>
-            {/* Which version you are reading. Two views only — a combined
-                view is what made these documents confusing in the first place. */}
-            <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
-              <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
-                {view === 'pm' ? L.readingPm : L.readingSp}{' '}
-                <span style={{ color: 'var(--text-faint)' }}>{L.switchHint}</span>
-              </p>
-              <div
-                role="group"
-                className="inline-flex rounded-lg overflow-hidden shrink-0 ms-auto"
-                style={{ border: '1px solid var(--border-hi)' }}
+            {/* Version switch. Two platforms, two documents — the reader
+                should never have to work out which half is theirs. Sticky so
+                it stays reachable on a document this long, and it states the
+                current version in words as well as colour so the state is not
+                carried by colour alone. */}
+            <div
+              className="mb-10 sticky z-20 rounded-xl overflow-hidden"
+              style={{
+                top: 'calc(var(--nav-h) + 12px)',
+                background: 'rgba(13, 23, 35, 0.97)',
+                border: '1px solid var(--border-hi)',
+                backdropFilter: 'blur(20px)',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.28)',
+              }}
+            >
+              <p
+                className="px-4 pt-3 pb-2 text-xs font-semibold uppercase tracking-[0.12em]"
+                style={{ color: 'var(--text-faint)' }}
               >
+                {L.versionOf}
+              </p>
+              <div role="tablist" aria-label={L.versionOf} className="grid grid-cols-2 gap-2 px-3 pb-3">
                 {OPTIONS.map((o) => {
                   const active = view === o.value
                   return (
                     <button
                       key={o.value}
                       type="button"
-                      aria-pressed={active}
+                      role="tab"
+                      aria-selected={active}
                       onClick={() => chooseView(o.value)}
-                      className="px-3.5 py-2 text-sm font-semibold transition-colors"
+                      className="rounded-lg px-4 py-3 text-start transition-all duration-150"
                       style={{
-                        background: active ? 'var(--accent)' : 'transparent',
-                        color: active ? '#fff' : 'var(--text-muted)',
+                        background: active ? 'var(--accent-dim)' : 'transparent',
+                        border: `1px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
+                        cursor: 'pointer',
                       }}
                     >
-                      {o.label}
+                      <span
+                        className="flex items-center gap-2 text-sm font-semibold"
+                        style={{ color: active ? 'var(--accent-hi)' : 'var(--text-muted)' }}
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="inline-block rounded-full shrink-0"
+                          style={{
+                            width: 8,
+                            height: 8,
+                            background: active ? 'var(--accent)' : 'var(--border-hi)',
+                          }}
+                        />
+                        {o.label}
+                      </span>
+                      <span className="block text-xs mt-1 ps-4" style={{ color: 'var(--text-faint)' }}>
+                        {o.value === 'pm' ? L.pmDesc : L.spDesc}
+                      </span>
                     </button>
                   )
                 })}
@@ -384,7 +410,16 @@ export function LegalTable({
  * Like whole sections, the content stays in the HTML and is hidden in CSS, so
  * search engines and non-JavaScript crawlers still see both versions.
  */
-export function Only({ for: audience, children }: { for: 'pm' | 'sp'; children: ReactNode }) {
+export function Only({
+  for: audience,
+  as: Tag = 'div',
+  children,
+}: {
+  for: 'pm' | 'sp'
+  /** Use "li" inside a list — a <div> between <ul> and <li> is invalid HTML. */
+  as?: 'div' | 'li'
+  children: ReactNode
+}) {
   const { language } = useLanguage()
   const ar = language === 'ar'
   const label =
@@ -392,9 +427,9 @@ export function Only({ for: audience, children }: { for: 'pm' | 'sp'; children: 
       ? ar ? 'إدارة الأملاك' : 'Property management'
       : ar ? 'مقدمو الخدمات' : 'Service providers'
   return (
-    <div data-for={audience} className="legal-only">
+    <Tag data-for={audience} className="legal-only">
       <span className="legal-only-tag">{label}</span>
       {children}
-    </div>
+    </Tag>
   )
 }

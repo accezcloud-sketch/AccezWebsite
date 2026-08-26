@@ -28,9 +28,13 @@ export const AUDIENCE_STORAGE_KEY = 'accez.legal.audience'
 /** Property-manager-only and provider-only sections, by document. */
 export const TERMS_AUDIENCE: Record<string, Audience> = {
   providers: 'sp',
-  'customer-content': 'pm',
-  payouts: 'pm',
 }
+// Deliberately NOT tagged, and why:
+//   payouts          - providers are paid through the platform too. Tagging it
+//                      'pm' hid a provider's own payout terms from them.
+//   customer-content - providers upload listings and hold customer data as well.
+// Both carry <Only> blocks inside instead, so each audience sees its own
+// wording without losing the obligations that bind them.
 
 export const REFUND_AUDIENCE: Record<string, Audience> = {
   reservations: 'pm',
@@ -38,6 +42,6 @@ export const REFUND_AUDIENCE: Record<string, Audience> = {
   marketplace: 'sp',
 }
 
-export const PRIVACY_AUDIENCE: Record<string, Audience> = {
-  customers: 'pm',
-}
+// 'customers' (If your data was uploaded by a business) speaks to tenants,
+// guests AND a provider's own customers, so it is not tagged to one side.
+export const PRIVACY_AUDIENCE: Record<string, Audience> = {}
