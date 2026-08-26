@@ -31,31 +31,45 @@ export default function RefundContent() {
       </LegalCallout>
 
       <S id="overview" title="1. Overview — which policy applies to you">
-        <LegalTable
-          head={['What you paid for', 'Who sets the terms', 'Default if none set']}
-          rows={[
-            [
-              <strong key="a">A stay in a unit</strong>,
-              'The property manager, per unit',
-              'A sliding scale based on notice before check-in (section 2)',
-            ],
-            [
-              <strong key="b">A service booking</strong>,
-              'The service provider',
-              <><strong key="n">No refund</strong> — see section 3</>,
-            ],
-            [
-              <strong key="c">An Accez subscription</strong>,
-              'Accez',
-              'Non-refundable; access continues to period end (section 5)',
-            ],
-            [
-              <strong key="d">A property purchase payment</strong>,
-              'The seller and the sale contract',
-              'Handled outside the platform (section 10)',
-            ],
-          ]}
-        />
+        <Only for="pm">
+          <LegalTable
+            head={['What was paid for', 'Who sets the terms', 'Default if none set']}
+            rows={[
+              [
+                <strong key="a">A stay in a unit</strong>,
+                'You, the property manager, per unit',
+                'A sliding scale based on notice before check-in (section 2)',
+              ],
+              [
+                <strong key="c">An Accez subscription</strong>,
+                'Accez',
+                'Non-refundable; access continues to period end (section 5)',
+              ],
+              [
+                <strong key="d">A property purchase payment</strong>,
+                'The seller and the sale contract',
+                'Handled outside the platform (section 10)',
+              ],
+            ]}
+          />
+        </Only>
+        <Only for="sp">
+          <LegalTable
+            head={['What was paid for', 'Who sets the terms', 'Default if none set']}
+            rows={[
+              [
+                <strong key="b">A service booking</strong>,
+                'You, the service provider',
+                <><strong key="n">No refund</strong> — see section 3</>,
+              ],
+              [
+                <strong key="c">An Accez subscription</strong>,
+                'Accez',
+                'Non-refundable; access continues to period end (section 5)',
+              ],
+            ]}
+          />
+        </Only>
       </S>
 
       <S id="reservations" title="2. Unit reservations and stays">
@@ -186,19 +200,21 @@ export default function RefundContent() {
 
         <h3>Accez platform fees</h3>
         <p>The treatment differs by booking type, and we would rather state that plainly than let it be discovered later:</p>
-        <LegalTable
-          head={['Booking type', 'What happens to the Accez platform fee']}
-          rows={[
-            [
-              <strong key="a">Marketplace service bookings</strong>,
-              <>The commission is <strong>refunded proportionately</strong>. On a full refund, the full commission is returned.</>,
-            ],
-            [
-              <strong key="b">Unit reservations</strong>,
-              <>The platform fee is <strong>not automatically returned</strong>. The refund is funded from the amount transferred to the property manager, so the manager bears the refund while the platform fee already charged remains charged.</>,
-            ],
-          ]}
-        />
+        <Only for="pm">
+          <p>
+            On a <strong>unit reservation</strong>, the platform fee is{' '}
+            <strong>not automatically returned</strong>. The refund is funded from the amount
+            transferred to you, so you bear the refund while the platform fee already charged
+            remains charged.
+          </p>
+        </Only>
+        <Only for="sp">
+          <p>
+            On a <strong>marketplace booking</strong>, our commission is{' '}
+            <strong>refunded proportionately</strong>. On a full refund, the full commission is
+            returned to you.
+          </p>
+        </Only>
         <Only for="pm">
           <p>
             Property managers should take this into account when setting cancellation policies and
@@ -210,31 +226,44 @@ export default function RefundContent() {
       </S>
 
       <S id="how-to-request" title="7. How to request a refund">
-        <LegalTable
-          head={['If you are', 'Do this']}
-          rows={[
-            [
-              'A guest who booked a stay',
-              'Cancel through the platform, or contact the property manager. Cancelling applies the unit policy automatically.',
-            ],
-            [
-              'A customer who booked a service',
-              'Cancel through the platform or contact the provider. The refund due is quoted before you confirm.',
-            ],
-            [
-              'A property manager',
-              'Approve or reject refund requests from your dashboard, or issue a refund directly.',
-            ],
-            [
-              'A service provider',
-              'Issue a refund on your own booking from your dashboard, in full or in part.',
-            ],
-            [
-              'An Accez subscriber',
-              <>Contact us through <a key="e" href="/support/">our support form</a> with your invoice reference.</>,
-            ],
-          ]}
-        />
+        <Only for="pm">
+          <LegalTable
+            head={['If you are', 'Do this']}
+            rows={[
+              [
+                'A guest who booked a stay with you',
+                'They cancel through the platform, or contact you. Cancelling applies the unit policy automatically.',
+              ],
+              [
+                'The property manager',
+                'Approve or reject refund requests from your dashboard, or issue a refund directly.',
+              ],
+              [
+                'An Accez subscriber',
+                <>Contact us through <a key="e" href="/support/">our support form</a> with your invoice reference.</>,
+              ],
+            ]}
+          />
+        </Only>
+        <Only for="sp">
+          <LegalTable
+            head={['If you are', 'Do this']}
+            rows={[
+              [
+                'A customer who booked a service from you',
+                'They cancel through the platform or contact you. The refund due is quoted before they confirm.',
+              ],
+              [
+                'The service provider',
+                'Issue a refund on your own booking from your dashboard, in full or in part.',
+              ],
+              [
+                'An Accez subscriber',
+                <>Contact us through <a key="f" href="/support/">our support form</a> with your invoice reference.</>,
+              ],
+            ]}
+          />
+        </Only>
         <p>
           Refunds are returned to the <strong>original payment method</strong>. We cannot send a
           refund to a different card or account. If the original card has expired or been closed,
