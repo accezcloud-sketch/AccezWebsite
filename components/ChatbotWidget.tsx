@@ -1,12 +1,20 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
-const WIDGET_ORIGIN = 'https://accez-chatbot-production.up.railway.app'
+// Accez Assistant (the new bot, hosted on Render). The previous bot's link is kept below so the team can switch back.
+// const WIDGET_ORIGIN = 'https://accez-chatbot-production.up.railway.app' // previous bot (Railway)
+const WIDGET_ORIGIN = 'https://accezchatbot.onrender.com'
 
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement>(null)
+  const pathname = usePathname()
+  const lang = pathname === '/ar' || pathname.startsWith('/ar/') ? 'ar' : 'en'
+  // Tells the assistant which language the site is showing, so its labels and text direction follow the site.
+  const tellLanguage = () => iframeRef.current?.contentWindow?.postMessage({ type: 'accez-lang', lang }, WIDGET_ORIGIN)
+  useEffect(tellLanguage, [lang])
 
   useEffect(() => {
     const handleMessage = (e: MessageEvent) => {
@@ -54,6 +62,7 @@ export default function ChatbotWidget() {
           ? 'w-full h-[100dvh] md:w-[400px] md:h-[600px]'
           : 'w-[90px] h-[90px] md:w-[110px] md:h-[110px]'
       }`}
+      onLoad={tellLanguage}
       allow="clipboard-write"
     />
   )
