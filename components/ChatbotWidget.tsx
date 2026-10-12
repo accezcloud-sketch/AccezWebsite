@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
-// Accez Assistant (the new bot, hosted on Render). The previous bot's link is kept below so the team can switch back.
-// const WIDGET_ORIGIN = 'https://accez-chatbot-production.up.railway.app' // previous bot (Railway)
-const WIDGET_ORIGIN = 'https://accezchatbot.onrender.com'
+// Accez Assistant (the new bot, hosted on Railway). The previous bot's link is kept below so the team can switch back.
+// const WIDGET_ORIGIN = 'https://accez-chatbot-production.up.railway.app' // previous bot
+const WIDGET_ORIGIN = 'https://accezchatbot-production.up.railway.app'
 
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false)
