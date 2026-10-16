@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BlogStrip from '@/components/blog/BlogStrip'
 import ModulesPage from '@/components/ModulesPage'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
 
@@ -29,6 +30,7 @@ export default function Page() {
     <main className="min-h-screen">
       <Header />
       <ModulesPage />
+      <BlogStrip locale="ar" />
       <Footer />
     </main>
   )

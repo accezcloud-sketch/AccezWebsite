@@ -8,7 +8,8 @@ import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { createBlogRepository, getAllPosts, getAllTags, getPostBySlug, getRelatedPosts } from './blog'
+import { createBlogRepository, getAllPosts, getAllTags, getPostBySlug, getPostsForProduct, getRelatedPosts } from './blog'
+import { matchProductPage } from './content/productMatch'
 
 const posts = getAllPosts()
 const slugs = new Set(posts.map((p) => p.slug))
@@ -115,5 +116,19 @@ describe('getAllTags', () => {
   it('lists each tag once, ignoring case', () => {
     const keys = getAllTags().map((t) => t.en.trim().toLowerCase())
     expect(new Set(keys).size).toBe(keys.length)
+  })
+})
+
+describe('getPostsForProduct', () => {
+  it('returns the newest posts overall for the modules overview', () => {
+    expect(getPostsForProduct('modules').map((p) => p.slug)).toEqual(posts.slice(0, 3).map((p) => p.slug))
+  })
+
+  it.each(['owners', 'hotels', 'sales'] as const)('returns only %s posts, newest first, at most 3', (product) => {
+    const result = getPostsForProduct(product)
+    expect(result.length).toBeLessThanOrEqual(3)
+    result.forEach((p) => expect(matchProductPage(p), p.slug).toBe(product))
+    const dates = result.map((p) => new Date(p.date).getTime())
+    expect(dates).toEqual([...dates].sort((a, b) => b - a))
   })
 })

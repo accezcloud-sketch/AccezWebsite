@@ -10,6 +10,7 @@ import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import BlogStrip from '@/components/blog/BlogStrip'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
 
 // Arabic homepage. Identical component tree to the English one — the Arabic
@@ -44,6 +45,7 @@ export default function ArabicHome() {
       <Trust />
       <Pricing />
       <FAQ />
+      <BlogStrip locale="ar" />
       <Contact />
       <Footer />
     </main>

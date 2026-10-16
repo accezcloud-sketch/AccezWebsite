@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import readingTime from 'reading-time'
 import { RelatedIndex } from './content/related'
 import { hasTag, tagKey } from './content/blogFilters'
+import { matchProductPage, type ProductPageKey } from './content/productMatch'
 
 const blogDirectory = path.join(process.cwd(), 'content/blog')
 
@@ -227,6 +228,16 @@ export const getAllPosts = (): BlogPostMeta[] => defaultRepository.getAllPosts()
 export const getPostBySlug = (slug: string): BlogPost | null => defaultRepository.getPostBySlug(slug)
 export const getRelatedPosts = (slug: string, limit?: number): BlogPostMeta[] =>
   defaultRepository.getRelatedPosts(slug, limit)
+
+/**
+ * Newest posts whose topic leads to the given product page. For the general
+ * `modules` overview this is simply the newest posts of any topic.
+ */
+export function getPostsForProduct(product: ProductPageKey, limit = 3): BlogPostMeta[] {
+  const posts = getAllPosts()
+  const matching = product === 'modules' ? posts : posts.filter((p) => matchProductPage(p) === product)
+  return matching.slice(0, limit)
+}
 
 export function getAllCategories(): { en: string; ar: string }[] {
   const posts = getAllPosts()

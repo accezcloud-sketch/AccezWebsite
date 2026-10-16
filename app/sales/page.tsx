@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { alternatesFor } from '@/lib/i18n'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BlogStrip from '@/components/blog/BlogStrip'
 import SolutionPage from '@/components/SolutionPage'
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function Page() {
     <main className="min-h-screen">
       <Header />
       <SolutionPage slug="sales" />
+      <BlogStrip locale="en" product="sales" />
       <Footer />
     </main>
   )

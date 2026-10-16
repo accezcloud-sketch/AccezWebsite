@@ -4,36 +4,40 @@ import type { BlogPostMeta } from '@/lib/blog'
 import { localeHref, type Locale } from '@/lib/i18n'
 
 /**
- * "Related articles" block at the end of a blog post.
+ * A titled row of blog post cards with a "View all articles" link. Used for
+ * related articles under a post and for the blog strip on the homepage and
+ * product pages.
  *
- * Rendered on the server so the links are in the static HTML: crawlers follow
- * them, and readers get a relevant next step instead of a dead end. Which
- * posts appear is decided by getRelatedPosts() in lib/blog.ts.
+ * Server-rendered, so every link is in the static HTML: crawlers follow them
+ * and readers without JavaScript still see the posts.
  */
 
-const COPY: Record<Locale, { heading: string; viewAll: string; readMore: string; minRead: string }> = {
-  en: { heading: 'Related articles', viewAll: 'View all articles', readMore: 'Read More', minRead: 'min read' },
-  ar: { heading: 'مقالات ذات صلة', viewAll: 'عرض جميع المقالات', readMore: 'اقرأ المزيد', minRead: 'دقيقة قراءة' },
+const COPY: Record<Locale, { viewAll: string; readMore: string; minRead: string }> = {
+  en: { viewAll: 'View all articles', readMore: 'Read More', minRead: 'min read' },
+  ar: { viewAll: 'عرض جميع المقالات', readMore: 'اقرأ المزيد', minRead: 'دقيقة قراءة' },
 }
 
-interface RelatedPostsProps {
+interface PostStripProps {
+  /** Unique id for the heading, used to label the section. */
+  id: string
+  heading: string
   posts: BlogPostMeta[]
   locale: Locale
 }
 
-export default function RelatedPosts({ posts, locale }: RelatedPostsProps) {
+export default function PostStrip({ id, heading, posts, locale }: PostStripProps) {
   if (posts.length === 0) return null
 
   const t = COPY[locale]
   const isAr = locale === 'ar'
 
   return (
-    <section aria-labelledby="related-articles" className="section-y" style={{ background: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+    <section aria-labelledby={id} className="section-y" style={{ background: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between gap-4 mb-8">
-            <h2 id="related-articles" className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
-              {t.heading}
+            <h2 id={id} className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
+              {heading}
             </h2>
             <Link href={localeHref('/blog', locale)} prefetch={false} className="text-sm font-medium" style={{ color: 'var(--accent-hi)' }}>
               {t.viewAll}

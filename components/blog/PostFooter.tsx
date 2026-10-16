@@ -1,8 +1,10 @@
+import PostStrip from '@/components/blog/PostStrip'
 import ProductCta from '@/components/blog/ProductCta'
-import RelatedPosts from '@/components/blog/RelatedPosts'
 import { getAllPosts, getRelatedPosts } from '@/lib/blog'
 import { matchProductPage } from '@/lib/content/productMatch'
 import type { Locale } from '@/lib/i18n'
+
+const HEADING: Record<Locale, string> = { en: 'Related articles', ar: 'مقالات ذات صلة' }
 
 /**
  * Everything after a blog article: the product page that matches the post's
@@ -15,7 +17,7 @@ export default function PostFooter({ slug, locale }: { slug: string; locale: Loc
   return (
     <>
       <ProductCta product={matchProductPage(post)} locale={locale} />
-      <RelatedPosts posts={getRelatedPosts(slug)} locale={locale} />
+      <PostStrip id="related-articles" heading={HEADING[locale]} posts={getRelatedPosts(slug)} locale={locale} />
     </>
   )
 }

@@ -10,6 +10,7 @@ import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
+import BlogStrip from '@/components/blog/BlogStrip'
 import type { Metadata } from 'next'
 import { alternatesFor } from '@/lib/i18n'
 
@@ -80,6 +81,7 @@ export default function Home() {
         <Trust />
         <Pricing />
         <FAQ />
+        <BlogStrip locale="en" />
         <Contact />
         {/* <CTA /> */}
         <Footer />
