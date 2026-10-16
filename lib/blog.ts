@@ -1,9 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import readingTime from 'reading-time'
 import { RelatedIndex } from './content/related'
 import { splitBilingualBody } from './content/postBody'
+import { readingMinutes } from './content/readingTime'
 import { hasTag, tagKey } from './content/blogFilters'
 import { matchProductPage, type ProductPageKey } from './content/productMatch'
 
@@ -67,7 +67,10 @@ export interface BlogPost {
    * similarity — see lib/content/related.ts.
    */
   related?: string[]
-  readingTime: string
+  /** Minutes to read the English article. */
+  readingMinutes: number
+  /** Minutes to read the Arabic article. */
+  readingMinutesAr: number
 }
 
 export interface BlogPostMeta {
@@ -101,14 +104,17 @@ export interface BlogPostMeta {
    * similarity — see lib/content/related.ts.
    */
   related?: string[]
-  readingTime: string
+  /** Minutes to read the English article. */
+  readingMinutes: number
+  /** Minutes to read the Arabic article. */
+  readingMinutesAr: number
 }
 
 /**
  * Maps a post's frontmatter to the metadata every page needs. Single source of
  * truth for defaults, shared by the list and single-post readers.
  */
-function toMeta(slug: string, data: Record<string, any>, readingTimeText: string): BlogPostMeta {
+function toMeta(slug: string, data: Record<string, any>, body: { en: string; ar: string }): BlogPostMeta {
   return {
     slug,
     title: data.title || '',
@@ -135,7 +141,8 @@ function toMeta(slug: string, data: Record<string, any>, readingTimeText: string
     tags: data.tags || [],
     tagsAr: data.tagsAr || data.tags || [],
     related: Array.isArray(data.related) ? data.related.map(String) : undefined,
-    readingTime: readingTimeText,
+    readingMinutes: readingMinutes(body.en),
+    readingMinutesAr: readingMinutes(body.ar),
   }
 }
 
@@ -172,7 +179,7 @@ export function createBlogRepository(directory: string): BlogRepository {
       .map((fileName) => {
         const slug = fileName.replace(/\.md$/, '')
         const { data, content } = matter(fs.readFileSync(path.join(directory, fileName), 'utf8'))
-        return toMeta(slug, data, readingTime(content).text)
+        return toMeta(slug, data, splitBilingualBody(content))
       })
       .sort((a, b) => (new Date(b.date) > new Date(a.date) ? 1 : -1))
 
@@ -192,7 +199,7 @@ export function createBlogRepository(directory: string): BlogRepository {
         const { data, content } = matter(fileContents)
         const { en, ar } = splitBilingualBody(content)
 
-        return { ...toMeta(slug, data, readingTime(content).text), content: en, contentAr: ar }
+        return { ...toMeta(slug, data, { en, ar }), content: en, contentAr: ar }
       } catch {
         return null
       }

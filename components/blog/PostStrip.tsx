@@ -2,6 +2,7 @@ import Link from 'next/link'
 import PostCard from '@/components/blog/PostCard'
 import type { BlogPostMeta } from '@/lib/blog'
 import { localeHref, type Locale } from '@/lib/i18n'
+import { formatReadingTime } from '@/lib/content/readingTime'
 
 /**
  * A titled row of blog post cards with a "View all articles" link. Used for
@@ -12,9 +13,9 @@ import { localeHref, type Locale } from '@/lib/i18n'
  * and readers without JavaScript still see the posts.
  */
 
-const COPY: Record<Locale, { viewAll: string; readMore: string; minRead: string }> = {
-  en: { viewAll: 'View all articles', readMore: 'Read More', minRead: 'min read' },
-  ar: { viewAll: 'عرض جميع المقالات', readMore: 'اقرأ المزيد', minRead: 'دقيقة قراءة' },
+const COPY: Record<Locale, { viewAll: string; readMore: string }> = {
+  en: { viewAll: 'View all articles', readMore: 'Read More' },
+  ar: { viewAll: 'عرض جميع المقالات', readMore: 'اقرأ المزيد' },
 }
 
 interface PostStripProps {
@@ -54,7 +55,7 @@ export default function PostStrip({ id, heading, posts, locale }: PostStripProps
                 coverImage={post.coverImage}
                 coverImageAlt={post.coverImageAlt}
                 category={isAr ? post.categoryAr : post.category}
-                meta={[post.readingTime.replace('min read', t.minRead)]}
+                meta={[formatReadingTime(isAr ? post.readingMinutesAr : post.readingMinutes, locale)]}
                 readMoreLabel={t.readMore}
                 headingLevel="h3"
               />

@@ -9,6 +9,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPostMeta } from '@/lib/blog'
 import { localeHref } from '@/lib/i18n'
 import { blogFiltersQuery } from '@/lib/content/blogFilters'
+import { formatReadingTime } from '@/lib/content/readingTime'
 
 interface BlogPostClientProps {
   post: BlogPostMeta | null
@@ -31,7 +32,6 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
       // Having both produced a visible double arrow: "← ← Back to Blog".
       backToBlog: 'Back to Blog',
       by: 'By',
-      minRead: 'min read',
       shareArticle: 'Share this article',
       notFound: 'Post not found',
       notFoundDesc: 'The blog post you are looking for does not exist.',
@@ -39,7 +39,6 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
     ar: {
       backToBlog: 'العودة للمدونة',
       by: 'بواسطة',
-      minRead: 'دقيقة قراءة',
       shareArticle: 'شارك هذه المقالة',
       notFound: 'المقالة غير موجودة',
       notFoundDesc: 'المقالة التي تبحث عنها غير موجودة.',
@@ -112,7 +111,7 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
               <span>·</span>
               <span>{formatDate(post.date)}</span>
               <span>·</span>
-              <span>{post.readingTime.replace('min read', t.minRead)}</span>
+              <span>{formatReadingTime(language === 'ar' ? post.readingMinutesAr : post.readingMinutes, language)}</span>
             </div>
 
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10" style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)' }}>

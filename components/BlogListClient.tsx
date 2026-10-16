@@ -7,6 +7,7 @@ import Select from '@/components/ui/Select'
 import PostCard from '@/components/blog/PostCard'
 import { useBlogFiltersInUrl } from '@/components/blog/useBlogFiltersInUrl'
 import { hasTag } from '@/lib/content/blogFilters'
+import { formatReadingTime } from '@/lib/content/readingTime'
 import { localeHref } from '@/lib/i18n'
 
 interface BlogListClientProps {
@@ -38,7 +39,6 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
       allCategories: 'All Categories',
       allTags: 'All Tags',
       readMore: 'Read More',
-      minRead: 'min read',
       noPosts: 'No blog posts found.',
       by: 'By',
     },
@@ -47,7 +47,6 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
       allCategories: 'جميع الفئات',
       allTags: 'جميع الوسوم',
       readMore: 'اقرأ المزيد',
-      minRead: 'دقيقة قراءة',
       noPosts: 'لم يتم العثور على مقالات.',
       by: 'بواسطة',
     },
@@ -172,7 +171,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                     coverImage={post.coverImage}
                     coverImageAlt={post.coverImageAlt}
                     category={language === 'ar' ? post.categoryAr : post.category}
-                    meta={[formatDate(post.date), post.readingTime.replace('min read', t.minRead)]}
+                    meta={[formatDate(post.date), formatReadingTime(language === 'ar' ? post.readingMinutesAr : post.readingMinutes, language)]}
                     readMoreLabel={t.readMore}
                     byline={`${t.by} ${language === 'ar' ? post.authorAr : post.author}`}
                     className={isHidden ? 'hidden' : ''}

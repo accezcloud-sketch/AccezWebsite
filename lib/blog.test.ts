@@ -22,7 +22,8 @@ describe('getAllPosts / getPostBySlug', () => {
       expect(p.titleAr, p.slug).toBeTruthy()
       expect(p.date, p.slug).toMatch(/^\d{4}-\d{2}-\d{2}/)
       expect(Array.isArray(p.tags), p.slug).toBe(true)
-      expect(p.readingTime, p.slug).toMatch(/min read$/)
+      expect(p.readingMinutes, p.slug).toBeGreaterThanOrEqual(1)
+      expect(p.readingMinutesAr, p.slug).toBeGreaterThanOrEqual(1)
     }
   })
 
@@ -36,7 +37,7 @@ describe('getAllPosts / getPostBySlug', () => {
       const full = getPostBySlug(meta.slug)
       expect(full, meta.slug).not.toBeNull()
       const { content, contentAr, ...rest } = full!
-      expect({ ...rest, readingTime: '' }, meta.slug).toEqual({ ...meta, readingTime: '' })
+      expect(rest, meta.slug).toEqual(meta)
       expect(content.length, meta.slug).toBeGreaterThan(0)
       expect(contentAr.length, meta.slug).toBeGreaterThan(0)
     }
@@ -151,6 +152,18 @@ describe('Arabic headings', () => {
   it('never use the mistranslated "main meals" heading', () => {
     for (const meta of posts) {
       expect(getPostBySlug(meta.slug)!.contentAr, meta.slug).not.toContain('الوجبات الرئيسية')
+    }
+  })
+})
+
+describe('reading time', () => {
+  it('measures each language separately, not the two together', () => {
+    for (const meta of posts) {
+      const post = getPostBySlug(meta.slug)!
+      if (post.content === post.contentAr) continue // single-language post
+      const words = (s: string) => s.split(/\s+/).filter(Boolean).length
+      // ~200 wpm, rounded up: never more than a minute above the English half alone
+      expect(meta.readingMinutes, meta.slug).toBeLessThanOrEqual(Math.ceil(words(post.content) / 200) + 1)
     }
   })
 })
