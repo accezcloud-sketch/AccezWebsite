@@ -3,7 +3,8 @@ import BlogPostClient from '@/components/BlogPostClient'
 import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { renderMarkdown } from '@/lib/content/markdown'
-import { alternatesFor, localeUrl, SITE_URL } from '@/lib/i18n'
+import { postMetadata } from '@/lib/content/postSeo'
+import { localeUrl, SITE_URL } from '@/lib/i18n'
 
 /**
  * Arabic blog post.
@@ -28,45 +29,7 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
   const post = getAllPosts().find((p) => p.slug === slug)
-
-  if (!post) {
-    return { title: 'المقال غير موجود' }
-  }
-
-  const title = post.metaTitleAr || post.titleAr
-  const rawDescription = post.metaDescriptionAr || post.excerptAr
-  const description =
-    rawDescription.length > 160 ? rawDescription.slice(0, 157) + '...' : rawDescription
-
-  // Social scrapers do not reliably render WebP, so hand them the original
-  // raster. Both files exist on disk for exactly this reason.
-  const imageUrl = post.coverImage.startsWith('http')
-    ? post.coverImage
-    : `${SITE_URL}${post.coverImage.replace(/\.webp$/, '.jpg')}`
-
-  return {
-    title,
-    description,
-    alternates: alternatesFor(`blog/${post.slug}`, 'ar'),
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      url: localeUrl(`blog/${post.slug}`, 'ar'),
-      siteName: 'Accez',
-      locale: 'ar_SA',
-      publishedTime: post.date,
-      authors: [post.authorAr],
-      tags: post.tagsAr,
-      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.coverImageAlt }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [imageUrl],
-    },
-  }
+  return post ? postMetadata(post, 'ar') : { title: 'المقال غير موجود' }
 }
 
 function getArabicSchemas(post: ReturnType<typeof getAllPosts>[number]) {

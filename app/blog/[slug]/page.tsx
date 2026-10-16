@@ -3,7 +3,7 @@ import BlogPostClient from '@/components/BlogPostClient'
 import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { renderMarkdown } from '@/lib/content/markdown'
-import { alternatesFor } from '@/lib/i18n'
+import { postMetadata } from '@/lib/content/postSeo'
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({
@@ -18,60 +18,8 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
   const post = getAllPosts().find((p) => p.slug === slug)
-
-  if (!post) {
-    return {
-      title: 'Blog Post Not Found',
-      description: 'The requested blog post could not be found.',
-    }
-  }
-
-  // Prefer explicit SERP overrides when the post declares them; otherwise fall
-  // back to the title/excerpt exactly as before.
-  const title = post.metaTitle || post.title
-  const rawDescription = post.metaDescription || post.excerpt
-  const description =
-    rawDescription.length > 160 ? rawDescription.slice(0, 157) + '...' : rawDescription
-  const url = `https://www.accez.cloud/blog/${post.slug}`
-  // Social preview image — NOT the same as the on-page image.
-  //
-  // Cover images are served as WebP on the page (roughly half the bytes), but
-  // Facebook, LinkedIn and X do not reliably render WebP in link previews. The
-  // original JPEG is still on disk for exactly this reason, so we hand social
-  // crawlers the raster version and keep the WebP for real visitors.
-  const imageUrl = post.coverImage.startsWith('http')
-    ? post.coverImage
-    : `https://www.accez.cloud${post.coverImage.replace(/\.webp$/, '.jpg')}`
-
-  return {
-    title,
-    description,
-    alternates: alternatesFor(`blog/${post.slug}`, 'en'),
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      url,
-      siteName: 'Accez Cloud',
-      publishedTime: post.date,
-      authors: [post.author],
-      tags: post.tags,
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: post.coverImageAlt,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [imageUrl],
-    },
-  }
+  if (!post) return { title: 'Blog Post Not Found', description: 'The requested blog post could not be found.' }
+  return postMetadata(post, 'en')
 }
 
 // HowTo structured data was removed from this file.
