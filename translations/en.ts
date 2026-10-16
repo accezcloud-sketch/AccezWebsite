@@ -163,6 +163,14 @@ export const en = {
     city: 'City',
     comments: 'Comments',
     commentsPlaceholder: 'Tell us how we can help...',
+    placeholders: {
+      firstName: 'Your first name',
+      lastName: 'Your last name',
+      email: 'you@company.com',
+      company: 'Your company name',
+      mobile: '+966 5X XXX XXXX',
+      city: 'Riyadh',
+    },
     sendMessage: 'Send Message',
   },
 

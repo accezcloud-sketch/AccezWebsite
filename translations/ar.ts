@@ -163,6 +163,14 @@ export const ar = {
     city: 'المدينة',
     comments: 'التعليقات',
     commentsPlaceholder: 'أخبرنا كيف يمكننا مساعدتك...',
+    placeholders: {
+      firstName: 'اسمك الأول',
+      lastName: 'اسم العائلة',
+      email: 'you@company.com',
+      company: 'اسم شركتك',
+      mobile: '+966 5X XXX XXXX',
+      city: 'الرياض',
+    },
     sendMessage: 'إرسال الرسالة',
   },
 

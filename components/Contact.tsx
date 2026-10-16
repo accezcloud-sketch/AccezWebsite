@@ -9,7 +9,7 @@ import RevealLine from '@/components/animations/RevealLine'
 
 export default function Contact() {
   const { t, isRTL, language } = useLanguage()
-  const tc = t.contact as Record<string, string>
+  const tc = t.contact
 
   useEffect(() => {
     const timestamp = () => {
@@ -187,7 +187,7 @@ export default function Contact() {
                           type="text"
                           className={inputClass}
                           style={inputStyle}
-                          placeholder="John"
+                          placeholder={tc.placeholders.firstName}
                         />
                       </div>
                       <div>
@@ -201,7 +201,7 @@ export default function Contact() {
                           type="text"
                           className={inputClass}
                           style={inputStyle}
-                          placeholder="Doe"
+                          placeholder={tc.placeholders.lastName}
                         />
                       </div>
                     </div>
@@ -217,7 +217,7 @@ export default function Contact() {
                         type="email"
                         className={inputClass}
                         style={inputStyle}
-                        placeholder="john@example.com"
+                        placeholder={tc.placeholders.email}
                       />
                     </div>
 
@@ -232,7 +232,7 @@ export default function Contact() {
                         type="text"
                         className={inputClass}
                         style={inputStyle}
-                        placeholder="Your Company"
+                        placeholder={tc.placeholders.company}
                       />
                     </div>
 
@@ -248,7 +248,7 @@ export default function Contact() {
                           type="tel"
                           className={inputClass}
                           style={inputStyle}
-                          placeholder="+1 234 567 8900"
+                          placeholder={tc.placeholders.mobile}
                         />
                       </div>
                       <div>
@@ -262,7 +262,7 @@ export default function Contact() {
                           type="text"
                           className={inputClass}
                           style={inputStyle}
-                          placeholder="New York"
+                          placeholder={tc.placeholders.city}
                         />
                       </div>
                     </div>
