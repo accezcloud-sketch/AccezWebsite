@@ -56,7 +56,7 @@ export default function Header() {
 
   // Flat items alongside the Product dropdown.
   const navItems = [
-    { name: t.header.pricing, href: '/#pricing' },
+    { name: t.header.pricing, href: '/pricing' },
     { name: t.header.about, href: '/about' },
     { name: t.header.blog, href: '/blog' },
     { name: t.header.support, href: '/support' },

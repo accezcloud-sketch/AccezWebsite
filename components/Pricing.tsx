@@ -151,7 +151,12 @@ const PLANS: PlanConfig[] = [
   },
 ]
 
-export default function Pricing() {
+/**
+ * Property-manager plans. On the homepage this is one section (`h2`); on the
+ * Pricing page it is the page's subject, so its title is the `h1`.
+ */
+export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
+  const Heading = headingLevel
   const [isYearly, setIsYearly] = useState(false)
   const { t, isRTL, language } = useLanguage()
   const tp = t.pricing as Record<string, string>
@@ -201,7 +206,7 @@ export default function Pricing() {
             </div>
 
             {/* Main heading */}
-            <h2
+            <Heading
               className="text-white font-bold text-center leading-tight tracking-tight mb-3"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
@@ -220,7 +225,7 @@ export default function Pricing() {
               >
                 {tp.titleAccent}
               </span>
-            </h2>
+            </Heading>
 
             {/* Subtitle */}
             <p

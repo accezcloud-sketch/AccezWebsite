@@ -91,7 +91,7 @@ export default function Footer() {
     {
       heading: t.footer.product,
       links: [
-        { label: t.footer.pricing, href: '/#pricing' },
+        { label: t.footer.pricing, href: '/pricing' },
         { label: t.footer.integrations, href: '/#trust' },
         { label: t.footer.about, href: '/about' },
         { label: t.footer.blog, href: '/blog' },

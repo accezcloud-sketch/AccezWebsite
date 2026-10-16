@@ -49,7 +49,7 @@ const jsonLd = {
     highPrice: 150,
     offerCount: 4,
     availability: 'https://schema.org/InStock',
-    url: 'https://www.accez.cloud/#pricing',
+    url: 'https://www.accez.cloud/pricing/',
   },
   featureList: [
     'Reservations & 400+ Channel Sync',
