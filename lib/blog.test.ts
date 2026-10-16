@@ -144,3 +144,13 @@ describe('post bodies', () => {
     }
   })
 })
+
+describe('Arabic headings', () => {
+  // "الوجبات الرئيسية" is a literal translation of "Key Takeaways" that means
+  // "the main meals". The approved heading is "أبرز النقاط".
+  it('never use the mistranslated "main meals" heading', () => {
+    for (const meta of posts) {
+      expect(getPostBySlug(meta.slug)!.contentAr, meta.slug).not.toContain('الوجبات الرئيسية')
+    }
+  })
+})
