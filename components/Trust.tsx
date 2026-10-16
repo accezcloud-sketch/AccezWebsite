@@ -110,11 +110,11 @@ export default function Trust() {
               <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to right, transparent, var(--accent))' : 'linear-gradient(to left, transparent, var(--accent))' }} />
             </div>
             <h2
-              className="text-white font-bold text-center leading-tight tracking-tight"
+              className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
             >
               {t.titleLead}{' '}
-              <span style={{ background: 'linear-gradient(135deg, #7FCDEF, #319FD4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
+              <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
             </h2>
             <p className="text-center max-w-2xl mx-auto mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
           </div>
@@ -164,7 +164,7 @@ export default function Trust() {
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}>
                     <Icon size={20} color="var(--accent-hi)" strokeWidth={1.75} />
                   </div>
-                  <h3 className="text-white font-semibold leading-snug" style={{ fontSize: 15 }}>
+                  <h3 className="text-strong font-semibold leading-snug" style={{ fontSize: 15 }}>
                     {language === 'ar' ? p.titleAr : p.title}
                   </h3>
                   <p className="leading-relaxed" style={{ fontSize: 13, color: 'var(--text-muted)' }}>

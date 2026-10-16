@@ -30,7 +30,7 @@ export default function TopicNav({ locale, current }: { locale: Locale; current?
               className="inline-block px-4 py-2 rounded-full text-sm transition-colors"
               style={
                 item.active
-                  ? { background: 'var(--accent)', border: '1px solid var(--accent)', color: '#fff' }
+                  ? { background: 'var(--accent-solid)', border: '1px solid var(--accent)', color: 'var(--on-accent)' }
                   : { background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }
               }
             >

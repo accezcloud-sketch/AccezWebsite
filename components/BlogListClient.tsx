@@ -85,7 +85,7 @@ export default function BlogListClient({ posts, topics = [], tags, scopeTopic, p
   }
 
   const controlClass =
-    'w-full px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-white focus:ring-2'
+    'w-full px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-strong focus:ring-2'
   const controlStyle = {
     background: 'var(--surface)',
     borderColor: 'var(--border-hi)',
@@ -99,7 +99,7 @@ export default function BlogListClient({ posts, topics = [], tags, scopeTopic, p
       <section
         className="md:sticky md:top-16 z-20 py-5"
         style={{
-          background: 'rgba(9,19,28,0.9)',
+          background: 'var(--glass)',
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)',
           borderBottom: '1px solid var(--border)',

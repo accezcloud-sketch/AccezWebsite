@@ -12,38 +12,116 @@
    colour (green) is reserved for state, never decoration.
    --------------------------------------------------------------------------- */
 :root {
-  /* Surfaces — dark navy canvas (user-chosen #09131C) */
+  /* ── Theme-independent ─────────────────────────────────────────────── */
+  --accent:      #319FD4;  /* brand action blue: glows, lines, icons, highlights */
+  --on-accent:   #FFFFFF;  /* text on filled accent controls */
+  --ok:          #2ED08A;
+  --ok-dim:      rgba(46, 208, 138, 0.12);
+
+  /* Spacing scale: one source of truth for page rhythm.
+     --nav-h:    fixed navbar height (matches h-16).
+     --page-top: distance from the top of the page to the first heading.
+     --section-y: standard vertical padding between sections. */
+  --nav-h:       4rem;
+  --page-top:    7.5rem;   /* 120px: 64px navbar + 56px gap */
+  --section-y:   5rem;     /* 80px */
+
+  --radius-sm:   10px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+}
+
+/* ── Dark theme (default) ───────────────────────────────────────────────
+   Every colour below is a role, not a value: components use the role and
+   each theme decides what it looks like. Contrast is checked by
+   lib/theme/tokens.test.ts (WCAG AA). */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Canvas and surfaces */
   --bg:          #09131C;
   --bg-alt:      #0C1A24;
   --surface:     rgba(255, 255, 255, 0.035);
   --surface-hi:  rgba(255, 255, 255, 0.06);
+  --panel:       rgba(13, 23, 35, 0.97);    /* menus, dropdowns: near-opaque */
+  --glass:       rgba(9, 19, 28, 0.72);     /* translucent bars over content */
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --media-bg:    linear-gradient(135deg, #0f172a, #1e293b); /* behind screenshots */
+  --bg-deep:     #060A14;                   /* footer */
+
+  /* Lines */
   --border:      rgba(255, 255, 255, 0.08);
   --border-hi:   rgba(255, 255, 255, 0.14);
 
-  /* Text */
+  /* Text, strongest to faintest */
+  --text-strong: #FFFFFF;
   --text:        #F2F5F8;
+  --text-soft:   #CBD5E1;
   --text-muted:  #95A3B2;
-  --text-faint:  #5E6B78;
+  --text-faint:  #7A8896;
 
-  /* Brand accent — Accez action blue */
-  --accent:      #319FD4;  /* primary buttons & links */
-  --accent-hi:   #7FCDEF;  /* bright tint for icons/text on dark */
+  /* Accent family */
+  --accent-solid:       #1C7AAD;  /* filled buttons/badges: white text passes AA (4.7:1) */
+  --accent-solid-hover: #1A74A6;
+  --accent-hi:   #7FCDEF;         /* accent-coloured text and icons */
   --accent-dim:  rgba(49, 159, 212, 0.13);
   --accent-line: rgba(49, 159, 212, 0.30);
+  --grad-from:   #7FCDEF;         /* gradient headline text */
+  --grad-to:     #5FB8E8;
+  --glow:        #18384A;         /* hero radial glow */
+  --glow-fade:   rgba(24, 56, 74, 0.3);
+  --ok-text:     #34D399;         /* success text */
+  --danger:      #F87171;         /* errors, required marks */
 
-  /* Semantic — state only (Success token from the product system) */
-  --ok:          #2ED08A;
-  --ok-dim:      rgba(46, 208, 138, 0.12);
+  /* Channels for alpha-mixed colours: rgb(var(--fg-rgb) / 0.07) etc.
+     fg = the canvas's contrasting tone (white on dark, navy on light). */
+  --fg-rgb:      255 255 255;
+  --shadow-rgb:  0 0 0;
+  --shadow-k:    1;               /* shadow strength multiplier */
+}
 
-  /* Spacing scale — one source of truth for page rhythm.
-     --nav-h:    fixed navbar height (matches h-16).
-     --page-top: distance from the top of the page to the first heading.
-                 = navbar height + a comfortable gap, so EVERY page's first
-                 section starts at the identical y offset below the navbar.
-     --section-y: standard vertical padding between sections, used everywhere. */
-  --nav-h:       4rem;
-  --page-top:    7.5rem;   /* 120px: 64px navbar + 56px gap */
-  --section-y:   5rem;     /* 80px */
+/* ── Light theme ─────────────────────────────────────────────────────────
+   Not an inversion: cards become solid white on a cool off-white canvas,
+   depth comes from soft navy shadows, and the accent darkens wherever it is
+   text so it stays readable. */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg:          #F6F8FB;
+  --bg-alt:      #EEF2F7;
+  --surface:     #FFFFFF;
+  --surface-hi:  #F2F6FA;
+  --panel:       rgba(255, 255, 255, 0.98);
+  --glass:       rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(16, 38, 52, 0.08);
+  --media-bg:    linear-gradient(135deg, #E9EFF5, #F6F8FB);
+  --bg-deep:     #E8EEF4;
+
+  --border:      rgba(16, 38, 52, 0.10);
+  --border-hi:   rgba(16, 38, 52, 0.18);
+
+  --text-strong: #0B1A26;
+  --text:        #1C2B38;
+  --text-soft:   #33424F;
+  --text-muted:  #4E5D6C;
+  --text-faint:  #5E6B79;
+
+  --accent-solid:       #1C7AAD;
+  --accent-solid-hover: #176E9E;
+  --accent-hi:   #1A74A6;
+  --accent-dim:  rgba(49, 159, 212, 0.10);
+  --accent-line: rgba(49, 159, 212, 0.35);
+  --grad-from:   #165F89;
+  --grad-to:     #2A8FC4;
+  --glow:        rgba(49, 159, 212, 0.16);
+  --glow-fade:   rgba(49, 159, 212, 0.05);
+  --ok-text:     #047857;
+  --danger:      #C62828;
+
+  --fg-rgb:      16 38 52;
+  --shadow-rgb:  16 38 52;
+  --shadow-k:    0.35;
 }
 
 /* Shared section rhythm — apply so pages cannot drift.
@@ -93,19 +171,19 @@ img, video { max-width: 100%; }
 .blog-content { color: var(--text-muted); font-size: 17px; line-height: 1.75; }
 .blog-content > * + * { margin-top: 1.15em; }
 .blog-content h2 {
-  color: #fff; font-family: var(--font-heading), system-ui, sans-serif;
+  color: var(--text-strong); font-family: var(--font-heading), system-ui, sans-serif;
   font-weight: 700; font-size: 1.6em; line-height: 1.25; margin-top: 1.8em; margin-bottom: 0.5em;
 }
 .blog-content h3 {
-  color: #fff; font-family: var(--font-heading), system-ui, sans-serif;
+  color: var(--text-strong); font-family: var(--font-heading), system-ui, sans-serif;
   font-weight: 600; font-size: 1.3em; line-height: 1.3; margin-top: 1.6em; margin-bottom: 0.4em;
 }
 .blog-content h2, .blog-content h3 { scroll-margin-top: calc(var(--nav-h, 64px) + 16px); }
-.blog-content h4 { color: #fff; font-weight: 600; font-size: 1.1em; margin-top: 1.4em; }
+.blog-content h4 { color: var(--text-strong); font-weight: 600; font-size: 1.1em; margin-top: 1.4em; }
 .blog-content p, .blog-content li { color: var(--text-muted); }
 .blog-content strong { color: var(--text); font-weight: 600; }
 .blog-content a { color: var(--accent-hi); text-decoration: underline; text-underline-offset: 2px; }
-.blog-content a:hover { color: #fff; }
+.blog-content a:hover { color: var(--text-strong); }
 .blog-content ul, .blog-content ol { padding-inline-start: 1.4em; }
 .blog-content ul { list-style: disc; }
 .blog-content ol { list-style: decimal; }
@@ -208,17 +286,17 @@ section[id] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgb(var(--fg-rgb) / 0.12);
   border-radius: 5px;
   border: 2px solid var(--bg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(var(--fg-rgb) / 0.2);
 }
 
 * {
-  scrollbar-color: rgba(255, 255, 255, 0.14) var(--bg);
+  scrollbar-color: rgb(var(--fg-rgb) / 0.14) var(--bg);
 }
 
 /* Respect user motion preferences */
@@ -260,7 +338,7 @@ section[id] {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.legal-doc .legal-body a:hover { color: #fff; }
+.legal-doc .legal-body a:hover { color: var(--text-strong); }
 .legal-doc .legal-body ul,
 .legal-doc .legal-body ol { padding-inline-start: 1.35rem; display: flex; flex-direction: column; gap: .5rem; }
 .legal-doc .legal-body ul { list-style: disc; }

@@ -253,7 +253,7 @@ export default function Hero() {
            it cycles through reads the same weight, instead of jumping from
            cyan to magenta mid-sentence. */
         .grad-text {
-          background: linear-gradient(135deg, #a9ddf3 0%, #5fb8e8 100%);
+          background: linear-gradient(135deg, var(--grad-from), var(--grad-to));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -278,7 +278,7 @@ export default function Hero() {
         .card-tilt { transition: transform .4s cubic-bezier(.23,1,.32,1), box-shadow .4s; }
         .card-tilt:hover {
           transform: rotate(0deg) translateY(-8px) scale(1.015) !important;
-          box-shadow: 0 40px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.12) !important;
+          box-shadow: 0 40px 80px rgb(var(--shadow-rgb) / calc(0.55 * var(--shadow-k))), 0 0 0 1px rgb(var(--fg-rgb) / 0.12) !important;
         }
 
         .marquee-track {
@@ -330,7 +330,7 @@ export default function Hero() {
           style={{
             height: '75%',
             background:
-              'radial-gradient(125% 75% at 50% 0%, #18384A 0%, rgba(24,56,74,0.32) 30%, transparent 62%)',
+              'radial-gradient(125% 75% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)',
           }}
           aria-hidden="true"
         />
@@ -342,7 +342,7 @@ export default function Hero() {
                 column when the rotating word is long. */}
             <div className="hero-body flex flex-col items-center text-center lg:items-start lg:text-left w-full min-w-0">
               <h1
-                className="hero-display anim-fade-up-2 text-white leading-[1.08] tracking-tight mb-5 w-full min-w-0"
+                className="hero-display anim-fade-up-2 text-strong leading-[1.08] tracking-tight mb-5 w-full min-w-0"
                 style={{ fontSize: 'clamp(28px, 5.2vw, 52px)', fontWeight: 800 }}
               >
                 {t.headlineLead}
@@ -354,7 +354,7 @@ export default function Hero() {
               </h1>
 
               <p
-                className="anim-fade-up-3 text-slate-400 leading-relaxed w-full max-w-lg mx-auto lg:mx-0 mb-8"
+                className="anim-fade-up-3 text-muted leading-relaxed w-full max-w-lg mx-auto lg:mx-0 mb-8"
                 style={{ fontSize: 'clamp(15px, 2vw, 19px)' }}
               >
                 {t.subtitle}
@@ -365,7 +365,7 @@ export default function Hero() {
                   href={localeHref("/#contact", language)}
                   className="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                   style={{
-                    background: 'linear-gradient(135deg,#319fd4 0%,#2678a6 100%)',
+                    background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
                     fontSize: 15,
                   }}
                 >
@@ -379,10 +379,10 @@ export default function Hero() {
                 </a>
                 <a
                   href="https://portal.accez.cloud/sign-up"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-slate-300 transition-all duration-200 hover:text-white hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-soft transition-all duration-200 hover:text-strong hover:-translate-y-0.5"
                   style={{
-                    background: 'rgba(255,255,255,.05)',
-                    border: '1px solid rgba(255,255,255,.1)',
+                    background: 'var(--surface-hi)',
+                    border: '1px solid var(--border-hi)',
                     fontSize: 15,
                   }}
                 >
@@ -397,7 +397,7 @@ export default function Hero() {
               </div>
 
               <div className="anim-fade-up-5 mt-2 w-full overflow-hidden">
-                <p className="text-xs text-slate-600 uppercase tracking-widest mb-4 font-medium text-center lg:text-left">
+                <p className="text-xs text-faint uppercase tracking-widest mb-4 font-medium text-center lg:text-left">
                   {t.partnersIntro}
                 </p>
                 <div
@@ -411,7 +411,7 @@ export default function Hero() {
                     {[...PARTNERS, ...PARTNERS].map((name, i) => (
                       <span
                         key={i}
-                        className="text-slate-500 text-sm font-semibold whitespace-nowrap hover:text-slate-300 transition-colors"
+                        className="text-faint text-sm font-semibold whitespace-nowrap hover:text-soft transition-colors"
                       >
                         {name}
                       </span>
@@ -436,9 +436,9 @@ export default function Hero() {
                 <div
                   className="card-float card-tilt relative rounded-2xl overflow-hidden"
                   style={{
-                    background: 'rgba(15,23,42,.9)',
-                    border: '1px solid rgba(255,255,255,.1)',
-                    boxShadow: '0 20px 48px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.06)',
+                    background: 'var(--panel)',
+                    border: '1px solid var(--border-hi)',
+                    boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k))), 0 0 0 1px rgb(var(--fg-rgb) / 0.06)',
                     backdropFilter: 'blur(20px)',
                   }}
                   dir="ltr"
@@ -447,14 +447,14 @@ export default function Hero() {
                   <div
                     className="px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between"
                     style={{
-                      background: 'rgba(255,255,255,0.025)',
-                      borderBottom: '1px solid rgba(255,255,255,.06)',
+                      background: 'var(--surface)',
+                      borderBottom: '1px solid var(--border)',
                     }}
                   >
                     <div className="flex gap-1.5">
-                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(255,255,255,0.16)' }} />
-                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(255,255,255,0.12)' }} />
-                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgba(255,255,255,0.09)' }} />
+                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgb(var(--fg-rgb) / 0.16)' }} />
+                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgb(var(--fg-rgb) / 0.12)' }} />
+                      <div className="w-2 h-2 rounded-full" style={{ background: 'rgb(var(--fg-rgb) / 0.09)' }} />
                     </div>
                     <span className="text-[10px] sm:text-[11px] font-medium tracking-wide" style={{ color: 'var(--text-faint)' }}>
                       {t.mock.url}
@@ -470,12 +470,12 @@ export default function Hero() {
                           key={label}
                           className="rounded-lg sm:rounded-xl p-2 sm:p-3"
                           style={{
-                            background: 'rgba(255,255,255,.03)',
-                            border: '1px solid rgba(255,255,255,.055)',
+                            background: 'var(--surface)',
+                            border: '1px solid var(--border)',
                           }}
                         >
                           <p className="text-[9px] sm:text-[10px] mb-1 leading-tight truncate" style={{ color: 'var(--text-faint)' }}>{label}</p>
-                          <p className="text-white font-semibold text-sm sm:text-lg leading-none mb-1 tracking-tight">{value}</p>
+                          <p className="text-strong font-semibold text-sm sm:text-lg leading-none mb-1 tracking-tight">{value}</p>
                           <p className="text-[9px] sm:text-[10px] font-medium" style={{ color: 'var(--ok)' }}>
                             {delta} <span style={{ color: 'var(--text-faint)' }}>{t.mock.deltaSuffix}</span>
                           </p>
@@ -487,13 +487,13 @@ export default function Hero() {
                     <div
                       className="rounded-lg sm:rounded-xl p-2.5 sm:p-3.5"
                       style={{
-                        background: 'rgba(255,255,255,.03)',
-                        border: '1px solid rgba(255,255,255,.055)',
+                        background: 'var(--surface)',
+                        border: '1px solid var(--border)',
                       }}
                     >
                       <div className="flex items-start justify-between mb-3">
                         <div>
-                          <p className="text-[11px] sm:text-xs text-white font-medium leading-none mb-1">{t.mock.chartTitle}</p>
+                          <p className="text-[11px] sm:text-xs text-strong font-medium leading-none mb-1">{t.mock.chartTitle}</p>
                           <p className="text-[9px] sm:text-[10px]" style={{ color: 'var(--text-faint)' }}>{t.mock.chartRange}</p>
                         </div>
                         <span
@@ -530,30 +530,30 @@ export default function Hero() {
                     <div
                       className="rounded-lg sm:rounded-xl p-2.5 sm:p-3.5"
                       style={{
-                        background: 'rgba(255,255,255,.03)',
-                        border: '1px solid rgba(255,255,255,.055)',
+                        background: 'var(--surface)',
+                        border: '1px solid var(--border)',
                       }}
                     >
-                      <p className="text-[11px] sm:text-xs text-white font-medium mb-2.5 sm:mb-3">{t.mock.bookingsTitle}</p>
+                      <p className="text-[11px] sm:text-xs text-strong font-medium mb-2.5 sm:mb-3">{t.mock.bookingsTitle}</p>
                       <div className="space-y-2 sm:space-y-2.5">
                         {t.mock.bookings.map(({ name, channel, nights, status, state }) => {
                           const dot =
                             state === 'confirmed' ? 'var(--ok)'
                             : state === 'active'  ? 'var(--accent-hi)'
-                            : 'rgba(255,255,255,0.28)'
+                            : 'rgb(var(--fg-rgb) / 0.28)'
                           return (
                             <div key={name} className="flex items-center gap-2.5">
                               <div
                                 className="w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center text-[9px] sm:text-[10px] font-semibold flex-shrink-0"
                                 style={{
-                                  background: 'rgba(255,255,255,0.06)',
+                                  background: 'var(--surface-hi)',
                                   color: 'var(--text-muted)',
                                 }}
                               >
                                 {name[0]}
                               </div>
                               <div className="flex-1 min-w-0">
-                                <p className="text-white text-[10px] sm:text-[11px] font-medium truncate leading-tight">{name}</p>
+                                <p className="text-strong text-[10px] sm:text-[11px] font-medium truncate leading-tight">{name}</p>
                                 <p className="text-[9px] sm:text-[10px] truncate" style={{ color: 'var(--text-faint)' }}>{channel} · {nights}</p>
                               </div>
                               <span
@@ -573,8 +573,8 @@ export default function Hero() {
                     <div
                       className="flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-lg"
                       style={{
-                        background: 'rgba(255,255,255,.03)',
-                        border: '1px solid rgba(255,255,255,.055)',
+                        background: 'var(--surface)',
+                        border: '1px solid var(--border)',
                       }}
                     >
                       <div className="relative w-1.5 h-1.5 flex-shrink-0">
@@ -597,9 +597,9 @@ export default function Hero() {
                     isRTL ? '-left-6' : '-right-6'
                   }`}
                   style={{
-                    background: 'rgba(16,18,28,.92)',
+                    background: 'var(--panel)',
                     border: '1px solid var(--accent-line)',
-                    boxShadow: '0 10px 30px rgba(0,0,0,.45)',
+                    boxShadow: '0 10px 30px rgb(var(--shadow-rgb) / calc(0.45 * var(--shadow-k)))',
                     backdropFilter: 'blur(12px)',
                     color: 'var(--text)',
                     animation: 'fade-up .7s .8s both ease-out',
@@ -614,9 +614,9 @@ export default function Hero() {
                     isRTL ? '-right-6' : '-left-6'
                   }`}
                   style={{
-                    background: 'rgba(16,18,28,.92)',
-                    border: '1px solid rgba(255,255,255,.1)',
-                    boxShadow: '0 12px 32px rgba(0,0,0,.45)',
+                    background: 'var(--panel)',
+                    border: '1px solid var(--border-hi)',
+                    boxShadow: '0 12px 32px rgb(var(--shadow-rgb) / calc(0.45 * var(--shadow-k)))',
                     backdropFilter: 'blur(12px)',
                     animation: 'fade-up .7s .95s both ease-out',
                   }}
@@ -630,7 +630,7 @@ export default function Hero() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white text-sm font-semibold leading-none mb-1 tracking-tight">{t.mock.pillValue}</p>
+                    <p className="text-strong text-sm font-semibold leading-none mb-1 tracking-tight">{t.mock.pillValue}</p>
                     <p className="text-[10px]" style={{ color: 'var(--text-faint)' }}>{t.mock.pillLabel}</p>
                   </div>
                 </div>
@@ -641,7 +641,7 @@ export default function Hero() {
                 <div
                   className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl text-xs font-medium text-center"
                   style={{
-                    background: 'rgba(255,255,255,.04)',
+                    background: 'var(--surface)',
                     border: '1px solid var(--accent-line)',
                     color: 'var(--text)',
                   }}
@@ -652,8 +652,8 @@ export default function Hero() {
                 <div
                   className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl"
                   style={{
-                    background: 'rgba(255,255,255,.04)',
-                    border: '1px solid rgba(255,255,255,.1)',
+                    background: 'var(--surface)',
+                    border: '1px solid var(--border-hi)',
                   }}
                 >
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

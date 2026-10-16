@@ -41,7 +41,7 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
           </span>
           <h2
             id="post-product-cta"
-            className="text-white font-bold tracking-tight mb-3"
+            className="text-strong font-bold tracking-tight mb-3"
             style={{ fontSize: 'clamp(22px, 3vw, 28px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}
           >
             {c.title}
@@ -53,7 +53,7 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
             <a
               href={localeHref('/#contact', locale)}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-              style={{ background: 'var(--accent)', fontSize: 15 }}
+              style={{ background: 'var(--accent-solid)', fontSize: 15 }}
             >
               {c.bookDemo}
               {arrow}

@@ -29,15 +29,15 @@ export default function ModulesPage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden page-top pb-10" style={{ background: 'var(--bg)' }}>
-        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '80%', background: 'radial-gradient(120% 70% at 50% 0%, #18384A 0%, rgba(24,56,74,0.3) 30%, transparent 62%)' }} aria-hidden="true" />
+        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '80%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10 text-center max-w-2xl">
           <FadeUp>
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
               {t.eyebrow}
             </span>
-            <h1 className="text-white font-bold leading-[1.12] tracking-tight mb-5" style={{ fontSize: 'clamp(30px, 4.5vw, 48px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+            <h1 className="text-strong font-bold leading-[1.12] tracking-tight mb-5" style={{ fontSize: 'clamp(30px, 4.5vw, 48px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
               {t.titleLead}{' '}
-              <span style={{ background: 'linear-gradient(135deg, #C7D2FE, #319FD4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
+              <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
             </h1>
             <p className="leading-relaxed mx-auto" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
           </FadeUp>
@@ -52,7 +52,7 @@ export default function ModulesPage() {
               <FadeUp key={pillar.key} delay={0.08 * pi}>
                 <div className="rounded-2xl p-5 h-full" style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)' }}>
                   <div className="flex items-center gap-2.5 mb-4 px-1">
-                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--accent)' }} />
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--accent-solid)' }} />
                     <h2 className="font-semibold tracking-wide uppercase" style={{ fontSize: 12, letterSpacing: '0.08em', color: 'var(--text-muted)' }}>
                       {language === 'ar' ? pillar.headingAr : pillar.heading}
                     </h2>
@@ -67,7 +67,7 @@ export default function ModulesPage() {
                             <Icon size={17} color="var(--accent-hi)" strokeWidth={1.85} />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <p className="text-white font-semibold leading-tight" style={{ fontSize: 14 }}>
+                            <p className="text-strong font-semibold leading-tight" style={{ fontSize: 14 }}>
                               {language === 'ar' ? m.titleAr : m.title}
                             </p>
                             <p className="leading-snug mt-0.5" style={{ fontSize: 12.5, color: 'var(--text-faint)' }}>
@@ -106,10 +106,10 @@ export default function ModulesPage() {
           <FadeUp>
             <div className="relative overflow-hidden rounded-3xl px-6 py-14 sm:px-12 text-center max-w-5xl mx-auto" style={{ background: 'linear-gradient(135deg, rgba(49,159,212,0.14), var(--surface))', border: '1px solid var(--accent-line)' }}>
               <div className="relative z-10">
-                <h2 className="text-white font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{t.ctaTitle}</h2>
+                <h2 className="text-strong font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{t.ctaTitle}</h2>
                 <p className="max-w-xl mx-auto mb-8" style={{ fontSize: 16, color: 'var(--text-muted)' }}>{t.ctaSub}</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>{t.ctaPrimary}{arrow}</a>
+                  <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent-solid)', fontSize: 15 }}>{t.ctaPrimary}{arrow}</a>
                   <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>{t.ctaSecondary}</a>
                 </div>
               </div>

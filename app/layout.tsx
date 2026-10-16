@@ -7,6 +7,7 @@ import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { SITE_DESCRIPTION, X_HANDLE } from '@/lib/site'
 import { websiteSchema } from '@/lib/content/siteSchema'
+import { THEME_INIT_SCRIPT } from '@/lib/theme/theme'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
@@ -156,6 +157,8 @@ export default function RootLayout({
             lang and dir from the URL before first paint; LanguageContext keeps
             them in sync afterwards. */}
         <script dangerouslySetInnerHTML={{ __html: HTML_LANG_SCRIPT }} />
+        {/* Light/dark theme, applied before first paint (no flash). */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

@@ -31,20 +31,20 @@ export default function SolutionPage({ slug }: { slug: SolutionSlug }) {
 
       {/* Hero */}
       <section className="relative overflow-hidden page-top pb-20" style={{ background: 'var(--bg)' }}>
-        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, #18384A 0%, rgba(24,56,74,0.3) 30%, transparent 62%)' }} aria-hidden="true" />
+        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <FadeUp>
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
                 {L(s.eyebrow, s.eyebrowAr)}
               </span>
-              <h1 className="text-white font-bold leading-[1.1] tracking-tight mb-5" style={{ fontSize: 'clamp(30px, 4.5vw, 50px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+              <h1 className="text-strong font-bold leading-[1.1] tracking-tight mb-5" style={{ fontSize: 'clamp(30px, 4.5vw, 50px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
                 {L(s.title, s.titleAr)}{' '}
-                <span style={{ background: 'linear-gradient(135deg, #C7D2FE, #319FD4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{L(s.accent, s.accentAr)}</span>
+                <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{L(s.accent, s.accentAr)}</span>
               </h1>
               <p className="leading-relaxed max-w-lg mb-8" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{L(s.subtitle, s.subtitleAr)}</p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>
+                <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent-solid)', fontSize: 15 }}>
                   {L('Book a demo', 'اطلب عرضًا توضيحيًا')}{arrow}
                 </a>
                 <a href={localeHref("/modules", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>
@@ -57,7 +57,7 @@ export default function SolutionPage({ slug }: { slug: SolutionSlug }) {
             <FadeUp delay={0.15}>
               <div className="relative">
                 <div className="absolute inset-0 rounded-3xl blur-[70px] opacity-25 pointer-events-none" style={{ background: 'radial-gradient(circle at 50% 40%, var(--accent), transparent 68%)' }} aria-hidden="true" />
-                <div className="relative rounded-2xl p-6 sm:p-7" style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgba(0,0,0,.4)' }}>
+                <div className="relative rounded-2xl p-6 sm:p-7" style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.4 * var(--shadow-k)))' }}>
                   <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: 'var(--accent-hi)' }}>{L(s.eyebrow, s.eyebrowAr)}</p>
                   <div className="flex flex-col gap-3">
                     {s.heroPoints.map((p) => (
@@ -89,7 +89,7 @@ export default function SolutionPage({ slug }: { slug: SolutionSlug }) {
                       <Icon size={20} color="var(--accent-hi)" strokeWidth={1.75} />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold leading-snug mb-2" style={{ fontSize: 16 }}>{L(f.title, f.titleAr)}</h3>
+                      <h3 className="text-strong font-semibold leading-snug mb-2" style={{ fontSize: 16 }}>{L(f.title, f.titleAr)}</h3>
                       <p className="leading-relaxed" style={{ fontSize: 14, color: 'var(--text-muted)' }}>{L(f.desc, f.descAr)}</p>
                     </div>
                   </div>
@@ -104,7 +104,7 @@ export default function SolutionPage({ slug }: { slug: SolutionSlug }) {
       <section className="py-20" style={{ background: 'var(--bg-alt)' }}>
         <div className="container mx-auto px-4 max-w-4xl">
           <FadeUp>
-            <h2 className="text-white font-bold text-center tracking-tight mb-2" style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>
+            <h2 className="text-strong font-bold text-center tracking-tight mb-2" style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>
               {L(s.capsHeading, s.capsHeadingAr)}
             </h2>
           </FadeUp>
@@ -133,10 +133,10 @@ export default function SolutionPage({ slug }: { slug: SolutionSlug }) {
                 <div className="absolute rounded-full blur-[90px] opacity-40" style={{ width: 400, height: 400, top: '-40%', left: '50%', transform: 'translateX(-50%)', background: 'radial-gradient(circle, var(--accent), transparent 70%)' }} />
               </div>
               <div className="relative z-10">
-                <h2 className="text-white font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{L(s.ctaTitle, s.ctaTitleAr)}</h2>
+                <h2 className="text-strong font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{L(s.ctaTitle, s.ctaTitleAr)}</h2>
                 <p className="max-w-xl mx-auto mb-8" style={{ fontSize: 16, color: 'var(--text-muted)' }}>{L('See it on your own portfolio, book a walkthrough with the Accez team.', 'شاهدها على محفظتك، احجز جولة مع فريق أكسيز.')}</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)', fontSize: 15 }}>
+                  <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent-solid)', fontSize: 15 }}>
                     {L('Book a demo', 'اطلب عرضًا توضيحيًا')}{arrow}
                   </a>
                   <a href={PORTAL_SIGN_UP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>

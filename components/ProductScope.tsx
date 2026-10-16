@@ -109,11 +109,11 @@ export default function ProductScope() {
               <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to right, transparent, var(--accent))' : 'linear-gradient(to left, transparent, var(--accent))' }} />
             </div>
             <h2
-              className="text-white font-bold text-center leading-tight tracking-tight"
+              className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
             >
               {t.titleLead}{' '}
-              <span style={{ background: 'linear-gradient(135deg, #7FCDEF, #319FD4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
+              <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
             </h2>
             <p className="text-center max-w-2xl mx-auto mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
           </div>
@@ -127,8 +127,8 @@ export default function ProductScope() {
                 style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)' }}
               >
                 <div className="flex items-center gap-2.5 mb-4 px-1">
-                  <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--accent)' }} />
-                  <h3 className="text-white font-semibold tracking-wide uppercase" style={{ fontSize: 12, letterSpacing: '0.08em', color: 'var(--text-muted)' }}>
+                  <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--accent-solid)' }} />
+                  <h3 className="text-strong font-semibold tracking-wide uppercase" style={{ fontSize: 12, letterSpacing: '0.08em', color: 'var(--text-muted)' }}>
                     {language === 'ar' ? pillar.headingAr : pillar.heading}
                   </h3>
                 </div>
@@ -142,7 +142,7 @@ export default function ProductScope() {
                           <Icon size={17} color="var(--accent-hi)" strokeWidth={1.85} />
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="text-white font-semibold leading-tight flex items-center gap-1.5" style={{ fontSize: 14 }}>
+                          <p className="text-strong font-semibold leading-tight flex items-center gap-1.5" style={{ fontSize: 14 }}>
                             {language === 'ar' ? m.titleAr : m.title}
                             {m.href && (
                               <svg width="12" height="12" viewBox="0 0 16 16" fill="none" className="flex-shrink-0 opacity-60" style={{ transform: isRTL ? 'scaleX(-1)' : undefined, color: 'var(--accent-hi)' }} aria-hidden="true">

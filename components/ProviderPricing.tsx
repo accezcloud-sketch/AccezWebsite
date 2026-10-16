@@ -41,17 +41,17 @@ export default function ProviderPricing() {
                   {plan.highlight && (
                     <span
                       className="absolute -top-3 start-6 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide"
-                      style={{ background: 'var(--accent)', color: '#fff' }}
+                      style={{ background: 'var(--accent-solid)', color: 'var(--on-accent)' }}
                     >
                       {p.mostPopular}
                     </span>
                   )}
 
-                  <h3 className="text-white font-semibold mb-1" style={{ fontSize: 18 }}>{plan.name}</h3>
+                  <h3 className="text-strong font-semibold mb-1" style={{ fontSize: 18 }}>{plan.name}</h3>
                   <p className="mb-4" style={{ fontSize: 13.5, color: 'var(--text-muted)' }}>{plan.tagline}</p>
 
                   <div className="flex items-end gap-1.5 mb-2">
-                    <span className="text-white font-bold tracking-tight" style={{ fontSize: 34, fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>{plan.price}</span>
+                    <span className="text-strong font-bold tracking-tight" style={{ fontSize: 34, fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>{plan.price}</span>
                     {plan.price !== p.plans[0].price && (
                       <span className="mb-1.5" style={{ fontSize: 14, color: 'var(--text-faint)' }}>{p.perMonth}</span>
                     )}
@@ -73,7 +73,7 @@ export default function ProviderPricing() {
                     className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5 mb-6"
                     style={
                       plan.highlight
-                        ? { background: 'var(--accent)', color: '#fff', fontSize: 14.5 }
+                        ? { background: 'var(--accent-solid)', color: 'var(--on-accent)', fontSize: 14.5 }
                         : { background: 'var(--surface-hi)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 14.5 }
                     }
                   >

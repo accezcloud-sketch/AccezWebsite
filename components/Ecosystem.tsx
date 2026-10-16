@@ -142,7 +142,7 @@ export default function Ecosystem() {
         .eco-node:hover {
           transform: translate(-50%, -50%) scale(1.05);
           border-color: var(--accent-line);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 0 1px var(--accent-line);
+          box-shadow: 0 10px 30px rgb(var(--shadow-rgb) / calc(0.4 * var(--shadow-k))), 0 0 0 1px var(--accent-line);
         }
         .eco-card {
           transition: transform 0.3s cubic-bezier(0.23,1,0.32,1),
@@ -178,7 +178,7 @@ export default function Ecosystem() {
             </div>
 
             <h2
-              className="text-white font-bold text-center leading-tight tracking-tight"
+              className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -188,7 +188,7 @@ export default function Ecosystem() {
               {t.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
+                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -225,7 +225,7 @@ export default function Ecosystem() {
 
               {/* concentric guide rings */}
               {[46, 34, 22].map((r) => (
-                <circle key={r} cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="0.3" />
+                <circle key={r} cx="50" cy="50" r={r} fill="none" stroke="rgb(var(--fg-rgb) / 0.04)" strokeWidth="0.3" />
               ))}
 
               {/* spokes */}
@@ -252,13 +252,13 @@ export default function Ecosystem() {
                 transform: 'translate(-50%, -50%)',
                 width: 168,
                 height: 168,
-                background: 'radial-gradient(circle at 50% 40%, rgba(49, 159, 212,0.22), rgba(16,18,28,0.96))',
+                background: 'radial-gradient(circle at 50% 40%, rgba(49, 159, 212,0.22), var(--panel))',
                 border: '1px solid var(--accent-line)',
                 boxShadow: '0 0 0 8px rgba(49, 159, 212,0.05), 0 20px 60px rgba(38, 120, 166,0.35)',
               }}
             >
               <Image src="/images/accez-logo.png" alt="Accez" width={40} height={40} className="rounded-lg mb-2" />
-              <span className="text-white font-bold text-lg leading-none" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
+              <span className="text-strong font-bold text-lg leading-none" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
                 {t.hub}
               </span>
               <span className="text-[11px] mt-1 px-3 leading-tight" style={{ color: 'var(--text-faint)' }}>
@@ -279,9 +279,9 @@ export default function Ecosystem() {
                     top: `${p.top}%`,
                     transform: 'translate(-50%, -50%)',
                     width: 244,
-                    background: 'rgba(16,18,28,0.92)',
+                    background: 'var(--panel)',
                     border: '1px solid var(--border)',
-                    boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
+                    boxShadow: '0 8px 24px rgb(var(--shadow-rgb) / calc(0.35 * var(--shadow-k)))',
                     backdropFilter: 'blur(8px)',
                   }}
                 >
@@ -292,7 +292,7 @@ export default function Ecosystem() {
                     <Icon size={19} color="var(--accent-hi)" strokeWidth={1.75} />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-white font-semibold leading-tight" style={{ fontSize: 14 }}>
+                    <p className="text-strong font-semibold leading-tight" style={{ fontSize: 14 }}>
                       {language === 'ar' ? party.titleAr : party.title}
                     </p>
                     <p className="leading-tight mt-0.5" style={{ fontSize: 11.5, color: 'var(--text-faint)' }}>
@@ -321,7 +321,7 @@ export default function Ecosystem() {
             >
               <Image src="/images/accez-logo.png" alt="Accez" width={40} height={40} className="rounded-lg flex-shrink-0" />
               <div>
-                <p className="text-white font-bold text-lg leading-none">{t.hub}</p>
+                <p className="text-strong font-bold text-lg leading-none">{t.hub}</p>
                 <p className="text-[13px] mt-1" style={{ color: 'var(--text-faint)' }}>{t.hubSub}</p>
               </div>
             </div>
@@ -348,7 +348,7 @@ export default function Ecosystem() {
                     <Icon size={19} color="var(--accent-hi)" strokeWidth={1.75} />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-white font-semibold leading-tight" style={{ fontSize: 14 }}>
+                    <p className="text-strong font-semibold leading-tight" style={{ fontSize: 14 }}>
                       {language === 'ar' ? party.titleAr : party.title}
                     </p>
                     <p className="leading-tight" style={{ fontSize: 12, color: 'var(--text-faint)' }}>

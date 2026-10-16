@@ -108,9 +108,9 @@ export default function Select({ value, onChange, options, ariaLabel, isRTL = fa
             transition={{ duration: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="absolute z-30 mt-2 w-full rounded-xl overflow-hidden p-1.5"
             style={{
-              background: 'rgba(13, 23, 35, 0.98)',
+              background: 'var(--panel)',
               border: '1px solid var(--border-hi)',
-              boxShadow: '0 20px 48px rgba(0,0,0,0.5)',
+              boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))',
               backdropFilter: 'blur(20px)',
             }}
             role="listbox"

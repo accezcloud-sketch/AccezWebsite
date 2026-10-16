@@ -51,7 +51,7 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
       <section className="relative overflow-hidden page-top pb-8" style={{ background: 'var(--bg)' }}>
         <div
           className="absolute inset-x-0 top-0 pointer-events-none"
-          style={{ height: '100%', background: 'radial-gradient(120% 70% at 50% 0%, #18384A 0%, rgba(24,56,74,0.3) 30%, transparent 62%)' }}
+          style={{ height: '100%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }}
           aria-hidden="true"
         />
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -62,7 +62,7 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
             {c.eyebrow}
           </span>
           <h1
-            className="text-white font-bold tracking-tight mb-4"
+            className="text-strong font-bold tracking-tight mb-4"
             style={{ fontSize: 'clamp(30px, 4.5vw, 48px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
           >
             {heading}

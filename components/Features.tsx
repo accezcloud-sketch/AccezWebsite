@@ -77,7 +77,7 @@ export default function Features() {
           transform: translateY(-6px);
           border-color: color-mix(in srgb, var(--accent) 20%, transparent);
           box-shadow:
-            0 12px 40px rgba(0,0,0,0.3),
+            0 12px 40px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k))),
             0 0 0 1px color-mix(in srgb, var(--accent) 13%, transparent);
         }
         .feature-card:hover .feature-icon-box {
@@ -94,7 +94,7 @@ export default function Features() {
           background: linear-gradient(
             135deg,
             transparent 40%,
-            rgba(255, 255, 255, 0.03) 50%,
+            rgb(var(--fg-rgb) / 0.03) 50%,
             transparent 60%
           );
           background-size: 200% 200%;
@@ -149,7 +149,7 @@ export default function Features() {
 
             {/* Main heading */}
             <h2
-              className="text-white font-bold text-center leading-tight tracking-tight"
+              className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -159,7 +159,7 @@ export default function Features() {
               {t.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
+                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -171,7 +171,7 @@ export default function Features() {
 
             {/* Subtitle */}
             <p
-              className="text-slate-400 text-center max-w-xl mx-auto mt-4 leading-relaxed"
+              className="text-muted text-center max-w-xl mx-auto mt-4 leading-relaxed"
               style={{ fontSize: 17 }}
             >
               {t.subtitle}
@@ -209,7 +209,7 @@ export default function Features() {
                   {/* Text content */}
                   <div className="flex flex-col gap-2 flex-1">
                     <h3
-                      className="text-white font-semibold leading-snug"
+                      className="text-strong font-semibold leading-snug"
                       style={{ fontSize: 16 }}
                     >
                       {feature.title}

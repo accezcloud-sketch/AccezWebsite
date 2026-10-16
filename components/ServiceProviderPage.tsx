@@ -140,7 +140,7 @@ export default function ServiceProviderPage() {
     <>
       <style>{`
         .spp-card { transition: transform .3s cubic-bezier(.23,1,.32,1), border-color .3s ease, box-shadow .3s ease; }
-        .spp-card:hover { transform: translateY(-6px); border-color: var(--accent-line); box-shadow: 0 12px 40px rgba(0,0,0,.3); }
+        .spp-card:hover { transform: translateY(-6px); border-color: var(--accent-line); box-shadow: 0 12px 40px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k))); }
         .spp-btn:hover { box-shadow: 0 0 0 3px rgba(49, 159, 212,.3), 0 8px 32px rgba(49, 159, 212,.4); }
         @media (prefers-reduced-motion: reduce) { .spp-card:hover { transform: none; } }
       `}</style>
@@ -161,11 +161,11 @@ export default function ServiceProviderPage() {
                 {t.eyebrow}
               </span>
               <h1
-                className="text-white font-bold leading-[1.08] tracking-tight mb-5"
+                className="text-strong font-bold leading-[1.08] tracking-tight mb-5"
                 style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
               >
                 {t.heroTitleLead}{' '}
-                <span style={{ background: 'linear-gradient(135deg, #a9ddf3, #5fb8e8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.heroTitleAccent}</span>
+                <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.heroTitleAccent}</span>
               </h1>
               <p className="leading-relaxed max-w-lg mb-8" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.heroSubtitle}</p>
 
@@ -175,7 +175,7 @@ export default function ServiceProviderPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="spp-btn inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ background: 'var(--accent)', fontSize: 15 }}
+                  style={{ background: 'var(--accent-solid)', fontSize: 15 }}
                 >
                   {t.ctaPrimary}{arrow}
                 </a>
@@ -192,7 +192,7 @@ export default function ServiceProviderPage() {
             <FadeUp delay={0.15}>
               <div className="relative">
                 <div className="absolute inset-0 rounded-3xl blur-[70px] opacity-25 pointer-events-none" style={{ background: 'radial-gradient(circle at 50% 45%, var(--accent), transparent 68%)' }} aria-hidden="true" />
-                <div className="relative rounded-2xl overflow-hidden" style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgba(0,0,0,.5)' }}>
+                <div className="relative rounded-2xl overflow-hidden" style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))' }}>
                   <ImageCarousel slides={SLIDES} alt={t.eyebrow} language={language} isRTL={isRTL} priority />
                 </div>
                 <p className="text-center mt-4" style={{ fontSize: 13, color: 'var(--text-faint)' }}>{t.heroCaption}</p>
@@ -218,7 +218,7 @@ export default function ServiceProviderPage() {
                       <Icon size={20} color="var(--accent-hi)" strokeWidth={1.75} />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold leading-snug mb-2" style={{ fontSize: 16 }}>{item.title}</h3>
+                      <h3 className="text-strong font-semibold leading-snug mb-2" style={{ fontSize: 16 }}>{item.title}</h3>
                       <p className="leading-relaxed" style={{ fontSize: 14, color: 'var(--text-muted)' }}>{item.description}</p>
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export default function ServiceProviderPage() {
                       </div>
                       <span className="text-[11px] font-bold tracking-widest" style={{ color: 'var(--accent)' }}>{String(i + 1).padStart(2, '0')}</span>
                     </div>
-                    <h3 className="text-white font-semibold mb-2" style={{ fontSize: 16 }}>{step.title}</h3>
+                    <h3 className="text-strong font-semibold mb-2" style={{ fontSize: 16 }}>{step.title}</h3>
                     <p className="leading-relaxed" style={{ fontSize: 14, color: 'var(--text-muted)' }}>{step.description}</p>
                   </div>
                 </FadeUp>
@@ -271,14 +271,14 @@ export default function ServiceProviderPage() {
                 <div className="absolute rounded-full blur-[90px] opacity-40" style={{ width: 400, height: 400, top: '-40%', left: '50%', transform: 'translateX(-50%)', background: 'radial-gradient(circle, var(--accent), transparent 70%)' }} />
               </div>
               <div className="relative z-10">
-                <h2 className="text-white font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{t.ctaTitle}</h2>
+                <h2 className="text-strong font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}>{t.ctaTitle}</h2>
                 <p className="max-w-xl mx-auto mb-8" style={{ fontSize: 16, color: 'var(--text-muted)' }}>{t.ctaSubtitle}</p>
                 <a
                   href={PROVIDER_SIGN_UP}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="spp-btn inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ background: 'var(--accent)', fontSize: 15 }}
+                  style={{ background: 'var(--accent-solid)', fontSize: 15 }}
                 >
                   {t.ctaPrimary}{arrow}
                 </a>

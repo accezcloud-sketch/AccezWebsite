@@ -22,7 +22,7 @@ export default function Pagination({ base, page, total, locale }: PaginationProp
   const href = (n: number) => localeHref(`/${pageRoute(base, n)}`, locale)
   const pill = 'inline-flex items-center justify-center min-w-10 h-10 px-3 rounded-full text-sm transition-colors'
   const idle = { background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }
-  const current = { background: 'var(--accent)', border: '1px solid var(--accent)', color: '#fff' }
+  const current = { background: 'var(--accent-solid)', border: '1px solid var(--accent)', color: 'var(--on-accent)' }
 
   return (
     <nav aria-label={t.nav} className="mt-12">

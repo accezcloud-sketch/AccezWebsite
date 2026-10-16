@@ -83,15 +83,15 @@ export default function CapabilityStack({
               width: `calc(100% - ${inset}px)`,
               height: isOpen ? OPEN_H : HEAD_H,
               zIndex: isOpen ? 100 : 50 + depth,
-              background: isOpen ? 'rgba(255,255,255,0.045)' : 'rgba(16,22,40,0.92)',
+              background: isOpen ? 'var(--surface)' : 'var(--panel)',
               border: isOpen
                 ? '1px solid rgba(49, 159, 212,0.28)'
-                : '1px solid rgba(255,255,255,0.07)',
+                : '1px solid var(--border)',
               boxShadow: isOpen
-                ? '0 18px 48px rgba(0,0,0,0.45), 0 0 0 1px rgba(49, 159, 212,0.10)'
+                ? '0 18px 48px rgb(var(--shadow-rgb) / calc(0.45 * var(--shadow-k))), 0 0 0 1px rgba(49, 159, 212,0.10)'
                 : isHovered
-                  ? '0 12px 32px rgba(0,0,0,0.4)'
-                  : '0 4px 16px rgba(0,0,0,0.3)',
+                  ? '0 12px 32px rgb(var(--shadow-rgb) / calc(0.4 * var(--shadow-k)))'
+                  : '0 4px 16px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
               transition:
                 'top .45s cubic-bezier(.23,1,.32,1), width .45s cubic-bezier(.23,1,.32,1), height .45s cubic-bezier(.23,1,.32,1), box-shadow .3s ease, background .3s ease, border-color .3s ease',
             }}
@@ -118,7 +118,7 @@ export default function CapabilityStack({
                 className="font-medium truncate"
                 style={{
                   fontSize: 15,
-                  color: isOpen ? '#f1f5f9' : isHovered ? '#e2e8f0' : '#8b98ad',
+                  color: isOpen ? 'var(--text-strong)' : isHovered ? 'var(--text)' : 'var(--text-muted)',
                   transition: 'color .3s ease',
                 }}
               >

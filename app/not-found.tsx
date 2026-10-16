@@ -59,7 +59,7 @@ function Block({ locale, isTitle }: { locale: Locale; isTitle: boolean }) {
         {c.eyebrow}
       </p>
       <Heading
-        className="text-white font-bold tracking-tight mb-4"
+        className="text-strong font-bold tracking-tight mb-4"
         style={{
           fontSize: 'clamp(26px, 4vw, 38px)',
           fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',

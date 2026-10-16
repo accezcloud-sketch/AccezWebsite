@@ -239,14 +239,14 @@ export default function Capabilities() {
               className={[
                 'inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold',
                 'transition-all duration-200 hover:-translate-y-0.5',
-                isPrimary ? 'text-white' : 'text-slate-300 hover:text-white',
+                isPrimary ? 'text-white' : 'text-soft hover:text-strong',
               ].join(' ')}
               style={{
                 fontSize: 14,
                 background: isPrimary
-                  ? 'linear-gradient(135deg,#319fd4 0%,#2678a6 100%)'
-                  : 'rgba(255,255,255,.05)',
-                border: isPrimary ? '1px solid transparent' : '1px solid rgba(255,255,255,.1)',
+                  ? 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))'
+                  : 'rgb(var(--fg-rgb) / 0.05)',
+                border: isPrimary ? '1px solid transparent' : '1px solid var(--border-hi)',
                 boxShadow: isPrimary ? '0 4px 20px rgba(49, 159, 212,0.25)' : 'none',
               }}
             >
@@ -273,7 +273,7 @@ export default function Capabilities() {
         style={{
           background: 'rgba(16,185,129,0.14)',
           border: '1px solid rgba(16,185,129,0.3)',
-          color: '#34d399',
+          color: 'var(--ok-text)',
         }}
       >
         {language === 'ar' ? capability.badgeAr : capability.badge}
@@ -308,7 +308,7 @@ export default function Capabilities() {
             </div>
 
             <h2
-              className="text-white font-bold text-center leading-tight tracking-tight mb-4"
+              className="text-strong font-bold text-center leading-tight tracking-tight mb-4"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -318,7 +318,7 @@ export default function Capabilities() {
               {t.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
+                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -329,7 +329,7 @@ export default function Capabilities() {
             </h2>
 
             <p
-              className="text-slate-400 text-center max-w-xl mx-auto leading-relaxed"
+              className="text-muted text-center max-w-xl mx-auto leading-relaxed"
               style={{ fontSize: 17 }}
             >
               {t.sectionSubtitle}
@@ -352,10 +352,10 @@ export default function Capabilities() {
                     style={{
                       background: isActive
                         ? 'rgba(49, 159, 212,0.12)'
-                        : 'rgba(255,255,255,0.03)',
+                        : 'rgb(var(--fg-rgb) / 0.03)',
                       border: isActive
                         ? '1px solid rgba(49, 159, 212,0.35)'
-                        : '1px solid rgba(255,255,255,0.07)',
+                        : '1px solid var(--border)',
                     }}
                   >
                     <div
@@ -363,16 +363,16 @@ export default function Capabilities() {
                       style={{
                         background: isActive
                           ? 'rgba(49, 159, 212,0.18)'
-                          : 'rgba(255,255,255,0.05)',
+                          : 'rgb(var(--fg-rgb) / 0.05)',
                       }}
                     >
-                      <span style={{ color: isActive ? '#5fb8e8' : '#94a3b8' }}>
+                      <span style={{ color: isActive ? 'var(--accent-hi)' : 'var(--text-muted)' }}>
                         {capability.icon}
                       </span>
                     </div>
                     <span
                       className="font-medium flex-1 flex items-center gap-2"
-                      style={{ color: isActive ? '#f1f5f9' : '#cbd5e1' }}
+                      style={{ color: isActive ? 'var(--text-strong)' : 'var(--text-soft)' }}
                     >
                       {language === 'ar' ? capability.titleAr : capability.title}
                       {renderBadge(capability)}
@@ -382,7 +382,7 @@ export default function Capabilities() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      style={{ color: isActive ? '#5fb8e8' : '#64748b' }}
+                      style={{ color: isActive ? 'var(--accent-hi)' : 'var(--text-faint)' }}
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -393,9 +393,9 @@ export default function Capabilities() {
                     hidden={!isActive}
                     className="mt-2 rounded-2xl overflow-hidden"
                     style={{
-                      background: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(255,255,255,0.07)',
-                      boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
+                      background: 'var(--surface)',
+                      border: '1px solid var(--border)',
+                      boxShadow: '0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
                     }}
                   >
                     {/* Media only for the open item; the text below is always in the HTML. */}
@@ -408,7 +408,7 @@ export default function Capabilities() {
                           isRTL={isRTL}
                         />
                       ) : (
-                        <div className="relative aspect-[2/1] overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}>
+                        <div className="relative aspect-[2/1] overflow-hidden" style={{ background: 'var(--media-bg)' }}>
                           <Image
                             src={capability.image}
                             alt={language === 'ar' ? capability.titleAr : capability.title}
@@ -421,7 +421,7 @@ export default function Capabilities() {
                         </div>
                       ))}
                     <div className="p-4">
-                      <p className="text-slate-300 leading-relaxed text-sm">
+                      <p className="text-soft leading-relaxed text-sm">
                         {language === 'ar' ? capability.descriptionAr : capability.description}
                       </p>
                       {renderCtas(capability.ctas)}
@@ -447,7 +447,7 @@ export default function Capabilities() {
                     {/* Copy */}
                     <div className="col-span-5 flex flex-col h-full min-h-0">
                       <p
-                        className="text-slate-300 leading-relaxed overflow-y-auto"
+                        className="text-soft leading-relaxed overflow-y-auto"
                         style={{ fontSize: 14.5 }}
                       >
                         {language === 'ar'
@@ -462,8 +462,8 @@ export default function Capabilities() {
                       <div
                         className="w-full rounded-xl overflow-hidden"
                         style={{
-                          background: 'rgba(255,255,255,0.03)',
-                          border: '1px solid rgba(255,255,255,0.07)',
+                          background: 'var(--surface)',
+                          border: '1px solid var(--border)',
                         }}
                       >
                         {capability.slides ? (
@@ -476,7 +476,7 @@ export default function Capabilities() {
                         ) : (
                           <div
                             className="relative aspect-[2/1] overflow-hidden"
-                            style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)' }}
+                            style={{ background: 'var(--media-bg)' }}
                           >
                             <Image
                               src={capability.image}

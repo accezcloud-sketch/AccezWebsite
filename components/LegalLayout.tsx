@@ -117,14 +117,14 @@ export default function LegalLayout({
           style={{
             height: '100%',
             background:
-              'radial-gradient(120% 70% at 50% 0%, #18384A 0%, rgba(24,56,74,0.3) 30%, transparent 62%)',
+              'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)',
           }}
           aria-hidden="true"
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="mx-auto" style={{ maxWidth: 820 }}>
             <h1
-              className="text-white font-bold tracking-tight mb-4"
+              className="text-strong font-bold tracking-tight mb-4"
               style={{
                 fontSize: 'clamp(30px, 4.5vw, 46px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -171,10 +171,10 @@ export default function LegalLayout({
               className="mb-10 sticky z-20 rounded-xl overflow-hidden"
               style={{
                 top: 'calc(var(--nav-h) + 12px)',
-                background: 'rgba(13, 23, 35, 0.97)',
+                background: 'var(--panel)',
                 border: '1px solid var(--border-hi)',
                 backdropFilter: 'blur(20px)',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.28)',
+                boxShadow: '0 10px 30px rgb(var(--shadow-rgb) / calc(0.28 * var(--shadow-k)))',
               }}
             >
               <p
@@ -235,13 +235,13 @@ export default function LegalLayout({
               className="mt-16 pt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm"
               style={{ borderTop: '1px solid var(--border)' }}
             >
-              <a href={localeHref('/terms', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
+              <a href={localeHref('/terms', language)} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
                 {L.terms}
               </a>
-              <a href={localeHref('/privacy', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
+              <a href={localeHref('/privacy', language)} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
                 {L.privacy}
               </a>
-              <a href={localeHref('/refund-policy', language)} className="hover:text-white transition-colors" style={{ color: 'var(--text-muted)' }}>
+              <a href={localeHref('/refund-policy', language)} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
                 {L.refund}
               </a>
             </nav>
@@ -273,7 +273,7 @@ export function LegalSectionBlock({
   return (
     <section id={id} data-for={audience} className="scroll-mt-28 mb-14">
       <h2
-        className="text-white font-bold tracking-tight mb-4"
+        className="text-strong font-bold tracking-tight mb-4"
         style={{
           fontSize: 'clamp(20px, 2.4vw, 26px)',
           fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',

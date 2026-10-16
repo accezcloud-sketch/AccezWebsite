@@ -9,6 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Theme-aware roles (see app/globals.css). Use these instead of
+        // fixed colours like text-white / text-slate-400.
+        strong: 'var(--text-strong)',
+        body: 'var(--text)',
+        soft: 'var(--text-soft)',
+        muted: 'var(--text-muted)',
+        faint: 'var(--text-faint)',
+        'accent-hi': 'var(--accent-hi)',
+        line: 'var(--border)',
+        'line-hi': 'var(--border-hi)',
         primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',

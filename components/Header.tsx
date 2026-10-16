@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import ThemeToggle from '@/components/ThemeToggle'
 import { localeHref } from '@/lib/i18n'
 import { PORTAL_LOGIN, PROVIDER_LOGIN } from '@/lib/links'
 
@@ -64,8 +65,8 @@ export default function Header() {
   ]
 
   const linkClass = [
-    'text-sm font-medium transition-colors duration-200 hover:text-white',
-    scrolled ? 'text-slate-300' : 'text-slate-400',
+    'text-sm font-medium transition-colors duration-200 hover:text-strong',
+    scrolled ? 'text-soft' : 'text-muted',
   ].join(' ')
 
   const openProduct = () => {
@@ -93,10 +94,10 @@ export default function Header() {
         scrolled ? 'border-b border-white/[0.08]' : 'border-b border-transparent',
       ].join(' ')}
       style={{
-        backgroundColor: scrolled ? 'rgba(9, 19, 28, 0.82)' : 'transparent',
+        backgroundColor: scrolled ? 'var(--glass)' : 'transparent',
         backdropFilter: scrolled ? 'blur(16px) saturate(180%)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(16px) saturate(180%)' : 'none',
-        boxShadow: scrolled ? '0 1px 0 rgba(255,255,255,0.05), 0 4px 24px rgba(0,0,0,0.3)' : 'none',
+        boxShadow: scrolled ? '0 1px 0 rgb(var(--fg-rgb) / 0.05), 0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))' : 'none',
       }}
     >
       <div className="container mx-auto px-4">
@@ -106,7 +107,7 @@ export default function Header() {
             href={localeHref("/", language)}
             prefetch={false}
             aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'}
-            className="flex items-center gap-2 text-2xl font-bold text-white rounded-lg hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+            className="flex items-center gap-2 text-2xl font-bold text-strong rounded-lg hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
             style={{ transition: 'opacity 0.3s ease', opacity: atTop ? 0.9 : 1 }}
           >
             <Image src="/images/accez-logo.png" alt="Accez Logo" width={32} height={32} className="rounded-lg" />
@@ -146,9 +147,9 @@ export default function Header() {
                   <div
                     className="w-[320px] rounded-2xl overflow-hidden p-2"
                     style={{
-                      background: 'rgba(13, 23, 35, 0.97)',
+                      background: 'var(--panel)',
                       border: '1px solid var(--border-hi)',
-                      boxShadow: '0 20px 48px rgba(0,0,0,0.5)',
+                      boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))',
                       backdropFilter: 'blur(20px)',
                     }}
                   >
@@ -162,7 +163,7 @@ export default function Header() {
                         onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--surface-hi)')}
                         onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
                       >
-                        <span className="block text-sm font-semibold text-white">{language === 'ar' ? m.nameAr : m.name}</span>
+                        <span className="block text-sm font-semibold text-strong">{language === 'ar' ? m.nameAr : m.name}</span>
                         <span className="block text-xs mt-0.5" style={{ color: 'var(--text-faint)' }}>{language === 'ar' ? m.descAr : m.desc}</span>
                       </a>
                     ))}
@@ -219,9 +220,9 @@ export default function Header() {
                     <div
                       className="w-[320px] rounded-2xl overflow-hidden p-2"
                       style={{
-                        background: 'rgba(13, 23, 35, 0.97)',
+                        background: 'var(--panel)',
                         border: '1px solid var(--border-hi)',
-                        boxShadow: '0 20px 48px rgba(0,0,0,0.5)',
+                        boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))',
                         backdropFilter: 'blur(20px)',
                       }}
                     >
@@ -235,7 +236,7 @@ export default function Header() {
                           onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--surface-hi)')}
                           onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
                         >
-                          <span className="block text-sm font-semibold text-white">{language === 'ar' ? m.nameAr : m.name}</span>
+                          <span className="block text-sm font-semibold text-strong">{language === 'ar' ? m.nameAr : m.name}</span>
                           <span className="block text-xs mt-0.5" style={{ color: 'var(--text-faint)' }}>{language === 'ar' ? m.descAr : m.desc}</span>
                         </a>
                       ))}
@@ -248,6 +249,7 @@ export default function Header() {
 
           {/* Right side - Language Toggle & CTA */}
           <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle language={language} />
             <button onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')} className={linkClass}>
               {language === 'en' ? 'العربية' : 'English'}
             </button>
@@ -284,19 +286,19 @@ export default function Header() {
                     <div
                       className="rounded-2xl p-2"
                       style={{
-                        // Opaque. --surface is rgba(255,255,255,.035), which is
+                        // Opaque. --surface is rgb(var(--fg-rgb) / 0.035), which is
                         // near-transparent and let page text bleed through the menu.
-                        background: '#111C26',
+                        background: 'var(--panel)',
                         border: '1px solid var(--border-hi)',
-                        boxShadow: '0 24px 48px -12px rgba(0,0,0,.7), 0 0 0 1px rgba(0,0,0,.4)',
+                        boxShadow: '0 24px 48px -12px rgb(var(--shadow-rgb) / calc(0.7 * var(--shadow-k))), 0 0 0 1px rgb(var(--shadow-rgb) / calc(0.4 * var(--shadow-k)))',
                       }}
                     >
-                      <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white/5">
-                        <span className="block text-sm font-semibold text-white">{t.header.signInPM}</span>
+                      <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-[rgb(var(--fg-rgb)/0.05)]">
+                        <span className="block text-sm font-semibold text-strong">{t.header.signInPM}</span>
                         <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{t.header.signInPMDesc}</span>
                       </a>
-                      <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white/5">
-                        <span className="block text-sm font-semibold text-white">{t.header.signInSP}</span>
+                      <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" className="block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-[rgb(var(--fg-rgb)/0.05)]">
+                        <span className="block text-sm font-semibold text-strong">{t.header.signInSP}</span>
                         <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{t.header.signInSPDesc}</span>
                       </a>
                       </div>
@@ -309,7 +311,7 @@ export default function Header() {
               href={localeHref("/#contact", language)}
               prefetch={false}
               className="px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: 'var(--accent)', boxShadow: scrolled ? '0 6px 20px rgba(49,159,212,0.25)' : 'none' }}
+              style={{ background: 'var(--accent-solid)', boxShadow: scrolled ? '0 6px 20px rgba(49,159,212,0.25)' : 'none' }}
             >
               {t.header.bookDemo}
             </Link>
@@ -317,10 +319,11 @@ export default function Header() {
 
           {/* Mobile - Language Toggle & Menu Button */}
           <div className="lg:hidden flex items-center gap-2">
-            <button onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')} className="p-2 text-slate-300 hover:text-white font-medium transition-colors duration-200">
+            <ThemeToggle language={language} />
+            <button onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')} className="p-2 text-soft hover:text-strong font-medium transition-colors duration-200">
               {language === 'en' ? 'العربية' : 'EN'}
             </button>
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 text-slate-300 hover:text-white" aria-label="Toggle menu">
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 text-soft hover:text-strong" aria-label="Toggle menu">
               {isMobileMenuOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
               ) : (
@@ -340,14 +343,14 @@ export default function Header() {
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.28, ease: [0.21, 0.47, 0.32, 0.98] }}
               className="lg:hidden overflow-hidden"
-              style={{ backgroundColor: 'rgba(9,19,28,0.98)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderBottom: '1px solid rgba(255,255,255,0.08)' }}
+              style={{ backgroundColor: 'var(--panel)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderBottom: '1px solid var(--border)' }}
             >
               <nav className="flex flex-col gap-1 py-4 px-2">
                 {/* Product group (collapsible) */}
                 <button
                   type="button"
                   onClick={() => setMobileProductOpen((v) => !v)}
-                  className="flex items-center justify-between text-slate-300 hover:text-white font-medium transition-colors duration-200 py-2"
+                  className="flex items-center justify-between text-soft hover:text-strong font-medium transition-colors duration-200 py-2"
                   aria-expanded={mobileProductOpen}
                 >
                   {t.header.product}
@@ -359,7 +362,7 @@ export default function Header() {
                   {mobileProductOpen && (
                     <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden ps-3 flex flex-col gap-1 border-s" style={{ borderColor: 'var(--border)' }}>
                       {PRODUCT_MENU.map((m) => (
-                        <a key={m.href} href={localeHref(m.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-400 hover:text-white text-sm py-1.5 transition-colors">
+                        <a key={m.href} href={localeHref(m.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-muted hover:text-strong text-sm py-1.5 transition-colors">
                           {language === 'ar' ? m.nameAr : m.name}
                         </a>
                       ))}
@@ -371,7 +374,7 @@ export default function Header() {
                 </AnimatePresence>
 
                 {navItems.map((item) => (
-                  <a key={item.name} href={localeHref(item.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-2">
+                  <a key={item.name} href={localeHref(item.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2">
                     {item.name}
                   </a>
                 ))}
@@ -380,7 +383,7 @@ export default function Header() {
                 <button
                   type="button"
                   onClick={() => setMobileResourcesOpen((v) => !v)}
-                  className="flex items-center justify-between text-slate-300 hover:text-white font-medium transition-colors duration-200 py-2"
+                  className="flex items-center justify-between text-soft hover:text-strong font-medium transition-colors duration-200 py-2"
                   aria-expanded={mobileResourcesOpen}
                 >
                   {language === 'ar' ? 'الموارد' : 'Resources'}
@@ -392,7 +395,7 @@ export default function Header() {
                   {mobileResourcesOpen && (
                     <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden ps-3 flex flex-col gap-1 border-s" style={{ borderColor: 'var(--border)' }}>
                       {RESOURCES_MENU.map((m) => (
-                        <a key={m.href} href={localeHref(m.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-400 hover:text-white text-sm py-1.5 transition-colors">
+                        <a key={m.href} href={localeHref(m.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-muted hover:text-strong text-sm py-1.5 transition-colors">
                           {language === 'ar' ? m.nameAr : m.name}
                         </a>
                       ))}
@@ -407,10 +410,10 @@ export default function Header() {
                   <p className="text-[0.7rem] uppercase tracking-wider pb-1" style={{ color: 'var(--text-muted)' }}>
                     {t.header.signIn}
                   </p>
-                  <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-1.5">
+                  <a href={PORTAL_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-1.5">
                     {t.header.signInPM}
                   </a>
-                  <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium transition-colors duration-200 py-1.5">
+                  <a href={PROVIDER_LOGIN} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-1.5">
                     {t.header.signInSP}
                   </a>
                 </div>
@@ -420,7 +423,7 @@ export default function Header() {
                   prefetch={false}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-5 py-2.5 text-white font-semibold rounded-lg transition-all duration-200 text-center mt-2"
-                  style={{ background: 'var(--accent)' }}
+                  style={{ background: 'var(--accent-solid)' }}
                 >
                   {t.header.bookDemo}
                 </Link>

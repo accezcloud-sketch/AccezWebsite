@@ -116,7 +116,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative overflow-hidden" style={{ background: '#060a14' }}>
+    <footer className="relative overflow-hidden" style={{ background: 'var(--bg-deep)' }}>
       {/* Top gradient border */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
@@ -150,7 +150,7 @@ export default function Footer() {
                   className="rounded-md"
                 />
                 <span
-                  className="font-bold text-white text-lg"
+                  className="font-bold text-strong text-lg"
                   style={{ fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif' }}
                 >
                   Accez.cloud
@@ -158,7 +158,7 @@ export default function Footer() {
               </Link>
 
               <p
-                className="text-slate-500 leading-relaxed max-w-xs"
+                className="text-faint leading-relaxed max-w-xs"
                 style={{ fontSize: 14 }}
               >
                 {t.footer.description}
@@ -172,10 +172,10 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center text-slate-500 transition-all duration-200 hover:text-white hover:-translate-y-0.5"
+                    className="w-9 h-9 rounded-xl flex items-center justify-center text-faint transition-all duration-200 hover:text-strong hover:-translate-y-0.5"
                     style={{
-                      background: 'rgba(255,255,255,0.04)',
-                      border: '1px solid rgba(255,255,255,0.07)',
+                      background: 'var(--surface)',
+                      border: '1px solid var(--border)',
                     }}
                   >
                     {svg}
@@ -188,7 +188,7 @@ export default function Footer() {
             {columns.map(({ heading, links }) => (
               <div key={heading} className="flex flex-col gap-4">
                 <h4
-                  className="text-white text-sm font-semibold"
+                  className="text-strong text-sm font-semibold"
                   style={{ letterSpacing: '-0.01em' }}
                 >
                   {heading}
@@ -199,10 +199,10 @@ export default function Footer() {
                       <a
                         href={external ? href : localeHref(href, language)}
                         {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                        className="text-slate-500 text-sm transition-colors duration-150 hover:text-slate-300 inline-flex items-center gap-1 group"
+                        className="text-faint text-sm transition-colors duration-150 hover:text-soft inline-flex items-center gap-1 group"
                       >
                         <span
-                          className="opacity-0 group-hover:opacity-100 transition-opacity text-[#7FCDEF] -ms-3 group-hover:ms-0 duration-200"
+                          className="opacity-0 group-hover:opacity-100 transition-opacity text-accent-hi -ms-3 group-hover:ms-0 duration-200"
                           aria-hidden="true"
                         >
                           ›
@@ -218,32 +218,32 @@ export default function Footer() {
 
           {/* Bottom bar */}
           <div
-            className="flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-xs text-slate-600 border-t"
-            style={{ borderColor: 'rgba(255,255,255,0.06)' }}
+            className="flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-xs text-faint border-t"
+            style={{ borderColor: 'var(--border)' }}
           >
             <div className="text-center sm:text-start">
               <p>
                 &copy; {currentYear} Accez.cloud. {t.footer.allRightsReserved}
               </p>
-              <p className="mt-1 text-slate-700">{t.footer.companyInfo}</p>
+              <p className="mt-1 text-faint">{t.footer.companyInfo}</p>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <div className="flex items-center gap-1.5">
-                <span className="text-slate-600">🌐</span>
+                <span className="text-faint">🌐</span>
                 <button
                   onClick={() => setLanguage('en')}
                   className={`transition-colors duration-150 ${
-                    language === 'en' ? 'text-slate-300' : 'hover:text-slate-400'
+                    language === 'en' ? 'text-soft' : 'hover:text-muted'
                   }`}
                 >
                   English
                 </button>
-                <span className="text-slate-700">·</span>
+                <span className="text-faint">·</span>
                 <button
                   onClick={() => setLanguage('ar')}
                   className={`transition-colors duration-150 ${
-                    language === 'ar' ? 'text-slate-300' : 'hover:text-slate-400'
+                    language === 'ar' ? 'text-soft' : 'hover:text-muted'
                   }`}
                   dir="rtl"
                 >

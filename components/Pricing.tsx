@@ -44,9 +44,9 @@ const PLANS: PlanConfig[] = [
     highlight: false,
     showLaunchDiscount: false,
     accentColor: '#319fd4',
-    borderColor: 'rgba(255,255,255,0.07)',
-    bgColor: 'rgba(255,255,255,0.02)',
-    glowShadow: '0 1px 3px rgba(0,0,0,0.2)',
+    borderColor: 'var(--border)',
+    bgColor: 'var(--surface)',
+    glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'startFree',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -72,9 +72,9 @@ const PLANS: PlanConfig[] = [
     highlight: false,
     showLaunchDiscount: true,
     accentColor: '#319fd4',
-    borderColor: 'rgba(255,255,255,0.07)',
-    bgColor: 'rgba(255,255,255,0.02)',
-    glowShadow: '0 1px 3px rgba(0,0,0,0.2)',
+    borderColor: 'var(--border)',
+    bgColor: 'var(--surface)',
+    glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -102,7 +102,7 @@ const PLANS: PlanConfig[] = [
     accentColor: '#319fd4',
     borderColor: 'rgba(49, 159, 212,0.4)',
     bgColor: 'rgba(49, 159, 212,0.06)',
-    glowShadow: '0 0 0 1px rgba(49, 159, 212,0.2), 0 20px 60px rgba(49, 159, 212,0.2), 0 4px 16px rgba(0,0,0,0.3)',
+    glowShadow: '0 0 0 1px rgba(49, 159, 212,0.2), 0 20px 60px rgba(49, 159, 212,0.2), 0 4px 16px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
     ctaStyle: 'primary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -129,9 +129,9 @@ const PLANS: PlanConfig[] = [
     highlight: false,
     showLaunchDiscount: false,
     accentColor: '#319fd4',
-    borderColor: 'rgba(255,255,255,0.07)',
-    bgColor: 'rgba(255,255,255,0.02)',
-    glowShadow: '0 1px 3px rgba(0,0,0,0.2)',
+    borderColor: 'var(--border)',
+    bgColor: 'var(--surface)',
+    glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'contactSales',
     ctaHref: '#contact',
@@ -207,7 +207,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
 
             {/* Main heading */}
             <Heading
-              className="text-white font-bold text-center leading-tight tracking-tight mb-3"
+              className="text-strong font-bold text-center leading-tight tracking-tight mb-3"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -217,7 +217,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
               {tp.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
+                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -229,7 +229,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
 
             {/* Subtitle */}
             <p
-              className="text-slate-400 text-center max-w-lg mx-auto mb-10 leading-relaxed"
+              className="text-muted text-center max-w-lg mx-auto mb-10 leading-relaxed"
               style={{ fontSize: 17 }}
             >
               {tp.newSubtitle}
@@ -239,7 +239,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
             <div className="flex items-center justify-center gap-4 mb-12">
               <span
                 className="text-sm font-medium transition-colors duration-200"
-                style={{ color: !isYearly ? '#f1f5f9' : '#64748b' }}
+                style={{ color: !isYearly ? 'var(--text-strong)' : 'var(--text-faint)' }}
               >
                 {tp.monthly}
               </span>
@@ -249,9 +249,9 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                 className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                 style={{
                   background: isYearly
-                    ? 'linear-gradient(135deg, #319fd4, #2678a6)'
-                    : 'rgba(255,255,255,0.1)',
-                  border: '1px solid rgba(255,255,255,0.12)',
+                    ? 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))'
+                    : 'rgb(var(--fg-rgb) / 0.1)',
+                  border: '1px solid var(--border-hi)',
                   transition: 'background 0.3s ease',
                 }}
                 role="switch"
@@ -267,7 +267,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
 
               <span
                 className="text-sm font-medium transition-colors duration-200"
-                style={{ color: isYearly ? '#f1f5f9' : '#64748b' }}
+                style={{ color: isYearly ? 'var(--text-strong)' : 'var(--text-faint)' }}
               >
                 {tp.yearly}
               </span>
@@ -333,12 +333,12 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                     {/* Plan name + description */}
                     <div>
                       <h3
-                        className="font-bold text-white mb-1.5"
+                        className="font-bold text-strong mb-1.5"
                         style={{ fontSize: 18 }}
                       >
                         {getText(plan.nameKey)}
                       </h3>
-                      <p className="text-slate-400 text-sm leading-relaxed">
+                      <p className="text-muted text-sm leading-relaxed">
                         {getText(plan.descKey)}
                       </p>
                     </div>
@@ -346,7 +346,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                     {/* Price */}
                     <div>
                       {!isCustom && pricing.originalPrice && (
-                        <div className="text-slate-500 line-through text-base mb-1">
+                        <div className="text-faint line-through text-base mb-1">
                           {formatPrice(pricing.originalPrice)}
                         </div>
                       )}
@@ -354,7 +354,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                         {!isCustom ? (
                           <>
                             <span
-                              className="text-white font-bold leading-none"
+                              className="text-strong font-bold leading-none"
                               style={{ fontSize: 'clamp(36px, 5vw, 48px)' }}
                             >
                               {/* initial={false}: the first price is in the static HTML, visible;
@@ -372,13 +372,13 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                                 </motion.span>
                               </AnimatePresence>
                             </span>
-                            <span className="text-slate-500 text-sm mb-1.5 leading-none">
+                            <span className="text-faint text-sm mb-1.5 leading-none">
                               {periodLabel}
                             </span>
                           </>
                         ) : (
                           <span
-                            className="font-bold text-white leading-none"
+                            className="font-bold text-strong leading-none"
                             style={{ fontSize: 'clamp(28px, 4vw, 36px)' }}
                           >
                             {tp.tailored}
@@ -409,14 +409,14 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                       style={
                         plan.ctaStyle === 'primary'
                           ? {
-                              background: 'linear-gradient(135deg, #319fd4, #2678a6)',
-                              color: '#fff',
+                              background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
+                              color: 'var(--on-accent)',
                               boxShadow: '0 4px 20px rgba(49, 159, 212,0.35)',
                             }
                           : {
-                              background: 'rgba(255,255,255,0.05)',
-                              border: '1px solid rgba(255,255,255,0.1)',
-                              color: '#cbd5e1',
+                              background: 'var(--surface-hi)',
+                              border: '1px solid var(--border-hi)',
+                              color: 'var(--text-soft)',
                             }
                       }
                     >
@@ -441,7 +441,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                     {/* Divider */}
                     <div
                       className="h-px w-full"
-                      style={{ background: 'rgba(255,255,255,0.06)' }}
+                      style={{ background: 'var(--surface-hi)' }}
                     />
 
                     {/* Feature list */}
@@ -459,17 +459,17 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                             <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
                               <path
                                 d="M1.5 4.5l2 2 4-4"
-                                stroke="#7fcdef"
+                                stroke="var(--accent-hi)"
                                 strokeWidth="1.4"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                               />
                             </svg>
                           </span>
-                          <span className="text-slate-300 text-sm leading-snug">
+                          <span className="text-soft text-sm leading-snug">
                             {feature.highlight ? (
                               <>
-                                <strong className="text-white">{getText(feature.textKey)}</strong>
+                                <strong className="text-strong">{getText(feature.textKey)}</strong>
                                 {feature.suffixKey && <span> {getText(feature.suffixKey)}</span>}
                               </>
                             ) : (
@@ -486,18 +486,18 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                         >
                           <span
                             className="mt-0.5 w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0"
-                            style={{ background: 'rgba(255,255,255,0.05)' }}
+                            style={{ background: 'var(--surface-hi)' }}
                           >
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
                               <path
                                 d="M2 2l4 4M6 2L2 6"
-                                stroke="#64748b"
+                                stroke="var(--text-faint)"
                                 strokeWidth="1.4"
                                 strokeLinecap="round"
                               />
                             </svg>
                           </span>
-                          <span className="text-slate-500 text-sm leading-snug line-through">
+                          <span className="text-faint text-sm leading-snug line-through">
                             {getText(feature.textKey)}
                           </span>
                         </li>

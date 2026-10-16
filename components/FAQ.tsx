@@ -199,7 +199,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
             </div>
 
             <Heading
-              className="text-white font-bold text-center leading-tight tracking-tight mb-4"
+              className="text-strong font-bold text-center leading-tight tracking-tight mb-4"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -209,7 +209,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
               {tf.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
+                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -220,13 +220,13 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
             </Heading>
 
             <p
-              className="text-slate-400 text-center leading-relaxed"
+              className="text-muted text-center leading-relaxed"
               style={{ fontSize: 17 }}
             >
               {tf.helpText}{' '}
               <a
                 href="#contact"
-                className="text-[#7FCDEF] hover:text-[#A9DDF3] underline underline-offset-2 transition-colors"
+                className="text-accent-hi hover:text-strong underline underline-offset-2 transition-colors"
               >
                 {tf.helpLink}
               </a>
@@ -251,9 +251,9 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                         color: 'var(--accent-hi)',
                       }
                     : {
-                        background: 'rgba(255,255,255,0.04)',
-                        border: '1px solid rgba(255,255,255,0.08)',
-                        color: '#94a3b8',
+                        background: 'var(--surface)',
+                        border: '1px solid var(--border)',
+                        color: 'var(--text-muted)',
                       }
                 }
               >
@@ -271,15 +271,15 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                   <div
                     className="rounded-xl overflow-hidden transition-all duration-200"
                     style={{
-                      background: isOpen ? 'rgba(49, 159, 212,0.06)' : 'rgba(255,255,255,0.03)',
+                      background: isOpen ? 'rgba(49, 159, 212,0.06)' : 'rgb(var(--fg-rgb) / 0.03)',
                       border: isOpen
                         ? '1px solid rgba(49, 159, 212,0.25)'
-                        : '1px solid rgba(255,255,255,0.07)',
+                        : '1px solid var(--border)',
                     }}
                   >
                     <button
                       onClick={() => setOpenIndex(isOpen ? null : index)}
-                      className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left transition-colors duration-200 hover:bg-white/[0.02]"
+                      className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left transition-colors duration-200 hover:bg-[rgb(var(--fg-rgb)/0.03)]"
                       aria-expanded={isOpen}
                       aria-controls={`faq-answer-${index}`}
                     >
@@ -289,7 +289,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                           style={{ background: '#319fd4' }}
                         />
                         <span
-                          className="font-medium text-white leading-snug"
+                          className="font-medium text-strong leading-snug"
                           style={{ fontSize: 15 }}
                         >
                           {language === 'ar' ? faq.questionAr : faq.question}
@@ -299,7 +299,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                       <motion.span
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
-                        className="flex-shrink-0 text-slate-500"
+                        className="flex-shrink-0 text-faint"
                       >
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path
@@ -329,7 +329,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                     >
                       <div className={`pb-5 pt-1 ${isRTL ? 'pr-11 pl-5' : 'pl-11 pr-5'}`}>
                         <p
-                          className="text-slate-400 leading-relaxed"
+                          className="text-muted leading-relaxed"
                           style={{ fontSize: 14.5 }}
                         >
                           {language === 'ar' ? faq.answerAr : faq.answer}
@@ -352,7 +352,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
               }}
             >
               <div className="text-center sm:text-start">
-                <p className="text-white font-semibold text-sm">
+                <p className="text-strong font-semibold text-sm">
                   {tf.bottomCtaTitle}
                 </p>
               </div>
@@ -360,7 +360,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 href="#contact"
                 className="w-full sm:w-auto flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: 'linear-gradient(135deg, #319fd4, #2678a6)',
+                  background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
                   boxShadow: '0 4px 16px rgba(49, 159, 212,0.3)',
                 }}
               >

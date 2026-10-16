@@ -70,15 +70,16 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
 
   if (!post) {
     return (
-      <main className="min-h-screen bg-gray-50">
+      <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
         <Header />
         <div className="container mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t.notFound}</h1>
-          <p className="text-gray-600 mb-8">{t.notFoundDesc}</p>
+          <h1 className="text-4xl font-bold text-strong mb-4">{t.notFound}</h1>
+          <p className="text-muted mb-8">{t.notFoundDesc}</p>
           <Link
             href={localeHref("/blog", language)}
             prefetch={false}
-            className="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-200"
+            className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5"
+            style={{ background: 'var(--accent-solid)' }}
           >
             {t.backToBlog}
           </Link>
@@ -115,13 +116,13 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
                 href={localeHref(`/blog/topic/${post.topic}`, language)}
                 prefetch={false}
                 className="text-white text-sm px-4 py-1 rounded-full font-medium"
-                style={{ background: 'var(--accent)' }}
+                style={{ background: 'var(--accent-solid)' }}
               >
                 {topicLabel(post.topic, language)}
               </Link>
             </div>
 
-            <h1 className="text-white font-bold mb-6 tracking-tight" style={{ fontSize: 'clamp(28px, 4.5vw, 44px)', lineHeight: 1.15, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+            <h1 className="text-strong font-bold mb-6 tracking-tight" style={{ fontSize: 'clamp(28px, 4.5vw, 44px)', lineHeight: 1.15, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
               {language === 'ar' ? post.titleAr : post.title}
             </h1>
 

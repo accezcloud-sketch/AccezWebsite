@@ -16,7 +16,7 @@ export default function TableOfContents({ toc, locale }: { toc: TocEntry[]; loca
 
   return (
     <details className="toc mb-10 rounded-xl" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
-      <summary className="cursor-pointer select-none px-5 py-4 font-semibold text-white">{LABEL[locale]}</summary>
+      <summary className="cursor-pointer select-none px-5 py-4 font-semibold text-strong">{LABEL[locale]}</summary>
       <nav aria-label={LABEL[locale]} className="px-5 pb-4">
         <ol className="space-y-2 list-decimal ps-5" style={{ color: 'var(--text-muted)' }}>
           {sections.map((h) => (

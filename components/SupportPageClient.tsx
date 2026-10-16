@@ -72,7 +72,7 @@ export default function SupportPage() {
   }, [])
 
   const fieldClass =
-    'w-full px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-white focus:ring-2'
+    'w-full px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-strong focus:ring-2'
   const fieldStyle = {
     background: 'var(--bg)',
     borderColor: 'var(--border-hi)',
@@ -87,14 +87,14 @@ export default function SupportPage() {
       <Header />
 
       <section className="relative overflow-hidden page-top pb-20">
-        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '60%', background: 'radial-gradient(120% 70% at 50% 0%, #18384A 0%, rgba(24,56,74,0.3) 30%, transparent 62%)' }} aria-hidden="true" />
+        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '60%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-10">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
                 {t.eyebrow}
               </span>
-              <h1 className="text-white font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+              <h1 className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
                 {t.title}
               </h1>
               <p className="leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
@@ -111,11 +111,11 @@ export default function SupportPage() {
                 <input type="hidden" name="retURL" value={thankYouUrl('support', language)} />
 
                 <div>
-                  <label htmlFor="name" className={labelClass} style={labelStyle}>{t.contactName} <span style={{ color: '#f87171' }}>*</span></label>
+                  <label htmlFor="name" className={labelClass} style={labelStyle}>{t.contactName} <span style={{ color: 'var(--danger)' }}>*</span></label>
                   <input id="name" maxLength={80} name="name" type="text" required placeholder={t.placeholders.name} className={fieldClass} style={fieldStyle} />
                 </div>
                 <div>
-                  <label htmlFor="email" className={labelClass} style={labelStyle}>{t.email} <span style={{ color: '#f87171' }}>*</span></label>
+                  <label htmlFor="email" className={labelClass} style={labelStyle}>{t.email} <span style={{ color: 'var(--danger)' }}>*</span></label>
                   <input id="email" maxLength={80} name="email" type="email" required placeholder={t.placeholders.email} className={fieldClass} style={fieldStyle} />
                 </div>
                 <div>
@@ -127,11 +127,11 @@ export default function SupportPage() {
                   <input id="company" maxLength={80} name="company" type="text" placeholder={t.placeholders.company} className={fieldClass} style={fieldStyle} />
                 </div>
                 <div>
-                  <label htmlFor="subject" className={labelClass} style={labelStyle}>{t.subject} <span style={{ color: '#f87171' }}>*</span></label>
+                  <label htmlFor="subject" className={labelClass} style={labelStyle}>{t.subject} <span style={{ color: 'var(--danger)' }}>*</span></label>
                   <input id="subject" maxLength={80} name="subject" type="text" required placeholder={t.placeholders.subject} className={fieldClass} style={fieldStyle} />
                 </div>
                 <div>
-                  <label htmlFor="description" className={labelClass} style={labelStyle}>{t.description} <span style={{ color: '#f87171' }}>*</span></label>
+                  <label htmlFor="description" className={labelClass} style={labelStyle}>{t.description} <span style={{ color: 'var(--danger)' }}>*</span></label>
                   <textarea id="description" name="description" rows={5} required placeholder={t.placeholders.description} className={`${fieldClass} resize-none`} style={fieldStyle} />
                 </div>
 
@@ -139,7 +139,7 @@ export default function SupportPage() {
                   <div className="g-recaptcha" data-sitekey="6LdtnJAqAAAAAJe1H98R4i-d0Ge3hiGZUTWS3btY" />
                 </div>
 
-                <button type="submit" className="w-full py-3.5 text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent)' }}>
+                <button type="submit" className="w-full py-3.5 text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent-solid)' }}>
                   {t.submit}
                 </button>
               </form>

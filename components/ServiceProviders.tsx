@@ -192,7 +192,7 @@ export default function ServiceProviders() {
           transform: translateY(-6px);
           border-color: color-mix(in srgb, var(--accent) 20%, transparent);
           box-shadow:
-            0 12px 40px rgba(0,0,0,0.3),
+            0 12px 40px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k))),
             0 0 0 1px color-mix(in srgb, var(--accent) 13%, transparent);
         }
         .sp-card:hover .sp-icon-box { transform: scale(1.08); }
@@ -243,7 +243,7 @@ export default function ServiceProviders() {
             </div>
 
             <h2
-              className="text-white font-bold text-center leading-tight tracking-tight"
+              className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -253,7 +253,7 @@ export default function ServiceProviders() {
               {t.titleLead}{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #7fcdef, #5fb8e8)',
+                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -264,7 +264,7 @@ export default function ServiceProviders() {
             </h2>
 
             <p
-              className="text-slate-400 text-center max-w-2xl mx-auto mt-4 leading-relaxed"
+              className="text-muted text-center max-w-2xl mx-auto mt-4 leading-relaxed"
               style={{ fontSize: 17 }}
             >
               {t.subtitle}
@@ -279,7 +279,7 @@ export default function ServiceProviders() {
           {/* Left: how it works + CTAs */}
           <FadeUp delay={0.1}>
             <h3
-              className="text-white font-semibold mb-6"
+              className="text-strong font-semibold mb-6"
               style={{
                 fontSize: 20,
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -320,7 +320,7 @@ export default function ServiceProviders() {
                         >
                           {String(index + 1).padStart(2, '0')}
                         </span>
-                        <h4 className="text-white font-semibold" style={{ fontSize: 16 }}>
+                        <h4 className="text-strong font-semibold" style={{ fontSize: 16 }}>
                           {step.title}
                         </h4>
                       </div>
@@ -340,7 +340,7 @@ export default function ServiceProviders() {
                 rel="noopener noreferrer"
                 className="sp-btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: 'var(--accent)',
+                  background: 'var(--accent-solid)',
                   fontSize: 15,
                 }}
               >
@@ -390,7 +390,7 @@ export default function ServiceProviders() {
                 style={{
                   background: 'var(--surface)',
                   border: '1px solid var(--border)',
-                  boxShadow: '0 20px 48px rgba(0,0,0,.5)',
+                  boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))',
                 }}
               >
                 <ImageCarousel
@@ -414,7 +414,7 @@ export default function ServiceProviders() {
         {/* ── Benefits ───────────────────────────────────────────────── */}
         <FadeUp delay={0.1}>
           <h3
-            className="text-white font-semibold text-center mt-20 mb-8"
+            className="text-strong font-semibold text-center mt-20 mb-8"
             style={{
               fontSize: 22,
               fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -448,7 +448,7 @@ export default function ServiceProviders() {
                   </div>
 
                   <div className="flex flex-col gap-2 flex-1">
-                    <h4 className="text-white font-semibold leading-snug" style={{ fontSize: 16 }}>
+                    <h4 className="text-strong font-semibold leading-snug" style={{ fontSize: 16 }}>
                       {benefit.title}
                     </h4>
                     <p className="leading-relaxed flex-1" style={{ fontSize: 14, color: 'var(--text-muted)' }}>
