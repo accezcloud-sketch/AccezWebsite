@@ -57,3 +57,31 @@ export function blogFiltersQuery(filters: Partial<BlogFilters>): string {
   const query = params.toString()
   return query ? `?${query}` : ''
 }
+
+export interface FilterablePost {
+  title: string
+  titleAr: string
+  excerpt: string
+  excerptAr: string
+  tags: string[]
+  topic: string
+}
+
+/** Applies the list's topic, tag and text filters. `null` / empty means "any". */
+export function filterPosts<P extends FilterablePost>(
+  posts: readonly P[],
+  { topic, tag, query }: { topic?: string | null; tag?: string | null; query?: string },
+): P[] {
+  const q = query?.trim() ?? ''
+  const qLower = q.toLowerCase()
+  return posts.filter(
+    (post) =>
+      (!topic || post.topic === topic) &&
+      (!tag || hasTag(post.tags, tag)) &&
+      (!q ||
+        post.title.toLowerCase().includes(qLower) ||
+        post.excerpt.toLowerCase().includes(qLower) ||
+        post.titleAr.includes(q) ||
+        post.excerptAr.includes(q)),
+  )
+}

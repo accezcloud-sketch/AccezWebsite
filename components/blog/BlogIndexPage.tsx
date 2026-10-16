@@ -2,19 +2,25 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BlogListClient from '@/components/BlogListClient'
 import TopicNav from '@/components/blog/TopicNav'
+import Pagination from '@/components/blog/Pagination'
 import { getAllPosts, getAllTags, getPostsByTopic } from '@/lib/blog'
 import { BLOG_INDEX_COPY, blogIndexRoute } from '@/lib/content/blogIndex'
+import { pageCount, pageItems, pageRoute } from '@/lib/content/pagination'
+import { toPostCardData } from '@/lib/content/postCard'
 import { TOPICS, topicLabel, type TopicKey } from '@/lib/content/topics'
 import { localeUrl, type Locale } from '@/lib/i18n'
 
 /**
- * The blog index (all articles) or a topic hub, in either language. One
- * component for all four routes so they cannot drift apart.
+ * The blog index (all articles) or a topic hub, in either language, at any
+ * page. One component for every listing route so they cannot drift apart.
  */
-export default function BlogIndexPage({ locale, topic }: { locale: Locale; topic?: TopicKey }) {
+export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Locale; topic?: TopicKey; page?: number }) {
   const c = BLOG_INDEX_COPY[locale]
   const ar = locale === 'ar'
-  const posts = topic ? getPostsByTopic(topic) : getAllPosts()
+  const allPosts = topic ? getPostsByTopic(topic) : getAllPosts()
+  const totalPages = pageCount(allPosts.length)
+  const posts = pageItems(allPosts, page)
+  const base = blogIndexRoute(topic)
   const heading = topic ? topicLabel(topic, locale) : c.title
   const subtitle = topic ? c.topicSubtitle(topicLabel(topic, locale)) : c.subtitle
 
@@ -23,7 +29,7 @@ export default function BlogIndexPage({ locale, topic }: { locale: Locale; topic
     '@type': 'CollectionPage',
     name: heading,
     description: subtitle,
-    url: localeUrl(blogIndexRoute(topic), locale),
+    url: localeUrl(pageRoute(base, page), locale),
     inLanguage: ar ? 'ar' : 'en',
     mainEntity: {
       '@type': 'ItemList',
@@ -71,9 +77,11 @@ export default function BlogIndexPage({ locale, topic }: { locale: Locale; topic
 
       {/* Client component handles search and filters; all cards are in the initial HTML */}
       <BlogListClient
-        posts={posts}
+        posts={posts.map(toPostCardData)}
         topics={topic ? undefined : TOPICS.map((t) => ({ key: t.key, en: t.label.en, ar: t.label.ar }))}
         tags={getAllTags()}
+        scopeTopic={topic}
+        pagination={<Pagination base={base} page={page} total={totalPages} locale={locale} />}
       />
 
       <Footer />

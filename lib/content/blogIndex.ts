@@ -6,6 +6,7 @@
 import type { Metadata } from 'next'
 import { alternatesFor, localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
 import { topicLabel, type TopicKey } from './topics'
+import { pageRoute } from './pagination'
 
 export const BLOG_INDEX_COPY = {
   en: {
@@ -20,6 +21,7 @@ export const BLOG_INDEX_COPY = {
     browseByTopic: 'Browse by topic',
     allArticles: 'All articles',
     topicSubtitle: (topic: string) => `Articles on ${topic.toLowerCase()} for property operators in Saudi Arabia.`,
+    pageSuffix: (n: number) => ` – Page ${n}`,
   },
   ar: {
     eyebrow: 'المدونة',
@@ -33,6 +35,7 @@ export const BLOG_INDEX_COPY = {
     browseByTopic: 'تصفح حسب الموضوع',
     allArticles: 'كل المقالات',
     topicSubtitle: (topic: string) => `مقالات حول ${topic} لمشغّلي العقارات في السعودية.`,
+    pageSuffix: (n: number) => ` – الصفحة ${n}`,
   },
 } as const
 
@@ -41,11 +44,12 @@ export function blogIndexRoute(topic?: TopicKey): string {
   return topic ? `blog/topic/${topic}` : 'blog'
 }
 
-export function blogIndexMetadata(locale: Locale, topic?: TopicKey): Metadata {
+export function blogIndexMetadata(locale: Locale, topic?: TopicKey, page = 1): Metadata {
   const c = BLOG_INDEX_COPY[locale]
-  const route = blogIndexRoute(topic)
+  // Each page of a listing is its own canonical URL (Google's pagination guidance).
+  const route = pageRoute(blogIndexRoute(topic), page)
   const label = topic ? topicLabel(topic, locale) : null
-  const title = label ?? c.metaTitle
+  const title = (label ?? c.metaTitle) + (page > 1 ? c.pageSuffix(page) : '')
   const description = label ? c.topicSubtitle(label) : c.metaDescription
 
   return {

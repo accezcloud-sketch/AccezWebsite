@@ -1,24 +1,30 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, type ReactNode } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { type BlogPostMeta } from '@/lib/blog'
+import type { PostCardData } from '@/lib/content/postCard'
+import { useSearchIndex } from '@/components/blog/useSearchIndex'
 import Select from '@/components/ui/Select'
 import PostCard from '@/components/blog/PostCard'
 import { useBlogFiltersInUrl } from '@/components/blog/useBlogFiltersInUrl'
-import { hasTag } from '@/lib/content/blogFilters'
+import { filterPosts } from '@/lib/content/blogFilters'
 import { formatReadingTime } from '@/lib/content/readingTime'
 import { topicLabel } from '@/lib/content/topics'
 import { localeHref } from '@/lib/i18n'
 
 interface BlogListClientProps {
-  posts: BlogPostMeta[]
+  /** The posts on this page. */
+  posts: PostCardData[]
   /** Topics offered in the filter; omit on a topic page, where the topic is fixed. */
   topics?: { key: string; en: string; ar: string }[]
   tags: { en: string; ar: string }[]
+  /** On a topic hub: search and tag filters stay within this topic. */
+  scopeTopic?: string
+  /** Page links, hidden while a filter is active (results span all pages). */
+  pagination?: ReactNode
 }
 
-export default function BlogListClient({ posts, topics = [], tags }: BlogListClientProps) {
+export default function BlogListClient({ posts, topics = [], tags, scopeTopic, pagination }: BlogListClientProps) {
   const { language, isRTL } = useLanguage()
   const [selectedTopic, setSelectedTopic] = useState<string>('all')
   const [selectedTag, setSelectedTag] = useState<string>('all')
@@ -58,32 +64,16 @@ export default function BlogListClient({ posts, topics = [], tags }: BlogListCli
 
   const isFiltering = selectedTopic !== 'all' || selectedTag !== 'all' || searchQuery !== ''
 
-  const filteredSlugs = useMemo(() => {
-    if (!isFiltering) return null
-
-    let result = posts
-
-    if (selectedTopic !== 'all') {
-      result = result.filter((post) => post.topic === selectedTopic)
-    }
-
-    if (selectedTag !== 'all') {
-      result = result.filter((post) => hasTag(post.tags, selectedTag))
-    }
-
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase()
-      result = result.filter(
-        (post) =>
-          post.title.toLowerCase().includes(query) ||
-          post.titleAr.includes(searchQuery) ||
-          post.excerpt.toLowerCase().includes(query) ||
-          post.excerptAr.includes(searchQuery)
-      )
-    }
-
-    return new Set(result.map((p) => p.slug))
-  }, [posts, selectedTopic, selectedTag, searchQuery, isFiltering])
+  // While filtering, search every post (loaded once on demand), not just this page.
+  const index = useSearchIndex(isFiltering)
+  const visiblePosts = useMemo(() => {
+    if (!isFiltering) return posts
+    return filterPosts(index ?? posts, {
+      topic: scopeTopic ?? (selectedTopic === 'all' ? null : selectedTopic),
+      tag: selectedTag === 'all' ? null : selectedTag,
+      query: searchQuery,
+    })
+  }, [isFiltering, index, posts, scopeTopic, selectedTopic, selectedTag, searchQuery])
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -158,32 +148,29 @@ export default function BlogListClient({ posts, topics = [], tags }: BlogListCli
       {/* Blog Posts Grid */}
       <section className="section-y" style={{ background: 'var(--bg)' }}>
         <div className="container mx-auto px-4">
-          {isFiltering && filteredSlugs && filteredSlugs.size === 0 ? (
+          {visiblePosts.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-xl" style={{ color: 'var(--text-muted)' }}>{t.noPosts}</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-              {posts.map((post) => {
-                const isHidden = isFiltering && filteredSlugs && !filteredSlugs.has(post.slug)
-                return (
-                  <PostCard
-                    key={post.slug}
-                    href={localeHref(`/blog/${post.slug}`, language)}
-                    title={language === 'ar' ? post.titleAr : post.title}
-                    excerpt={language === 'ar' ? post.excerptAr : post.excerpt}
-                    coverImage={post.coverImage}
-                    coverImageAlt={post.coverImageAlt}
-                    badge={topicLabel(post.topic, language)}
-                    meta={[formatDate(post.date), formatReadingTime(language === 'ar' ? post.readingMinutesAr : post.readingMinutes, language)]}
-                    readMoreLabel={t.readMore}
-                    byline={`${t.by} ${language === 'ar' ? post.authorAr : post.author}`}
-                    className={isHidden ? 'hidden' : ''}
-                  />
-                )
-              })}
+              {visiblePosts.map((post) => (
+                <PostCard
+                  key={post.slug}
+                  href={localeHref(`/blog/${post.slug}`, language)}
+                  title={language === 'ar' ? post.titleAr : post.title}
+                  excerpt={language === 'ar' ? post.excerptAr : post.excerpt}
+                  coverImage={post.coverImage}
+                  coverImageAlt={post.coverImageAlt}
+                  badge={topicLabel(post.topic, language)}
+                  meta={[formatDate(post.date), formatReadingTime(language === 'ar' ? post.readingMinutesAr : post.readingMinutes, language)]}
+                  readMoreLabel={t.readMore}
+                  byline={`${t.by} ${language === 'ar' ? post.authorAr : post.author}`}
+                />
+              ))}
             </div>
           )}
+          {!isFiltering && pagination}
         </div>
       </section>
     </>

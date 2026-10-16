@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { blogFiltersQuery, hasTag, parseBlogFilters } from './blogFilters'
+import { blogFiltersQuery, filterPosts, hasTag, parseBlogFilters } from './blogFilters'
 
 const known = { tags: ['rent collection', 'Ejar', 'maintenance'], topics: ['rent-payments', 'product-guides'] }
 
@@ -50,5 +50,29 @@ describe('hasTag', () => {
 
   it('does not match partial tags', () => {
     expect(hasTag(['property management'], 'property')).toBe(false)
+  })
+})
+
+describe('filterPosts', () => {
+  const p = (title: string, topic: string, tags: string[] = [], titleAr = '') =>
+    ({ title, titleAr, excerpt: '', excerptAr: '', tags, topic })
+  const posts = [
+    p('Rent collection', 'rent-payments', ['Payments'], 'تحصيل الإيجار'),
+    p('Emergency maintenance', 'maintenance-operations', ['maintenance']),
+    p('Late rent fees', 'rent-payments', ['payments', 'Ejar']),
+  ]
+
+  it('returns everything without filters', () => {
+    expect(filterPosts(posts, {})).toHaveLength(3)
+  })
+
+  it('combines topic, tag and text filters', () => {
+    expect(filterPosts(posts, { topic: 'rent-payments' }).map((x) => x.title)).toEqual(['Rent collection', 'Late rent fees'])
+    expect(filterPosts(posts, { topic: 'rent-payments', tag: 'ejar' }).map((x) => x.title)).toEqual(['Late rent fees'])
+    expect(filterPosts(posts, { query: '  RENT ' }).map((x) => x.title)).toEqual(['Rent collection', 'Late rent fees'])
+  })
+
+  it('searches Arabic titles', () => {
+    expect(filterPosts(posts, { query: 'الإيجار' }).map((x) => x.title)).toEqual(['Rent collection'])
   })
 })
