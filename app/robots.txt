@@ -67,4 +67,4 @@ Disallow: /*_next/data
 Crawl-delay: 10
 Allow: /
 
-Sitemap: https://accez.cloud/sitemap.xml
+Sitemap: https://www.accez.cloud/sitemap.xml
