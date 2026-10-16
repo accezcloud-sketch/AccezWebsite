@@ -28,3 +28,24 @@ describe('robots.txt', () => {
     }
   })
 })
+
+describe('vercel.json security headers', () => {
+  const config = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'vercel.json'), 'utf8')) as {
+    headers: { source: string; headers: { key: string; value: string }[] }[]
+  }
+  const all = config.headers.find((h) => h.source === '/(.*)' && h.headers.some((x) => x.key === 'X-Content-Type-Options'))
+  const value = (key: string) => all?.headers.find((h) => h.key === key)?.value
+
+  it('sends the standard security headers on every response', () => {
+    expect(value('X-Content-Type-Options')).toBe('nosniff')
+    expect(value('Referrer-Policy')).toBe('strict-origin-when-cross-origin')
+    expect(value('X-Frame-Options')).toBe('SAMEORIGIN')
+  })
+
+  it('does not block features the site uses (chat clipboard, video playback)', () => {
+    const policy = value('Permissions-Policy') ?? ''
+    for (const feature of ['clipboard-write', 'fullscreen', 'encrypted-media', 'picture-in-picture']) {
+      expect(policy).not.toContain(`${feature}=()`)
+    }
+  })
+})
