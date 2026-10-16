@@ -3,15 +3,19 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ServiceProviderPage from '@/components/ServiceProviderPage'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
+import { providerMarketplaceSchema } from '@/lib/content/siteSchema'
 
 // Arabic version of /service-providers/. The page component already contains the Arabic
 // copy; pinning the locale in app/ar/layout.tsx makes it render server-side so
 // it can finally be indexed. Metadata below reuses wording already present on
 // the site — no new marketing copy is introduced.
+const DESCRIPTION =
+  'أدرج نشاطك في سوق أكسيز وتواصل مع السكان والنزلاء ومديري العقارات. صالونات وسبا ولياقة وتصوير وخدمات منزلية.'
+
 export const metadata: Metadata = {
   title: 'مقدمو الخدمات، أدرج نشاطك في سوق أكسيز',
   description:
-    'أدرج نشاطك في سوق أكسيز وتواصل مع السكان والنزلاء ومديري العقارات. صالونات وسبا ولياقة وتصوير وخدمات منزلية.',
+    DESCRIPTION,
   alternates: alternatesFor('service-providers', 'ar'),
   openGraph: {
     title: 'مقدمو الخدمات، أدرج نشاطك في سوق أكسيز',
@@ -27,6 +31,10 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(providerMarketplaceSchema('ar', DESCRIPTION)) }}
+      />
       <Header />
       <ServiceProviderPage />
       <Footer />

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { alternatesFor } from '@/lib/i18n'
+import { providerMarketplaceSchema } from '@/lib/content/siteSchema'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ServiceProviderPage from '@/components/ServiceProviderPage'
@@ -19,32 +20,13 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Accez Service Provider Marketplace',
-  serviceType: 'Online marketplace listing for service providers',
-  provider: {
-    '@type': 'Organization',
-    name: 'Accez Cloud',
-    url: 'https://www.accez.cloud',
-  },
-  areaServed: 'SA',
-  description:
-    'Independent businesses list their services on the Accez marketplace to reach residents, guests and property managers, take instant bookings, and grow through exposure-based plans.',
-  offers: {
-    '@type': 'AggregateOffer',
-    priceCurrency: 'SAR',
-    lowPrice: '0',
-    availability: 'https://schema.org/InStock',
-    url: 'https://www.accez.cloud/service-providers',
-  },
-}
+const MARKETPLACE_DESCRIPTION =
+  'Independent businesses list their services on the Accez marketplace to reach residents, guests and property managers, take instant bookings, and grow through exposure-based plans.'
 
 export default function Page() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(providerMarketplaceSchema('en', MARKETPLACE_DESCRIPTION)) }} />
       <main className="min-h-screen">
         <Header />
         <ServiceProviderPage />

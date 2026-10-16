@@ -6,6 +6,7 @@ import ChatbotWidget from '@/components/ChatbotWidget'
 import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { SITE_DESCRIPTION } from '@/lib/site'
+import { websiteSchema } from '@/lib/content/siteSchema'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
@@ -143,6 +144,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
         />
         <Analytics />
       </head>

@@ -12,14 +12,18 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import BlogStrip from '@/components/blog/BlogStrip'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
+import { softwareApplicationSchema } from '@/lib/content/siteSchema'
 
 // Arabic homepage. Identical component tree to the English one — the Arabic
 // copy already lives in translations/ar.ts and each component reads it from
 // context. Pinning the locale here makes that copy server-rendered.
+const DESCRIPTION =
+  'أدر الحجوزات والإيجارات والصيانة والملاك والمبيعات والفنادق من منصة واحدة. عمليات عقارية شاملة للسعودية، بالعربية والإنجليزية.'
+
 export const metadata: Metadata = {
   title: 'أكسيز | منصة شاملة لإدارة العقارات في السعودية',
   description:
-    'أدر الحجوزات والإيجارات والصيانة والملاك والمبيعات والفنادق من منصة واحدة. عمليات عقارية شاملة للسعودية، بالعربية والإنجليزية.',
+    DESCRIPTION,
   alternates: alternatesFor('', 'ar'),
   openGraph: {
     title: 'أكسيز | منصة شاملة لإدارة العقارات في السعودية',
@@ -36,6 +40,10 @@ export const metadata: Metadata = {
 export default function ArabicHome() {
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema('ar', DESCRIPTION)) }}
+      />
       <Header />
       <Hero />
       <Ecosystem />

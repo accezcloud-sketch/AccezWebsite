@@ -12,8 +12,8 @@ import type { BlogPostMeta } from '@/lib/blog'
 import { localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
 import { socialImageUrl, truncateAtWord } from './postSeo'
 import { topicLabel } from './topics'
+import { ORGANIZATION_ID } from './siteSchema'
 
-const ORGANIZATION_ID = `${SITE_URL}/#organization`
 
 const CRUMBS: Record<Locale, { home: string; blog: string }> = {
   en: { home: 'Home', blog: 'Blog' },
