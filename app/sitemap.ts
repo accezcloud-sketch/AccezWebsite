@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
-import { getAllPosts } from '@/lib/blog'
+import { getAllPosts, getPostsForProduct } from '@/lib/blog'
+import { newestDate, POST_LISTING_PAGES } from '@/lib/content/lastModified'
 import { localeUrl } from '@/lib/i18n'
 
 export const dynamic = 'force-static'
@@ -27,10 +28,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
   const englishOnly: string[] = []
 
+  // Pages that show a strip of posts change when those posts do.
+  const lastModifiedFor = (route: string): string => {
+    const shows = POST_LISTING_PAGES[route]
+    if (!shows) return STATIC_LAST_MODIFIED
+    const posts = shows === 'all' ? getAllPosts() : getPostsForProduct(shows, Number.MAX_SAFE_INTEGER)
+    return newestDate(posts, STATIC_LAST_MODIFIED)
+  }
+
   const staticPages: MetadataRoute.Sitemap = [
     ...bilingual.flatMap((route) => [
-      { url: localeUrl(route, 'en'), lastModified: STATIC_LAST_MODIFIED },
-      { url: localeUrl(route, 'ar'), lastModified: STATIC_LAST_MODIFIED },
+      { url: localeUrl(route, 'en'), lastModified: lastModifiedFor(route) },
+      { url: localeUrl(route, 'ar'), lastModified: lastModifiedFor(route) },
     ]),
     ...englishOnly.map((route) => ({
       url: localeUrl(route, 'en'),

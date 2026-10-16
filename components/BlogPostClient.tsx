@@ -34,12 +34,14 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
       // Having both produced a visible double arrow: "← ← Back to Blog".
       backToBlog: 'Back to Blog',
       by: 'By',
+      updated: 'Updated',
       notFound: 'Post not found',
       notFoundDesc: 'The blog post you are looking for does not exist.',
     },
     ar: {
       backToBlog: 'العودة للمدونة',
       by: 'بواسطة',
+      updated: 'تم التحديث',
       notFound: 'المقالة غير موجودة',
       notFoundDesc: 'المقالة التي تبحث عنها غير موجودة.',
     },
@@ -109,7 +111,15 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
             <div className="flex flex-wrap items-center gap-3 mb-8" style={{ color: 'var(--text-faint)' }}>
               <span>{t.by} {language === 'ar' ? post.authorAr : post.author}</span>
               <span>·</span>
-              <span>{formatDate(post.date)}</span>
+              <time dateTime={post.date}>{formatDate(post.date)}</time>
+              {post.updated && post.updated !== post.date && (
+                <>
+                  <span>·</span>
+                  <span>
+                    {t.updated} <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+                  </span>
+                </>
+              )}
               <span>·</span>
               <span>{formatReadingTime(language === 'ar' ? post.readingMinutesAr : post.readingMinutes, language)}</span>
             </div>
