@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
 import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { renderMarkdown } from '@/lib/content/markdown'
 import { alternatesFor } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -250,7 +251,8 @@ export default async function BlogPostPage({ params }: PageProps) {
         />
       ))}
       <BlogPostClient
-        post={fullPost}
+        post={postMeta ?? null}
+        contentHtml={fullPost ? renderMarkdown(fullPost.content, { locale: 'en' }) : ''}
         afterArticle={<PostFooter slug={slug} locale="en" />}
       />
     </>

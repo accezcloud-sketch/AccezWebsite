@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
 import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { renderMarkdown } from '@/lib/content/markdown'
 import { alternatesFor, localeUrl, SITE_URL } from '@/lib/i18n'
 
 /**
@@ -137,7 +138,8 @@ export default async function ArabicBlogPostPage({ params }: PageProps) {
           />
         ))}
       <BlogPostClient
-        post={fullPost}
+        post={postMeta ?? null}
+        contentHtml={fullPost ? renderMarkdown(fullPost.contentAr, { locale: 'ar' }) : ''}
         afterArticle={<PostFooter slug={slug} locale="ar" />}
       />
     </>

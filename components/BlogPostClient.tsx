@@ -6,12 +6,14 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { type BlogPost } from '@/lib/blog'
+import { type BlogPostMeta } from '@/lib/blog'
 import { localeHref } from '@/lib/i18n'
 import { blogFiltersQuery } from '@/lib/content/blogFilters'
 
 interface BlogPostClientProps {
-  post: BlogPost | null
+  post: BlogPostMeta | null
+  /** The article body, already rendered to HTML on the server (lib/content/markdown.ts). */
+  contentHtml: string
   /**
    * Server-rendered content shown between the article and the footer (the
    * related-articles block). Passed in as a slot so this client component
@@ -20,7 +22,7 @@ interface BlogPostClientProps {
   afterArticle?: ReactNode
 }
 
-export default function BlogPostClient({ post, afterArticle }: BlogPostClientProps) {
+export default function BlogPostClient({ post, contentHtml, afterArticle }: BlogPostClientProps) {
   const { language, isRTL } = useLanguage()
 
   const content = {
@@ -55,117 +57,6 @@ export default function BlogPostClient({ post, afterArticle }: BlogPostClientPro
     })
   }
 
-  // Simple markdown to HTML converter
-  const renderMarkdown = (markdown: string) => {
-    // Split by double newlines to get paragraphs/blocks
-    const blocks = markdown.split('\n\n')
-
-    const processedBlocks = blocks.map(block => {
-      // Check if block is a header
-      if (block.match(/^###\s/)) {
-        return block.replace(/^### (.*$)/gm, '<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">$1</h3>')
-      }
-      if (block.match(/^##\s/)) {
-        return block.replace(/^## (.*$)/gm, '<h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">$1</h2>')
-      }
-      if (block.match(/^#\s/)) {
-        return block.replace(/^# (.*$)/gm, '<h1 class="text-3xl font-bold text-gray-900 mt-10 mb-4">$1</h1>')
-      }
-
-      // Check if block contains list items (lines starting with -)
-      if (block.match(/^- /m)) {
-        const lines = block.split('\n')
-        let leadingParagraph = ''
-        const listLines: string[] = []
-        let inList = false
-
-        lines.forEach(line => {
-          if (line.match(/^- /)) {
-            inList = true
-            let content = line.replace(/^- /, '')
-            content = content
-              .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="text-gray-900"><em>$1</em></strong>')
-              .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
-              .replace(/\*(.*?)\*/g, '<em>$1</em>')
-              .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
-            listLines.push(`<li class="ml-6 list-disc text-gray-700">${content}</li>`)
-          } else if (!inList && line.trim()) {
-            // This is a leading paragraph before the list
-            let processed = line
-              .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="text-gray-900"><em>$1</em></strong>')
-              .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
-              .replace(/\*(.*?)\*/g, '<em>$1</em>')
-              .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
-            leadingParagraph = `<p class="text-gray-700 leading-relaxed mb-2">${processed}</p>`
-          }
-        })
-
-        return leadingParagraph + `<ul class="my-4 space-y-2">${listLines.join('\n')}</ul>`
-      }
-
-      // Check if block contains numbered list (lines starting with number.)
-      if (block.match(/^\d+\.\s/m)) {
-        const lines = block.split('\n')
-        let leadingParagraph = ''
-        const listLines: string[] = []
-        let inList = false
-
-        lines.forEach(line => {
-          if (line.match(/^\d+\.\s/)) {
-            inList = true
-            let content = line.replace(/^\d+\.\s/, '')
-            content = content
-              .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="text-gray-900"><em>$1</em></strong>')
-              .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
-              .replace(/\*(.*?)\*/g, '<em>$1</em>')
-              .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
-            listLines.push(`<li class="ml-6 list-decimal text-gray-700">${content}</li>`)
-          } else if (!inList && line.trim()) {
-            // This is a leading paragraph before the list
-            let processed = line
-              .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="text-gray-900"><em>$1</em></strong>')
-              .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
-              .replace(/\*(.*?)\*/g, '<em>$1</em>')
-              .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
-            leadingParagraph = `<p class="text-gray-700 leading-relaxed mb-2">${processed}</p>`
-          }
-        })
-
-        return leadingParagraph + `<ol class="my-4 space-y-2">${listLines.join('\n')}</ol>`
-      }
-
-      // Blockquote — used for the summary block at the top of each post.
-      //
-      // Added because that summary is a self-contained answer to the article's
-      // main question, written to be quotable. Without this branch the leading
-      // "> " would render as a literal character on the page.
-      if (block.match(/^>\s?/m)) {
-        const inner = block
-          .split('\n')
-          .map((line) => line.replace(/^>\s?/, ''))
-          .join(' ')
-          .trim()
-          .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
-          .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
-          .replace(/\*(.*?)\*/g, '<em>$1</em>')
-          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
-
-        return `<blockquote class="blog-summary my-6 ps-4 border-s-4 border-blue-500 bg-blue-50 py-4 pe-4 rounded-e-lg"><p class="text-gray-800 leading-relaxed m-0">${inner}</p></blockquote>`
-      }
-
-      // Regular paragraph - apply inline formatting
-      let processed = block
-        .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="text-gray-900"><em>$1</em></strong>')
-        .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-900">$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
-
-      return `<p class="text-gray-700 leading-relaxed mb-4">${processed}</p>`
-    })
-
-    return processedBlocks.join('')
-  }
-
   if (!post) {
     return (
       <main className="min-h-screen bg-gray-50">
@@ -185,8 +76,6 @@ export default function BlogPostClient({ post, afterArticle }: BlogPostClientPro
       </main>
     )
   }
-
-  const postContent = language === 'ar' ? post.contentAr : post.content
 
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -239,7 +128,7 @@ export default function BlogPostClient({ post, afterArticle }: BlogPostClientPro
             )}
 
             {/* Content */}
-            <div className="blog-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(postContent) }} />
+            <div className="blog-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
             {/* Tags */}
             <div className="mt-12 pt-8" style={{ borderTop: '1px solid var(--border)' }}>
