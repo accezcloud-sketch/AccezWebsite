@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Pricing from '@/components/Pricing'
 import ProviderPricing from '@/components/ProviderPricing'
-import { pricingPageMetadata } from '@/lib/content/pricingPage'
+import { pricingPageMetadata } from '@/lib/content/pageMetadata'
 
 // Property-manager plans and service-provider plans on one page, using the
 // same components (and copy) as the homepage and the Service Providers page.

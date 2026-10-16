@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Every static route now exists in both languages, including the legal pages.
   const bilingual = [
     '', 'modules', 'owners', 'sales', 'hotels', 'service-providers', 'about',
-    'support', 'blog', 'pricing', 'terms', 'privacy', 'refund-policy',
+    'support', 'blog', 'pricing', 'faq', 'terms', 'privacy', 'refund-policy',
   ]
   const englishOnly: string[] = []
 

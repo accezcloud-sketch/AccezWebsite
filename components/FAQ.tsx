@@ -120,7 +120,12 @@ const CATEGORY_TRANSLATION_KEY: Record<CategoryKey, string> = {
   securityData: 'catSecurity',
 }
 
-export default function FAQ() {
+/**
+ * Frequently asked questions. A section (`h2`) on the homepage; the page's
+ * subject (`h1`) on /faq.
+ */
+export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
+  const Heading = headingLevel
   const { t, language, isRTL } = useLanguage()
   const tf = t.faq as Record<string, string>
 
@@ -193,7 +198,7 @@ export default function FAQ() {
               />
             </div>
 
-            <h2
+            <Heading
               className="text-white font-bold text-center leading-tight tracking-tight mb-4"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
@@ -212,7 +217,7 @@ export default function FAQ() {
               >
                 {tf.titleAccent}
               </span>
-            </h2>
+            </Heading>
 
             <p
               className="text-slate-400 text-center leading-relaxed"
@@ -276,6 +281,7 @@ export default function FAQ() {
                       onClick={() => setOpenIndex(isOpen ? null : index)}
                       className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left transition-colors duration-200 hover:bg-white/[0.02]"
                       aria-expanded={isOpen}
+                      aria-controls={`faq-answer-${index}`}
                     >
                       <div className="flex items-start gap-3 min-w-0">
                         <span
@@ -307,30 +313,29 @@ export default function FAQ() {
                       </motion.span>
                     </button>
 
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.div
-                          key="answer"
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{
-                            height: { duration: 0.32, ease: [0.21, 0.47, 0.32, 0.98] },
-                            opacity: { duration: 0.22 },
-                          }}
-                          className="overflow-hidden"
+                    {/* Always rendered, so every answer is in the static HTML for
+                        search engines and AI crawlers; collapsed answers are
+                        animated to zero height and hidden from assistive tech. */}
+                    <motion.div
+                      id={`faq-answer-${index}`}
+                      initial={false}
+                      animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+                      transition={{
+                        height: { duration: 0.32, ease: [0.21, 0.47, 0.32, 0.98] },
+                        opacity: { duration: 0.22 },
+                      }}
+                      className="overflow-hidden"
+                      aria-hidden={!isOpen}
+                    >
+                      <div className={`pb-5 pt-1 ${isRTL ? 'pr-11 pl-5' : 'pl-11 pr-5'}`}>
+                        <p
+                          className="text-slate-400 leading-relaxed"
+                          style={{ fontSize: 14.5 }}
                         >
-                          <div className={`pb-5 pt-1 ${isRTL ? 'pr-11 pl-5' : 'pl-11 pr-5'}`}>
-                            <p
-                              className="text-slate-400 leading-relaxed"
-                              style={{ fontSize: 14.5 }}
-                            >
-                              {language === 'ar' ? faq.answerAr : faq.answer}
-                            </p>
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
+                          {language === 'ar' ? faq.answerAr : faq.answer}
+                        </p>
+                      </div>
+                    </motion.div>
                   </div>
                 </FadeUp>
               )

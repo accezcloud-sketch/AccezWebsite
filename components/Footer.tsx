@@ -100,7 +100,7 @@ export default function Footer() {
     {
       heading: t.footer.support,
       links: [
-        { label: t.header.faq, href: '/#faq' },
+        { label: t.header.faq, href: '/faq' },
         { label: t.footer.support, href: '/support' },
         { label: t.footer.contact, href: '/#contact' },
       ],

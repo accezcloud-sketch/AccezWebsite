@@ -388,16 +388,19 @@ export default function Capabilities() {
                     </svg>
                   </button>
 
-                  {isActive && (
-                    <div
-                      className="mt-2 rounded-2xl overflow-hidden"
-                      style={{
-                        background: 'rgba(255,255,255,0.03)',
-                        border: '1px solid rgba(255,255,255,0.07)',
-                        boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
-                      }}
-                    >
-                      {capability.slides ? (
+                  {/* Rendered for every item so all descriptions reach the static HTML. */}
+                  <div
+                    hidden={!isActive}
+                    className="mt-2 rounded-2xl overflow-hidden"
+                    style={{
+                      background: 'rgba(255,255,255,0.03)',
+                      border: '1px solid rgba(255,255,255,0.07)',
+                      boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
+                    }}
+                  >
+                    {/* Media only for the open item; the text below is always in the HTML. */}
+                    {isActive &&
+                      (capability.slides ? (
                         <ImageCarousel
                           slides={capability.slides}
                           alt={language === 'ar' ? capability.titleAr : capability.title}
@@ -416,15 +419,14 @@ export default function Capabilities() {
                             unoptimized
                           />
                         </div>
-                      )}
-                      <div className="p-4">
-                        <p className="text-slate-300 leading-relaxed text-sm">
-                          {language === 'ar' ? capability.descriptionAr : capability.description}
-                        </p>
-                        {renderCtas(capability.ctas)}
-                      </div>
+                      ))}
+                    <div className="p-4">
+                      <p className="text-slate-300 leading-relaxed text-sm">
+                        {language === 'ar' ? capability.descriptionAr : capability.description}
+                      </p>
+                      {renderCtas(capability.ctas)}
                     </div>
-                  )}
+                  </div>
                 </div>
               )
             })}
