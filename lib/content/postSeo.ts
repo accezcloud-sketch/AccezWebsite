@@ -7,6 +7,7 @@
 import type { Metadata } from 'next'
 import type { BlogPostMeta } from '@/lib/blog'
 import { alternatesFor, localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
+import { X_HANDLE } from '@/lib/site'
 
 /** Google shows roughly 150–160 characters of a description. */
 export const DESCRIPTION_MAX = 160
@@ -59,6 +60,6 @@ export function postMetadata(post: BlogPostMeta, locale: Locale): Metadata {
       tags: ar ? post.tagsAr : post.tags,
       images: [{ url: image, width: 1200, height: 630, alt: post.coverImageAlt }],
     },
-    twitter: { card: 'summary_large_image', title, description, images: [image] },
+    twitter: { card: 'summary_large_image', site: X_HANDLE, title, description, images: [image] },
   }
 }

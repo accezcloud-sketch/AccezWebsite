@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   title: 'Page not found',
   description: 'The page you are looking for does not exist or has moved.',
   robots: { index: false, follow: true },
+  // Set explicitly so the 404 doesn't inherit the homepage's social preview.
+  openGraph: { title: 'Page not found | Accez', description: 'The page you are looking for does not exist or has moved.' },
 }
 
 // A static export has one 404 page for every URL, English or Arabic, so it

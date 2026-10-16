@@ -5,7 +5,7 @@ import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
 import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { SITE_DESCRIPTION } from '@/lib/site'
+import { SITE_DESCRIPTION, X_HANDLE } from '@/lib/site'
 import { websiteSchema } from '@/lib/content/siteSchema'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -53,10 +53,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // No title/description here: a fixed value is inherited by every page, so X
+  // showed the English homepage title for every shared link (Arabic pages
+  // included). Without them X uses each page's own Open Graph title.
   twitter: {
     card: 'summary_large_image',
-    title: 'Accez | All-in-One Property Management for Saudi Arabia',
-    description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. Built for Saudi operators, in Arabic and English.',
+    site: X_HANDLE,
     images: ['https://www.accez.cloud/images/og-image.png'],
   },
   robots: {
@@ -133,6 +135,9 @@ const organizationJsonLd = {
   ],
 }
 
+const HTML_LANG_SCRIPT =
+  "(function(){var ar=/^\\/ar(\\/|$)/.test(location.pathname),d=document.documentElement;d.lang=ar?'ar':'en';d.dir=ar?'rtl':'ltr'})()"
+
 export default function RootLayout({
   children,
 }: {
@@ -141,6 +146,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Arabic pages live under /ar. The static HTML can only carry one
+            <html lang> (a single root layout serves both languages), so set
+            lang and dir from the URL before first paint; LanguageContext keeps
+            them in sync afterwards. */}
+        <script dangerouslySetInnerHTML={{ __html: HTML_LANG_SCRIPT }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

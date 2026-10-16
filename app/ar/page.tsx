@@ -21,7 +21,9 @@ const DESCRIPTION =
   'أدر الحجوزات والإيجارات والصيانة والملاك والمبيعات والفنادق من منصة واحدة. عمليات عقارية شاملة للسعودية، بالعربية والإنجليزية.'
 
 export const metadata: Metadata = {
-  title: 'أكسيز | منصة شاملة لإدارة العقارات في السعودية',
+  // `absolute`: the title already names the brand; the layout's '%s | Accez'
+  // template would repeat it.
+  title: { absolute: 'أكسيز | منصة شاملة لإدارة العقارات في السعودية' },
   description:
     DESCRIPTION,
   alternates: alternatesFor('', 'ar'),
