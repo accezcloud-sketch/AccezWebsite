@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
 import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
-import { renderMarkdown } from '@/lib/content/markdown'
+import { renderArticle } from '@/lib/content/markdown'
 import { postMetadata } from '@/lib/content/postSeo'
 import { topicLabel } from '@/lib/content/topics'
 
@@ -182,6 +182,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
   const postMeta = getAllPosts().find((p) => p.slug === slug)
   const fullPost = getPostBySlug(slug)
+  const article = fullPost ? renderArticle(fullPost.content, { locale: 'en' }) : { html: '', toc: [] }
 
   const schemas: object[] = []
 
@@ -201,7 +202,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       ))}
       <BlogPostClient
         post={postMeta ?? null}
-        contentHtml={fullPost ? renderMarkdown(fullPost.content, { locale: 'en' }) : ''}
+        contentHtml={article.html}
+        toc={article.toc}
         afterArticle={<PostFooter slug={slug} locale="en" />}
       />
     </>

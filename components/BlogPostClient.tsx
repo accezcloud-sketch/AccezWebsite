@@ -9,6 +9,9 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPostMeta } from '@/lib/blog'
 import { localeHref, localeUrl } from '@/lib/i18n'
 import ShareButtons from '@/components/blog/ShareButtons'
+import Breadcrumbs from '@/components/blog/Breadcrumbs'
+import TableOfContents from '@/components/blog/TableOfContents'
+import type { TocEntry } from '@/lib/content/markdown'
 import { blogFiltersQuery } from '@/lib/content/blogFilters'
 import { formatReadingTime } from '@/lib/content/readingTime'
 import { photoCreditText } from '@/lib/content/credit'
@@ -18,6 +21,8 @@ interface BlogPostClientProps {
   post: BlogPostMeta | null
   /** The article body, already rendered to HTML on the server (lib/content/markdown.ts). */
   contentHtml: string
+  /** The body's section headings, for the table of contents. */
+  toc: TocEntry[]
   /**
    * Server-rendered content shown between the article and the footer (the
    * related-articles block). Passed in as a slot so this client component
@@ -26,7 +31,7 @@ interface BlogPostClientProps {
   afterArticle?: ReactNode
 }
 
-export default function BlogPostClient({ post, contentHtml, afterArticle }: BlogPostClientProps) {
+export default function BlogPostClient({ post, contentHtml, toc, afterArticle }: BlogPostClientProps) {
   const { language, isRTL } = useLanguage()
 
   const content = {
@@ -34,6 +39,8 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
       // No arrow character here — the link renders an SVG arrow beside it.
       // Having both produced a visible double arrow: "← ← Back to Blog".
       backToBlog: 'Back to Blog',
+      home: 'Home',
+      blog: 'Blog',
       by: 'By',
       updated: 'Updated',
       notFound: 'Post not found',
@@ -41,6 +48,8 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
     },
     ar: {
       backToBlog: 'العودة للمدونة',
+      home: 'الرئيسية',
+      blog: 'المدونة',
       by: 'بواسطة',
       updated: 'تم التحديث',
       notFound: 'المقالة غير موجودة',
@@ -83,15 +92,17 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
     <main className="min-h-screen" style={{ background: 'var(--bg)' }} dir={isRTL ? 'rtl' : 'ltr'}>
       <Header />
 
-      {/* Back to Blog (clears the fixed navbar via --nav-h) */}
+      {/* Breadcrumb trail (clears the fixed navbar via --nav-h) */}
       <div style={{ paddingTop: 'var(--nav-h)', borderBottom: '1px solid var(--border)', background: 'var(--bg)' }}>
         <div className="container mx-auto px-4 py-4">
-          <Link href={localeHref("/blog", language)} prefetch={false} className="inline-flex items-center gap-1.5 transition-colors" style={{ color: 'var(--text-muted)' }}>
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" style={{ transform: isRTL ? 'scaleX(-1)' : undefined }} aria-hidden="true">
-              <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            {t.backToBlog}
-          </Link>
+          <Breadcrumbs
+            locale={language}
+            items={[
+              { label: t.home, href: '/' },
+              { label: t.blog, href: '/blog' },
+              { label: topicLabel(post.topic, language), href: `/blog/topic/${post.topic}` },
+            ]}
+          />
         </div>
       </div>
 
@@ -140,6 +151,8 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
                 </a>
               </p>
             )}
+
+            <TableOfContents toc={toc} locale={language} />
 
             {/* Content */}
             <div className="blog-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />

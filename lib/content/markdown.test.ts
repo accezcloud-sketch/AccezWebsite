@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { renderMarkdown, slugifyHeading, youTubeId } from './markdown'
+import { renderArticle, renderMarkdown, slugifyHeading, youTubeId } from './markdown'
 
 const html = (md: string, locale: 'en' | 'ar' = 'en') => renderMarkdown(md, { locale })
 
@@ -115,5 +115,22 @@ describe('renderMarkdown: video', () => {
     expect(youTubeId('https://youtube.com/embed/qKjzk0ysrKo')).toBe('qKjzk0ysrKo')
     expect(youTubeId('https://example.com/watch?v=qKjzk0ysrKo')).toBeNull()
     expect(youTubeId('not a url')).toBeNull()
+  })
+})
+
+describe('renderArticle', () => {
+  it('returns the headings with the exact ids used in the HTML', () => {
+    const { html, toc } = renderArticle('# Intro\n\nText\n\n## Costs\n\n### Detail\n\n## Costs')
+    expect(toc).toEqual([
+      { id: 'intro', text: 'Intro', level: 2 },
+      { id: 'costs', text: 'Costs', level: 2 },
+      { id: 'detail', text: 'Detail', level: 3 },
+      { id: 'costs-2', text: 'Costs', level: 2 },
+    ])
+    toc.forEach((h) => expect(html).toContain(`id="${h.id}"`))
+  })
+
+  it('uses plain heading text, without markup', () => {
+    expect(renderArticle('## **Bold** heading').toc[0].text).toBe('Bold heading')
   })
 })

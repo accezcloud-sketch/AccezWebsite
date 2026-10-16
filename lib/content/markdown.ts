@@ -27,6 +27,23 @@ export interface RenderOptions {
   locale?: Locale
 }
 
+/** A section heading as rendered, for a table of contents. */
+export interface TocEntry {
+  id: string
+  text: string
+  level: 2 | 3
+}
+
+export interface RenderedArticle {
+  html: string
+  /** `h2`/`h3` headings in document order, with the ids used in `html`. */
+  toc: TocEntry[]
+}
+
+interface RenderEnv extends RenderOptions {
+  toc: TocEntry[]
+}
+
 /** Our own hosts: links to these are internal even when written as absolute URLs. */
 const OWN_HOSTS = new Set(['accez.cloud', 'www.accez.cloud'])
 
@@ -95,10 +112,13 @@ function createRenderer(): MarkdownIt {
       if (token.type !== 'heading_open' && token.type !== 'heading_close') return
       if (token.tag === 'h1') token.tag = 'h2'
       if (token.type === 'heading_open' && (token.tag === 'h2' || token.tag === 'h3')) {
-        const base = slugifyHeading(inlineText(state.tokens, i)) || 'section'
+        const text = inlineText(state.tokens, i)
+        const base = slugifyHeading(text) || 'section'
         const n = used.get(base) ?? 0
         used.set(base, n + 1)
-        token.attrSet('id', n === 0 ? base : `${base}-${n + 1}`)
+        const id = n === 0 ? base : `${base}-${n + 1}`
+        token.attrSet('id', id)
+        ;(state.env as RenderEnv).toc?.push({ id, text, level: token.tag === 'h2' ? 2 : 3 })
       }
     })
   })
@@ -158,6 +178,13 @@ function createRenderer(): MarkdownIt {
 
 const renderer = createRenderer()
 
+/** Renders a post body and returns its table of contents alongside. */
+export function renderArticle(markdown: string, options: RenderOptions = {}): RenderedArticle {
+  const env: RenderEnv = { locale: options.locale ?? 'en', toc: [] }
+  const html = renderer.render(markdown, env)
+  return { html, toc: env.toc }
+}
+
 export function renderMarkdown(markdown: string, options: RenderOptions = {}): string {
-  return renderer.render(markdown, { locale: options.locale ?? 'en' })
+  return renderArticle(markdown, options).html
 }
