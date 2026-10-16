@@ -8,7 +8,8 @@ import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { createBlogRepository, getAllPosts, getAllTags, getPostBySlug, getPostsForProduct, getRelatedPosts } from './blog'
+import { createBlogRepository, getAllPosts, getAllTags, getPostBySlug, getPostsByTopic, getPostsForProduct, getRelatedPosts } from './blog'
+import { TOPICS } from './content/topics'
 import { matchProductPage } from './content/productMatch'
 
 const posts = getAllPosts()
@@ -165,5 +166,13 @@ describe('reading time', () => {
       // ~200 wpm, rounded up: never more than a minute above the English half alone
       expect(meta.readingMinutes, meta.slug).toBeLessThanOrEqual(Math.ceil(words(post.content) / 200) + 1)
     }
+  })
+})
+
+describe('topics', () => {
+  it('files every post under a known topic, and no topic is empty', () => {
+    const used = new Set(posts.map((p) => p.topic))
+    TOPICS.forEach((t) => expect(used.has(t.key), t.key).toBe(true))
+    expect(TOPICS.reduce((n, t) => n + getPostsByTopic(t.key).length, 0)).toBe(posts.length)
   })
 })

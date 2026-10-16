@@ -3,6 +3,7 @@ import PostCard from '@/components/blog/PostCard'
 import type { BlogPostMeta } from '@/lib/blog'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { formatReadingTime } from '@/lib/content/readingTime'
+import { topicLabel } from '@/lib/content/topics'
 
 /**
  * A titled row of blog post cards with a "View all articles" link. Used for
@@ -54,7 +55,7 @@ export default function PostStrip({ id, heading, posts, locale }: PostStripProps
                 excerpt={isAr ? post.excerptAr : post.excerpt}
                 coverImage={post.coverImage}
                 coverImageAlt={post.coverImageAlt}
-                category={isAr ? post.categoryAr : post.category}
+                badge={topicLabel(post.topic, locale)}
                 meta={[formatReadingTime(isAr ? post.readingMinutesAr : post.readingMinutes, locale)]}
                 readMoreLabel={t.readMore}
                 headingLevel="h3"

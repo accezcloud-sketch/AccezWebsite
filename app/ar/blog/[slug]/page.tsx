@@ -4,6 +4,7 @@ import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { renderMarkdown } from '@/lib/content/markdown'
 import { postMetadata } from '@/lib/content/postSeo'
+import { topicLabel } from '@/lib/content/topics'
 import { localeUrl, SITE_URL } from '@/lib/i18n'
 
 /**
@@ -64,7 +65,7 @@ function getArabicSchemas(post: ReturnType<typeof getAllPosts>[number]) {
         '@id': localeUrl(`blog/${post.slug}`, 'ar'),
       },
       keywords: post.tagsAr.join('، '),
-      articleSection: post.categoryAr,
+      articleSection: topicLabel(post.topic, 'ar'),
       inLanguage: 'ar',
       url: localeUrl(`blog/${post.slug}`, 'ar'),
     },

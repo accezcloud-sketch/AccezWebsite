@@ -12,6 +12,7 @@ import ShareButtons from '@/components/blog/ShareButtons'
 import { blogFiltersQuery } from '@/lib/content/blogFilters'
 import { formatReadingTime } from '@/lib/content/readingTime'
 import { photoCreditText } from '@/lib/content/credit'
+import { topicLabel } from '@/lib/content/topics'
 
 interface BlogPostClientProps {
   post: BlogPostMeta | null
@@ -99,9 +100,14 @@ export default function BlogPostClient({ post, contentHtml, afterArticle }: Blog
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-3xl mx-auto">
             <div className="mb-4">
-              <span className="text-white text-sm px-4 py-1 rounded-full font-medium" style={{ background: 'var(--accent)' }}>
-                {language === 'ar' ? post.categoryAr : post.category}
-              </span>
+              <Link
+                href={localeHref(`/blog/topic/${post.topic}`, language)}
+                prefetch={false}
+                className="text-white text-sm px-4 py-1 rounded-full font-medium"
+                style={{ background: 'var(--accent)' }}
+              >
+                {topicLabel(post.topic, language)}
+              </Link>
             </div>
 
             <h1 className="text-white font-bold mb-6 tracking-tight" style={{ fontSize: 'clamp(28px, 4.5vw, 44px)', lineHeight: 1.15, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>

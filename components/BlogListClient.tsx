@@ -8,35 +8,37 @@ import PostCard from '@/components/blog/PostCard'
 import { useBlogFiltersInUrl } from '@/components/blog/useBlogFiltersInUrl'
 import { hasTag } from '@/lib/content/blogFilters'
 import { formatReadingTime } from '@/lib/content/readingTime'
+import { topicLabel } from '@/lib/content/topics'
 import { localeHref } from '@/lib/i18n'
 
 interface BlogListClientProps {
   posts: BlogPostMeta[]
-  categories: { en: string; ar: string }[]
+  /** Topics offered in the filter; omit on a topic page, where the topic is fixed. */
+  topics?: { key: string; en: string; ar: string }[]
   tags: { en: string; ar: string }[]
 }
 
-export default function BlogListClient({ posts, categories, tags }: BlogListClientProps) {
+export default function BlogListClient({ posts, topics = [], tags }: BlogListClientProps) {
   const { language, isRTL } = useLanguage()
-  const [selectedCategory, setSelectedCategory] = useState<string>('all')
+  const [selectedTopic, setSelectedTopic] = useState<string>('all')
   const [selectedTag, setSelectedTag] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState('')
 
   const knownTags = useMemo(() => tags.map((tg) => tg.en), [tags])
-  const knownCategories = useMemo(() => categories.map((c) => c.en), [categories])
+  const knownTopics = useMemo(() => topics.map((tp) => tp.key), [topics])
   useBlogFiltersInUrl({
     tag: selectedTag,
-    category: selectedCategory,
+    topic: selectedTopic,
     setTag: setSelectedTag,
-    setCategory: setSelectedCategory,
+    setTopic: setSelectedTopic,
     knownTags,
-    knownCategories,
+    knownTopics,
   })
 
   const content = {
     en: {
       searchPlaceholder: 'Search articles...',
-      allCategories: 'All Categories',
+      allTopics: 'All Topics',
       allTags: 'All Tags',
       readMore: 'Read More',
       noPosts: 'No blog posts found.',
@@ -44,7 +46,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
     },
     ar: {
       searchPlaceholder: 'البحث في المقالات...',
-      allCategories: 'جميع الفئات',
+      allTopics: 'جميع المواضيع',
       allTags: 'جميع الوسوم',
       readMore: 'اقرأ المزيد',
       noPosts: 'لم يتم العثور على مقالات.',
@@ -54,15 +56,15 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
 
   const t = content[language]
 
-  const isFiltering = selectedCategory !== 'all' || selectedTag !== 'all' || searchQuery !== ''
+  const isFiltering = selectedTopic !== 'all' || selectedTag !== 'all' || searchQuery !== ''
 
   const filteredSlugs = useMemo(() => {
     if (!isFiltering) return null
 
     let result = posts
 
-    if (selectedCategory !== 'all') {
-      result = result.filter((post) => post.category === selectedCategory)
+    if (selectedTopic !== 'all') {
+      result = result.filter((post) => post.topic === selectedTopic)
     }
 
     if (selectedTag !== 'all') {
@@ -81,7 +83,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
     }
 
     return new Set(result.map((p) => p.slug))
-  }, [posts, selectedCategory, selectedTag, searchQuery, isFiltering])
+  }, [posts, selectedTopic, selectedTag, searchQuery, isFiltering])
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -129,15 +131,17 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                 style={controlStyle}
               />
             </div>
-            <div className="w-full md:w-52">
-              <Select
-                value={selectedCategory}
-                onChange={setSelectedCategory}
-                ariaLabel={t.allCategories}
-                isRTL={isRTL}
-                options={[{ value: 'all', label: t.allCategories }, ...categories.map((c) => ({ value: c.en, label: language === 'ar' ? c.ar : c.en }))]}
-              />
-            </div>
+            {topics.length > 0 && (
+              <div className="w-full md:w-52">
+                <Select
+                  value={selectedTopic}
+                  onChange={setSelectedTopic}
+                  ariaLabel={t.allTopics}
+                  isRTL={isRTL}
+                  options={[{ value: 'all', label: t.allTopics }, ...topics.map((tp) => ({ value: tp.key, label: language === 'ar' ? tp.ar : tp.en }))]}
+                />
+              </div>
+            )}
             <div className="w-full md:w-52">
               <Select
                 value={selectedTag}
@@ -170,7 +174,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
                     excerpt={language === 'ar' ? post.excerptAr : post.excerpt}
                     coverImage={post.coverImage}
                     coverImageAlt={post.coverImageAlt}
-                    category={language === 'ar' ? post.categoryAr : post.category}
+                    badge={topicLabel(post.topic, language)}
                     meta={[formatDate(post.date), formatReadingTime(language === 'ar' ? post.readingMinutesAr : post.readingMinutes, language)]}
                     readMoreLabel={t.readMore}
                     byline={`${t.by} ${language === 'ar' ? post.authorAr : post.author}`}

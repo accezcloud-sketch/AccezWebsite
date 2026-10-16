@@ -2,13 +2,14 @@
  * Blog-list filters as URL query parameters.
  *
  * The tag chips under every post link to `/blog/?tag=<tag>`. The list page
- * reads that parameter so the reader lands on posts with that tag, not on the
+ * reads that parameter (and `?topic=`) so the reader lands on posts with that tag, not on the
  * full unfiltered list. Pure functions; no DOM or framework.
  */
 
 export interface BlogFilters {
   tag: string | null
-  category: string | null
+  /** Topic key (see lib/content/topics.ts). */
+  topic: string | null
 }
 
 /**
@@ -39,19 +40,19 @@ function matchKnown(value: string | null, known: readonly string[]): string | nu
  */
 export function parseBlogFilters(
   search: string,
-  known: { tags: readonly string[]; categories: readonly string[] },
+  known: { tags: readonly string[]; topics: readonly string[] },
 ): BlogFilters {
   const params = new URLSearchParams(search)
   return {
     tag: matchKnown(params.get('tag'), known.tags),
-    category: matchKnown(params.get('category'), known.categories),
+    topic: matchKnown(params.get('topic'), known.topics),
   }
 }
 
 /** Query string for the given filters, e.g. `?tag=rent%20collection`, or `''`. */
 export function blogFiltersQuery(filters: Partial<BlogFilters>): string {
   const params = new URLSearchParams()
-  if (filters.category) params.set('category', filters.category)
+  if (filters.topic) params.set('topic', filters.topic)
   if (filters.tag) params.set('tag', filters.tag)
   const query = params.toString()
   return query ? `?${query}` : ''

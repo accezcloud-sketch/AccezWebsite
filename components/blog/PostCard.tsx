@@ -12,7 +12,8 @@ export interface PostCardProps {
   excerpt: string
   coverImage: string
   coverImageAlt: string
-  category: string
+  /** Short label on the image, e.g. the post's topic. */
+  badge: string
   /** Small items above the title, shown separated by dots, e.g. [date, "8 min read"]. */
   meta: string[]
   readMoreLabel: string
@@ -29,7 +30,7 @@ export default function PostCard({
   excerpt,
   coverImage,
   coverImageAlt,
-  category,
+  badge,
   meta,
   readMoreLabel,
   byline,
@@ -54,7 +55,7 @@ export default function PostCard({
         />
         <div className="absolute top-4 start-4">
           <span className="text-white text-xs px-3 py-1 rounded-full font-medium" style={{ background: 'var(--accent)' }}>
-            {category}
+            {badge}
           </span>
         </div>
       </div>

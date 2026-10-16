@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
-import { getAllPosts, getPostsForProduct } from '@/lib/blog'
+import { getAllPosts, getPostsByTopic, getPostsForProduct } from '@/lib/blog'
 import { newestDate, POST_LISTING_PAGES } from '@/lib/content/lastModified'
+import { TOPICS } from '@/lib/content/topics'
 import { localeUrl } from '@/lib/i18n'
 
 export const dynamic = 'force-static'
@@ -57,5 +58,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
   })
 
-  return [...staticPages, ...blogPages]
+  // Topic hubs change whenever a post in the topic does.
+  const topicPages: MetadataRoute.Sitemap = TOPICS.flatMap((topic) => {
+    const lastModified = newestDate(getPostsByTopic(topic.key), STATIC_LAST_MODIFIED)
+    return [
+      { url: localeUrl(`blog/topic/${topic.key}`, 'en'), lastModified },
+      { url: localeUrl(`blog/topic/${topic.key}`, 'ar'), lastModified },
+    ]
+  })
+
+  return [...staticPages, ...topicPages, ...blogPages]
 }

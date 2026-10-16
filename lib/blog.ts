@@ -4,19 +4,18 @@ import matter from 'gray-matter'
 import { RelatedIndex } from './content/related'
 import { splitBilingualBody } from './content/postBody'
 import { readingMinutes } from './content/readingTime'
-import { hasTag, tagKey } from './content/blogFilters'
+import { topicOf, type TopicKey } from './content/topics'
+import { tagKey } from './content/blogFilters'
 import { matchProductPage, type ProductPageKey } from './content/productMatch'
 
 const blogDirectory = path.join(process.cwd(), 'content/blog')
 
-export interface BlogPost {
+export interface BlogPostMeta {
   slug: string
   title: string
   titleAr: string
   excerpt: string
   excerptAr: string
-  content: string
-  contentAr: string
   date: string
   /**
    * Date of the last substantive edit, as `YYYY-MM-DD`.
@@ -67,48 +66,25 @@ export interface BlogPost {
    * similarity — see lib/content/related.ts.
    */
   related?: string[]
+  /**
+   * Topic the post is filed under (see lib/content/topics.ts). Derived from
+   * the post's subject unless the frontmatter sets `topic` explicitly.
+   */
+  topic: TopicKey
   /** Minutes to read the English article. */
   readingMinutes: number
   /** Minutes to read the Arabic article. */
   readingMinutesAr: number
 }
 
-export interface BlogPostMeta {
-  slug: string
-  title: string
-  titleAr: string
-  excerpt: string
-  excerptAr: string
-  date: string
-  updated?: string
-  metaTitle?: string
-  metaTitleAr?: string
-  metaDescription?: string
-  metaDescriptionAr?: string
-  primaryKeyword?: string
-  author: string
-  authorAr: string
-  authorUrl?: string
-  authorRole?: string
-  coverImage: string
-  coverImageAlt: string
-  coverImageCredit?: string
-  coverImageCreditUrl?: string
-  category: string
-  categoryAr: string
-  tags: string[]
-  tagsAr: string[]
-  /**
-   * Optional hand-picked related posts (slugs), shown first in the
-   * "Related articles" section. Remaining slots are filled by topic
-   * similarity — see lib/content/related.ts.
-   */
-  related?: string[]
-  /** Minutes to read the English article. */
-  readingMinutes: number
-  /** Minutes to read the Arabic article. */
-  readingMinutesAr: number
+/** A post with its rendered-language bodies (markdown), as read for a post page. */
+export interface BlogPost extends BlogPostMeta {
+  /** English article body (markdown). */
+  content: string
+  /** Arabic article body (markdown). */
+  contentAr: string
 }
+
 
 /**
  * Maps a post's frontmatter to the metadata every page needs. Single source of
@@ -141,6 +117,14 @@ function toMeta(slug: string, data: Record<string, any>, body: { en: string; ar:
     tags: data.tags || [],
     tagsAr: data.tagsAr || data.tags || [],
     related: Array.isArray(data.related) ? data.related.map(String) : undefined,
+    topic: topicOf({
+      title: data.title || '',
+      excerpt: data.excerpt || '',
+      tags: data.tags || [],
+      primaryKeyword: data.primaryKeyword,
+      topic: data.topic,
+      category: data.category,
+    }),
     readingMinutes: readingMinutes(body.en),
     readingMinutesAr: readingMinutes(body.ar),
   }
@@ -237,19 +221,6 @@ export function getPostsForProduct(product: ProductPageKey, limit = 3): BlogPost
   return matching.slice(0, limit)
 }
 
-export function getAllCategories(): { en: string; ar: string }[] {
-  const posts = getAllPosts()
-  const categoriesMap = new Map<string, string>()
-
-  posts.forEach((post) => {
-    if (!categoriesMap.has(post.category)) {
-      categoriesMap.set(post.category, post.categoryAr)
-    }
-  })
-
-  return Array.from(categoriesMap.entries()).map(([en, ar]) => ({ en, ar }))
-}
-
 /**
  * Every distinct tag with its Arabic label. Tags that differ only in case
  * ("Property Management" / "property management") are listed once, under the
@@ -268,25 +239,7 @@ export function getAllTags(): { en: string; ar: string }[] {
   return Array.from(tagsMap.values())
 }
 
-export function getPostsByCategory(category: string): BlogPostMeta[] {
-  return getAllPosts().filter(
-    (post) => post.category.toLowerCase() === category.toLowerCase()
-  )
-}
-
-export function getPostsByTag(tag: string): BlogPostMeta[] {
-  return getAllPosts().filter((post) => hasTag(post.tags, tag))
-}
-
-export function searchPosts(query: string): BlogPostMeta[] {
-  const lowercaseQuery = query.toLowerCase()
-  return getAllPosts().filter(
-    (post) =>
-      post.title.toLowerCase().includes(lowercaseQuery) ||
-      post.titleAr.includes(query) ||
-      post.excerpt.toLowerCase().includes(lowercaseQuery) ||
-      post.excerptAr.includes(query) ||
-      post.tags.some((tag) => tag.toLowerCase().includes(lowercaseQuery)) ||
-      post.tagsAr.some((tag) => tag.includes(query))
-  )
+/** Every post filed under a topic, newest first. */
+export function getPostsByTopic(topic: TopicKey): BlogPostMeta[] {
+  return getAllPosts().filter((post) => post.topic === topic)
 }

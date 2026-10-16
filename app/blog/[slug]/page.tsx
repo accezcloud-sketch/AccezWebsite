@@ -4,6 +4,7 @@ import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { renderMarkdown } from '@/lib/content/markdown'
 import { postMetadata } from '@/lib/content/postSeo'
+import { topicLabel } from '@/lib/content/topics'
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({
@@ -146,7 +147,7 @@ function getBlogPostingSchema(post: ReturnType<typeof getAllPosts>[number]) {
       '@id': `https://www.accez.cloud/blog/${post.slug}`,
     },
     keywords: post.tags.join(', '),
-    articleSection: post.category,
+    articleSection: topicLabel(post.topic, 'en'),
     // The English article is what is served at this URL. When Arabic gets its
     // own /ar routes this becomes per-route rather than a constant.
     inLanguage: 'en',
