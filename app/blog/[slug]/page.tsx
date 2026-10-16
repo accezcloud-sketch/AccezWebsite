@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
-import BlogPostClient from '@/components/BlogPostClient'
-import PostFooter from '@/components/blog/PostFooter'
-import { getAllPosts, getPostBySlug } from '@/lib/blog'
-import { renderArticle } from '@/lib/content/markdown'
+import BlogPostView from '@/components/blog/BlogPostPage'
+import { getAllPosts } from '@/lib/blog'
 import { postMetadata } from '@/lib/content/postSeo'
-import { topicLabel } from '@/lib/content/topics'
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({
@@ -103,109 +100,7 @@ const howToSteps: Record<string, { name: string; text: string }[]> = {
   ],
 }
 
-function getBlogPostingSchema(post: ReturnType<typeof getAllPosts>[number]) {
-  // Raster rather than WebP, matching the Open Graph tags above. Google does
-  // accept WebP in structured data, but the JPEG is the safest common
-  // denominator across every consumer of this markup.
-  const imageUrl = post.coverImage.startsWith('http')
-    ? post.coverImage
-    : `https://www.accez.cloud${post.coverImage.replace(/\.webp$/, '.jpg')}`
-
-  // Google's "Who created it" guidance asks for a named human with verifiable
-  // credentials. When a post declares `authorUrl` in its frontmatter we emit a
-  // `Person` with a `sameAs` link; otherwise we keep the house `Organization`
-  // byline, which is valid markup but a much weaker trust signal.
-  const author = post.authorUrl
-    ? {
-        '@type': 'Person',
-        name: post.author,
-        url: post.authorUrl,
-        sameAs: [post.authorUrl],
-        ...(post.authorRole ? { jobTitle: post.authorRole } : {}),
-        worksFor: { '@id': 'https://www.accez.cloud/#organization' },
-      }
-    : {
-        '@type': 'Organization',
-        name: post.author,
-        url: 'https://www.accez.cloud',
-      }
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.excerpt,
-    image: imageUrl,
-    datePublished: post.date,
-    // Was hardcoded to `post.date`, so genuine edits were invisible to Google.
-    // Now reflects the optional `updated` frontmatter field when present.
-    dateModified: post.updated || post.date,
-    author,
-    publisher: { '@id': 'https://www.accez.cloud/#organization' },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://www.accez.cloud/blog/${post.slug}`,
-    },
-    keywords: post.tags.join(', '),
-    articleSection: topicLabel(post.topic, 'en'),
-    // The English article is what is served at this URL. When Arabic gets its
-    // own /ar routes this becomes per-route rather than a constant.
-    inLanguage: 'en',
-    url: `https://www.accez.cloud/blog/${post.slug}`,
-  }
-}
-
-/**
- * Breadcrumbs for the natural hierarchy: home -> blog -> post.
- *
- * Cheap, reliably rendered by Google, and it changes how the URL path is
- * displayed in results — a click-through improvement rather than a ranking one.
- */
-function getBreadcrumbSchema(post: ReturnType<typeof getAllPosts>[number]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.accez.cloud/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.accez.cloud/blog/' },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: post.title,
-        item: `https://www.accez.cloud/blog/${post.slug}/`,
-      },
-    ],
-  }
-}
-
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
-  const postMeta = getAllPosts().find((p) => p.slug === slug)
-  const fullPost = getPostBySlug(slug)
-  const article = fullPost ? renderArticle(fullPost.content, { locale: 'en' }) : { html: '', toc: [] }
-
-  const schemas: object[] = []
-
-  if (postMeta) {
-    schemas.push(getBlogPostingSchema(postMeta))
-    schemas.push(getBreadcrumbSchema(postMeta))
-  }
-
-  return (
-    <>
-      {schemas.map((schema, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      ))}
-      <BlogPostClient
-        post={postMeta ?? null}
-        contentHtml={article.html}
-        toc={article.toc}
-        afterArticle={<PostFooter slug={slug} locale="en" />}
-      />
-    </>
-  )
+  return <BlogPostView slug={slug} locale="en" />
 }
