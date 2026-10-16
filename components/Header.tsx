@@ -18,10 +18,13 @@ const PRODUCT_MENU: MenuItem[] = [
   { name: 'Service providers', nameAr: 'مقدمو الخدمات', href: '/service-providers', desc: 'List on the Accez marketplace', descAr: 'أدرج في سوق أكسيز' },
 ]
 
-// The legal pages, surfaced as a first-class nav item. They used to live only
-// in the footer bottom bar, which is where policies go to be ignored — a
-// marketplace that holds other people's money should make them easy to find.
-const POLICIES_MENU: MenuItem[] = [
+// Reading and help, plus the legal pages. The legal pages were promoted from
+// the footer on purpose (a marketplace that holds other people's money should
+// make its policies easy to find), so they stay one click away here.
+const RESOURCES_MENU: MenuItem[] = [
+  { name: 'Blog', nameAr: 'المدونة', href: '/blog', desc: 'Guides and insights for Saudi operators', descAr: 'أدلة ورؤى لمشغّلي العقارات في السعودية' },
+  { name: 'FAQ', nameAr: 'الأسئلة الشائعة', href: '/faq', desc: 'Answers to common questions', descAr: 'إجابات عن الأسئلة الشائعة' },
+  { name: 'Support', nameAr: 'الدعم', href: '/support', desc: 'Get help from our team', descAr: 'احصل على مساعدة من فريقنا' },
   { name: 'Terms of Service', nameAr: 'شروط الخدمة', href: '/terms', desc: 'The agreement that governs the platform', descAr: 'الاتفاقية التي تحكم استخدام المنصة' },
   { name: 'Privacy Policy', nameAr: 'سياسة الخصوصية', href: '/privacy', desc: 'How we handle personal data under PDPL', descAr: 'كيف نتعامل مع البيانات الشخصية' },
   { name: 'Refund & Cancellation', nameAr: 'الاسترداد والإلغاء', href: '/refund-policy', desc: 'Cancellations, refunds and chargebacks', descAr: 'الإلغاء والاسترداد والمنازعات' },
@@ -31,14 +34,14 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [productOpen, setProductOpen] = useState(false)
   const [signInOpen, setSignInOpen] = useState(false)
-  const [policiesOpen, setPoliciesOpen] = useState(false)
+  const [resourcesOpen, setResourcesOpen] = useState(false)
   const [mobileProductOpen, setMobileProductOpen] = useState(false)
-  const [mobilePoliciesOpen, setMobilePoliciesOpen] = useState(false)
+  const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [atTop, setAtTop] = useState(true)
   const { language, setLanguage, t } = useLanguage()
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const policiesTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const resourcesTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const { scrollYProgress } = useScroll()
   const scrollProgress = useSpring(scrollYProgress, { stiffness: 200, damping: 40, restDelta: 0.001 })
@@ -58,8 +61,6 @@ export default function Header() {
   const navItems = [
     { name: t.header.pricing, href: '/pricing' },
     { name: t.header.about, href: '/about' },
-    { name: t.header.blog, href: '/blog' },
-    { name: t.header.support, href: '/support' },
   ]
 
   const linkClass = [
@@ -75,13 +76,13 @@ export default function Header() {
     if (closeTimer.current) clearTimeout(closeTimer.current)
     closeTimer.current = setTimeout(() => setProductOpen(false), 120)
   }
-  const openPolicies = () => {
-    if (policiesTimer.current) clearTimeout(policiesTimer.current)
-    setPoliciesOpen(true)
+  const openResources = () => {
+    if (resourcesTimer.current) clearTimeout(resourcesTimer.current)
+    setResourcesOpen(true)
   }
-  const schedulePoliciesClose = () => {
-    if (policiesTimer.current) clearTimeout(policiesTimer.current)
-    policiesTimer.current = setTimeout(() => setPoliciesOpen(false), 120)
+  const scheduleResourcesClose = () => {
+    if (resourcesTimer.current) clearTimeout(resourcesTimer.current)
+    resourcesTimer.current = setTimeout(() => setResourcesOpen(false), 120)
   }
 
   return (
@@ -186,27 +187,27 @@ export default function Header() {
               <a key={item.name} href={localeHref(item.href, language)} className={linkClass}>{item.name}</a>
             ))}
 
-            {/* Policies dropdown — same interaction as Product. The panel is
+            {/* Resources dropdown — same interaction as Product. The panel is
                 anchored with end-0 rather than start-0 because this is the last
                 nav item, so a start-anchored panel would overflow the viewport
                 on narrower desktop widths. */}
-            <div className="relative h-16 flex items-center" onMouseEnter={openPolicies} onMouseLeave={schedulePoliciesClose}>
+            <div className="relative h-16 flex items-center" onMouseEnter={openResources} onMouseLeave={scheduleResourcesClose}>
               <button
                 type="button"
                 className={`${linkClass} inline-flex items-center gap-1`}
                 aria-haspopup="true"
-                aria-expanded={policiesOpen}
-                onClick={() => setPoliciesOpen((v) => !v)}
-                onFocus={openPolicies}
+                aria-expanded={resourcesOpen}
+                onClick={() => setResourcesOpen((v) => !v)}
+                onFocus={openResources}
               >
-                {language === 'ar' ? 'السياسات' : 'Policies'}
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="transition-transform duration-200" style={{ transform: policiesOpen ? 'rotate(180deg)' : 'none' }} aria-hidden="true">
+                {language === 'ar' ? 'الموارد' : 'Resources'}
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="transition-transform duration-200" style={{ transform: resourcesOpen ? 'rotate(180deg)' : 'none' }} aria-hidden="true">
                   <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
 
               <AnimatePresence>
-                {policiesOpen && (
+                {resourcesOpen && (
                   <motion.div
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -224,11 +225,11 @@ export default function Header() {
                         backdropFilter: 'blur(20px)',
                       }}
                     >
-                      {POLICIES_MENU.map((m) => (
+                      {RESOURCES_MENU.map((m) => (
                         <a
                           key={m.href}
                           href={localeHref(m.href, language)}
-                          onClick={() => setPoliciesOpen(false)}
+                          onClick={() => setResourcesOpen(false)}
                           className="block rounded-xl px-3 py-2.5 transition-colors duration-150"
                           style={{ color: 'var(--text)' }}
                           onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--surface-hi)')}
@@ -375,22 +376,22 @@ export default function Header() {
                   </a>
                 ))}
 
-                {/* Policies group (collapsible) */}
+                {/* Resources group (collapsible) */}
                 <button
                   type="button"
-                  onClick={() => setMobilePoliciesOpen((v) => !v)}
+                  onClick={() => setMobileResourcesOpen((v) => !v)}
                   className="flex items-center justify-between text-slate-300 hover:text-white font-medium transition-colors duration-200 py-2"
-                  aria-expanded={mobilePoliciesOpen}
+                  aria-expanded={mobileResourcesOpen}
                 >
-                  {language === 'ar' ? 'السياسات' : 'Policies'}
-                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" style={{ transform: mobilePoliciesOpen ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }} aria-hidden="true">
+                  {language === 'ar' ? 'الموارد' : 'Resources'}
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" style={{ transform: mobileResourcesOpen ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }} aria-hidden="true">
                     <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </button>
                 <AnimatePresence>
-                  {mobilePoliciesOpen && (
+                  {mobileResourcesOpen && (
                     <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden ps-3 flex flex-col gap-1 border-s" style={{ borderColor: 'var(--border)' }}>
-                      {POLICIES_MENU.map((m) => (
+                      {RESOURCES_MENU.map((m) => (
                         <a key={m.href} href={localeHref(m.href, language)} onClick={() => setIsMobileMenuOpen(false)} className="text-slate-400 hover:text-white text-sm py-1.5 transition-colors">
                           {language === 'ar' ? m.nameAr : m.name}
                         </a>
