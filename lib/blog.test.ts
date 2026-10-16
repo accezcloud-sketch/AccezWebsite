@@ -132,3 +132,15 @@ describe('getPostsForProduct', () => {
     expect(dates).toEqual([...dates].sort((a, b) => b - a))
   })
 })
+
+describe('post bodies', () => {
+  it('never start with leftover frontmatter in either language', () => {
+    for (const meta of posts) {
+      const post = getPostBySlug(meta.slug)!
+      for (const body of [post.content, post.contentAr]) {
+        expect(body.trimStart().startsWith('---'), meta.slug).toBe(false)
+        expect(body, meta.slug).not.toMatch(/^(title|metaTitle|coverImage):/m)
+      }
+    }
+  })
+})

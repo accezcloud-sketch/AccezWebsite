@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
 import { RelatedIndex } from './content/related'
+import { splitBilingualBody } from './content/postBody'
 import { hasTag, tagKey } from './content/blogFilters'
 import { matchProductPage, type ProductPageKey } from './content/productMatch'
 
@@ -188,20 +189,10 @@ export function createBlogRepository(directory: string): BlogRepository {
     getPostBySlug(slug) {
       try {
         const fileContents = fs.readFileSync(path.join(directory, `${slug}.md`), 'utf8')
-        const { data, content: rawContent } = matter(fileContents)
-        const content = rawContent.replace(/\r\n/g, '\n')
+        const { data, content } = matter(fileContents)
+        const { en, ar } = splitBilingualBody(content)
 
-        // Split content by language marker if present
-        let contentEn = content
-        let contentAr = content
-
-        if (content.includes('<!-- AR -->')) {
-          const parts = content.split('<!-- AR -->')
-          contentEn = parts[0].trim()
-          contentAr = parts[1]?.trim() || contentEn
-        }
-
-        return { ...toMeta(slug, data, readingTime(content).text), content: contentEn, contentAr }
+        return { ...toMeta(slug, data, readingTime(content).text), content: en, contentAr: ar }
       } catch {
         return null
       }
