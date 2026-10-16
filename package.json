@@ -8,7 +8,8 @@
     "prebuild": "node scripts/optimize-blog-images.mjs && node scripts/check-legal-alignment.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "vitest": "^3.2.4"
   }
 }

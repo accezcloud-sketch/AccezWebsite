@@ -1,5 +1,6 @@
 'use client'
 
+import type { ReactNode } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
@@ -10,9 +11,15 @@ import { localeHref } from '@/lib/i18n'
 
 interface BlogPostClientProps {
   post: BlogPost | null
+  /**
+   * Server-rendered content shown between the article and the footer (the
+   * related-articles block). Passed in as a slot so this client component
+   * stays unaware of how related posts are chosen.
+   */
+  afterArticle?: ReactNode
 }
 
-export default function BlogPostClient({ post }: BlogPostClientProps) {
+export default function BlogPostClient({ post, afterArticle }: BlogPostClientProps) {
   const { language, isRTL } = useLanguage()
 
   const content = {
@@ -23,7 +30,6 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       by: 'By',
       minRead: 'min read',
       shareArticle: 'Share this article',
-      relatedPosts: 'Related Posts',
       notFound: 'Post not found',
       notFoundDesc: 'The blog post you are looking for does not exist.',
     },
@@ -32,7 +38,6 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       by: 'بواسطة',
       minRead: 'دقيقة قراءة',
       shareArticle: 'شارك هذه المقالة',
-      relatedPosts: 'مقالات ذات صلة',
       notFound: 'المقالة غير موجودة',
       notFoundDesc: 'المقالة التي تبحث عنها غير موجودة.',
     },
@@ -277,6 +282,8 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           </div>
         </div>
       </article>
+
+      {afterArticle}
 
       <Footer />
     </main>

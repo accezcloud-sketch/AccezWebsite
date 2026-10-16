@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
+import { RelatedIndex } from './content/related'
 
 const blogDirectory = path.join(process.cwd(), 'content/blog')
 
@@ -57,6 +58,12 @@ export interface BlogPost {
   categoryAr: string
   tags: string[]
   tagsAr: string[]
+  /**
+   * Optional hand-picked related posts (slugs), shown first in the
+   * "Related articles" section. Remaining slots are filled by topic
+   * similarity — see lib/content/related.ts.
+   */
+  related?: string[]
   readingTime: string
 }
 
@@ -85,107 +92,140 @@ export interface BlogPostMeta {
   categoryAr: string
   tags: string[]
   tagsAr: string[]
+  /**
+   * Optional hand-picked related posts (slugs), shown first in the
+   * "Related articles" section. Remaining slots are filled by topic
+   * similarity — see lib/content/related.ts.
+   */
+  related?: string[]
   readingTime: string
 }
 
-export function getAllPosts(): BlogPostMeta[] {
-  if (!fs.existsSync(blogDirectory)) {
-    return []
+/**
+ * Maps a post's frontmatter to the metadata every page needs. Single source of
+ * truth for defaults, shared by the list and single-post readers.
+ */
+function toMeta(slug: string, data: Record<string, any>, readingTimeText: string): BlogPostMeta {
+  return {
+    slug,
+    title: data.title || '',
+    titleAr: data.titleAr || data.title || '',
+    excerpt: data.excerpt || '',
+    excerptAr: data.excerptAr || data.excerpt || '',
+    date: data.date || '',
+    updated: data.updated || undefined,
+    metaTitle: data.metaTitle || undefined,
+    metaTitleAr: data.metaTitleAr || undefined,
+    metaDescription: data.metaDescription || undefined,
+    metaDescriptionAr: data.metaDescriptionAr || undefined,
+    primaryKeyword: data.primaryKeyword || undefined,
+    authorUrl: data.authorUrl || undefined,
+    authorRole: data.authorRole || undefined,
+    author: data.author || '',
+    authorAr: data.authorAr || data.author || '',
+    coverImage: data.coverImage || '/images/blog/default.jpg',
+    coverImageAlt: data.coverImageAlt || data.title || '',
+    coverImageCredit: data.coverImageCredit || undefined,
+    coverImageCreditUrl: data.coverImageCreditUrl || undefined,
+    category: data.category || 'General',
+    categoryAr: data.categoryAr || data.category || 'عام',
+    tags: data.tags || [],
+    tagsAr: data.tagsAr || data.tags || [],
+    related: Array.isArray(data.related) ? data.related.map(String) : undefined,
+    readingTime: readingTimeText,
+  }
+}
+
+export interface BlogRepository {
+  getAllPosts(): BlogPostMeta[]
+  getPostBySlug(slug: string): BlogPost | null
+  getRelatedPosts(slug: string, limit?: number): BlogPostMeta[]
+}
+
+/**
+ * Reads posts from a directory of markdown files.
+ *
+ * Every post is parsed once per directory state and cached. A static build
+ * renders each of the ~200 blog pages several times (metadata + page +
+ * related posts); without the cache each render re-read and re-parsed every
+ * post. The cache key is the file names plus modification times, so adding or
+ * editing a post invalidates it — in `next dev` as well as in a build.
+ *
+ * Takes the directory as a parameter so tests can point it at fixtures.
+ */
+export function createBlogRepository(directory: string): BlogRepository {
+  let cache: { signature: string; posts: BlogPostMeta[]; index: RelatedIndex } | null = null
+
+  function load(): { posts: BlogPostMeta[]; index: RelatedIndex } {
+    if (!fs.existsSync(directory)) return { posts: [], index: new RelatedIndex([]) }
+
+    const fileNames = fs.readdirSync(directory).filter((fileName) => fileName.endsWith('.md'))
+    const signature = fileNames
+      .map((name) => `${name}:${fs.statSync(path.join(directory, name)).mtimeMs}`)
+      .join('|')
+    if (cache?.signature === signature) return cache
+
+    const posts = fileNames
+      .map((fileName) => {
+        const slug = fileName.replace(/\.md$/, '')
+        const { data, content } = matter(fs.readFileSync(path.join(directory, fileName), 'utf8'))
+        return toMeta(slug, data, readingTime(content).text)
+      })
+      .sort((a, b) => (new Date(b.date) > new Date(a.date) ? 1 : -1))
+
+    cache = { signature, posts, index: new RelatedIndex(posts) }
+    return cache
   }
 
-  const fileNames = fs.readdirSync(blogDirectory)
-  const allPosts = fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '')
-      const fullPath = path.join(blogDirectory, fileName)
-      const fileContents = fs.readFileSync(fullPath, 'utf8')
-      const { data, content } = matter(fileContents)
-      const stats = readingTime(content)
+  return {
+    getAllPosts() {
+      // A copy, so callers that sort or filter can't reorder the cache.
+      return [...load().posts]
+    },
 
-      return {
-        slug,
-        title: data.title || '',
-        titleAr: data.titleAr || data.title || '',
-        excerpt: data.excerpt || '',
-        excerptAr: data.excerptAr || data.excerpt || '',
-        date: data.date || '',
-        updated: data.updated || undefined,
-        metaTitle: data.metaTitle || undefined,
-        metaTitleAr: data.metaTitleAr || undefined,
-        metaDescription: data.metaDescription || undefined,
-        metaDescriptionAr: data.metaDescriptionAr || undefined,
-        primaryKeyword: data.primaryKeyword || undefined,
-        authorUrl: data.authorUrl || undefined,
-        authorRole: data.authorRole || undefined,
-        author: data.author || '',
-        authorAr: data.authorAr || data.author || '',
-        coverImage: data.coverImage || '/images/blog/default.jpg',
-        coverImageAlt: data.coverImageAlt || data.title || '',
-        coverImageCredit: data.coverImageCredit || undefined,
-        coverImageCreditUrl: data.coverImageCreditUrl || undefined,
-        category: data.category || 'General',
-        categoryAr: data.categoryAr || data.category || 'عام',
-        tags: data.tags || [],
-        tagsAr: data.tagsAr || data.tags || [],
-        readingTime: stats.text,
+    getPostBySlug(slug) {
+      try {
+        const fileContents = fs.readFileSync(path.join(directory, `${slug}.md`), 'utf8')
+        const { data, content: rawContent } = matter(fileContents)
+        const content = rawContent.replace(/\r\n/g, '\n')
+
+        // Split content by language marker if present
+        let contentEn = content
+        let contentAr = content
+
+        if (content.includes('<!-- AR -->')) {
+          const parts = content.split('<!-- AR -->')
+          contentEn = parts[0].trim()
+          contentAr = parts[1]?.trim() || contentEn
+        }
+
+        return { ...toMeta(slug, data, readingTime(content).text), content: contentEn, contentAr }
+      } catch {
+        return null
       }
-    })
+    },
 
-  return allPosts.sort((a, b) => (new Date(b.date) > new Date(a.date) ? 1 : -1))
-}
-
-export function getPostBySlug(slug: string): BlogPost | null {
-  try {
-    const fullPath = path.join(blogDirectory, `${slug}.md`)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const { data, content: rawContent } = matter(fileContents)
-    const content = rawContent.replace(/\r\n/g, '\n')
-    const stats = readingTime(content)
-
-    // Split content by language marker if present
-    let contentEn = content
-    let contentAr = content
-
-    if (content.includes('<!-- AR -->')) {
-      const parts = content.split('<!-- AR -->')
-      contentEn = parts[0].trim()
-      contentAr = parts[1]?.trim() || contentEn
-    }
-
-    return {
-      slug,
-      title: data.title || '',
-      titleAr: data.titleAr || data.title || '',
-      excerpt: data.excerpt || '',
-      excerptAr: data.excerptAr || data.excerpt || '',
-      content: contentEn,
-      contentAr: contentAr,
-      date: data.date || '',
-      updated: data.updated || undefined,
-      metaTitle: data.metaTitle || undefined,
-      metaTitleAr: data.metaTitleAr || undefined,
-      metaDescription: data.metaDescription || undefined,
-      metaDescriptionAr: data.metaDescriptionAr || undefined,
-      primaryKeyword: data.primaryKeyword || undefined,
-      authorUrl: data.authorUrl || undefined,
-      authorRole: data.authorRole || undefined,
-      author: data.author || '',
-      authorAr: data.authorAr || data.author || '',
-      coverImage: data.coverImage || '/images/blog/default.jpg',
-      coverImageAlt: data.coverImageAlt || data.title || '',
-      coverImageCredit: data.coverImageCredit || undefined,
-      coverImageCreditUrl: data.coverImageCreditUrl || undefined,
-      category: data.category || 'General',
-      categoryAr: data.categoryAr || data.category || 'عام',
-      tags: data.tags || [],
-      tagsAr: data.tagsAr || data.tags || [],
-      readingTime: stats.text,
-    }
-  } catch {
-    return null
+    /**
+     * The posts a reader of `slug` should see next, best first. Hand-picked
+     * `related` slugs come first; the rest are ranked by topic similarity.
+     */
+    getRelatedPosts(slug, limit = 3) {
+      const { posts, index } = load()
+      const bySlug = new Map(posts.map((p) => [p.slug, p]))
+      return index
+        .relatedTo(slug, { limit })
+        .map((s) => bySlug.get(s))
+        .filter((p): p is BlogPostMeta => p !== undefined)
+    },
   }
 }
+
+const defaultRepository = createBlogRepository(blogDirectory)
+
+export const getAllPosts = (): BlogPostMeta[] => defaultRepository.getAllPosts()
+export const getPostBySlug = (slug: string): BlogPost | null => defaultRepository.getPostBySlug(slug)
+export const getRelatedPosts = (slug: string, limit?: number): BlogPostMeta[] =>
+  defaultRepository.getRelatedPosts(slug, limit)
 
 export function getAllCategories(): { en: string; ar: string }[] {
   const posts = getAllPosts()

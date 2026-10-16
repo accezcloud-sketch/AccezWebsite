@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
-import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import { getAllPosts, getPostBySlug, getRelatedPosts } from '@/lib/blog'
 import { alternatesFor, localeUrl, SITE_URL } from '@/lib/i18n'
 
 /**
@@ -135,7 +136,10 @@ export default async function ArabicBlogPostPage({ params }: PageProps) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
-      <BlogPostClient post={fullPost} />
+      <BlogPostClient
+        post={fullPost}
+        afterArticle={<RelatedPosts posts={getRelatedPosts(slug)} locale="ar" />}
+      />
     </>
   )
 }

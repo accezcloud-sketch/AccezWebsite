@@ -1,11 +1,10 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPostMeta } from '@/lib/blog'
 import Select from '@/components/ui/Select'
+import PostCard from '@/components/blog/PostCard'
 import { localeHref } from '@/lib/i18n'
 
 interface BlogListClientProps {
@@ -152,55 +151,19 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
               {posts.map((post) => {
                 const isHidden = isFiltering && filteredSlugs && !filteredSlugs.has(post.slug)
                 return (
-                  <Link
+                  <PostCard
                     key={post.slug}
                     href={localeHref(`/blog/${post.slug}`, language)}
-                    prefetch={false}
-                    className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 ${isHidden ? 'hidden' : ''}`}
-                    style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
-                  >
-                    <div className="relative aspect-[16/10] overflow-hidden" style={{ background: 'var(--bg-alt)' }}>
-                      <Image
-                        src={post.coverImage}
-                        alt={post.coverImageAlt}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute top-4 start-4">
-                        <span className="text-white text-xs px-3 py-1 rounded-full font-medium" style={{ background: 'var(--accent)' }}>
-                          {language === 'ar' ? post.categoryAr : post.category}
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="p-6">
-                      <div className="flex items-center gap-3 text-sm mb-3" style={{ color: 'var(--text-faint)' }}>
-                        <span>{formatDate(post.date)}</span>
-                        <span>·</span>
-                        <span>{post.readingTime.replace('min read', t.minRead)}</span>
-                      </div>
-
-                      <h2 className="text-lg font-bold text-white mb-2 transition-colors" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
-                        {language === 'ar' ? post.titleAr : post.title}
-                      </h2>
-
-                      <p className="mb-4 line-clamp-2 leading-relaxed" style={{ fontSize: 14, color: 'var(--text-muted)' }}>
-                        {language === 'ar' ? post.excerptAr : post.excerpt}
-                      </p>
-
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm" style={{ color: 'var(--text-faint)' }}>
-                          {t.by} {language === 'ar' ? post.authorAr : post.author}
-                        </span>
-                        <span className="text-sm font-medium inline-flex items-center gap-1" style={{ color: 'var(--accent-hi)' }}>
-                          {t.readMore}
-                          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" className="transition-transform group-hover:translate-x-0.5" aria-hidden="true">
-                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
+                    title={language === 'ar' ? post.titleAr : post.title}
+                    excerpt={language === 'ar' ? post.excerptAr : post.excerpt}
+                    coverImage={post.coverImage}
+                    coverImageAlt={post.coverImageAlt}
+                    category={language === 'ar' ? post.categoryAr : post.category}
+                    meta={[formatDate(post.date), post.readingTime.replace('min read', t.minRead)]}
+                    readMoreLabel={t.readMore}
+                    byline={`${t.by} ${language === 'ar' ? post.authorAr : post.author}`}
+                    className={isHidden ? 'hidden' : ''}
+                  />
                 )
               })}
             </div>
