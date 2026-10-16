@@ -60,11 +60,12 @@ Disallow: /
 User-agent: PetalBot
 Disallow: /
 
-# ─── Everyone else: allowed, throttled, kept out of internal artifacts ───
+# ─── Everyone else: allowed, kept out of internal artifacts ───
+# No Crawl-delay: Google ignores it, so it only slowed the AI-search and
+# smaller search-engine crawlers this group is meant to welcome.
 User-agent: *
 Disallow: /*__next
 Disallow: /*_next/data
-Crawl-delay: 10
 Allow: /
 
 Sitemap: https://www.accez.cloud/sitemap.xml
