@@ -6,37 +6,12 @@ import { PILLARS } from '@/components/ProductScope'
 import FadeUp from '@/components/animations/FadeUp'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 import { localeHref } from '@/lib/i18n'
-
-const CONTENT = {
-  en: {
-    eyebrow: 'Product',
-    titleLead: 'Everything Accez',
-    titleAccent: 'runs',
-    subtitle: 'One platform for the whole property operation. Explore every module, and open the ones with a dedicated page for the full detail.',
-    linked: 'Learn more',
-    ctaTitle: 'See it on your own portfolio',
-    ctaSub: 'Book a walkthrough with the team in Riyadh.',
-    ctaPrimary: 'Book a demo',
-    ctaSecondary: 'Start free',
-  },
-  ar: {
-    eyebrow: 'المنتج',
-    titleLead: 'كل ما تديره',
-    titleAccent: 'أكسيز',
-    subtitle: 'منصة واحدة لعملية العقار بالكامل. استكشف كل وحدة، وافتح الوحدات التي لها صفحة مخصصة لمزيد من التفاصيل.',
-    linked: 'اعرف المزيد',
-    ctaTitle: 'شاهدها على محفظتك',
-    ctaSub: 'احجز جولة مع الفريق في الرياض.',
-    ctaPrimary: 'اطلب عرضًا توضيحيًا',
-    ctaSecondary: 'ابدأ مجانًا',
-  },
-} as const
-
-const PORTAL_SIGN_UP = 'https://portal.accez.cloud/sign-up'
+import { PORTAL_SIGN_UP } from '@/lib/links'
+import { MODULES_COPY } from '@/lib/content/modulesCopy'
 
 export default function ModulesPage() {
   const { language, isRTL } = useLanguage()
-  const t = CONTENT[language]
+  const t = MODULES_COPY[language]
 
   const arrow = (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ transform: isRTL ? 'scaleX(-1)' : undefined }} aria-hidden="true">

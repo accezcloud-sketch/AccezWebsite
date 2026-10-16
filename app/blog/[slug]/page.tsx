@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import BlogPostClient from '@/components/BlogPostClient'
-import RelatedPosts from '@/components/blog/RelatedPosts'
-import { getAllPosts, getPostBySlug, getRelatedPosts } from '@/lib/blog'
+import PostFooter from '@/components/blog/PostFooter'
+import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { alternatesFor } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -251,7 +251,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       ))}
       <BlogPostClient
         post={fullPost}
-        afterArticle={<RelatedPosts posts={getRelatedPosts(slug)} locale="en" />}
+        afterArticle={<PostFooter slug={slug} locale="en" />}
       />
     </>
   )
