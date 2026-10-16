@@ -7,6 +7,7 @@ import type { Metadata } from 'next'
 import { alternatesFor, localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
 import { topicLabel, type TopicKey } from './topics'
 import { pageRoute } from './pagination'
+import { feedUrl } from './rss'
 
 export const BLOG_INDEX_COPY = {
   en: {
@@ -55,7 +56,7 @@ export function blogIndexMetadata(locale: Locale, topic?: TopicKey, page = 1): M
   return {
     title,
     description,
-    alternates: alternatesFor(route, locale),
+    alternates: { ...alternatesFor(route, locale), types: { 'application/rss+xml': feedUrl(locale) } },
     openGraph: {
       title: label ? `${label} | Accez` : c.socialTitle,
       description: label ? description : c.socialDescription,

@@ -32,10 +32,15 @@ export const metadata: Metadata = {
   // /support and /thankyou at the homepage, telling Google they were duplicates
   // of `/` and should not be indexed, while /support was still listed in the
   // sitemap. Every page now declares its own canonical explicitly.
+  // Square icons: Google requires a square favicon (a multiple of 48px), and
+  // the logo file is 112x116. favicon.ico serves browsers that request it
+  // directly.
   icons: {
-    icon: '/images/accez-logo.png',
-    shortcut: '/images/accez-logo.png',
-    apple: '/images/accez-logo.png',
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32 48x48' },
+      { url: '/images/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [{ url: '/images/apple-touch-icon.png', sizes: '180x180' }],
   },
   openGraph: {
     title: 'Accez | All-in-One Property Management for Saudi Arabia',
