@@ -357,7 +357,9 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                               className="text-white font-bold leading-none"
                               style={{ fontSize: 'clamp(36px, 5vw, 48px)' }}
                             >
-                              <AnimatePresence mode="wait">
+                              {/* initial={false}: the first price is in the static HTML, visible;
+                                  only a monthly/yearly switch animates. */}
+                              <AnimatePresence mode="wait" initial={false}>
                                 <motion.span
                                   key={`${plan.id}-${isYearly}-${language}`}
                                   initial={{ opacity: 0, y: -10 }}

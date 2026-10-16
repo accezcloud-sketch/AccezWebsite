@@ -1,7 +1,8 @@
 'use client'
 
 import { useRef } from 'react'
-import { motion, useInView, type Variants } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
+import { useScrollReveal } from './useScrollReveal'
 
 interface StaggerGridProps {
   children: React.ReactNode
@@ -41,15 +42,17 @@ export default function StaggerGrid({
   initialDelay = 0,
 }: StaggerGridProps) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-60px 0px' })
+  // Children render visible in the static HTML; only grids that start below
+  // the fold are hidden (off-screen) and staggered in on scroll.
+  const phase = useScrollReveal(ref, '-60px 0px')
 
   return (
     <motion.div
       ref={ref}
       className={className}
       variants={container(staggerDelay, initialDelay)}
-      initial="hidden"
-      animate={isInView ? 'show' : 'hidden'}
+      initial={false}
+      animate={phase === 'armed' ? 'hidden' : 'show'}
     >
       {children}
     </motion.div>
