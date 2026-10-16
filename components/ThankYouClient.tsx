@@ -1,12 +1,29 @@
 'use client'
 
+import { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
+import { thankYouEvent, trackEvent } from '@/lib/analytics/conversions'
 
 export default function ThankYou() {
   const { language } = useLanguage()
+
+  // Salesforce redirects here after a form is submitted, with ?form=<kind>.
+  // Record that conversion once; a reload of the same page doesn't count again.
+  useEffect(() => {
+    const hit = thankYouEvent(window.location.search)
+    if (!hit) return
+    const key = `accez:conversion:${window.location.search}`
+    try {
+      if (sessionStorage.getItem(key)) return
+      sessionStorage.setItem(key, '1')
+    } catch {
+      // Storage unavailable: still record the conversion.
+    }
+    trackEvent(hit.event, hit.params)
+  }, [])
 
   const content = {
     en: {

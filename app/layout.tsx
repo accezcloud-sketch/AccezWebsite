@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter, Cairo, Poppins } from 'next/font/google'
 import './globals.css'
-import Script from 'next/script'
 import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
+import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -150,57 +150,7 @@ export default function RootLayout({
           {children}
         </LanguageProvider>
         <ChatbotWidget />
-        <Script
-          id="accez-chatbot"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.__accezSubmitLead = function(data) {
-                var iframe = document.createElement("iframe");
-                iframe.name = "sf-lead-iframe";
-                iframe.style.display = "none";
-                document.body.appendChild(iframe);
-
-                var form = document.createElement("form");
-                form.method = "POST";
-                form.action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D41000002kA0p";
-                form.target = "sf-lead-iframe";
-
-                var fields = {
-                  oid: "00D41000002kA0p",
-                  retURL: "https://www.accez.cloud/thankyou",
-                  recordType: "012Pm000004jdap",
-                  lead_source: "Chatbot",
-                  first_name: data.first_name || "",
-                  last_name: data.last_name || "",
-                  email: data.email || "",
-                  company: data.company || "",
-                  mobile: data.mobile || "",
-                  city: data.city || "",
-                  description: data.description || ""
-                };
-
-                Object.keys(fields).forEach(function(key) {
-                  var input = document.createElement("input");
-                  input.type = "hidden";
-                  input.name = key;
-                  input.value = fields[key];
-                  form.appendChild(input);
-                });
-
-                document.body.appendChild(form);
-                form.submit();
-
-                iframe.addEventListener("load", function() {
-                  setTimeout(function() {
-                    if (form.parentNode) form.parentNode.removeChild(form);
-                    if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
-                  }, 2000);
-                });
-              };
-            `,
-          }}
-        />
+        <ConversionTracking />
       </body>
     </html>
   )

@@ -5,6 +5,7 @@ import Script from 'next/script'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { thankYouUrl } from '@/lib/analytics/conversions'
 
 export default function SupportPage() {
   const { language, isRTL } = useLanguage()
@@ -107,7 +108,7 @@ export default function SupportPage() {
               >
                 <input type="hidden" name="captcha_settings" value='{"keyname":"AccezV2","fallback":"true","orgId":"00D41000002kA0p","ts":""}' />
                 <input type="hidden" name="orgid" value="00D41000002kA0p" />
-                <input type="hidden" name="retURL" value="https://www.accez.cloud/thankyou" />
+                <input type="hidden" name="retURL" value={thankYouUrl('support', language)} />
 
                 <div>
                   <label htmlFor="name" className={labelClass} style={labelStyle}>{t.contactName} <span style={{ color: '#f87171' }}>*</span></label>

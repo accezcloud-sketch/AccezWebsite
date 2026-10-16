@@ -3,11 +3,12 @@
 import { useEffect } from 'react'
 import Script from 'next/script'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { thankYouUrl } from '@/lib/analytics/conversions'
 import FadeUp from '@/components/animations/FadeUp'
 import RevealLine from '@/components/animations/RevealLine'
 
 export default function Contact() {
-  const { t, isRTL } = useLanguage()
+  const { t, isRTL, language } = useLanguage()
   const tc = t.contact as Record<string, string>
 
   useEffect(() => {
@@ -170,7 +171,7 @@ export default function Contact() {
                       value='{"keyname":"AccezV2","fallback":"true","orgId":"00D41000002kA0p","ts":""}'
                     />
                     <input type="hidden" name="oid" value="00D41000002kA0p" />
-                    <input type="hidden" name="retURL" value="https://www.accez.cloud/thankyou" />
+                    <input type="hidden" name="retURL" value={thankYouUrl('sales', language)} />
                     <input type="hidden" name="recordType" id="recordType" value="012Pm000004jdap" />
                     <input type="hidden" name="lead_source" value="Web" />
 
