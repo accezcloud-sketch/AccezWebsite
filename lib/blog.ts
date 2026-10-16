@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
 import { RelatedIndex } from './content/related'
+import { hasTag, tagKey } from './content/blogFilters'
 
 const blogDirectory = path.join(process.cwd(), 'content/blog')
 
@@ -240,19 +241,22 @@ export function getAllCategories(): { en: string; ar: string }[] {
   return Array.from(categoriesMap.entries()).map(([en, ar]) => ({ en, ar }))
 }
 
+/**
+ * Every distinct tag with its Arabic label. Tags that differ only in case
+ * ("Property Management" / "property management") are listed once, under the
+ * first spelling seen.
+ */
 export function getAllTags(): { en: string; ar: string }[] {
-  const posts = getAllPosts()
-  const tagsMap = new Map<string, string>()
+  const tagsMap = new Map<string, { en: string; ar: string }>()
 
-  posts.forEach((post) => {
+  getAllPosts().forEach((post) => {
     post.tags.forEach((tag, index) => {
-      if (!tagsMap.has(tag)) {
-        tagsMap.set(tag, post.tagsAr[index] || tag)
-      }
+      const key = tagKey(tag)
+      if (!tagsMap.has(key)) tagsMap.set(key, { en: tag, ar: post.tagsAr[index] || tag })
     })
   })
 
-  return Array.from(tagsMap.entries()).map(([en, ar]) => ({ en, ar }))
+  return Array.from(tagsMap.values())
 }
 
 export function getPostsByCategory(category: string): BlogPostMeta[] {
@@ -262,9 +266,7 @@ export function getPostsByCategory(category: string): BlogPostMeta[] {
 }
 
 export function getPostsByTag(tag: string): BlogPostMeta[] {
-  return getAllPosts().filter((post) =>
-    post.tags.map((t) => t.toLowerCase()).includes(tag.toLowerCase())
-  )
+  return getAllPosts().filter((post) => hasTag(post.tags, tag))
 }
 
 export function searchPosts(query: string): BlogPostMeta[] {

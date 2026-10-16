@@ -5,6 +5,8 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPostMeta } from '@/lib/blog'
 import Select from '@/components/ui/Select'
 import PostCard from '@/components/blog/PostCard'
+import { useBlogFiltersInUrl } from '@/components/blog/useBlogFiltersInUrl'
+import { hasTag } from '@/lib/content/blogFilters'
 import { localeHref } from '@/lib/i18n'
 
 interface BlogListClientProps {
@@ -18,6 +20,17 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [selectedTag, setSelectedTag] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState('')
+
+  const knownTags = useMemo(() => tags.map((tg) => tg.en), [tags])
+  const knownCategories = useMemo(() => categories.map((c) => c.en), [categories])
+  useBlogFiltersInUrl({
+    tag: selectedTag,
+    category: selectedCategory,
+    setTag: setSelectedTag,
+    setCategory: setSelectedCategory,
+    knownTags,
+    knownCategories,
+  })
 
   const content = {
     en: {
@@ -54,7 +67,7 @@ export default function BlogListClient({ posts, categories, tags }: BlogListClie
     }
 
     if (selectedTag !== 'all') {
-      result = result.filter((post) => post.tags.includes(selectedTag))
+      result = result.filter((post) => hasTag(post.tags, selectedTag))
     }
 
     if (searchQuery) {

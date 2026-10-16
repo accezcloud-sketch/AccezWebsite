@@ -8,7 +8,7 @@ import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { createBlogRepository, getAllPosts, getPostBySlug, getRelatedPosts } from './blog'
+import { createBlogRepository, getAllPosts, getAllTags, getPostBySlug, getRelatedPosts } from './blog'
 
 const posts = getAllPosts()
 const slugs = new Set(posts.map((p) => p.slug))
@@ -108,5 +108,12 @@ describe('createBlogRepository cache', () => {
 
   it('returns an empty list for a missing directory', () => {
     expect(createBlogRepository('/nonexistent/blog/dir').getAllPosts()).toEqual([])
+  })
+})
+
+describe('getAllTags', () => {
+  it('lists each tag once, ignoring case', () => {
+    const keys = getAllTags().map((t) => t.en.trim().toLowerCase())
+    expect(new Set(keys).size).toBe(keys.length)
   })
 })

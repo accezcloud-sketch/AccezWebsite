@@ -1,0 +1,58 @@
+/**
+ * Blog-list filters as URL query parameters.
+ *
+ * The tag chips under every post link to `/blog/?tag=<tag>`. The list page
+ * reads that parameter so the reader lands on posts with that tag, not on the
+ * full unfiltered list. Pure functions; no DOM or framework.
+ */
+
+export interface BlogFilters {
+  tag: string | null
+  category: string | null
+}
+
+/**
+ * Tags are free text written by the content pipeline, so the same tag shows
+ * up as "Property Management" and "property management". Compare them by
+ * this key.
+ */
+export function tagKey(tag: string): string {
+  return tag.trim().toLowerCase()
+}
+
+/** True when a post's tag list contains `tag`, ignoring case and spacing. */
+export function hasTag(tags: readonly string[], tag: string): boolean {
+  const wanted = tagKey(tag)
+  return tags.some((t) => tagKey(t) === wanted)
+}
+
+/** Case-insensitive lookup returning the canonical spelling, or null. */
+function matchKnown(value: string | null, known: readonly string[]): string | null {
+  if (!value) return null
+  const wanted = tagKey(value)
+  return known.find((k) => tagKey(k) === wanted) ?? null
+}
+
+/**
+ * Reads filters from a query string. Unknown values are dropped, so a stale
+ * or hand-edited link never produces an empty "no posts found" page.
+ */
+export function parseBlogFilters(
+  search: string,
+  known: { tags: readonly string[]; categories: readonly string[] },
+): BlogFilters {
+  const params = new URLSearchParams(search)
+  return {
+    tag: matchKnown(params.get('tag'), known.tags),
+    category: matchKnown(params.get('category'), known.categories),
+  }
+}
+
+/** Query string for the given filters, e.g. `?tag=rent%20collection`, or `''`. */
+export function blogFiltersQuery(filters: Partial<BlogFilters>): string {
+  const params = new URLSearchParams()
+  if (filters.category) params.set('category', filters.category)
+  if (filters.tag) params.set('tag', filters.tag)
+  const query = params.toString()
+  return query ? `?${query}` : ''
+}

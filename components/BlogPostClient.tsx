@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type BlogPost } from '@/lib/blog'
 import { localeHref } from '@/lib/i18n'
+import { blogFiltersQuery } from '@/lib/content/blogFilters'
 
 interface BlogPostClientProps {
   post: BlogPost | null
@@ -246,7 +247,7 @@ export default function BlogPostClient({ post, afterArticle }: BlogPostClientPro
                 {(language === 'ar' ? post.tagsAr : post.tags).map((tag, index) => (
                   <Link
                     key={index}
-                    href={localeHref(`/blog?tag=${post.tags[index]}`, language)}
+                    href={localeHref(`/blog${blogFiltersQuery({ tag: post.tags[index] })}`, language)}
                     prefetch={false}
                     className="px-4 py-2 rounded-full text-sm transition-colors"
                     style={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}
