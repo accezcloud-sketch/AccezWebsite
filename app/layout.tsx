@@ -5,6 +5,7 @@ import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
 import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
+import { SITE_DESCRIPTION } from '@/lib/site'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     default: 'Accez | All-in-One Property Management for Saudi Arabia',
     template: '%s | Accez',
   },
-  description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. All-in-one property operations for Saudi Arabia, in Arabic and English.',
+  description: SITE_DESCRIPTION,
   // NOTE: no `keywords` here on purpose. Google confirms the meta keywords tag
   // is not used by Search, so it was dead weight in every page's <head>.
   authors: [{ name: 'Accez Cloud' }],
