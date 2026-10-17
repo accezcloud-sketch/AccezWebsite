@@ -87,7 +87,7 @@ export function providerMarketplaceSchema(locale: Locale, description: string) {
       highPrice: Math.max(...prices),
       offerCount: prices.length,
       availability: 'https://schema.org/InStock',
-      url: `${localeUrl('service-providers', locale)}#provider-pricing`,
+      url: `${localeUrl('solutions/service-providers', locale)}#provider-pricing`,
     },
   }
 }

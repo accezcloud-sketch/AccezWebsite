@@ -47,7 +47,7 @@ export default function SolutionPage({ slug }: { slug: SolutionSlug }) {
                 <a href={localeHref("/#contact", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent-solid)', fontSize: 15 }}>
                   {L('Book a demo', 'اطلب عرضًا توضيحيًا')}{arrow}
                 </a>
-                <a href={localeHref("/modules", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>
+                <a href={localeHref("/solutions/property-managers", language)} className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}>
                   {L('See all modules', 'كل الوحدات')}
                 </a>
               </div>

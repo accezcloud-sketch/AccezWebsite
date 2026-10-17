@@ -26,10 +26,10 @@ const STATIC_LAST_MODIFIED = '2026-07-01'
 export default function sitemap(): MetadataRoute.Sitemap {
   // Every static route now exists in both languages, including the legal pages.
   const bilingual = [
-    '', 'modules', 'owners', 'sales', 'hotels', 'service-providers', 'about',
+    '', 'owners', 'sales', 'hotels', 'about',
     'support', 'blog', 'faq', 'terms', 'privacy', 'refund-policy',
-    // One page per solution: its pricing, and its version of each per-solution legal document.
-    ...PLATFORM_SOLUTIONS.map((s) => s.pricingHref),
+    // One page per solution: its page, its pricing, and its version of each per-solution legal document.
+    ...PLATFORM_SOLUTIONS.flatMap((s) => [s.href, s.pricingHref]),
     ...legalVersionRoutes(),
   ]
   const englishOnly: string[] = []

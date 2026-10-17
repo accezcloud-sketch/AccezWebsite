@@ -20,6 +20,46 @@
       "source": "/ar/pricing/",
       "destination": "/ar/pricing/property-managers/",
       "permanent": true
+    },
+    {
+      "source": "/modules",
+      "destination": "/solutions/property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/modules/",
+      "destination": "/solutions/property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/modules",
+      "destination": "/ar/solutions/property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/modules/",
+      "destination": "/ar/solutions/property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/service-providers",
+      "destination": "/solutions/service-providers/",
+      "permanent": true
+    },
+    {
+      "source": "/service-providers/",
+      "destination": "/solutions/service-providers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/service-providers",
+      "destination": "/ar/solutions/service-providers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/service-providers/",
+      "destination": "/ar/solutions/service-providers/",
+      "permanent": true
     }
   ],
   "headers": [

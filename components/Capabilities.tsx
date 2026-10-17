@@ -76,7 +76,7 @@ export default function Capabilities() {
         {
           label: 'How it works',
           labelAr: 'كيف تعمل',
-          href: '/service-providers',
+          href: '/solutions/service-providers',
           variant: 'secondary',
         },
       ],
@@ -133,7 +133,7 @@ export default function Capabilities() {
         {
           label: 'How it works',
           labelAr: 'كيف تعمل',
-          href: '/service-providers',
+          href: '/solutions/service-providers',
           variant: 'secondary',
         },
       ],

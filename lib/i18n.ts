@@ -88,11 +88,10 @@ export function alternatesFor(route: string, locale: Locale) {
  */
 const AR_ROUTES = new Set([
   '',
-  'modules',
   'owners',
   'sales',
   'hotels',
-  'service-providers',
+  'solutions',
   'about',
   'support',
   'blog',

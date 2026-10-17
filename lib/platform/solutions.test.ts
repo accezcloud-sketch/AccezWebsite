@@ -35,8 +35,18 @@ describe('solution pages', () => {
     for (const s of PLATFORM_SOLUTIONS) expect(SOLUTION_PRICING[s.key], s.key).toBeDefined()
   })
 
-  it('every solution has sections for its homepage chapter', async () => {
+  it('every solution has a homepage showcase', async () => {
     const { SOLUTION_SHOWCASE } = await import('@/components/home/solutionShowcase')
     for (const s of PLATFORM_SOLUTIONS) expect(SOLUTION_SHOWCASE[s.key], s.key).toBeDefined()
+  })
+})
+
+describe('solution pages', () => {
+  it('every solution has a page under /solutions/', async () => {
+    const { SOLUTION_PAGES } = await import('@/components/solutions/solutionPages')
+    for (const s of PLATFORM_SOLUTIONS) {
+      expect(s.href).toBe(`/solutions/${s.key}`)
+      expect(SOLUTION_PAGES[s.key], s.key).toBeDefined()
+    }
   })
 })

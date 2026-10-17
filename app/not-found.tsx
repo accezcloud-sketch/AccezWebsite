@@ -27,7 +27,7 @@ const COPY: Record<Locale, { eyebrow: string; title: string; body: string; nav: 
     nav: 'Helpful links',
     links: [
       { href: '/', label: 'Home' },
-      { href: '/modules', label: 'Product modules' },
+      { href: '/solutions/property-managers', label: 'Property management solution' },
       { href: '/owners', label: 'Owners & payouts' },
       { href: '/hotels', label: 'Hotels & serviced apartments' },
       { href: '/blog', label: 'Blog' },
@@ -41,7 +41,7 @@ const COPY: Record<Locale, { eyebrow: string; title: string; body: string; nav: 
     nav: 'روابط مفيدة',
     links: [
       { href: '/', label: 'الرئيسية' },
-      { href: '/modules', label: 'وحدات المنتج' },
+      { href: '/solutions/property-managers', label: 'حل إدارة العقارات' },
       { href: '/owners', label: 'إدارة الملاك' },
       { href: '/hotels', label: 'الفنادق والشقق المخدومة' },
       { href: '/blog', label: 'المدونة' },

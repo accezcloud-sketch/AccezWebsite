@@ -8,6 +8,7 @@ import type { Locale } from '@/lib/i18n'
 import type { ProductPageKey } from './productMatch'
 import { SOLUTIONS } from './solutions'
 import { MODULES_COPY } from './modulesCopy'
+import { solutionByKey } from '@/lib/platform/solutions'
 
 export interface ProductCtaContent {
   /** Site route of the product page, e.g. `/owners`. */
@@ -27,7 +28,7 @@ export function productCta(key: ProductPageKey, locale: Locale): ProductCtaConte
 
   if (key === 'modules') {
     return {
-      route: '/modules',
+      route: solutionByKey('property-managers')!.href,
       eyebrow: modules.eyebrow,
       title: modules.ctaTitle,
       description: modules.subtitle,

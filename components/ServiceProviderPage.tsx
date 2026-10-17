@@ -16,17 +16,11 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
-import ImageCarousel, { type CarouselSlide } from '@/components/ImageCarousel'
+import HeroLayout, { HeroActions } from '@/components/hero/HeroLayout'
+import RotatingHeadline from '@/components/hero/RotatingHeadline'
+import SpDashboardMock from '@/components/visuals/SpDashboardMock'
 import SectionHeader from '@/components/SectionHeader'
 import ProviderPricing from '@/components/ProviderPricing'
-
-const SLIDES: CarouselSlide[] = [
-  { src: '/capabilities/service-providers/1.webp', caption: 'The Accez marketplace',            captionAr: 'سوق أكسيز' },
-  { src: '/capabilities/service-providers/2.webp', caption: 'Your services, prices and reviews', captionAr: 'خدماتك وأسعارك وتقييماتك' },
-  { src: '/capabilities/service-providers/3.webp', caption: 'Customers choose their services',   captionAr: 'العملاء يختارون خدماتهم' },
-  { src: '/capabilities/service-providers/4.webp', caption: 'They pick a date and time',         captionAr: 'يختارون التاريخ والوقت' },
-  { src: '/capabilities/service-providers/5.webp', caption: 'Review and confirm the booking',    captionAr: 'مراجعة الحجز وتأكيده' },
-]
 
 const EXPOSURE_ICONS: LucideIcon[] = [Store, Search, MapPin, Building2, Star]
 const STEP_ICONS: LucideIcon[] = [UserPlus, ClipboardList, CalendarCheck]
@@ -34,14 +28,14 @@ const STEP_ICONS: LucideIcon[] = [UserPlus, ClipboardList, CalendarCheck]
 const CONTENT = {
   en: {
     // Hero
-    eyebrow: 'For Service Providers',
-    heroTitleLead: 'Get discovered.',
-    heroTitleAccent: 'Get booked.',
+    eyebrow: 'Service provider solution',
+    heroLead: 'One platform for',
+    heroPhrases: ['barbers & salons', 'spas & wellness studios', 'fitness coaches', 'beauty & nail studios', 'photographers', 'home services', 'independent professionals'],
+    heroReadAs: 'barbers and salons, spas and wellness studios, fitness coaches, beauty and nail studios, photographers, home services and independent professionals',
     heroSubtitle:
       'List your business on the Accez marketplace, take bookings from your own clients, and get found by new customers already looking for services like yours. Salons, spas, fitness, photography, home services and more, every provider vetted, every booking instant.',
     ctaPrimary: 'Create a provider account',
     ctaPricing: 'See plans and pricing',
-    heroCaption: 'Your listing, live on the Accez marketplace',
 
     // Exposure
     exposureEyebrow: 'Exposure',
@@ -89,14 +83,14 @@ const CONTENT = {
   },
 
   ar: {
-    eyebrow: 'لمقدمي الخدمات',
-    heroTitleLead: 'اجعلهم يجدونك.',
-    heroTitleAccent: 'واحجز أكثر.',
+    eyebrow: 'حل مقدمي الخدمات',
+    heroLead: 'منصة واحدة تخدم',
+    heroPhrases: ['الحلاقين والصالونات', 'المنتجعات الصحية ومراكز العافية', 'مدربي اللياقة', 'استوديوهات التجميل والأظافر', 'المصورين', 'الخدمات المنزلية', 'المهنيين المستقلين'],
+    heroReadAs: 'الحلاقين والصالونات والمنتجعات الصحية ومراكز العافية ومدربي اللياقة واستوديوهات التجميل والأظافر والمصورين والخدمات المنزلية والمهنيين المستقلين',
     heroSubtitle:
       'أدرج نشاطك في سوق أكسيز، واستقبل الحجوزات من عملائك، وليجدك عملاء جدد يبحثون بالفعل عن خدمات مثل خدماتك. صالونات، منتجعات صحية، لياقة، تصوير، خدمات منزلية وغيرها، كل مقدم خدمة موثوق، وكل حجز فوري.',
     ctaPrimary: 'أنشئ حساب مقدم خدمة',
     ctaPricing: 'اطّلع على الخطط والأسعار',
-    heroCaption: 'صفحتك، حيّة في سوق أكسيز',
 
     exposureEyebrow: 'الظهور',
     exposureTitleLead: 'ضع نشاطك حيث',
@@ -146,61 +140,18 @@ export default function ServiceProviderPage() {
       `}</style>
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden page-top pb-20" style={{ background: 'var(--bg)' }}>
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute rounded-full blur-[130px]" style={{ width: 'min(720px,110vw)', height: 'min(720px,110vw)', top: '-25%', left: '-15%', background: 'radial-gradient(circle, rgba(49, 159, 212,0.4) 0%, transparent 70%)' }} />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <FadeUp>
-              <span
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5"
-                style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}
-              >
-                {t.eyebrow}
-              </span>
-              <h1
-                className="text-strong font-bold leading-[1.08] tracking-tight mb-5"
-                style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
-              >
-                {t.heroTitleLead}{' '}
-                <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.heroTitleAccent}</span>
-              </h1>
-              <p className="leading-relaxed max-w-lg mb-8" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.heroSubtitle}</p>
-
-              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <a
-                  href={PROVIDER_SIGN_UP}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="spp-btn inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ background: 'var(--accent-solid)', fontSize: 15 }}
-                >
-                  {t.ctaPrimary}{arrow}
-                </a>
-                <a
-                  href="#provider-pricing"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}
-                >
-                  {t.ctaPricing}
-                </a>
-              </div>
-            </FadeUp>
-
-            <FadeUp delay={0.15}>
-              <div className="relative">
-                <div className="absolute inset-0 rounded-3xl blur-[70px] opacity-25 pointer-events-none" style={{ background: 'radial-gradient(circle at 50% 45%, var(--accent), transparent 68%)' }} aria-hidden="true" />
-                <div className="relative rounded-2xl overflow-hidden" style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))' }}>
-                  <ImageCarousel slides={SLIDES} alt={t.eyebrow} language={language} isRTL={isRTL} priority />
-                </div>
-                <p className="text-center mt-4" style={{ fontSize: 13, color: 'var(--text-faint)' }}>{t.heroCaption}</p>
-              </div>
-            </FadeUp>
-          </div>
-        </div>
-      </section>
+      <HeroLayout
+        eyebrow={t.eyebrow}
+        headline={<RotatingHeadline lead={t.heroLead} phrases={t.heroPhrases} readAs={t.heroReadAs} />}
+        subtitle={t.heroSubtitle}
+        actions={
+          <HeroActions
+            primary={{ label: t.ctaPrimary, href: PROVIDER_SIGN_UP, external: true }}
+            secondary={{ label: t.ctaPricing, href: '#provider-pricing' }}
+          />
+        }
+        visual={<SpDashboardMock />}
+      />
 
       {/* ── Exposure ─────────────────────────────────────────────── */}
       <section className="py-20" style={{ background: 'var(--bg)' }}>

@@ -4,13 +4,12 @@ import { buildLlmsTxt, type LlmsLink } from '@/lib/content/llms'
 import { TOPICS } from '@/lib/content/topics'
 import { localeUrl } from '@/lib/i18n'
 import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/site'
-import { metadata as modules } from '../modules/page'
 import { metadata as owners } from '../owners/page'
 import { metadata as hotels } from '../hotels/page'
 import { metadata as sales } from '../sales/page'
-import { metadata as providers } from '../service-providers/page'
 import { solutionPricingMetadata } from '@/lib/platform/pricingPages'
-import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
+import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
+import { solutionPageMetadata } from '@/components/solutions/solutionPages'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
@@ -28,6 +27,12 @@ const page = (route: string, m: Metadata): LlmsLink => ({
   description: m.description ?? undefined,
 })
 
+/** A solution's page, from its registry entry and its own metadata. */
+const solutionPage = (key: string): LlmsLink => {
+  const solution = solutionByKey(key)!
+  return page(solution.href, solutionPageMetadata(solution, 'en'))
+}
+
 export function GET() {
   const posts = getAllPosts()
   const body = buildLlmsTxt({
@@ -39,10 +44,10 @@ export function GET() {
     ],
     sections: [
       {
-        heading: 'Property management',
-        links: [page('modules', modules), page('owners', owners), page('hotels', hotels), page('sales', sales)],
+        heading: 'Property management solution',
+        links: [solutionPage('property-managers'), page('owners', owners), page('hotels', hotels), page('sales', sales)],
       },
-      { heading: 'Service provider marketplace', links: [page('service-providers', providers)] },
+      { heading: 'Service provider solution', links: [solutionPage('service-providers')] },
       {
         heading: 'Pricing',
         links: PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),

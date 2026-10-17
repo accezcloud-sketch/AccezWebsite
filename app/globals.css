@@ -46,6 +46,8 @@
   --surface-hi:  rgba(255, 255, 255, 0.06);
   --panel:       rgba(13, 23, 35, 0.97);    /* menus, dropdowns: near-opaque */
   --panel-solid: #0D1723;                   /* the same, where transparency is off */
+  --navy-from:   #1A4560;                   /* product navy (app rails, banners), lifted for dark */
+  --navy-to:     #2A6A8E;
   --glass:       rgba(9, 19, 28, 0.72);     /* translucent bars over content */
   --glass-border: rgba(255, 255, 255, 0.08);
   --media-bg:    linear-gradient(135deg, #0f172a, #1e293b); /* behind screenshots */
@@ -95,6 +97,8 @@
   --surface-hi:  #F2F6FA;
   --panel:       rgba(255, 255, 255, 0.98);
   --panel-solid: #FFFFFF;
+  --navy-from:   #102634;
+  --navy-to:     #1E4A63;
   --glass:       rgba(255, 255, 255, 0.78);
   --glass-border: rgba(16, 38, 52, 0.08);
   --media-bg:    linear-gradient(135deg, #E9EFF5, #F6F8FB);
@@ -448,6 +452,74 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 }
 .legal-doc .legal-only-labelled > h3 { margin-top: 0; }
 .legal-doc li > .legal-only-label { color: var(--text); }
+
+/* ── Hero (homepage and solution pages) ──────────────────────────────────────
+   Shared by every page top that has a rotating headline and a product visual
+   (components/hero). */
+@keyframes hero-fade-up { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes hero-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes float-mobile { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes float-desktop { 0%, 100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(-18px) rotate(-0.5deg); } }
+@keyframes float-soft { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+.hero-display { font-family: var(--font-heading), var(--font-inter), system-ui, sans-serif; }
+[dir="rtl"] .hero-display { font-family: var(--font-cairo), system-ui, sans-serif; }
+
+.anim-fade-up-2 { animation: hero-fade-up .7s .18s both ease-out; }
+.anim-fade-up-3 { animation: hero-fade-up .7s .30s both ease-out; }
+.anim-fade-up-4 { animation: hero-fade-up .7s .44s both ease-out; }
+.anim-fade-up-5 { animation: hero-fade-up .7s .58s both ease-out; }
+.anim-pop-1 { animation: hero-fade-up .7s .8s both ease-out; }
+.anim-pop-2 { animation: hero-fade-up .7s .95s both ease-out; }
+
+/* A product visual drifts gently; translate-only on small screens. */
+.card-float { animation: float-mobile 5s ease-in-out infinite; }
+@media (min-width: 1024px) { .card-float { animation: float-desktop 6s ease-in-out infinite; } }
+.card-float-soft { animation: float-soft 7s ease-in-out infinite; }
+.card-tilt { transition: transform .4s cubic-bezier(.23,1,.32,1), box-shadow .4s; }
+.card-tilt:hover {
+  transform: rotate(0deg) translateY(-8px) scale(1.015) !important;
+  box-shadow: 0 40px 80px rgb(var(--shadow-rgb) / calc(0.55 * var(--shadow-k))), 0 0 0 1px rgb(var(--fg-rgb) / 0.12) !important;
+}
+
+.grad-text {
+  background: linear-gradient(135deg, var(--grad-from), var(--grad-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* The rotating line may wrap; its height is reserved for two lines so the
+   content below never jumps as the phrase changes. */
+.tw-line { display: block; min-height: 2.3em; white-space: normal; overflow-wrap: break-word; }
+.tw-cursor {
+  display: inline-block; width: 4px; height: .85em; border-radius: 2px;
+  background: var(--accent-hi); margin-inline-start: 6px; vertical-align: middle;
+  animation: hero-blink 1s step-end infinite;
+}
+.tw-cursor.pause { animation: none; opacity: 1; }
+
+.marquee-track { animation: hero-marquee 24s linear infinite; display: flex; gap: 48px; width: max-content; }
+.marquee-track:hover { animation-play-state: paused; }
+
+/* A floating chip over a product visual. */
+.hero-chip {
+  background: var(--panel);
+  border: 1px solid var(--border-hi);
+  box-shadow: 0 12px 32px rgb(var(--shadow-rgb) / calc(0.45 * var(--shadow-k)));
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-float, .card-float-soft, .marquee-track, .tw-cursor,
+  .anim-fade-up-2, .anim-fade-up-3, .anim-fade-up-4, .anim-fade-up-5, .anim-pop-1, .anim-pop-2 { animation: none !important; }
+}
+
+/* A new row arriving in a product mock-up. */
+@keyframes row-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+.sp-row { animation: row-in .45s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .sp-row { animation: none; } }
 
 /* Legal tables on phones: one card per row, each value under its column name. */
 @media (min-width: 640px) { .legal-table { min-width: 460px; } }

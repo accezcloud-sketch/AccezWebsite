@@ -4,7 +4,7 @@
  */
 export const MODULES_COPY = {
   en: {
-    eyebrow: 'Product',
+    eyebrow: 'Property management solution',
     titleLead: 'Everything Accez',
     titleAccent: 'runs',
     subtitle: 'One platform for the whole property operation. Explore every module, and open the ones with a dedicated page for the full detail.',
@@ -15,7 +15,7 @@ export const MODULES_COPY = {
     ctaSecondary: 'Start free',
   },
   ar: {
-    eyebrow: 'المنتج',
+    eyebrow: 'حل إدارة العقارات',
     titleLead: 'كل ما تديره',
     titleAccent: 'أكسيز',
     subtitle: 'منصة واحدة لعملية العقار بالكامل. استكشف كل وحدة، وافتح الوحدات التي لها صفحة مخصصة لمزيد من التفاصيل.',
