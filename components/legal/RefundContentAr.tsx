@@ -5,20 +5,23 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
   Only,
+  SectionNo,
 } from '@/components/LegalLayout'
-import { REFUND_AUDIENCE } from '@/components/legal/audience'
+import { REFUND_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
-export default function RefundContentAr() {
+export default function RefundContentAr({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="سياسة الاسترداد والإلغاء"
       subtitle="كيف يعمل الإلغاء والاسترداد في حجوزات الوحدات وحجوزات السوق واشتراكات أكسيز، ومن يتحمل أي رسوم."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      audienceMap={REFUND_AUDIENCE}
+      doc="refund-policy"
+      sections={REFUND_SECTIONS}
+      audience={audience}
     >
       <LegalCallout title="الأمر الأهم الذي ينبغي فهمه أولًا">
         <p>
@@ -30,7 +33,7 @@ export default function RefundContentAr() {
       </LegalCallout>
 
 
-      <S id="overview" title="١. نظرة عامة — أي سياسة تنطبق عليك">
+      <S id="overview" title="نظرة عامة — أي سياسة تنطبق عليك">
         <Only for="pm">
           <LegalTable
             head={['ما الذي دُفع مقابله', 'من يحدد الشروط', 'الحكم الافتراضي عند عدم التحديد']}
@@ -38,17 +41,17 @@ export default function RefundContentAr() {
               [
                 <strong key="a">إقامة في وحدة</strong>,
                 'أنت، مدير العقارات، لكل وحدة',
-                'جدول تنازلي بحسب مدة الإشعار قبل تسجيل الوصول (البند ٢)',
+                <>جدول تنازلي بحسب مدة الإشعار قبل تسجيل الوصول (البند <SectionNo to="reservations" />)</>,
               ],
               [
                 <strong key="c">اشتراك في أكسيز</strong>,
                 'أكسيز',
-                'غير قابل للاسترداد؛ ويستمر الوصول حتى نهاية المدة (البند ٥)',
+                <>غير قابل للاسترداد؛ ويستمر الوصول حتى نهاية المدة (البند <SectionNo to="subscriptions" />)</>,
               ],
               [
                 <strong key="d">دفعة شراء عقار</strong>,
                 'البائع وعقد البيع',
-                'تُعالَج خارج المنصة (البند ١٠)',
+                <>تُعالَج خارج المنصة (البند <SectionNo to="sales" />)</>,
               ],
             ]}
           />
@@ -60,19 +63,19 @@ export default function RefundContentAr() {
               [
                 <strong key="b">حجز خدمة</strong>,
                 'أنت، مقدم الخدمة',
-                <><strong key="n">لا استرداد</strong> — انظر البند ٣</>,
+                <><strong key="n">لا استرداد</strong> — انظر البند <SectionNo to="marketplace" /></>,
               ],
               [
                 <strong key="c">اشتراك في أكسيز</strong>,
                 'أكسيز',
-                'غير قابل للاسترداد؛ ويستمر الوصول حتى نهاية المدة (البند ٥)',
+                <>غير قابل للاسترداد؛ ويستمر الوصول حتى نهاية المدة (البند <SectionNo to="subscriptions" />)</>,
               ],
             ]}
           />
         </Only>
       </S>
 
-      <S id="reservations" title="٢. حجوزات الوحدات والإقامات">
+      <S id="reservations" title="حجوزات الوحدات والإقامات">
         <p>
           يمكن أن تحمل كل وحدة سياسة إلغاء خاصة بها يحددها مدير العقارات. وحيثما حُددت سياسة،{' '}
           <strong>فهي المقدَّمة</strong> وتُعرض عليك قبل تأكيد الحجز. لذا راجعها دائمًا عند الحجز.
@@ -90,11 +93,11 @@ export default function RefundContentAr() {
         </LegalCallout>
         <p>
           ولا يعيد مزوّد الدفع رسوم المعالجة عند رد المبلغ، فالمبلغ الذي يصل النزيل هو ما تعتمده أنت
-          ناقصًا تلك الرسوم — انظر البند ٦.
+          ناقصًا تلك الرسوم — انظر البند <SectionNo to="fees-on-refund" />.
         </p>
       </S>
 
-      <S id="marketplace" title="٣. حجوزات خدمات السوق">
+      <S id="marketplace" title="حجوزات خدمات السوق">
         <LegalCallout tone="warning" title="حجوزات الخدمات الملغاة غير قابلة للاسترداد">
           <p>
             حجز الخدمة عبر السوق <strong>غير قابل للاسترداد</strong>. فإذا ألغى العميل، فلا استرداد
@@ -111,7 +114,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="deposits" title="٤. الدفعات المقدمة والمبالغ الجزئية">
+      <S id="deposits" title="الدفعات المقدمة والمبالغ الجزئية">
         <Only for="sp">
           <p>
             تُحجز بعض الخدمات بدفعة مقدمة، مع سداد الباقي لاحقًا أو مباشرةً لمقدم الخدمة. وحيثما حُصّلت
@@ -133,7 +136,7 @@ export default function RefundContentAr() {
         </Only>
       </S>
 
-      <S id="subscriptions" title="٥. رسوم اشتراك أكسيز">
+      <S id="subscriptions" title="رسوم اشتراك أكسيز">
         <p>
           تُفوتر رسوم الاشتراك مقدمًا وهي <strong>غير قابلة للاسترداد</strong>، بما في ذلك المدد
           الجزئية والمدد غير المستخدمة بعد الإلغاء.
@@ -154,7 +157,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="fees-on-refund" title="٦. مصير الرسوم عند الاسترداد">
+      <S id="fees-on-refund" title="مصير الرسوم عند الاسترداد">
         <p>
           هذا هو الجزء الذي تتركه معظم السياسات غامضًا، وله أثر مباشر على المبلغ الذي يعود إليك
           فعليًا، ولذلك نوضحه هنا صراحةً.
@@ -199,7 +202,7 @@ export default function RefundContentAr() {
         </Only>
       </S>
 
-      <S id="how-to-request" title="٧. كيفية طلب الاسترداد">
+      <S id="how-to-request" title="كيفية طلب الاسترداد">
         <Only for="pm">
           <LegalTable
             head={['إن كنت', 'فافعل ما يلي']}
@@ -239,7 +242,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="timing" title="٨. المدة التي يستغرقها الاسترداد">
+      <S id="timing" title="المدة التي يستغرقها الاسترداد">
         <p>
           بعد الاعتماد، يُرسل الاسترداد إلى مزوّد الدفع لدينا، الذي يرسله بدوره إلى بنك العميل أو
           مُصدر بطاقته. <strong>ومن تلك اللحظة يحدد التوقيتَ مزوّدُ الدفع والبنك لا نحن.</strong>{' '}
@@ -279,7 +282,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="chargebacks" title="٩. نزاعات البطاقات">
+      <S id="chargebacks" title="نزاعات البطاقات">
         <p>
           إن رأيت أن عملية دفع غير صحيحة، <strong>فتواصل معنا أو مع الجهة التي حجزت لديها أولًا</strong>.
           فمعظم المسائل تُحلّ بهذه الطريقة أسرع بكثير من نزاع بنكي قد يستغرق أسابيع أو أشهرًا.
@@ -295,7 +298,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="sales" title="١٠. مدفوعات بيع العقارات">
+      <S id="sales" title="مدفوعات بيع العقارات">
         <p>
           المدفوعات المسجَّلة على عملية بيع عقار — من دفعات مقدمة وأقساط ومبالغ تسوية —{' '}
           <strong>تُسجَّل</strong> في المنصة لكنها تُدفع وتُعاد <strong>خارجها</strong>، مباشرةً بين
@@ -308,7 +311,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="exceptions" title="١١. الاستثناءات والظروف الاستثنائية">
+      <S id="exceptions" title="الاستثناءات والظروف الاستثنائية">
         <p>
           يجوز لأي منشأة تستخدم أكسيز إصدار استرداد أكثر سخاءً مما تقتضيه سياستها، ولا يمنع أي
           مما ورد هنا ذلك.
@@ -324,7 +327,7 @@ export default function RefundContentAr() {
         </p>
       </S>
 
-      <S id="contact" title="١٢. التواصل">
+      <S id="contact" title="التواصل">
         <p>
           <strong>شركة كلاود فالي</strong>
           <br />

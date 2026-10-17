@@ -7,6 +7,7 @@
  * documents and the sign-in/sign-up links. Adding a solution means adding an
  * entry here (plus its pages); nothing else has to know how many there are.
  */
+import type { AudienceView } from '@/lib/legal/audience'
 import { PORTAL_LOGIN, PORTAL_SIGN_UP, PROVIDER_LOGIN, PROVIDER_SIGN_UP } from '@/lib/links'
 
 export interface Bilingual {
@@ -42,8 +43,8 @@ export interface PlatformSolution {
   pricingNote: Bilingual
   signUpUrl: string
   loginUrl: string
-  /** Which version of the legal documents applies (see components/legal/audience.ts). */
-  legalAudience: 'pm' | 'sp'
+  /** Which version of the legal documents applies (see lib/legal/audience.ts). */
+  legalAudience: AudienceView
   /** Deeper pages within the solution, for menus. */
   pages: SolutionLink[]
 }

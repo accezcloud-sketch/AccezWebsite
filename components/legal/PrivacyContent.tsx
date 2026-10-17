@@ -6,7 +6,7 @@ import LegalLayout, {
   LegalTable,
   Only,
 } from '@/components/LegalLayout'
-import { PRIVACY_AUDIENCE } from '@/components/legal/audience'
+import { PRIVACY_SECTIONS } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
@@ -18,7 +18,8 @@ export default function PrivacyContent() {
       subtitle="How Cloud Valley LLC collects, uses, shares and protects personal data in the Accez platform and marketplace, and the rights you have under the Saudi Personal Data Protection Law."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      audienceMap={PRIVACY_AUDIENCE}
+      doc="privacy"
+      sections={PRIVACY_SECTIONS}
     >
       <LegalCallout title="Summary">
         <p>
@@ -30,7 +31,7 @@ export default function PrivacyContent() {
         </p>
       </LegalCallout>
 
-      <S id="scope" title="1. Who we are and what this covers">
+      <S id="scope" title="Who we are and what this covers">
         <p>
           Accez is operated by <strong>Cloud Valley LLC</strong>, commercial registration{' '}
           <strong>1010637845</strong>, Riyadh, Kingdom of Saudi Arabia.
@@ -47,7 +48,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="what-we-collect" title="2. What we collect">
+      <S id="what-we-collect" title="What we collect">
         <h3>Account and identity</h3>
         <p>
           Name, email address, phone number, password (stored only in hashed form), profile photo,
@@ -134,7 +135,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="sources" title="3. Where it comes from">
+      <S id="sources" title="Where it comes from">
         <ul>
           <li><strong>From you</strong> — when you register, complete a profile, make or accept a booking, upload content, or contact us.</li>
           <Only for="pm" as="li">
@@ -162,7 +163,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="why" title="4. Why we use it, and our legal basis">
+      <S id="why" title="Why we use it, and our legal basis">
         <Only for="pm">
           <LegalTable
             head={['Purpose', 'Legal basis']}
@@ -208,7 +209,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="mandatory" title="5. What is required and what is optional">
+      <S id="mandatory" title="What is required and what is optional">
         <p>
           Some data is <strong>required</strong>: without it we cannot provide the service. That
           includes your name, email address and, for accounts that receive money, the identity and
@@ -226,7 +227,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="sharing" title="6. Who we share it with">
+      <S id="sharing" title="Who we share it with">
         <p>We do not sell personal data. We share it only as described here.</p>
 
         <Only for="pm">
@@ -301,7 +302,7 @@ export default function PrivacyContent() {
 
               </S>
 
-      <S id="transfers" title="7. Transfers outside Saudi Arabia">
+      <S id="transfers" title="Transfers outside Saudi Arabia">
         <p>
           Some of the services we rely on operate outside the Kingdom, so personal data may be
           transferred, stored or processed outside Saudi Arabia.
@@ -319,7 +320,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="storage" title="8. Where it is stored and for how long">
+      <S id="storage" title="Where it is stored and for how long">
         <p>
           Platform data is held on servers operated for us, and uploaded files are held with a
           media storage provider. We will confirm the current hosting locations on request, and we
@@ -351,7 +352,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="security" title="9. How we protect it">
+      <S id="security" title="How we protect it">
         <p>We use organisational and technical measures appropriate to the risk, including:</p>
         <ul>
           <li>encryption of data in transit;</li>
@@ -367,7 +368,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="rights" title="10. Your rights and how to use them">
+      <S id="rights" title="Your rights and how to use them">
         <p>Under the Saudi Personal Data Protection Law you have the right to:</p>
         <ul>
           <li><strong>Be informed</strong> — know the legal basis and purpose for which your data is collected;</li>
@@ -397,7 +398,7 @@ export default function PrivacyContent() {
         </LegalCallout>
       </S>
 
-      <S id="consent" title="11. Withdrawing consent">
+      <S id="consent" title="Withdrawing consent">
         <p>
           Where we rely on your consent, you can withdraw it at any time, and withdrawing is as
           straightforward as giving it was. Withdrawal does not affect processing already carried
@@ -407,7 +408,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="cookies" title="12. Cookies and similar technologies">
+      <S id="cookies" title="Cookies and similar technologies">
         <p>We use a small number of browser technologies:</p>
         <ul>
           <li>
@@ -426,7 +427,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="breach" title="13. If something goes wrong">
+      <S id="breach" title="If something goes wrong">
         <p>
           If a personal data breach occurs that may cause harm to personal data, or to a person&apos;s
           rights or interests, we notify the <strong>Saudi Data &amp; AI Authority (SDAIA) within 72
@@ -443,7 +444,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="capacity" title="14. Children and people without full legal capacity">
+      <S id="capacity" title="Children and people without full legal capacity">
         <p>
           Accez is a business platform and is not directed at children. We do not knowingly create
           accounts for people who lack full legal capacity to consent.
@@ -463,7 +464,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="automated" title="15. Our support chatbot">
+      <S id="automated" title="Our support chatbot">
         <p>
           Our website carries a <strong>support chatbot</strong> in the corner of the page. It is an
           automated assistant, not a person, and we do not present it as one.
@@ -486,7 +487,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="customers" title="16. If your data was uploaded by a business">
+      <S id="customers" title="If your data was uploaded by a business">
         <p>
           If a business using Accez put your data into the platform, the
           business you deal with decided to collect your data and decided why. In law they are the
@@ -500,7 +501,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="complaints" title="17. Complaints">
+      <S id="complaints" title="Complaints">
         <p>
           If you are unhappy with how we have handled your personal data, tell us first at{' '}
           <a href="/support/">our support form</a>. We will acknowledge your
@@ -517,7 +518,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="changes" title="18. Changes to this policy">
+      <S id="changes" title="Changes to this policy">
         <p>
           We update this policy when our practices change or the law changes. The date at the top
           always shows the current version. For material changes we give reasonable notice before
@@ -526,7 +527,7 @@ export default function PrivacyContent() {
         </p>
       </S>
 
-      <S id="contact" title="19. Contact us">
+      <S id="contact" title="Contact us">
         <p>
           <strong>Cloud Valley LLC</strong>
           <br />

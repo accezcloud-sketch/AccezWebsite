@@ -5,20 +5,23 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
   Only,
+  SectionNo,
 } from '@/components/LegalLayout'
-import { TERMS_AUDIENCE } from '@/components/legal/audience'
+import { TERMS_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
-export default function TermsContentAr() {
+export default function TermsContentAr({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="شروط الخدمة"
       subtitle="الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لمنصة أكسيز وسوق الخدمات التابع لها."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      audienceMap={TERMS_AUDIENCE}
+      doc="terms"
+      sections={TERMS_SECTIONS}
+      audience={audience}
     >
       <LegalCallout title="اقرأ هذا أولًا">
         <p>
@@ -31,7 +34,7 @@ export default function TermsContentAr() {
       </LegalCallout>
 
 
-        <S id="about" title="١. من نحن وما الذي تغطيه هذه الشروط">
+        <S id="about" title="من نحن وما الذي تغطيه هذه الشروط">
           <p>
             أكسيز منصة تُشغّلها <strong>شركة كلاود فالي</strong> (&laquo;أكسيز&raquo;،
             &laquo;نحن&raquo;)، وهي شركة مسجلة في المملكة العربية السعودية بسجل تجاري رقم{' '}
@@ -53,7 +56,7 @@ export default function TermsContentAr() {
           </p>
         </S>
 
-        <S id="venue" title="٢. ما تقوم به أكسيز وما لا تقوم به">
+        <S id="venue" title="ما تقوم به أكسيز وما لا تقوم به">
           <p>
             توفّر أكسيز برمجيات ومكانًا يتعامل فيه الآخرون. وهذا التمييز مهم، ونذكره هنا صراحةً بدلًا من ترك استنتاجه.
           </p>
@@ -93,7 +96,7 @@ export default function TermsContentAr() {
           </LegalCallout>
         </S>
 
-        <S id="eligibility" title="٣. الأهلية وحسابك">
+        <S id="eligibility" title="الأهلية وحسابك">
           <p>
             يجب أن تتمتع بالأهلية النظامية الكاملة للتعاقد، وأن يكون استخدامك للمنصة لأغراض تجارية أو
             مهنية لا لأغراض شخصية بحتة. والحسابات شخصية، ولا يجوز مشاركة بيانات الدخول.
@@ -108,7 +111,7 @@ export default function TermsContentAr() {
           </p>
         </S>
 
-        <S id="subscriptions" title="٤. الاشتراكات والباقات والاستخدام المجاني">
+        <S id="subscriptions" title="الاشتراكات والباقات والاستخدام المجاني">
           <p>
             تُفوتر الباقات المدفوعة مقدمًا عبر مزوّد الدفع بشكل دوري و<strong>تتجدد تلقائيًا</strong>{' '}
             حتى إلغائها. والإلغاء يسري في نهاية المدة المدفوعة مسبقًا، ويبقى وصولك قائمًا حتى ذلك الحين.
@@ -159,7 +162,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="payments" title="٥. المدفوعات ومزوّد الدفع وصفة التاجر">
+      <S id="payments" title="المدفوعات ومزوّد الدفع وصفة التاجر">
         <p>
           تُعالَج مدفوعات البطاقات عبر <strong>مزوّد خدمات دفع</strong> مرخّص من الغير. ومزوّد الدفع
           لدينا حاليًا هو <strong>سترايب</strong>، وكل إشارة إلى سترايب في هذه الشروط يُقصد بها مزوّد
@@ -193,7 +196,7 @@ export default function TermsContentAr() {
         </LegalCallout>
       </S>
 
-      <S id="fees" title="٦. رسوم المنصة">
+      <S id="fees" title="رسوم المنصة">
         <p>
           نتقاضى رسوم منصة على المعاملات التي تتم عبرها، إضافةً إلى أي رسوم اشتراك. وتُخصم الرسوم عند
           معالجة المعاملة، قبل وصول الأموال إليك.
@@ -268,7 +271,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="payouts" title="٧. التحويلات">
+      <S id="payouts" title="التحويلات">
         <p>
           تتراكم مستحقاتك في حسابك المرتبط لدى سترايب بعد خصم رسوم المنصة ورسوم المعالجة. و
           <strong>تُنفَّذ التحويلات بناءً على طلبك</strong> عبر المنصة لا وفق جدول تلقائي، فتبقى أنت
@@ -284,7 +287,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="tax" title="٨. الضرائب والفوترة">
+      <S id="tax" title="الضرائب والفوترة">
         <p>
           أنت المسؤول عن تحديد وتحصيل وإقرار وتوريد جميع الضرائب الناشئة عن مبيعاتك
           وخدماتك، بما في ذلك ضريبة القيمة المضافة بالنسبة المطبقة في المملكة، وعن إصدار فواتير
@@ -296,7 +299,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="refunds" title="٩. الاسترداد والإلغاء والنزاعات">
+      <S id="refunds" title="الاسترداد والإلغاء والنزاعات">
         <p>
           تختلف أحقية الاسترداد باختلاف ما تم حجزه، وهي مبيّنة بالتفصيل في{' '}
           <a href="/ar/refund-policy/">سياسة الاسترداد والإلغاء</a> التي تُعدّ جزءًا من هذه الشروط.
@@ -320,7 +323,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="providers" title="١٠. مقدمو الخدمات في السوق">
+      <S id="providers" title="مقدمو الخدمات في السوق">
         <p>يسري هذا البند على مقدمي الخدمات المدرجين في سوق أكسيز.</p>
         <p>
           أنت <strong>منشأة مستقلة</strong>. ولا ينشئ أي بند في هذه الشروط علاقة عمل أو وكالة أو
@@ -347,7 +350,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="customer-content" title="١١. محتواك وعملاؤك وسياساتك">
+      <S id="customer-content" title="محتواك وعملاؤك وسياساتك">
         <Only for="pm">
           <p>
             تحتفظ بملكية كل ما ترفعه — سجلات العقارات والوحدات والمستندات والصور والعقود
@@ -379,7 +382,7 @@ export default function TermsContentAr() {
         </Only>
       </S>
 
-      <S id="acceptable-use" title="١٢. الاستخدام المقبول">
+      <S id="acceptable-use" title="الاستخدام المقبول">
         <p>لا يجوز لك، ولا أن تسمح لغيرك بما يلي:</p>
         <ul>
           <li>استخدام المنصة في أي غرض غير مشروع أو مخالف للأنظمة السعودية؛</li>
@@ -395,7 +398,7 @@ export default function TermsContentAr() {
         </ul>
       </S>
 
-      <S id="integrations" title="١٣. الخدمات والتكاملات الخارجية">
+      <S id="integrations" title="الخدمات والتكاملات الخارجية">
         <p>
           تتكامل المنصة مع خدمات خارجية، تشمل معالجة المدفوعات والمراسلة وإرسال البريد وتخزين الوسائط
           والخرائط ومراقبة الأخطاء. وتُشغَّل تلك الخدمات من مزوديها وفق شروطهم،
@@ -416,7 +419,7 @@ export default function TermsContentAr() {
         </LegalCallout>
       </S>
 
-      <S id="data" title="١٤. حماية البيانات">
+      <S id="data" title="حماية البيانات">
         <p>
           توضح <a href="/ar/privacy/">سياسة الخصوصية</a> طريقة تعاملنا مع البيانات الشخصية. وباختصار،
           ولأغراض نظام حماية البيانات الشخصية السعودي:
@@ -443,7 +446,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="ip" title="١٥. الملكية الفكرية">
+      <S id="ip" title="الملكية الفكرية">
         <p>
           المنصة وبرمجياتها وتصميمها ووثائقها وعلاماتها التجارية مملوكة لنا أو لمرخّصينا. ونمنحك حقًا
           محدودًا غير حصري وغير قابل للتحويل وقابلًا للإلغاء في استخدام المنصة خلال مدة اشتراكك،
@@ -460,7 +463,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="availability" title="١٦. التوافر والدعم والتغييرات">
+      <S id="availability" title="التوافر والدعم والتغييرات">
         <p>
           نسعى لإبقاء المنصة متاحة ومعالجة الأعطال بسرعة، لكننا لا نضمن تشغيلًا متواصلًا أو خاليًا من
           الأخطاء. فالصيانة وانقطاعات الخدمات الخارجية والظروف الخارجة عن إرادتنا قد تعطّل الخدمة.
@@ -481,7 +484,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="warranties" title="١٧. إخلاء الضمانات">
+      <S id="warranties" title="إخلاء الضمانات">
         <p>
           إلى أقصى حد يجيزه النظام، تُقدَّم المنصة{' '}
           <strong>&laquo;كما هي&raquo; و&laquo;حسب توافرها&raquo;</strong>، ونخلي مسؤوليتنا من جميع
@@ -502,7 +505,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="liability" title="١٨. حدود المسؤولية">
+      <S id="liability" title="حدود المسؤولية">
         <LegalCallout tone="warning" title="ما لا يحدّه هذا البند">
           <p>
             لا يحدّ هذا البند ولا يستبعد: (أ) المسؤولية عن الوفاة أو الإصابة البدنية الناتجة عن
@@ -522,7 +525,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="indemnity" title="١٩. التعويض">
+      <S id="indemnity" title="التعويض">
         <p>
           تلتزم بتعويض شركة كلاود فالي وشركاتها التابعة ومسؤوليها وموظفيها وإبراء ذمتهم من المطالبات
           والخسائر والالتزامات والأضرار والتكاليف والأتعاب النظامية المعقولة الناشئة عن أو المتصلة بما
@@ -544,8 +547,8 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="suspension" title="٢٠. الإيقاف والإنهاء">
-        <p>يمكنك التوقف عن استخدام المنصة في أي وقت، وإلغاء الاشتراك وفق البند ٤.</p>
+      <S id="suspension" title="الإيقاف والإنهاء">
+        <p>يمكنك التوقف عن استخدام المنصة في أي وقت، وإلغاء الاشتراك وفق البند <SectionNo to="subscriptions" />.</p>
         <p>
           ويجوز لنا إيقاف الوصول أو تقييده فورًا متى رأينا بصورة معقولة أن ذلك لازم لمنع الاحتيال أو
           حماية المنصة أو مستخدميها أو الامتثال للنظام أو لطلب من سترايب أو شبكة بطاقات، أو لمعالجة
@@ -569,7 +572,7 @@ export default function TermsContentAr() {
         </LegalCallout>
       </S>
 
-      <S id="law" title="٢١. النظام الواجب التطبيق وتسوية المنازعات">
+      <S id="law" title="النظام الواجب التطبيق وتسوية المنازعات">
         <p>
           تخضع هذه الشروط وأي نزاع ينشأ عنها أو يتصل بها، بما في ذلك المنازعات غير التعاقدية، لأنظمة{' '}
           <strong>المملكة العربية السعودية</strong>.
@@ -589,7 +592,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="general" title="٢٢. أحكام عامة">
+      <S id="general" title="أحكام عامة">
         <p>
           <strong>كامل الاتفاق.</strong> تشكّل هذه الشروط وسياسة الخصوصية وسياسة الاسترداد والإلغاء
           وأي أمر اشتراك توقّعه كامل الاتفاق بيننا في هذا الشأن، وتحلّ محل أي تفاهم سابق.
@@ -617,7 +620,7 @@ export default function TermsContentAr() {
         </p>
       </S>
 
-      <S id="contact" title="٢٣. كيفية التواصل معنا">
+      <S id="contact" title="كيفية التواصل معنا">
         <p>
           <strong>شركة كلاود فالي</strong>
           <br />

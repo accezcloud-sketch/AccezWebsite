@@ -1,23 +1,10 @@
-import type { Metadata } from 'next'
-import { alternatesFor } from '@/lib/i18n'
-import RefundContent from '@/components/legal/RefundContent'
+import { LegalChooser } from '@/components/legal/LegalIndex'
+import { legalChooserMetadata } from '@/lib/legal/documents'
 
-export const metadata: Metadata = {
-  title: 'Refund & Cancellation Policy',
-  description:
-    'How cancellations and refunds work on Accez across unit reservations, marketplace service bookings and subscriptions, including how processing and platform fees are treated.',
-  alternates: alternatesFor('refund-policy', 'en'),
-  openGraph: {
-    title: 'Refund & Cancellation Policy | Accez',
-    description:
-      'Cancellation windows, refund calculations and fee treatment for reservations, service bookings and subscriptions.',
-    type: 'article',
-    url: 'https://www.accez.cloud/refund-policy/',
-    siteName: 'Accez',
-    images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: 'Accez Refund & Cancellation Policy' }],
-  },
-}
+// The bare address asks which version applies; links published before the
+// per-solution split keep working.
+export const metadata = legalChooserMetadata('refund-policy', 'en')
 
-export default function RefundPolicyPage() {
-  return <RefundContent />
+export default function Page() {
+  return <LegalChooser doc="refund-policy" locale="en" />
 }

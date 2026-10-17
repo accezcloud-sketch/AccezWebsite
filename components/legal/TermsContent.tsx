@@ -5,20 +5,23 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
   Only,
+  SectionNo,
 } from '@/components/LegalLayout'
-import { TERMS_AUDIENCE } from '@/components/legal/audience'
+import { TERMS_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
-export default function TermsContent() {
+export default function TermsContent({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="Terms of Service"
       subtitle="The agreement between you and Cloud Valley LLC governing your use of the Accez platform and the Accez service marketplace."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      audienceMap={TERMS_AUDIENCE}
+      doc="terms"
+      sections={TERMS_SECTIONS}
+      audience={audience}
     >
       <LegalCallout title="Read this first">
         <p>
@@ -31,7 +34,7 @@ export default function TermsContent() {
         </p>
       </LegalCallout>
 
-      <S id="about" title="1. Who we are and what this covers">
+      <S id="about" title="Who we are and what this covers">
         <p>
           Accez is operated by <strong>Cloud Valley LLC</strong>{' '}
           (&ldquo;Accez&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;), a company registered in the
@@ -55,7 +58,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="venue" title="2. What Accez does and does not do">
+      <S id="venue" title="What Accez does and does not do">
         <p>
           Accez provides software and a place for others to transact. That distinction matters, and this section states it
           plainly rather than leaving it to be inferred.
@@ -110,7 +113,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="eligibility" title="3. Eligibility and your account">
+      <S id="eligibility" title="Eligibility and your account">
         <p>
           You must have full legal capacity to enter into contracts, and be using the platform for
           business or professional purposes, not purely personal ones. Accounts are for named
@@ -129,7 +132,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="subscriptions" title="4. Subscriptions, plans and free usage">
+      <S id="subscriptions" title="Subscriptions, plans and free usage">
         <p>
           Paid plans are billed in advance through our payment processor on a recurring basis and{' '}
           <strong>renew automatically</strong> until cancelled. Cancelling takes effect at the end
@@ -185,7 +188,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="payments" title="5. Payments, our processor and merchant of record">
+      <S id="payments" title="Payments, our processor and merchant of record">
         <p>
           Card payments are handled by a licensed third-party{' '}
           <strong>payment processor</strong>. Our payment processor is currently{' '}
@@ -227,7 +230,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="fees" title="6. Platform fees">
+      <S id="fees" title="Platform fees">
         <p>
           We charge a platform fee on transactions processed through the platform, in addition to
           any subscription fee. Fees are deducted at the time the transaction is processed, before
@@ -315,7 +318,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="payouts" title="7. Payouts">
+      <S id="payouts" title="Payouts">
         <p>
           Funds owed to you accumulate in your connected Stripe account after platform fees and
           processing fees are deducted. <strong>Payouts are initiated on request</strong> through
@@ -330,7 +333,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="tax" title="8. Tax and invoicing">
+      <S id="tax" title="Tax and invoicing">
         <p>
           You are responsible for determining, charging, collecting, reporting and remitting all
           taxes arising from your own sales and services, including value added tax at
@@ -342,7 +345,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="refunds" title="9. Refunds, cancellations and chargebacks">
+      <S id="refunds" title="Refunds, cancellations and chargebacks">
         <p>
           Refund entitlements differ depending on what was booked. They are set out in full in our{' '}
           <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>, which forms part of these
@@ -368,7 +371,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="providers" title="10. Service providers on the marketplace">
+      <S id="providers" title="Service providers on the marketplace">
         <p>This section applies to service providers listing on the Accez marketplace.</p>
         <p>
           You are an <strong>independent business</strong>. Nothing in these Terms creates an
@@ -400,7 +403,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="customer-content" title="11. Your content, your customers, your policies">
+      <S id="customer-content" title="Your content, your customers, your policies">
         <Only for="pm">
           <p>
             You keep ownership of everything you upload &mdash; property and unit records,
@@ -436,7 +439,7 @@ export default function TermsContent() {
         </Only>
       </S>
 
-      <S id="acceptable-use" title="12. Acceptable use">
+      <S id="acceptable-use" title="Acceptable use">
         <p>You must not, and must not permit anyone else to:</p>
         <ul>
           <li>use the platform for anything unlawful, or in breach of Saudi law;</li>
@@ -464,7 +467,7 @@ export default function TermsContent() {
         </ul>
       </S>
 
-      <S id="integrations" title="13. Third-party services and integrations">
+      <S id="integrations" title="Third-party services and integrations">
         <p>
           The platform interoperates with third-party services, including payment processing,
           messaging and email delivery, media storage, mapping and error monitoring. Those services are operated by their providers under their
@@ -489,7 +492,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="data" title="14. Data protection">
+      <S id="data" title="Data protection">
         <p>
           Our handling of personal data is described in the{' '}
           <a href="/privacy/">Privacy Policy</a>. In summary, and for the purposes of the Saudi
@@ -522,7 +525,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="ip" title="15. Intellectual property">
+      <S id="ip" title="Intellectual property">
         <p>
           The platform, its software, design, documentation and trade marks are owned by us or our
           licensors. We grant you a limited, non-exclusive, non-transferable, revocable right to use
@@ -539,7 +542,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="availability" title="16. Availability, support and changes">
+      <S id="availability" title="Availability, support and changes">
         <p>
           We aim to keep the platform available and to resolve problems promptly, but we do not
           guarantee uninterrupted or error-free operation. Maintenance, third-party outages and
@@ -562,7 +565,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="warranties" title="17. Disclaimers">
+      <S id="warranties" title="Disclaimers">
         <p>
           To the fullest extent permitted by law, the platform is provided{' '}
           <strong>&ldquo;as is&rdquo; and &ldquo;as available&rdquo;</strong>, and we disclaim all
@@ -596,7 +599,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="liability" title="18. Limitation of liability">
+      <S id="liability" title="Limitation of liability">
         <LegalCallout tone="warning" title="What this section does not limit">
           <p>
             Nothing in this section limits or excludes: (a) liability for death or personal injury
@@ -618,7 +621,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="indemnity" title="19. Indemnity">
+      <S id="indemnity" title="Indemnity">
         <p>
           You will indemnify and hold harmless Cloud Valley LLC, its affiliates, officers and
           employees against claims, losses, liabilities, damages, costs and reasonable legal fees
@@ -642,8 +645,8 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="suspension" title="20. Suspension and termination">
-        <p>You may stop using the platform at any time, and cancel a subscription as described in section 4.</p>
+      <S id="suspension" title="Suspension and termination">
+        <p>You may stop using the platform at any time, and cancel a subscription as described in section <SectionNo to="subscriptions" />.</p>
         <p>
           We may suspend or restrict access immediately where we reasonably believe it is necessary
           to prevent fraud, protect the platform or its users, comply with law or a request from
@@ -670,7 +673,7 @@ export default function TermsContent() {
         </LegalCallout>
       </S>
 
-      <S id="law" title="21. Governing law and disputes">
+      <S id="law" title="Governing law and disputes">
         <p>
           These Terms and any dispute arising out of or in connection with them, including
           non-contractual disputes, are governed by the laws of the{' '}
@@ -694,7 +697,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="general" title="22. General">
+      <S id="general" title="General">
         <p>
           <strong>Entire agreement.</strong> These Terms, the Privacy Policy, the Refund &amp;
           Cancellation Policy and any order form you sign form the whole agreement between us on
@@ -727,7 +730,7 @@ export default function TermsContent() {
         </p>
       </S>
 
-      <S id="contact" title="23. How to contact us">
+      <S id="contact" title="How to contact us">
         <p>
           <strong>Cloud Valley LLC</strong>
           <br />

@@ -5,20 +5,23 @@ import LegalLayout, {
   LegalCallout,
   LegalTable,
   Only,
+  SectionNo,
 } from '@/components/LegalLayout'
-import { REFUND_AUDIENCE } from '@/components/legal/audience'
+import { REFUND_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
-export default function RefundContent() {
+export default function RefundContent({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="Refund & Cancellation Policy"
       subtitle="How cancellations and refunds work across reservations, marketplace bookings and Accez subscriptions — including who bears which fees."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      audienceMap={REFUND_AUDIENCE}
+      doc="refund-policy"
+      sections={REFUND_SECTIONS}
+      audience={audience}
     >
       <LegalCallout title="The one thing to understand first">
         <p>
@@ -30,7 +33,7 @@ export default function RefundContent() {
         </p>
       </LegalCallout>
 
-      <S id="overview" title="1. Overview — which policy applies to you">
+      <S id="overview" title="Overview — which policy applies to you">
         <Only for="pm">
           <LegalTable
             head={['What was paid for', 'Who sets the terms', 'Default if none set']}
@@ -38,17 +41,17 @@ export default function RefundContent() {
               [
                 <strong key="a">A stay in a unit</strong>,
                 'You, the property manager, per unit',
-                'A sliding scale based on notice before check-in (section 2)',
+                <>A sliding scale based on notice before check-in (section <SectionNo to="reservations" />)</>,
               ],
               [
                 <strong key="c">An Accez subscription</strong>,
                 'Accez',
-                'Non-refundable; access continues to period end (section 5)',
+                <>Non-refundable; access continues to period end (section <SectionNo to="subscriptions" />)</>,
               ],
               [
                 <strong key="d">A property purchase payment</strong>,
                 'The seller and the sale contract',
-                'Handled outside the platform (section 10)',
+                <>Handled outside the platform (section <SectionNo to="sales" />)</>,
               ],
             ]}
           />
@@ -60,19 +63,19 @@ export default function RefundContent() {
               [
                 <strong key="b">A service booking</strong>,
                 'You, the service provider',
-                <><strong key="n">No refund</strong> — see section 3</>,
+                <><strong key="n">No refund</strong> — see section <SectionNo to="marketplace" /></>,
               ],
               [
                 <strong key="c">An Accez subscription</strong>,
                 'Accez',
-                'Non-refundable; access continues to period end (section 5)',
+                <>Non-refundable; access continues to period end (section <SectionNo to="subscriptions" />)</>,
               ],
             ]}
           />
         </Only>
       </S>
 
-      <S id="reservations" title="2. Unit reservations and stays">
+      <S id="reservations" title="Unit reservations and stays">
         <p>
           Each unit can carry its own cancellation policy, set by the property manager. Where one
           has been set, <strong>it takes precedence</strong> and is shown to you before you confirm
@@ -93,11 +96,11 @@ export default function RefundContent() {
         <p>
           Payment processing fees are not returned by the payment processor when a payment is
           refunded, so the amount that reaches the guest is the amount you approve less those fees
-          &mdash; see section 6.
+          &mdash; see section <SectionNo to="fees-on-refund" />.
         </p>
       </S>
 
-      <S id="marketplace" title="3. Marketplace service bookings">
+      <S id="marketplace" title="Marketplace service bookings">
         <LegalCallout tone="warning" title="Cancelled service bookings are not refunded">
           <p>
             A marketplace service booking is <strong>not refundable</strong>. If the customer
@@ -116,7 +119,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="deposits" title="4. Deposits and part payments">
+      <S id="deposits" title="Deposits and part payments">
         <Only for="sp">
           <p>
             Some bookings are taken with a deposit, with the balance payable later or directly to the
@@ -140,7 +143,7 @@ export default function RefundContent() {
         </Only>
       </S>
 
-      <S id="subscriptions" title="5. Accez subscription fees">
+      <S id="subscriptions" title="Accez subscription fees">
         <p>
           Subscription fees are billed in advance and are <strong>non-refundable</strong>, including
           for partial periods and for periods left unused after a cancellation.
@@ -162,7 +165,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="fees-on-refund" title="6. What happens to fees when money is refunded">
+      <S id="fees-on-refund" title="What happens to fees when money is refunded">
         <p>
           This is the part most policies leave vague. It has a direct effect on how much money
           actually comes back, so it is set out here explicitly.
@@ -211,7 +214,7 @@ export default function RefundContent() {
         </Only>
       </S>
 
-      <S id="how-to-request" title="7. How to request a refund">
+      <S id="how-to-request" title="How to request a refund">
         <Only for="pm">
           <LegalTable
             head={['If you are', 'Do this']}
@@ -258,7 +261,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="timing" title="8. How long a refund takes">
+      <S id="timing" title="How long a refund takes">
         <p>
           Once approved, the refund is submitted to our payment processor, which submits it to the
           customer&apos;s bank or card issuer. <strong>From that point the timing is set by the
@@ -300,7 +303,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="chargebacks" title="9. Chargebacks and payment disputes">
+      <S id="chargebacks" title="Chargebacks and payment disputes">
         <p>
           If you believe a charge is wrong, <strong>please contact us or the business you booked
           with first</strong>. Most issues are resolved faster that way than through a bank dispute,
@@ -319,7 +322,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="sales" title="10. Property sale payments">
+      <S id="sales" title="Property sale payments">
         <p>
           Payments recorded against a property sale &mdash; deposits, instalments and settlement
           amounts &mdash; are <strong>recorded</strong> in the platform but are made and returned{' '}
@@ -332,7 +335,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="exceptions" title="11. Exceptions and unusual circumstances">
+      <S id="exceptions" title="Exceptions and unusual circumstances">
         <p>
           A business using Accez may choose to issue a more generous refund than
           their policy requires. Nothing here prevents that.
@@ -350,7 +353,7 @@ export default function RefundContent() {
         </p>
       </S>
 
-      <S id="contact" title="12. Contact">
+      <S id="contact" title="Contact">
         <p>
           <strong>Cloud Valley LLC</strong>
           <br />

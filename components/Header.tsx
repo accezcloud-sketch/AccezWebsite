@@ -8,22 +8,20 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import ThemeToggle from '@/components/ThemeToggle'
 import { localeHref } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
+import { LEGAL_COPY, LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 import NavDropdown from '@/components/nav/NavDropdown'
 import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
 
 interface MenuItem { name: string; nameAr: string; href: string; desc: string; descAr: string }
 
-// Reading and help, plus the legal pages. The legal pages were promoted from
-// the footer on purpose (a marketplace that holds other people's money should
-// make its policies easy to find), so they stay one click away here.
+// Reading and help. The legal documents sit in their own column (built from
+// lib/legal/documents.ts): a marketplace that holds other people's money
+// should keep its policies one click away.
 const RESOURCES_MENU: MenuItem[] = [
   { name: 'Blog', nameAr: 'المدونة', href: '/blog', desc: 'Guides and insights for Saudi operators', descAr: 'أدلة ورؤى لمشغّلي العقارات في السعودية' },
   { name: 'FAQ', nameAr: 'الأسئلة الشائعة', href: '/faq', desc: 'Answers to common questions', descAr: 'إجابات عن الأسئلة الشائعة' },
   { name: 'Support', nameAr: 'الدعم', href: '/support', desc: 'Get help from our team', descAr: 'احصل على مساعدة من فريقنا' },
-  { name: 'Terms of Service', nameAr: 'شروط الخدمة', href: '/terms', desc: 'The agreement that governs the platform', descAr: 'الاتفاقية التي تحكم استخدام المنصة' },
-  { name: 'Privacy Policy', nameAr: 'سياسة الخصوصية', href: '/privacy', desc: 'How we handle personal data under PDPL', descAr: 'كيف نتعامل مع البيانات الشخصية' },
-  { name: 'Refund & Cancellation', nameAr: 'الاسترداد والإلغاء', href: '/refund-policy', desc: 'Cancellations, refunds and chargebacks', descAr: 'الإلغاء والاسترداد والمنازعات' },
 ]
 
 export default function Header() {
@@ -66,8 +64,17 @@ export default function Header() {
     },
   ]
 
+  // Resources: reading and help, then the legal documents. A per-solution
+  // document links to its "which applies to you?" page.
   const resourcesSections: NavSection[] = [
-    { links: RESOURCES_MENU.map((m) => ({ label: ar ? m.nameAr : m.name, description: ar ? m.descAr : m.desc, href: href(m.href) })) },
+    { heading: ar ? 'تعلّم واحصل على المساعدة' : 'Learn and get help', links: RESOURCES_MENU.map((m) => ({ label: ar ? m.nameAr : m.name, description: ar ? m.descAr : m.desc, href: href(m.href) })) },
+    {
+      heading: ar ? 'قانوني' : 'Legal',
+      links: [
+        ...LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: href(legalHref(d.key)) })),
+        { label: LEGAL_COPY[language].allDocuments, href: href('/legal') },
+      ],
+    },
   ]
 
   // Sign in: each solution has its own portal, so the menu names the role.

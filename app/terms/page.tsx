@@ -1,30 +1,10 @@
-import type { Metadata } from 'next'
-import { alternatesFor } from '@/lib/i18n'
-import TermsContent from '@/components/legal/TermsContent'
+import { LegalChooser } from '@/components/legal/LegalIndex'
+import { legalChooserMetadata } from '@/lib/legal/documents'
 
-export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description:
-    'The agreement between Cloud Valley LLC and users of the Accez property operations platform and marketplace, covering subscriptions, fees, payments, payouts, liability and Saudi governing law.',
-  alternates: alternatesFor('terms', 'en'),
-  openGraph: {
-    title: 'Terms of Service | Accez',
-    description:
-      'The agreement governing use of the Accez property operations platform and service marketplace.',
-    type: 'article',
-    url: 'https://www.accez.cloud/terms/',
-    siteName: 'Accez',
-    images: [
-      {
-        url: 'https://www.accez.cloud/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Accez Terms of Service',
-      },
-    ],
-  },
-}
+// The bare address asks which version applies; links published before the
+// per-solution split keep working.
+export const metadata = legalChooserMetadata('terms', 'en')
 
-export default function TermsPage() {
-  return <TermsContent />
+export default function Page() {
+  return <LegalChooser doc="terms" locale="en" />
 }

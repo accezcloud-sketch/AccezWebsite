@@ -380,14 +380,19 @@ section[id] {
 }
 .legal-doc .legal-body table { max-width: none; }
 
-/* Legal document audience views.
-   Both versions are always in the HTML — search engines and the AI crawlers
-   that never run JavaScript must see every clause — and the version the reader
-   did not choose is hidden here rather than dropped from the markup. */
-.legal-doc[data-audience='pm'] [data-for='sp'],
-.legal-doc[data-audience='sp'] [data-for='pm'] { display: none; }
-
-/* A version-specific block flows exactly like the surrounding prose —
-   it is not visibly marked, because the reader chose this version. */
+/* An audience-specific passage. In a per-audience version it flows like the
+   surrounding prose (the whole page is already that audience's). In the shared
+   Privacy Policy it is set apart and labelled with who it is for. */
 .legal-doc .legal-only > * { margin-block: 0; }
 .legal-doc .legal-only + .legal-only { margin-top: 1rem; }
+.legal-doc .legal-only-labelled {
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid var(--accent-line);
+  display: flex; flex-direction: column; gap: .75rem;
+}
+.legal-doc .legal-only-labelled > .legal-only-label {
+  font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent-hi);
+}
+.legal-doc .legal-only-labelled > h3 { margin-top: 0; }
+.legal-doc li > .legal-only-label { color: var(--text); }

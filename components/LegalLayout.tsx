@@ -1,24 +1,35 @@
 'use client'
 
-import { ReactNode, createContext, useContext, useEffect, useState } from 'react'
-import { AUDIENCE_STORAGE_KEY, type Audience, type AudienceView } from '@/components/legal/audience'
+import { ReactNode, createContext, useContext } from 'react'
+import Link from 'next/link'
+import {
+  appliesTo,
+  formatSectionNumber,
+  sectionNumbers,
+  type Audience,
+  type AudienceView,
+  type LegalSection,
+} from '@/lib/legal/audience'
+import { LEGAL_COPY, LEGAL_DOCUMENTS, legalDocumentsFor, legalHref, type LegalDocKey } from '@/lib/legal/documents'
+import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
 
-/**
- * The audience the reader has selected, plus this document's section map.
- * Sections read both to decide whether to render in full or collapsed.
- */
-const AudienceContext = createContext<{ view: AudienceView; map: Record<string, Audience> }>({
-  view: 'pm',
-  map: {},
-})
+/** The version being rendered, and this document's structure. */
+const DocumentContext = createContext<{
+  view: AudienceView | undefined
+  audienceOf: Record<string, Audience>
+  numbers: Record<string, number>
+}>({ view: undefined, audienceOf: {}, numbers: {} })
 
 interface LegalLayoutProps {
-  /** Section id -> audience. Anything absent is treated as 'all'. */
-  audienceMap?: Record<string, Audience>
+  doc: LegalDocKey
+  /** The document's sections in order (lib/legal/audience.ts). */
+  sections: LegalSection[]
+  /** Which audience's version to render. Absent for a shared document. */
+  audience?: AudienceView
   title: string
   subtitle: string
   lastUpdated: string
@@ -26,85 +37,48 @@ interface LegalLayoutProps {
   children: ReactNode
 }
 
+const solutionFor = (view: AudienceView) => PLATFORM_SOLUTIONS.find((s) => s.legalAudience === view)
+
 /**
  * Shared shell for the legal pages.
  *
- * The previous legal pages were built on a light theme (bg-gray-50, white
- * cards, blue links) while every other page on the site is dark. They read as a
- * different website, which is the opposite of what a legal page should do —
- * these are the pages a cautious buyer checks before signing, so they have to
- * look like they belong to the same company.
- *
- * This uses the site's own tokens from globals.css, keeps a sticky contents
- * rail on wide screens, and uses logical properties (ps-/pe-/border-s) so the
- * layout mirrors correctly if these pages are ever localised to Arabic.
+ * A per-audience document is rendered as one version only: the other
+ * audience's sections and passages are not in the page at all, the sections
+ * are numbered without gaps, and the page says plainly who it is for, with a
+ * link to the other version. There is no in-page toggle: each version has its
+ * own URL, so the product apps, emails and search results can link straight
+ * to the right one, and a reader can never be looking at the wrong half.
  */
 export default function LegalLayout({
+  doc,
+  sections,
+  audience,
   title,
   subtitle,
   lastUpdated,
   effectiveDate,
   children,
-  audienceMap = {},
 }: LegalLayoutProps) {
-  /**
-   * Which version of the document the reader is looking at.
-   *
-   * Seeded to 'pm' so the server-rendered HTML is deterministic, then
-   * corrected from the reader's last choice after mount. Note that BOTH
-   * versions are always present in the HTML and the inactive one is hidden in
-   * CSS — if the other audience's clauses were dropped from the markup they
-   * would be invisible to search engines and to the AI crawlers that never run
-   * JavaScript, and a reader could argue a term was never published to them.
-   */
-  const [view, setView] = useState<AudienceView>('pm')
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(AUDIENCE_STORAGE_KEY)
-      if (saved === 'pm' || saved === 'sp') setView(saved)
-    } catch {
-      // Storage blocked — the default view is still correct.
-    }
-  }, [])
-
-  const chooseView = (next: AudienceView) => {
-    setView(next)
-    try {
-      localStorage.setItem(AUDIENCE_STORAGE_KEY, next)
-    } catch {
-      // Preference simply will not persist.
-    }
-  }
   const { language } = useLanguage()
-
-  /**
-   * Chrome labels. These were hardcoded English, so an Arabic reader saw
-   * "Legal", "Effective:", "Last updated:", "Contents" and the English policy
-   * names on an otherwise fully Arabic page — and those labels sit on the
-   * version a Saudi court would read.
-   */
   const ar = language === 'ar'
+  const c = LEGAL_COPY[language]
   const L = {
-    legal: ar ? 'قانوني' : 'Legal',
     effective: ar ? 'تاريخ النفاذ:' : 'Effective:',
     updated: ar ? 'آخر تحديث:' : 'Last updated:',
-    contents: ar ? 'المحتويات' : 'Contents',
-    terms: ar ? 'شروط الخدمة' : 'Terms of Service',
-    privacy: ar ? 'سياسة الخصوصية' : 'Privacy Policy',
-    refund: ar ? 'سياسة الاسترداد والإلغاء' : 'Refund & Cancellation',
-    pm: ar ? 'إدارة الأملاك' : 'Property management',
-    sp: ar ? 'مقدمو الخدمات' : 'Service provider',
-    versionOf: ar ? 'اختر النسخة التي تخصّك' : 'Choose the version that applies to you',
-    pmDesc: ar ? 'بوابة إدارة الأملاك' : 'Property manager portal',
-    spDesc: ar ? 'سوق مقدّمي الخدمات' : 'Service provider marketplace',
-    reading: ar ? 'أنت تقرأ الآن:' : 'You are reading:',
+    related: ar ? 'مستندات ذات صلة' : 'Related documents',
   }
 
-  const OPTIONS: { value: AudienceView; label: string }[] = [
-    { value: 'pm', label: L.pm },
-    { value: 'sp', label: L.sp },
-  ]
+  const solution = audience ? solutionFor(audience) : undefined
+  const others = solution ? PLATFORM_SOLUTIONS.filter((s) => s.key !== solution.key) : []
+  const related = solution
+    ? legalDocumentsFor(solution)
+    : LEGAL_DOCUMENTS.map((d) => ({ doc: d, href: legalHref(d.key) }))
+
+  const context = {
+    view: audience,
+    audienceOf: Object.fromEntries(sections.map((s) => [s.id, s.for ?? 'all'])) as Record<string, Audience>,
+    numbers: sectionNumbers(sections, audience),
+  }
 
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
@@ -123,6 +97,11 @@ export default function LegalLayout({
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="mx-auto" style={{ maxWidth: 820 }}>
+            {solution && (
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] mb-3" style={{ color: 'var(--accent-hi)' }}>
+                {solution.audience[language]}
+              </p>
+            )}
             <h1
               className="text-strong font-bold tracking-tight mb-4"
               style={{
@@ -150,6 +129,30 @@ export default function LegalLayout({
                 {L.updated} <span style={{ color: 'var(--text)' }}>{lastUpdated}</span>
               </span>
             </div>
+
+            {/* Who this version is for, in words, and the way to the other one. */}
+            {solution && (
+              <div
+                className="mt-8 rounded-[var(--radius-md)] px-5 py-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm"
+                style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderInlineStartWidth: 3, borderInlineStartColor: 'var(--accent)' }}
+              >
+                <span style={{ color: 'var(--text)' }}>
+                  {c.versionFor} <strong>{solution.audience[language].replace(/^For /, '')}</strong>
+                  <span style={{ color: 'var(--text-muted)' }}> · {solution.name[language]}</span>
+                </span>
+                {others.map((o) => (
+                  <Link
+                    key={o.key}
+                    href={localeHref(legalHref(doc, o), language)}
+                    prefetch={false}
+                    className="font-medium underline underline-offset-2"
+                    style={{ color: 'var(--accent-hi)' }}
+                  >
+                    {c.otherVersion} {o.audience[language].replace(/^For /, 'for ')}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -157,93 +160,32 @@ export default function LegalLayout({
       {/* Body */}
       <section className="pb-20" style={{ borderTop: '1px solid var(--border)' }}>
         <div className="container mx-auto px-4 pt-10">
-          {/* Single column. The contents rail that used to sit beside this was
-              removed: the document reads as one block with a single left and
-              right edge, the way a printed contract does. The three sibling
-              links it carried are repeated below the document instead. */}
           <div className="mx-auto" style={{ maxWidth: 820 }}>
-            {/* Version switch. Two platforms, two documents — the reader
-                should never have to work out which half is theirs. Sticky so
-                it stays reachable on a document this long, and it states the
-                current version in words as well as colour so the state is not
-                carried by colour alone. */}
-            <div
-              className="mb-10 sticky z-20 rounded-xl overflow-hidden"
-              style={{
-                top: 'calc(var(--nav-h) + 12px)',
-                background: 'var(--panel)',
-                border: '1px solid var(--border-hi)',
-                backdropFilter: 'blur(20px)',
-                boxShadow: '0 10px 30px rgb(var(--shadow-rgb) / calc(0.28 * var(--shadow-k)))',
-              }}
-            >
-              <p
-                className="px-4 pt-3 pb-2 text-xs font-semibold uppercase tracking-[0.12em]"
-                style={{ color: 'var(--text-faint)' }}
-              >
-                {L.versionOf}
-              </p>
-              <div role="tablist" aria-label={L.versionOf} className="grid grid-cols-2 gap-2 px-3 pb-3">
-                {OPTIONS.map((o) => {
-                  const active = view === o.value
-                  return (
-                    <button
-                      key={o.value}
-                      type="button"
-                      role="tab"
-                      aria-selected={active}
-                      onClick={() => chooseView(o.value)}
-                      className="rounded-lg px-4 py-3 text-start transition-all duration-150"
-                      style={{
-                        background: active ? 'var(--accent-dim)' : 'transparent',
-                        border: `1px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
-                        cursor: 'pointer',
-                      }}
-                    >
-                      <span
-                        className="flex items-center gap-2 text-sm font-semibold"
-                        style={{ color: active ? 'var(--accent-hi)' : 'var(--text-muted)' }}
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="inline-block rounded-full shrink-0"
-                          style={{
-                            width: 8,
-                            height: 8,
-                            background: active ? 'var(--accent)' : 'var(--border-hi)',
-                          }}
-                        />
-                        {o.label}
-                      </span>
-                      <span className="block text-xs mt-1 ps-4" style={{ color: 'var(--text-faint)' }}>
-                        {o.value === 'pm' ? L.pmDesc : L.spDesc}
-                      </span>
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
+            <DocumentContext.Provider value={context}>
+              <article className="legal-doc min-w-0">{children}</article>
+            </DocumentContext.Provider>
 
-            <AudienceContext.Provider value={{ view, map: audienceMap }}>
-              <article className="legal-doc min-w-0" data-audience={view}>
-                {children}
-              </article>
-            </AudienceContext.Provider>
-
+            {/* The reader's other documents: the same audience's versions. */}
             <nav
-              aria-label={L.contents}
+              aria-label={L.related}
               className="mt-16 pt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm"
               style={{ borderTop: '1px solid var(--border)' }}
             >
-              <a href={localeHref('/terms', language)} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
-                {L.terms}
-              </a>
-              <a href={localeHref('/privacy', language)} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
-                {L.privacy}
-              </a>
-              <a href={localeHref('/refund-policy', language)} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
-                {L.refund}
-              </a>
+              {related.map(({ doc: d, href }) => (
+                <Link
+                  key={d.key}
+                  href={localeHref(href, language)}
+                  prefetch={false}
+                  aria-current={d.key === doc ? 'page' : undefined}
+                  className="hover:text-strong transition-colors"
+                  style={{ color: d.key === doc ? 'var(--text)' : 'var(--text-muted)' }}
+                >
+                  {d.title[language]}
+                </Link>
+              ))}
+              <Link href={localeHref('/legal', language)} prefetch={false} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
+                {c.allDocuments}
+              </Link>
             </nav>
           </div>
         </div>
@@ -254,7 +196,7 @@ export default function LegalLayout({
   )
 }
 
-/** One numbered section of a legal document. */
+/** One numbered section of a legal document. Left out of versions it does not apply to. */
 export function LegalSectionBlock({
   id,
   title,
@@ -265,13 +207,13 @@ export function LegalSectionBlock({
   children: ReactNode
 }) {
   const { language } = useLanguage()
-  const { map } = useContext(AudienceContext)
+  const { view, audienceOf, numbers } = useContext(DocumentContext)
 
-  const ar = language === 'ar'
-  const audience = map[id] ?? 'all'
+  if (!(id in audienceOf)) throw new Error(`Legal section "${id}" is missing from the document's section list`)
+  if (!appliesTo(audienceOf[id], view)) return null
 
   return (
-    <section id={id} data-for={audience} className="scroll-mt-28 mb-14">
+    <section id={id} className="scroll-mt-28 mb-14">
       <h2
         className="text-strong font-bold tracking-tight mb-4"
         style={{
@@ -279,11 +221,25 @@ export function LegalSectionBlock({
           fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
         }}
       >
-        {title}
+        {formatSectionNumber(numbers[id], language)}. {title}
       </h2>
       <div className="legal-body space-y-4">{children}</div>
     </section>
   )
+}
+
+/**
+ * The number of another section, as it appears in this version ("see section
+ * <SectionNo to="fees" />"). Versions number their sections differently, so a
+ * written number would be wrong in one of them. Fails the build if the section
+ * is not in this version, rather than publishing a reference to nothing.
+ */
+export function SectionNo({ to }: { to: string }) {
+  const { language } = useLanguage()
+  const { numbers, view } = useContext(DocumentContext)
+  const n = numbers[to]
+  if (n === undefined) throw new Error(`Section reference "${to}" is not in the ${view ?? 'shared'} version`)
+  return <a href={`#${to}`}>{formatSectionNumber(n, language)}</a>
 }
 
 /** A callout for terms a reader must not miss — fees, liability, deadlines. */
@@ -381,32 +337,35 @@ export function LegalTable({
 
 
 /**
- * Wraps a paragraph, list item or callout that speaks to one audience only.
+ * A paragraph, list item or callout that speaks to one audience only.
  *
- * Section-level tagging is not enough on its own: measuring the documents
- * showed a third of the Refund policy differs between the two audiences
- * *inside* sections that both need to read. Those are the passages that made
- * a reader ask "is this about me or the other one?".
- *
- * Like whole sections, the content stays in the HTML and is hidden in CSS, so
- * search engines and non-JavaScript crawlers still see both versions.
+ * In a per-audience version it is rendered only in its own audience's
+ * version. In a shared document (Privacy) every reader sees it, so it carries
+ * a label saying who it is for.
  */
 export function Only({
   for: audience,
   as: Tag = 'div',
   children,
 }: {
-  for: 'pm' | 'sp'
-  /** Use "li" inside a list — a <div> between <ul> and <li> is invalid HTML. */
+  for: AudienceView
+  /** Use "li" inside a list: a <div> between <ul> and <li> is invalid HTML. */
   as?: 'div' | 'li'
   children: ReactNode
 }) {
-  // No label. Choosing a version renders that version's document; a chip saying
-  // which audience a paragraph belongs to only makes sense in a combined view,
-  // and there is no combined view.
-  return (
-    <Tag data-for={audience} className="legal-only">
+  const { language } = useLanguage()
+  const { view } = useContext(DocumentContext)
+  if (view !== undefined) return view === audience ? <Tag className="legal-only">{children}</Tag> : null
+
+  const label = solutionFor(audience)?.audience[language]
+  return Tag === 'li' ? (
+    <li className="legal-only">
+      <strong className="legal-only-label">{label}:</strong> {children}
+    </li>
+  ) : (
+    <div className="legal-only legal-only-labelled">
+      <p className="legal-only-label">{label}</p>
       {children}
-    </Tag>
+    </div>
   )
 }

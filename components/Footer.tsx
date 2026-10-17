@@ -6,6 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
 import { localeHref } from '@/lib/i18n'
+import { LEGAL_COPY, LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -108,9 +109,8 @@ export default function Footer() {
     {
       heading: language === 'ar' ? 'السياسات' : 'Policies',
       links: [
-        { label: t.footer.terms, href: '/terms' },
-        { label: t.footer.privacy, href: '/privacy' },
-        { label: language === 'ar' ? 'الاسترداد والإلغاء' : 'Refund & Cancellation', href: '/refund-policy' },
+        ...LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: legalHref(d.key) })),
+        { label: LEGAL_COPY[language].allDocuments, href: '/legal' },
       ],
     },
   ]

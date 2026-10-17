@@ -6,7 +6,7 @@ import LegalLayout, {
   LegalTable,
   Only,
 } from '@/components/LegalLayout'
-import { PRIVACY_AUDIENCE } from '@/components/legal/audience'
+import { PRIVACY_SECTIONS } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
@@ -18,7 +18,8 @@ export default function PrivacyContentAr() {
       subtitle="كيف تجمع شركة كلاود فالي البيانات الشخصية في منصة أكسيز وسوق الخدمات وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي."
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
-      audienceMap={PRIVACY_AUDIENCE}
+      doc="privacy"
+      sections={PRIVACY_SECTIONS}
     >
       <LegalCallout title="الخلاصة">
         <p>
@@ -30,7 +31,7 @@ export default function PrivacyContentAr() {
       </LegalCallout>
 
 
-      <S id="scope" title="١. من نحن وما الذي تغطيه هذه السياسة">
+      <S id="scope" title="من نحن وما الذي تغطيه هذه السياسة">
         <p>
           تُشغّل منصة أكسيز شركة <strong>كلاود فالي</strong>، سجل تجاري رقم{' '}
           <strong>١٠١٠٦٣٧٨٤٥</strong>، الرياض، المملكة العربية السعودية.
@@ -47,7 +48,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="what-we-collect" title="٢. البيانات التي نجمعها">
+      <S id="what-we-collect" title="البيانات التي نجمعها">
         <h3>بيانات الحساب والهوية</h3>
         <p>
           الاسم والبريد الإلكتروني ورقم الجوال وكلمة المرور (تُخزَّن مشفَّرة باتجاه واحد فقط) والصورة
@@ -130,7 +131,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="sources" title="٣. مصادر البيانات">
+      <S id="sources" title="مصادر البيانات">
         <ul>
           <li><strong>منك مباشرة</strong> — عند التسجيل أو استكمال ملفك أو إجراء حجز أو قبوله أو رفع محتوى أو مراسلتنا.</li>
           <Only for="pm" as="li">
@@ -156,7 +157,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="why" title="٤. أغراض المعالجة والأساس النظامي">
+      <S id="why" title="أغراض المعالجة والأساس النظامي">
         <Only for="pm">
           <LegalTable
             head={['الغرض', 'الأساس النظامي']}
@@ -201,7 +202,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="mandatory" title="٥. البيانات الإلزامية والاختيارية">
+      <S id="mandatory" title="البيانات الإلزامية والاختيارية">
         <p>
           بعض البيانات <strong>إلزامية</strong>، ولا يمكننا تقديم الخدمة بدونها، ومنها اسمك وبريدك
           الإلكتروني، وبالنسبة للحسابات التي تستقبل أموالًا، بيانات الهوية والحساب البنكي التي تطلبها
@@ -218,7 +219,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="sharing" title="٦. مع من نشارك البيانات">
+      <S id="sharing" title="مع من نشارك البيانات">
         <p>لا نبيع البيانات الشخصية. ولا نشاركها إلا وفق ما هو موضح أدناه.</p>
 
         <Only for="pm">
@@ -287,7 +288,7 @@ export default function PrivacyContentAr() {
 
       </S>
 
-      <S id="transfers" title="٧. النقل خارج المملكة">
+      <S id="transfers" title="النقل خارج المملكة">
         <p>
           بعض الخدمات التي نعتمد عليها تعمل خارج المملكة، وقد تُنقل البيانات الشخصية أو تُخزَّن أو
           تُعالَج خارجها.
@@ -305,7 +306,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="storage" title="٨. مكان التخزين ومدة الاحتفاظ">
+      <S id="storage" title="مكان التخزين ومدة الاحتفاظ">
         <p>
           تُحفظ بيانات المنصة على خوادم تُشغَّل لصالحنا، وتُحفظ الملفات المرفوعة لدى مزود تخزين
           وسائط. ونؤكد مواقع الاستضافة الحالية عند الطلب، ونحدّث هذا البند كلما تغيرت.
@@ -333,7 +334,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="security" title="٩. كيف نحمي البيانات">
+      <S id="security" title="كيف نحمي البيانات">
         <p>نطبّق تدابير تنظيمية وتقنية تتناسب مع مستوى المخاطر، ومنها:</p>
         <ul>
           <li>تشفير البيانات أثناء النقل؛</li>
@@ -348,7 +349,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="rights" title="١٠. حقوقك وكيفية ممارستها">
+      <S id="rights" title="حقوقك وكيفية ممارستها">
         <p>يمنحك نظام حماية البيانات الشخصية الحقوق الآتية:</p>
         <ul>
           <li><strong>حق العلم</strong> — بمعرفة الأساس النظامي والغرض من جمع بياناتك؛</li>
@@ -374,7 +375,7 @@ export default function PrivacyContentAr() {
         </LegalCallout>
       </S>
 
-      <S id="consent" title="١١. سحب الموافقة">
+      <S id="consent" title="سحب الموافقة">
         <p>
           حيثما استندنا إلى موافقتك، يمكنك سحبها في أي وقت، وإجراء السحب لا يقل سهولة عن إجراء
           المنح. ولا يؤثر السحب على المعالجة التي تمت قبله، ولا على المعالجة القائمة على أساس آخر؛
@@ -382,7 +383,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="cookies" title="١٢. ملفات الارتباط والتقنيات المشابهة">
+      <S id="cookies" title="ملفات الارتباط والتقنيات المشابهة">
         <p>نستخدم عددًا محدودًا من تقنيات المتصفح:</p>
         <ul>
           <li>
@@ -400,7 +401,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="breach" title="١٣. في حال وقوع حادثة تسريب">
+      <S id="breach" title="في حال وقوع حادثة تسريب">
         <p>
           عند وقوع حادثة تسريب للبيانات الشخصية قد تُلحق ضررًا بالبيانات أو بحقوق صاحبها أو مصالحه،
           نُبلغ <strong>الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) خلال ٧٢ ساعة</strong> من
@@ -417,7 +418,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="capacity" title="١٤. القاصرون وفاقدو الأهلية">
+      <S id="capacity" title="القاصرون وفاقدو الأهلية">
         <p>
           أكسيز منصة أعمال وليست موجهة إلى الأطفال، ولا ننشئ عن علم حسابات لأشخاص لا يتمتعون بالأهلية
           الكاملة للموافقة.
@@ -435,7 +436,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="automated" title="١٥. مساعد الدردشة للدعم">
+      <S id="automated" title="مساعد الدردشة للدعم">
         <p>
           يوجد في زاوية صفحات موقعنا <strong>مساعد دردشة للدعم</strong>. وهو مساعد آلي لا شخص، ولا
           نقدّمه على أنه كذلك.
@@ -457,7 +458,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="customers" title="١٦. إذا كانت بياناتك مرفوعة من منشأة">
+      <S id="customers" title="إذا كانت بياناتك مرفوعة من منشأة">
         <p>
           إن أدخلت منشأةٌ تستخدم أكسيز بياناتك في المنصة، فإن المنشأة التي
           تتعامل معها هي من قرر جمع بياناتك وحدد الغرض من ذلك؛ وهي بحكم النظام المتحكم، ونحن المعالج
@@ -470,7 +471,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="complaints" title="١٧. الشكاوى">
+      <S id="complaints" title="الشكاوى">
         <p>
           إذا لم تكن راضيًا عن طريقة تعاملنا مع بياناتك الشخصية، فأبلغنا أولًا عبر{' '}
           <a href="/ar/support/">نموذج الدعم</a>. وسنُشعرك باستلام الشكوى، ونحقق فيها، ونوافيك
@@ -484,7 +485,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="changes" title="١٨. التعديلات على هذه السياسة">
+      <S id="changes" title="التعديلات على هذه السياسة">
         <p>
           نحدّث هذه السياسة عند تغيّر ممارساتنا أو تغيّر الأنظمة. ويوضح التاريخ في أعلى الصفحة النسخة
           السارية دائمًا. وفي التعديلات الجوهرية نُشعرك قبل سريانها بمدة معقولة، ومتى اشترط النظام
@@ -492,7 +493,7 @@ export default function PrivacyContentAr() {
         </p>
       </S>
 
-      <S id="contact" title="١٩. التواصل معنا">
+      <S id="contact" title="التواصل معنا">
         <p>
           <strong>شركة كلاود فالي</strong>
           <br />

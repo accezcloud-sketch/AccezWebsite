@@ -99,6 +99,7 @@ const AR_ROUTES = new Set([
   'terms',
   'privacy',
   'refund-policy',
+  'legal',
   'pricing',
   'faq',
   'thankyou',
