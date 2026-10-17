@@ -7,16 +7,14 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import BlogStrip from '@/components/blog/BlogStrip'
 import PricingOverview from '@/components/pricing/PricingOverview'
-import SolutionChapter from '@/components/home/SolutionChapter'
-import { SOLUTION_SHOWCASE } from '@/components/home/solutionShowcase'
+import SolutionsShowcase from '@/components/home/SolutionsShowcase'
 import type { Locale } from '@/lib/i18n'
-import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 
 /**
  * The homepage, shared by / and /ar/.
  *
- * Platform first, then one chapter per solution, then what is common to all
- * of them. The order of the chapters is the order of PLATFORM_SOLUTIONS.
+ * The platform first, then a short tour of each solution that leads to its own
+ * page, then what all solutions share: integrations, pricing, questions.
  */
 export default function HomePage({ locale }: { locale: Locale }) {
   return (
@@ -24,14 +22,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       <Header />
       <Hero />
       <Ecosystem />
-      {PLATFORM_SOLUTIONS.map((solution, i) => {
-        const Showcase = SOLUTION_SHOWCASE[solution.key]
-        return (
-          <SolutionChapter key={solution.key} solution={solution} index={i} locale={locale}>
-            <Showcase />
-          </SolutionChapter>
-        )
-      })}
+      <SolutionsShowcase locale={locale} />
       <Trust />
       <PricingOverview locale={locale} />
       <FAQ />
