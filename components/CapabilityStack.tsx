@@ -76,7 +76,7 @@ export default function CapabilityStack({
         return (
           <div
             key={item.id}
-            className="absolute start-1/2 rounded-2xl overflow-hidden"
+            className="absolute left-1/2 rounded-2xl overflow-hidden"
             style={{
               transform: 'translateX(-50%)',
               top,
