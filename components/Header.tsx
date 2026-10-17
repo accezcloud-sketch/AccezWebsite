@@ -37,12 +37,10 @@ export default function Header() {
   const ar = language === 'ar'
   const href = (route: string) => localeHref(route, language)
 
-  // Solutions: each solution links to its main page, with its other pages under it.
-  const productSections: NavSection[] = PLATFORM_SOLUTIONS.map((s) => ({
-    heading: s.name[language],
-    headingHref: href(s.href),
-    links: s.pages.map((p) => ({ label: p.label[language], href: href(p.href) })),
-  }))
+  // Solutions: one entry per solution, each opening that solution's page.
+  const productSections: NavSection[] = [
+    { links: PLATFORM_SOLUTIONS.map((s) => ({ label: s.name[language], description: s.audience[language], href: href(s.href) })) },
+  ]
 
   // Pricing: one entry per audience, straight to that solution's plans.
   const pricingSections: NavSection[] = [

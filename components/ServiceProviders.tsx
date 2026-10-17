@@ -34,7 +34,7 @@ const SLIDES: CarouselSlide[] = [
 
 const CONTENT = {
   en: {
-    eyebrow: 'Service provider marketplace',
+    eyebrow: 'Service provider solution',
     titleLead: 'Grow your business on',
     titleAccent: 'the Accez marketplace',
     subtitle:
@@ -103,7 +103,7 @@ const CONTENT = {
   },
 
   ar: {
-    eyebrow: 'سوق مقدمي الخدمات',
+    eyebrow: 'حل مقدمي الخدمات',
     titleLead: 'نمِّ نشاطك التجاري عبر',
     titleAccent: 'سوق أكسيز',
     subtitle:

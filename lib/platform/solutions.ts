@@ -25,7 +25,7 @@ export interface SolutionLink {
 export interface PlatformSolution {
   /** URL-safe id, also used in pricing and legal routes. */
   key: string
-  /** The solution's name, e.g. "Property management". */
+  /** The solution's name, e.g. "Property management solution". */
   name: Bilingual
   /** Who it is for, used as the menu label, e.g. "For property managers". */
   audience: Bilingual
@@ -45,14 +45,14 @@ export interface PlatformSolution {
   loginUrl: string
   /** Which version of the legal documents applies (see lib/legal/audience.ts). */
   legalAudience: AudienceView
-  /** Pages within the solution, besides its main page (href), for menus. */
+  /** Pages within the solution, besides its main page (href), for the footer. */
   pages: SolutionLink[]
 }
 
 export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
   {
     key: 'property-managers',
-    name: { en: 'Property management', ar: 'إدارة العقارات' },
+    name: { en: 'Property management solution', ar: 'حل إدارة العقارات' },
     audience: { en: 'For property managers', ar: 'لمديري العقارات' },
     role: { en: 'Property manager', ar: 'مدير العقارات' },
     roleSummary: { en: 'Manage properties, bookings and owners', ar: 'إدارة العقارات والحجوزات والملاك' },
@@ -86,7 +86,7 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
   },
   {
     key: 'service-providers',
-    name: { en: 'Service provider marketplace', ar: 'سوق مقدمي الخدمات' },
+    name: { en: 'Service provider solution', ar: 'حل مقدمي الخدمات' },
     audience: { en: 'For service providers', ar: 'لمقدمي الخدمات' },
     role: { en: 'Service provider', ar: 'مقدم الخدمة' },
     roleSummary: { en: 'Manage your listing and bookings', ar: 'إدارة صفحتك وحجوزاتك' },

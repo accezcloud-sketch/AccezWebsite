@@ -36,32 +36,22 @@ export default function MobileNavGroup({ label, sections, onNavigate }: { label:
           >
             {sections.map((section, i) => (
               <div key={section.heading ?? i} className="pb-2">
-                {section.heading && section.headingHref && (
-                  <a href={section.headingHref} onClick={onNavigate} className="flex items-center gap-2 text-strong font-semibold text-sm py-2">
-                    {section.heading}
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" className="rtl:-scale-x-100" style={{ color: 'var(--accent-hi)' }} aria-hidden="true">
-                      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </a>
-                )}
-                {section.heading && !section.headingHref && (
+                {section.heading && (
                   <p className="pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: 'var(--accent-hi)' }}>
                     {section.heading}
                   </p>
                 )}
-                <div className={section.headingHref && section.links.length ? 'ps-3 border-s' : ''} style={section.headingHref ? { borderColor: 'var(--border)' } : undefined}>
-                  {section.links.map((link) => (
-                    <a
-                      key={link.href + link.label}
-                      href={link.href}
-                      {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                      onClick={onNavigate}
-                      className="block text-muted hover:text-strong text-sm py-2 transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
+                {section.links.map((link) => (
+                  <a
+                    key={link.href + link.label}
+                    href={link.href}
+                    {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    onClick={onNavigate}
+                    className="block text-muted hover:text-strong text-sm py-2 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ))}
               </div>
             ))}
           </motion.div>

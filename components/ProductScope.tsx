@@ -71,7 +71,7 @@ export const PILLARS: Pillar[] = [
 
 const CONTENT = {
   en: {
-    eyebrow: 'Property management',
+    eyebrow: 'Property management solution',
     titleLead: 'Run the entire',
     titleAccent: 'property operation',
     subtitle:
@@ -79,7 +79,7 @@ const CONTENT = {
     footNote: 'Every module is part of one Accez account. Turn on what you need.',
   },
   ar: {
-    eyebrow: 'إدارة العقارات',
+    eyebrow: 'حل إدارة العقارات',
     titleLead: 'أدر عملية العقار',
     titleAccent: 'بالكامل',
     subtitle:
