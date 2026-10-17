@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { localeHref, type Locale } from '@/lib/i18n'
-import { LEGAL_COPY, LEGAL_DOCUMENTS, legalDocument, legalHref, type LegalDocKey } from '@/lib/legal/documents'
+import { LEGAL_COPY, legalDocument, legalHref, type LegalDocKey } from '@/lib/legal/documents'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 
 const Arrow = ({ locale }: { locale: Locale }) => (
@@ -56,48 +56,6 @@ export function LegalChooser({ doc: key, locale }: { doc: LegalDocKey; locale: L
           </li>
         ))}
       </ul>
-      <p className="text-center mt-10 text-sm">
-        <Link href={localeHref('/legal', locale)} prefetch={false} className="underline underline-offset-2 text-muted hover:text-strong">{c.allDocuments}</Link>
-      </p>
-    </Shell>
-  )
-}
-
-/** /legal/: every document, grouped by who it is for. */
-export function LegalHub({ locale }: { locale: Locale }) {
-  const c = LEGAL_COPY[locale]
-  const shared = LEGAL_DOCUMENTS.filter((d) => !d.perSolution)
-  const perSolution = LEGAL_DOCUMENTS.filter((d) => d.perSolution)
-
-  const group = (heading: string, sub: string | null, items: { key: string; title: string; summary: string; href: string }[]) => (
-    <section className="rounded-[var(--radius-lg)] p-7 flex flex-col h-full" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
-      <h2 className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: 'var(--accent-hi)' }}>{heading}</h2>
-      {sub && <p className="text-strong font-bold mb-4" style={{ fontSize: 19, fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>{sub}</p>}
-      <ul className="flex flex-col gap-1 -mx-3 mt-2">
-        {items.map((i) => (
-          <li key={i.key}>
-            <Link href={localeHref(i.href, locale)} prefetch={false} className="nav-item block rounded-[var(--radius-sm)] px-3 py-2.5">
-              <span className="flex items-center justify-between gap-3 font-semibold text-strong">{i.title} <Arrow locale={locale} /></span>
-              <span className="block text-sm text-muted mt-0.5">{i.summary}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )
-
-  return (
-    <Shell title={c.hubTitle} subtitle={c.hubSubtitle}>
-      <div className="grid gap-6 max-w-5xl mx-auto md:grid-cols-2">
-        {PLATFORM_SOLUTIONS.map((s) => (
-          <div key={s.key}>
-            {group(s.audience[locale], s.name[locale], perSolution.map((d) => ({ key: d.key, title: d.title[locale], summary: d.summary[locale], href: legalHref(d.key, s) })))}
-          </div>
-        ))}
-        <div className="md:col-span-2">
-          {group(c.forEveryone, null, shared.map((d) => ({ key: d.key, title: d.title[locale], summary: d.summary[locale], href: legalHref(d.key) })))}
-        </div>
-      </div>
     </Shell>
   )
 }

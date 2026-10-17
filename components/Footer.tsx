@@ -6,7 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import FadeUp from '@/components/animations/FadeUp'
 import { localeHref } from '@/lib/i18n'
-import { LEGAL_COPY, LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
+import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -72,11 +72,12 @@ export default function Footer() {
   type FooterLink = { label: string; href: string; external?: boolean }
 
   const columns: Array<{ heading: string; links: FooterLink[] }> = [
-    // One column per solution (lib/platform/solutions.ts): its pages, its
-    // pricing and its sign-up.
+    // One column per solution (lib/platform/solutions.ts): its main page, its
+    // other pages, its pricing and its sign-up.
     ...PLATFORM_SOLUTIONS.map((s) => ({
       heading: s.name[language],
       links: [
+        { label: language === 'ar' ? 'نظرة عامة' : 'Overview', href: s.href },
         ...s.pages.map((p) => ({ label: p.label[language], href: p.href })),
         { label: language === 'ar' ? 'الأسعار' : 'Pricing', href: s.pricingHref },
         { label: language === 'ar' ? 'أنشئ حسابًا' : 'Create an account', href: s.signUpUrl, external: true },
@@ -85,7 +86,6 @@ export default function Footer() {
     {
       heading: language === 'ar' ? 'الشركة' : 'Company',
       links: [
-        { label: language === 'ar' ? 'كل الخطط والأسعار' : 'All plans and pricing', href: '/pricing' },
         { label: t.footer.integrations, href: '/#trust' },
         { label: t.footer.about, href: '/about' },
         { label: t.footer.blog, href: '/blog' },
@@ -103,7 +103,6 @@ export default function Footer() {
       heading: language === 'ar' ? 'السياسات' : 'Policies',
       links: [
         ...LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: legalHref(d.key) })),
-        { label: LEGAL_COPY[language].allDocuments, href: '/legal' },
       ],
     },
   ]

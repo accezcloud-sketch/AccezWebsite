@@ -38,7 +38,7 @@ const CONTENT = {
     titleLead: 'Grow your business on',
     titleAccent: 'the Accez marketplace',
     subtitle:
-      'Salons and barbers, spas and wellness studios, fitness coaches, photographers, home services and more. List your business, publish your services and prices, and take bookings from residents, guests and property managers. It is its own account type, with its own listing on the Accez marketplace.',
+      'Barbers and salons, spas and wellness studios, fitness coaches, photographers, home services and more. List your business, publish your services and prices, and take bookings from your own clients and from new customers who find you on the marketplace. It is its own account type, separate from property management.',
 
     stepsTitle: 'How it works',
     steps: [
@@ -107,7 +107,7 @@ const CONTENT = {
     titleLead: 'نمِّ نشاطك التجاري عبر',
     titleAccent: 'سوق أكسيز',
     subtitle:
-      'صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون، الخدمات المنزلية وغيرها. أدرج نشاطك، وانشر خدماتك وأسعارك، واستقبل الحجوزات من السكان والنزلاء ومديري العقارات. إنه نوع حساب مستقل بذاته، وله صفحته الخاصة في سوق أكسيز.',
+      'صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون، الخدمات المنزلية وغيرها. أدرج نشاطك، وانشر خدماتك وأسعارك، واستقبل الحجوزات من عملائك ومن عملاء جدد يجدونك في السوق. إنه نوع حساب مستقل بذاته، منفصل عن إدارة العقارات.',
 
     stepsTitle: 'كيف تعمل',
     steps: [

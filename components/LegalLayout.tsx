@@ -183,9 +183,6 @@ export default function LegalLayout({
                   {d.title[language]}
                 </Link>
               ))}
-              <Link href={localeHref('/legal', language)} prefetch={false} className="hover:text-strong transition-colors" style={{ color: 'var(--text-muted)' }}>
-                {c.allDocuments}
-              </Link>
             </nav>
           </div>
         </div>

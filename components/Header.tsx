@@ -8,21 +8,10 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import ThemeToggle from '@/components/ThemeToggle'
 import { localeHref } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
-import { LEGAL_COPY, LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
+import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 import NavDropdown from '@/components/nav/NavDropdown'
 import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
-
-interface MenuItem { name: string; nameAr: string; href: string; desc: string; descAr: string }
-
-// Reading and help. The legal documents sit in their own column (built from
-// lib/legal/documents.ts): a marketplace that holds other people's money
-// should keep its policies one click away.
-const RESOURCES_MENU: MenuItem[] = [
-  { name: 'Blog', nameAr: 'المدونة', href: '/blog', desc: 'Guides and insights for Saudi operators', descAr: 'أدلة ورؤى لمشغّلي العقارات في السعودية' },
-  { name: 'FAQ', nameAr: 'الأسئلة الشائعة', href: '/faq', desc: 'Answers to common questions', descAr: 'إجابات عن الأسئلة الشائعة' },
-  { name: 'Support', nameAr: 'الدعم', href: '/support', desc: 'Get help from our team', descAr: 'احصل على مساعدة من فريقنا' },
-]
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -48,33 +37,25 @@ export default function Header() {
   const ar = language === 'ar'
   const href = (route: string) => localeHref(route, language)
 
-  // Product: one column per solution, each listing its pages.
+  // Solutions: each solution links to its main page, with its other pages under it.
   const productSections: NavSection[] = PLATFORM_SOLUTIONS.map((s) => ({
     heading: s.name[language],
-    links: s.pages.map((p) => ({ label: p.label[language], description: p.description[language], href: href(p.href) })),
+    headingHref: href(s.href),
+    links: s.pages.map((p) => ({ label: p.label[language], href: href(p.href) })),
   }))
 
   // Pricing: one entry per audience, straight to that solution's plans.
   const pricingSections: NavSection[] = [
     {
-      links: [
-        ...PLATFORM_SOLUTIONS.map((s) => ({ label: s.audience[language], description: s.pricingNote[language], href: href(s.pricingHref) })),
-        { label: ar ? 'قارن كل الخطط' : 'Compare all plans', href: href('/pricing') },
-      ],
+      links: PLATFORM_SOLUTIONS.map((s) => ({ label: s.audience[language], description: s.pricingNote[language], href: href(s.pricingHref) })),
     },
   ]
 
-  // Resources: reading and help, then the legal documents. A per-solution
-  // document links to its "which applies to you?" page.
+  // Resources: the FAQ, then the legal documents (lib/legal/documents.ts). A
+  // per-solution document links to its "which applies to you?" page.
   const resourcesSections: NavSection[] = [
-    { heading: ar ? 'تعلّم واحصل على المساعدة' : 'Learn and get help', links: RESOURCES_MENU.map((m) => ({ label: ar ? m.nameAr : m.name, description: ar ? m.descAr : m.desc, href: href(m.href) })) },
-    {
-      heading: ar ? 'قانوني' : 'Legal',
-      links: [
-        ...LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: href(legalHref(d.key)) })),
-        { label: LEGAL_COPY[language].allDocuments, href: href('/legal') },
-      ],
-    },
+    { links: [{ label: t.header.faq, href: href('/faq') }] },
+    { heading: ar ? 'قانوني' : 'Legal', links: LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: href(legalHref(d.key)) })) },
   ]
 
   // Sign in: each solution has its own portal, so the menu names the role.
@@ -114,6 +95,8 @@ export default function Header() {
           <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="hidden lg:flex items-center gap-6 xl:gap-8">
             <NavDropdown label={t.header.product} sections={productSections} triggerClassName={linkClass} />
             <NavDropdown label={t.header.pricing} sections={pricingSections} triggerClassName={linkClass} />
+            <a href={href('/blog')} className={linkClass}>{t.header.blog}</a>
+            <a href={href('/support')} className={linkClass}>{t.header.support}</a>
             <a href={href('/about')} className={linkClass}>{t.header.about}</a>
             <NavDropdown label={ar ? 'الموارد' : 'Resources'} sections={resourcesSections} align="end" triggerClassName={linkClass} />
           </nav>
@@ -171,9 +154,15 @@ export default function Header() {
               <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="flex flex-col gap-1 py-4 px-2">
                 <MobileNavGroup label={t.header.product} sections={productSections} onNavigate={closeMobile} />
                 <MobileNavGroup label={t.header.pricing} sections={pricingSections} onNavigate={closeMobile} />
-                <a href={href('/about')} onClick={closeMobile} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2.5">
-                  {t.header.about}
-                </a>
+                {[
+                  { label: t.header.blog, to: '/blog' },
+                  { label: t.header.support, to: '/support' },
+                  { label: t.header.about, to: '/about' },
+                ].map((item) => (
+                  <a key={item.to} href={href(item.to)} onClick={closeMobile} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2.5">
+                    {item.label}
+                  </a>
+                ))}
                 <MobileNavGroup label={ar ? 'الموارد' : 'Resources'} sections={resourcesSections} onNavigate={closeMobile} />
 
                 {/* Sign in: flat, since a nested dropdown in a drawer is an extra tap. */}

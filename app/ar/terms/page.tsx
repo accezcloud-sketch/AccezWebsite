@@ -1,4 +1,4 @@
-import { LegalChooser } from '@/components/legal/LegalIndex'
+import { LegalChooser } from '@/components/legal/LegalChooser'
 import { legalChooserMetadata } from '@/lib/legal/documents'
 
 // The bare address asks which version applies; links published before the

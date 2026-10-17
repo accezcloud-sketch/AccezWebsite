@@ -22,8 +22,17 @@ interface NavDropdownProps {
  * pointer leaves, so passing over it or moving diagonally into the panel
  * doesn't make it flicker (NN/g, Baymard: 300-500ms). Escape closes it and
  * returns focus to the trigger; clicking outside closes it.
- * Several sections render side by side, one column per section.
+ * Sections stack in one column, and the panel is as wide as its text.
  */
+/** Points into a solution; mirrored in right-to-left pages. */
+function NavArrow() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" className="shrink-0 rtl:-scale-x-100 transition-transform duration-200 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" style={{ color: 'var(--accent-hi)' }} aria-hidden="true">
+      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 export default function NavDropdown({ label, sections, align = 'start', triggerClassName }: NavDropdownProps) {
   const [open, setOpen] = useState(false)
   const panelId = useId()
@@ -64,8 +73,6 @@ export default function NavDropdown({ label, sections, align = 'start', triggerC
 
   useEffect(() => clearTimer, [])
 
-  const columns = sections.length
-
   return (
     <div
       ref={rootRef}
@@ -105,29 +112,34 @@ export default function NavDropdown({ label, sections, align = 'start', triggerC
             className={`absolute top-full ${align === 'end' ? 'end-0' : 'start-0'}`}
             style={{ paddingTop: 12 }}
           >
-            <div
-              className="nav-panel rounded-2xl p-2 grid gap-1"
-              style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`, width: columns > 1 ? `${columns * 300}px` : '320px' }}
-            >
+            <div className="nav-panel rounded-2xl p-2 w-max flex flex-col" style={{ minWidth: 220, maxWidth: 340 }}>
               {sections.map((section, i) => (
-                <div key={section.heading ?? i} className="flex flex-col" style={i > 0 ? { borderInlineStart: '1px solid var(--border)', paddingInlineStart: 4 } : undefined}>
-                  {section.heading && (
+                <div key={section.heading ?? i} className="flex flex-col" style={i > 0 ? { borderTop: '1px solid var(--border)', marginTop: 4, paddingTop: 4 } : undefined}>
+                  {section.heading && section.headingHref && (
+                    <a href={section.headingHref} onClick={() => setOpen(false)} className="nav-item group flex items-center justify-between gap-6 rounded-xl px-3 py-2.5">
+                      <span className="text-sm font-semibold text-strong">{section.heading}</span>
+                      <NavArrow />
+                    </a>
+                  )}
+                  {section.heading && !section.headingHref && (
                     <p className="px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: 'var(--accent-hi)' }}>
                       {section.heading}
                     </p>
                   )}
-                  {section.links.map((link) => (
-                    <a
-                      key={link.href + link.label}
-                      href={link.href}
-                      {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                      onClick={() => setOpen(false)}
-                      className="nav-item block rounded-xl px-3 py-2.5"
-                    >
-                      <span className="block text-sm font-semibold text-strong">{link.label}</span>
-                      {link.description && <span className="block text-xs mt-0.5 text-faint">{link.description}</span>}
-                    </a>
-                  ))}
+                  <div className={section.headingHref && section.links.length ? 'ms-3 ps-1 mb-1 border-s' : ''} style={section.headingHref ? { borderColor: 'var(--border)' } : undefined}>
+                    {section.links.map((link) => (
+                      <a
+                        key={link.href + link.label}
+                        href={link.href}
+                        {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                        onClick={() => setOpen(false)}
+                        className={`nav-item block rounded-xl px-3 ${section.headingHref ? 'py-1.5' : 'py-2.5'}`}
+                      >
+                        <span className={`block text-sm ${section.headingHref ? 'text-soft' : 'font-semibold text-strong'}`}>{link.label}</span>
+                        {link.description && <span className="block text-xs mt-0.5 text-faint">{link.description}</span>}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>

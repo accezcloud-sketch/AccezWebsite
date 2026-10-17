@@ -7,8 +7,12 @@ export interface NavLink {
   external?: boolean
 }
 
-/** A group of links; menus with several groups show one column per group. */
+/**
+ * A group of links. Groups stack in one column. With `headingHref` the heading
+ * is itself a link (a solution's main page) and the links sit under it.
+ */
 export interface NavSection {
   heading?: string
+  headingHref?: string
   links: NavLink[]
 }

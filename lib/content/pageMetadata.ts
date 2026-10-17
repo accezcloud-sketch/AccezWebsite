@@ -34,16 +34,6 @@ export function staticPageMetadata({
   }
 }
 
-/** /pricing: wording from the pricing section's own copy. */
-export function pricingPageMetadata(locale: Locale): Metadata {
-  const { header, pricing } = translations[locale]
-  return staticPageMetadata({
-    route: 'pricing',
-    locale,
-    title: header.pricing,
-    description: `${pricing.titleLead} ${pricing.titleAccent}. ${pricing.newSubtitle}`,
-  })
-}
 
 /** /faq: wording from the FAQ section's own copy. */
 export function faqPageMetadata(locale: Locale): Metadata {

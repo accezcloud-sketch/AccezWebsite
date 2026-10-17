@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import BlogStrip from '@/components/blog/BlogStrip'
-import PricingHub from '@/components/pricing/PricingHub'
+import PricingOverview from '@/components/pricing/PricingOverview'
 import SolutionChapter from '@/components/home/SolutionChapter'
 import { SOLUTION_SHOWCASE } from '@/components/home/solutionShowcase'
 import type { Locale } from '@/lib/i18n'
@@ -33,7 +33,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
         )
       })}
       <Trust />
-      <PricingHub locale={locale} headingLevel="h2" />
+      <PricingOverview locale={locale} />
       <FAQ />
       <BlogStrip locale={locale} />
       <Contact />

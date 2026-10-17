@@ -96,7 +96,7 @@ const CONTENT = {
     headlineLead: 'One platform for',
     typewriter: ['property managers and service providers', 'vacation rentals', 'hotels & serviced apartments', 'residential communities', 'salons & spas', 'fitness coaches', 'home services'],
     subtitle:
-      'Two solutions on one platform: property management that runs the whole operation, and a marketplace where service providers get booked by residents, guests and property managers. In Arabic and English, built for Saudi Arabia.',
+      'Two solutions on one platform. Property management for property managers, landlords and hotels. And a marketplace where independent businesses, from barbers to fitness coaches, take bookings from their own clients and new customers. In Arabic and English, built for Saudi Arabia.',
     doorsLabel: 'Choose your solution',
     partnersIntro: 'Syncs with 400+ booking channels including',
     mock: {
@@ -128,7 +128,7 @@ const CONTENT = {
     headlineLead: 'منصة واحدة تخدم',
     typewriter: ['مديري العقارات ومقدمي الخدمات', 'الإيجارات السياحية', 'الفنادق والشقق المخدومة', 'المجمعات السكنية', 'الصالونات والسبا', 'مدربي اللياقة', 'الخدمات المنزلية'],
     subtitle:
-      'حلّان على منصة واحدة: إدارة عقارات تدير العملية بالكامل، وسوق خدمات يحصل فيه مقدمو الخدمات على حجوزات من السكان والنزلاء ومديري العقارات. بالعربية والإنجليزية، ومبنية للسعودية.',
+      'حلّان على منصة واحدة. إدارة العقارات لمديري العقارات والملاك والفنادق. وسوق خدمات تستقبل فيه الأنشطة المستقلة، من الحلاقين إلى مدربي اللياقة، الحجوزات من عملائها ومن عملاء جدد. بالعربية والإنجليزية، ومبنية للسعودية.',
     doorsLabel: 'اختر الحل المناسب لك',
     partnersIntro: 'متكاملة مع أكثر من 400 قناة حجز بما في ذلك',
     mock: {

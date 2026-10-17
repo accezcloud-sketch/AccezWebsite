@@ -9,7 +9,7 @@ import { metadata as owners } from '../owners/page'
 import { metadata as hotels } from '../hotels/page'
 import { metadata as sales } from '../sales/page'
 import { metadata as providers } from '../service-providers/page'
-import { solutionPricingMetadata, pricingHubMetadata } from '@/lib/platform/pricingPages'
+import { solutionPricingMetadata } from '@/lib/platform/pricingPages'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
@@ -45,10 +45,7 @@ export function GET() {
       { heading: 'Service provider marketplace', links: [page('service-providers', providers)] },
       {
         heading: 'Pricing',
-        links: [
-          page('pricing', pricingHubMetadata('en')),
-          ...PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),
-        ],
+        links: PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),
       },
       { heading: 'Company and help', links: [page('faq', faq), page('about', about), page('support', support)] },
       {

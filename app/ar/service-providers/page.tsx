@@ -10,7 +10,7 @@ import { providerMarketplaceSchema } from '@/lib/content/siteSchema'
 // it can finally be indexed. Metadata below reuses wording already present on
 // the site — no new marketing copy is introduced.
 const DESCRIPTION =
-  'أدرج نشاطك في سوق أكسيز وتواصل مع السكان والنزلاء ومديري العقارات. صالونات وسبا ولياقة وتصوير وخدمات منزلية.'
+  'أدرج نشاطك في سوق أكسيز، واستقبل الحجوزات من عملائك، وليجدك عملاء جدد. حلاقة وصالونات وسبا ولياقة وتصوير وخدمات منزلية.'
 
 export const metadata: Metadata = {
   title: 'مقدمو الخدمات، أدرج نشاطك في سوق أكسيز',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'مقدمو الخدمات، أدرج نشاطك في سوق أكسيز',
     description:
-      'أدرج نشاطك في سوق أكسيز وتواصل مع السكان والنزلاء ومديري العقارات. صالونات وسبا ولياقة وتصوير وخدمات منزلية.',
+      'أدرج نشاطك في سوق أكسيز، واستقبل الحجوزات من عملائك، وليجدك عملاء جدد. حلاقة وصالونات وسبا ولياقة وتصوير وخدمات منزلية.',
     url: localeUrl('service-providers', 'ar'),
     type: 'website',
     locale: 'ar_SA',

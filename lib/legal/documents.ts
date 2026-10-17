@@ -5,7 +5,6 @@
  * /terms/property-managers/, /terms/service-providers/. Its bare URL (/terms/)
  * is a short "which applies to you?" page, so every link published before the
  * split still lands somewhere sensible. A shared document (Privacy) has one URL.
- * /legal/ lists everything, grouped by who it is for.
  */
 import type { Metadata } from 'next'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
@@ -76,33 +75,20 @@ export function legalVersionRoutes(): string[] {
 
 export const LEGAL_COPY = {
   en: {
-    hubTitle: 'Legal',
-    hubSubtitle: 'Accez is one platform with two solutions. Each has its own Terms and Refund policy; the Privacy Policy covers everyone.',
-    forEveryone: 'For everyone',
     chooserSubtitle: 'Accez is one platform with two solutions, and each has its own version. Choose the one you use.',
     read: 'Read',
-    allDocuments: 'All legal documents',
     versionFor: 'This version is for',
     otherVersion: 'Not you? Read the version',
     alsoApplies: 'Also applies to you',
   },
   ar: {
-    hubTitle: 'المستندات القانونية',
-    hubSubtitle: 'أكسيز منصة واحدة بحلّين. لكل حل شروط خدمة وسياسة استرداد خاصة به، أما سياسة الخصوصية فتشمل الجميع.',
-    forEveryone: 'للجميع',
     chooserSubtitle: 'أكسيز منصة واحدة بحلّين، ولكل منهما نسخته الخاصة. اختر الحل الذي تستخدمه.',
     read: 'اقرأ',
-    allDocuments: 'كل المستندات القانونية',
     versionFor: 'هذه النسخة',
     otherVersion: 'لست منهم؟ اقرأ النسخة',
     alsoApplies: 'تنطبق عليك أيضًا',
   },
 } as const
-
-export function legalHubMetadata(locale: Locale): Metadata {
-  const c = LEGAL_COPY[locale]
-  return staticPageMetadata({ route: 'legal', locale, title: c.hubTitle, description: c.hubSubtitle })
-}
 
 export function legalChooserMetadata(key: LegalDocKey, locale: Locale): Metadata {
   const doc = legalDocument(key)

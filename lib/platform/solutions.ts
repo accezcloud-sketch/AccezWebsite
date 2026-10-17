@@ -45,7 +45,7 @@ export interface PlatformSolution {
   loginUrl: string
   /** Which version of the legal documents applies (see lib/legal/audience.ts). */
   legalAudience: AudienceView
-  /** Deeper pages within the solution, for menus. */
+  /** Pages within the solution, besides its main page (href), for menus. */
   pages: SolutionLink[]
 }
 
@@ -82,11 +82,6 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
         description: { en: 'Room types and channel manager', ar: 'أنواع الغرف ومدير القنوات' },
         href: '/hotels',
       },
-      {
-        label: { en: 'All modules', ar: 'كل الوحدات' },
-        description: { en: 'Everything the platform runs', ar: 'كل ما تديره المنصة' },
-        href: '/modules',
-      },
     ],
   },
   {
@@ -96,8 +91,8 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     role: { en: 'Service provider', ar: 'مقدم الخدمة' },
     roleSummary: { en: 'Manage your listing and bookings', ar: 'إدارة صفحتك وحجوزاتك' },
     summary: {
-      en: 'List your business on the Accez marketplace and get booked by residents, guests and property managers.',
-      ar: 'أدرج نشاطك في سوق أكسيز واحصل على حجوزات من السكان والنزلاء ومديري العقارات.',
+      en: 'List your business on the Accez marketplace, publish your services and prices, and take bookings from your own clients and new customers.',
+      ar: 'أدرج نشاطك في سوق أكسيز، وانشر خدماتك وأسعارك، واستقبل الحجوزات من عملائك ومن عملاء جدد.',
     },
     href: '/service-providers',
     pricingHref: '/pricing/service-providers',
@@ -105,13 +100,7 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     signUpUrl: PROVIDER_SIGN_UP,
     loginUrl: PROVIDER_LOGIN,
     legalAudience: 'sp',
-    pages: [
-      {
-        label: { en: 'List on the marketplace', ar: 'أدرج نشاطك في السوق' },
-        description: { en: 'How providers get discovered and booked', ar: 'كيف يُكتشف مقدمو الخدمات ويُحجزون' },
-        href: '/service-providers',
-      },
-    ],
+    pages: [],
   },
 ]
 

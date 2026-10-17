@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
-import { PRICING_HUB_COPY } from '@/lib/platform/pricingPages'
+import { PRICING_OVERVIEW_COPY } from '@/lib/platform/pricingPages'
 import { localeHref, type Locale } from '@/lib/i18n'
 
 function Arrow({ locale }: { locale: Locale }) {
@@ -13,7 +13,7 @@ function Arrow({ locale }: { locale: Locale }) {
 
 /** One card per solution, each leading to that solution's plans. */
 export function SolutionPricingCards({ locale }: { locale: Locale }) {
-  const c = PRICING_HUB_COPY[locale]
+  const c = PRICING_OVERVIEW_COPY[locale]
   return (
     <ul className={`grid gap-6 max-w-5xl mx-auto ${PLATFORM_SOLUTIONS.length > 1 ? 'md:grid-cols-2' : ''}`}>
       {PLATFORM_SOLUTIONS.map((s) => (
@@ -37,24 +37,20 @@ export function SolutionPricingCards({ locale }: { locale: Locale }) {
   )
 }
 
-/**
- * The pricing overview: a heading and one card per solution. The /pricing
- * page uses it as its h1; the homepage uses it as a section (h2).
- */
-export default function PricingHub({ locale, headingLevel = 'h1' }: { locale: Locale; headingLevel?: 'h1' | 'h2' }) {
-  const c = PRICING_HUB_COPY[locale]
-  const Heading = headingLevel
+/** The homepage pricing section: one card per solution, each leading to its plans. */
+export default function PricingOverview({ locale }: { locale: Locale }) {
+  const c = PRICING_OVERVIEW_COPY[locale]
   return (
-    <section id="pricing" className={`relative overflow-hidden pb-24 ${headingLevel === 'h1' ? 'page-top' : 'pt-24'}`} style={{ background: 'var(--bg)' }}>
+    <section id="pricing" className="relative overflow-hidden pt-24 pb-24" style={{ background: 'var(--bg)' }}>
       <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
             {c.eyebrow}
           </span>
-          <Heading className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+          <h2 className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
             {c.title}
-          </Heading>
+          </h2>
           <p className="leading-relaxed text-muted" style={{ fontSize: 17 }}>{c.subtitle}</p>
         </div>
         <SolutionPricingCards locale={locale} />

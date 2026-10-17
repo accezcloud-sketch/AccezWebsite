@@ -38,7 +38,7 @@ const CONTENT = {
     heroTitleLead: 'Get discovered.',
     heroTitleAccent: 'Get booked.',
     heroSubtitle:
-      'List your business on the Accez marketplace and reach residents, guests and property managers who are already looking for services like yours. Salons, spas, fitness, photography, home services and more, every provider vetted, every booking instant.',
+      'List your business on the Accez marketplace, take bookings from your own clients, and get found by new customers already looking for services like yours. Salons, spas, fitness, photography, home services and more, every provider vetted, every booking instant.',
     ctaPrimary: 'Create a provider account',
     ctaPricing: 'See plans and pricing',
     heroCaption: 'Your listing, live on the Accez marketplace',
@@ -93,7 +93,7 @@ const CONTENT = {
     heroTitleLead: 'اجعلهم يجدونك.',
     heroTitleAccent: 'واحجز أكثر.',
     heroSubtitle:
-      'أدرج نشاطك في سوق أكسيز وصِل إلى السكان والنزلاء ومديري العقارات الذين يبحثون بالفعل عن خدمات مثل خدماتك. صالونات، منتجعات صحية، لياقة، تصوير، خدمات منزلية وغيرها، كل مقدم خدمة موثوق، وكل حجز فوري.',
+      'أدرج نشاطك في سوق أكسيز، واستقبل الحجوزات من عملائك، وليجدك عملاء جدد يبحثون بالفعل عن خدمات مثل خدماتك. صالونات، منتجعات صحية، لياقة، تصوير، خدمات منزلية وغيرها، كل مقدم خدمة موثوق، وكل حجز فوري.',
     ctaPrimary: 'أنشئ حساب مقدم خدمة',
     ctaPricing: 'اطّلع على الخطط والأسعار',
     heroCaption: 'صفحتك، حيّة في سوق أكسيز',

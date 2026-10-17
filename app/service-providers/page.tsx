@@ -8,7 +8,7 @@ import ServiceProviderPage from '@/components/ServiceProviderPage'
 export const metadata: Metadata = {
   title: 'For service providers, list on the marketplace',
   description:
-    'List your business on the Accez marketplace and reach residents, guests and property managers. Salons, spas, fitness, photography and home services get discovered, booked and reviewed. See provider plans and pricing.',
+    'List your business on the Accez marketplace, take bookings from your own clients and get found by new customers. Barbers, salons, spas, fitness, photography and home services. See provider plans and pricing.',
   alternates: alternatesFor('service-providers', 'en'),
   openGraph: {
     title: 'For Service Providers | Accez Marketplace',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 }
 
 const MARKETPLACE_DESCRIPTION =
-  'Independent businesses list their services on the Accez marketplace to reach residents, guests and property managers, take instant bookings, and grow through exposure-based plans.'
+  'Independent businesses list their services on the Accez marketplace, take instant bookings from their own clients and new customers, and grow through exposure-based plans.'
 
 export default function Page() {
   return (
