@@ -4,13 +4,13 @@ import { buildLlmsTxt, type LlmsLink } from '@/lib/content/llms'
 import { TOPICS } from '@/lib/content/topics'
 import { localeUrl } from '@/lib/i18n'
 import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/site'
-import { translations } from '@/translations'
 import { metadata as modules } from '../modules/page'
 import { metadata as owners } from '../owners/page'
 import { metadata as hotels } from '../hotels/page'
 import { metadata as sales } from '../sales/page'
 import { metadata as providers } from '../service-providers/page'
-import { metadata as pricing } from '../pricing/page'
+import { solutionPricingMetadata, pricingHubMetadata } from '@/lib/platform/pricingPages'
+import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
@@ -35,14 +35,22 @@ export function GET() {
     summary: SITE_DESCRIPTION,
     details: [
       'Market: Saudi Arabia. The whole site is available in Arabic at https://www.accez.cloud/ar/.',
-      `Pricing: ${translations.en.pricing.newSubtitle} Plans: ${localeUrl('pricing', 'en')}`,
+      `Accez is one platform with ${PLATFORM_SOLUTIONS.length} solutions: ${PLATFORM_SOLUTIONS.map((s) => `${s.name.en} (${s.audience.en.toLowerCase()})`).join(' and ')}. Each has its own plans and pricing page.`,
     ],
     sections: [
       {
-        heading: 'Product',
-        links: [page('modules', modules), page('owners', owners), page('hotels', hotels), page('sales', sales), page('service-providers', providers)],
+        heading: 'Property management',
+        links: [page('modules', modules), page('owners', owners), page('hotels', hotels), page('sales', sales)],
       },
-      { heading: 'Company and help', links: [page('pricing', pricing), page('faq', faq), page('about', about), page('support', support)] },
+      { heading: 'Service provider marketplace', links: [page('service-providers', providers)] },
+      {
+        heading: 'Pricing',
+        links: [
+          page('pricing', pricingHubMetadata('en')),
+          ...PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),
+        ],
+      },
+      { heading: 'Company and help', links: [page('faq', faq), page('about', about), page('support', support)] },
       {
         heading: 'Blog topics',
         links: TOPICS.map((t) => ({ title: t.label.en, url: localeUrl(`blog/topic/${t.key}`, 'en') })),

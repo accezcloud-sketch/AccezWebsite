@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPosts, getPostsByTopic, getPostsForProduct } from '@/lib/blog'
 import { newestDate, POST_LISTING_PAGES } from '@/lib/content/lastModified'
 import { TOPICS } from '@/lib/content/topics'
+import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { localeUrl } from '@/lib/i18n'
 
 export const dynamic = 'force-static'
@@ -67,5 +68,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
   })
 
-  return [...staticPages, ...topicPages, ...blogPages]
+  // One pricing page per platform solution.
+  const pricingPages: MetadataRoute.Sitemap = PLATFORM_SOLUTIONS.flatMap((s) => [
+    { url: localeUrl(s.pricingHref, 'en'), lastModified: STATIC_LAST_MODIFIED },
+    { url: localeUrl(s.pricingHref, 'ar'), lastModified: STATIC_LAST_MODIFIED },
+  ])
+
+  return [...staticPages, ...pricingPages, ...topicPages, ...blogPages]
 }

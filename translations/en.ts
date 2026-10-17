@@ -10,7 +10,7 @@ export const en = {
     contact: 'Contact',
     startFreeTrial: 'Start Free Trial',
     bookDemo: 'Book a demo',
-    product: 'Product',
+    product: 'Solutions',
     about: 'About',
     signIn: 'Sign in',
     signInPM: 'Property Manager',

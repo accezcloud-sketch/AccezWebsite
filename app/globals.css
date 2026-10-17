@@ -124,6 +124,34 @@
   --shadow-k:    0.35;
 }
 
+/* Header menus: one glass panel style for every dropdown. Near-opaque so
+   page text never shows through, with a blur for depth where supported. */
+.nav-panel {
+  background: var(--panel);
+  border: 1px solid var(--border-hi);
+  box-shadow: 0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)));
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(160%);
+}
+.nav-item { transition: background-color .15s ease; }
+
+/* A solution card: the same surface everywhere a solution is presented
+   (pricing hub, homepage). Lifts and takes the accent border on hover/focus. */
+.solution-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgb(var(--shadow-rgb) / calc(0.25 * var(--shadow-k)));
+  transition: transform .25s cubic-bezier(.23,1,.32,1), border-color .25s ease, box-shadow .25s ease;
+}
+.solution-card:hover, .solution-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--accent-line);
+  box-shadow: 0 18px 44px rgb(var(--shadow-rgb) / calc(0.35 * var(--shadow-k)));
+  outline: none;
+}
+@media (prefers-reduced-motion: reduce) { .solution-card:hover { transform: none; } }
+.nav-item:hover, .nav-item:focus-visible { background: var(--surface-hi); outline: none; }
+
 /* Shared section rhythm — apply so pages cannot drift.
    .page-top  → first section of any page (clears the fixed navbar consistently).
    .section-y → standard section top+bottom padding. */

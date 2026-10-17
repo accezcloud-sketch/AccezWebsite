@@ -9,7 +9,7 @@ import RevealLine from '@/components/animations/RevealLine'
 import SectionHeader from '@/components/SectionHeader'
 
 /** Service-provider marketplace plans. Used on the Service Providers and Pricing pages. */
-export default function ProviderPricing() {
+export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
   const { language, isRTL } = useLanguage()
   const p = PROVIDER_PRICING_COPY[language]
   const arrow = (
@@ -22,7 +22,7 @@ export default function ProviderPricing() {
             <section id="provider-pricing" className="py-20" style={{ background: 'var(--bg)' }}>
         <div className="container mx-auto px-4">
           <FadeUp>
-            <SectionHeader eyebrow={p.pricingEyebrow} lead={p.pricingTitleLead} accent={p.pricingTitleAccent} subtitle={p.pricingSubtitle} isRTL={isRTL} />
+            <SectionHeader eyebrow={p.pricingEyebrow} lead={p.pricingTitleLead} accent={p.pricingTitleAccent} subtitle={p.pricingSubtitle} isRTL={isRTL} headingLevel={headingLevel} />
           </FadeUp>
 
           <RevealLine className="w-full max-w-6xl mx-auto mb-10" delay={0.1} />

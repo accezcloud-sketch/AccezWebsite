@@ -84,7 +84,7 @@ export default function Footer() {
       heading: t.footer.forServiceProviders,
       links: [
         { label: t.footer.howItWorks, href: '/service-providers' },
-        { label: t.footer.providerPricing, href: '/service-providers#provider-pricing' },
+        { label: t.footer.providerPricing, href: '/pricing/service-providers' },
         { label: t.footer.becomeProvider, href: PROVIDER_SIGN_UP, external: true },
       ],
     },

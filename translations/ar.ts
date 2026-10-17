@@ -10,7 +10,7 @@ export const ar = {
     contact: 'اتصل بنا',
     startFreeTrial: 'ابدأ التجربة المجانية',
     bookDemo: 'اطلب عرضًا توضيحيًا',
-    product: 'المنتج',
+    product: 'الحلول',
     about: 'من نحن',
     signIn: 'تسجيل الدخول',
     signInPM: 'مدير العقارات',
