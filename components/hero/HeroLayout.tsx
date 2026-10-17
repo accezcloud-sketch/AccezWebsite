@@ -22,7 +22,7 @@ export default function HeroLayout({
   visual: ReactNode
 }) {
   return (
-    <section className="relative overflow-hidden w-full" style={{ background: 'var(--bg)' }}>
+    <section className="relative overflow-hidden w-full" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <div
         className="absolute inset-x-0 top-0 pointer-events-none"
         style={{ height: '75%', background: 'radial-gradient(125% 75% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }}
@@ -49,7 +49,7 @@ export default function HeroLayout({
           <div className="relative w-full min-w-0 flex justify-center lg:justify-end">{visual}</div>
         </div>
       </div>
-      <div className="absolute bottom-0 inset-x-0 h-32 pointer-events-none" style={{ background: 'linear-gradient(to bottom, transparent, var(--bg))' }} aria-hidden="true" />
+      <div className="absolute bottom-0 inset-x-0 h-32 pointer-events-none" style={{ background: 'linear-gradient(to bottom, transparent, var(--section-bg, var(--bg)))' }} aria-hidden="true" />
     </section>
   )
 }

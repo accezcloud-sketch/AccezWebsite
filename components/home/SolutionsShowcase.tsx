@@ -34,7 +34,7 @@ const Check = () => (
 export default function SolutionsShowcase({ locale }: { locale: Locale }) {
   const c = COPY[locale]
   return (
-    <section id="solutions" className="section-y" style={{ background: 'var(--bg-alt)' }}>
+    <section id="solutions" className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-20">
           <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: 'var(--accent-hi)' }}>{c.eyebrow}</p>

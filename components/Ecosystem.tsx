@@ -119,7 +119,7 @@ export default function Ecosystem() {
   const t = CONTENT[language]
 
   return (
-    <section className="py-20" id="ecosystem" style={{ background: 'var(--bg)' }}>
+    <section className="section-y" id="ecosystem" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <style>{`
         /* Flow of connections travelling inward toward the hub. */
         @keyframes eco-flow {
@@ -155,11 +155,13 @@ export default function Ecosystem() {
         }
       `}</style>
 
-      <div className="container mx-auto px-4">
+      {/* On laptops the text sits beside the diagram, so both fit on one
+          screen; on phones they stack. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12 lg:items-center">
         {/* Section header */}
         <FadeUp>
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-4">
+          <div className="text-center lg:text-start mb-12 lg:mb-0">
+            <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
               <div
                 className="h-px w-8"
                 style={{ background: isRTL
@@ -178,7 +180,7 @@ export default function Ecosystem() {
             </div>
 
             <h2
-              className="text-strong font-bold text-center leading-tight tracking-tight"
+              className="text-strong font-bold leading-tight tracking-tight"
               style={{
                 fontSize: 'clamp(28px, 4vw, 44px)',
                 fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
@@ -198,15 +200,18 @@ export default function Ecosystem() {
               </span>
             </h2>
 
-            <p className="text-center max-w-2xl mx-auto mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>
+            <p className="max-w-2xl mx-auto lg:mx-0 mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>
               {t.subtitle}
+            </p>
+            <p className="hidden lg:block mt-6 font-medium" style={{ fontSize: 15, color: 'var(--text-muted)' }}>
+              {t.tagline}
             </p>
           </div>
         </FadeUp>
 
         {/* ── Desktop: radial hub-and-spoke ─────────────────────────── */}
         <FadeUp delay={0.15} className="hidden lg:block">
-          <div className="relative mx-auto" style={{ width: 620, height: 620 }}>
+          <div className="relative mx-auto" style={{ width: 540, height: 540 }}>
             {/* Connecting lines + ambient rings */}
             <svg
               className="absolute inset-0 w-full h-full pointer-events-none"
@@ -250,8 +255,8 @@ export default function Ecosystem() {
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: 168,
-                height: 168,
+                width: 150,
+                height: 150,
                 background: 'radial-gradient(circle at 50% 40%, rgba(49, 159, 212,0.22), var(--panel))',
                 border: '1px solid var(--accent-line)',
                 boxShadow: '0 0 0 8px rgba(49, 159, 212,0.05), 0 20px 60px rgba(38, 120, 166,0.35)',
@@ -278,7 +283,7 @@ export default function Ecosystem() {
                     left: `${p.left}%`,
                     top: `${p.top}%`,
                     transform: 'translate(-50%, -50%)',
-                    width: 244,
+                    width: 214,
                     background: 'var(--panel)',
                     border: '1px solid var(--border)',
                     boxShadow: '0 8px 24px rgb(var(--shadow-rgb) / calc(0.35 * var(--shadow-k)))',
@@ -304,9 +309,6 @@ export default function Ecosystem() {
             })}
           </div>
 
-          <p className="text-center mt-6 font-medium" style={{ fontSize: 15, color: 'var(--text-muted)' }}>
-            {t.tagline}
-          </p>
         </FadeUp>
 
         {/* ── Mobile / tablet: hub card + party grid ────────────────── */}

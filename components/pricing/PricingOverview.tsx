@@ -41,7 +41,7 @@ export function SolutionPricingCards({ locale }: { locale: Locale }) {
 export default function PricingOverview({ locale }: { locale: Locale }) {
   const c = PRICING_OVERVIEW_COPY[locale]
   return (
-    <section id="pricing" className="relative overflow-hidden pt-24 pb-24" style={{ background: 'var(--bg)' }}>
+    <section id="pricing" className="relative overflow-hidden section-y" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-12">

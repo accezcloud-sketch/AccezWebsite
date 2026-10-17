@@ -34,7 +34,7 @@ export default function PostStrip({ id, heading, posts, locale }: PostStripProps
   const isAr = locale === 'ar'
 
   return (
-    <section aria-labelledby={id} className="section-y" style={{ background: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+    <section aria-labelledby={id} className="section-y" style={{ background: 'var(--section-bg, var(--bg))', borderTop: '1px solid var(--section-border, var(--border))' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between gap-4 mb-8">

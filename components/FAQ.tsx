@@ -164,7 +164,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
       <section
         id="faq"
         className="relative py-20 px-4 sm:px-6 lg:px-12 overflow-hidden"
-        style={{ background: 'var(--bg)' }}
+        style={{ background: 'var(--section-bg, var(--bg))' }}
       >
         {/* Background glow */}
         <div

@@ -40,7 +40,7 @@ export default function Contact() {
     <>
       <Script src="https://www.google.com/recaptcha/api.js" strategy="lazyOnload" />
 
-      <section className="py-20" id="contact" style={{ background: 'var(--bg)' }}>
+      <section className="py-20" id="contact" style={{ background: 'var(--section-bg, var(--bg))' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <FadeUp>

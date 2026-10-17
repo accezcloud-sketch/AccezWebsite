@@ -41,7 +41,7 @@
 
   /* Canvas and surfaces */
   --bg:          #09131C;
-  --bg-alt:      #0C1A24;
+  --bg-alt:      #0F1F2B;
   --surface:     rgba(255, 255, 255, 0.035);
   --surface-hi:  rgba(255, 255, 255, 0.06);
   --panel:       rgba(13, 23, 35, 0.97);    /* menus, dropdowns: near-opaque */
