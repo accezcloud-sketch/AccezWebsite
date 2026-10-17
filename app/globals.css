@@ -45,6 +45,7 @@
   --surface:     rgba(255, 255, 255, 0.035);
   --surface-hi:  rgba(255, 255, 255, 0.06);
   --panel:       rgba(13, 23, 35, 0.97);    /* menus, dropdowns: near-opaque */
+  --panel-solid: #0D1723;                   /* the same, where transparency is off */
   --glass:       rgba(9, 19, 28, 0.72);     /* translucent bars over content */
   --glass-border: rgba(255, 255, 255, 0.08);
   --media-bg:    linear-gradient(135deg, #0f172a, #1e293b); /* behind screenshots */
@@ -93,6 +94,7 @@
   --surface:     #FFFFFF;
   --surface-hi:  #F2F6FA;
   --panel:       rgba(255, 255, 255, 0.98);
+  --panel-solid: #FFFFFF;
   --glass:       rgba(255, 255, 255, 0.78);
   --glass-border: rgba(16, 38, 52, 0.08);
   --media-bg:    linear-gradient(135deg, #E9EFF5, #F6F8FB);
@@ -135,6 +137,22 @@
 }
 .nav-item { transition: background-color .15s ease; }
 
+/* Glass, used sparingly: the header bar once the page scrolls, the menus,
+   and the hero's solution doors. Content surfaces stay solid so body text
+   always sits on a known background. */
+.glass-bar {
+  background-color: var(--glass);
+  border-color: var(--glass-border);
+  box-shadow: 0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)));
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+}
+.nav-sheet {
+  background-color: var(--panel);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
 /* A solution card: the same surface everywhere a solution is presented
    (pricing hub, homepage). Lifts and takes the accent border on hover/focus. */
 .solution-card {
@@ -150,6 +168,42 @@
   outline: none;
 }
 @media (prefers-reduced-motion: reduce) { .solution-card:hover { transform: none; } }
+/* A way into one solution from the hero. Equal weight for every solution:
+   the platform leads, no audience is the "secondary" button. */
+.solution-door {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 24px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)));
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.solution-door:hover, .solution-door:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgb(var(--shadow-rgb) / calc(0.32 * var(--shadow-k)));
+  outline: none;
+}
+@media (prefers-reduced-motion: reduce) { .solution-door:hover { transform: none; } }
+/* Without blur support, a translucent bar would show the page through it
+   unblurred; use the near-opaque panel colour instead. */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass-bar, .solution-door { background-color: var(--panel); }
+}
+/* People who ask for less transparency get solid surfaces. */
+@media (prefers-reduced-transparency: reduce) {
+  .glass-bar, .nav-panel, .nav-sheet, .solution-door {
+    background-color: var(--panel-solid);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+/* The band that opens each solution's chapter on the homepage. */
+.solution-chapter {
+  background: linear-gradient(135deg, var(--accent-dim), transparent 60%), var(--surface);
+  border: 1px solid var(--border-hi);
+}
 .nav-item:hover, .nav-item:focus-visible { background: var(--surface-hi); outline: none; }
 
 /* Shared section rhythm — apply so pages cannot drift.
@@ -206,7 +260,6 @@ img, video { max-width: 100%; }
   color: var(--text-strong); font-family: var(--font-heading), system-ui, sans-serif;
   font-weight: 600; font-size: 1.3em; line-height: 1.3; margin-top: 1.6em; margin-bottom: 0.4em;
 }
-.blog-content h2, .blog-content h3 { scroll-margin-top: calc(var(--nav-h, 64px) + 16px); }
 .blog-content h4 { color: var(--text-strong); font-weight: 600; font-size: 1.1em; margin-top: 1.4em; }
 .blog-content p, .blog-content li { color: var(--text-muted); }
 .blog-content strong { color: var(--text); font-weight: 600; }
@@ -299,10 +352,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Ensure hash-jumps land below the fixed navbar */
-section[id] {
-  scroll-margin-top: 80px;
-}
+/* Every in-page link (#pricing, a legal section, a blog heading) lands below
+   the fixed header, from one rule instead of a margin on each target. */
+html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 
 /* Custom scrollbar — was a light-theme scrollbar sitting on a dark site */
 ::-webkit-scrollbar {

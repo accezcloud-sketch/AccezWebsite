@@ -2,7 +2,9 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import Link from 'next/link'
 import { localeHref } from '@/lib/i18n'
+import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 
 const TYPING_SPEED = 95
 const DELETING_SPEED = 55
@@ -90,12 +92,12 @@ const PARTNERS = [
 
 const CONTENT = {
   en: {
-    headlineLead: 'One platform to run',
-    typewriter: ['residential communities', 'vacation rentals', 'hotels & serviced apartments', 'commercial properties', 'owner portfolios'],
+    // The first phrase is the server-rendered H1, so it names both audiences.
+    headlineLead: 'One platform for',
+    typewriter: ['property managers and service providers', 'vacation rentals', 'hotels & serviced apartments', 'residential communities', 'salons & spas', 'fitness coaches', 'home services'],
     subtitle:
-      'Accez runs the whole operation. Reservations and channels, work orders, owners and payouts, sales and contracts, and a built-in service marketplace. Arabic and English, built for property operators across Saudi Arabia.',
-    ctaPrimary: 'Book a demo',
-    ctaSecondary: 'Start free',
+      'Two solutions on one platform: property management that runs the whole operation, and a marketplace where service providers get booked by residents, guests and property managers. In Arabic and English, built for Saudi Arabia.',
+    doorsLabel: 'Choose your solution',
     partnersIntro: 'Syncs with 400+ booking channels including',
     mock: {
       url: 'portal.accez.cloud',
@@ -123,12 +125,11 @@ const CONTENT = {
     },
   },
   ar: {
-    headlineLead: 'منصة واحدة لإدارة',
-    typewriter: ['المجمعات السكنية', 'الإيجارات السياحية', 'الفنادق والشقق المخدومة', 'العقارات التجارية', 'محافظ الملاك'],
+    headlineLead: 'منصة واحدة تخدم',
+    typewriter: ['مديري العقارات ومقدمي الخدمات', 'الإيجارات السياحية', 'الفنادق والشقق المخدومة', 'المجمعات السكنية', 'الصالونات والسبا', 'مدربي اللياقة', 'الخدمات المنزلية'],
     subtitle:
-      'تدير أكسيز العملية بالكامل. الحجوزات والقنوات، أوامر العمل، الملاك والمدفوعات، المبيعات والعقود، وسوق خدمات مدمج. بالعربية والإنجليزية، مبنية لمشغّلي العقارات في السعودية.',
-    ctaPrimary: 'اطلب عرضًا توضيحيًا',
-    ctaSecondary: 'ابدأ مجانًا',
+      'حلّان على منصة واحدة: إدارة عقارات تدير العملية بالكامل، وسوق خدمات يحصل فيه مقدمو الخدمات على حجوزات من السكان والنزلاء ومديري العقارات. بالعربية والإنجليزية، ومبنية للسعودية.',
+    doorsLabel: 'اختر الحل المناسب لك',
     partnersIntro: 'متكاملة مع أكثر من 400 قناة حجز بما في ذلك',
     mock: {
       url: 'portal.accez.cloud',
@@ -271,10 +272,6 @@ export default function Hero() {
           word-break: normal;
         }
 
-        .btn-glow:hover {
-          box-shadow: 0 0 0 3px rgba(49, 159, 212,.3), 0 8px 32px rgba(49, 159, 212,.4);
-        }
-
         .card-tilt { transition: transform .4s cubic-bezier(.23,1,.32,1), box-shadow .4s; }
         .card-tilt:hover {
           transform: rotate(0deg) translateY(-8px) scale(1.015) !important;
@@ -345,7 +342,9 @@ export default function Hero() {
                 className="hero-display anim-fade-up-2 text-strong leading-[1.08] tracking-tight mb-5 w-full min-w-0"
                 style={{ fontSize: 'clamp(28px, 5.2vw, 52px)', fontWeight: 800 }}
               >
-                {t.headlineLead}
+                {/* The space keeps the words apart for crawlers, which read the
+                    text without the line break. */}
+                {t.headlineLead}{' '}
                 <br />
                 <span className="tw-line">
                   <span className="grad-text">{displayText || ' '}</span>
@@ -360,41 +359,31 @@ export default function Hero() {
                 {t.subtitle}
               </p>
 
-              <div className="anim-fade-up-4 flex flex-col sm:flex-row flex-wrap gap-3 mb-10 w-full sm:w-auto items-stretch sm:items-center lg:items-start">
-                <a
-                  href={localeHref("/#contact", language)}
-                  className="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                  style={{
-                    background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
-                    fontSize: 15,
-                  }}
-                >
-                  {t.ctaPrimary}
-                  <svg
-                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                    style={{ transform: isRTL ? 'scaleX(-1)' : undefined }}
-                  >
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-                <a
-                  href="https://portal.accez.cloud/sign-up"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-soft transition-all duration-200 hover:text-strong hover:-translate-y-0.5"
-                  style={{
-                    background: 'var(--surface-hi)',
-                    border: '1px solid var(--border-hi)',
-                    fontSize: 15,
-                  }}
-                >
-                  {t.ctaSecondary}
-                  <svg
-                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                    style={{ transform: isRTL ? 'scaleX(-1)' : undefined }}
-                  >
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-              </div>
+              {/* One door per solution (lib/platform/solutions.ts): the platform
+                  leads, and each audience finds its own way in. */}
+              <nav aria-label={t.doorsLabel} className="anim-fade-up-4 w-full mb-10">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {PLATFORM_SOLUTIONS.map((s) => (
+                    <li key={s.key}>
+                      <Link
+                        href={localeHref(s.href, language)}
+                        prefetch={false}
+                        className="solution-door group flex h-full flex-col gap-1 rounded-[var(--radius-md)] px-5 py-4 text-start"
+                      >
+                        <span className="text-[11px] font-semibold uppercase tracking-[0.12em]" style={{ color: 'var(--accent-hi)' }}>
+                          {s.audience[language]}
+                        </span>
+                        <span className="flex items-center justify-between gap-3 font-semibold text-strong" style={{ fontSize: 16 }}>
+                          {s.name[language]}
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 transition-transform duration-200 group-hover:translate-x-0.5" style={{ transform: isRTL ? 'scaleX(-1)' : undefined }} aria-hidden="true">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
 
               <div className="anim-fade-up-5 mt-2 w-full overflow-hidden">
                 <p className="text-xs text-faint uppercase tracking-widest mb-4 font-medium text-center lg:text-left">

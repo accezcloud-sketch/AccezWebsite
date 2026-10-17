@@ -186,7 +186,7 @@ export const ar = {
 
   // Footer
   footer: {
-    description: 'منصة إدارة عقارات حديثة للعصر الرقمي.',
+    description: 'منصة واحدة بحلّين: إدارة العقارات وسوق مقدمي الخدمات، مبنية للسعودية.',
     product: 'المنتج',
     features: 'المميزات',
     pricing: 'الأسعار',

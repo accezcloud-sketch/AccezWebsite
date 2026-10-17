@@ -213,7 +213,7 @@ export function LegalSectionBlock({
   if (!appliesTo(audienceOf[id], view)) return null
 
   return (
-    <section id={id} className="scroll-mt-28 mb-14">
+    <section id={id} className="mb-14">
       <h2
         className="text-strong font-bold tracking-tight mb-4"
         style={{

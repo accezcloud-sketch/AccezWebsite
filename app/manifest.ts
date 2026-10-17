@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     // project. /manifest.webmanifest is public and crawlable, so it was a
     // machine-readable description of the wrong company sitting at a well-known
     // URL, contradicting every other description on the site.
-    name: 'Accez | All-in-One Property Management for Saudi Arabia',
+    name: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
     short_name: 'Accez',
     description:
       'Run reservations, rent, maintenance, owners, sales and hotels in one platform. All-in-one property operations for Saudi Arabia, in Arabic and English.',

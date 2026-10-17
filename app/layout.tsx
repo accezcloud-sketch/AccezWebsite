@@ -17,7 +17,7 @@ const poppins = Poppins({ subsets: ['latin'], variable: '--font-heading', weight
 
 export const metadata: Metadata = {
   title: {
-    default: 'Accez | All-in-One Property Management for Saudi Arabia',
+    default: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
     template: '%s | Accez',
   },
   description: SITE_DESCRIPTION,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     apple: [{ url: '/images/apple-touch-icon.png', sizes: '180x180' }],
   },
   openGraph: {
-    title: 'Accez | All-in-One Property Management for Saudi Arabia',
+    title: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
     description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. Built for Saudi operators, in Arabic and English.',
     type: 'website',
     siteName: 'Accez',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
         url: 'https://www.accez.cloud/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Accez, all-in-one property management for Saudi Arabia',
+        alt: 'Accez, property management and service marketplace for Saudi Arabia',
       },
     ],
   },

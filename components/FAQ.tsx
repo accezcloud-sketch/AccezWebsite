@@ -26,18 +26,18 @@ const FAQS: FaqItem[] = [
     question: 'What is Accez.cloud and how does it work?',
     questionAr: 'ما هو Accez.cloud وكيف يعمل؟',
     answer:
-      'Accez.cloud is a unified property management SaaS platform that streamlines operations for property managers, landlords, and HOAs. It integrates booking management across 400+ channels (Airbnb, Booking.com, Expedia), automated rent collection, maintenance scheduling, and a service marketplace to generate additional revenue.',
+      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and hotel operators: reservations synced across 400+ channels (Airbnb, Booking.com, Expedia), rent, work orders, owners and payouts, and sales. The service provider marketplace lets salons, spas, fitness coaches, photographers and home services list their business and get booked by residents, guests and property managers.',
     answerAr:
-      'Accez.cloud هي منصة SaaS موحدة لإدارة العقارات تعمل على تبسيط العمليات لمديري العقارات والملاك وجمعيات أصحاب المنازل. تتكامل مع إدارة الحجوزات عبر أكثر من 400 قناة (Airbnb، Booking.com، Expedia)، وتحصيل الإيجارات الآلي، وجدولة الصيانة، وسوق الخدمات لتوليد إيرادات إضافية.',
+      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الفنادق: حجوزات متزامنة عبر أكثر من 400 قناة (Airbnb، Booking.com، Expedia)، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للصالونات والمنتجعات الصحية ومدربي اللياقة والمصورين والخدمات المنزلية إدراج نشاطهم واستقبال الحجوزات من السكان والنزلاء ومديري العقارات.',
   },
   {
     category: 'pricingBilling',
     question: 'How much does Accez.cloud cost?',
     questionAr: 'كم تكلفة Accez.cloud؟',
     answer:
-      'We offer flexible plans starting from SAR 40/month for the Basic plan (3 properties with unlimited units). Our Professional plan is SAR 150/month (10 properties with unlimited units), and we offer custom Enterprise solutions for larger portfolios. Our Free plan lets you try the platform with no credit card required.',
+      'Each solution has its own plans. For property managers there is a Free plan, Basic at SAR 40/month (3 properties with unlimited units), Professional at SAR 150/month (10 properties with unlimited units), and Enterprise for larger portfolios. Service providers list for free; the Starter (SAR 75/month) and Growth (SAR 184/month) plans lower the platform fee on each booking. No credit card is needed to start.',
     answerAr:
-      'نقدم خطط مرنة تبدأ من 40 ريال شهريًا للخطة الأساسية (3 عقارات بوحدات غير محدودة). خطتنا الاحترافية هي 150 ريال شهريًا (10 عقارات بوحدات غير محدودة)، ونقدم حلول مؤسسات مخصصة للمحافظ الأكبر. خطتنا المجانية تتيح لك تجربة المنصة بدون الحاجة لبطاقة ائتمان.',
+      'لكل حل خططه الخاصة. لمديري العقارات: خطة مجانية، والأساسية بـ 40 ريالًا شهريًا (3 عقارات بوحدات غير محدودة)، والاحترافية بـ 150 ريالًا شهريًا (10 عقارات بوحدات غير محدودة)، وخطة المؤسسات للمحافظ الأكبر. ولمقدمي الخدمات: الإدراج مجاني، وخطتا المبتدئة (75 ريالًا شهريًا) والنمو (184 ريالًا شهريًا) تخفضان رسوم المنصة على كل حجز. لا حاجة لبطاقة ائتمان للبدء.',
   },
   {
     category: 'channelsIntegrations',

@@ -34,12 +34,11 @@ const SLIDES: CarouselSlide[] = [
 
 const CONTENT = {
   en: {
-    badge: 'New',
-    eyebrow: 'Service Providers',
-    titleLead: 'Accez is now open to',
-    titleAccent: 'service providers',
+    eyebrow: 'Service provider marketplace',
+    titleLead: 'Grow your business on',
+    titleAccent: 'the Accez marketplace',
     subtitle:
-      'Accez is not only for property managers. Any independent business can join as a service provider: salons and barbers, spas and wellness studios, fitness coaches, photographers, home services and more. It is its own account type, with its own listing on the Accez marketplace.',
+      'Salons and barbers, spas and wellness studios, fitness coaches, photographers, home services and more. List your business, publish your services and prices, and take bookings from residents, guests and property managers. It is its own account type, with its own listing on the Accez marketplace.',
 
     stepsTitle: 'How it works',
     steps: [
@@ -104,12 +103,11 @@ const CONTENT = {
   },
 
   ar: {
-    badge: 'جديد',
-    eyebrow: 'مقدمو الخدمات',
-    titleLead: 'أكسيز الآن متاحة',
-    titleAccent: 'لمقدمي الخدمات',
+    eyebrow: 'سوق مقدمي الخدمات',
+    titleLead: 'نمِّ نشاطك التجاري عبر',
+    titleAccent: 'سوق أكسيز',
     subtitle:
-      'أكسيز ليست لمديري العقارات فقط. يمكن لأي نشاط تجاري مستقل الانضمام كمقدم خدمة: صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون، الخدمات المنزلية وغيرها. إنه نوع حساب مستقل بذاته، وله صفحته الخاصة في سوق أكسيز.',
+      'صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون، الخدمات المنزلية وغيرها. أدرج نشاطك، وانشر خدماتك وأسعارك، واستقبل الحجوزات من السكان والنزلاء ومديري العقارات. إنه نوع حساب مستقل بذاته، وله صفحته الخاصة في سوق أكسيز.',
 
     stepsTitle: 'كيف تعمل',
     steps: [
@@ -222,16 +220,6 @@ export default function ServiceProviders() {
                 className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase"
                 style={{ color: 'var(--accent-hi)' }}
               >
-                <span
-                  className="px-2 py-0.5 rounded-full tracking-normal"
-                  style={{
-                    background: 'var(--accent-dim)',
-                    border: '1px solid var(--accent-line)',
-                    color: 'var(--accent-hi)',
-                  }}
-                >
-                  {t.badge}
-                </span>
                 {t.eyebrow}
               </span>
               <div

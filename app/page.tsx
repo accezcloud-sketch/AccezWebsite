@@ -1,17 +1,5 @@
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import Ecosystem from '@/components/Ecosystem'
-import ProductScope from '@/components/ProductScope'
-import Capabilities from '@/components/Capabilities'
-import ServiceProviders from '@/components/ServiceProviders'
-import Trust from '@/components/Trust'
-import Pricing from '@/components/Pricing'
-import FAQ from '@/components/FAQ'
-import Contact from '@/components/Contact'
-import CTA from '@/components/CTA'
-import Footer from '@/components/Footer'
-import BlogStrip from '@/components/blog/BlogStrip'
 import type { Metadata } from 'next'
+import HomePage from '@/components/home/HomePage'
 import { alternatesFor } from '@/lib/i18n'
 import { softwareApplicationSchema } from '@/lib/content/siteSchema'
 
@@ -24,7 +12,7 @@ export const metadata: Metadata = {
 // Product description for structured data (the page's meta description is
 // the site default, inherited from the layout).
 const PRODUCT_DESCRIPTION =
-  'Accez is the all-in-one property operations platform for Saudi Arabia. Reservations and channels, work orders, rental and sale properties, sales and developer projects, contracts and e-signing, owner payouts, hotels and serviced apartments, in Arabic and English.'
+  'Accez is one platform with two solutions for Saudi Arabia. Property management: reservations and channels, work orders, rental and sale properties, sales and developer projects, contracts and e-signing, owner payouts, hotels and serviced apartments. And a service provider marketplace, where salons, spas, fitness coaches, photographers and home services are found and booked. In Arabic and English.'
 
 export default function Home() {
   return (
@@ -33,21 +21,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema('en', PRODUCT_DESCRIPTION)) }}
       />
-      <main className="min-h-screen">
-        <Header />
-        <Hero />
-        <Ecosystem />
-        <ProductScope />
-        <Capabilities />
-        <ServiceProviders />
-        <Trust />
-        <Pricing />
-        <FAQ />
-        <BlogStrip locale="en" />
-        <Contact />
-        {/* <CTA /> */}
-        <Footer />
-      </main>
+      <HomePage locale="en" />
     </>
   )
 }

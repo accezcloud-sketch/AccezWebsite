@@ -186,7 +186,7 @@ export const en = {
 
   // Footer
   footer: {
-    description: 'Modern property management platform for the digital age.',
+    description: 'One platform, two solutions: property management and a service provider marketplace, built for Saudi Arabia.',
     product: 'Product',
     features: 'Features',
     pricing: 'Pricing',

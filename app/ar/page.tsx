@@ -1,63 +1,39 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import Ecosystem from '@/components/Ecosystem'
-import ProductScope from '@/components/ProductScope'
-import Capabilities from '@/components/Capabilities'
-import ServiceProviders from '@/components/ServiceProviders'
-import Trust from '@/components/Trust'
-import Pricing from '@/components/Pricing'
-import FAQ from '@/components/FAQ'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
-import BlogStrip from '@/components/blog/BlogStrip'
+import HomePage from '@/components/home/HomePage'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
 import { softwareApplicationSchema } from '@/lib/content/siteSchema'
 
-// Arabic homepage. Identical component tree to the English one — the Arabic
-// copy already lives in translations/ar.ts and each component reads it from
-// context. Pinning the locale here makes that copy server-rendered.
+// Arabic homepage: the same page as the English one (components/home/HomePage),
+// with the locale pinned so the Arabic copy is server-rendered.
+const TITLE = 'أكسيز | إدارة العقارات وسوق الخدمات في السعودية'
 const DESCRIPTION =
-  'أدر الحجوزات والإيجارات والصيانة والملاك والمبيعات والفنادق من منصة واحدة. عمليات عقارية شاملة للسعودية، بالعربية والإنجليزية.'
+  'منصة واحدة بحلّين: إدارة العقارات للإيجارات والفنادق والملاك، وسوق خدمات يحصل فيه مقدمو الخدمات على الحجوزات. مبنية للسعودية بالعربية والإنجليزية.'
 
 export const metadata: Metadata = {
   // `absolute`: the title already names the brand; the layout's '%s | Accez'
   // template would repeat it.
-  title: { absolute: 'أكسيز | منصة شاملة لإدارة العقارات في السعودية' },
-  description:
-    DESCRIPTION,
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: alternatesFor('', 'ar'),
   openGraph: {
-    title: 'أكسيز | منصة شاملة لإدارة العقارات في السعودية',
-    description:
-      'أدر الحجوزات والإيجارات والصيانة والملاك والمبيعات والفنادق من منصة واحدة. مبنية لمشغّلي العقارات في السعودية.',
+    title: TITLE,
+    description: DESCRIPTION,
     url: localeUrl('', 'ar'),
     type: 'website',
     locale: 'ar_SA',
     siteName: 'Accez',
-    images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: 'أكسيز، منصة شاملة لإدارة العقارات في السعودية' }],
+    images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: TITLE }],
   },
 }
 
 export default function ArabicHome() {
   return (
-    <main className="min-h-screen">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema('ar', DESCRIPTION)) }}
       />
-      <Header />
-      <Hero />
-      <Ecosystem />
-      <ProductScope />
-      <Capabilities />
-      <ServiceProviders />
-      <Trust />
-      <Pricing />
-      <FAQ />
-      <BlogStrip locale="ar" />
-      <Contact />
-      <Footer />
-    </main>
+      <HomePage locale="ar" />
+    </>
   )
 }

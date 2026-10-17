@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { PROVIDER_SIGN_UP } from '@/lib/links'
+import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import FadeUp from '@/components/animations/FadeUp'
 import { localeHref } from '@/lib/i18n'
 import { LEGAL_COPY, LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
@@ -72,27 +72,20 @@ export default function Footer() {
   type FooterLink = { label: string; href: string; external?: boolean }
 
   const columns: Array<{ heading: string; links: FooterLink[] }> = [
-    {
-      heading: t.footer.solutions,
+    // One column per solution (lib/platform/solutions.ts): its pages, its
+    // pricing and its sign-up.
+    ...PLATFORM_SOLUTIONS.map((s) => ({
+      heading: s.name[language],
       links: [
-        { label: t.footer.platform, href: '/#platform' },
-        { label: language === 'ar' ? 'الملاك والمدفوعات' : 'Owners & payouts', href: '/owners' },
-        { label: language === 'ar' ? 'المبيعات والمشاريع' : 'Sales & projects', href: '/sales' },
-        { label: language === 'ar' ? 'الفنادق والشقق المخدومة' : 'Hotels & serviced apartments', href: '/hotels' },
+        ...s.pages.map((p) => ({ label: p.label[language], href: p.href })),
+        { label: language === 'ar' ? 'الأسعار' : 'Pricing', href: s.pricingHref },
+        { label: language === 'ar' ? 'أنشئ حسابًا' : 'Create an account', href: s.signUpUrl, external: true },
       ],
-    },
+    })),
     {
-      heading: t.footer.forServiceProviders,
+      heading: language === 'ar' ? 'الشركة' : 'Company',
       links: [
-        { label: t.footer.howItWorks, href: '/service-providers' },
-        { label: t.footer.providerPricing, href: '/pricing/service-providers' },
-        { label: t.footer.becomeProvider, href: PROVIDER_SIGN_UP, external: true },
-      ],
-    },
-    {
-      heading: t.footer.product,
-      links: [
-        { label: t.footer.pricing, href: '/pricing' },
+        { label: language === 'ar' ? 'كل الخطط والأسعار' : 'All plans and pricing', href: '/pricing' },
         { label: t.footer.integrations, href: '/#trust' },
         { label: t.footer.about, href: '/about' },
         { label: t.footer.blog, href: '/blog' },

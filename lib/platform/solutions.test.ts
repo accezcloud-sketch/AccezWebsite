@@ -34,4 +34,9 @@ describe('solution pages', () => {
     const { SOLUTION_PRICING } = await import('@/components/pricing/solutionPricing')
     for (const s of PLATFORM_SOLUTIONS) expect(SOLUTION_PRICING[s.key], s.key).toBeDefined()
   })
+
+  it('every solution has sections for its homepage chapter', async () => {
+    const { SOLUTION_SHOWCASE } = await import('@/components/home/solutionShowcase')
+    for (const s of PLATFORM_SOLUTIONS) expect(SOLUTION_SHOWCASE[s.key], s.key).toBeDefined()
+  })
 })

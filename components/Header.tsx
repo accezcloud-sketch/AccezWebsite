@@ -91,17 +91,10 @@ export default function Header() {
   return (
     <header
       className={[
-        'fixed top-0 left-0 right-0 z-[100] w-full',
+        'fixed top-0 left-0 right-0 z-[100] w-full border-b',
         'transition-all duration-300 ease-in-out',
-        scrolled ? 'border-b' : 'border-b border-transparent',
+        scrolled ? 'glass-bar' : 'border-transparent',
       ].join(' ')}
-      style={{
-        borderColor: scrolled ? 'var(--glass-border)' : 'transparent',
-        backgroundColor: scrolled ? 'var(--glass)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(16px) saturate(180%)' : 'none',
-        WebkitBackdropFilter: scrolled ? 'blur(16px) saturate(180%)' : 'none',
-        boxShadow: scrolled ? '0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))' : 'none',
-      }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -172,8 +165,8 @@ export default function Header() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.28, ease: [0.21, 0.47, 0.32, 0.98] }}
-              className="lg:hidden overflow-hidden"
-              style={{ backgroundColor: 'var(--panel)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderBottom: '1px solid var(--border)' }}
+              className="nav-sheet lg:hidden overflow-hidden"
+              style={{ borderBottom: '1px solid var(--border)' }}
             >
               <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="flex flex-col gap-1 py-4 px-2">
                 <MobileNavGroup label={t.header.product} sections={productSections} onNavigate={closeMobile} />
