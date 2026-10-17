@@ -29,8 +29,8 @@ export const SOLUTION_PAGES: Record<string, SolutionPage> = {
     Page: PropertyManagementPage,
     title: { en: 'Property management solution', ar: 'حل إدارة العقارات' },
     description: {
-      en: 'Property management for vacation rentals, hotels, residential communities and owner portfolios: reservations and 400+ channels, work orders, rental and sale properties, sales and projects, contracts and e-signing, owners and payouts.',
-      ar: 'إدارة العقارات للإيجارات السياحية والفنادق والمجمعات السكنية ومحافظ الملاك: الحجوزات وأكثر من 400 قناة، وأوامر العمل، وعقارات الإيجار والبيع، والمبيعات والمشاريع، والعقود والتوقيع الإلكتروني، والملاك والمدفوعات.',
+      en: 'Property management for vacation rentals, hotels, residential communities and owner portfolios: reservations and channel manager, work orders, rental and sale properties, sales and projects, contracts and e-signing, owners and payouts.',
+      ar: 'إدارة العقارات للإيجارات السياحية والفنادق والمجمعات السكنية ومحافظ الملاك: الحجوزات ومدير القنوات، وأوامر العمل، وعقارات الإيجار والبيع، والمبيعات والمشاريع، والعقود والتوقيع الإلكتروني، والملاك والمدفوعات.',
     },
   },
   'service-providers': {

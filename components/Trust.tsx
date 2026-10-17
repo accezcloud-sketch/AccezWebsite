@@ -3,7 +3,6 @@
 import { Languages, CreditCard, ShieldCheck, MapPin, type LucideIcon } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import FadeUp from '@/components/animations/FadeUp'
-import RevealLine from '@/components/animations/RevealLine'
 
 interface IntegrationGroup {
   label: string
@@ -11,14 +10,10 @@ interface IntegrationGroup {
   items: string[]
 }
 
-// Every integration below is verified present in the product source
-// [inspected 2026-07-24]. Nothing aspirational.
+// The integrations the owner confirmed (2026-10-18): channel manager and
+// calendar sync, payments (Stripe, Tap) and messaging. Booking sites such as
+// Airbnb are not direct integrations, so they are not listed.
 const INTEGRATIONS: IntegrationGroup[] = [
-  {
-    label: 'Booking channels',
-    labelAr: 'قنوات الحجز',
-    items: ['Airbnb', 'Booking.com', 'Expedia', 'VRBO', '+ 400 more'],
-  },
   {
     label: 'Channel manager & calendars',
     labelAr: 'مدير القنوات والتقاويم',
@@ -27,7 +22,7 @@ const INTEGRATIONS: IntegrationGroup[] = [
   {
     label: 'Payments',
     labelAr: 'المدفوعات',
-    items: ['Stripe', 'Checkout.com'],
+    items: ['Stripe', 'Tap Payments'],
   },
   {
     label: 'Communications',
@@ -100,7 +95,7 @@ export default function Trust() {
   const t = CONTENT[language]
 
   return (
-    <section className="py-20" id="trust" style={{ background: 'var(--bg-alt)' }}>
+    <section className="section-y" id="trust" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
       <div className="container mx-auto px-4">
         <FadeUp>
           <div className="text-center mb-12">
@@ -120,28 +115,19 @@ export default function Trust() {
           </div>
         </FadeUp>
 
-        {/* Integrations */}
+        {/* Integrations and trust points in one panel. */}
         <FadeUp delay={0.1}>
-          <div
-            className="max-w-5xl mx-auto rounded-2xl p-6 sm:p-8"
-            style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
-          >
-            <p className="text-center text-xs font-semibold tracking-widest uppercase mb-6" style={{ color: 'var(--text-faint)' }}>
-              {t.integrationsHeading}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="max-w-6xl mx-auto rounded-[var(--radius-lg)] p-5 sm:p-8" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+            <p className="text-center text-xs font-semibold tracking-widest uppercase mb-6 text-faint">{t.integrationsHeading}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8 sm:mb-10">
               {INTEGRATIONS.map((group) => (
-                <div key={group.label} className="flex flex-col gap-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-wide" style={{ color: 'var(--accent-hi)', letterSpacing: '0.06em' }}>
+                <div key={group.label} className="flex flex-col items-center gap-3 text-center">
+                  <p className="text-[11px] font-semibold uppercase" style={{ color: 'var(--accent-hi)', letterSpacing: '0.06em' }}>
                     {language === 'ar' ? group.labelAr : group.label}
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap justify-center gap-2">
                     {group.items.map((item) => (
-                      <span
-                        key={item}
-                        className="inline-flex items-center px-2.5 py-1 rounded-lg text-[13px] font-medium"
-                        style={{ background: 'var(--surface-hi)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}
-                      >
+                      <span key={item} className="inline-flex items-center px-2.5 py-1 rounded-lg text-[13px] font-medium text-muted" style={{ background: 'var(--surface-hi)', border: '1px solid var(--border)' }}>
                         {item}
                       </span>
                     ))}
@@ -149,32 +135,27 @@ export default function Trust() {
                 </div>
               ))}
             </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {POINTS.map((p) => {
+                const Icon = p.icon
+                return (
+                  <div key={p.title} className="flex flex-col gap-3 rounded-[var(--radius-md)] p-5 h-full" style={{ background: 'var(--surface-hi)' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}>
+                      <Icon size={20} color="var(--accent-hi)" strokeWidth={1.75} />
+                    </div>
+                    <h3 className="text-strong font-semibold leading-snug" style={{ fontSize: 15 }}>
+                      {language === 'ar' ? p.titleAr : p.title}
+                    </h3>
+                    <p className="leading-relaxed text-muted" style={{ fontSize: 13 }}>
+                      {language === 'ar' ? p.descAr : p.desc}
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </FadeUp>
-
-        <RevealLine className="w-full max-w-5xl mx-auto my-10" delay={0.1} />
-
-        {/* Trust points */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
-          {POINTS.map((p, i) => {
-            const Icon = p.icon
-            return (
-              <FadeUp key={p.title} delay={0.1 + i * 0.07}>
-                <div className="flex flex-col gap-3 rounded-2xl p-5 h-full" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}>
-                    <Icon size={20} color="var(--accent-hi)" strokeWidth={1.75} />
-                  </div>
-                  <h3 className="text-strong font-semibold leading-snug" style={{ fontSize: 15 }}>
-                    {language === 'ar' ? p.titleAr : p.title}
-                  </h3>
-                  <p className="leading-relaxed" style={{ fontSize: 13, color: 'var(--text-muted)' }}>
-                    {language === 'ar' ? p.descAr : p.desc}
-                  </p>
-                </div>
-              </FadeUp>
-            )
-          })}
-        </div>
       </div>
     </section>
   )

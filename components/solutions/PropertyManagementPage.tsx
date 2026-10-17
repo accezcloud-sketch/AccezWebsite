@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { LayoutDashboard, TrendingUp, Hotel, type LucideIcon } from 'lucide-react'
 import HeroLayout, { HeroActions } from '@/components/hero/HeroLayout'
 import RotatingHeadline from '@/components/hero/RotatingHeadline'
-import ChannelStrip from '@/components/hero/ChannelStrip'
 import PmDashboardMock from '@/components/visuals/PmDashboardMock'
 import ProductScope from '@/components/ProductScope'
 import Capabilities from '@/components/Capabilities'
@@ -126,7 +125,6 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
             secondary={{ label: m.ctaSecondary, href: PORTAL_SIGN_UP, external: true }}
           />
         }
-        footer={<ChannelStrip locale={locale} />}
         visual={<PmDashboardMock />}
       />
       <OperationAreas locale={locale} />
