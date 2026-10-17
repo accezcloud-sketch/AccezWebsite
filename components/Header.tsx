@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -12,12 +13,15 @@ import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 import NavDropdown from '@/components/nav/NavDropdown'
 import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
+import { activeNavSection, isCurrentPath, type NavSectionKey } from '@/lib/nav/activeSection'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [atTop, setAtTop] = useState(true)
   const { language, setLanguage, t } = useLanguage()
+  const pathname = usePathname() ?? '/'
+  const section = activeNavSection(pathname)
 
   const { scrollYProgress } = useScroll()
   const scrollProgress = useSpring(scrollYProgress, { stiffness: 200, damping: 40, restDelta: 0.001 })
@@ -65,6 +69,16 @@ export default function Header() {
     'text-sm font-medium transition-colors duration-200 hover:text-strong',
     scrolled ? 'text-soft' : 'text-muted',
   ].join(' ')
+  // Where the visitor is: the menu item of the current page is marked, and so
+  // is the current page inside an open menu.
+  const navClass = (key: NavSectionKey) => `${linkClass}${section === key ? ' nav-active' : ''}`
+  const markCurrent = (sections: NavSection[]): NavSection[] =>
+    sections.map((s) => ({ ...s, links: s.links.map((l) => ({ ...l, current: !l.external && isCurrentPath(l.href, pathname) })) }))
+  const topLinks: { key: NavSectionKey; label: string; to: string }[] = [
+    { key: 'blog', label: t.header.blog, to: '/blog' },
+    { key: 'support', label: t.header.support, to: '/support' },
+    { key: 'about', label: t.header.about, to: '/about' },
+  ]
   const closeMobile = () => setIsMobileMenuOpen(false)
 
   return (
@@ -91,12 +105,14 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <NavDropdown label={t.header.product} sections={productSections} triggerClassName={linkClass} />
-            <NavDropdown label={t.header.pricing} sections={pricingSections} triggerClassName={linkClass} />
-            <a href={href('/blog')} className={linkClass}>{t.header.blog}</a>
-            <a href={href('/support')} className={linkClass}>{t.header.support}</a>
-            <a href={href('/about')} className={linkClass}>{t.header.about}</a>
-            <NavDropdown label={ar ? 'الموارد' : 'Resources'} sections={resourcesSections} align="end" triggerClassName={linkClass} />
+            <NavDropdown label={t.header.product} sections={markCurrent(productSections)} triggerClassName={linkClass} active={section === 'solutions'} />
+            <NavDropdown label={t.header.pricing} sections={markCurrent(pricingSections)} triggerClassName={linkClass} active={section === 'pricing'} />
+            {topLinks.map((item) => (
+              <a key={item.key} href={href(item.to)} className={navClass(item.key)} aria-current={isCurrentPath(href(item.to), pathname) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            ))}
+            <NavDropdown label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} align="end" triggerClassName={linkClass} active={section === 'resources'} />
           </nav>
 
           {/* Right side: theme, language, sign in, primary action */}
@@ -150,18 +166,20 @@ export default function Header() {
               style={{ borderBottom: '1px solid var(--border)' }}
             >
               <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="flex flex-col gap-1 py-4 px-2">
-                <MobileNavGroup label={t.header.product} sections={productSections} onNavigate={closeMobile} />
-                <MobileNavGroup label={t.header.pricing} sections={pricingSections} onNavigate={closeMobile} />
-                {[
-                  { label: t.header.blog, to: '/blog' },
-                  { label: t.header.support, to: '/support' },
-                  { label: t.header.about, to: '/about' },
-                ].map((item) => (
-                  <a key={item.to} href={href(item.to)} onClick={closeMobile} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2.5">
+                <MobileNavGroup label={t.header.product} sections={markCurrent(productSections)} onNavigate={closeMobile} />
+                <MobileNavGroup label={t.header.pricing} sections={markCurrent(pricingSections)} onNavigate={closeMobile} />
+                {topLinks.map((item) => (
+                  <a
+                    key={item.key}
+                    href={href(item.to)}
+                    onClick={closeMobile}
+                    aria-current={isCurrentPath(href(item.to), pathname) ? 'page' : undefined}
+                    className={`hover:text-strong font-medium transition-colors duration-200 py-2.5 ${section === item.key ? 'text-strong' : 'text-soft'}`}
+                  >
                     {item.label}
                   </a>
                 ))}
-                <MobileNavGroup label={ar ? 'الموارد' : 'Resources'} sections={resourcesSections} onNavigate={closeMobile} />
+                <MobileNavGroup label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} onNavigate={closeMobile} />
 
                 {/* Sign in: flat, since a nested dropdown in a drawer is an extra tap. */}
                 <div className="mt-3 pt-3 flex flex-col gap-1" style={{ borderTop: '1px solid var(--border)' }}>

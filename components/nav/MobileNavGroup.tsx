@@ -47,7 +47,8 @@ export default function MobileNavGroup({ label, sections, onNavigate }: { label:
                     href={link.href}
                     {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     onClick={onNavigate}
-                    className="block text-muted hover:text-strong text-sm py-2 transition-colors"
+                    aria-current={link.current ? 'page' : undefined}
+                    className={`block text-sm py-2 transition-colors hover:text-strong ${link.current ? 'text-strong font-semibold' : 'text-muted'}`}
                   >
                     {link.label}
                   </a>

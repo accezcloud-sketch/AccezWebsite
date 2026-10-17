@@ -140,6 +140,13 @@
   backdrop-filter: blur(20px) saturate(160%);
 }
 .nav-item { transition: background-color .15s ease; }
+/* The menu item of the page being viewed, and that page inside a menu. */
+.nav-active { color: var(--text) !important; position: relative; }
+.nav-active::after {
+  content: ''; position: absolute; inset-inline: 0; bottom: -8px; height: 2px;
+  border-radius: 2px; background: var(--accent);
+}
+.nav-item.is-current { background: var(--accent-dim); }
 
 /* Glass, used sparingly: the header bar once the page scrolls, the menus,
    and the hero's solution doors. Content surfaces stay solid so body text

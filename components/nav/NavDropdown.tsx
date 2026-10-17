@@ -13,6 +13,8 @@ interface NavDropdownProps {
   /** Which edge of the trigger the panel lines up with. */
   align?: 'start' | 'end'
   triggerClassName: string
+  /** The page being viewed belongs to this menu. */
+  active?: boolean
 }
 
 /**
@@ -24,7 +26,7 @@ interface NavDropdownProps {
  * returns focus to the trigger; clicking outside closes it.
  * Sections stack in one column, and the panel is as wide as its text.
  */
-export default function NavDropdown({ label, sections, align = 'start', triggerClassName }: NavDropdownProps) {
+export default function NavDropdown({ label, sections, align = 'start', triggerClassName, active = false }: NavDropdownProps) {
   const [open, setOpen] = useState(false)
   const panelId = useId()
   const rootRef = useRef<HTMLDivElement>(null)
@@ -78,7 +80,7 @@ export default function NavDropdown({ label, sections, align = 'start', triggerC
       <button
         ref={triggerRef}
         type="button"
-        className={`${triggerClassName} inline-flex items-center gap-1`}
+        className={`${triggerClassName} inline-flex items-center gap-1${active ? ' nav-active' : ''}`}
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => {
@@ -117,7 +119,8 @@ export default function NavDropdown({ label, sections, align = 'start', triggerC
                       href={link.href}
                       {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       onClick={() => setOpen(false)}
-                      className="nav-item block rounded-xl px-3 py-2.5"
+                      aria-current={link.current ? 'page' : undefined}
+                      className={`nav-item block rounded-xl px-3 py-2.5${link.current ? ' is-current' : ''}`}
                     >
                       <span className="block text-sm font-semibold text-strong">{link.label}</span>
                       {link.description && <span className="block text-xs mt-0.5 text-faint">{link.description}</span>}
