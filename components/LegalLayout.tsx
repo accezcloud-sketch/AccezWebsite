@@ -270,7 +270,10 @@ export function LegalCallout({
   )
 }
 
-/** Responsive table wrapper — legal docs carry fee and refund tables. */
+/**
+ * A fee or refund table. On phones each row becomes a card, with the column
+ * name above each value, instead of a table that runs off the screen.
+ */
 export function LegalTable({
   head,
   rows,
@@ -283,10 +286,10 @@ export function LegalTable({
   return (
     <figure className="my-6">
       <div
-        className="overflow-x-auto rounded-xl"
+        className="legal-table-wrap overflow-x-auto rounded-xl"
         style={{ border: '1px solid var(--border)', background: 'var(--surface)' }}
       >
-        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 460 }}>
+        <table className="legal-table w-full text-sm" style={{ borderCollapse: 'collapse' }}>
           <thead>
             <tr>
               {head.map((h) => (
@@ -309,6 +312,7 @@ export function LegalTable({
                 {r.map((c, j) => (
                   <td
                     key={j}
+                    data-label={head[j]}
                     className="px-4 py-3 align-top"
                     style={{
                       color: 'var(--text-muted)',

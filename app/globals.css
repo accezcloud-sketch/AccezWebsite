@@ -448,3 +448,18 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 }
 .legal-doc .legal-only-labelled > h3 { margin-top: 0; }
 .legal-doc li > .legal-only-label { color: var(--text); }
+
+/* Legal tables on phones: one card per row, each value under its column name. */
+@media (min-width: 640px) { .legal-table { min-width: 460px; } }
+@media (max-width: 639px) {
+  .legal-table-wrap { border: 0 !important; background: none !important; overflow: visible; }
+  .legal-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .legal-table, .legal-table tbody, .legal-table tr, .legal-table td { display: block; width: 100%; }
+  .legal-table tr { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 6px 0; }
+  .legal-table tr + tr { margin-top: 10px; }
+  .legal-table td { border: 0 !important; padding: 6px 14px !important; }
+  .legal-table td::before {
+    content: attr(data-label); display: block; margin-bottom: 2px;
+    font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-faint);
+  }
+}
