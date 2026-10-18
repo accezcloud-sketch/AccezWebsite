@@ -26,9 +26,9 @@ const FAQS: FaqItem[] = [
     question: 'What is Accez.cloud and how does it work?',
     questionAr: 'ما هو Accez.cloud وكيف يعمل؟',
     answer:
-      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and hotel operators: reservations synced across 400+ channels (Airbnb, Booking.com, Expedia), rent, work orders, owners and payouts, and sales. The service provider marketplace lets salons, spas, fitness coaches, photographers and home services list their business and take bookings from their own clients and new customers. The two solutions are separate account types.',
+      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and hotel operators: reservations synced with Airbnb, Booking.com and Expedia, rent, work orders, owners and payouts, and sales. The service provider marketplace lets salons, spas, fitness coaches, photographers and home services list their business and take bookings from their own clients and new customers. The two solutions are separate account types.',
     answerAr:
-      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الفنادق: حجوزات متزامنة عبر أكثر من 400 قناة (Airbnb، Booking.com، Expedia)، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للصالونات والمنتجعات الصحية ومدربي اللياقة والمصورين والخدمات المنزلية إدراج نشاطهم واستقبال الحجوزات من عملائهم ومن عملاء جدد. والحلّان نوعا حساب منفصلان.',
+      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الفنادق: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للصالونات والمنتجعات الصحية ومدربي اللياقة والمصورين والخدمات المنزلية إدراج نشاطهم واستقبال الحجوزات من عملائهم ومن عملاء جدد. والحلّان نوعا حساب منفصلان.',
   },
   {
     category: 'pricingBilling',
@@ -44,9 +44,9 @@ const FAQS: FaqItem[] = [
     question: 'Which booking platforms does Accez.cloud integrate with?',
     questionAr: 'ما هي منصات الحجز التي يتكامل معها Accez.cloud؟',
     answer:
-      'Accez.cloud integrates with 400+ channels including major platforms like Airbnb, Booking.com, Expedia, VRBO, HomeAway, and many more. This allows you to manage all your bookings from a single centralized dashboard.',
+      'Accez.cloud connects with Airbnb, Booking.com and Expedia, and syncs calendars through the RoomCloud channel manager and iCal. You manage all your bookings from one dashboard.',
     answerAr:
-      'يتكامل Accez.cloud مع أكثر من 400 قناة بما في ذلك المنصات الرئيسية مثل Airbnb و Booking.com و Expedia و VRBO و HomeAway والعديد غيرها. هذا يتيح لك إدارة جميع حجوزاتك من لوحة تحكم مركزية واحدة.',
+      'يتكامل Accez.cloud مع Airbnb وBooking.com وExpedia، ويزامن التقاويم عبر مدير القنوات RoomCloud وiCal. تدير جميع حجوزاتك من لوحة تحكم واحدة.',
   },
   {
     category: 'serviceMarketplace',

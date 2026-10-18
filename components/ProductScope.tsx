@@ -43,7 +43,7 @@ export const PILLARS: Pillar[] = [
     heading: 'Lodging & bookings',
     headingAr: 'الإقامة والحجوزات',
     modules: [
-      { icon: CalendarCheck, title: 'Reservations & channels', titleAr: 'الحجوزات والقنوات', desc: 'One booking calendar synced across 400+ channels.', descAr: 'تقويم حجوزات واحد متزامن عبر أكثر من 400 قناة.' },
+      { icon: CalendarCheck, title: 'Reservations & channels', titleAr: 'الحجوزات والقنوات', desc: 'One booking calendar synced with Airbnb, Booking.com and Expedia.', descAr: 'تقويم حجوزات واحد متزامن مع Airbnb وBooking.com وExpedia.' },
       { icon: Hotel, title: 'Hotels & serviced apartments', titleAr: 'الفنادق والشقق المخدومة', desc: 'Room types, rates and a built-in channel manager.', descAr: 'أنواع الغرف والأسعار ومدير قنوات مدمج.', href: '/hotels' },
       { icon: Wrench, title: 'Work orders', titleAr: 'أوامر العمل', desc: 'Track maintenance work orders from request to done.', descAr: 'تتبّع أوامر صيانة العمل من الطلب إلى الإنجاز.' },
     ],

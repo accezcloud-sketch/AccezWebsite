@@ -147,8 +147,8 @@ export default function Capabilities() {
       ),
       title: 'Channel Configuration',
       titleAr: 'تكوين القنوات',
-      description: 'Connect and sync with 400+ booking channels including Airbnb, Booking.com, Expedia, and VRBO. Manage availability, rates, and reservations from a single dashboard with real-time synchronization.',
-      descriptionAr: 'الاتصال والمزامنة مع أكثر من 400 قناة حجز بما في ذلك Airbnb و Booking.com و Expedia و VRBO. إدارة التوافر والأسعار والحجوزات من لوحة تحكم واحدة مع المزامنة في الوقت الفعلي.',
+      description: 'Connect and sync with Airbnb, Booking.com and Expedia, through the RoomCloud channel manager and iCal. Manage availability, rates, and reservations from a single dashboard with real-time synchronization.',
+      descriptionAr: 'الاتصال والمزامنة مع Airbnb وBooking.com وExpedia عبر مدير القنوات RoomCloud وiCal. إدارة التوافر والأسعار والحجوزات من لوحة تحكم واحدة مع المزامنة في الوقت الفعلي.',
       image: '/capabilities/channels.webp',
     },
     {

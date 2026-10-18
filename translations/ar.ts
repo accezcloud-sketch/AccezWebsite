@@ -115,7 +115,6 @@ export const ar = {
     upTo3Channels: 'حتى 3 قنوات تكوين',
     propertyOwnerPortal: 'بوابة مالك العقار',
     customBrandedDomain: 'نطاق مخصص بعلامتك التجارية',
-    whiteLabelMobileApp: 'حتى 400 قناة تكوين',
     dedicatedAccountManager: 'مدير حساب مخصص',
     priority247Support: 'دعم على مدار الساعة',
     apiAccess: 'الوصول إلى API',

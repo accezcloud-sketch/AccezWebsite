@@ -10,10 +10,15 @@ interface IntegrationGroup {
   items: string[]
 }
 
-// The integrations the owner confirmed (2026-10-18): channel manager and
-// calendar sync, payments (Stripe, Tap) and messaging. Booking sites such as
-// Airbnb are not direct integrations, so they are not listed.
+// The integrations the owner confirmed (2026-10-18): Airbnb, Booking.com and
+// Expedia; RoomCloud and iCal; Stripe and Tap; WhatsApp and Twilio. Nothing
+// else (no VRBO, no "400+ channels").
 const INTEGRATIONS: IntegrationGroup[] = [
+  {
+    label: 'Booking channels',
+    labelAr: 'قنوات الحجز',
+    items: ['Airbnb', 'Booking.com', 'Expedia'],
+  },
   {
     label: 'Channel manager & calendars',
     labelAr: 'مدير القنوات والتقاويم',
@@ -119,7 +124,7 @@ export default function Trust() {
         <FadeUp delay={0.1}>
           <div className="max-w-6xl mx-auto rounded-[var(--radius-lg)] p-5 sm:p-8" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
             <p className="text-center text-xs font-semibold tracking-widest uppercase mb-6 text-faint">{t.integrationsHeading}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8 sm:mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 sm:mb-10">
               {INTEGRATIONS.map((group) => (
                 <div key={group.label} className="flex flex-col items-center gap-3 text-center">
                   <p className="text-[11px] font-semibold uppercase" style={{ color: 'var(--accent-hi)', letterSpacing: '0.06em' }}>

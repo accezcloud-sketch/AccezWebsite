@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { localeHref } from '@/lib/i18n'
 import FadeUp from '@/components/animations/FadeUp'
 import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 
@@ -134,11 +135,10 @@ const PLANS: PlanConfig[] = [
     glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'contactSales',
-    ctaHref: '#contact',
+    ctaHref: '/#contact',
     features: [
       { textKey: 'everythingInProfessional' },
       { textKey: 'customBrandedDomain' },
-      { textKey: 'whiteLabelMobileApp' },
       { textKey: 'dedicatedAccountManager' },
       { textKey: 'priority247Support' },
       { textKey: 'apiAccess' },
@@ -403,7 +403,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
 
                     {/* CTA */}
                     <a
-                      href={plan.ctaHref}
+                      href={plan.ctaHref.startsWith('/') ? localeHref(plan.ctaHref, language) : plan.ctaHref}
                       {...(plan.ctaHref.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
                       style={

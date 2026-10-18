@@ -44,8 +44,8 @@ const PARTIES: Party[] = [
     icon: Home,
     title: 'Vacation rentals',
     titleAr: 'الإيجارات السياحية',
-    blurb: 'Sync 400+ channels, fill every night',
-    blurbAr: 'مزامنة أكثر من 400 قناة وملء كل ليلة',
+    blurb: 'Sync Airbnb, Booking.com & Expedia',
+    blurbAr: 'مزامنة Airbnb وBooking.com وExpedia',
     side: 'property',
   },
   {

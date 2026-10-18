@@ -19,7 +19,7 @@ export const SOLUTION_SHOWCASE: Record<string, SolutionShowcase> = {
     Visual: PmModulesVisual,
     title: { en: 'Run every property from one place', ar: 'أدر كل عقار من مكان واحد' },
     points: [
-      { en: 'Reservations with a channel manager and calendar sync', ar: 'حجوزات مع مدير قنوات ومزامنة التقويم' },
+      { en: 'Reservations synced with Airbnb, Booking.com and Expedia', ar: 'حجوزات متزامنة مع Airbnb وBooking.com وExpedia' },
       { en: 'Work orders, units and leases in one system', ar: 'أوامر العمل والوحدات والعقود في نظام واحد' },
       { en: 'Owner statements and payouts', ar: 'كشوف الملاك ومدفوعاتهم' },
       { en: 'Sales pipelines, contracts and e-signing', ar: 'مسارات المبيعات والعقود والتوقيع الإلكتروني' },

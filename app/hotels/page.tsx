@@ -7,11 +7,11 @@ import SolutionPage from '@/components/SolutionPage'
 
 export const metadata: Metadata = {
   title: 'Hotels & Serviced Apartments',
-  description: 'Room types, rates and reservations synced across 400+ channels through RoomCloud, with guest policies, reservation add-ons and check-in built in.',
+  description: 'Room types, rates and reservations synced with Airbnb, Booking.com and Expedia through RoomCloud, with guest policies, reservation add-ons and check-in built in.',
   alternates: alternatesFor('hotels', 'en'),
   openGraph: {
     title: 'Hotels & Serviced Apartments',
-    description: 'Room types, rates and reservations synced across 400+ channels through RoomCloud, with guest policies, reservation add-ons and check-in built in.',
+    description: 'Room types, rates and reservations synced with Airbnb, Booking.com and Expedia through RoomCloud, with guest policies, reservation add-ons and check-in built in.',
     url: 'https://www.accez.cloud/hotels',
     type: 'website',
     images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: 'Hotels & Serviced Apartments | Accez' }],

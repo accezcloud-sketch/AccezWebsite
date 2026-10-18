@@ -12,12 +12,12 @@ import { alternatesFor, localeUrl } from '@/lib/i18n'
 export const metadata: Metadata = {
   title: 'الفنادق والشقق المخدومة',
   description:
-    'أنواع الغرف والأسعار والحجوزات متزامنة عبر أكثر من 400 قناة، مع سياسات النزلاء والإضافات وتسجيل الوصول.',
+    'أنواع الغرف والأسعار والحجوزات متزامنة مع Airbnb وBooking.com وExpedia عبر RoomCloud، مع سياسات النزلاء والإضافات وتسجيل الوصول.',
   alternates: alternatesFor('hotels', 'ar'),
   openGraph: {
     title: 'الفنادق والشقق المخدومة',
     description:
-      'أنواع الغرف والأسعار والحجوزات متزامنة عبر أكثر من 400 قناة، مع سياسات النزلاء والإضافات وتسجيل الوصول.',
+      'أنواع الغرف والأسعار والحجوزات متزامنة مع Airbnb وBooking.com وExpedia عبر RoomCloud، مع سياسات النزلاء والإضافات وتسجيل الوصول.',
     url: localeUrl('hotels', 'ar'),
     type: 'website',
     locale: 'ar_SA',

@@ -115,7 +115,6 @@ export const en = {
     upTo3Channels: 'Up to 3 channels configuration',
     propertyOwnerPortal: 'Property Owner Portal',
     customBrandedDomain: 'Custom Branded Domain',
-    whiteLabelMobileApp: 'Upto 400 channels configuration',
     dedicatedAccountManager: 'Dedicated Account Manager',
     priority247Support: 'Priority 24/7 Support',
     apiAccess: 'API Access',

@@ -94,8 +94,8 @@ export const SOLUTIONS: Record<SolutionSlug, Solution> = {
     eyebrow: 'Hotels & Serviced Apartments', eyebrowAr: 'الفنادق والشقق المخدومة',
     title: 'Run rooms and stays', titleAr: 'أدر الغرف والإقامات',
     accent: 'across every channel', accentAr: 'عبر كل قناة',
-    subtitle: 'Room types, rates and reservations synced across 400+ channels through RoomCloud, with guest policies, add-ons and check-in built in.',
-    subtitleAr: 'أنواع الغرف والأسعار والحجوزات متزامنة عبر أكثر من 400 قناة من خلال RoomCloud، مع سياسات النزلاء والإضافات وتسجيل الوصول مدمجة.',
+    subtitle: 'Room types, rates and reservations synced with Airbnb, Booking.com and Expedia through RoomCloud, with guest policies, add-ons and check-in built in.',
+    subtitleAr: 'أنواع الغرف والأسعار والحجوزات متزامنة مع Airbnb وBooking.com وExpedia من خلال RoomCloud، مع سياسات النزلاء والإضافات وتسجيل الوصول مدمجة.',
     heroPoints: [
       { en: 'Room types mapped to your units', ar: 'أنواع غرف مرتبطة بوحداتك' },
       { en: 'RoomCloud channel manager, synced', ar: 'مدير قنوات RoomCloud، متزامن' },
@@ -103,7 +103,7 @@ export const SOLUTIONS: Record<SolutionSlug, Solution> = {
     ],
     features: [
       { icon: Hotel, title: 'Room types', titleAr: 'أنواع الغرف', desc: 'Define room types and assign units, with rates per type.', descAr: 'حدّد أنواع الغرف وأسند الوحدات، بأسعار لكل نوع.' },
-      { icon: RefreshCw, title: 'Channel manager', titleAr: 'مدير القنوات', desc: 'Connect RoomCloud to sync availability, rates and reservations across 400+ channels.', descAr: 'اربط RoomCloud لمزامنة التوافر والأسعار والحجوزات عبر أكثر من 400 قناة.' },
+      { icon: RefreshCw, title: 'Channel manager', titleAr: 'مدير القنوات', desc: 'Connect RoomCloud to sync availability, rates and reservations with Airbnb, Booking.com and Expedia.', descAr: 'اربط RoomCloud لمزامنة التوافر والأسعار والحجوزات مع Airbnb وBooking.com وExpedia.' },
       { icon: Sparkles, title: 'Add-ons & upsells', titleAr: 'الإضافات والعروض', desc: 'Offer extras at booking, approve them in a queue, and grow revenue per stay.', descAr: 'قدّم إضافات عند الحجز، ووافق عليها في قائمة، وزد الإيراد لكل إقامة.' },
       { icon: KeyRound, title: 'Policies & check-in', titleAr: 'السياسات وتسجيل الوصول', desc: 'Set guest policies and run check-in and check-out with stats.', descAr: 'اضبط سياسات النزلاء وأدِر الدخول والخروج مع الإحصاءات.' },
     ],

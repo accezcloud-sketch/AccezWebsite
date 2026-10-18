@@ -50,7 +50,7 @@ export function softwareApplicationSchema(locale: Locale, description: string) {
       url: localeUrl('pricing', locale),
     },
     featureList: [
-      'Reservations & 400+ Channel Sync',
+      'Reservations & channel sync (Airbnb, Booking.com, Expedia)',
       'Rental & Sale Properties',
       'Owner Management & Payouts',
       'Sales & Developer Projects',
