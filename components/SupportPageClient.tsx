@@ -91,7 +91,7 @@ export default function SupportPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-10">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
+              <span className="ui-chip mb-5">
                 {t.eyebrow}
               </span>
               <h1 className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
@@ -100,7 +100,7 @@ export default function SupportPage() {
               <p className="leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
             </div>
 
-            <div className="rounded-2xl p-6 sm:p-8" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+            <div className="ui-card rounded-2xl p-6 sm:p-8">
               <form
                 action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D41000002kA0p"
                 method="POST"
@@ -139,7 +139,7 @@ export default function SupportPage() {
                   <div className="g-recaptcha" data-sitekey="6LdtnJAqAAAAAJe1H98R4i-d0Ge3hiGZUTWS3btY" />
                 </div>
 
-                <button type="submit" className="w-full py-3.5 text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5" style={{ background: 'var(--accent-solid)' }}>
+                <button type="submit" className="ui-btn ui-btn-primary w-full">
                   {t.submit}
                 </button>
               </form>

@@ -1,4 +1,3 @@
-import type { CSSProperties, ReactNode } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Ecosystem from '@/components/Ecosystem'
@@ -9,21 +8,8 @@ import Footer from '@/components/Footer'
 import BlogStrip from '@/components/blog/BlogStrip'
 import PricingOverview from '@/components/pricing/PricingOverview'
 import SolutionsShowcase from '@/components/home/SolutionsShowcase'
+import Band from '@/components/ui/Band'
 import type { Locale } from '@/lib/i18n'
-
-/**
- * Sets the background of the section inside it. Homepage sections alternate
- * between the base and the alternate shade, so each one reads as its own
- * block; the sections themselves keep their usual background elsewhere.
- */
-function Band({ shade, children }: { shade: 'base' | 'alt'; children: ReactNode }) {
-  const style = {
-    '--section-bg': shade === 'alt' ? 'var(--bg-alt)' : 'var(--bg)',
-    // Shades already separate the sections; no extra rule between them.
-    '--section-border': 'transparent',
-  } as CSSProperties
-  return <div style={style}>{children}</div>
-}
 
 /**
  * The homepage, shared by / and /ar/.

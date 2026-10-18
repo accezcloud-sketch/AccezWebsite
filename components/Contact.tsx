@@ -5,7 +5,6 @@ import Script from 'next/script'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { thankYouUrl } from '@/lib/analytics/conversions'
 import FadeUp from '@/components/animations/FadeUp'
-import RevealLine from '@/components/animations/RevealLine'
 
 export default function Contact() {
   const { t, isRTL, language } = useLanguage()
@@ -45,26 +44,7 @@ export default function Contact() {
           <div className="max-w-6xl mx-auto">
             <FadeUp>
               <div className="text-center mb-10">
-                <div className="flex items-center justify-center gap-2 mb-4">
-                  <div
-                    className="h-px w-8"
-                    style={{ background: isRTL
-                      ? 'linear-gradient(to left, transparent, var(--accent))'
-                      : 'linear-gradient(to right, transparent, var(--accent))' }}
-                  />
-                  <span
-                    className="text-xs font-semibold tracking-widest uppercase"
-                    style={{ color: 'var(--accent-hi)' }}
-                  >
-                    {tc.eyebrow}
-                  </span>
-                  <div
-                    className="h-px w-8"
-                    style={{ background: isRTL
-                      ? 'linear-gradient(to right, transparent, var(--accent))'
-                      : 'linear-gradient(to left, transparent, var(--accent))' }}
-                  />
-                </div>
+                <div className="flex justify-center mb-4"><span className="ui-chip">{tc.eyebrow}</span></div>
 
                 <h2
                   className="text-strong font-bold text-center leading-tight tracking-tight mb-4"
@@ -96,14 +76,12 @@ export default function Contact() {
               </div>
             </FadeUp>
 
-            <RevealLine className="w-full mb-10" delay={0.05} />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               {/* Left side - one cohesive contact panel */}
               <FadeUp className="h-full">
                 <div
-                  className="rounded-2xl p-6 sm:p-8 h-full flex flex-col"
-                  style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))' }}
+                  className="ui-card p-6 sm:p-8 h-full flex flex-col"
                 >
                   <h3 className="text-strong font-semibold mb-1" style={{ fontSize: 20, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif' }}>
                     {tc.title}
@@ -153,12 +131,7 @@ export default function Contact() {
               {/* Right side - Salesforce Web-to-Lead Form */}
               <FadeUp delay={0.15}>
                 <div
-                  style={{
-                    background: 'var(--surface)',
-                    border: '1px solid var(--border)',
-                    boxShadow: '0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
-                  }}
-                  className="rounded-2xl p-6 sm:p-8"
+                  className="ui-card p-6 sm:p-8"
                 >
                   <form
                     action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D41000002kA0p"
@@ -292,11 +265,7 @@ export default function Contact() {
                     <button
                       type="submit"
                       name="submit"
-                      className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                      style={{
-                        background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
-                        boxShadow: '0 4px 20px rgba(49, 159, 212,0.35)',
-                      }}
+                      className="ui-btn ui-btn-primary w-full"
                     >
                       {tc.sendMessage}
                       <svg

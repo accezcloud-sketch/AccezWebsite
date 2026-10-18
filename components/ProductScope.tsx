@@ -93,7 +93,7 @@ export default function ProductScope() {
   const t = CONTENT[language]
 
   return (
-    <section className="py-20" id="platform" style={{ background: 'var(--bg)' }}>
+    <section className="py-20" id="platform" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <style>{`
         .scope-card { transition: transform .3s cubic-bezier(.23,1,.32,1), border-color .3s ease, background .3s ease; }
         .scope-card:hover { transform: translateY(-3px); border-color: var(--accent-line); background: var(--surface-hi); }
@@ -103,11 +103,7 @@ export default function ProductScope() {
       <div className="container mx-auto px-4">
         <FadeUp>
           <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to left, transparent, var(--accent))' : 'linear-gradient(to right, transparent, var(--accent))' }} />
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--accent-hi)' }}>{t.eyebrow}</span>
-              <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to right, transparent, var(--accent))' : 'linear-gradient(to left, transparent, var(--accent))' }} />
-            </div>
+            <div className="flex justify-center mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
             <h2
               className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
@@ -123,8 +119,7 @@ export default function ProductScope() {
           {PILLARS.map((pillar, pi) => (
             <FadeUp key={pillar.key} delay={0.1 + pi * 0.08}>
               <div
-                className="rounded-2xl p-5 h-full"
-                style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)' }}
+                className="ui-card rounded-2xl p-5 h-full"
               >
                 <div className="flex items-center gap-2.5 mb-4 px-1">
                   <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--accent-solid)' }} />

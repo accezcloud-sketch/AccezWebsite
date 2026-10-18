@@ -53,6 +53,14 @@
   --media-bg:    linear-gradient(135deg, #0f172a, #1e293b); /* behind screenshots */
   --bg-deep:     #060A14;                   /* footer */
 
+  /* Frosted glass, the one surface style of the site (see "Design system"). */
+  --card-bg:        rgba(255, 255, 255, 0.045);
+  --card-border:    rgba(255, 255, 255, 0.10);
+  --card-ring:      transparent;                 /* outer hairline, light theme only */
+  --card-highlight: rgba(255, 255, 255, 0.07);   /* inner top edge catching the light */
+  --ambient-1:      rgba(49, 159, 212, 0.10);    /* soft light behind the glass */
+  --ambient-2:      rgba(127, 205, 239, 0.05);
+
   /* Lines */
   --border:      rgba(255, 255, 255, 0.08);
   --border-hi:   rgba(255, 255, 255, 0.14);
@@ -103,6 +111,13 @@
   --glass-border: rgba(16, 38, 52, 0.08);
   --media-bg:    linear-gradient(135deg, #E9EFF5, #F6F8FB);
   --bg-deep:     #E8EEF4;
+
+  --card-bg:        rgba(255, 255, 255, 0.72);
+  --card-border:    rgba(255, 255, 255, 0.95);
+  --card-ring:      rgba(16, 38, 52, 0.07);
+  --card-highlight: rgba(255, 255, 255, 1);
+  --ambient-1:      rgba(49, 159, 212, 0.12);
+  --ambient-2:      rgba(127, 205, 239, 0.16);
 
   --border:      rgba(16, 38, 52, 0.10);
   --border-hi:   rgba(16, 38, 52, 0.18);
@@ -167,9 +182,9 @@
 /* A solution card: the same surface everywhere a solution is presented
    (pricing hub, homepage). Lifts and takes the accent border on hover/focus. */
 .solution-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 30px rgb(var(--shadow-rgb) / calc(0.25 * var(--shadow-k)));
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.25 * var(--shadow-k)));
   transition: transform .25s cubic-bezier(.23,1,.32,1), border-color .25s ease, box-shadow .25s ease;
 }
 .solution-card:hover, .solution-card:focus-visible {
@@ -541,4 +556,86 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
     content: attr(data-label); display: block; margin-bottom: 2px;
     font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-faint);
   }
+}
+
+/* ── Design system: frosted glass ───────────────────────────────────────────
+   One style for the whole site. Pages sit on a softly lit background (the
+   bands); every card is the same frosted panel; every section label is the
+   same frosted pill; buttons are either solid accent or frosted. Text always
+   sits on the card's near-solid fill, and the blur is decoration only: with
+   reduced transparency, or without backdrop-filter, cards turn solid. */
+
+/* A band: the background a section sits on, lit so the glass has depth. */
+.band-base { --section-bg: radial-gradient(60% 55% at 12% 0%, var(--ambient-1), transparent 70%), radial-gradient(45% 45% at 92% 100%, var(--ambient-2), transparent 70%), var(--bg); --section-border: transparent; }
+.band-alt  { --section-bg: radial-gradient(55% 55% at 88% 0%, var(--ambient-1), transparent 70%), radial-gradient(45% 45% at 8% 100%, var(--ambient-2), transparent 70%), var(--bg-alt); --section-border: transparent; }
+
+.ui-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    inset 0 1px 0 var(--card-highlight),
+    0 0 0 1px var(--card-ring),
+    0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)));
+}
+.ui-card-interactive { transition: transform .25s cubic-bezier(.23,1,.32,1), border-color .25s ease, box-shadow .25s ease; }
+.ui-card-interactive:hover, .ui-card-interactive:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent-line);
+  box-shadow:
+    inset 0 1px 0 var(--card-highlight),
+    0 0 0 1px var(--card-ring),
+    0 18px 44px rgb(var(--shadow-rgb) / calc(0.32 * var(--shadow-k)));
+  outline: none;
+}
+
+/* The one section label style. */
+.ui-chip {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .3rem .8rem; border-radius: 999px;
+  font-size: 11.5px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent-hi);
+  background: var(--card-bg);
+  border: 1px solid var(--accent-line);
+  box-shadow: inset 0 1px 0 var(--card-highlight);
+}
+
+/* An icon in a tinted tile. */
+.ui-icon {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 2.75rem; height: 2.75rem; border-radius: .75rem;
+  background: var(--accent-dim); border: 1px solid var(--accent-line);
+}
+
+/* The two buttons. */
+.ui-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .85rem 1.6rem; border-radius: .85rem;
+  font-weight: 600; font-size: 15px; line-height: 1.2;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+}
+.ui-btn:hover { transform: translateY(-2px); }
+.ui-btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 8px 24px rgb(28 122 173 / 0.28);
+}
+.ui-btn-primary:hover { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 12px 32px rgb(28 122 173 / 0.38); }
+.ui-btn-glass {
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring);
+}
+.ui-btn-glass:hover { border-color: var(--accent-line); color: var(--text-strong); }
+
+/* Blur only where it is cheap and there is a pointer to admire it. */
+@media (min-width: 768px) and (hover: hover) {
+  .ui-card, .ui-chip, .ui-btn-glass, .solution-card { -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .ui-card, .ui-chip, .ui-btn-glass, .solution-card { background: var(--panel-solid); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-card-interactive:hover, .ui-btn:hover { transform: none; }
 }

@@ -45,9 +45,6 @@ export default function PricingOverview({ locale }: { locale: Locale }) {
       <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}>
-            {c.eyebrow}
-          </span>
           <h2 className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
             {c.title}
           </h2>

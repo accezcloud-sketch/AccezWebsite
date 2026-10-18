@@ -1,24 +1,43 @@
-/** Centered section heading: eyebrow, two-tone title and optional subtitle. */
+/**
+ * The one section heading: a frosted label, a two-tone title and an optional
+ * subtitle. Centred by default; `align="start"` sits it beside a visual.
+ */
 export default function SectionHeader({
-  eyebrow, lead, accent, subtitle, isRTL, headingLevel = 'h2',
-}: { eyebrow: string; lead: string; accent: string; subtitle?: string; isRTL: boolean; headingLevel?: 'h1' | 'h2' }) {
+  eyebrow, lead, accent, subtitle, headingLevel = 'h2', align = 'center', className = 'mb-12',
+}: {
+  eyebrow?: string
+  lead: string
+  accent?: string
+  subtitle?: string
+  /** Kept for callers that pass it; direction comes from the page. */
+  isRTL?: boolean
+  headingLevel?: 'h1' | 'h2'
+  align?: 'center' | 'start'
+  className?: string
+}) {
   const Heading = headingLevel
+  const centre = align === 'center'
   return (
-    <div className="text-center mb-12">
-      <div className="flex items-center justify-center gap-2 mb-4">
-        <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to left, transparent, var(--accent))' : 'linear-gradient(to right, transparent, var(--accent))' }} />
-        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--accent-hi)' }}>{eyebrow}</span>
-        <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to right, transparent, var(--accent))' : 'linear-gradient(to left, transparent, var(--accent))' }} />
-      </div>
+    <div className={`${centre ? 'text-center' : 'text-center lg:text-start'} ${className}`}>
+      {eyebrow && (
+        <div className={`flex mb-4 ${centre ? 'justify-center' : 'justify-center lg:justify-start'}`}>
+          <span className="ui-chip">{eyebrow}</span>
+        </div>
+      )}
       <Heading
-        className="text-strong font-bold text-center leading-tight tracking-tight"
+        className="text-strong font-bold leading-tight tracking-tight"
         style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
       >
-        {lead}{' '}
-        <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{accent}</span>
+        {lead}
+        {accent && (
+          <>
+            {' '}
+            <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{accent}</span>
+          </>
+        )}
       </Heading>
       {subtitle && (
-        <p className="text-center max-w-2xl mx-auto mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{subtitle}</p>
+        <p className={`max-w-2xl mt-4 leading-relaxed ${centre ? 'mx-auto' : 'mx-auto lg:mx-0'}`} style={{ fontSize: 17, color: 'var(--text-muted)' }}>{subtitle}</p>
       )}
     </div>
   )

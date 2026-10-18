@@ -43,7 +43,7 @@ export default function ThankYou() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4" style={{ background: 'var(--bg)' }}>
       <div className="max-w-md w-full text-center">
-        <div className="rounded-2xl p-8" style={{ background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))' }}>
+        <div className="ui-card p-8">
           {/* Success Icon */}
           <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style={{ background: 'var(--ok-dim)' }}>
             <svg
@@ -82,8 +82,7 @@ export default function ThankYou() {
           <Link
             href={localeHref("/", language)}
             prefetch={false}
-            className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5"
-            style={{ background: 'var(--accent-solid)' }}
+            className="ui-btn ui-btn-primary"
           >
             {t.backHome}
           </Link>

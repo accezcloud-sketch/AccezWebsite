@@ -43,8 +43,7 @@ export default function PostCard({
     <Link
       href={href}
       prefetch={false}
-      className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 ${className}`}
-      style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
+      className={`ui-card ui-card-interactive group overflow-hidden ${className}`}
     >
       <div className="relative aspect-[16/10] overflow-hidden" style={{ background: 'var(--bg-alt)' }}>
         <Image

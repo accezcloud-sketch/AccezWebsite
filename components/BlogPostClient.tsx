@@ -78,8 +78,7 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
           <Link
             href={localeHref("/blog", language)}
             prefetch={false}
-            className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5"
-            style={{ background: 'var(--accent-solid)' }}
+            className="ui-btn ui-btn-primary"
           >
             {t.backToBlog}
           </Link>

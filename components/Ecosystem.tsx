@@ -115,7 +115,7 @@ function nodePosition(index: number) {
 }
 
 export default function Ecosystem() {
-  const { language, isRTL } = useLanguage()
+  const { language } = useLanguage()
   const t = CONTENT[language]
 
   return (
@@ -161,23 +161,7 @@ export default function Ecosystem() {
         {/* Section header */}
         <FadeUp>
           <div className="text-center lg:text-start mb-12 lg:mb-0">
-            <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, var(--accent))'
-                  : 'linear-gradient(to right, transparent, var(--accent))' }}
-              />
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--accent-hi)' }}>
-                {t.eyebrow}
-              </span>
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, var(--accent))'
-                  : 'linear-gradient(to left, transparent, var(--accent))' }}
-              />
-            </div>
+            <div className="flex justify-center lg:justify-start mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
 
             <h2
               className="text-strong font-bold leading-tight tracking-tight"
@@ -278,16 +262,12 @@ export default function Ecosystem() {
               return (
                 <div
                   key={party.title}
-                  className="eco-node absolute z-20 flex items-center gap-3 rounded-2xl px-4 py-3"
+                  className="ui-card eco-node absolute z-20 flex items-center gap-3 px-4 py-3"
                   style={{
                     left: `${p.left}%`,
                     top: `${p.top}%`,
                     transform: 'translate(-50%, -50%)',
                     width: 214,
-                    background: 'var(--panel)',
-                    border: '1px solid var(--border)',
-                    boxShadow: '0 8px 24px rgb(var(--shadow-rgb) / calc(0.35 * var(--shadow-k)))',
-                    backdropFilter: 'blur(8px)',
                   }}
                 >
                   <div
@@ -340,8 +320,7 @@ export default function Ecosystem() {
               return (
                 <div
                   key={party.title}
-                  className="eco-card flex items-center gap-3 rounded-2xl px-4 py-3.5"
-                  style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
+                  className="ui-card eco-card flex items-center gap-3 rounded-2xl px-4 py-3.5"
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"

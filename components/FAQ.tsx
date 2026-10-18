@@ -177,26 +177,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <FadeUp className="text-center mb-10">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, var(--accent))'
-                  : 'linear-gradient(to right, transparent, var(--accent))' }}
-              />
-              <span
-                className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: 'var(--accent-hi)' }}
-              >
-                {tf.eyebrow}
-              </span>
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, var(--accent))'
-                  : 'linear-gradient(to left, transparent, var(--accent))' }}
-              />
-            </div>
+            <div className="flex justify-center mb-4"><span className="ui-chip">{tf.eyebrow}</span></div>
 
             <Heading
               className="text-strong font-bold text-center leading-tight tracking-tight mb-4"

@@ -48,7 +48,7 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
       <Header />
 
       {/* Hero, server-rendered, fully crawlable */}
-      <section className="relative overflow-hidden page-top pb-8" style={{ background: 'var(--bg)' }}>
+      <section className="relative overflow-hidden page-top pb-8" style={{ background: 'var(--section-bg, var(--bg))' }}>
         <div
           className="absolute inset-x-0 top-0 pointer-events-none"
           style={{ height: '100%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }}
@@ -56,8 +56,7 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
         />
         <div className="container mx-auto px-4 text-center relative z-10">
           <span
-            className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5"
-            style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}
+            className="ui-chip mb-5"
           >
             {c.eyebrow}
           </span>

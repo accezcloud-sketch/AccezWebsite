@@ -19,6 +19,7 @@ import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 import HeroLayout, { HeroActions } from '@/components/hero/HeroLayout'
 import RotatingHeadline from '@/components/hero/RotatingHeadline'
 import SpDashboardMock from '@/components/visuals/SpDashboardMock'
+import Band from '@/components/ui/Band'
 import SectionHeader from '@/components/SectionHeader'
 import ProviderPricing from '@/components/ProviderPricing'
 
@@ -140,6 +141,7 @@ export default function ServiceProviderPage() {
       `}</style>
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
+      <Band shade="base">
       <HeroLayout
         eyebrow={t.eyebrow}
         headline={<RotatingHeadline lead={t.heroLead} phrases={t.heroPhrases} readAs={t.heroReadAs} />}
@@ -152,9 +154,11 @@ export default function ServiceProviderPage() {
         }
         visual={<SpDashboardMock />}
       />
+      </Band>
 
       {/* ── Exposure ─────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: 'var(--bg)' }}>
+      <Band shade="alt">
+      <section className="py-20" style={{ background: 'var(--section-bg, var(--bg))' }}>
         <div className="container mx-auto px-4">
           <FadeUp>
             <SectionHeader eyebrow={t.exposureEyebrow} lead={t.exposureTitleLead} accent={t.exposureTitleAccent} subtitle={t.exposureSubtitle} isRTL={isRTL} />
@@ -164,7 +168,7 @@ export default function ServiceProviderPage() {
               const Icon = EXPOSURE_ICONS[i]
               return (
                 <motion.div key={item.title} variants={staggerItem}>
-                  <div className="spp-card flex flex-col gap-4 rounded-2xl p-6 h-full" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                  <div className="ui-card spp-card flex flex-col gap-4 rounded-2xl p-6 h-full">
                     <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}>
                       <Icon size={20} color="var(--accent-hi)" strokeWidth={1.75} />
                     </div>
@@ -179,9 +183,11 @@ export default function ServiceProviderPage() {
           </StaggerGrid>
         </div>
       </section>
+      </Band>
 
       {/* ── How it works ─────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: 'var(--bg-alt)' }}>
+      <Band shade="base">
+      <section className="py-20" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
         <div className="container mx-auto px-4">
           <FadeUp>
             <SectionHeader eyebrow={t.stepsEyebrow} lead={t.stepsTitleLead} accent={t.stepsTitleAccent} isRTL={isRTL} />
@@ -191,7 +197,7 @@ export default function ServiceProviderPage() {
               const Icon = STEP_ICONS[i]
               return (
                 <FadeUp key={step.title} delay={0.1 + i * 0.08}>
-                  <div className="rounded-2xl p-6 h-full" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                  <div className="ui-card rounded-2xl p-6 h-full">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}>
                         <Icon size={19} color="var(--accent-hi)" strokeWidth={1.75} />
@@ -207,11 +213,13 @@ export default function ServiceProviderPage() {
           </div>
         </div>
       </section>
+      </Band>
 
-      <ProviderPricing />
+      <Band shade="alt"><ProviderPricing /></Band>
 
       {/* ── CTA ──────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: 'var(--bg-alt)' }}>
+      <Band shade="base">
+      <section className="py-20" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
         <div className="container mx-auto px-4">
           <FadeUp>
             <div
@@ -228,8 +236,7 @@ export default function ServiceProviderPage() {
                   href={PROVIDER_SIGN_UP}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="spp-btn inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ background: 'var(--accent-solid)', fontSize: 15 }}
+                  className="ui-btn ui-btn-primary"
                 >
                   {t.ctaPrimary}{arrow}
                 </a>
@@ -238,6 +245,7 @@ export default function ServiceProviderPage() {
           </FadeUp>
         </div>
       </section>
+      </Band>
     </>
   )
 }

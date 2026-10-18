@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 
 /**
@@ -33,8 +33,7 @@ export default function HeroLayout({
           <div className="flex flex-col items-center text-center lg:items-start lg:text-start w-full min-w-0">
             {eyebrow && (
               <span
-                className="anim-fade-up-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-5"
-                style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}
+                className="anim-fade-up-2 ui-chip mb-5"
               >
                 {eyebrow}
               </span>
@@ -66,24 +65,21 @@ export interface HeroAction {
   external?: boolean
 }
 
-function ActionLink({ action, className, style }: { action: HeroAction; className: string; style: CSSProperties }) {
+function ActionLink({ action, className }: { action: HeroAction; className: string }) {
   // In-page anchors and other sites are plain links; site pages use Link.
   if (action.external || action.href.includes('#')) {
     const ext = action.external ? { target: '_blank', rel: 'noopener noreferrer' } : {}
-    return <a href={action.href} {...ext} className={className} style={style}>{action.label} <Arrow /></a>
+    return <a href={action.href} {...ext} className={className}>{action.label} <Arrow /></a>
   }
-  return <Link href={action.href} prefetch={false} className={className} style={style}>{action.label} <Arrow /></Link>
+  return <Link href={action.href} prefetch={false} className={className}>{action.label} <Arrow /></Link>
 }
 
 /** A primary and an optional secondary button, full width on phones. */
 export function HeroActions({ primary, secondary }: { primary: HeroAction; secondary?: HeroAction }) {
-  const base = 'w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5'
   return (
     <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center lg:justify-start">
-      <ActionLink action={primary} className={`${base} text-white`} style={{ background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))', fontSize: 15 }} />
-      {secondary && (
-        <ActionLink action={secondary} className={`${base} text-soft hover:text-strong`} style={{ background: 'var(--surface-hi)', border: '1px solid var(--border-hi)', fontSize: 15 }} />
-      )}
+      <ActionLink action={primary} className="ui-btn ui-btn-primary w-full sm:w-auto" />
+      {secondary && <ActionLink action={secondary} className="ui-btn ui-btn-glass w-full sm:w-auto" />}
     </div>
   )
 }

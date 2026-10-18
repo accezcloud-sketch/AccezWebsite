@@ -96,7 +96,7 @@ const CONTENT = {
 } as const
 
 export default function Trust() {
-  const { language, isRTL } = useLanguage()
+  const { language } = useLanguage()
   const t = CONTENT[language]
 
   return (
@@ -104,11 +104,7 @@ export default function Trust() {
       <div className="container mx-auto px-4">
         <FadeUp>
           <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to left, transparent, var(--accent))' : 'linear-gradient(to right, transparent, var(--accent))' }} />
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--accent-hi)' }}>{t.eyebrow}</span>
-              <div className="h-px w-8" style={{ background: isRTL ? 'linear-gradient(to right, transparent, var(--accent))' : 'linear-gradient(to left, transparent, var(--accent))' }} />
-            </div>
+            <div className="flex justify-center mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
             <h2
               className="text-strong font-bold text-center leading-tight tracking-tight"
               style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
@@ -122,7 +118,7 @@ export default function Trust() {
 
         {/* Integrations and trust points in one panel. */}
         <FadeUp delay={0.1}>
-          <div className="max-w-6xl mx-auto rounded-[var(--radius-lg)] p-5 sm:p-8" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+          <div className="ui-card max-w-6xl mx-auto rounded-[var(--radius-lg)] p-5 sm:p-8">
             <p className="text-center text-xs font-semibold tracking-widest uppercase mb-6 text-faint">{t.integrationsHeading}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 sm:mb-10">
               {INTEGRATIONS.map((group) => (

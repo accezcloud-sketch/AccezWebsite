@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import FadeUp from '@/components/animations/FadeUp'
-import RevealLine from '@/components/animations/RevealLine'
 import ImageCarousel, { type CarouselSlide } from '@/components/ImageCarousel'
 import CapabilityStack from '@/components/CapabilityStack'
 
@@ -282,30 +281,11 @@ export default function Capabilities() {
   }
 
   return (
-    <section className="py-20" id="capabilities" style={{ background: 'var(--bg)' }}>
+    <section className="py-20" id="capabilities" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <div className="container mx-auto px-4">
         <FadeUp>
           <div className="text-center mb-10">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, var(--accent))'
-                  : 'linear-gradient(to right, transparent, var(--accent))' }}
-              />
-              <span
-                className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: 'var(--accent-hi)' }}
-              >
-                {t.eyebrow}
-              </span>
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, var(--accent))'
-                  : 'linear-gradient(to left, transparent, var(--accent))' }}
-              />
-            </div>
+            <div className="flex justify-center mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
 
             <h2
               className="text-strong font-bold text-center leading-tight tracking-tight mb-4"
@@ -337,7 +317,6 @@ export default function Capabilities() {
           </div>
         </FadeUp>
 
-        <RevealLine className="w-full max-w-7xl mx-auto my-8" delay={0.1} />
 
         <div className="max-w-7xl mx-auto">
           {/* Mobile Layout - Buttons with inline content */}
@@ -391,12 +370,7 @@ export default function Capabilities() {
                   {/* Rendered for every item so all descriptions reach the static HTML. */}
                   <div
                     hidden={!isActive}
-                    className="mt-2 rounded-2xl overflow-hidden"
-                    style={{
-                      background: 'var(--surface)',
-                      border: '1px solid var(--border)',
-                      boxShadow: '0 4px 24px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
-                    }}
+                    className="ui-card mt-2 overflow-hidden"
                   >
                     {/* Media only for the open item; the text below is always in the HTML. */}
                     {isActive &&

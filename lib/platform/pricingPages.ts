@@ -10,14 +10,12 @@ import type { PlatformSolution } from './solutions'
 
 export const PRICING_OVERVIEW_COPY = {
   en: {
-    eyebrow: 'Pricing',
     title: 'Pricing for every side of the platform',
     subtitle: 'Accez is one platform with two solutions, each with its own plans. Choose yours.',
     see: 'See plans',
     startsFree: 'Start free',
   },
   ar: {
-    eyebrow: 'الأسعار',
     title: 'أسعار لكل جانب من المنصة',
     subtitle: 'أكسيز منصة واحدة بحلّين، لكل منهما خططه الخاصة. اختر ما يناسبك.',
     see: 'عرض الخطط',

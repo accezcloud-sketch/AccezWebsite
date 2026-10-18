@@ -146,7 +146,7 @@ export default function BlogListClient({ posts, topics = [], tags, scopeTopic, p
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="section-y" style={{ background: 'var(--bg)' }}>
+      <section className="section-y" style={{ background: 'var(--section-bg, var(--bg))' }}>
         <div className="container mx-auto px-4">
           {visiblePosts.length === 0 ? (
             <div className="text-center py-20">

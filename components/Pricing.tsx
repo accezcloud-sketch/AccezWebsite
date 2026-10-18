@@ -45,9 +45,9 @@ const PLANS: PlanConfig[] = [
     highlight: false,
     showLaunchDiscount: false,
     accentColor: '#319fd4',
-    borderColor: 'var(--border)',
-    bgColor: 'var(--surface)',
-    glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
+    borderColor: 'var(--card-border)',
+    bgColor: 'var(--card-bg)',
+    glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'startFree',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -73,9 +73,9 @@ const PLANS: PlanConfig[] = [
     highlight: false,
     showLaunchDiscount: true,
     accentColor: '#319fd4',
-    borderColor: 'var(--border)',
-    bgColor: 'var(--surface)',
-    glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
+    borderColor: 'var(--card-border)',
+    bgColor: 'var(--card-bg)',
+    glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -130,9 +130,9 @@ const PLANS: PlanConfig[] = [
     highlight: false,
     showLaunchDiscount: false,
     accentColor: '#319fd4',
-    borderColor: 'var(--border)',
-    bgColor: 'var(--surface)',
-    glowShadow: '0 1px 3px rgb(var(--shadow-rgb) / calc(0.2 * var(--shadow-k)))',
+    borderColor: 'var(--card-border)',
+    bgColor: 'var(--card-bg)',
+    glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'contactSales',
     ctaHref: '/#contact',
@@ -170,7 +170,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
     <section
       className="py-20 pricing-section"
       id="pricing"
-      style={{ background: 'var(--bg)' }}
+      style={{ background: 'var(--section-bg, var(--bg))' }}
     >
       <style>{`
         @media (max-width: 767px) {
@@ -184,26 +184,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
         <FadeUp>
           <div className="text-center mb-10">
             {/* Eyebrow */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to left, transparent, var(--accent))'
-                  : 'linear-gradient(to right, transparent, var(--accent))' }}
-              />
-              <span
-                className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: 'var(--accent-hi)' }}
-              >
-                {tp.eyebrow}
-              </span>
-              <div
-                className="h-px w-8"
-                style={{ background: isRTL
-                  ? 'linear-gradient(to right, transparent, var(--accent))'
-                  : 'linear-gradient(to left, transparent, var(--accent))' }}
-              />
-            </div>
+            <div className="flex justify-center mb-4"><span className="ui-chip">{tp.eyebrow}</span></div>
 
             {/* Main heading */}
             <Heading
@@ -291,7 +272,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                 className={`${plan.mobileOrder} ${plan.desktopOrder} ${plan.highlight ? 'pricing-card-highlight' : ''}`}
               >
                 <motion.div
-                  className="relative flex flex-col rounded-2xl overflow-hidden h-full"
+                  className="ui-card relative flex flex-col overflow-hidden h-full"
                   animate={{
                     scale: plan.highlight ? 1.03 : 1,
                     y: plan.highlight ? -8 : 0,

@@ -27,15 +27,14 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
   )
 
   return (
-    <section aria-labelledby="post-product-cta" className="pb-16" style={{ background: 'var(--bg)' }}>
+    <section aria-labelledby="post-product-cta" className="pb-16" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <div className="container mx-auto px-4">
         <div
           className="rounded-3xl px-6 py-10 sm:px-10 max-w-3xl mx-auto"
           style={{ background: 'linear-gradient(135deg, rgba(49,159,212,0.14), var(--surface))', border: '1px solid var(--accent-line)' }}
         >
           <span
-            className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-4"
-            style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)', color: 'var(--accent-hi)' }}
+            className="ui-chip mb-4"
           >
             {c.eyebrow}
           </span>
@@ -52,8 +51,7 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:items-center">
             <a
               href={localeHref('/#contact', locale)}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-              style={{ background: 'var(--accent-solid)', fontSize: 15 }}
+              className="ui-btn ui-btn-primary"
             >
               {c.bookDemo}
               {arrow}
@@ -62,8 +60,7 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
               href={PORTAL_SIGN_UP}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
-              style={{ background: 'var(--surface)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 15 }}
+              className="ui-btn ui-btn-glass"
             >
               {c.startFree}
             </a>
