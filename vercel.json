@@ -120,6 +120,1286 @@
       "source": "/ar/hotels/",
       "destination": "/ar/solutions/property-managers/#hotels",
       "permanent": true
+    },
+    {
+      "source": "/blog/bad-reviews-happen-how-to-respond-without-damaging-your-repu",
+      "destination": "/blog/bad-reviews-happen-how-to-respond-without-damaging-your-reputation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bad-reviews-happen-how-to-respond-without-damaging-your-repu/",
+      "destination": "/blog/bad-reviews-happen-how-to-respond-without-damaging-your-reputation/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/bad-reviews-happen-how-to-respond-without-damaging-your-repu",
+      "destination": "/ar/blog/bad-reviews-happen-how-to-respond-without-damaging-your-reputation/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/bad-reviews-happen-how-to-respond-without-damaging-your-repu/",
+      "destination": "/ar/blog/bad-reviews-happen-how-to-respond-without-damaging-your-reputation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minut",
+      "destination": "/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minutes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minut/",
+      "destination": "/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minutes/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minut",
+      "destination": "/ar/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minutes/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minut/",
+      "destination": "/ar/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minutes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-sy",
+      "destination": "/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-system/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-sy/",
+      "destination": "/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-system/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-sy",
+      "destination": "/ar/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-system/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-sy/",
+      "destination": "/ar/blog/coordinating-cleaners-across-a-portfolio-the-housekeeping-system/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/corporate-housing-landing-long-stay-business-clients-for-ste",
+      "destination": "/blog/corporate-housing-landing-long-stay-business-clients/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/corporate-housing-landing-long-stay-business-clients-for-ste/",
+      "destination": "/blog/corporate-housing-landing-long-stay-business-clients/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/corporate-housing-landing-long-stay-business-clients-for-ste",
+      "destination": "/ar/blog/corporate-housing-landing-long-stay-business-clients/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/corporate-housing-landing-long-stay-business-clients-for-ste/",
+      "destination": "/ar/blog/corporate-housing-landing-long-stay-business-clients/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-te",
+      "destination": "/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-te/",
+      "destination": "/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-te",
+      "destination": "/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-te/",
+      "destination": "/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-e",
+      "destination": "/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-every-night/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-e/",
+      "destination": "/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-every-night/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-e",
+      "destination": "/ar/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-every-night/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-e/",
+      "destination": "/ar/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-every-night/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati",
+      "destination": "/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati/",
+      "destination": "/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati",
+      "destination": "/ar/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati/",
+      "destination": "/ar/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/email-marketing-to-past-guests-turning-one-time-stays-into-r",
+      "destination": "/blog/email-marketing-to-past-guests-turning-one-time-stays-into-repeat-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/email-marketing-to-past-guests-turning-one-time-stays-into-r/",
+      "destination": "/blog/email-marketing-to-past-guests-turning-one-time-stays-into-repeat-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/email-marketing-to-past-guests-turning-one-time-stays-into-r",
+      "destination": "/ar/blog/email-marketing-to-past-guests-turning-one-time-stays-into-repeat-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/email-marketing-to-past-guests-turning-one-time-stays-into-r/",
+      "destination": "/ar/blog/email-marketing-to-past-guests-turning-one-time-stays-into-repeat-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/first-impressions-how-the-booking-to-arrival-experience-make",
+      "destination": "/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/first-impressions-how-the-booking-to-arrival-experience-make/",
+      "destination": "/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/first-impressions-how-the-booking-to-arrival-experience-make",
+      "destination": "/ar/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/first-impressions-how-the-booking-to-arrival-experience-make/",
+      "destination": "/ar/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana",
+      "destination": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana/",
+      "destination": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana",
+      "destination": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana/",
+      "destination": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-cost-center-to-profit-center-monetizing-property-servic",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-cost-center-to-profit-center-monetizing-property-servic/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-servic",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-servic/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca",
+      "destination": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca/",
+      "destination": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca",
+      "destination": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca/",
+      "destination": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-request-to-resolution-building-a-maintenance-system-tha",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-request-to-resolution-building-a-maintenance-system-tha/",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-tha",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-tha/",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/handling-refunds-and-chargebacks-without-losing-money-or-tru",
+      "destination": "/blog/handling-refunds-and-chargebacks-without-losing-money-or-trust/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/handling-refunds-and-chargebacks-without-losing-money-or-tru/",
+      "destination": "/blog/handling-refunds-and-chargebacks-without-losing-money-or-trust/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/handling-refunds-and-chargebacks-without-losing-money-or-tru",
+      "destination": "/ar/blog/handling-refunds-and-chargebacks-without-losing-money-or-trust/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/handling-refunds-and-chargebacks-without-losing-money-or-tru/",
+      "destination": "/ar/blog/handling-refunds-and-chargebacks-without-losing-money-or-trust/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud",
+      "destination": "/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud/",
+      "destination": "/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud",
+      "destination": "/ar/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud/",
+      "destination": "/ar/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-ai-is-changing-property-management-and-what-it-can-t-rep",
+      "destination": "/blog/how-ai-is-changing-property-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-ai-is-changing-property-management-and-what-it-can-t-rep/",
+      "destination": "/blog/how-ai-is-changing-property-management/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-ai-is-changing-property-management-and-what-it-can-t-rep",
+      "destination": "/ar/blog/how-ai-is-changing-property-management/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-ai-is-changing-property-management-and-what-it-can-t-rep/",
+      "destination": "/ar/blog/how-ai-is-changing-property-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut",
+      "destination": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut/",
+      "destination": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut",
+      "destination": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut/",
+      "destination": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf",
+      "destination": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf/",
+      "destination": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf",
+      "destination": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf/",
+      "destination": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-generate-15-30-additional-revenue-without-adding-prop",
+      "destination": "/blog/how-to-generate-15-30-additional-revenue-without-adding-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-generate-15-30-additional-revenue-without-adding-prop/",
+      "destination": "/blog/how-to-generate-15-30-additional-revenue-without-adding-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-generate-15-30-additional-revenue-without-adding-prop",
+      "destination": "/ar/blog/how-to-generate-15-30-additional-revenue-without-adding-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-generate-15-30-additional-revenue-without-adding-prop/",
+      "destination": "/ar/blog/how-to-generate-15-30-additional-revenue-without-adding-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-spot-a-problem-property-before-it-drains-your-portfol",
+      "destination": "/blog/how-to-spot-a-problem-property-before-it-drains-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-spot-a-problem-property-before-it-drains-your-portfol/",
+      "destination": "/blog/how-to-spot-a-problem-property-before-it-drains-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-spot-a-problem-property-before-it-drains-your-portfol",
+      "destination": "/ar/blog/how-to-spot-a-problem-property-before-it-drains-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-spot-a-problem-property-before-it-drains-your-portfol/",
+      "destination": "/ar/blog/how-to-spot-a-problem-property-before-it-drains-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-transparency-wins-and-keeps-property-management-contract",
+      "destination": "/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-transparency-wins-and-keeps-property-management-contract/",
+      "destination": "/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-transparency-wins-and-keeps-property-management-contract",
+      "destination": "/ar/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-transparency-wins-and-keeps-property-management-contract/",
+      "destination": "/ar/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po",
+      "destination": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po/",
+      "destination": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po",
+      "destination": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po/",
+      "destination": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-f",
+      "destination": "/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-fill-your-calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-f/",
+      "destination": "/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-fill-your-calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-f",
+      "destination": "/ar/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-fill-your-calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-f/",
+      "destination": "/ar/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-fill-your-calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-proble",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-proble/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-proble",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-proble/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nig",
+      "destination": "/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nig/",
+      "destination": "/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nig",
+      "destination": "/ar/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nig/",
+      "destination": "/ar/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud",
+      "destination": "/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud/",
+      "destination": "/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud",
+      "destination": "/ar/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud/",
+      "destination": "/ar/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-",
+      "destination": "/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-app/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-/",
+      "destination": "/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-app/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-",
+      "destination": "/ar/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-app/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-/",
+      "destination": "/ar/blog/manager-on-the-go-why-your-property-platform-needs-a-mobile-app/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-expat-tenants-in-saudi-arabia-communication-across-",
+      "destination": "/blog/managing-expat-tenants-in-saudi-arabia-communication/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-expat-tenants-in-saudi-arabia-communication-across-/",
+      "destination": "/blog/managing-expat-tenants-in-saudi-arabia-communication/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/managing-expat-tenants-in-saudi-arabia-communication-across-",
+      "destination": "/ar/blog/managing-expat-tenants-in-saudi-arabia-communication/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/managing-expat-tenants-in-saudi-arabia-communication-across-/",
+      "destination": "/ar/blog/managing-expat-tenants-in-saudi-arabia-communication/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/move-in-move-out-inspections-protecting-every-property-on-ha",
+      "destination": "/blog/move-in-move-out-inspections-protecting-every-property/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/move-in-move-out-inspections-protecting-every-property-on-ha/",
+      "destination": "/blog/move-in-move-out-inspections-protecting-every-property/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/move-in-move-out-inspections-protecting-every-property-on-ha",
+      "destination": "/ar/blog/move-in-move-out-inspections-protecting-every-property/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/move-in-move-out-inspections-protecting-every-property-on-ha/",
+      "destination": "/ar/blog/move-in-move-out-inspections-protecting-every-property/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/one-inbox-to-rule-them-all-centralizing-property-communicati",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/one-inbox-to-rule-them-all-centralizing-property-communicati/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communicati",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communicati/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/owner-onboarding-how-to-bring-on-new-properties-without-the-",
+      "destination": "/blog/owner-onboarding-how-to-bring-on-new-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/owner-onboarding-how-to-bring-on-new-properties-without-the-/",
+      "destination": "/blog/owner-onboarding-how-to-bring-on-new-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/owner-onboarding-how-to-bring-on-new-properties-without-the-",
+      "destination": "/ar/blog/owner-onboarding-how-to-bring-on-new-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/owner-onboarding-how-to-bring-on-new-properties-without-the-/",
+      "destination": "/ar/blog/owner-onboarding-how-to-bring-on-new-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f",
+      "destination": "/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f/",
+      "destination": "/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f",
+      "destination": "/ar/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f/",
+      "destination": "/ar/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-s",
+      "destination": "/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-spikes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-s/",
+      "destination": "/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-spikes/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-s",
+      "destination": "/ar/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-spikes/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-s/",
+      "destination": "/ar/blog/peak-season-chaos-how-to-prepare-your-portfolio-for-demand-spikes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/preventing-parties-and-noise-complaints-in-your-short-term-r",
+      "destination": "/blog/preventing-parties-and-noise-complaints-in-your-short-term-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/preventing-parties-and-noise-complaints-in-your-short-term-r/",
+      "destination": "/blog/preventing-parties-and-noise-complaints-in-your-short-term-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/preventing-parties-and-noise-complaints-in-your-short-term-r",
+      "destination": "/ar/blog/preventing-parties-and-noise-complaints-in-your-short-term-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/preventing-parties-and-noise-complaints-in-your-short-term-r/",
+      "destination": "/ar/blog/preventing-parties-and-noise-complaints-in-your-short-term-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/professional-photography-the-listing-upgrade-that-pays-for-i",
+      "destination": "/blog/professional-photography-the-listing-upgrade-that-pays-for-itself/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/professional-photography-the-listing-upgrade-that-pays-for-i/",
+      "destination": "/blog/professional-photography-the-listing-upgrade-that-pays-for-itself/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/professional-photography-the-listing-upgrade-that-pays-for-i",
+      "destination": "/ar/blog/professional-photography-the-listing-upgrade-that-pays-for-itself/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/professional-photography-the-listing-upgrade-that-pays-for-i/",
+      "destination": "/ar/blog/professional-photography-the-listing-upgrade-that-pays-for-itself/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/property-listings-that-convert-what-tenants-actually-look-fo",
+      "destination": "/blog/property-listings-that-convert-what-tenants-actually-look-for/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/property-listings-that-convert-what-tenants-actually-look-fo/",
+      "destination": "/blog/property-listings-that-convert-what-tenants-actually-look-for/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/property-listings-that-convert-what-tenants-actually-look-fo",
+      "destination": "/ar/blog/property-listings-that-convert-what-tenants-actually-look-for/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/property-listings-that-convert-what-tenants-actually-look-fo/",
+      "destination": "/ar/blog/property-listings-that-convert-what-tenants-actually-look-for/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-dem",
+      "destination": "/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-demand/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-dem/",
+      "destination": "/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-demand/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-dem",
+      "destination": "/ar/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-demand/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-dem/",
+      "destination": "/ar/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-demand/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rate-shopping-and-comp-sets-pricing-against-your-real-compet",
+      "destination": "/blog/rate-shopping-and-comp-sets-pricing-against-your-real-competition/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rate-shopping-and-comp-sets-pricing-against-your-real-compet/",
+      "destination": "/blog/rate-shopping-and-comp-sets-pricing-against-your-real-competition/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/rate-shopping-and-comp-sets-pricing-against-your-real-compet",
+      "destination": "/ar/blog/rate-shopping-and-comp-sets-pricing-against-your-real-competition/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/rate-shopping-and-comp-sets-pricing-against-your-real-compet/",
+      "destination": "/ar/blog/rate-shopping-and-comp-sets-pricing-against-your-real-competition/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reducing-cancellations-why-guests-book-then-bail-and-how-to-",
+      "destination": "/blog/reducing-cancellations-why-guests-book-then-bail/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reducing-cancellations-why-guests-book-then-bail-and-how-to-/",
+      "destination": "/blog/reducing-cancellations-why-guests-book-then-bail/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/reducing-cancellations-why-guests-book-then-bail-and-how-to-",
+      "destination": "/ar/blog/reducing-cancellations-why-guests-book-then-bail/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/reducing-cancellations-why-guests-book-then-bail-and-how-to-/",
+      "destination": "/ar/blog/reducing-cancellations-why-guests-book-then-bail/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta",
+      "destination": "/blog/rent-increases-and-lease-renewals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta/",
+      "destination": "/blog/rent-increases-and-lease-renewals/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta",
+      "destination": "/ar/blog/rent-increases-and-lease-renewals/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta/",
+      "destination": "/ar/blog/rent-increases-and-lease-renewals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/role-based-access-giving-your-team-the-right-permissions-wit",
+      "destination": "/blog/role-based-access-giving-your-team-the-right-permissions/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/role-based-access-giving-your-team-the-right-permissions-wit/",
+      "destination": "/blog/role-based-access-giving-your-team-the-right-permissions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/role-based-access-giving-your-team-the-right-permissions-wit",
+      "destination": "/ar/blog/role-based-access-giving-your-team-the-right-permissions/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/role-based-access-giving-your-team-the-right-permissions-wit/",
+      "destination": "/ar/blog/role-based-access-giving-your-team-the-right-permissions/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-",
+      "destination": "/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-/",
+      "destination": "/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-",
+      "destination": "/ar/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-/",
+      "destination": "/ar/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio-w",
+      "destination": "/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio-w/",
+      "destination": "/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio-w",
+      "destination": "/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio-w/",
+      "destination": "/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle",
+      "destination": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle/",
+      "destination": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle",
+      "destination": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle/",
+      "destination": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tenant-screening-that-prevents-problems-before-the-lease-is-",
+      "destination": "/blog/tenant-screening-that-prevents-problems-before-the-lease/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tenant-screening-that-prevents-problems-before-the-lease-is-/",
+      "destination": "/blog/tenant-screening-that-prevents-problems-before-the-lease/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/tenant-screening-that-prevents-problems-before-the-lease-is-",
+      "destination": "/ar/blog/tenant-screening-that-prevents-problems-before-the-lease/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/tenant-screening-that-prevents-problems-before-the-lease-is-/",
+      "destination": "/ar/blog/tenant-screening-that-prevents-problems-before-the-lease/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-",
+      "destination": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-/",
+      "destination": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-",
+      "destination": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-/",
+      "destination": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w",
+      "destination": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w/",
+      "destination": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w",
+      "destination": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w/",
+      "destination": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov",
+      "destination": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov/",
+      "destination": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov",
+      "destination": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov/",
+      "destination": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-double-booking-nightmare-how-to-sync-400-channels-withou",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-double-booking-nightmare-how-to-sync-400-channels-withou/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-double-booking-nightmare-how-to-sync-400-channels-withou",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-double-booking-nightmare-how-to-sync-400-channels-withou/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-p",
+      "destination": "/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-platform/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-p/",
+      "destination": "/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-platform/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-p",
+      "destination": "/ar/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-platform/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-p/",
+      "destination": "/ar/blog/the-first-90-days-onboarding-your-team-onto-a-new-property-platform/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-guest-messaging-templates-every-vacation-rental-manager-",
+      "destination": "/blog/the-guest-messaging-templates-every-vacation-rental-manager/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-guest-messaging-templates-every-vacation-rental-manager-/",
+      "destination": "/blog/the-guest-messaging-templates-every-vacation-rental-manager/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-guest-messaging-templates-every-vacation-rental-manager-",
+      "destination": "/ar/blog/the-guest-messaging-templates-every-vacation-rental-manager/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-guest-messaging-templates-every-vacation-rental-manager-/",
+      "destination": "/ar/blog/the-guest-messaging-templates-every-vacation-rental-manager/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ota-commission-drain-how-to-build-direct-bookings-that-c",
+      "destination": "/blog/the-ota-commission-drain-how-to-build-direct-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ota-commission-drain-how-to-build-direct-bookings-that-c/",
+      "destination": "/blog/the-ota-commission-drain-how-to-build-direct-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-ota-commission-drain-how-to-build-direct-bookings-that-c",
+      "destination": "/ar/blog/the-ota-commission-drain-how-to-build-direct-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-ota-commission-drain-how-to-build-direct-bookings-that-c/",
+      "destination": "/ar/blog/the-ota-commission-drain-how-to-build-direct-bookings/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-revenue-stream-property-managers-don-t-know-they-re-miss",
+      "destination": "/blog/the-revenue-stream-property-managers-don-t-know-they-re-missing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-revenue-stream-property-managers-don-t-know-they-re-miss/",
+      "destination": "/blog/the-revenue-stream-property-managers-don-t-know-they-re-missing/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-revenue-stream-property-managers-don-t-know-they-re-miss",
+      "destination": "/ar/blog/the-revenue-stream-property-managers-don-t-know-they-re-missing/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-revenue-stream-property-managers-don-t-know-they-re-miss/",
+      "destination": "/ar/blog/the-revenue-stream-property-managers-don-t-know-they-re-missing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-saudi-tenant-in-2026-digital-expectations-meet-tradition",
+      "destination": "/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-saudi-tenant-in-2026-digital-expectations-meet-tradition/",
+      "destination": "/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-tradition",
+      "destination": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-tradition/",
+      "destination": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons-into",
+      "destination": "/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons-into/",
+      "destination": "/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons-into",
+      "destination": "/ar/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons-into/",
+      "destination": "/ar/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg",
+      "destination": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg/",
+      "destination": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg",
+      "destination": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg/",
+      "destination": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trust-accounting-for-property-managers-keeping-owner-funds-s",
+      "destination": "/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trust-accounting-for-property-managers-keeping-owner-funds-s/",
+      "destination": "/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/trust-accounting-for-property-managers-keeping-owner-funds-s",
+      "destination": "/ar/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/trust-accounting-for-property-managers-keeping-owner-funds-s/",
+      "destination": "/ar/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/vat-and-property-management-keeping-your-books-clean-and-com",
+      "destination": "/blog/vat-and-property-management-keeping-your-books-clean-and-compliant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/vat-and-property-management-keeping-your-books-clean-and-com/",
+      "destination": "/blog/vat-and-property-management-keeping-your-books-clean-and-compliant/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/vat-and-property-management-keeping-your-books-clean-and-com",
+      "destination": "/ar/blog/vat-and-property-management-keeping-your-books-clean-and-compliant/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/vat-and-property-management-keeping-your-books-clean-and-com/",
+      "destination": "/ar/blog/vat-and-property-management-keeping-your-books-clean-and-compliant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-",
+      "destination": "/blog/why-87-of-tenants-expect-a-response-within-24-hours/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-/",
+      "destination": "/blog/why-87-of-tenants-expect-a-response-within-24-hours/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-",
+      "destination": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-/",
+      "destination": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo",
+      "destination": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo/",
+      "destination": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo",
+      "destination": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo/",
+      "destination": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa",
+      "destination": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa/",
+      "destination": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa",
+      "destination": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa/",
+      "destination": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-co",
+      "destination": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-co/",
+      "destination": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-co",
+      "destination": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-co/",
+      "destination": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/winning-new-management-contracts-a-playbook-for-growing-your",
+      "destination": "/blog/winning-new-management-contracts-a-playbook-for-growing-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/winning-new-management-contracts-a-playbook-for-growing-your/",
+      "destination": "/blog/winning-new-management-contracts-a-playbook-for-growing-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/winning-new-management-contracts-a-playbook-for-growing-your",
+      "destination": "/ar/blog/winning-new-management-contracts-a-playbook-for-growing-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/winning-new-management-contracts-a-playbook-for-growing-your/",
+      "destination": "/ar/blog/winning-new-management-contracts-a-playbook-for-growing-your-portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do-to-",
+      "destination": "/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do-to-/",
+      "destination": "/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do-to-",
+      "destination": "/ar/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do-to-/",
+      "destination": "/ar/blog/zatca-e-invoicing-fatoora-what-property-managers-must-do/",
+      "permanent": true
     }
   ],
   "headers": [

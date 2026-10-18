@@ -67,9 +67,9 @@ describe('getRelatedPosts', () => {
   const onTopic: [slug: string, pattern: RegExp, minimum: number][] = [
     ['emergency-maintenance-at-2am-having-a-system-before-you-need', /maintenance|work-order/, 3],
     ['automated-owner-reporting-statements-that-send-themselves', /owner|report/, 2],
-    ['the-double-booking-nightmare-how-to-sync-400-channels-withou', /booking|channel|airbnb/, 3],
+    ['the-double-booking-nightmare-how-to-sync-every-channel', /booking|channel|airbnb/, 3],
     ['how-to-create-manage-units-accez-cloud', /accez-cloud/, 2],
-    ['mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud', /rent|payment/, 2],
+    ['mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi', /rent|payment/, 2],
     ['timing-the-review-request-how-to-get-more-5-star-ratings', /review|impression|check-in/, 3],
   ]
 
