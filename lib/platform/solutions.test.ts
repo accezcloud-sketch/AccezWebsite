@@ -50,3 +50,18 @@ describe('solution pages', () => {
     }
   })
 })
+
+describe('solutionForPath', () => {
+  it('finds the solution a page belongs to, in either language', async () => {
+    const { solutionForPath } = await import('./solutions')
+    expect(solutionForPath('/solutions/service-providers/')?.key).toBe('service-providers')
+    expect(solutionForPath('/ar/pricing/service-providers/')?.key).toBe('service-providers')
+    expect(solutionForPath('/terms/property-managers/')?.key).toBe('property-managers')
+    expect(solutionForPath('/')).toBeUndefined()
+    expect(solutionForPath('/blog/some-post/')).toBeUndefined()
+  })
+
+  it('gives every solution a main action', () => {
+    for (const s of PLATFORM_SOLUTIONS) expect(s.primaryAction.label.en, s.key).toBeTruthy()
+  })
+})

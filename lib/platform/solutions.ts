@@ -43,6 +43,8 @@ export interface PlatformSolution {
   pricingNote: Bilingual
   signUpUrl: string
   loginUrl: string
+  /** The main action for this audience, e.g. book a demo or create an account. */
+  primaryAction: { label: Bilingual; href: string; external?: boolean }
   /** Which version of the legal documents applies (see lib/legal/audience.ts). */
   legalAudience: AudienceView
   /** Pages within the solution, besides its main page (href), for the footer. */
@@ -66,6 +68,7 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     signUpUrl: PORTAL_SIGN_UP,
     loginUrl: PORTAL_LOGIN,
     legalAudience: 'pm',
+    primaryAction: { label: { en: 'Book a demo', ar: 'اطلب عرضًا توضيحيًا' }, href: '/#contact' },
     pages: [
       {
         label: { en: 'Owners & payouts', ar: 'الملاك والمدفوعات' },
@@ -100,12 +103,22 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     signUpUrl: PROVIDER_SIGN_UP,
     loginUrl: PROVIDER_LOGIN,
     legalAudience: 'sp',
+    primaryAction: { label: { en: 'Create a provider account', ar: 'أنشئ حساب مقدم خدمة' }, href: PROVIDER_SIGN_UP, external: true },
     pages: [],
   },
 ]
 
 export function solutionByKey(key: string): PlatformSolution | undefined {
   return PLATFORM_SOLUTIONS.find((s) => s.key === key)
+}
+
+/**
+ * The solution a page belongs to, from its path (/solutions/<key>/,
+ * /pricing/<key>/, /terms/<key>/ ... in either language), or undefined.
+ */
+export function solutionForPath(pathname: string): PlatformSolution | undefined {
+  const segments = pathname.split('/').filter(Boolean)
+  return PLATFORM_SOLUTIONS.find((s) => segments.includes(s.key))
 }
 
 export const pick = (b: Bilingual, locale: 'en' | 'ar') => b[locale]

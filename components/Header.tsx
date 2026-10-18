@@ -8,7 +8,7 @@ import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import ThemeToggle from '@/components/ThemeToggle'
 import { localeHref } from '@/lib/i18n'
-import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
+import { PLATFORM_SOLUTIONS, solutionForPath } from '@/lib/platform/solutions'
 import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 import NavDropdown from '@/components/nav/NavDropdown'
 import MobileNavGroup from '@/components/nav/MobileNavGroup'
@@ -22,6 +22,13 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage()
   const pathname = usePathname() ?? '/'
   const section = activeNavSection(pathname)
+  // The main action follows the audience of the page: a provider page offers a
+  // provider account, everything else a demo.
+  const audienceAction = solutionForPath(pathname)?.primaryAction
+  const action = audienceAction
+    ? { label: audienceAction.label[language], href: audienceAction.external ? audienceAction.href : localeHref(audienceAction.href, language), external: !!audienceAction.external }
+    : { label: t.header.bookDemo, href: localeHref('/#contact', language), external: false }
+  const actionProps = action.external ? { target: '_blank', rel: 'noopener noreferrer' } : {}
 
   const { scrollYProgress } = useScroll()
   const scrollProgress = useSpring(scrollYProgress, { stiffness: 200, damping: 40, restDelta: 0.001 })
@@ -122,14 +129,9 @@ export default function Header() {
               {ar ? 'English' : 'العربية'}
             </button>
             <NavDropdown label={t.header.signIn} sections={signInSections} align="end" triggerClassName={linkClass} />
-            <Link
-              href={href('/#contact')}
-              prefetch={false}
-              className="px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: 'var(--accent-solid)', boxShadow: scrolled ? '0 6px 20px rgba(49,159,212,0.25)' : 'none' }}
-            >
-              {t.header.bookDemo}
-            </Link>
+            <a href={action.href} {...actionProps} className="ui-btn ui-btn-primary" style={{ padding: '.55rem 1rem', fontSize: 14 }}>
+              {action.label}
+            </a>
           </div>
 
           {/* Mobile: theme, language, menu button */}
@@ -191,15 +193,9 @@ export default function Header() {
                   ))}
                 </div>
 
-                <Link
-                  href={href('/#contact')}
-                  prefetch={false}
-                  onClick={closeMobile}
-                  className="px-5 py-2.5 text-white font-semibold rounded-lg transition-all duration-200 text-center mt-2"
-                  style={{ background: 'var(--accent-solid)' }}
-                >
-                  {t.header.bookDemo}
-                </Link>
+                <a href={action.href} {...actionProps} onClick={closeMobile} className="ui-btn ui-btn-primary mt-2">
+                  {action.label}
+                </a>
               </nav>
             </motion.div>
           )}
