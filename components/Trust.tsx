@@ -1,6 +1,7 @@
 'use client'
 
-import { Languages, CreditCard, ShieldCheck, MapPin, type LucideIcon } from 'lucide-react'
+import { CreditCard, ShieldCheck, MapPin, type LucideIcon } from 'lucide-react'
+import ArabicEnglishIcon from '@/components/ui/ArabicEnglishIcon'
 import { useLanguage } from '@/contexts/LanguageContext'
 import FadeUp from '@/components/animations/FadeUp'
 
@@ -37,7 +38,7 @@ const INTEGRATIONS: IntegrationGroup[] = [
 ]
 
 interface TrustPoint {
-  icon: LucideIcon
+  icon: LucideIcon | typeof ArabicEnglishIcon
   title: string
   titleAr: string
   desc: string
@@ -46,7 +47,7 @@ interface TrustPoint {
 
 const POINTS: TrustPoint[] = [
   {
-    icon: Languages,
+    icon: ArabicEnglishIcon,
     title: 'Arabic & English, native',
     titleAr: 'العربية والإنجليزية بشكل أصيل',
     desc: 'Every screen in both languages, right-to-left throughout, not a bolted-on translation.',

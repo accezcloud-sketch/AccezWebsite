@@ -6,21 +6,20 @@ import { alternatesFor, localeUrl } from '@/lib/i18n'
 
 // Arabic version of /about/. The page component already contains the Arabic
 // copy; pinning the locale in app/ar/layout.tsx makes it render server-side so
-// it can finally be indexed. Metadata below reuses wording already present on
-// the site — no new marketing copy is introduced.
+// it can finally be indexed.
 export const metadata: Metadata = {
-  title: 'من نحن، مبنية في الرياض لمشغّلي العقارات في السعودية',
+  title: 'عن أكسيز، منصة واحدة بحلّين',
   description:
-    'أكسيز منصة شاملة لعمليات العقارات مبنية في الرياض بالسعودية من شركة كلاود فالي، الحجوزات وأوامر العمل والملاك والمبيعات والعقود والفنادق في نظام واحد.',
+    'أكسيز.كلاود منصة واحدة بحلّين، مبنية في الرياض من شركة وادي السحاب: إدارة العقارات لمديري العقارات والملاك والفنادق، وحل حجز لمقدمي الخدمات.',
   alternates: alternatesFor('about', 'ar'),
   openGraph: {
-    title: 'من نحن، مبنية في الرياض لمشغّلي العقارات في السعودية',
+    title: 'عن أكسيز، منصة واحدة بحلّين',
     description:
-      'أكسيز منصة شاملة لعمليات العقارات مبنية في الرياض بالسعودية من شركة كلاود فالي، الحجوزات وأوامر العمل والملاك والمبيعات والعقود والفنادق في نظام واحد.',
+      'أكسيز.كلاود منصة واحدة بحلّين، مبنية في الرياض من شركة وادي السحاب: إدارة العقارات لمديري العقارات والملاك والفنادق، وحل حجز لمقدمي الخدمات.',
     url: localeUrl('about', 'ar'),
     type: 'website',
     locale: 'ar_SA',
-    images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: 'من نحن، مبنية في الرياض لمشغّلي العقارات في السعودية' }],
+    images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: 'عن أكسيز، منصة واحدة بحلّين' }],
   },
 }
 

@@ -5,13 +5,13 @@ import Footer from '@/components/Footer'
 import AboutPage from '@/components/AboutPage'
 
 export const metadata: Metadata = {
-  title: 'About, built in Riyadh for Saudi property operators',
+  title: 'About Accez, one platform with two solutions',
   description:
-    'Accez is an all-in-one property operations platform built in Riyadh, Saudi Arabia by Cloud Valley LLC, reservations, work orders, owners, sales, contracts and hotels in one system, in Arabic and English.',
+    'Accez.cloud is one platform with two solutions, built in Riyadh by Cloud Valley LLC: property management for property managers, landlords and hotels, and a booking solution for service providers.',
   alternates: alternatesFor('about', 'en'),
   openGraph: {
     title: 'About Accez',
-    description: 'All-in-one property operations platform, built in Saudi Arabia. Arabic and English.',
+    description: 'One platform with two solutions: property management and service providers. Built in Riyadh.',
     url: 'https://www.accez.cloud/about',
     type: 'website',
     images: [{ url: 'https://www.accez.cloud/images/og-image.png', width: 1200, height: 630, alt: 'About Accez' }],
