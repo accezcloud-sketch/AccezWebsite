@@ -45,7 +45,7 @@ Successful property managers operating mixed portfolios don't just juggle tasks;
 
 ### Seamless Reservation and Channel Management
 
-High performers centralize their reservation systems. This means using a **single platform that integrates with over 400 booking channels**, automatically syncing calendars and rates. This prevents overbookings and ensures that pricing is optimized across all platforms, capturing maximum revenue for both short-term stays and identifying opportunities for longer bookings when demand patterns allow. They leverage **smart pricing tools** that can adapt to market demand for short-term lets while still maintaining competitive rates for longer commitments. This proactive approach to channel management is crucial; reports indicate that properties utilizing unified channel managers can see an **increase in bookings by up to 25%** compared to those managing channels manually.
+High performers centralize their reservation systems. This means using a **single platform that integrates with Airbnb, Booking.com and Expedia**, automatically syncing calendars and rates. This prevents overbookings and ensures that pricing is optimized across all platforms, capturing maximum revenue for both short-term stays and identifying opportunities for longer bookings when demand patterns allow. They leverage **smart pricing tools** that can adapt to market demand for short-term lets while still maintaining competitive rates for longer commitments. This proactive approach to channel management is crucial; reports indicate that properties utilizing unified channel managers can see an **increase in bookings by up to 25%** compared to those managing channels manually.
 
 ### Integrated Communication Hubs
 
@@ -69,7 +69,7 @@ Compliance with regulatory frameworks, such as the Ejar platform for long-term r
 
 Accez.Cloud provides an all-in-one property operations platform designed to tackle the complexities of managing mixed short-term and long-term rental portfolios, particularly within the Saudi Arabian market.
 
-- **Reservations and Channel Sync:** Effortlessly manage bookings across 400+ channels, ensuring real-time availability and pricing synchronization for both short-term guest bookings and long-term rental agreements.
+- **Reservations and Channel Sync:** Effortlessly manage bookings across Airbnb, Booking.com and Expedia, ensuring real-time availability and pricing synchronization for both short-term guest bookings and long-term rental agreements.
 - **Rental and Sale Properties Management:** Centralize the management of all your rental and sale properties, whether they are designated for short stays or long-term leases, under a single, intuitive dashboard.
 - **Owner Management, Statements, and Payouts:** Streamline owner relations with automated statement generation and timely payouts, catering to the diverse needs of owners with varying property types.
 - **Contracts and E-signing:** Digitize and manage all rental contracts, from short-term guest agreements to long-term leases, with secure e-signing capabilities, ensuring compliance and efficiency.
@@ -96,7 +96,7 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 -   Mixed rental portfolios require distinct operational strategies for short-term and long-term segments.
 -   Fragmented management systems lead to inefficiencies, double bookings, and missed revenue.
--   High performers centralize reservation management across 400+ booking channels.
+-   High performers centralize reservation management across Airbnb, Booking.com and Expedia.
 -   Integrated communication platforms enhance guest and resident satisfaction.
 -   Streamlined work order systems are crucial for efficient maintenance of diverse property types.
 -   Agile financial management tools are essential for handling varied payment structures.
@@ -133,7 +133,7 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 ### إدارة الحجوزات والقنوات بسلاسة
 
-يقوم أصحاب الأداء العالي بمركزية أنظمة الحجز الخاصة بهم. هذا يعني استخدام **منصة واحدة تتكامل مع أكثر من 400 قناة حجز**، مما يضمن تزامن التقويمات والأسعار تلقائيًا. هذا يمنع الحجوزات المزدوجة ويضمن تحسين الأسعار عبر جميع المنصات، مما يلتقط أقصى قدر من الإيرادات لكل من الإقامات قصيرة الأجل وتحديد الفرص للحجوزات الأطول عندما تسمح أنماط الطلب بذلك. إنهم يستفيدون من **أدوات التسعير الذكية** التي يمكنها التكيف مع طلب السوق للإيجارات قصيرة الأجل مع الحفاظ على أسعار تنافسية للالتزامات الأطول. هذه النهج الاستباقي لإدارة القنوات بالغ الأهمية؛ وتشير التقارير إلى أن العقارات التي تستخدم مديري القنوات الموحدة يمكن أن تشهد **زيادة في الحجوزات تصل إلى 25%** مقارنة بتلك التي تدير القنوات يدويًا.
+يقوم أصحاب الأداء العالي بمركزية أنظمة الحجز الخاصة بهم. هذا يعني استخدام **منصة واحدة تتكامل مع Airbnb وBooking.com وExpedia**، مما يضمن تزامن التقويمات والأسعار تلقائيًا. هذا يمنع الحجوزات المزدوجة ويضمن تحسين الأسعار عبر جميع المنصات، مما يلتقط أقصى قدر من الإيرادات لكل من الإقامات قصيرة الأجل وتحديد الفرص للحجوزات الأطول عندما تسمح أنماط الطلب بذلك. إنهم يستفيدون من **أدوات التسعير الذكية** التي يمكنها التكيف مع طلب السوق للإيجارات قصيرة الأجل مع الحفاظ على أسعار تنافسية للالتزامات الأطول. هذه النهج الاستباقي لإدارة القنوات بالغ الأهمية؛ وتشير التقارير إلى أن العقارات التي تستخدم مديري القنوات الموحدة يمكن أن تشهد **زيادة في الحجوزات تصل إلى 25%** مقارنة بتلك التي تدير القنوات يدويًا.
 
 ### مراكز اتصال متكاملة
 
@@ -157,7 +157,7 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 توفر Accez.Cloud منصة عمليات عقارية متكاملة مصممة لمعالجة تعقيدات إدارة محافظ الإيجارات قصيرة وطويلة الأجل المختلطة، لا سيما في السوق السعودي.
 
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات بسهولة عبر أكثر من 400 قناة، مما يضمن مزامنة التوافر والتسعير في الوقت الفعلي لكل من حجوزات الضيوف قصيرة الأجل واتفاقيات الإيجار طويلة الأجل.
+- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات بسهولة عبر Airbnb وBooking.com وExpedia، مما يضمن مزامنة التوافر والتسعير في الوقت الفعلي لكل من حجوزات الضيوف قصيرة الأجل واتفاقيات الإيجار طويلة الأجل.
 - **إدارة عقارات الإيجار والبيع:** قم بمركزية إدارة جميع عقارات الإيجار والبيع الخاصة بك، سواء كانت مخصصة للإقامات القصيرة أو الإيجارات طويلة الأجل، تحت لوحة تحكم واحدة سهلة الاستخدام.
 - **إدارة المالكين، وكشوف الحساب، والمدفوعات:** قم بتبسيط علاقات المالكين من خلال إنشاء كشوف حسابات آلية ومدفوعات في الوقت المناسب، لتلبية الاحتياجات المتنوعة للمالكين الذين لديهم أنواع مختلفة من العقارات.
 - **العقود والتوقيع الإلكتروني:** قم برقمنة وإدارة جميع عقود الإيجار، بدءًا من اتفاقيات الضيوف قصيرة الأجل وصولاً إلى عقود الإيجار طويلة الأجل، مع إمكانيات توقيع إلكتروني آمنة، مما يضمن الامتثال والكفاءة.
@@ -184,7 +184,7 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 -   تتطلب المحافظ المختلطة للإيجارات استراتيجيات تشغيلية مميزة لقطاعات الإيجارات قصيرة وطويلة الأجل.
 -   تؤدي أنظمة الإدارة المجزأة إلى عدم الكفاءة، والحجوزات المزدوجة، وفقدان الإيرادات.
--   يقوم أصحاب الأداء العالي بمركزية إدارة الحجوزات عبر أكثر من 400 قناة حجز.
+-   يقوم أصحاب الأداء العالي بمركزية إدارة الحجوزات عبر Airbnb وBooking.com وExpedia.
 -   تعزز منصات الاتصال المتكاملة رضا الضيوف والمقيمين.
 -   تعد أنظمة أوامر العمل المبسطة ضرورية للصيانة الفعالة لمختلف أنواع العقارات.
 -   تعد أدوات الإدارة المالية الرشيقة ضرورية للتعامل مع هياكل الدفع المتنوعة.

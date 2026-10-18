@@ -68,7 +68,7 @@ Adherence to regulations like those set by Ejar is paramount for all rental prop
 
 Accez.Cloud is designed to streamline property operations for Saudi Arabia, equipping property managers, owners, and operators with the tools needed to manage their short-term rentals effectively and mitigate issues like parties and noise complaints.
 
-- **Reservations and Channel Sync:** Ensure all booked guests are aware of and agree to your house rules by integrating them directly into the booking confirmation process across 400+ channels.
+- **Reservations and Channel Sync:** Ensure all booked guests are aware of and agree to your house rules by integrating them directly into the booking confirmation process across Airbnb, Booking.com and Expedia.
 - **Resident Communications:** Facilitate clear and immediate communication with guests regarding house rules, quiet hours, and any potential disturbances, allowing for prompt resolution before complaints escalate.
 - **Contracts and E-signing:** Use digital contracts that include explicit clauses on party policies and noise violations, ensuring guests legally agree to terms before arrival.
 - **Work Orders and Maintenance:** Address any property issues that might indirectly lead to guest dissatisfaction or a desire for disruption through efficient maintenance management.
@@ -179,7 +179,7 @@ tagsAr: ["تأجير قصير الأجل", "إدارة العقارات", "تج�
 
 تم تصميم Accez.Cloud لتبسيط عمليات العقارات في المملكة العربية السعودية، حيث يزود مديري العقارات والمالكين والمشغلين بالأدوات اللازمة لإدارة عقاراتهم للإيجار قصير الأجل بفعالية وتقليل المشكلات مثل الحفلات وشكاوى الضوضاء.
 
-- **الحجوزات ومزامنة القنوات:** تأكد من أن جميع الضيوف المحجوزين على دراية بقواعد منزلك ويوافقون عليها من خلال دمجها مباشرة في عملية تأكيد الحجز عبر أكثر من 400 قناة.
+- **الحجوزات ومزامنة القنوات:** تأكد من أن جميع الضيوف المحجوزين على دراية بقواعد منزلك ويوافقون عليها من خلال دمجها مباشرة في عملية تأكيد الحجز عبر Airbnb وBooking.com وExpedia.
 - **اتصالات المقيمين:** تسهيل التواصل الواضح والفوري مع الضيوف بشأن قواعد المنزل، وساعات الهدوء، وأي اضطرابات محتملة، مما يسمح بالحل الفوري قبل تصاعد الشكاوى.
 - **العقود والتوقيع الإلكتروني:** استخدم عقودًا رقمية تتضمن بنودًا صريحة بشأن سياسات الحفلات وانتهاكات الضوضاء، مما يضمن موافقة الضيوف قانونيًا على الشروط قبل الوصول.
 - **أوامر العمل والصيانة:** معالجة أي مشكلات في الممتلكات قد تؤدي بشكل غير مباشر إلى عدم رضا الضيوف أو رغبتهم في إحداث اضطراب من خلال إدارة فعالة للصيانة.

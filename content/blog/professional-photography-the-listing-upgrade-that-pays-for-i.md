@@ -57,7 +57,7 @@ The Saudi Vision 2030 initiative has spurred significant growth and modernizatio
 
 Accez.Cloud provides property managers, owners, and operators with the tools to streamline their operations and maximize property performance. By integrating with your existing workflows, Accez.Cloud helps you leverage every aspect of your property management.
 
-- **Reservations and Channel Sync:** Ensure your visually appealing listings are consistently presented across 400+ booking channels, maximizing booking potential.
+- **Reservations and Channel Sync:** Ensure your visually appealing listings are consistently presented across Airbnb, Booking.com and Expedia, maximizing booking potential.
 - **Marketing Campaigns and Analytics:** Track the performance of your listings, understanding which visual strategies, enhanced by professional photography, are driving the most engagement.
 - **Owner Management, Statements and Payouts:** Provide owners with clear, data-backed insights into property performance, where high-quality visuals contribute to better financial outcomes.
 - **Rental and Sale Properties:** Manage all your rental and sale listings efficiently, ensuring that the initial impact of professional photography is sustained throughout the sales or rental process.
@@ -136,7 +136,7 @@ Yes, professional photography is beneficial for all property types, from small a
 
 يوفر Accez.Cloud لمديري العقارات والمالكين والمشغلين الأدوات اللازمة لتبسيط عملياتهم وتعظيم أداء العقارات. من خلال التكامل مع سير العمل الحالي لديك، يساعدك Accez.Cloud على الاستفادة من كل جانب من جوانب إدارة عقاراتك.
 
-- **الحجوزات ومزامنة القنوات:** تأكد من أن قوائمك الجذابة بصريًا معروضة بشكل متسق عبر أكثر من 400 قناة حجز، مما يزيد من إمكانات الحجز.
+- **الحجوزات ومزامنة القنوات:** تأكد من أن قوائمك الجذابة بصريًا معروضة بشكل متسق عبر Airbnb وBooking.com وExpedia، مما يزيد من إمكانات الحجز.
 - **الحملات التسويقية والتحليلات:** تتبع أداء قوائمك، وفهم استراتيجيات العرض المرئي التي، المعززة بالتصوير الاحترافي، تدفع أكبر قدر من التفاعل.
 - **إدارة الملاك، كشوف الحسابات والمدفوعات:** قدم للملاك رؤى واضحة ومدعومة بالبيانات حول أداء العقارات، حيث يساهم التصوير عالي الجودة في نتائج مالية أفضل.
 - **العقارات للإيجار والمبيعات:** قم بإدارة جميع قوائم الإيجار والمبيعات الخاصة بك بكفاءة، مع ضمان استمرار التأثير الأولي للتصوير الاحترافي طوال عملية البيع أو التأجير.

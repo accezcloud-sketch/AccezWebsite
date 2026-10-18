@@ -59,7 +59,7 @@ Moreover, the increasing adoption of digital services, including the widespread 
 
 Accez.Cloud empowers property managers, owners, and operators in Saudi Arabia with an all-in-one digital platform designed to simplify and enhance property operations. By providing a centralized hub for all your property management needs, Accez.Cloud addresses many of the concerns that lead to owner skepticism and offers a clear path to digital adoption.
 
-- **Seamless Reservations and Channel Sync:** Manage bookings across over 400+ channels effortlessly, ensuring maximum occupancy and reduced administrative burden.
+- **Seamless Reservations and Channel Sync:** Manage bookings across Airbnb, Booking.com and Expedia effortlessly, ensuring maximum occupancy and reduced administrative burden.
 - **Integrated Owner Management, Statements, and Payouts:** Provide owners with transparent, real-time access to their financial information, statements, and timely payouts.
 - **Efficient Rental and Sales Property Management:** Streamline the entire lifecycle of rental and sale properties, from listing to closing.
 - **Automated Contract Management and E-signing:** Digitize contracts, facilitate secure e-signing, and ensure compliance with all legal requirements.
@@ -141,7 +141,7 @@ Ready to transform your property operations? [Visit portal.accez.cloud](https://
 
 يمكّن Accez.Cloud مديري العقارات والملاك والمشغلين في المملكة العربية السعودية بمنصة رقمية شاملة مصممة لتبسيط وتعزيز عمليات العقارات. من خلال توفير مركز مركزي لجميع احتياجات إدارة عقاراتك، تعالج Accez.Cloud العديد من المخاوف التي تؤدي إلى تشكك الملاك وتقدم مسارًا واضحًا للتبني الرقمي.
 
-- **حجوزات سلسة ومزامنة القنوات:** قم بإدارة الحجوزات عبر أكثر من 400 قناة بسهولة، مما يضمن أقصى قدر من الإشغال وتقليل العبء الإداري.
+- **حجوزات سلسة ومزامنة القنوات:** قم بإدارة الحجوزات عبر Airbnb وBooking.com وExpedia بسهولة، مما يضمن أقصى قدر من الإشغال وتقليل العبء الإداري.
 - **إدارة متكاملة للملاك، كشوفات، ومدفوعات:** وفر للملاك وصولاً شفافًا وفي الوقت الفعلي إلى معلوماتهم المالية، وكشوفات حساباتهم، ومدفوعاتهم في الوقت المناسب.
 - **إدارة فعالة للعقارات المؤجرة والمباعة:** قم بتبسيط دورة حياة العقارات المؤجرة والمباعة بالكامل، من الإدراج إلى الإغلاق.
 - **إدارة عقود مؤتمتة وتوقيع إلكتروني:** قم برقمنة العقود، وتسهيل التوقيع الإلكتروني الآمن، وضمان الامتثال لجميع المتطلبات القانونية.

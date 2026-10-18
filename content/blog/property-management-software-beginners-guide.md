@@ -41,7 +41,7 @@ Built for office buildings, retail spaces, and industrial properties. These plat
 
 ### Vacation Rental / Short-Term Rental Software
 
-Focused on nightly bookings, channel management (Airbnb, Booking.com, VRBO), dynamic pricing, and guest communication. If you manage both long-term and short-term units, look for a platform that handles both, rather than running two separate systems.
+Focused on nightly bookings, channel management (Airbnb, Booking.com, Expedia), dynamic pricing, and guest communication. If you manage both long-term and short-term units, look for a platform that handles both, rather than running two separate systems.
 
 ### All-in-One Platforms
 

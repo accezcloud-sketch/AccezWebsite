@@ -68,7 +68,7 @@ Furthermore, the rapid adoption of digital platforms and services in Saudi Arabi
 
 Accez.Cloud empowers property operators in Saudi Arabia to move beyond guesswork and implement data-driven pricing strategies by centralizing critical operational data and market insights.
 
-- **Reservations and Channel Sync**: Automatically syncs pricing and availability across over 400 booking channels, ensuring consistent pricing and preventing overbookings, allowing for real-time rate adjustments based on demand across all platforms.
+- **Reservations and Channel Sync**: Automatically syncs pricing and availability across Airbnb, Booking.com and Expedia, ensuring consistent pricing and preventing overbookings, allowing for real-time rate adjustments based on demand across all platforms.
 - **Marketing Campaigns and Analytics**: Provides insights into campaign performance, helping to understand which pricing strategies or offers are most effective in attracting specific tenant or guest segments.
 - **Sales and Developer Projects**: Integrates sales data to understand absorption rates and pricing effectiveness for new developments, informing future pricing strategies.
 - **Owner Management, Statements and Payouts**: Streamlines financial operations, allowing for clearer visibility into profitability, which is essential for setting competitive yet profitable rental rates.
@@ -154,7 +154,7 @@ Yes, you can price your property higher if you can demonstrate superior value, s
 
 يمكّن Accez.Cloud المشغلين العقاريين في المملكة العربية السعودية من تجاوز التخمين وتنفيذ استراتيجيات تسعير قائمة على البيانات من خلال توحيد البيانات التشغيلية الهامة ورؤى السوق.
 
-- **الحجوزات ومزامنة القنوات**: يقوم بمزامنة الأسعار والإتاحة تلقائيًا عبر أكثر من 400 قناة حجز، مما يضمن اتساق الأسعار ومنع الحجوزات المفرطة، مما يسمح بتعديلات الأسعار في الوقت الفعلي بناءً على الطلب عبر جميع المنصات.
+- **الحجوزات ومزامنة القنوات**: يقوم بمزامنة الأسعار والإتاحة تلقائيًا عبر Airbnb وBooking.com وExpedia، مما يضمن اتساق الأسعار ومنع الحجوزات المفرطة، مما يسمح بتعديلات الأسعار في الوقت الفعلي بناءً على الطلب عبر جميع المنصات.
 - **الحملات التسويقية والتحليلات**: يوفر رؤى حول أداء الحملات، مما يساعد على فهم استراتيجيات التسعير أو العروض الأكثر فعالية في جذب شرائح مستأجرين أو ضيوف محددة.
 - **المبيعات ومشاريع المطورين**: يدمج بيانات المبيعات لفهم معدلات الامتصاص وفعالية التسعير للتطورات الجديدة، مما يثري استراتيجيات التسعير المستقبلية.
 - **إدارة المالكين، الكشوفات والمدفوعات**: يبسط العمليات المالية، مما يسمح برؤية أوضح للربحية، وهو أمر ضروري لوضع أسعار إيجار تنافسية ومربحة.

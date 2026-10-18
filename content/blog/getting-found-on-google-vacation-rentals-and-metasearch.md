@@ -61,7 +61,7 @@ The rise of platforms like Ejar for rental contracts signifies a move towards gr
 
 Accez.Cloud empowers property operators to manage their entire operations and boost their online visibility, directly addressing the challenges of getting found on Google and metasearch platforms.
 
-- **Reservations and Channel Sync:** Automatically syncs your bookings and availability across 400+ booking channels, preventing double bookings and ensuring your calendars are always up-to-date on all platforms, including Google.
+- **Reservations and Channel Sync:** Automatically syncs your bookings and availability across Airbnb, Booking.com and Expedia, preventing double bookings and ensuring your calendars are always up-to-date on all platforms, including Google.
 - **Marketing Campaigns and Analytics:** Enables targeted marketing campaigns to reach potential guests and provides analytics to understand what's working, helping you refine your strategy for better online visibility.
 - **Property Listings Management:** Streamlines the creation and management of property listings with consistent, optimized content across all channels, ensuring a strong presence on Google and metasearch.
 - **Owner Management, Statements and Payouts:** While focused on operations, a smooth owner experience leads to better property presentation and guest satisfaction, indirectly impacting your visibility through positive reviews.
@@ -146,7 +146,7 @@ Maximize your visibility and bookings with Accez.Cloud [Visit portal.accez.cloud
 
 يمكّن Accez.Cloud مشغلي العقارات من إدارة عملياتهم بالكامل وتعزيز ظهورهم عبر الإنترنت، مما يعالج مباشرة تحديات الظهور على جوجل ومنصات البحث المجمع.
 
-- **الحجوزات ومزامنة القنوات:** يقوم بمزامنة حجوزاتك وتوافرها تلقائياً عبر أكثر من 400 قناة حجز، مما يمنع الحجوزات المزدوجة ويضمن تحديث تقويماتك دائماً على جميع المنصات، بما في ذلك جوجل.
+- **الحجوزات ومزامنة القنوات:** يقوم بمزامنة حجوزاتك وتوافرها تلقائياً عبر Airbnb وBooking.com وExpedia، مما يمنع الحجوزات المزدوجة ويضمن تحديث تقويماتك دائماً على جميع المنصات، بما في ذلك جوجل.
 - **الحملات التسويقية والتحليلات:** يتيح لك إطلاق حملات تسويقية مستهدفة للوصول إلى الضيوف المحتملين ويوفر تحليلات لفهم ما ينجح، مما يساعدك على تحسين استراتيجيتك لتحسين الظهور عبر الإنترنت.
 - **إدارة قوائم العقارات:** يبسّط إنشاء وإدارة قوائم العقارات بمحتوى متسق ومُحسّن عبر جميع القنوات، مما يضمن وجوداً قوياً على جوجل ومحركات البحث المجمع.
 - **إدارة الملاك، الكشوفات، والدفعات:** بينما يركز على العمليات، فإن تجربة المالك السلسة تؤدي إلى عرض أفضل للعقار ورضا الضيوف، مما يؤثر بشكل غير مباشر على ظهورك من خلال التقييمات الإيجابية.

@@ -55,7 +55,7 @@ The **Balady platform**, managed by the Ministry of Municipal and Rural Affairs 
 
 Accez.Cloud is an all-in-one property operations platform designed for Saudi Arabia that simplifies the complexities of managing short-term rentals and ensures compliance with licensing requirements.
 
-- **Reservations and Channel Sync:** Effortlessly manage bookings from over 400+ channels, ensuring all reservations are accounted for and easily trackable for licensing audits.
+- **Reservations and Channel Sync:** Effortlessly manage bookings from Airbnb, Booking.com and Expedia, ensuring all reservations are accounted for and easily trackable for licensing audits.
 - **Owner Management, Statements and Payouts:** Maintain clear financial records and transparent communication with owners, crucial for demonstrating operational legitimacy.
 - **Contracts and E-signing:** Generate and manage rental contracts digitally, ensuring compliance with platforms like Ejar and simplifying the documentation process for permits.
 - **Work Orders and Maintenance:** Track property maintenance and safety compliance, generating reports that can be used as evidence for property suitability during licensing applications.
@@ -154,7 +154,7 @@ tagsAr: ["السعودية", "إيجارات قصيرة الأجل", "ترخيص
 
 Accez.Cloud هي منصة عمليات عقارية شاملة مصممة للمملكة العربية السعودية تعمل على تبسيط تعقيدات إدارة الإيجارات قصيرة الأجل وضمان الامتثال لمتطلبات الترخيص.
 
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات من أكثر من 400 قناة بسهولة، مما يضمن احتساب جميع الحجوزات وسهولة تتبعها لعمليات تدقيق الترخيص.
+- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات من Airbnb وBooking.com وExpedia بسهولة، مما يضمن احتساب جميع الحجوزات وسهولة تتبعها لعمليات تدقيق الترخيص.
 - **إدارة الملاك، الكشوفات والمدفوعات:** حافظ على سجلات مالية واضحة وتواصل شفاف مع الملاك، وهو أمر بالغ الأهمية لإظهار الشرعية التشغيلية.
 - **العقود والتوقيع الإلكتروني:** قم بإنشاء وإدارة عقود الإيجار رقميًا، مما يضمن الامتثال لمنصات مثل إيجار وتبسيط عملية التوثيق للحصول على التصاريح.
 - **أوامر العمل والصيانة:** تتبع صيانة العقار والامتثال للسلامة، وإنشاء تقارير يمكن استخدامها كدليل لملاءمة العقار أثناء طلبات الترخيص.

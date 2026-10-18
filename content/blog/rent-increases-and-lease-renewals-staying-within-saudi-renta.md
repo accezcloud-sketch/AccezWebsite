@@ -57,7 +57,7 @@ The Kingdom's ambitious **Vision 2030** reform plan heavily influences the real 
 
 Accez.Cloud provides property managers with an all-in-one solution designed to streamline operations and ensure compliance within the Saudi Arabian real estate market. By leveraging technology, Accez.Cloud addresses many of the pain points associated with rent increases and lease renewals.
 
-- **Reservations and Channel Sync**: Effortlessly manage bookings from over 400 channels, ensuring accurate occupancy data for renewal forecasting.
+- **Reservations and Channel Sync**: Effortlessly manage bookings from Airbnb, Booking.com and Expedia, ensuring accurate occupancy data for renewal forecasting.
 - **Contracts and E-signing**: Create, manage, and digitally sign rental agreements, ensuring compliance and reducing administrative overhead.
 - **Owner Management, Statements and Payouts**: Provide transparent financial reporting to owners, facilitating discussions about rental income and potential adjustments.
 - **Resident Communications**: Facilitate clear and timely communication with tenants regarding lease renewals and any proposed changes, fostering stronger relationships.
@@ -131,7 +131,7 @@ By centralizing these critical functions, Accez.Cloud empowers property managers
 
 توفر Accez.Cloud لمديري العقارات حلاً شاملاً مصممًا لتبسيط العمليات وضمان الامتثال في سوق العقارات السعودي. من خلال الاستفادة من التكنولوجيا، تعالج Accez.Cloud العديد من المشكلات المرتبطة بزيادات الإيجار وتجديدات عقود الإيجار.
 
-- **الحجوزات ومزامنة القنوات**: إدارة الحجوزات بسهولة من أكثر من 400 قناة، مما يضمن دقة بيانات الإشغال لتوقع التجديدات.
+- **الحجوزات ومزامنة القنوات**: إدارة الحجوزات بسهولة من Airbnb وBooking.com وExpedia، مما يضمن دقة بيانات الإشغال لتوقع التجديدات.
 - **العقود والتوقيع الإلكتروني**: إنشاء وإدارة وتوقيع اتفاقيات الإيجار رقميًا، مما يضمن الامتثال ويقلل من العبء الإداري.
 - **إدارة المالك، الكشوفات والمدفوعات**: تقديم تقارير مالية شفافة للمالكين، مما يسهل المناقشات حول دخل الإيجار والتعديلات المحتملة.
 - **التواصل مع السكان**: تسهيل التواصل الواضح وفي الوقت المناسب مع المستأجرين بشأن تجديد عقود الإيجار وأي تغييرات مقترحة، مما يعزز العلاقات القوية.

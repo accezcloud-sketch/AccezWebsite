@@ -55,7 +55,7 @@ Furthermore, understanding local payment preferences is crucial. While tradition
 
 Accez.Cloud offers an all-in-one property operations platform designed for the Saudi Arabian market, supporting you in mastering the first 90 days of your team's onboarding. By leveraging Accez.Cloud, you can ensure a smooth transition and rapid adoption of new operational workflows:
 
-- **Reservations and Channel Sync:** Streamline booking management and ensure real-time updates across 400+ channels, minimizing errors and lost revenue from the outset.
+- **Reservations and Channel Sync:** Streamline booking management and ensure real-time updates across Airbnb, Booking.com and Expedia, minimizing errors and lost revenue from the outset.
 - **Owner Management, Statements, and Payouts:** Provide clear, timely financial reporting and automated payouts to owners, building trust and satisfaction from day one.
 - **Work Orders and Maintenance:** Efficiently manage and track maintenance requests, ensuring timely resolution and improved resident experience.
 - **Resident Communications:** Facilitate seamless communication with residents through integrated channels, keeping them informed and engaged.
@@ -133,7 +133,7 @@ Management plays a **crucial leadership role**. They must champion the new platf
 
 تقدم Accez.Cloud منصة عمليات عقارية شاملة مصممة خصيصًا للسوق السعودي، مما يدعمك في إتقان الأيام التسعين الأولى لتدريب فريقك. من خلال الاستفادة من Accez.Cloud، يمكنك ضمان انتقال سلس وتبني سريع لعمليات التشغيل الجديدة:
 
-- **الحجوزات ومزامنة القنوات:** تبسيط إدارة الحجوزات وضمان التحديثات في الوقت الفعلي عبر أكثر من 400 قناة، مما يقلل الأخطاء والإيرادات المفقودة من البداية.
+- **الحجوزات ومزامنة القنوات:** تبسيط إدارة الحجوزات وضمان التحديثات في الوقت الفعلي عبر Airbnb وBooking.com وExpedia، مما يقلل الأخطاء والإيرادات المفقودة من البداية.
 - **إدارة المالكين، كشوف الحسابات، والمدفوعات:** توفير تقارير مالية واضحة وفي الوقت المناسب ومدفوعات آلية للمالكين، مما يبني الثقة والرضا من اليوم الأول.
 - **أوامر العمل والصيانة:** إدارة وتتبع طلبات الصيانة بكفاءة، مما يضمن الحل في الوقت المناسب وتحسين تجربة السكان.
 - **اتصالات المقيمين:** تسهيل التواصل السلس مع السكان عبر قنوات متكاملة، مما يبقيهم على اطلاع وتفاعل.

@@ -60,7 +60,7 @@ The Kingdom is actively embracing digital transformation and streamlined service
 
 Accez.Cloud empowers property managers to effectively target, secure, and manage long-term corporate housing clients by streamlining operations and enhancing client experience.
 
-- **Reservations and Channel Sync across 400+ booking channels**: Ensure your properties are visible to corporate booking platforms and travel agencies, alongside other channels, maximizing reach and reducing vacancies.
+- **Reservations and Channel Sync across Airbnb, Booking.com and Expedia**: Ensure your properties are visible to corporate booking platforms and travel agencies, alongside other channels, maximizing reach and reducing vacancies.
 - **Contracts and e-Signing**: Expedite the onboarding of corporate clients with secure, digital contract management and e-signing capabilities, simplifying the negotiation and finalization process for long-term leases.
 - **Owner Management, Statements and Payouts**: Provide transparent and efficient financial management for property owners, essential when dealing with corporate accounts that often require detailed reporting and specific payment schedules.
 - **Resident Communications**: Maintain seamless communication with corporate tenants and their employees, addressing queries, facilitating maintenance requests, and ensuring a positive living experience throughout their extended stay.
@@ -161,7 +161,7 @@ tagsAr: ["إسكان مؤسسي", "إيجارات طويلة الأجل", "سف�
 
 تمكّن Accez.Cloud مديري العقارات من استهداف وتأمين وإدارة عملاء الإسكان المؤسسي على المدى الطويل بفعالية من خلال تبسيط العمليات وتعزيز تجربة العملاء.
 
-- **الحجوزات ومزامنة القنوات عبر أكثر من 400 قناة حجز**: تأكد من أن عقاراتك مرئية لمنصات الحجز المؤسسي ووكالات السفر، جنبًا إلى جنب مع القنوات الأخرى، مما يزيد من الوصول ويقلل من الشواغر.
+- **الحجوزات ومزامنة القنوات عبر Airbnb وBooking.com وExpedia**: تأكد من أن عقاراتك مرئية لمنصات الحجز المؤسسي ووكالات السفر، جنبًا إلى جنب مع القنوات الأخرى، مما يزيد من الوصول ويقلل من الشواغر.
 - **العقود والتوقيع الإلكتروني**: تسريع عملية إدماج العملاء المؤسسيين من خلال إدارة عقود آمنة ورقمية وقدرات التوقيع الإلكتروني، مما يبسط عملية التفاوض والإنهاء لعقود الإيجار طويلة الأجل.
 - **إدارة المالكين، الكشوفات، والمدفوعات**: توفير إدارة مالية شفافة وفعالة لأصحاب العقارات، وهو أمر ضروري عند التعامل مع الحسابات المؤسسية التي غالبًا ما تتطلب إعداد تقارير مفصلة وجداول دفع محددة.
 - **اتصالات المقيمين**: الحفاظ على اتصالات سلسة مع المستأجرين المؤسسيين وموظفيهم، ومعالجة الاستفسارات، وتسهيل طلبات الصيانة، وضمان تجربة معيشة إيجابية طوال فترة إقامتهم الممتدة.

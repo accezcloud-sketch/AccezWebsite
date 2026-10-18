@@ -59,7 +59,7 @@ The unique seasonal demand around Hajj and Umrah presents both opportunities and
 
 Accez.Cloud provides property managers, owners, and operators in Saudi Arabia with an integrated platform designed to streamline operations and enhance profitability, making length-of-stay optimization more achievable.
 
-- **Reservations and Channel Sync:** Seamlessly manage bookings across 400+ channels, allowing you to control availability and pricing to encourage longer stays without sacrificing visibility.
+- **Reservations and Channel Sync:** Seamlessly manage bookings across Airbnb, Booking.com and Expedia, allowing you to control availability and pricing to encourage longer stays without sacrificing visibility.
 - **Contracts and E-signing:** Expedite the leasing process for longer-term rentals with digital contracts and e-signing capabilities, reducing administrative burden and accelerating occupancy.
 - **Owner Management, Statements and Payouts:** Efficiently manage owner relations and financial distributions, providing transparency and ease for stakeholders involved in longer-term rental agreements.
 - **Resident Communications:** Enhance the guest experience for longer stays through direct and organized communication channels, fostering loyalty and repeat bookings.
@@ -159,7 +159,7 @@ tagsAr: ["إدارة الممتلكات", "إدارة الإيرادات", "دخ
 
 توفر Accez.Cloud لمديري العقارات والمالكين والمشغلين في المملكة العربية السعودية منصة متكاملة مصممة لتبسيط العمليات وتعزيز الربحية، مما يجعل تحسين مدة الإقامة أكثر قابلية للتحقيق.
 
-- **الحجوزات ومزامنة القنوات:** إدارة الحجوزات بسلاسة عبر أكثر من 400 قناة، مما يسمح لك بالتحكم في الإتاحة والتسعير لتشجيع الإقامات الأطول دون التخلي عن الظهور.
+- **الحجوزات ومزامنة القنوات:** إدارة الحجوزات بسلاسة عبر Airbnb وBooking.com وExpedia، مما يسمح لك بالتحكم في الإتاحة والتسعير لتشجيع الإقامات الأطول دون التخلي عن الظهور.
 - **العقود والتوقيع الإلكتروني:** تسريع عملية التأجير للإيجارات طويلة الأجل مع عقود رقمية وإمكانيات التوقيع الإلكتروني، مما يقلل العبء الإداري ويسرع الإشغال.
 - **إدارة الملاك، كشوف الحسابات والمدفوعات:** إدارة علاقات الملاك والتوزيعات المالية بكفاءة، مما يوفر الشفافية والسهولة لأصحاب المصلحة المشاركين في اتفاقيات الإيجار طويلة الأجل.
 - **اتصالات المقيمين:** تحسين تجربة الضيف للإقامات الأطول من خلال قنوات اتصال مباشرة ومنظمة، مما يعزز الولاء والحجوزات المتكررة.

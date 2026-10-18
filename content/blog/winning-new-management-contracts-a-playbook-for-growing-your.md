@@ -69,7 +69,7 @@ Navigating the regulatory environment is also critical. Ensuring strict **Ejar c
 
 Accez.Cloud is built to equip property managers in Saudi Arabia with the tools they need to streamline operations, enhance client satisfaction, and confidently pursue new business. By leveraging its comprehensive features, you can demonstrate unparalleled efficiency and professionalism, making you the clear choice for new management contracts.
 
-- **Reservations and Channel Sync:** Effortlessly manage bookings across 400+ channels, ensuring optimal occupancy for rental and sale properties and showcasing your ability to maximize revenue.
+- **Reservations and Channel Sync:** Effortlessly manage bookings across Airbnb, Booking.com and Expedia, ensuring optimal occupancy for rental and sale properties and showcasing your ability to maximize revenue.
 - **Owner Management, Statements, and Payouts:** Provide crystal-clear financial transparency and timely payouts to owners, building trust and demonstrating your reliability.
 - **Contracts and E-signing:** Streamline the onboarding process for new clients and tenants with secure, digital contract management and e-signing capabilities.
 - **Work Orders and Maintenance:** Efficiently manage maintenance requests and track service provider performance, assuring clients of prompt and effective property upkeep.
@@ -155,7 +155,7 @@ Visit portal.accez.cloud
 
 تم تصميم Accez.Cloud لتزويد مديري العقارات في المملكة العربية السعودية بالأدوات التي يحتاجونها لتبسيط العمليات، وتعزيز رضا العملاء، والسعي بثقة نحو أعمال جديدة. من خلال الاستفادة من ميزاتها الشاملة، يمكنك إظهار كفاءة واحترافية لا مثيل لهما، مما يجعلك الخيار الواضح لعقود الإدارة الجديدة.
 
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات عبر أكثر من 400 قناة بسهولة، مما يضمن الإشغال الأمثل للعقارات المؤجرة وللبيع، ويبرز قدرتك على زيادة الإيرادات.
+- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات عبر Airbnb وBooking.com وExpedia بسهولة، مما يضمن الإشغال الأمثل للعقارات المؤجرة وللبيع، ويبرز قدرتك على زيادة الإيرادات.
 - **إدارة المالكين، الكشوفات، والمدفوعات:** قدم شفافية مالية واضحة للغاية ومدفوعات في الوقت المناسب للمالكين، مما يبني الثقة ويظهر موثوقيتك.
 - **العقود والتوقيع الإلكتروني:** قم بتبسيط عملية التأهيل للعملاء والمستأجرين الجدد من خلال إدارة العقود الآمنة والتوقيع الإلكتروني.
 - **أوامر العمل والصيانة:** قم بإدارة طلبات الصيانة بكفاءة وتتبع أداء مقدمي الخدمات، مما يضمن للعملاء الحفاظ على الممتلكات بشكل فعال وفي الوقت المناسب.

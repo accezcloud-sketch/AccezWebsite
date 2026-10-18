@@ -61,7 +61,7 @@ The widespread adoption of **WhatsApp**, with usage rates exceeding 77% in the K
 
 Accez.Cloud offers an all-in-one property operations platform designed to tackle the complexities of managing a growing property portfolio. It provides the tools needed to scale your housekeeping operations effectively and efficiently, ensuring every property shines.
 
-- **Reservations and Channel Sync:** Seamlessly integrate bookings from over 400 channels, allowing for accurate scheduling of cleaning services between guest stays.
+- **Reservations and Channel Sync:** Seamlessly integrate bookings from Airbnb, Booking.com and Expedia, allowing for accurate scheduling of cleaning services between guest stays.
 - **Work Orders and Maintenance:** Generate and assign cleaning tasks as work orders, directly linking them to specific properties and units, with real-time tracking of completion.
 - **Service Provider Marketplace:** Easily onboard and manage your housekeeping teams, or connect with external service providers through a dedicated marketplace, ensuring you always have the right resources.
 - **Resident Communications:** Facilitate clear communication between management, cleaning staff, and residents regarding cleaning schedules and any specific requirements or feedback.
@@ -162,7 +162,7 @@ tagsAr: ["إدارة العقارات", "تدبير منزلي", "عمليات",
 
 يقدم Accez.Cloud منصة عمليات عقارية شاملة مصممة لمعالجة تعقيدات إدارة محفظة عقارات متنامية. توفر الأدوات اللازمة لتوسيع نطاق عمليات التدبير المنزلي لديك بكفاءة وفعالية، مما يضمن تألق كل عقار.
 
-- **الحجوزات ومزامنة القنوات:** دمج الحجوزات بسلاسة من أكثر من 400 قناة، مما يسمح بجدولة دقيقة لخدمات التنظيف بين إقامات الضيوف.
+- **الحجوزات ومزامنة القنوات:** دمج الحجوزات بسلاسة من Airbnb وBooking.com وExpedia، مما يسمح بجدولة دقيقة لخدمات التنظيف بين إقامات الضيوف.
 - **أوامر العمل والصيانة:** إنشاء وتعيين مهام التنظيف كأوامر عمل، وربطها مباشرة بعقارات ووحدات محددة، مع تتبع الإنجاز في الوقت الفعلي.
 - **سوق مقدمي الخدمات:** قم بتوظيف وإدارة فرق التدبير المنزلي لديك بسهولة، أو تواصل مع مقدمي الخدمات الخارجيين من خلال سوق مخصص، مما يضمن حصولك دائمًا على الموارد المناسبة.
 - **اتصالات المقيمين:** تسهيل الاتصال الواضح بين الإدارة وفريق التنظيف والمقيمين بشأن جداول التنظيف وأي متطلبات أو ملاحظات محددة.

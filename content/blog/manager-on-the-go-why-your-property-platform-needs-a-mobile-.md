@@ -61,7 +61,7 @@ Accez.Cloud is designed to empower property professionals across Saudi Arabia wi
 
 Here's how Accez.Cloud puts you in control:
 
-- **Reservations and Channel Sync:** Manage bookings across 400+ channels directly from your mobile device, ensuring your availability is always up-to-date and maximizing occupancy.
+- **Reservations and Channel Sync:** Manage bookings across Airbnb, Booking.com and Expedia directly from your mobile device, ensuring your availability is always up-to-date and maximizing occupancy.
 - **Work Orders and Maintenance:** Track, assign, and update maintenance requests in real-time, ensuring swift resolution of issues and happier residents.
 - **Resident Communications:** Connect instantly with your residents through a unified platform, sending updates, responding to queries, and fostering strong relationships.
 - **Owner Management, Statements, and Payouts:** Keep owners informed and manage financial transactions seamlessly, even when you're away from your desk.
@@ -140,7 +140,7 @@ Manage your properties anytime, anywhere. [Visit portal.accez.cloud](https://por
 
 إليك كيف تضعك Accez.Cloud في موقع التحكم:
 
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات عبر 400+ قناة مباشرة من جهازك المحمول، مما يضمن تحديث مدى توفرك دائمًا وزيادة الإشغال إلى أقصى حد.
+- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات عبر Airbnb وBooking.com وExpedia مباشرة من جهازك المحمول، مما يضمن تحديث مدى توفرك دائمًا وزيادة الإشغال إلى أقصى حد.
 - **أوامر العمل والصيانة:** تتبع أوامر الصيانة وتعيينها وتحديثها في الوقت الفعلي، مما يضمن حل المشكلات بسرعة ورضا أكبر للسكان.
 - **التواصل مع السكان:** تواصل فورًا مع سكانك من خلال منصة موحدة، وأرسل التحديثات، واستجب للاستفسارات، وعزز العلاقات القوية.
 - **إدارة المالكين، والكشوف، والمدفوعات:** حافظ على اطلاع المالكين وقم بإدارة المعاملات المالية بسلاسة، حتى عندما تكون بعيدًا عن مكتبك.

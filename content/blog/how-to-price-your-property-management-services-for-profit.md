@@ -37,7 +37,7 @@ Furthermore, the fragmented nature of many property management operations means 
 
 ### Understanding Your True Cost of Service Delivery
 
-The foundational step to profitable pricing is a thorough understanding of your operational costs. This involves meticulously tracking every expense associated with managing a property. Start by categorizing costs into direct (e.g., maintenance staff wages, specific repair parts) and indirect (e.g., software subscriptions, administrative overhead, marketing spend). It's crucial to allocate these costs accurately across the portfolio of properties you manage. For instance, software solutions that handle reservations and channel sync across 400+ booking channels for hotels and serviced apartments, or those that streamline owner statements and payouts, represent a significant investment that must be factored into your pricing. A study by JLL revealed that property managers who leverage technology can reduce operational costs by up to 20%, underscoring the importance of accounting for these investments.
+The foundational step to profitable pricing is a thorough understanding of your operational costs. This involves meticulously tracking every expense associated with managing a property. Start by categorizing costs into direct (e.g., maintenance staff wages, specific repair parts) and indirect (e.g., software subscriptions, administrative overhead, marketing spend). It's crucial to allocate these costs accurately across the portfolio of properties you manage. For instance, software solutions that handle reservations and channel sync across Airbnb, Booking.com and Expedia for hotels and serviced apartments, or those that streamline owner statements and payouts, represent a significant investment that must be factored into your pricing. A study by JLL revealed that property managers who leverage technology can reduce operational costs by up to 20%, underscoring the importance of accounting for these investments.
 
 ### Implementing Value-Based Pricing Models
 
@@ -57,7 +57,7 @@ The Kingdom's economic growth also means a rise in sophisticated property operat
 
 Accez.Cloud provides an integrated solution designed to streamline property operations and enhance profitability, directly impacting your ability to price effectively:
 
-- **Reservations and Channel Sync:** Automate bookings across 400+ channels, reducing manual errors and maximizing occupancy, which directly contributes to revenue that supports your pricing.
+- **Reservations and Channel Sync:** Automate bookings across Airbnb, Booking.com and Expedia, reducing manual errors and maximizing occupancy, which directly contributes to revenue that supports your pricing.
 - **Owner Management, Statements, and Payouts:** Efficiently generate accurate owner statements and process payouts, reducing administrative burden and providing transparent financial reporting that justifies your management fees.
 - **Contracts and E-Signing:** Streamline the creation and signing of rental and sale contracts, speeding up the leasing process and reducing operational delays that cost you money.
 - **Work Orders and Maintenance:** Centralize and track all maintenance requests, improving response times and reducing costs, which can be a strong selling point for value-based pricing.
@@ -116,7 +116,7 @@ Yes, tiered pricing can be highly effective. It allows you to cater to different
 
 ### فهم التكلفة الحقيقية لتقديم الخدمة
 
-الخطوة الأساسية للتسعير المربح هي الفهم الشامل لتكاليف التشغيل الخاصة بك. يتضمن ذلك تتبع كل نفقة بدقة فيما يتعلق بإدارة العقار. ابدأ بتصنيف التكاليف إلى مباشرة (على سبيل المثال، أجور موظفي الصيانة، قطع غيار محددة) وغير مباشرة (على سبيل المثال، اشتراكات البرامج، النفقات العامة الإدارية، الإنفاق التسويقي). من الضروري تخصيص هذه التكاليف بدقة عبر محفظة العقارات التي تديرها. على سبيل المثال، تمثل الحلول البرمجية التي تتعامل مع الحجوزات ومزامنة القنوات عبر أكثر من 400 قناة حجز للفنادق والشقق الفندقية، أو تلك التي تبسط كشوف حسابات المالكين والمدفوعات، استثمارًا كبيرًا يجب أن يؤخذ في الاعتبار في تسعيرك. كشفت دراسة أجرتها JLL أن مديري العقارات الذين يستفيدون من التكنولوجيا يمكنهم تقليل التكاليف التشغيلية بنسبة تصل إلى 20٪، مما يؤكد على أهمية حساب هذه الاستثمارات.
+الخطوة الأساسية للتسعير المربح هي الفهم الشامل لتكاليف التشغيل الخاصة بك. يتضمن ذلك تتبع كل نفقة بدقة فيما يتعلق بإدارة العقار. ابدأ بتصنيف التكاليف إلى مباشرة (على سبيل المثال، أجور موظفي الصيانة، قطع غيار محددة) وغير مباشرة (على سبيل المثال، اشتراكات البرامج، النفقات العامة الإدارية، الإنفاق التسويقي). من الضروري تخصيص هذه التكاليف بدقة عبر محفظة العقارات التي تديرها. على سبيل المثال، تمثل الحلول البرمجية التي تتعامل مع الحجوزات ومزامنة القنوات عبر Airbnb وBooking.com وExpedia للفنادق والشقق الفندقية، أو تلك التي تبسط كشوف حسابات المالكين والمدفوعات، استثمارًا كبيرًا يجب أن يؤخذ في الاعتبار في تسعيرك. كشفت دراسة أجرتها JLL أن مديري العقارات الذين يستفيدون من التكنولوجيا يمكنهم تقليل التكاليف التشغيلية بنسبة تصل إلى 20٪، مما يؤكد على أهمية حساب هذه الاستثمارات.
 
 ### تطبيق نماذج التسعير على أساس القيمة
 
@@ -136,7 +136,7 @@ Yes, tiered pricing can be highly effective. It allows you to cater to different
 
 توفر Accez.Cloud حلاً متكاملاً مصممًا لتبسيط عمليات العقارات وتعزيز الربحية، مما يؤثر بشكل مباشر على قدرتك على التسعير بفعالية:
 
-- **الحجوزات ومزامنة القنوات:** أتمتة الحجوزات عبر أكثر من 400 قناة، مما يقلل من الأخطاء اليدوية ويعظم الإشغال، مما يساهم بشكل مباشر في الإيرادات التي تدعم تسعيرك.
+- **الحجوزات ومزامنة القنوات:** أتمتة الحجوزات عبر Airbnb وBooking.com وExpedia، مما يقلل من الأخطاء اليدوية ويعظم الإشغال، مما يساهم بشكل مباشر في الإيرادات التي تدعم تسعيرك.
 - **إدارة المالكين، الكشوفات، والمدفوعات:** إنشاء كشوفات مالك دقيقة ومعالجة المدفوعات بكفاءة، مما يقلل العبء الإداري ويوفر تقارير مالية شفافة تبرر رسوم إدارتك.
 - **العقود والتوقيع الإلكتروني:** تبسيط إنشاء وتوقيع عقود الإيجار والبيع، وتسريع عملية التأجير وتقليل التأخير التشغيلي الذي يكلفك المال.
 - **أوامر العمل والصيانة:** مركزة وتتبع جميع طلبات الصيانة، وتحسين أوقات الاستجابة وتقليل التكاليف، والتي يمكن أن تكون نقطة بيع قوية للتسعير القائم على القيمة.

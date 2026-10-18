@@ -63,7 +63,7 @@ The Saudi Arabian Real Estate Transaction Index, often reflecting GASTAT statist
 
 Accez.Cloud empowers property operators in Saudi Arabia to eliminate costly gap nights and achieve consistently high occupancy through its comprehensive platform. By centralizing operations and providing intelligent automation, Accez ensures your calendar is always optimized for maximum revenue.
 
-- **Reservations and Channel Sync:** Automatically syncs bookings across over 400 channels, preventing double bookings and ensuring your calendar accurately reflects real-time availability, thus eliminating gaps caused by manual oversights.
+- **Reservations and Channel Sync:** Automatically syncs bookings across Airbnb, Booking.com and Expedia, preventing double bookings and ensuring your calendar accurately reflects real-time availability, thus eliminating gaps caused by manual oversights.
 - **Intelligent Minimum Stay Rules:** Configure flexible minimum stay rules that adapt to seasonality and demand, ensuring longer, more profitable bookings without deterring all short-term guests.
 - **Orphan-Night Management:** Utilize smart logic to allow bookings that perfectly bridge gaps between existing reservations, turning potential void nights into revenue-generating stays.
 - **Owner Management, Statements, and Payouts:** Streamlines financial operations, ensuring smooth payouts to owners, which indirectly supports reinvestment in property appeal and marketing to maintain high occupancy.
@@ -147,7 +147,7 @@ Visit portal.accez.cloud
 
 يمكّن Accez.Cloud مشغلي العقارات في المملكة العربية السعودية من القضاء على الليالي الفارغة المكلفة وتحقيق إشغال مرتفع باستمرار من خلال منصته الشاملة. من خلال مركزية العمليات وتوفير الأتمتة الذكية، يضمن Accez أن يكون تقويمك دائمًا محسّنًا لتحقيق أقصى قدر من الإيرادات.
 
-- **الحجوزات ومزامنة القنوات:** يقوم بمزامنة الحجوزات تلقائيًا عبر أكثر من 400 قناة، مما يمنع الحجوزات المزدوجة ويضمن أن تقويمك يعكس بدقة التوافر في الوقت الفعلي، وبالتالي يقضي على الفجوات الناجمة عن الأخطاء اليدوية.
+- **الحجوزات ومزامنة القنوات:** يقوم بمزامنة الحجوزات تلقائيًا عبر Airbnb وBooking.com وExpedia، مما يمنع الحجوزات المزدوجة ويضمن أن تقويمك يعكس بدقة التوافر في الوقت الفعلي، وبالتالي يقضي على الفجوات الناجمة عن الأخطاء اليدوية.
 - **قواعد الحد الأدنى الذكية للإقامة:** قم بتكوين قواعد مرنة للحد الأدنى للإقامة تتكيف مع الموسمية والطلب، مما يضمن حجوزات أطول وأكثر ربحية دون تثبيط جميع الضيوف لفترات قصيرة.
 - **إدارة الليالي اليتيمة:** استخدم المنطق الذكي للسماح بالحجوزات التي تسد تمامًا الفجوات بين الحجوزات القائمة، مما يحول الليالي الفارغة المحتملة إلى إقامات مدرة للدخل.
 - **إدارة المالكين، الكشوف، والدفعات:** يبسط العمليات المالية، ويضمن دفعات سلسة للمالكين، مما يدعم بشكل غير مباشر إعادة الاستثمار في جاذبية العقار والتسويق للحفاظ على إشغال مرتفع.

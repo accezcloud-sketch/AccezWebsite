@@ -52,7 +52,7 @@ The Kingdom of Saudi Arabia is rapidly embracing digital transformation, alignin
 Accez.Cloud empowers property managers in Saudi Arabia to overcome the challenges of traditional lease signing and accelerate their operations. Our all-in-one platform offers robust features designed to digitize and simplify your workflows.
 
 - **Contracts and E-signing:** Securely create, send, and manage lease agreements with our integrated e-signature functionality. This eliminates the need for printing, manual signatures, and physical document handling, significantly speeding up contract finalization.
-- **Reservations and Channel Sync:** Seamlessly manage bookings across over 400 channels, ensuring your properties are visible and reservations are processed efficiently, complementing the accelerated lease signing process.
+- **Reservations and Channel Sync:** Seamlessly manage bookings across Airbnb, Booking.com and Expedia, ensuring your properties are visible and reservations are processed efficiently, complementing the accelerated lease signing process.
 - **Resident Communications:** Facilitate clear and instant communication with your tenants, which is crucial during the onboarding and lease signing phase, ensuring a smooth experience.
 - **Rental and Sale Properties Management:** Centralize the management of all your rental and sale properties, making it easier to track the status of each unit and its leasing progress, including contract execution.
 - **Owner Management, Statements, and Payouts:** Streamline operations related to property owners, ensuring transparency and efficiency, which indirectly supports faster tenant onboarding by having all backend processes ready.
@@ -143,7 +143,7 @@ tagsAr: ["التوقيع الرقمي للعقود", "عقود إلكتروني�
 تمكّن Accez.Cloud مديري العقارات في المملكة العربية السعودية من التغلب على تحديات التوقيع التقليدي للعقود وتسريع عملياتهم. تقدم منصتنا المتكاملة ميزات قوية مصممة لرقمنة وتبسيط سير العمل لديك.
 
 - **العقود والتوقيعات الإلكترونية:** قم بإنشاء وإرسال وإدارة اتفاقيات الإيجار بشكل آمن من خلال وظيفة التوقيع الإلكتروني المتكاملة لدينا. هذا يلغي الحاجة إلى الطباعة والتوقيعات اليدوية والتعامل مع المستندات المادية، مما يسرع بشكل كبير من إتمام العقود.
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات بسلاسة عبر أكثر من 400 قناة، مما يضمن رؤية عقاراتك ومعالجة الحجوزات بكفاءة، مما يكمل عملية التوقيع السريعة للعقود.
+- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات بسلاسة عبر Airbnb وBooking.com وExpedia، مما يضمن رؤية عقاراتك ومعالجة الحجوزات بكفاءة، مما يكمل عملية التوقيع السريعة للعقود.
 - **اتصالات المقيمين:** تسهيل التواصل الواضح والفوري مع المستأجرين، وهو أمر بالغ الأهمية أثناء مرحلة التسجيل والتوقيع على العقود، مما يضمن تجربة سلسة.
 - **إدارة عقارات الإيجار والبيع:** قم بمركزة إدارة جميع عقارات الإيجار والبيع الخاصة بك، مما يسهل تتبع حالة كل وحدة وتقدم عملية تأجيرها، بما في ذلك تنفيذ العقد.
 - **إدارة الملاك، الكشوف، والدفعات:** تبسيط العمليات المتعلقة بمالكي العقارات، وضمان الشفافية والكفاءة، مما يدعم بشكل غير مباشر تسريع تسجيل المستأجرين من خلال جاهزية جميع العمليات الخلفية.

@@ -53,7 +53,7 @@ The Kingdom's ambitious Vision 2030 has placed religious tourism and hospitality
 
 Accez.Cloud is designed to empower property managers, owners, and hospitality operators in Saudi Arabia to effectively manage and capitalize on seasonal demand peaks. Our comprehensive platform offers solutions that streamline operations and enhance guest satisfaction during these critical periods:
 
-- **Reservations and Channel Sync:** Effortlessly manage bookings across over 400+ channels, ensuring maximum visibility and occupancy during peak demand for hotels and serviced apartments.
+- **Reservations and Channel Sync:** Effortlessly manage bookings across Airbnb, Booking.com and Expedia, ensuring maximum visibility and occupancy during peak demand for hotels and serviced apartments.
 - **Resident Communications:** Facilitate seamless communication with guests and residents, addressing inquiries and needs promptly, especially crucial during high-volume periods for hotels and serviced apartments.
 - **Work Orders and Maintenance:** Quickly address maintenance requests and ensure properties are in pristine condition for incoming guests, vital for maintaining high standards during busy seasons.
 - **Service Provider Marketplace:** Efficiently source and manage external service providers for additional support in cleaning, maintenance, or hospitality services when demand surges.
@@ -124,7 +124,7 @@ Ensure all licenses are up-to-date, adhere to Ejar regulations for rental proper
 
 تم تصميم Accez.Cloud لتمكين مديري العقارات والمالكين ومشغلي الضيافة في المملكة العربية السعودية من إدارة ذروات الطلب الموسمية بفعالية ورأس مالها. تقدم منصتنا الشاملة حلولًا تبسط العمليات وتعزز رضا الضيوف خلال هذه الفترات الحرجة:
 
--   **الحجوزات ومزامنة القنوات:** إدارة الحجوزات بسهولة عبر أكثر من 400 قناة حجز، مما يضمن أقصى قدر من الرؤية والإشغال خلال ذروة الطلب للفنادق والشقق الفندقية.
+-   **الحجوزات ومزامنة القنوات:** إدارة الحجوزات بسهولة عبر Airbnb وBooking.com وExpedia، مما يضمن أقصى قدر من الرؤية والإشغال خلال ذروة الطلب للفنادق والشقق الفندقية.
 -   **اتصالات المقيمين:** تسهيل التواصل السلس مع الضيوف والمقيمين، ومعالجة الاستفسارات والاحتياجات على الفور، وهو أمر بالغ الأهمية بشكل خاص خلال فترات الحجم المرتفع للفنادق والشقق الفندقية.
 -   **أوامر العمل والصيانة:** معالجة طلبات الصيانة بسرعة وضمان أن العقارات في حالة ممتازة للضيوف القادمين، وهو أمر حيوي للحفاظ على المعايير العالية خلال المواسم المزدحمة.
 -   **سوق مقدمي الخدمات:** البحث بكفاءة عن مقدمي الخدمات الخارجيين وإدارتهم للحصول على دعم إضافي في التنظيف أو الصيانة أو خدمات الضيافة عندما يزداد الطلب.

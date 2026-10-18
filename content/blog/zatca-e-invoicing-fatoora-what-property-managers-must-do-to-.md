@@ -65,7 +65,7 @@ The adoption of digital payment solutions is also on the rise in Saudi Arabia, w
 
 Accez.cloud is an all-in-one property operations platform designed for Saudi Arabia, offering comprehensive solutions to meet the challenges of Fatoora e-invoicing and streamline your property management operations.
 
-- **Reservations and Channel Sync:** Automatically capture booking details from over 400+ channels, ensuring accurate data for invoice generation.
+- **Reservations and Channel Sync:** Automatically capture booking details from Airbnb, Booking.com and Expedia, ensuring accurate data for invoice generation.
 - **Rental and Sale Properties Management:** Centralize all property-related transactions, making it easy to generate compliant invoices for rental income and property sales.
 - **Owner Management, Statements, and Payouts:** Generate transparent financial statements for owners, directly feeding into compliant invoicing processes.
 - **Contracts and E-signing:** Digitize lease agreements and contracts, ensuring all necessary data for e-invoicing is captured at the source.
@@ -172,7 +172,7 @@ tagsAr: ["فاتورة", "الفواتير الإلكترونية", "ZATCA", "ا
 
 Accez.cloud هي منصة عمليات عقارية شاملة مصممة للمملكة العربية السعودية، وتقدم حلولاً شاملة لمواجهة تحديات الفواتير الإلكترونية لنظام "فاتورة" وتبسيط عمليات إدارة العقارات الخاصة بك.
 
-- **إدارة الحجوزات ومزامنة القنوات:** تلتقط تفاصيل الحجز تلقائياً من أكثر من 400 قناة حجز، مما يضمن دقة البيانات لإنشاء الفواتير.
+- **إدارة الحجوزات ومزامنة القنوات:** تلتقط تفاصيل الحجز تلقائياً من Airbnb وBooking.com وExpedia، مما يضمن دقة البيانات لإنشاء الفواتير.
 - **إدارة العقارات للإيجار والبيع:** توحيد جميع المعاملات المتعلقة بالعقارات، مما يسهل إنشاء فواتير متوافقة لدخل الإيجار ومبيعات العقارات.
 - **إدارة الملاك، وكشوف الحسابات، والمدفوعات:** إنشاء كشوف حسابات مالية شفافة للملاك، تغذي مباشرة عمليات الفوترة المتوافقة.
 - **العقود والتوقيع الإلكتروني:** رقمنة اتفاقيات عقود الإيجار والعقود، مما يضمن التقاط جميع البيانات اللازمة للفواتير الإلكترونية من المصدر.

@@ -63,7 +63,7 @@ The rapid adoption of digital platforms and services in Saudi Arabia, with Whats
 
 Accez.Cloud empowers property managers, owners, and operators in Saudi Arabia to streamline their operations and enhance their rental property's appeal. By integrating various facets of property management, Accez.Cloud provides the tools needed to effectively manage and market furnished rentals.
 
-- **Reservations and Channel Sync:** Ensure your beautifully furnished property is visible across 400+ booking channels, maximizing exposure and filling your calendar faster.
+- **Reservations and Channel Sync:** Ensure your beautifully furnished property is visible across Airbnb, Booking.com and Expedia, maximizing exposure and filling your calendar faster.
 - **Owner Management, Statements and Payouts:** Maintain transparent communication with property owners, providing them with accurate statements and timely payouts, fostering strong relationships that support property maintenance and upgrades.
 - **Contracts and E-signing:** Facilitate seamless and legally compliant lease agreements for furnished rentals, speeding up the booking process and reducing administrative burden.
 - **Work Orders and Maintenance:** Quickly address any maintenance issues that could detract from a guest's experience or the property's aesthetic, ensuring a high standard of presentation is always maintained.
@@ -145,7 +145,7 @@ Yes, hiring a professional stager can significantly improve your rental's appeal
 
 تمكن Accez.Cloud مديري العقارات والمالكين والمشغلين في المملكة العربية السعودية من تبسيط عملياتهم وتعزيز جاذبية عقاراتهم المؤجرة. من خلال دمج مختلف جوانب إدارة الممتلكات، توفر Accez.Cloud الأدوات اللازمة لإدارة وتسويق العقارات المؤثثة بفعالية.
 
-- **الحجوزات ومزامنة القنوات:** تأكد من أن عقارك المؤثث بشكل جميل مرئي عبر أكثر من 400 قناة حجز، مما يزيد من التعرض ويملأ تقويمك بشكل أسرع.
+- **الحجوزات ومزامنة القنوات:** تأكد من أن عقارك المؤثث بشكل جميل مرئي عبر Airbnb وBooking.com وExpedia، مما يزيد من التعرض ويملأ تقويمك بشكل أسرع.
 - **إدارة المالك، والبيانات، والمدفوعات:** حافظ على تواصل شفاف مع أصحاب العقارات، ووفر لهم بيانات دقيقة ومدفوعات في الوقت المناسب، مما يعزز العلاقات القوية التي تدعم صيانة العقارات وترقياتها.
 - **العقود والتوقيع الإلكتروني:** تسهيل اتفاقيات الإيجار السلسة والمتوافقة مع القانون للعقارات المؤثثة، وتسريع عملية الحجز وتقليل العبء الإداري.
 - **أوامر العمل والصيانة:** معالجة أي مشكلات صيانة بسرعة يمكن أن تقلل من تجربة الضيف أو جماليات العقار، مما يضمن الحفاظ دائمًا على مستوى عالٍ من العرض.

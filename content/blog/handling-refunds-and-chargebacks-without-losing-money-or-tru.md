@@ -59,7 +59,7 @@ The widespread adoption of digital payment methods, often facilitated by platfor
 
 Accez.Cloud empowers property operators in Saudi Arabia to streamline their operations and mitigate the risks associated with refunds and chargebacks. By centralizing data and automating key processes, Accez.Cloud helps you maintain clarity and control.
 
-- **Reservations and Channel Sync:** Prevents double bookings and discrepancies that can lead to refund requests by synchronizing availability across over 400 booking channels.
+- **Reservations and Channel Sync:** Prevents double bookings and discrepancies that can lead to refund requests by synchronizing availability across Airbnb, Booking.com and Expedia.
 - **Contracts and E-signing:** Ensures clear terms and conditions are agreed upon by all parties, reducing ambiguity and disputes related to rental or service agreements.
 - **Owner Management, Statements, and Payouts:** Provides transparent financial tracking and clear records of all transactions, making it easier to verify charges and resolve any owner-related discrepancies.
 - **Resident Communications:** Facilitates clear and documented communication with residents, ensuring any issues are addressed promptly and recorded for future reference.
@@ -136,7 +136,7 @@ Streamline your property operations and master refunds and chargebacks at [Visit
 
 يمكّن Accez.Cloud مشغلي العقارات في المملكة العربية السعودية من تبسيط عملياتهم وتقليل المخاطر المرتبطة باسترداد الأموال ورد المبالغ المدفوعة. من خلال مركزية البيانات وأتمتة العمليات الرئيسية، يساعدك Accez.Cloud في الحفاظ على الوضوح والتحكم.
 
-- **الحجوزات ومزامنة القنوات:** يمنع الحجوزات المزدوجة والتناقضات التي يمكن أن تؤدي إلى طلبات استرداد الأموال عن طريق مزامنة التوفر عبر أكثر من 400 قناة حجز.
+- **الحجوزات ومزامنة القنوات:** يمنع الحجوزات المزدوجة والتناقضات التي يمكن أن تؤدي إلى طلبات استرداد الأموال عن طريق مزامنة التوفر عبر Airbnb وBooking.com وExpedia.
 - **العقود والتوقيع الإلكتروني:** يضمن الاتفاق على الشروط والأحكام بوضوح بين جميع الأطراف، مما يقلل من الغموض والنزاعات المتعلقة باتفاقيات الإيجار أو الخدمة.
 - **إدارة الملاك، والبيانات، والمدفوعات:** يوفر تتبعًا ماليًا شفافًا وسجلات واضحة لجميع المعاملات، مما يسهل التحقق من الرسوم وحل أي تناقضات تتعلق بالمالك.
 - **اتصالات المقيمين:** يسهل التواصل الواضح والموثق مع المقيمين، مما يضمن معالجة أي مشكلات على الفور وتسجيلها للرجوع إليها في المستقبل.

@@ -67,7 +67,7 @@ The primary legal basis for rental disputes and evictions in Saudi Arabia is oft
 
 Accez.Cloud is designed to empower property operators in Saudi Arabia to manage their operations with unparalleled efficiency, directly addressing the complexities of tenant relations, dispute resolution, and lease management. Our all-in-one platform provides the tools necessary to professionalize your property management and foster better relationships with your tenants.
 
-- **Reservations and Channel Sync:** Effortlessly manage bookings from over 400+ channels, ensuring consistent occupancy and reducing the risk of double bookings that can lead to tenant dissatisfaction.
+- **Reservations and Channel Sync:** Effortlessly manage bookings from Airbnb, Booking.com and Expedia, ensuring consistent occupancy and reducing the risk of double bookings that can lead to tenant dissatisfaction.
 - **Contracts and E-signing:** Create, manage, and e-sign rental contracts digitally, ensuring full compliance with Saudi regulations and providing a clear, documented record of tenant agreements.
 - **Resident Communications:** Facilitate seamless communication with tenants through a centralized platform, allowing for prompt responses to inquiries, notifications of maintenance, and clear resolution of minor disputes before they escalate.
 - **Work Orders and Maintenance:** Track and manage all maintenance requests efficiently. This ensures timely repairs, keeps tenants informed, and builds a positive record of property upkeep, minimizing potential conflict points.
@@ -172,7 +172,7 @@ tagsAr: ["السعودية", "إدارة العقارات", "علاقات الم
 
 تم تصميم Accez.Cloud لتمكين مشغلي العقارات في المملكة العربية السعودية من إدارة عملياتهم بكفاءة لا مثيل لها، مما يعالج بشكل مباشر تعقيدات علاقات المستأجرين، وحل النزاعات، وإدارة عقود الإيجار. توفر منصتنا الشاملة الأدوات اللازمة لإضفاء الطابع الاحترافي على إدارة الممتلكات الخاصة بك وتعزيز العلاقات بشكل أفضل مع المستأجرين.
 
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات من أكثر من 400 قناة بسلاسة، مما يضمن إشغالًا متسقًا ويقلل من خطر الحجوزات المزدوجة التي يمكن أن تؤدي إلى عدم رضا المستأجرين.
+- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات من Airbnb وBooking.com وExpedia بسلاسة، مما يضمن إشغالًا متسقًا ويقلل من خطر الحجوزات المزدوجة التي يمكن أن تؤدي إلى عدم رضا المستأجرين.
 - **العقود والتوقيع الإلكتروني:** قم بإنشاء وإدارة وتوقيع عقود الإيجار رقميًا، مما يضمن الامتثال الكامل للوائح السعودية ويوفر سجلاً واضحًا وموثقًا لاتفاقيات المستأجرين.
 - **اتصالات المقيمين:** قم بتسهيل الاتصال السلس مع المستأجرين من خلال منصة مركزية، مما يسمح بالاستجابات الفورية للاستفسارات، والإشعارات بالصيانة، والحل الواضح للنزاعات البسيطة قبل تفاقمها.
 - **أوامر العمل والصيانة:** تتبع وإدارة جميع طلبات الصيانة بكفاءة. يضمن ذلك الإصلاحات في الوقت المناسب، ويحافظ على إطلاع المستأجرين، ويبني سجلاً إيجابيًا لصيانة العقار، مما يقلل من نقاط الاحتكاك المحتملة.

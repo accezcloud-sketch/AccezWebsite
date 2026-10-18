@@ -60,7 +60,7 @@ The rapid adoption of digital services in Saudi Arabia, including a high WhatsAp
 
 Accez.cloud is built with the evolving regulatory landscape of Saudi Arabia in mind, offering a comprehensive suite of tools designed to simplify property management operations while supporting data privacy compliance. By centralizing your operations on a single, secure platform, Accez.cloud helps you manage tenant data responsibly and efficiently.
 
-- **Reservations and Channel Sync:** Securely manage booking data from over 400+ channels, ensuring that only necessary information is collected and processed for each reservation.
+- **Reservations and Channel Sync:** Securely manage booking data from Airbnb, Booking.com and Expedia, ensuring that only necessary information is collected and processed for each reservation.
 - **Contracts and E-signing:** Facilitates secure digital contract creation and e-signing, reducing the need for physical document handling and ensuring consent is digitally recorded.
 - **Owner Management, Statements and Payouts:** Handles sensitive financial data for owners with robust security protocols, ensuring compliance with data protection standards for financial transactions.
 - **Resident Communications:** Provides a secure channel for communication with residents, minimizing the risk of personal data exposure through unsecured external messaging apps.
@@ -142,7 +142,7 @@ Penalties for non-compliance can be severe, including significant financial fine
 
 تم بناء Accez.cloud مع مراعاة المشهد التنظيمي المتطور في المملكة العربية السعودية، وتقدم مجموعة شاملة من الأدوات المصممة لتبسيط عمليات إدارة العقارات مع دعم الامتثال لخصوصية البيانات. من خلال مركزية عملياتك على منصة واحدة آمنة، تساعدك Accez.cloud على إدارة بيانات المستأجرين بمسؤولية وكفاءة.
 
-- **الحجوزات ومزامنة القنوات:** إدارة بيانات الحجز بشكل آمن من أكثر من 400 قناة، مما يضمن جمع ومعالجة المعلومات الضرورية فقط لكل حجز.
+- **الحجوزات ومزامنة القنوات:** إدارة بيانات الحجز بشكل آمن من Airbnb وBooking.com وExpedia، مما يضمن جمع ومعالجة المعلومات الضرورية فقط لكل حجز.
 - **العقود والتوقيع الإلكتروني:** تسهيل إنشاء العقود الرقمية والتوقيع الإلكتروني الآمن، وتقليل الحاجة إلى التعامل مع المستندات المادية وضمان تسجيل الموافقة رقمياً.
 - **إدارة المالكين، الكشوفات والمدفوعات:** معالجة البيانات المالية الحساسة للمالكين ببروتوكولات أمنية قوية، مما يضمن الامتثال لمعايير حماية البيانات للمعاملات المالية.
 - **التواصل مع السكان:** توفير قناة آمنة للتواصل مع السكان، وتقليل خطر التعرض لبيانات شخصية من خلال تطبيقات المراسلة الخارجية غير الآمنة.
