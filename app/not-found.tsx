@@ -28,8 +28,8 @@ const COPY: Record<Locale, { eyebrow: string; title: string; body: string; nav: 
     links: [
       { href: '/', label: 'Home' },
       { href: '/solutions/property-managers', label: 'Property management solution' },
-      { href: '/owners', label: 'Owners & payouts' },
-      { href: '/hotels', label: 'Hotels & serviced apartments' },
+      { href: '/solutions/property-managers#owners', label: 'Owners & payouts' },
+      { href: '/solutions/property-managers#hotels', label: 'Hotels & serviced apartments' },
       { href: '/blog', label: 'Blog' },
       { href: '/support', label: 'Support' },
     ],
@@ -42,8 +42,8 @@ const COPY: Record<Locale, { eyebrow: string; title: string; body: string; nav: 
     links: [
       { href: '/', label: 'الرئيسية' },
       { href: '/solutions/property-managers', label: 'حل إدارة العقارات' },
-      { href: '/owners', label: 'إدارة الملاك' },
-      { href: '/hotels', label: 'الفنادق والشقق المخدومة' },
+      { href: '/solutions/property-managers#owners', label: 'إدارة الملاك' },
+      { href: '/solutions/property-managers#hotels', label: 'الفنادق والشقق المخدومة' },
       { href: '/blog', label: 'المدونة' },
       { href: '/support', label: 'الدعم' },
     ],

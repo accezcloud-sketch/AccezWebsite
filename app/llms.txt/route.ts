@@ -4,9 +4,6 @@ import { buildLlmsTxt, type LlmsLink } from '@/lib/content/llms'
 import { TOPICS } from '@/lib/content/topics'
 import { localeUrl } from '@/lib/i18n'
 import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/site'
-import { metadata as owners } from '../owners/page'
-import { metadata as hotels } from '../hotels/page'
-import { metadata as sales } from '../sales/page'
 import { solutionPricingMetadata } from '@/lib/platform/pricingPages'
 import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
 import { solutionPageMetadata } from '@/components/solutions/solutionPages'
@@ -45,7 +42,7 @@ export function GET() {
     sections: [
       {
         heading: 'Property management solution',
-        links: [solutionPage('property-managers'), page('owners', owners), page('hotels', hotels), page('sales', sales)],
+        links: [solutionPage('property-managers')],
       },
       { heading: 'Service provider solution', links: [solutionPage('service-providers')] },
       {

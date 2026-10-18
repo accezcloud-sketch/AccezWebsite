@@ -70,17 +70,17 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
       {
         label: { en: 'Owners & payouts', ar: 'الملاك والمدفوعات' },
         description: { en: 'Portal, ledger and Stripe payouts', ar: 'بوابة وسجل ومدفوعات' },
-        href: '/owners',
+        href: '/solutions/property-managers#owners',
       },
       {
         label: { en: 'Sales & projects', ar: 'المبيعات والمشاريع' },
         description: { en: 'Developer projects and pipeline', ar: 'مشاريع المطورين ومسار المبيعات' },
-        href: '/sales',
+        href: '/solutions/property-managers#sales',
       },
       {
         label: { en: 'Hotels & serviced apartments', ar: 'الفنادق والشقق المخدومة' },
         description: { en: 'Room types and channel manager', ar: 'أنواع الغرف ومدير القنوات' },
-        href: '/hotels',
+        href: '/solutions/property-managers#hotels',
       },
     ],
   },

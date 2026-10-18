@@ -5,7 +5,6 @@ describe('activeNavSection', () => {
   it('maps pages to their menu item, in both languages', () => {
     expect(activeNavSection('/solutions/property-managers/')).toBe('solutions')
     expect(activeNavSection('/ar/solutions/service-providers/')).toBe('solutions')
-    expect(activeNavSection('/owners/')).toBe('solutions')
     expect(activeNavSection('/pricing/service-providers/')).toBe('pricing')
     expect(activeNavSection('/blog/some-post/')).toBe('blog')
     expect(activeNavSection('/ar/blog/')).toBe('blog')

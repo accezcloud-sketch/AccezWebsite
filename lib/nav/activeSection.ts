@@ -5,7 +5,7 @@
 export type NavSectionKey = 'solutions' | 'pricing' | 'blog' | 'support' | 'about' | 'resources'
 
 const SECTIONS: [NavSectionKey, RegExp][] = [
-  ['solutions', /^\/(solutions|owners|sales|hotels)(\/|$)/],
+  ['solutions', /^\/solutions(\/|$)/],
   ['pricing', /^\/pricing(\/|$)/],
   ['blog', /^\/blog(\/|$)/],
   ['support', /^\/support(\/|$)/],

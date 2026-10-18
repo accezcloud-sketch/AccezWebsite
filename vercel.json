@@ -60,6 +60,66 @@
       "source": "/ar/service-providers/",
       "destination": "/ar/solutions/service-providers/",
       "permanent": true
+    },
+    {
+      "source": "/owners",
+      "destination": "/solutions/property-managers/#owners",
+      "permanent": true
+    },
+    {
+      "source": "/owners/",
+      "destination": "/solutions/property-managers/#owners",
+      "permanent": true
+    },
+    {
+      "source": "/ar/owners",
+      "destination": "/ar/solutions/property-managers/#owners",
+      "permanent": true
+    },
+    {
+      "source": "/ar/owners/",
+      "destination": "/ar/solutions/property-managers/#owners",
+      "permanent": true
+    },
+    {
+      "source": "/sales",
+      "destination": "/solutions/property-managers/#sales",
+      "permanent": true
+    },
+    {
+      "source": "/sales/",
+      "destination": "/solutions/property-managers/#sales",
+      "permanent": true
+    },
+    {
+      "source": "/ar/sales",
+      "destination": "/ar/solutions/property-managers/#sales",
+      "permanent": true
+    },
+    {
+      "source": "/ar/sales/",
+      "destination": "/ar/solutions/property-managers/#sales",
+      "permanent": true
+    },
+    {
+      "source": "/hotels",
+      "destination": "/solutions/property-managers/#hotels",
+      "permanent": true
+    },
+    {
+      "source": "/hotels/",
+      "destination": "/solutions/property-managers/#hotels",
+      "permanent": true
+    },
+    {
+      "source": "/ar/hotels",
+      "destination": "/ar/solutions/property-managers/#hotels",
+      "permanent": true
+    },
+    {
+      "source": "/ar/hotels/",
+      "destination": "/ar/solutions/property-managers/#hotels",
+      "permanent": true
     }
   ],
   "headers": [

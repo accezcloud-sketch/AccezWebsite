@@ -44,7 +44,7 @@ export const PILLARS: Pillar[] = [
     headingAr: 'الإقامة والحجوزات',
     modules: [
       { icon: CalendarCheck, title: 'Reservations & channels', titleAr: 'الحجوزات والقنوات', desc: 'One booking calendar synced with Airbnb, Booking.com and Expedia.', descAr: 'تقويم حجوزات واحد متزامن مع Airbnb وBooking.com وExpedia.' },
-      { icon: Hotel, title: 'Hotels & serviced apartments', titleAr: 'الفنادق والشقق المخدومة', desc: 'Room types, rates and a built-in channel manager.', descAr: 'أنواع الغرف والأسعار ومدير قنوات مدمج.', href: '/hotels' },
+      { icon: Hotel, title: 'Hotels & serviced apartments', titleAr: 'الفنادق والشقق المخدومة', desc: 'Room types, rates and a built-in channel manager.', descAr: 'أنواع الغرف والأسعار ومدير قنوات مدمج.', href: '/solutions/property-managers#hotels' },
       { icon: Wrench, title: 'Work orders', titleAr: 'أوامر العمل', desc: 'Track maintenance work orders from request to done.', descAr: 'تتبّع أوامر صيانة العمل من الطلب إلى الإنجاز.' },
     ],
   },
@@ -54,7 +54,7 @@ export const PILLARS: Pillar[] = [
     headingAr: 'العقارات والمبيعات',
     modules: [
       { icon: Building2, title: 'Properties & units', titleAr: 'العقارات والوحدات', desc: 'Rental and sale properties, each with its own units.', descAr: 'عقارات للإيجار وللبيع، لكلٍ منها وحداتها.' },
-      { icon: TrendingUp, title: 'Sales & projects', titleAr: 'المبيعات والمشاريع', desc: 'A lead-to-handover pipeline for units and off-plan projects.', descAr: 'مسار من العميل حتى التسليم للوحدات ومشاريع البيع على الخارطة.', href: '/sales' },
+      { icon: TrendingUp, title: 'Sales & projects', titleAr: 'المبيعات والمشاريع', desc: 'A lead-to-handover pipeline for units and off-plan projects.', descAr: 'مسار من العميل حتى التسليم للوحدات ومشاريع البيع على الخارطة.', href: '/solutions/property-managers#sales' },
       { icon: FileSignature, title: 'Contracts & e-signing', titleAr: 'العقود والتوقيع الإلكتروني', desc: 'Printable contracts with buyer e-signature and a public signing link.', descAr: 'عقود قابلة للطباعة مع توقيع إلكتروني للمشتري ورابط توقيع عام.' },
     ],
   },
@@ -63,7 +63,7 @@ export const PILLARS: Pillar[] = [
     heading: 'Owners & marketing',
     headingAr: 'الملاك والتسويق',
     modules: [
-      { icon: Wallet, title: 'Owners & payouts', titleAr: 'الملاك والمدفوعات', desc: 'Owner earnings, statements and payouts.', descAr: 'أرباح الملاك وكشوفهم ومدفوعاتهم.', href: '/owners' },
+      { icon: Wallet, title: 'Owners & payouts', titleAr: 'الملاك والمدفوعات', desc: 'Owner earnings, statements and payouts.', descAr: 'أرباح الملاك وكشوفهم ومدفوعاتهم.', href: '/solutions/property-managers#owners' },
       { icon: Megaphone, title: 'Marketing campaigns', titleAr: 'الحملات التسويقية', desc: 'Run ad campaigns with media and budgets, powered by credits.', descAr: 'شغّل حملات إعلانية بالوسائط والميزانيات، مدعومة بالرصيد.' },
     ],
   },

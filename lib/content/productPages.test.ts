@@ -18,7 +18,7 @@ describe('productCta', () => {
   it.each(keys)('%s points at a page that exists in both languages', (key) => {
     const href = productCta(key, 'en').route
     // Solution pages are served by app/solutions/[solution] for every registry entry.
-    if (PLATFORM_SOLUTIONS.some((s) => s.href === href)) {
+    if (PLATFORM_SOLUTIONS.some((s) => href.split('#')[0] === s.href)) {
       expect(href).toMatch(/^\/solutions\//)
       return
     }

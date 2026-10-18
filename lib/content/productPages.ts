@@ -11,7 +11,7 @@ import { MODULES_COPY } from './modulesCopy'
 import { solutionByKey } from '@/lib/platform/solutions'
 
 export interface ProductCtaContent {
-  /** Site route of the product page, e.g. `/owners`. */
+  /** Where the product is explained, e.g. `/solutions/property-managers#owners`. */
   route: string
   eyebrow: string
   title: string
@@ -38,7 +38,7 @@ export function productCta(key: ProductPageKey, locale: Locale): ProductCtaConte
 
   const s = SOLUTIONS[key]
   return {
-    route: `/${key}`,
+    route: `${solutionByKey('property-managers')!.href}#${key}`,
     eyebrow: ar ? s.eyebrowAr : s.eyebrow,
     title: ar ? s.ctaTitleAr : s.ctaTitle,
     description: ar ? s.subtitleAr : s.subtitle,
