@@ -188,22 +188,11 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
 
             {/* Main heading */}
             <Heading
-              className="text-strong font-bold text-center leading-tight tracking-tight mb-3"
-              style={{
-                fontSize: 'clamp(28px, 4vw, 44px)',
-                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
-                fontWeight: 800,
-              }}
+              className="hero-display text-strong text-center leading-tight tracking-tight mb-3"
+              style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}
             >
               {tp.titleLead}{' '}
-              <span
-                style={{
-                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
-              >
+              <span className="grad-text">
                 {tp.titleAccent}
               </span>
             </Heading>

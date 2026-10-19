@@ -142,8 +142,7 @@ export default function Footer() {
                   className="rounded-md"
                 />
                 <span
-                  className="font-bold text-strong text-lg"
-                  style={{ fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif' }}
+                  className="hero-display text-strong text-lg"
                 >
                   Accez.cloud
                 </span>

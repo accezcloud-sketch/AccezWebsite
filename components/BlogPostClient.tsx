@@ -121,7 +121,7 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
               </Link>
             </div>
 
-            <h1 className="text-strong font-bold mb-6 tracking-tight" style={{ fontSize: 'clamp(28px, 4.5vw, 44px)', lineHeight: 1.15, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+            <h1 className="hero-display text-strong mb-6 tracking-tight" style={{ fontSize: 'clamp(28px, 4.5vw, 44px)', lineHeight: 1.15 }}>
               {language === 'ar' ? post.titleAr : post.title}
             </h1>
 

@@ -164,22 +164,11 @@ export default function Ecosystem() {
             <div className="flex justify-center lg:justify-start mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
 
             <h2
-              className="text-strong font-bold leading-tight tracking-tight"
-              style={{
-                fontSize: 'clamp(28px, 4vw, 44px)',
-                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
-                fontWeight: 800,
-              }}
+              className="hero-display text-strong leading-tight tracking-tight"
+              style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}
             >
               {t.titleLead}{' '}
-              <span
-                style={{
-                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
-              >
+              <span className="grad-text">
                 {t.titleAccent}
               </span>
             </h2>
@@ -247,7 +236,7 @@ export default function Ecosystem() {
               }}
             >
               <Image src="/images/accez-logo.png" alt="Accez" width={40} height={40} className="rounded-lg mb-2" />
-              <span className="text-strong font-bold text-lg leading-none" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
+              <span className="hero-display text-strong text-lg leading-none">
                 {t.hub}
               </span>
               <span className="text-[11px] mt-1 px-3 leading-tight" style={{ color: 'var(--text-faint)' }}>

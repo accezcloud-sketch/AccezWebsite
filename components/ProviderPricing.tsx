@@ -45,7 +45,7 @@ export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?
                   <p className="mb-4" style={{ fontSize: 13.5, color: 'var(--text-muted)' }}>{plan.tagline}</p>
 
                   <div className="flex items-end gap-1.5 mb-2">
-                    <span className="text-strong font-bold tracking-tight" style={{ fontSize: 34, fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>{plan.price}</span>
+                    <span className="hero-display text-strong tracking-tight" style={{ fontSize: 34 }}>{plan.price}</span>
                     {plan.price !== p.plans[0].price && (
                       <span className="mb-1.5" style={{ fontSize: 14, color: 'var(--text-faint)' }}>{p.perMonth}</span>
                     )}

@@ -107,11 +107,11 @@ export default function Trust() {
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
             <h2
-              className="text-strong font-bold text-center leading-tight tracking-tight"
-              style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
+              className="hero-display text-strong text-center leading-tight tracking-tight"
+              style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}
             >
               {t.titleLead}{' '}
-              <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t.titleAccent}</span>
+              <span className="grad-text">{t.titleAccent}</span>
             </h2>
             <p className="text-center max-w-2xl mx-auto mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
           </div>

@@ -47,22 +47,11 @@ export default function Contact() {
                 <div className="flex justify-center mb-4"><span className="ui-chip">{tc.eyebrow}</span></div>
 
                 <h2
-                  className="text-strong font-bold text-center leading-tight tracking-tight mb-4"
-                  style={{
-                    fontSize: 'clamp(28px, 4vw, 44px)',
-                    fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
-                    fontWeight: 800,
-                  }}
+                  className="hero-display text-strong text-center leading-tight tracking-tight mb-4"
+                  style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}
                 >
                   {tc.titleLead}{' '}
-                  <span
-                    style={{
-                      background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
+                  <span className="grad-text">
                     {tc.titleAccent}
                   </span>
                 </h2>
@@ -83,7 +72,7 @@ export default function Contact() {
                 <div
                   className="ui-card p-6 sm:p-8 h-full flex flex-col"
                 >
-                  <h3 className="text-strong font-semibold mb-1" style={{ fontSize: 20, fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif' }}>
+                  <h3 className="hero-display text-strong mb-1" style={{ fontSize: 20 }}>
                     {tc.title}
                   </h3>
                   <p className="mb-6" style={{ fontSize: 14, color: 'var(--text-muted)' }}>{tc.subtitle}</p>

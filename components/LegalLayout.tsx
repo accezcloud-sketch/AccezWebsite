@@ -103,12 +103,8 @@ export default function LegalLayout({
               </p>
             )}
             <h1
-              className="text-strong font-bold tracking-tight mb-4"
-              style={{
-                fontSize: 'clamp(30px, 4.5vw, 46px)',
-                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
-                fontWeight: 800,
-              }}
+              className="hero-display text-strong tracking-tight mb-4"
+              style={{ fontSize: 'clamp(30px, 4.5vw, 46px)' }}
             >
               {title}
             </h1>
@@ -212,11 +208,8 @@ export function LegalSectionBlock({
   return (
     <section id={id} className="mb-14">
       <h2
-        className="text-strong font-bold tracking-tight mb-4"
-        style={{
-          fontSize: 'clamp(20px, 2.4vw, 26px)',
-          fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
-        }}
+        className="hero-display text-strong tracking-tight mb-4"
+        style={{ fontSize: 'clamp(20px, 2.4vw, 26px)' }}
       >
         {formatSectionNumber(numbers[id], language)}. {title}
       </h2>

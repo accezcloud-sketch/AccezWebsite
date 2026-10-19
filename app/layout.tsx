@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Cairo, Poppins } from 'next/font/google'
+import { Inter, Cairo, Bricolage_Grotesque } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
@@ -11,9 +11,10 @@ import { THEME_INIT_SCRIPT } from '@/lib/theme/theme'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
-// Poppins is the Accez product heading face (per Design System.docx). Mapped
-// to the existing --font-heading variable so every heading picks it up.
-const poppins = Poppins({ subsets: ['latin'], variable: '--font-heading', weight: ['400', '500', '600', '700'] })
+// Website headings: a grotesque at a regular weight with tight spacing, for a
+// calm, editorial look. (The product apps use Poppins, per Design System.docx.)
+// Mapped to --font-heading so every .hero-display heading picks it up.
+const heading = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-heading', axes: ['opsz'] })
 
 export const metadata: Metadata = {
   title: {
@@ -169,7 +170,7 @@ export default function RootLayout({
         />
         <Analytics />
       </head>
-      <body className={`${inter.variable} ${cairo.variable} ${poppins.variable} font-sans`}>
+      <body className={`${inter.variable} ${cairo.variable} ${heading.variable} font-sans`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

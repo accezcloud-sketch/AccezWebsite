@@ -38,7 +38,7 @@ export default function PostStrip({ id, heading, posts, locale }: PostStripProps
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between gap-4 mb-8">
-            <h2 id={id} className="text-2xl font-bold text-strong" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
+            <h2 id={id} className="hero-display text-2xl text-strong">
               {heading}
             </h2>
             <Link href={localeHref('/blog', locale)} prefetch={false} className="text-sm font-medium" style={{ color: 'var(--accent-hi)' }}>

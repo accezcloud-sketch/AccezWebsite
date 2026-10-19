@@ -39,7 +39,7 @@ export default function SolutionsShowcase({ locale }: { locale: Locale }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-20">
           <div className="flex justify-center mb-4"><span className="ui-chip">{c.eyebrow}</span></div>
-          <h2 className="hero-display text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 800 }}>{c.title}</h2>
+          <h2 className="hero-display text-strong tracking-tight mb-4" style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}>{c.title}</h2>
           <p className="text-muted leading-relaxed" style={{ fontSize: 17 }}>{c.subtitle}</p>
         </div>
 
@@ -50,7 +50,7 @@ export default function SolutionsShowcase({ locale }: { locale: Locale }) {
               <article key={solution.key} className={`grid grid-cols-1 ${i % 2 ? 'lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]' : 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]'} gap-10 lg:gap-14 items-center`}>
                 <div className={`min-w-0 ${i % 2 ? 'lg:order-2' : ''}`}>
                   <div className="flex mb-4"><span className="ui-chip">{solution.name[locale]}</span></div>
-                  <h3 className="hero-display text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(24px, 3.2vw, 36px)', fontWeight: 800 }}>
+                  <h3 className="hero-display text-strong tracking-tight mb-4" style={{ fontSize: 'clamp(24px, 3.2vw, 36px)' }}>
                     {show.title[locale]}
                   </h3>
                   <ul className="mb-8" style={{ borderTop: '1px solid var(--border)' }}>

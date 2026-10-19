@@ -20,7 +20,7 @@ function Shell({ title, subtitle, children }: { title: string; subtitle: string;
         <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h1 className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+            <h1 className="hero-display text-strong tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)' }}>
               {title}
             </h1>
             <p className="leading-relaxed text-muted" style={{ fontSize: 17 }}>{subtitle}</p>
@@ -47,7 +47,7 @@ export function LegalChooser({ doc: key, locale }: { doc: LegalDocKey; locale: L
           <li key={s.key}>
             <Link href={localeHref(legalHref(key, s), locale)} prefetch={false} className="solution-card flex flex-col h-full rounded-[var(--radius-lg)] p-7">
               <span className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'var(--accent-hi)' }}>{s.audience[locale]}</span>
-              <span className="text-strong font-bold mb-2" style={{ fontSize: 21, fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>{s.name[locale]}</span>
+              <span className="hero-display text-strong mb-2" style={{ fontSize: 21 }}>{s.name[locale]}</span>
               <span className="text-muted leading-relaxed mb-6">{s.summary[locale]}</span>
               <span className="mt-auto inline-flex items-center gap-2 font-semibold" style={{ color: 'var(--accent-hi)' }}>
                 {c.read}: {doc.title[locale]} <Arrow locale={locale} />

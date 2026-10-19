@@ -61,8 +61,8 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
             {c.eyebrow}
           </span>
           <h1
-            className="text-strong font-bold tracking-tight mb-4"
-            style={{ fontSize: 'clamp(30px, 4.5vw, 48px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
+            className="hero-display text-strong tracking-tight mb-4"
+            style={{ fontSize: 'clamp(30px, 4.5vw, 48px)' }}
           >
             {heading}
           </h1>

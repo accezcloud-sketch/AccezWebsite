@@ -69,7 +69,7 @@ export default function PostCard({
           ))}
         </div>
 
-        <Heading className="text-lg font-bold text-strong mb-2 transition-colors" style={{ fontFamily: 'var(--font-heading), system-ui, sans-serif' }}>
+        <Heading className="hero-display text-lg text-strong mb-2 transition-colors">
           {title}
         </Heading>
 

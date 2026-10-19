@@ -40,8 +40,8 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
           </span>
           <h2
             id="post-product-cta"
-            className="text-strong font-bold tracking-tight mb-3"
-            style={{ fontSize: 'clamp(22px, 3vw, 28px)', fontFamily: 'var(--font-heading), system-ui, sans-serif', fontWeight: 800 }}
+            className="hero-display text-strong tracking-tight mb-3"
+            style={{ fontSize: 'clamp(22px, 3vw, 28px)' }}
           >
             {c.title}
           </h2>

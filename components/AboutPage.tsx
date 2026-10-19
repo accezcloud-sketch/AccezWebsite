@@ -77,7 +77,7 @@ export default function AboutPage() {
       <Band shade="base">
         <section className="page-top pb-20" style={{ background: 'var(--section-bg, var(--bg))' }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h1 className="hero-display text-strong font-bold tracking-tight mb-6" style={{ fontSize: 'clamp(30px, 4.6vw, 50px)', fontWeight: 800, lineHeight: 1.1 }}>
+            <h1 className="hero-display text-strong tracking-tight mb-6" style={{ fontSize: 'clamp(30px, 4.6vw, 50px)', lineHeight: 1.1 }}>
               {t.titleLead} <span className="grad-text">{t.titleAccent}</span>
             </h1>
             <p className="text-muted leading-relaxed" style={{ fontSize: 17 }}>{t.intro}</p>
@@ -89,7 +89,7 @@ export default function AboutPage() {
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-8 items-start">
             <div className="min-w-0">
-              <h2 className="hero-display text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(24px, 3vw, 32px)', fontWeight: 800 }}>{t.storyHeading}</h2>
+              <h2 className="hero-display text-strong tracking-tight mb-4" style={{ fontSize: 'clamp(24px, 3vw, 32px)' }}>{t.storyHeading}</h2>
               <p className="text-muted leading-relaxed" style={{ fontSize: 16 }}>{t.story}</p>
             </div>
             <ul className="ui-card p-6 flex flex-col gap-5">
@@ -130,7 +130,7 @@ export default function AboutPage() {
       <Band shade="alt">
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="hero-display text-strong font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)', fontWeight: 800 }}>{t.ctaTitle}</h2>
+            <h2 className="hero-display text-strong tracking-tight mb-3" style={{ fontSize: 'clamp(24px, 3.5vw, 36px)' }}>{t.ctaTitle}</h2>
             <p className="text-muted mb-8" style={{ fontSize: 16 }}>{t.ctaSub}</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-start">
               {PLATFORM_SOLUTIONS.map((s) => (

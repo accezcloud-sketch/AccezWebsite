@@ -25,14 +25,14 @@ export default function SectionHeader({
         </div>
       )}
       <Heading
-        className="text-strong font-bold leading-tight tracking-tight"
-        style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}
+        className="hero-display text-strong leading-tight tracking-tight"
+        style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}
       >
         {lead}
         {accent && (
           <>
             {' '}
-            <span style={{ background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{accent}</span>
+            <span className="grad-text">{accent}</span>
           </>
         )}
       </Heading>

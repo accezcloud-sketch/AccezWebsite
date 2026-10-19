@@ -94,7 +94,7 @@ export default function SupportPage() {
               <span className="ui-chip mb-5">
                 {t.eyebrow}
               </span>
-              <h1 className="text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif', fontWeight: 800 }}>
+              <h1 className="hero-display text-strong tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)' }}>
                 {t.title}
               </h1>
               <p className="leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>

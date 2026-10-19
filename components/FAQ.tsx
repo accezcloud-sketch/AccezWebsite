@@ -181,22 +181,11 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
             <div className="flex justify-center mb-4"><span className="ui-chip">{tf.eyebrow}</span></div>
 
             <Heading
-              className="text-strong font-bold text-center leading-tight tracking-tight mb-4"
-              style={{
-                fontSize: 'clamp(28px, 4vw, 44px)',
-                fontFamily: 'var(--font-heading), var(--font-inter), system-ui, sans-serif',
-                fontWeight: 800,
-              }}
+              className="hero-display text-strong text-center leading-tight tracking-tight mb-4"
+              style={{ fontSize: 'clamp(28px, 4vw, 44px)' }}
             >
               {tf.titleLead}{' '}
-              <span
-                style={{
-                  background: 'linear-gradient(135deg, var(--grad-from), var(--grad-to))',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
-              >
+              <span className="grad-text">
                 {tf.titleAccent}
               </span>
             </Heading>
