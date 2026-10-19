@@ -11,7 +11,7 @@ excerptAr: "يؤدي طلب التقييمات من الضيوف في الوقت
 date: "2026-10-08"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/timing-the-review-request-how-to-get-more-5-star-ratings.jpg"
+coverImage: "/images/blog/timing-the-review-request-how-to-get-more-5-star-ratings.webp"
 coverImageAlt: "A tablet showing a star rating system with 5 stars highlighted"
 coverImageCredit: "Photo by Towfiqu barbhuiya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-row-of-yellow-stars-sitting-on-top-of-a-blue-and-pink-surface-0ZUoBtLw3y4"

@@ -11,7 +11,7 @@ excerptAr: "جذب الضيوف إلى موقع الحجز المباشر الخ
 date: "2026-09-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/building-a-direct-booking-website-that-actually-gets-traffic.jpg"
+coverImage: "/images/blog/building-a-direct-booking-website-that-actually-gets-traffic.webp"
 coverImageAlt: "A person using a laptop with a website open on the screen"
 coverImageCredit: "Photo by Stephen Phillips - Hostreviews.co.uk on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/turned-on-monitor-zs98a0DtKL4"

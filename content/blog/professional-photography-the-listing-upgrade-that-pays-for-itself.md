@@ -11,7 +11,7 @@ excerptAr: "الاستثمار في التصوير الاحترافي لقوائ
 date: "2026-10-04"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/professional-photography-the-listing-upgrade-that-pays-for-i.jpg"
+coverImage: "/images/blog/professional-photography-the-listing-upgrade-that-pays-for-i.webp"
 coverImageAlt: "A modern apartment interior with bright natural light and professionally arranged furniture."
 coverImageCredit: "Photo by William Thomas on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/black-canon-dslr-camera-beside-camera-lens-ny6tO4ItOEY"

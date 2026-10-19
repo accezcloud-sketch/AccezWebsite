@@ -11,7 +11,7 @@ excerptAr: "قم بإدارة محافظ الإيجارات قصيرة وطوي�
 date: "2026-09-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio-w.jpg"
+coverImage: "/images/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio-w.webp"
 coverImageAlt: "A diverse property portfolio with both modern apartments and hotel-like rooms."
 coverImageCredit: "Photo by Behnam Norouzi on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-computer-screen-displaying-a-stock-market-chart-RDXcFY5g5O4"

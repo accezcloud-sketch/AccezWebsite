@@ -11,7 +11,7 @@ excerptAr: "التسعير الفعال للعقارات في المملكة ا�
 date: "2026-09-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/rate-shopping-and-comp-sets-pricing-against-your-real-compet.jpg"
+coverImage: "/images/blog/rate-shopping-and-comp-sets-pricing-against-your-real-compet.webp"
 coverImageAlt: "Illustration of a property market with price tags and competing buildings"
 coverImageCredit: "Photo by Growtika on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-basket-with-a-target-and-a-target-in-it-zk2sfqaJgdU"

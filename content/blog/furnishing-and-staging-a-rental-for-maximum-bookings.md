@@ -11,7 +11,7 @@ excerptAr: "زيادة حجوزات الإيجار تبدأ بتأثيث وتج�
 date: "2026-10-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/furnishing-and-staging-a-rental-for-maximum-bookings.jpg"
+coverImage: "/images/blog/furnishing-and-staging-a-rental-for-maximum-bookings.webp"
 coverImageAlt: "A well-staged living room in a rental property with modern furniture and decor."
 coverImageCredit: "Photo by Dan LeFebvre on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-couch-sitting-in-front-of-a-brick-wall-qmVFSaVvJW8"

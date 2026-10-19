@@ -11,7 +11,7 @@ excerptAr: "يعد فحص المستأجرين الشامل قبل توقيع ع
 date: "2026-08-31"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/tenant-screening-that-prevents-problems-before-the-lease-is-.jpg"
+coverImage: "/images/blog/tenant-screening-that-prevents-problems-before-the-lease-is-.webp"
 coverImageAlt: "Property manager reviewing documents at a desk"
 coverImageCredit: "Photo by Vitaly Gariev on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-man-and-a-woman-standing-in-a-living-room-9NbhgqOUjnc"

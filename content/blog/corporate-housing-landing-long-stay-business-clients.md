@@ -11,7 +11,7 @@ excerptAr: "يعد تأمين عملاء الإسكان المؤسسي على ا
 date: "2026-09-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/corporate-housing-landing-long-stay-business-clients-for-ste.jpg"
+coverImage: "/images/blog/corporate-housing-landing-long-stay-business-clients-for-ste.webp"
 coverImageAlt: "A modern apartment interior with a desk and chair, suggesting a corporate housing setup"
 coverImageCredit: "Photo by Tierra Mallorca on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-and-red-wooden-house-miniature-on-brown-table-rgJ1J8SDEAY"

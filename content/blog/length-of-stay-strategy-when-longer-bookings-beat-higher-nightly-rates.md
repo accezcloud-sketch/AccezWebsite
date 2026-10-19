@@ -11,7 +11,7 @@ excerptAr: "لا يتعلق الأمر دائمًا بأعلى سعر لليلة
 date: "2026-09-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nig.jpg"
+coverImage: "/images/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nig.webp"
 coverImageAlt: "A person reviewing financial documents at a desk with a laptop."
 coverImageCredit: "Photo by Markus Winkler on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-blue-sign-with-white-text-4MltaE7tMXo"

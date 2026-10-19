@@ -11,7 +11,7 @@ excerptAr: "يعد فهم لوائح الإيجار في المملكة العر
 date: "2026-09-12"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta.jpg"
+coverImage: "/images/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta.webp"
 coverImageAlt: "A close-up of a rental contract with a pen on a desk"
 coverImageCredit: "Photo by Ibrahim Abdullah on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/kingdom-centre-skyscraper-in-riyadh-_UxsPARhtOg"

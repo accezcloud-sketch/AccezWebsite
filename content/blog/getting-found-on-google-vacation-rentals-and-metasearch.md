@@ -11,7 +11,7 @@ excerptAr: "اكتشف كيف تزيد من إشغال عقاراتك للإيج
 date: "2026-09-28"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/getting-found-on-google-vacation-rentals-and-metasearch.jpg"
+coverImage: "/images/blog/getting-found-on-google-vacation-rentals-and-metasearch.webp"
 coverImageAlt: "Laptop displaying vacation rental listing with map and booking options"
 coverImageCredit: "Photo by Lindsey Franzke on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-woman-laying-on-top-of-a-blue-towel-on-top-of-a-beach-ucihA5PdcbI"

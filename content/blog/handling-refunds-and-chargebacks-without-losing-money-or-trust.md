@@ -11,7 +11,7 @@ excerptAr: "قم بإدارة المبالغ المستردة ورد المبا�
 date: "2026-08-29"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/handling-refunds-and-chargebacks-without-losing-money-or-tru.jpg"
+coverImage: "/images/blog/handling-refunds-and-chargebacks-without-losing-money-or-tru.webp"
 coverImageAlt: "A hand holding a tablet displaying financial data and a lock icon."
 coverImageCredit: "Photo by 金 运 on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-holding-100-us-dollar-banknote-xBuu23uxarU"

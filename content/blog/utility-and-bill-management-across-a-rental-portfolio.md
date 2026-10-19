@@ -11,7 +11,7 @@ excerptAr: "تعد الإدارة الفعالة للمرافق والفواتي
 date: "2026-10-12"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/utility-and-bill-management-across-a-rental-portfolio.jpg"
+coverImage: "/images/blog/utility-and-bill-management-across-a-rental-portfolio.webp"
 coverImageAlt: "Property manager reviewing bills on a tablet"
 coverImageCredit: "Photo by Tierra Mallorca on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-and-red-wooden-house-miniature-on-brown-table-rgJ1J8SDEAY"

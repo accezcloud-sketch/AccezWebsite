@@ -11,7 +11,7 @@ excerptAr: "يقدم قانون حماية البيانات الشخصية ال�
 date: "2026-09-08"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f.jpg"
+coverImage: "/images/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f.webp"
 coverImageAlt: "A person looking at a tablet screen with property management data"
 coverImageCredit: "Photo by mahdiya aqila on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-large-building-with-a-clock-on-the-top-of-it-vs9M2P9K328"

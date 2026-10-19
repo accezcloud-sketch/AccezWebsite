@@ -11,7 +11,7 @@ excerptAr: "يثور التوقيع الرقمي للعقود الإيجارية
 date: "2026-08-27"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-te.jpg"
+coverImage: "/images/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-te.webp"
 coverImageAlt: "A person signing a document on a tablet device"
 coverImageCredit: "Photo by Cytonn Photography on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-writing-on-white-paper-GJao3ZTX9gU"

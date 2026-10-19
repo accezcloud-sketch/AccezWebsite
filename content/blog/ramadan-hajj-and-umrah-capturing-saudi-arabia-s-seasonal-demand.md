@@ -11,7 +11,7 @@ excerptAr: "تشهد المملكة العربية السعودية ذروات �
 date: "2026-09-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-dem.jpg"
+coverImage: "/images/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-dem.webp"
 coverImageAlt: "A mosque in Saudi Arabia during a religious season"
 coverImageCredit: "Photo by Yasmine Arfaoui on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/al-masjid-an-nabawi-mosque-in-medina-qbvAboqHkBg"

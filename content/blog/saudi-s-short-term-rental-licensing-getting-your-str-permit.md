@@ -11,7 +11,7 @@ excerptAr: "قد يكون التنقل في لوائح ترخيص الإيجار
 date: "2026-09-06"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-.jpg"
+coverImage: "/images/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-.webp"
 coverImageAlt: "A professional looking at a tablet displaying property management software on a desk"
 coverImageCredit: "Photo by Ameer Albahouth on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/city-traffic-with-modern-buildings-and-a-tower-9VSseMMu7Fo"

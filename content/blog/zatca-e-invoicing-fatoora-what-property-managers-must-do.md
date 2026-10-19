@@ -11,7 +11,7 @@ excerptAr: "يعد التنقل في لوائح الفواتير الإلكتر�
 date: "2026-09-04"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm-default.jpg"
+coverImage: "/images/blog/pm-default.webp"
 coverImageAlt: "Property manager reviewing documents with a digital tablet."
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"

@@ -11,7 +11,7 @@ excerptAr: "يعد بناء علامة تجارية قوية لشركتك لإد
 date: "2026-10-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/building-a-brand-for-your-property-management-company.jpg"
+coverImage: "/images/blog/building-a-brand-for-your-property-management-company.webp"
 coverImageAlt: "A stylized cityscape with an overlay of professional branding elements."
 coverImageCredit: "Photo by Md Ishak Rahman on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/man-looking-at-real-estate-listings-in-a-window-display-M-e90gzY9G8"

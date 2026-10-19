@@ -11,7 +11,7 @@ excerptAr: "اكتشف كيف تحول إقامات الضيوف السابقي�
 date: "2026-09-30"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/email-marketing-to-past-guests-turning-one-time-stays-into-r.jpg"
+coverImage: "/images/blog/email-marketing-to-past-guests-turning-one-time-stays-into-r.webp"
 coverImageAlt: "A person using a laptop to send an email with a beach background"
 coverImageCredit: "Photo by Christian Agbede on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/mothers-day-card-and-envelope-on-orange-background-Aj_iuDuRH98"

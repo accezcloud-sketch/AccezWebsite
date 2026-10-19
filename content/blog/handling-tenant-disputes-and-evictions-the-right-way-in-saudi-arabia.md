@@ -11,7 +11,7 @@ excerptAr: "تتطلب الإدارة الفعالة لخلافات المستأ
 date: "2026-09-14"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud.jpg"
+coverImage: "/images/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud.webp"
 coverImageAlt: "A person looking at legal documents on a desk with a Saudi Arabian flag in the background"
 coverImageCredit: "Photo by Ibrahim Abdullah on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/kingdom-centre-skyscraper-in-riyadh-_UxsPARhtOg"

@@ -11,7 +11,7 @@ excerptAr: "يحتاج مديرو العقارات في المملكة العر�
 date: "2026-09-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud.jpg"
+coverImage: "/images/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saud.webp"
 coverImageAlt: "Payment gateway icons for Mada, STC Pay, and Apple Pay"
 coverImageCredit: "Photo by Rubaitul Azad on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-white-dice-with-the-word-pay-on-it-JIpwo285mWA"

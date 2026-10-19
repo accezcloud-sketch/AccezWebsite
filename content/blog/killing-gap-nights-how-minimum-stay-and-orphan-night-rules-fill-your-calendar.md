@@ -11,7 +11,7 @@ excerptAr: "الليالي غير المشغولة في العقارات الم�
 date: "2026-09-16"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-f.jpg"
+coverImage: "/images/blog/killing-gap-nights-how-minimum-stay-and-orphan-night-rules-f.webp"
 coverImageAlt: "A calendar with many nights highlighted as booked, and a few empty slots."
 coverImageCredit: "Photo by Adam Tinworth on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/2018-december-calendar-with-crossout-marks-OJWivczp3aY"

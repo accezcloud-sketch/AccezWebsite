@@ -11,7 +11,7 @@ excerptAr: "تعد الإجراءات الاستباقية والتواصل ال
 date: "2026-10-06"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/preventing-parties-and-noise-complaints-in-your-short-term-r.jpg"
+coverImage: "/images/blog/preventing-parties-and-noise-complaints-in-your-short-term-r.webp"
 coverImageAlt: "Property manager reviewing rental agreements on a laptop"
 coverImageCredit: "Photo by Jon Tyson on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/red-and-black-ride-on-toy-car-Hl1eeC7D-Mk"
