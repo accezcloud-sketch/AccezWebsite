@@ -26,19 +26,16 @@ const CONTENT = {
 function SolutionDoors() {
   const { language } = useLanguage()
   return (
-    <nav aria-label={CONTENT[language].doorsLabel} className="w-full max-w-xl">
+    <nav aria-label={CONTENT[language].doorsLabel} className="w-full max-w-2xl">
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {PLATFORM_SOLUTIONS.map((s) => (
           <li key={s.key}>
             <Link
               href={localeHref(s.href, language)}
               prefetch={false}
-              className="solution-door group flex h-full flex-col gap-1 rounded-[var(--radius-md)] px-5 py-4 text-start"
+              className="solution-door group flex h-full items-center rounded-[var(--radius-md)] px-5 py-4 text-start"
             >
-              <span className="text-[11px] font-semibold uppercase tracking-[0.12em]" style={{ color: 'var(--accent-hi)' }}>
-                {s.audience[language]}
-              </span>
-              <span className="flex items-center justify-between gap-3 font-semibold text-strong" style={{ fontSize: 16 }}>
+              <span className="flex w-full items-center justify-between gap-3 font-semibold text-strong" style={{ fontSize: 16 }}>
                 {s.name[language]}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 rtl:-scale-x-100 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true">
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />

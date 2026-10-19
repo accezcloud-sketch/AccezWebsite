@@ -1,6 +1,6 @@
 'use client'
 
-import { Scissors, CalendarDays, ListOrdered, Gift, Tag, Star, MessageSquareText, Receipt } from 'lucide-react'
+import { TicketPercent, Award, ListOrdered, Gift, Tag, Star, Scissors, MessageSquareText } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import CenteredHero from '@/components/hero/CenteredHero'
@@ -13,7 +13,7 @@ import MoreFeatures from '@/components/product/MoreFeatures'
 import ProviderPricing from '@/components/ProviderPricing'
 
 interface Area {
-  id: 'bookings' | 'growth' | 'team'
+  id: 'bookings' | 'team'
   title: string
   subtitle: string
   steps: FeatureStep[]
@@ -21,7 +21,6 @@ interface Area {
 
 const CONTENT = {
   en: {
-    eyebrow: 'Service provider solution',
     title: 'Your bookings, customers and team',
     accent: 'in one place',
     subtitle: 'For barbers, salons, spas, coaches and every business that takes appointments.',
@@ -32,36 +31,30 @@ const CONTENT = {
         id: 'bookings', title: 'Bookings and customers', subtitle: 'Every appointment and every client, in one dashboard.',
         steps: [
           { title: 'Bookings', text: 'Accept, start and complete each booking, or mark a no-show.', shot: 'spBookings' },
+          { title: 'Calendar', text: 'Every appointment of the week, for the whole team.', shot: 'spCalendar' },
           { title: 'Customers', text: 'Visits, spend and last visit for every client.', shot: 'spCustomers' },
-          { title: 'Business hours', text: 'Set your week, with more than one shift a day.', shot: 'spHours' },
         ],
       },
       {
-        id: 'growth', title: 'Grow and get paid', subtitle: 'Bring clients back and take payments online.',
-        steps: [
-          { title: 'Promo codes', text: 'Discounts with limits, a minimum order and an end date.', shot: 'spPromos' },
-          { title: 'Loyalty', text: 'Clients earn points on every booking.', shot: 'spLoyalty' },
-          { title: 'Integrations', text: 'Tap, Stripe, analytics and SMS.', shot: 'spIntegrations' },
-        ],
-      },
-      {
-        id: 'team', title: 'Your team and your rules', subtitle: 'Everyone has their own login and services.',
+        id: 'team', title: 'Your team and your rules', subtitle: 'Who works, when you are open, and how you get paid.',
         steps: [
           { title: 'Team', text: 'Add staff and choose the services each one gives.', shot: 'spTeam' },
-          { title: 'Policies', text: 'Your timezone and an upfront deposit.', shot: 'spPolicies' },
+          { title: 'Business hours', text: 'Set your week, with more than one shift a day.', shot: 'spHours' },
+          { title: 'Policies', text: 'Your timezone, an upfront deposit and reminders.', shot: 'spPolicies' },
+          { title: 'Integrations', text: 'Tap, Stripe, analytics and SMS.', shot: 'spIntegrations' },
         ],
       },
     ] satisfies Area[],
     moreLabel: 'And more',
     more: [
-      { title: 'Services', text: 'Each with its own duration and price.' },
-      { title: 'Calendar', text: 'Your whole week at a glance.' },
+      { title: 'Promo codes', text: 'Discounts with limits and an end date.' },
+      { title: 'Loyalty points', text: 'Clients earn points on every booking.' },
       { title: 'Waitlist', text: 'Fill the gaps when a slot opens.' },
       { title: 'Gift cards', text: 'Sell credit clients can give.' },
       { title: 'Deals', text: 'Bundle services at one price.' },
       { title: 'Reviews', text: 'Ratings from completed bookings.' },
+      { title: 'Services', text: 'Each with its own duration and price.' },
       { title: 'SMS messaging', text: 'Reminders and updates by text.' },
-      { title: 'Billing', text: 'Your plan and invoices.' },
     ],
     stepsTitle: 'Live in three steps',
     steps: [
@@ -73,7 +66,6 @@ const CONTENT = {
     ctaSubtitle: 'Create your provider account in minutes.',
   },
   ar: {
-    eyebrow: 'حل مقدمي الخدمات',
     title: 'حجوزاتك وعملاؤك وفريقك',
     accent: 'في مكان واحد',
     subtitle: 'للحلاقين والصالونات والمنتجعات الصحية والمدربين وكل نشاط يعمل بالمواعيد.',
@@ -84,36 +76,30 @@ const CONTENT = {
         id: 'bookings', title: 'الحجوزات والعملاء', subtitle: 'كل موعد وكل عميل في لوحة تحكم واحدة.',
         steps: [
           { title: 'الحجوزات', text: 'اقبل كل حجز وابدأه وأكمله، أو سجّل عدم الحضور.', shot: 'spBookings' },
+          { title: 'التقويم', text: 'كل مواعيد الأسبوع للفريق كاملًا.', shot: 'spCalendar' },
           { title: 'العملاء', text: 'الزيارات والإنفاق وآخر زيارة لكل عميل.', shot: 'spCustomers' },
-          { title: 'ساعات العمل', text: 'حدّد أسبوعك، مع أكثر من فترة في اليوم.', shot: 'spHours' },
         ],
       },
       {
-        id: 'growth', title: 'انمُ واستلم مدفوعاتك', subtitle: 'أعد عملاءك واستقبل الدفع إلكترونيًا.',
-        steps: [
-          { title: 'أكواد الخصم', text: 'خصومات بحدود وحد أدنى للطلب وتاريخ انتهاء.', shot: 'spPromos' },
-          { title: 'الولاء', text: 'يكسب العملاء نقاطًا على كل حجز.', shot: 'spLoyalty' },
-          { title: 'التكاملات', text: 'Tap وStripe والتحليلات والرسائل النصية.', shot: 'spIntegrations' },
-        ],
-      },
-      {
-        id: 'team', title: 'فريقك وقواعدك', subtitle: 'لكل شخص تسجيل دخول وخدماته الخاصة.',
+        id: 'team', title: 'فريقك وقواعدك', subtitle: 'من يعمل، ومتى تفتح، وكيف تستلم مدفوعاتك.',
         steps: [
           { title: 'الفريق', text: 'أضف الموظفين واختر الخدمات التي يقدمها كل منهم.', shot: 'spTeam' },
-          { title: 'السياسات', text: 'منطقتك الزمنية والعربون المسبق.', shot: 'spPolicies' },
+          { title: 'ساعات العمل', text: 'حدّد أسبوعك، مع أكثر من فترة في اليوم.', shot: 'spHours' },
+          { title: 'السياسات', text: 'منطقتك الزمنية والعربون المسبق والتذكيرات.', shot: 'spPolicies' },
+          { title: 'التكاملات', text: 'Tap وStripe والتحليلات والرسائل النصية.', shot: 'spIntegrations' },
         ],
       },
     ] satisfies Area[],
     moreLabel: 'والمزيد',
     more: [
-      { title: 'الخدمات', text: 'لكل خدمة مدتها وسعرها.' },
-      { title: 'التقويم', text: 'أسبوعك كاملًا في لمحة.' },
+      { title: 'أكواد الخصم', text: 'خصومات بحدود وتاريخ انتهاء.' },
+      { title: 'نقاط الولاء', text: 'يكسب العملاء نقاطًا على كل حجز.' },
       { title: 'قائمة الانتظار', text: 'املأ الفراغ عند توفر موعد.' },
       { title: 'بطاقات الهدايا', text: 'بِع رصيدًا يهديه العملاء.' },
       { title: 'العروض', text: 'اجمع خدمات بسعر واحد.' },
       { title: 'التقييمات', text: 'تقييمات من الحجوزات المكتملة.' },
+      { title: 'الخدمات', text: 'لكل خدمة مدتها وسعرها.' },
       { title: 'الرسائل النصية', text: 'تذكيرات وتحديثات برسالة نصية.' },
-      { title: 'الفوترة', text: 'خطتك وفواتيرك.' },
     ],
     stepsTitle: 'ابدأ في ثلاث خطوات',
     steps: [
@@ -126,7 +112,7 @@ const CONTENT = {
   },
 } as const
 
-const MORE_ICONS = [Scissors, CalendarDays, ListOrdered, Gift, Tag, Star, MessageSquareText, Receipt]
+const MORE_ICONS = [TicketPercent, Award, ListOrdered, Gift, Tag, Star, Scissors, MessageSquareText]
 
 /**
  * /solutions/service-providers/: the service provider solution, shown with
@@ -140,7 +126,6 @@ export default function ServiceProviderPage() {
     <>
       <Band shade="base">
         <CenteredHero
-          eyebrow={t.eyebrow}
           title={t.title}
           accent={t.accent}
           subtitle={t.subtitle}
@@ -165,7 +150,7 @@ export default function ServiceProviderPage() {
         </Band>
       ))}
 
-      <Band shade="base">
+      <Band shade="alt">
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg))' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
             <MoreFeatures label={t.moreLabel} items={t.more.map((x, i) => ({ ...x, icon: MORE_ICONS[i] }))} />
@@ -173,7 +158,7 @@ export default function ServiceProviderPage() {
         </section>
       </Band>
 
-      <Band shade="alt">
+      <Band shade="base">
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
           <div className="max-w-5xl mx-auto px-4">
             <SectionHeader lead={t.stepsTitle} />
@@ -190,12 +175,12 @@ export default function ServiceProviderPage() {
         </section>
       </Band>
 
-      <Band shade="base"><ProviderPricing /></Band>
+      <Band shade="alt"><ProviderPricing /></Band>
 
-      <Band shade="alt">
+      <Band shade="base">
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="hero-display text-strong font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(26px, 3.6vw, 40px)', fontWeight: 800 }}>{t.ctaTitle}</h2>
+            <h2 className="hero-display text-strong tracking-tight mb-3" style={{ fontSize: 'clamp(26px, 3.6vw, 40px)' }}>{t.ctaTitle}</h2>
             <p className="mx-auto mb-8 text-muted" style={{ fontSize: 16 }}>{t.ctaSubtitle}</p>
             <HeroActions primary={{ label: t.ctaPrimary, href: PROVIDER_SIGN_UP, external: true }} />
           </div>

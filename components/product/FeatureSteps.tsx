@@ -13,9 +13,11 @@ export interface FeatureStep {
 
 /**
  * A few steps on one side, the real screen for the chosen step on the other.
- * Choosing a step (click, tap or arrow keys) swaps the screenshot; on phones
- * the screenshot sits above the steps, so the change is in view. Built as a
- * tab list, so it is announced and operable as one.
+ * Pointing at a step (or clicking, tapping, arrow keys) shows its screenshot;
+ * on phones the screenshot sits above the steps, so the change is in view.
+ * Every screen of the block is stacked in one cell, so the block keeps the
+ * height of its tallest screen and switching never moves the page. Built as
+ * a tab list, so it is announced and operable as one.
  */
 export default function FeatureSteps({ id, steps, locale, flip = false }: {
   /** Stable name for this block (ids are derived from it, identical on server and client). */
@@ -37,7 +39,7 @@ export default function FeatureSteps({ id, steps, locale, flip = false }: {
   }
 
   return (
-    <div className={`grid grid-cols-1 ${flip ? 'lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]' : 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]'} gap-8 lg:gap-14 items-center`}>
+    <div className={`grid grid-cols-1 ${flip ? 'lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]' : 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]'} gap-8 lg:gap-14 items-start`}>
       <div role="tablist" aria-orientation="vertical" className={`flex flex-col order-2 ${flip ? 'lg:order-2' : 'lg:order-1'}`}>
         {steps.map((s, i) => {
           const on = i === active
@@ -51,6 +53,7 @@ export default function FeatureSteps({ id, steps, locale, flip = false }: {
               aria-controls={`${base}-panel`}
               tabIndex={on ? 0 : -1}
               onClick={() => setActive(i)}
+              onPointerEnter={(e) => { if (e.pointerType === 'mouse') setActive(i) }}
               onKeyDown={(e) => onKey(e, i)}
               className={`feature-step text-start py-5 ps-6 pe-2 ${on ? 'is-active' : ''}`}
             >
@@ -60,8 +63,16 @@ export default function FeatureSteps({ id, steps, locale, flip = false }: {
           )
         })}
       </div>
-      <div id={`${base}-panel`} role="tabpanel" aria-labelledby={`${base}-tab-${active}`} className={`min-w-0 order-1 ${flip ? 'lg:order-1' : 'lg:order-2'}`}>
-        <ProductShot key={steps[active].shot} shot={steps[active].shot} locale={locale} sizes="(min-width: 1024px) 700px, 92vw" className="feature-shot-in" />
+      <div id={`${base}-panel`} role="tabpanel" aria-labelledby={`${base}-tab-${active}`} className={`min-w-0 order-1 grid ${flip ? 'lg:order-1' : 'lg:order-2'}`}>
+        {steps.map((s, i) => (
+          <div
+            key={s.shot}
+            aria-hidden={i !== active}
+            className={`[grid-area:1/1] self-start transition-opacity duration-300 motion-reduce:transition-none ${i === active ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+          >
+            <ProductShot shot={s.shot} locale={locale} sizes="(min-width: 1024px) 700px, 92vw" />
+          </div>
+        ))}
       </div>
     </div>
   )

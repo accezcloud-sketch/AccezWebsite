@@ -2,6 +2,7 @@ import { existsSync, readdirSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { SHOTS, SHOT_WIDTHS, shotSources, type ShotKey } from './shots'
+import SIZES from './shot-sizes.json'
 
 const PUBLIC = path.join(process.cwd(), 'public')
 
@@ -14,6 +15,12 @@ describe('product screenshots', () => {
           expect(existsSync(path.join(PUBLIC, file)), `${key} ${locale} ${file}`).toBe(true)
         }
       }
+    }
+  })
+
+  it('knows the real height of every screenshot', () => {
+    for (const s of Object.values(SHOTS)) {
+      for (const lang of ['en', 'ar']) expect((SIZES as Record<string, number>)[`${s.app}/${lang}/${s.name}`], `${s.app}/${lang}/${s.name}`).toBeGreaterThan(600)
     }
   })
 

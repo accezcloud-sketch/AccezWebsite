@@ -22,7 +22,6 @@ interface Area {
 
 const COPY = {
   en: {
-    eyebrow: 'Property management solution',
     title: 'Run every property',
     accent: 'from one place',
     subtitle: 'Rentals, reservations, sales and billing in one system.',
@@ -67,7 +66,6 @@ const COPY = {
     ],
   },
   ar: {
-    eyebrow: 'حل إدارة العقارات',
     title: 'أدر كل عقار',
     accent: 'من مكان واحد',
     subtitle: 'الإيجارات والحجوزات والمبيعات والفوترة في نظام واحد.',
@@ -121,7 +119,7 @@ function ClosingCta({ locale }: { locale: Locale }) {
   return (
     <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
       <div className="max-w-3xl mx-auto px-4 text-center">
-        <h2 className="hero-display text-strong font-bold tracking-tight mb-3" style={{ fontSize: 'clamp(26px, 3.6vw, 40px)', fontWeight: 800 }}>{c.ctaTitle}</h2>
+        <h2 className="hero-display text-strong tracking-tight mb-3" style={{ fontSize: 'clamp(26px, 3.6vw, 40px)' }}>{c.ctaTitle}</h2>
         <p className="mx-auto mb-8 text-muted" style={{ fontSize: 16 }}>{c.ctaSub}</p>
         <HeroActions
           primary={{ label: c.ctaPrimary, href: localeHref('/#contact', locale) }}
@@ -143,7 +141,6 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
     <>
       <Band shade="base">
         <CenteredHero
-          eyebrow={c.eyebrow}
           title={c.title}
           accent={c.accent}
           subtitle={c.subtitle}

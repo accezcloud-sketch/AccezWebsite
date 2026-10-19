@@ -5,9 +5,12 @@
  *
  * Files live in /public/product/<app>/<lang>/<name>-<width>.webp, in two
  * widths for sharp images on every screen. Arabic pages show the Arabic
- * interface where it was captured, otherwise the English one.
+ * interface where it was captured, otherwise the English one. Each capture
+ * shows the whole screen, so heights differ; shot-sizes.json records each
+ * one's height (at 1440 wide) and is written when the images are converted.
  */
 import type { Locale } from '@/lib/i18n'
+import SIZES from './shot-sizes.json'
 
 export type ShotApp = 'pm' | 'sp'
 
@@ -41,8 +44,7 @@ export const SHOTS = {
   spTeam: shot('sp', 'team', 'The team: each member has a login and their own services', 'الفريق: لكل عضو تسجيل دخول وخدماته الخاصة'),
   spHours: shot('sp', 'hours', 'Business hours with split shifts per day', 'ساعات العمل مع فترات متعددة في اليوم'),
   spPolicies: shot('sp', 'policies', 'Policies: business timezone and upfront deposit', 'السياسات: المنطقة الزمنية للنشاط والعربون المسبق'),
-  spPromos: shot('sp', 'promos', 'Promo codes with limits, minimum order and validity', 'أكواد الخصم مع الحدود والحد الأدنى للطلب والصلاحية'),
-  spLoyalty: shot('sp', 'loyalty', 'A loyalty program: points earned on every booking', 'برنامج الولاء: نقاط على كل حجز'),
+  spCalendar: shot('sp', 'calendar', 'The booking calendar for the whole team', 'تقويم الحجوزات للفريق كاملًا'),
   spIntegrations: shot('sp', 'integrations', 'Integrations: Tap payments, Stripe, analytics and SMS', 'التكاملات: مدفوعات Tap وStripe والتحليلات والرسائل النصية'),
 } satisfies Record<string, Shot>
 
@@ -59,8 +61,8 @@ export function shotSources(key: ShotKey, locale: Locale) {
     src: url(SHOT_WIDTHS[0]),
     srcSet: SHOT_WIDTHS.map((w) => `${url(w)} ${w}w`).join(', '),
     alt: s.alt[locale],
-    /** Every capture is 16:10 (1440 × 900 at 2x). */
+    /** Captured 1440 wide at 2x; the height is the screen's own. */
     width: 1440,
-    height: 900,
+    height: (SIZES as Record<string, number>)[`${s.app}/${lang}/${s.name}`] ?? 900,
   }
 }

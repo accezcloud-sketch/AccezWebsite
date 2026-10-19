@@ -32,8 +32,8 @@ export const SOLUTION_SHOWCASE: Record<string, SolutionShowcase> = {
     title: { en: 'Your business, booked and organised', ar: 'نشاطك، محجوز ومنظّم' },
     points: [
       { en: 'Bookings from your own clients', ar: 'حجوزات من عملائك' },
-      { en: 'Customers, team and business hours', ar: 'العملاء والفريق وساعات العمل' },
-      { en: 'Promo codes and loyalty points', ar: 'أكواد الخصم ونقاط الولاء' },
+      { en: 'Customers with visits and spend', ar: 'العملاء مع الزيارات والإنفاق' },
+      { en: 'Calendar, team and business hours', ar: 'التقويم والفريق وساعات العمل' },
     ],
   },
 }
