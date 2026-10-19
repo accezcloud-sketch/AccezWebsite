@@ -63,22 +63,22 @@
     },
     {
       "source": "/owners",
-      "destination": "/solutions/property-managers/#owners",
+      "destination": "/solutions/property-managers/#billing",
       "permanent": true
     },
     {
       "source": "/owners/",
-      "destination": "/solutions/property-managers/#owners",
+      "destination": "/solutions/property-managers/#billing",
       "permanent": true
     },
     {
       "source": "/ar/owners",
-      "destination": "/ar/solutions/property-managers/#owners",
+      "destination": "/ar/solutions/property-managers/#billing",
       "permanent": true
     },
     {
       "source": "/ar/owners/",
-      "destination": "/ar/solutions/property-managers/#owners",
+      "destination": "/ar/solutions/property-managers/#billing",
       "permanent": true
     },
     {
@@ -103,22 +103,22 @@
     },
     {
       "source": "/hotels",
-      "destination": "/solutions/property-managers/#hotels",
+      "destination": "/solutions/property-managers/#rentals",
       "permanent": true
     },
     {
       "source": "/hotels/",
-      "destination": "/solutions/property-managers/#hotels",
+      "destination": "/solutions/property-managers/#rentals",
       "permanent": true
     },
     {
       "source": "/ar/hotels",
-      "destination": "/ar/solutions/property-managers/#hotels",
+      "destination": "/ar/solutions/property-managers/#rentals",
       "permanent": true
     },
     {
       "source": "/ar/hotels/",
-      "destination": "/ar/solutions/property-managers/#hotels",
+      "destination": "/ar/solutions/property-managers/#rentals",
       "permanent": true
     },
     {
@@ -1452,7 +1452,7 @@
       ]
     },
     {
-      "source": "/capabilities/(.*)",
+      "source": "/product/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

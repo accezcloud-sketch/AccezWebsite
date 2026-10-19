@@ -4,25 +4,20 @@ import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
-import HeroLayout from '@/components/hero/HeroLayout'
-import RotatingHeadline from '@/components/hero/RotatingHeadline'
-import PlatformVisual from '@/components/visuals/PlatformVisual'
+import CenteredHero from '@/components/hero/CenteredHero'
+import HeroProductTabs from '@/components/home/HeroProductTabs'
 
 const CONTENT = {
   en: {
-    lead: 'One platform for',
-    phrases: ['property managers', 'service providers'],
-    readAs: 'property managers and service providers',
-    subtitle:
-      'Two solutions on one platform. Property management for property managers, landlords and hotels. And a solution for independent businesses, from barbers to fitness coaches, to take bookings from their own clients and new customers.',
+    title: 'One platform for property managers',
+    accent: 'and service providers',
+    subtitle: 'Property management for rentals, hotels and sales. Bookings for barbers, salons, spas and coaches.',
     doorsLabel: 'Choose your solution',
   },
   ar: {
-    lead: 'منصة واحدة تخدم',
-    phrases: ['مديري العقارات', 'مقدمي الخدمات'],
-    readAs: 'مديري العقارات ومقدمي الخدمات',
-    subtitle:
-      'حلّان على منصة واحدة. إدارة العقارات لمديري العقارات والملاك والفنادق. وحل للأنشطة المستقلة، من الحلاقين إلى مدربي اللياقة، لاستقبال الحجوزات من عملائها ومن عملاء جدد.',
+    title: 'منصة واحدة لمديري العقارات',
+    accent: 'ومقدمي الخدمات',
+    subtitle: 'إدارة العقارات للإيجارات والفنادق والمبيعات. وحجوزات للحلاقين والصالونات والمنتجعات الصحية والمدربين.',
     doorsLabel: 'اختر الحل المناسب لك',
   },
 } as const
@@ -31,7 +26,7 @@ const CONTENT = {
 function SolutionDoors() {
   const { language } = useLanguage()
   return (
-    <nav aria-label={CONTENT[language].doorsLabel} className="w-full">
+    <nav aria-label={CONTENT[language].doorsLabel} className="w-full max-w-xl">
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {PLATFORM_SOLUTIONS.map((s) => (
           <li key={s.key}>
@@ -57,16 +52,17 @@ function SolutionDoors() {
   )
 }
 
-/** The homepage top: the platform first, then a door into each solution. */
+/** The homepage top: the platform, a door into each solution, then the real product. */
 export default function Hero() {
   const { language } = useLanguage()
   const t = CONTENT[language]
   return (
-    <HeroLayout
-      headline={<RotatingHeadline lead={t.lead} phrases={t.phrases} readAs={t.readAs} />}
+    <CenteredHero
+      title={t.title}
+      accent={t.accent}
       subtitle={t.subtitle}
       actions={<SolutionDoors />}
-      visual={<PlatformVisual />}
+      media={<HeroProductTabs locale={language} />}
     />
   )
 }

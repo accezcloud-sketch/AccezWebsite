@@ -71,19 +71,19 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     primaryAction: { label: { en: 'Book a demo', ar: 'اطلب عرضًا توضيحيًا' }, href: '/#contact' },
     pages: [
       {
-        label: { en: 'Owners & payouts', ar: 'الملاك والمدفوعات' },
-        description: { en: 'Portal, ledger and Stripe payouts', ar: 'بوابة وسجل ومدفوعات' },
-        href: '/solutions/property-managers#owners',
+        label: { en: 'Rentals & reservations', ar: 'الإيجارات والحجوزات' },
+        description: { en: 'Calendar, bookings and add-ons', ar: 'التقويم والحجوزات والإضافات' },
+        href: '/solutions/property-managers#rentals',
       },
       {
         label: { en: 'Sales & projects', ar: 'المبيعات والمشاريع' },
-        description: { en: 'Developer projects and pipeline', ar: 'مشاريع المطورين ومسار المبيعات' },
+        description: { en: 'Sale units and the sales path', ar: 'وحدات البيع ومسار المبيعات' },
         href: '/solutions/property-managers#sales',
       },
       {
-        label: { en: 'Hotels & serviced apartments', ar: 'الفنادق والشقق المخدومة' },
-        description: { en: 'Room types and channel manager', ar: 'أنواع الغرف ومدير القنوات' },
-        href: '/solutions/property-managers#hotels',
+        label: { en: 'Billing & operations', ar: 'الفوترة والعمليات' },
+        description: { en: 'Payments, integrations and messages', ar: 'المدفوعات والتكاملات والرسائل' },
+        href: '/solutions/property-managers#billing',
       },
     ],
   },

@@ -1,20 +1,21 @@
 import Link from 'next/link'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
+import ProductShot from '@/components/product/ProductShot'
 import { SOLUTION_SHOWCASE } from './solutionShowcase'
 
 const COPY = {
   en: {
     eyebrow: 'Two solutions',
     title: 'One platform, two ways to work',
-    subtitle: 'Each solution has its own dashboard, its own plans and its own sign-in. Choose the one you run.',
+    subtitle: 'Each has its own dashboard, plans and sign-in.',
     explore: 'Explore the solution',
     pricing: 'See pricing',
   },
   ar: {
     eyebrow: 'حلّان',
     title: 'منصة واحدة، وطريقتان للعمل',
-    subtitle: 'لكل حل لوحة تحكم وخطط وتسجيل دخول خاص به. اختر الحل الذي تعمل به.',
+    subtitle: 'لكل حل لوحة تحكم وخطط وتسجيل دخول خاص به.',
     explore: 'استكشف الحل',
     pricing: 'عرض الأسعار',
   },
@@ -27,8 +28,8 @@ const Check = () => (
 )
 
 /**
- * The homepage's tour of the solutions: one row per solution, text on one
- * side and a live visual on the other, alternating. Each row leads to the
+ * The homepage's tour of the solutions: one row per solution, a few words on
+ * one side and a real screen on the other, alternating. Each row leads to the
  * solution's own page and pricing.
  */
 export default function SolutionsShowcase({ locale }: { locale: Locale }) {
@@ -45,15 +46,13 @@ export default function SolutionsShowcase({ locale }: { locale: Locale }) {
         <div className="flex flex-col gap-20 lg:gap-28">
           {PLATFORM_SOLUTIONS.map((solution, i) => {
             const show = SOLUTION_SHOWCASE[solution.key]
-            const Visual = show.Visual
             return (
-              <article key={solution.key} className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <article key={solution.key} className={`grid grid-cols-1 ${i % 2 ? 'lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]' : 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]'} gap-10 lg:gap-14 items-center`}>
                 <div className={`min-w-0 ${i % 2 ? 'lg:order-2' : ''}`}>
                   <div className="flex mb-4"><span className="ui-chip">{solution.name[locale]}</span></div>
                   <h3 className="hero-display text-strong font-bold tracking-tight mb-4" style={{ fontSize: 'clamp(24px, 3.2vw, 36px)', fontWeight: 800 }}>
                     {show.title[locale]}
                   </h3>
-                  <p className="text-muted leading-relaxed mb-6" style={{ fontSize: 16 }}>{solution.summary[locale]}</p>
                   <ul className="mb-8" style={{ borderTop: '1px solid var(--border)' }}>
                     {show.points.map((p) => (
                       <li key={p.en} className="flex gap-3 py-3 text-sm sm:text-[15px] text-soft" style={{ borderBottom: '1px solid var(--border)' }}>
@@ -78,8 +77,8 @@ export default function SolutionsShowcase({ locale }: { locale: Locale }) {
                     </Link>
                   </div>
                 </div>
-                <div className={`min-w-0 flex justify-center ${i % 2 ? 'lg:order-1 lg:justify-start' : 'lg:justify-end'}`}>
-                  <Visual />
+                <div className={`min-w-0 ${i % 2 ? 'lg:order-1' : ''}`}>
+                  <ProductShot shot={show.shot} locale={locale} sizes="(min-width: 1024px) 640px, 92vw" />
                 </div>
               </article>
             )

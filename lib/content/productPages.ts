@@ -11,7 +11,7 @@ import { MODULES_COPY } from './modulesCopy'
 import { solutionByKey } from '@/lib/platform/solutions'
 
 export interface ProductCtaContent {
-  /** Where the product is explained, e.g. `/solutions/property-managers#owners`. */
+  /** Where the product is explained, e.g. `/solutions/property-managers#sales`. */
   route: string
   eyebrow: string
   title: string
@@ -20,6 +20,9 @@ export interface ProductCtaContent {
   bookDemo: string
   startFree: string
 }
+
+/** The section of the property management page that covers each topic. */
+const SECTION: Record<Exclude<ProductPageKey, 'modules'>, string> = { owners: 'billing', sales: 'sales', hotels: 'rentals' }
 
 export function productCta(key: ProductPageKey, locale: Locale): ProductCtaContent {
   const modules = MODULES_COPY[locale]
@@ -38,7 +41,7 @@ export function productCta(key: ProductPageKey, locale: Locale): ProductCtaConte
 
   const s = SOLUTIONS[key]
   return {
-    route: `${solutionByKey('property-managers')!.href}#${key}`,
+    route: `${solutionByKey('property-managers')!.href}#${SECTION[key]}`,
     eyebrow: ar ? s.eyebrowAr : s.eyebrow,
     title: ar ? s.ctaTitleAr : s.ctaTitle,
     description: ar ? s.subtitleAr : s.subtitle,
