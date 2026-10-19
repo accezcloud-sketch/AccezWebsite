@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useId, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import type { NavSection } from './types'
 
@@ -8,6 +8,10 @@ const HOVER_OPEN_MS = 180
 const HOVER_CLOSE_MS = 350
 
 interface NavDropdownProps {
+  /** Stable name, e.g. "pricing": the panel's id is derived from it. A fixed
+   *  id (not useId) is identical on the server and in the browser, so the
+   *  page hydrates without an attribute mismatch. */
+  name: string
   label: string
   sections: NavSection[]
   /** Which edge of the trigger the panel lines up with. */
@@ -26,9 +30,9 @@ interface NavDropdownProps {
  * returns focus to the trigger; clicking outside closes it.
  * Sections stack in one column, and the panel is as wide as its text.
  */
-export default function NavDropdown({ label, sections, align = 'start', triggerClassName, active = false }: NavDropdownProps) {
+export default function NavDropdown({ name, label, sections, align = 'start', triggerClassName, active = false }: NavDropdownProps) {
   const [open, setOpen] = useState(false)
-  const panelId = useId()
+  const panelId = `nav-menu-${name}`
   const rootRef = useRef<HTMLDivElement>(null)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null)

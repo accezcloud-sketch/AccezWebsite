@@ -1,13 +1,14 @@
 'use client'
 
-import { useId, useState } from 'react'
+import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import type { NavSection } from './types'
 
 /** A collapsible group in the mobile menu, mirroring a desktop NavDropdown. */
-export default function MobileNavGroup({ label, sections, onNavigate }: { label: string; sections: NavSection[]; onNavigate: () => void }) {
+export default function MobileNavGroup({ name, label, sections, onNavigate }: { name: string; label: string; sections: NavSection[]; onNavigate: () => void }) {
   const [open, setOpen] = useState(false)
-  const id = useId()
+  // Fixed id (not useId), so server and browser agree.
+  const id = `nav-mobile-${name}`
 
   return (
     <div>

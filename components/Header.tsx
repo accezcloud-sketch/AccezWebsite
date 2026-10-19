@@ -112,14 +112,14 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <NavDropdown label={t.header.product} sections={markCurrent(productSections)} triggerClassName={linkClass} active={section === 'solutions'} />
-            <NavDropdown label={t.header.pricing} sections={markCurrent(pricingSections)} triggerClassName={linkClass} active={section === 'pricing'} />
+            <NavDropdown name="solutions" label={t.header.product} sections={markCurrent(productSections)} triggerClassName={linkClass} active={section === 'solutions'} />
+            <NavDropdown name="pricing" label={t.header.pricing} sections={markCurrent(pricingSections)} triggerClassName={linkClass} active={section === 'pricing'} />
             {topLinks.map((item) => (
               <a key={item.key} href={href(item.to)} className={navClass(item.key)} aria-current={isCurrentPath(href(item.to), pathname) ? 'page' : undefined}>
                 {item.label}
               </a>
             ))}
-            <NavDropdown label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} align="end" triggerClassName={linkClass} active={section === 'resources'} />
+            <NavDropdown name="resources" label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} align="end" triggerClassName={linkClass} active={section === 'resources'} />
           </nav>
 
           {/* Right side: theme, language, sign in, primary action */}
@@ -128,7 +128,7 @@ export default function Header() {
             <button onClick={() => setLanguage(ar ? 'en' : 'ar')} className={linkClass}>
               {ar ? 'English' : 'العربية'}
             </button>
-            <NavDropdown label={t.header.signIn} sections={signInSections} align="end" triggerClassName={linkClass} />
+            <NavDropdown name="sign-in" label={t.header.signIn} sections={signInSections} align="end" triggerClassName={linkClass} />
             <a href={action.href} {...actionProps} className="ui-btn ui-btn-primary" style={{ padding: '.55rem 1rem', fontSize: 14 }}>
               {action.label}
             </a>
@@ -168,8 +168,8 @@ export default function Header() {
               style={{ borderBottom: '1px solid var(--border)' }}
             >
               <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="flex flex-col gap-1 py-4 px-2">
-                <MobileNavGroup label={t.header.product} sections={markCurrent(productSections)} onNavigate={closeMobile} />
-                <MobileNavGroup label={t.header.pricing} sections={markCurrent(pricingSections)} onNavigate={closeMobile} />
+                <MobileNavGroup name="solutions" label={t.header.product} sections={markCurrent(productSections)} onNavigate={closeMobile} />
+                <MobileNavGroup name="pricing" label={t.header.pricing} sections={markCurrent(pricingSections)} onNavigate={closeMobile} />
                 {topLinks.map((item) => (
                   <a
                     key={item.key}
@@ -181,7 +181,7 @@ export default function Header() {
                     {item.label}
                   </a>
                 ))}
-                <MobileNavGroup label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} onNavigate={closeMobile} />
+                <MobileNavGroup name="resources" label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} onNavigate={closeMobile} />
 
                 {/* Sign in: flat, since a nested dropdown in a drawer is an extra tap. */}
                 <div className="mt-3 pt-3 flex flex-col gap-1" style={{ borderTop: '1px solid var(--border)' }}>
