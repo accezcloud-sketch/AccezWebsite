@@ -159,6 +159,8 @@
 .nav-active { color: var(--text) !important; position: relative; }
 /* Over a photo page top the current menu item is white like the rest. */
 .header-on-photo .nav-active { color: #fff !important; }
+/* A soft dark band behind the header on a photo, so the menu reads on any image. */
+.header-on-photo { background: linear-gradient(180deg, rgb(6 16 26 / .62), rgb(6 16 26 / .28) 70%, transparent) border-box; }
 .nav-active::after {
   content: ''; position: absolute; inset-inline: 0; bottom: -8px; height: 2px;
   border-radius: 2px; background: var(--accent);

@@ -21,7 +21,6 @@ const PHOTO_TOPS = new Set(['/', '/ar', '/solutions/property-managers', '/ar/sol
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [atTop, setAtTop] = useState(true)
   const { language, setLanguage, t } = useLanguage()
   const pathname = usePathname() ?? '/'
   const section = activeNavSection(pathname)
@@ -40,7 +39,6 @@ export default function Header() {
     const onScroll = () => {
       const y = window.scrollY
       setScrolled(y > 50)
-      setAtTop(y < 10)
     }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -104,16 +102,14 @@ export default function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo: the mark alone, linking home */}
           <Link
             href={href('/')}
             prefetch={false}
             aria-label={ar ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'}
-            className={`flex items-center gap-2 shrink-0 text-xl min-[400px]:text-2xl font-bold ${onPhoto ? 'text-white' : 'text-strong'} rounded-lg hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent`}
-            style={{ transition: 'opacity 0.3s ease', opacity: atTop ? 0.9 : 1 }}
+            className="flex items-center shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           >
-            <Image src="/images/accez-logo.png" alt="Accez Logo" width={32} height={32} className="rounded-lg" />
-            Accez.cloud
+            <Image src="/images/accez-logo.png" alt="" width={40} height={40} className="rounded-lg" priority />
           </Link>
 
           {/* Desktop navigation */}
