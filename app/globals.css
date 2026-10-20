@@ -606,6 +606,23 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 .feature-step.is-active { border-inline-start-color: var(--text-strong); color: var(--text-muted); }
 .feature-step.is-active > span:first-child { color: var(--text-strong); }
 .feature-step:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* A page top on a photo (CenteredHero backdrop): white text over a dark
+   shade, the photo covering about the first screen and fading into the page,
+   so the product below overlaps its lower edge. */
+.hero-photo { height: min(100svh, 900px); }
+.hero-photo-shade { background: linear-gradient(180deg, rgb(6 16 26 / .66) 0%, rgb(6 16 26 / .52) 50%, rgb(6 16 26 / .40) 100%); }
+/* No length after var() here: minified, "var(...)100%" is dropped by browsers. */
+.hero-photo-fade { position: absolute; inset-inline: 0; bottom: 0; height: 28%; background: linear-gradient(180deg, transparent, var(--bg)); }
+.hero-on-photo .hero-title { color: #fff; }
+.hero-on-photo .hero-subtitle { color: rgb(255 255 255 / .86); }
+.hero-on-photo .solution-door { background: rgb(255 255 255 / .12); border-color: rgb(255 255 255 / .28); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.hero-on-photo .solution-door:hover, .hero-on-photo .solution-door:focus-visible { background: rgb(255 255 255 / .2); border-color: rgb(255 255 255 / .45); }
+.hero-on-photo .solution-door .text-strong { color: #fff; }
+.hero-on-photo .ui-tabs { background: rgb(255 255 255 / .14); border-color: rgb(255 255 255 / .28); }
+.hero-on-photo .ui-tab { color: rgb(255 255 255 / .82); }
+.hero-on-photo .ui-tab:hover { color: #fff; }
+.hero-on-photo .ui-tab.is-active { background: #fff; color: #0b1a26; }
+
 /* Segmented tabs (e.g. the homepage's product switcher). */
 .ui-tabs { gap: 4px; padding: 4px; border-radius: 999px; background: var(--card-bg); border: 1px solid var(--card-border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 .ui-tab { padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--text-muted); white-space: nowrap; transition: color .2s ease, background-color .2s ease; }

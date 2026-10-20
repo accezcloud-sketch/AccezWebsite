@@ -15,6 +15,9 @@ import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
 import { activeNavSection, isCurrentPath, type NavSectionKey } from '@/lib/nav/activeSection'
 
+/** Pages whose top is a photo (the homepage hero): the header starts in white on it. */
+const PHOTO_TOPS = new Set(['/', '/ar'])
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -72,9 +75,11 @@ export default function Header() {
     { links: PLATFORM_SOLUTIONS.map((s) => ({ label: s.role[language], description: s.roleSummary[language], href: s.loginUrl, external: true })) },
   ]
 
+  // Before scrolling, on a photo, the header is white text on the photo.
+  const onPhoto = !scrolled && !isMobileMenuOpen && PHOTO_TOPS.has(pathname.replace(/\/$/, '') || '/')
   const linkClass = [
-    'text-sm font-medium transition-colors duration-200 hover:text-strong',
-    scrolled ? 'text-soft' : 'text-muted',
+    'text-sm font-medium transition-colors duration-200',
+    onPhoto ? 'text-white/85 hover:text-white' : scrolled ? 'text-soft hover:text-strong' : 'text-muted hover:text-strong',
   ].join(' ')
   // Where the visitor is: the menu item of the current page is marked, and so
   // is the current page inside an open menu.
@@ -103,7 +108,7 @@ export default function Header() {
             href={href('/')}
             prefetch={false}
             aria-label={ar ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'}
-            className="flex items-center gap-2 shrink-0 text-xl min-[400px]:text-2xl font-bold text-strong rounded-lg hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+            className={`flex items-center gap-2 shrink-0 text-xl min-[400px]:text-2xl font-bold ${onPhoto ? 'text-white' : 'text-strong'} rounded-lg hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent`}
             style={{ transition: 'opacity 0.3s ease', opacity: atTop ? 0.9 : 1 }}
           >
             <Image src="/images/accez-logo.png" alt="Accez Logo" width={32} height={32} className="rounded-lg" />
@@ -137,12 +142,12 @@ export default function Header() {
           {/* Mobile: theme, language, menu button */}
           <div className="lg:hidden flex items-center gap-1.5 min-[400px]:gap-2 ms-3">
             <ThemeToggle language={language} />
-            <button onClick={() => setLanguage(ar ? 'en' : 'ar')} className="p-2 text-soft hover:text-strong font-medium transition-colors duration-200">
+            <button onClick={() => setLanguage(ar ? 'en' : 'ar')} className={`p-2 font-medium transition-colors duration-200 ${onPhoto ? 'text-white/90 hover:text-white' : 'text-soft hover:text-strong'}`}>
               {ar ? 'EN' : 'العربية'}
             </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-soft hover:text-strong"
+              className={`p-2 ${onPhoto ? 'text-white/90 hover:text-white' : 'text-soft hover:text-strong'}`}
               aria-label={ar ? 'القائمة' : 'Toggle menu'}
               aria-expanded={isMobileMenuOpen}
             >
