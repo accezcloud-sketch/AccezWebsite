@@ -13,16 +13,17 @@ export const RIYADH: HeroBackdrop = {
   position: 'center 22%',
 }
 
-/** A modern apartment block with a landscaped courtyard. Photo by Bohdan Loik. Property management. */
-export const APARTMENTS: HeroBackdrop = {
-  src: '/images/hero/apartments-1600.webp',
-  srcSet: '/images/hero/apartments-1600.webp 1600w, /images/hero/apartments-2400.webp 2400w',
-  position: 'center 40%',
+/** A residential district of Riyadh from above, at dusk. Photo by Stijn te Strake. Property management. */
+export const RIYADH_HOMES: HeroBackdrop = {
+  src: '/images/hero/riyadh-homes-1600.webp',
+  srcSet: '/images/hero/riyadh-homes-1600.webp 1600w, /images/hero/riyadh-homes-2400.webp 2400w',
+  // Cropped to the rooftops (the original's upper part is plain sky).
+  position: 'center 35%',
 }
 
-/** A barbershop with a leather chair. Photo by Redd Francisco. Service providers. */
-export const BARBERSHOP: HeroBackdrop = {
-  src: '/images/hero/barbershop-1600.webp',
-  srcSet: '/images/hero/barbershop-1600.webp 1600w, /images/hero/barbershop-2400.webp 2400w',
-  position: 'center 55%',
+/** Central Riyadh from above, a city of businesses. Photo by Datingscout. Service providers. */
+export const RIYADH_CENTRE: HeroBackdrop = {
+  src: '/images/hero/riyadh-centre-1600.webp',
+  srcSet: '/images/hero/riyadh-centre-1600.webp 1600w, /images/hero/riyadh-centre-2400.webp 2400w',
+  position: 'center 45%',
 }

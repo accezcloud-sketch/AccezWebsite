@@ -3,7 +3,7 @@ import Band from '@/components/ui/Band'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
 import PhotoCta from '@/components/hero/PhotoCta'
-import { APARTMENTS } from '@/components/hero/photos'
+import { RIYADH_HOMES } from '@/components/hero/photos'
 import SectionHeader from '@/components/SectionHeader'
 import ProductShot from '@/components/product/ProductShot'
 import FeatureSteps, { type FeatureStep } from '@/components/product/FeatureSteps'
@@ -122,7 +122,7 @@ function ClosingCta({ locale }: { locale: Locale }) {
     <PhotoCta
       title={c.ctaTitle}
       subtitle={c.ctaSub}
-      photo={APARTMENTS}
+      photo={RIYADH_HOMES}
       actions={
         <HeroActions
           primary={{ label: c.ctaPrimary, href: localeHref('/#contact', locale) }}
@@ -154,7 +154,7 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
             />
           }
           media={<ProductShot shot="pmDashboard" locale={locale} priority />}
-          backdrop={APARTMENTS}
+          backdrop={RIYADH_HOMES}
         />
       </Band>
 
