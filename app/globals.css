@@ -622,6 +622,8 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 .hero-on-photo .ui-tab { color: rgb(255 255 255 / .82); }
 .hero-on-photo .ui-tab:hover { color: #fff; }
 .hero-on-photo .ui-tab.is-active { background: #fff; color: #0b1a26; }
+.hero-on-photo .ui-btn-glass { background: rgb(255 255 255 / .12); border-color: rgb(255 255 255 / .32); color: #fff; }
+.hero-on-photo .ui-btn-glass:hover { background: rgb(255 255 255 / .22); }
 
 /* Segmented tabs (e.g. the homepage's product switcher). */
 .ui-tabs { gap: 4px; padding: 4px; border-radius: 999px; background: var(--card-bg); border: 1px solid var(--card-border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }

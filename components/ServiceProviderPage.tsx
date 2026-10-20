@@ -5,6 +5,8 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
+import PhotoCta from '@/components/hero/PhotoCta'
+import { RIYADH } from '@/components/hero/photos'
 import Band from '@/components/ui/Band'
 import SectionHeader from '@/components/SectionHeader'
 import ProductShot from '@/components/product/ProductShot'
@@ -177,15 +179,12 @@ export default function ServiceProviderPage() {
 
       <Band shade="alt"><ProviderPricing /></Band>
 
-      <Band shade="base">
-        <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="hero-display text-strong tracking-tight mb-3" style={{ fontSize: 'clamp(26px, 3.6vw, 40px)' }}>{t.ctaTitle}</h2>
-            <p className="mx-auto mb-8 text-muted" style={{ fontSize: 16 }}>{t.ctaSubtitle}</p>
-            <HeroActions primary={{ label: t.ctaPrimary, href: PROVIDER_SIGN_UP, external: true }} />
-          </div>
-        </section>
-      </Band>
+      <PhotoCta
+        title={t.ctaTitle}
+        subtitle={t.ctaSubtitle}
+        photo={RIYADH}
+        actions={<HeroActions primary={{ label: t.ctaPrimary, href: PROVIDER_SIGN_UP, external: true }} />}
+      />
     </>
   )
 }

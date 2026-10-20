@@ -2,6 +2,8 @@ import { FileSignature, Wallet, FolderKanban, HandCoins, MessageSquareText, Inbo
 import Band from '@/components/ui/Band'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
+import PhotoCta from '@/components/hero/PhotoCta'
+import { RIYADH } from '@/components/hero/photos'
 import SectionHeader from '@/components/SectionHeader'
 import ProductShot from '@/components/product/ProductShot'
 import FeatureSteps, { type FeatureStep } from '@/components/product/FeatureSteps'
@@ -113,20 +115,21 @@ const COPY = {
 
 const MORE_ICONS = [FileSignature, Wallet, FolderKanban, HandCoins, MessageSquareText, Inbox, UsersRound, Wrench]
 
-/** Closing call to action. */
+/** Closing call to action, over the Riyadh photo. */
 function ClosingCta({ locale }: { locale: Locale }) {
   const c = MODULES_COPY[locale]
   return (
-    <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
-      <div className="max-w-3xl mx-auto px-4 text-center">
-        <h2 className="hero-display text-strong tracking-tight mb-3" style={{ fontSize: 'clamp(26px, 3.6vw, 40px)' }}>{c.ctaTitle}</h2>
-        <p className="mx-auto mb-8 text-muted" style={{ fontSize: 16 }}>{c.ctaSub}</p>
+    <PhotoCta
+      title={c.ctaTitle}
+      subtitle={c.ctaSub}
+      photo={RIYADH}
+      actions={
         <HeroActions
           primary={{ label: c.ctaPrimary, href: localeHref('/#contact', locale) }}
           secondary={{ label: c.ctaSecondary, href: PORTAL_SIGN_UP, external: true }}
         />
-      </div>
-    </section>
+      }
+    />
   )
 }
 
@@ -173,8 +176,8 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
         </section>
       </Band>
       <Band shade="alt"><Pricing /></Band>
-      <Band shade="base"><ClosingCta locale={locale} /></Band>
-      <Band shade="alt"><BlogStrip locale={locale} /></Band>
+      <ClosingCta locale={locale} />
+      <Band shade="base"><BlogStrip locale={locale} /></Band>
     </>
   )
 }

@@ -6,9 +6,7 @@ import { localeHref } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroProductTabs from '@/components/home/HeroProductTabs'
-
-/** Riyadh at dusk (Kingdom Centre). Photo by Ibrahim Abdullah on Unsplash. */
-const RIYADH = { src: '/images/hero/riyadh-1600.webp', srcSet: '/images/hero/riyadh-1600.webp 1600w, /images/hero/riyadh-2880.webp 2880w' }
+import { RIYADH } from '@/components/hero/photos'
 
 const CONTENT = {
   en: {
