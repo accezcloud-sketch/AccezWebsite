@@ -3,6 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { SHOTS, SHOT_WIDTHS, shotSources, type ShotKey } from './shots'
 import SIZES from './shot-sizes.json'
+import FILLS from './shot-fill.json'
 
 const PUBLIC = path.join(process.cwd(), 'public')
 
@@ -18,9 +19,13 @@ describe('product screenshots', () => {
     }
   })
 
-  it('knows the real height of every screenshot', () => {
+  it('knows the real height and edge colours of every screenshot', () => {
     for (const s of Object.values(SHOTS)) {
-      for (const lang of ['en', 'ar']) expect((SIZES as Record<string, number>)[`${s.app}/${lang}/${s.name}`], `${s.app}/${lang}/${s.name}`).toBeGreaterThan(600)
+      for (const lang of ['en', 'ar']) {
+        const key = `${s.app}/${lang}/${s.name}`
+        expect((SIZES as Record<string, number>)[key], key).toBeGreaterThan(600)
+        expect((FILLS as Record<string, string>)[key], key).toMatch(/^(#[0-9a-f]{6}|linear-gradient\()/)
+      }
     }
   })
 
