@@ -7,12 +7,12 @@
  * widths for sharp images on every screen. Arabic pages show the Arabic
  * interface where it was captured, otherwise the English one. Each capture
  * shows the whole screen, so heights differ; shot-sizes.json records each
- * one's height (at 1440 wide) and shot-fill.json the colours of its bottom
- * edge; both are written when the images are converted.
+ * one's height (at 1440 wide) and is written when the images are converted.
+ * The screens shown side by side in one block are captured at the same
+ * window size, so they share one shape and nothing is padded or stretched.
  */
 import type { Locale } from '@/lib/i18n'
 import SIZES from './shot-sizes.json'
-import FILLS from './shot-fill.json'
 
 export type ShotApp = 'pm' | 'sp'
 
@@ -66,7 +66,5 @@ export function shotSources(key: ShotKey, locale: Locale) {
     /** Captured 1440 wide at 2x; the height is the screen's own. */
     width: 1440,
     height: (SIZES as Record<string, number>)[`${s.app}/${lang}/${s.name}`] ?? 900,
-    /** The colours along the bottom edge, to continue the screen in a taller frame. */
-    fill: (FILLS as Record<string, string>)[`${s.app}/${lang}/${s.name}`] ?? '#ffffff',
   }
 }

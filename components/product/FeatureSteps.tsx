@@ -15,11 +15,9 @@ export interface FeatureStep {
  * A few steps on one side, the real screen for the chosen step on the other.
  * Pointing at a step (or clicking, tapping, arrow keys) shows its screenshot;
  * on phones the screenshot sits above the steps, so the change is in view.
- * Every screen of the block sits in one frame sized to the tallest of them,
- * each pinned to the top with its own bottom edge continued below it, so
- * every step shows the same frame in the same place and switching never
- * moves the page. Built as a tab list, so it is
- * announced and operable as one.
+ * The screens of a block are captured at the same window size, so they all
+ * fill one frame exactly; switching steps never moves or resizes anything.
+ * Built as a tab list, so it is announced and operable as one.
  */
 export default function FeatureSteps({ id, steps, locale, flip = false }: {
   /** Stable name for this block (ids are derived from it, identical on server and client). */
@@ -30,7 +28,7 @@ export default function FeatureSteps({ id, steps, locale, flip = false }: {
 }) {
   const [active, setActive] = useState(0)
   const base = `steps-${id}`
-  // The frame takes the shape of the block's tallest screen.
+  // The frame takes the block's screen shape (they share one; the tallest wins if not).
   const tallest = Math.max(...steps.map((s) => shotSources(s.shot, locale).height))
 
   const onKey = (e: KeyboardEvent<HTMLButtonElement>, i: number) => {
@@ -73,7 +71,6 @@ export default function FeatureSteps({ id, steps, locale, flip = false }: {
             <div
               key={s.shot}
               aria-hidden={i !== active}
-              style={{ background: shotSources(s.shot, locale).fill }}
               className={`absolute inset-0 transition-opacity duration-300 motion-reduce:transition-none ${i === active ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
             >
               <ShotImage shot={s.shot} locale={locale} sizes="(min-width: 1024px) 700px, 92vw" />
