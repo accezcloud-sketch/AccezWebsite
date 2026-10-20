@@ -34,23 +34,11 @@ export default function ChatbotWidget() {
       }
     }
 
-    // Fallback: when the user taps inside the iframe, the parent window
-    // loses focus and the iframe becomes the active element. Use that as
-    // a heuristic to expand on mobile if the widget doesn't postMessage.
-    const handleBlur = () => {
-      requestAnimationFrame(() => {
-        if (document.activeElement === iframeRef.current) {
-          setIsOpen(true)
-        }
-      })
-    }
-
+    // The assistant reports when it opens and closes ({ type: 'accez-assistant', isOpen }),
+    // so the frame is only ever as big as what it shows. (A focus-based guess used to
+    // expand it whenever it took focus, e.g. on right-click > Inspect, and never shrink.)
     window.addEventListener('message', handleMessage)
-    window.addEventListener('blur', handleBlur)
-    return () => {
-      window.removeEventListener('message', handleMessage)
-      window.removeEventListener('blur', handleBlur)
-    }
+    return () => window.removeEventListener('message', handleMessage)
   }, [])
 
   return (
@@ -62,6 +50,10 @@ export default function ChatbotWidget() {
           ? 'w-full h-[100dvh] md:w-[400px] md:h-[600px]'
           : 'w-[90px] h-[90px] md:w-[110px] md:h-[110px]'
       }`}
+      // The assistant's page is a light page on a transparent background. If the frame
+      // inherited the site's dark color-scheme, browsers would paint a white box behind
+      // it in dark mode, so the frame states the same scheme as the page inside it.
+      style={{ colorScheme: 'light' }}
       onLoad={tellLanguage}
       allow="clipboard-write"
     />
