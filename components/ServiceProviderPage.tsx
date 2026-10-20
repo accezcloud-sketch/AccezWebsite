@@ -6,7 +6,7 @@ import { PROVIDER_SIGN_UP } from '@/lib/links'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
 import PhotoCta from '@/components/hero/PhotoCta'
-import { RIYADH_CENTRE } from '@/components/hero/photos'
+import { SHOPPING_CENTRE } from '@/components/hero/photos'
 import Band from '@/components/ui/Band'
 import SectionHeader from '@/components/SectionHeader'
 import ProductShot from '@/components/product/ProductShot'
@@ -138,7 +138,7 @@ export default function ServiceProviderPage() {
             />
           }
           media={<ProductShot shot="spDashboard" locale={locale} priority />}
-          backdrop={RIYADH_CENTRE}
+          backdrop={SHOPPING_CENTRE}
         />
       </Band>
 
@@ -183,7 +183,7 @@ export default function ServiceProviderPage() {
       <PhotoCta
         title={t.ctaTitle}
         subtitle={t.ctaSubtitle}
-        photo={RIYADH_CENTRE}
+        photo={SHOPPING_CENTRE}
         actions={<HeroActions primary={{ label: t.ctaPrimary, href: PROVIDER_SIGN_UP, external: true }} />}
       />
     </>
