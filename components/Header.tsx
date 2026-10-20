@@ -15,8 +15,8 @@ import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
 import { activeNavSection, isCurrentPath, type NavSectionKey } from '@/lib/nav/activeSection'
 
-/** Pages whose top is a photo (the homepage hero): the header starts in white on it. */
-const PHOTO_TOPS = new Set(['/', '/ar'])
+/** Pages whose top is a photo (components/hero/photos.ts): the header starts in white on it. */
+const PHOTO_TOPS = new Set(['/', '/ar', '/solutions/property-managers', '/ar/solutions/property-managers', '/solutions/service-providers', '/ar/solutions/service-providers'])
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -99,6 +99,7 @@ export default function Header() {
         'fixed top-0 left-0 right-0 z-[100] w-full border-b',
         'transition-all duration-300 ease-in-out',
         scrolled ? 'glass-bar' : 'border-transparent',
+        onPhoto ? 'header-on-photo' : '',
       ].join(' ')}
     >
       <div className="container mx-auto px-4">

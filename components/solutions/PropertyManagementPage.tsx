@@ -3,7 +3,7 @@ import Band from '@/components/ui/Band'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
 import PhotoCta from '@/components/hero/PhotoCta'
-import { RIYADH } from '@/components/hero/photos'
+import { APARTMENTS } from '@/components/hero/photos'
 import SectionHeader from '@/components/SectionHeader'
 import ProductShot from '@/components/product/ProductShot'
 import FeatureSteps, { type FeatureStep } from '@/components/product/FeatureSteps'
@@ -115,14 +115,14 @@ const COPY = {
 
 const MORE_ICONS = [FileSignature, Wallet, FolderKanban, HandCoins, MessageSquareText, Inbox, UsersRound, Wrench]
 
-/** Closing call to action, over the Riyadh photo. */
+/** Closing call to action, over the page's photo. */
 function ClosingCta({ locale }: { locale: Locale }) {
   const c = MODULES_COPY[locale]
   return (
     <PhotoCta
       title={c.ctaTitle}
       subtitle={c.ctaSub}
-      photo={RIYADH}
+      photo={APARTMENTS}
       actions={
         <HeroActions
           primary={{ label: c.ctaPrimary, href: localeHref('/#contact', locale) }}
@@ -154,6 +154,7 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
             />
           }
           media={<ProductShot shot="pmDashboard" locale={locale} priority />}
+          backdrop={APARTMENTS}
         />
       </Band>
 

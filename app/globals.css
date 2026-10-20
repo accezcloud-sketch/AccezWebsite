@@ -157,6 +157,8 @@
 .nav-item { transition: background-color .15s ease; }
 /* The menu item of the page being viewed, and that page inside a menu. */
 .nav-active { color: var(--text) !important; position: relative; }
+/* Over a photo page top the current menu item is white like the rest. */
+.header-on-photo .nav-active { color: #fff !important; }
 .nav-active::after {
   content: ''; position: absolute; inset-inline: 0; bottom: -8px; height: 2px;
   border-radius: 2px; background: var(--accent);
@@ -610,7 +612,7 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
    shade, the photo covering about the first screen and fading into the page,
    so the product below overlaps its lower edge. */
 .hero-photo { height: min(100svh, 900px); }
-.hero-photo-shade { background: linear-gradient(180deg, rgb(6 16 26 / .66) 0%, rgb(6 16 26 / .52) 50%, rgb(6 16 26 / .40) 100%); }
+.hero-photo-shade { background: linear-gradient(180deg, rgb(6 16 26 / .72) 0%, rgb(6 16 26 / .60) 50%, rgb(6 16 26 / .48) 100%); }
 /* No length after var() here: minified, "var(...)100%" is dropped by browsers. */
 .hero-photo-fade { position: absolute; inset-inline: 0; bottom: 0; height: 28%; background: linear-gradient(180deg, transparent, var(--bg)); }
 .hero-on-photo .hero-title { color: #fff; }

@@ -4,6 +4,8 @@ import type { ReactNode } from 'react'
 export interface HeroBackdrop {
   src: string
   srcSet: string
+  /** Which part of the photo stays in view when it is cropped (CSS object-position). */
+  position?: string
 }
 
 /**
@@ -37,7 +39,7 @@ export default function CenteredHero({
     <section className={`relative overflow-hidden w-full ${backdrop ? 'hero-on-photo' : ''}`} style={{ background: 'var(--section-bg, var(--bg))' }}>
       {backdrop ? (
         <div className="hero-photo absolute inset-x-0 top-0 pointer-events-none" aria-hidden="true">
-          <img src={backdrop.src} srcSet={backdrop.srcSet} sizes="100vw" alt="" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+          <img src={backdrop.src} srcSet={backdrop.srcSet} sizes="100vw" alt="" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: backdrop.position }} />
           <div className="absolute inset-0 hero-photo-shade" />
           <div className="hero-photo-fade" />
         </div>

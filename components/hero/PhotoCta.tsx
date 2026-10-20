@@ -14,7 +14,7 @@ export default function PhotoCta({ title, subtitle, actions, photo }: {
 }) {
   return (
     <section className="hero-on-photo relative overflow-hidden w-full">
-      <img src={photo.src} srcSet={photo.srcSet} sizes="100vw" alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
+      <img src={photo.src} srcSet={photo.srcSet} sizes="100vw" alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: photo.position }} aria-hidden="true" />
       <div className="absolute inset-0 hero-photo-shade" aria-hidden="true" />
       <div className="relative z-10 max-w-3xl mx-auto px-4 text-center py-28 lg:py-36">
         <h2 className="hero-title hero-display tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.4vw, 52px)' }}>{title}</h2>
