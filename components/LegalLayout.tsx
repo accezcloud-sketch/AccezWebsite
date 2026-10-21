@@ -231,6 +231,17 @@ export function SectionNo({ to }: { to: string }) {
   return <a href={`#${to}`}>{formatSectionNumber(n, language)}</a>
 }
 
+/**
+ * A link to another legal document, in the same audience's version as the
+ * page it is on, so a reader never has to choose their version again.
+ */
+export function DocLink({ to, children }: { to: LegalDocKey; children: ReactNode }) {
+  const { language } = useLanguage()
+  const { view } = useContext(DocumentContext)
+  const solution = view ? solutionFor(view) : undefined
+  return <Link href={localeHref(legalHref(to, solution), language)} prefetch={false}>{children}</Link>
+}
+
 /** A callout for terms a reader must not miss — fees, liability, deadlines. */
 export function LegalCallout({
   tone = 'info',

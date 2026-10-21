@@ -6,6 +6,7 @@ import LegalLayout, {
   LegalTable,
   Only,
   SectionNo,
+  DocLink,
 } from '@/components/LegalLayout'
 import { REFUND_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
@@ -78,8 +79,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
       <S id="reservations" title="Unit reservations and stays">
         <p>
           Each unit can carry its own cancellation policy, set by the property manager. Where one
-          has been set, <strong>it takes precedence</strong> and is shown to you before you confirm
-          the booking. Always check it at the time of booking.
+          has been set, <strong>it is the policy that applies</strong>, and the guest is shown it
+          before confirming the booking.
         </p>
         <p>
           The platform lets you set that policy however you choose, including a scale that varies
@@ -126,9 +127,13 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
             provider. Where a deposit was taken through the platform:
           </p>
         </Only>
+        <Only for="pm">
+          <p>Where a reservation was paid with a deposit through the platform:</p>
+        </Only>
         <ul>
           <li>refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value;</li>
-          <li>platform fees are charged proportionately on the deposit, so a refund reverses them proportionately; and</li>
+          <Only for="pm" as="li">the platform fee charged on the deposit is not automatically returned (section <SectionNo to="fees-on-refund" />).</Only>
+          <Only for="sp" as="li">platform fees are charged proportionately on the deposit, so a refund reverses them proportionately; and</Only>
           <Only for="sp" as="li">any balance a customer paid you directly, outside the platform, is a matter between you and that customer. We have no record of it and cannot refund it.</Only>
         </ul>
         <Only for="pm">
@@ -188,7 +193,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </Only>
 
         <h3>Accez platform fees</h3>
-        <p>The treatment differs by booking type, and we would rather state that plainly than let it be discovered later:</p>
+        <p>We would rather state this plainly than let it be discovered later:</p>
         <Only for="pm">
           <p>
             On a <strong>unit reservation</strong>, the platform fee is{' '}
@@ -217,18 +222,18 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
       <S id="how-to-request" title="How to request a refund">
         <Only for="pm">
           <LegalTable
-            head={['If you are', 'Do this']}
+            head={['Who', 'How a refund is handled']}
             rows={[
               [
                 'A guest who booked a stay with you',
                 'They cancel through the platform, or contact you. Cancelling applies the unit policy automatically.',
               ],
               [
-                'The property manager',
+                'You, the property manager',
                 'Approve or reject refund requests from your dashboard, or issue a refund directly.',
               ],
               [
-                'An Accez subscriber',
+                'You, as an Accez subscriber',
                 <>Contact us through <a key="e" href="/support/">our support form</a> with your invoice reference.</>,
               ],
             ]}
@@ -236,18 +241,18 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </Only>
         <Only for="sp">
           <LegalTable
-            head={['If you are', 'Do this']}
+            head={['Who', 'How a refund is handled']}
             rows={[
               [
                 'A customer who booked a service from you',
                 'They cancel through the platform or contact you. The refund due is quoted before they confirm.',
               ],
               [
-                'The service provider',
+                'You, the service provider',
                 'Issue a refund on your own booking from your dashboard, in full or in part.',
               ],
               [
-                'An Accez subscriber',
+                'You, as an Accez subscriber',
                 <>Contact us through <a key="f" href="/support/">our support form</a> with your invoice reference.</>,
               ],
             ]}
@@ -272,8 +277,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           head={['What the payment processor states', 'Time it gives']}
           rows={[
             [
-              'A refund appears on the customer\u2019s statement as a credit',
-              'Approximately 5\u201310 business days after the refund is submitted, depending on the bank',
+              'A refund appears on the customer’s statement as a credit',
+              'Approximately 5 to 10 business days after the refund is submitted, depending on the bank',
             ],
             [
               'A failed refund is returned by the bank and added back to the account balance',
@@ -284,7 +289,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
               'Up to 7 business days after the refund is initiated, where the financial partner supports one',
             ],
           ]}
-          caption="These are the payment processor\u2019s published figures at the date of this policy and it may change them. We do not control them and cannot shorten them."
+          caption="These are the payment processor’s published figures at the date of this policy and it may change them. We do not control them and cannot shorten them."
         />
         <LegalCallout title="A refund issued soon after payment looks different">
           <p>
@@ -368,8 +373,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           General support: <a href="/support/">our support form</a>
         </p>
         <p>
-          Related documents: <a href="/terms/">Terms of Service</a> &middot;{' '}
-          <a href="/privacy/">Privacy Policy</a>
+          Related documents: <DocLink to="terms">Terms of Service</DocLink> &middot;{' '}
+          <DocLink to="privacy">Privacy Policy</DocLink>
         </p>
       </S>
     </LegalLayout>

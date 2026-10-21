@@ -81,7 +81,8 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
             durations and prices, your opening hours and calendar availability, your staff records
             with their schedules, assigned tasks and bookings, and the bookings customers make with
             you, including the customer&apos;s name and contact details, what they booked,
-            when, and the amount paid.
+            when, and the amount paid, and the reviews and ratings customers leave against your
+            listing.
           </p>
         </Only>
 
@@ -116,9 +117,8 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
         <Only for="sp">
           <h3>Content you upload</h3>
           <p>
-            Photographs of your venue and work, your service listings and descriptions, business
-            documents such as a commercial registration, and the reviews and ratings customers
-            leave against your listing.
+            Photographs of your venue and work, your service listings and descriptions, and business
+            documents such as a commercial registration.
           </p>
         </Only>
 
@@ -189,7 +189,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
               ['Creating and administering your account', 'Performance of a contract with you'],
               ['Publishing your listing on the marketplace so customers can find and book you', 'Performance of a contract'],
               ['Running the provider portal: services, calendar, availability, staff and bookings', 'Performance of a contract'],
-              ['Processing payments, payouts and commission', 'Performance of a contract; legal obligation'],
+              ['Processing payments, payouts, commission, refunds and disputes', 'Performance of a contract; legal obligation'],
               ['Sending service messages: booking confirmations, reminders, alerts', 'Performance of a contract'],
               ['Support and troubleshooting', 'Performance of a contract; legitimate interest'],
               ['Security, fraud detection and abuse prevention', 'Legitimate interest; legal obligation'],
@@ -296,7 +296,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
             or protect people from harm.
           </li>
           <li>
-            <strong>Business transfer</strong>: if the business is merged, acquired or
+            <strong>Business transfer</strong>: if Cloud Valley LLC is merged, acquired or
             reorganised, subject to the same protections and with notice where required.
           </li>
         </ul>
@@ -359,8 +359,8 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
           <li>encryption of data in transit;</li>
           <li>passwords stored using one-way hashing, never in readable form;</li>
           <li>role-based access controls, so people see only what their role requires;</li>
-          <li>separation between the data of different businesses using the platform;</li>
-          <li>account protections including verification codes, optional two-factor authentication and lockout after repeated failed sign-ins; and</li>
+          <li>separation between the data of different businesses using the platform; and</li>
+          <li>account protections including verification codes, optional two-factor authentication and lockout after repeated failed sign-ins.</li>
         </ul>
         <p>
           No system is completely secure, and we do not claim otherwise. If you find a vulnerability,

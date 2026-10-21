@@ -6,6 +6,7 @@ import LegalLayout, {
   LegalTable,
   Only,
   SectionNo,
+  DocLink,
 } from '@/components/LegalLayout'
 import { TERMS_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
@@ -43,7 +44,8 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </p>
         <p>These Terms govern your use of:</p>
         <ul>
-          <li>the Accez web platform, portals and mobile applications;</li>
+          <Only for="pm" as="li">the Accez web platform, portals and mobile applications; and</Only>
+          <Only for="sp" as="li">the Accez web platform, portals and mobile applications;</Only>
           <Only for="sp" as="li">
             the <strong>Accez marketplace</strong>, where customers browse and book services; and
           </Only>
@@ -52,17 +54,25 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         <p>
           By creating an account, accessing the platform, or making or accepting a booking through
           it, you agree to these Terms and to our{' '}
-          <a href="/privacy/">Privacy Policy</a> and{' '}
-          <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>, which form part of this
+          <DocLink to="privacy">Privacy Policy</DocLink> and{' '}
+          <DocLink to="refund-policy">Refund &amp; Cancellation Policy</DocLink>, which form part of this
           agreement. If you do not agree, do not use the platform.
         </p>
       </S>
 
       <S id="venue" title="What Accez does and does not do">
-        <p>
-          Accez provides software and a place for others to transact. That distinction matters, and this section states it
-          plainly rather than leaving it to be inferred.
-        </p>
+        <Only for="pm">
+          <p>
+            Accez provides software. You run your business with it; we do not run it for you. That
+            distinction matters, and this section states it plainly rather than leaving it to be inferred.
+          </p>
+        </Only>
+        <Only for="sp">
+          <p>
+            Accez provides software and a place for others to transact. That distinction matters, and
+            this section states it plainly rather than leaving it to be inferred.
+          </p>
+        </Only>
         <Only for="pm">
           <p>
             <strong>What you get.</strong> The property manager portal is operations software for
@@ -87,26 +97,26 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         <p><strong>We do not:</strong></p>
         <ul>
           <Only for="pm" as="li">
-            own, lease, manage, inspect or maintain any property, unit or room listed on the
+            own, lease, manage, inspect or maintain any property, unit or room recorded on the
             platform;
           </Only>
           <Only for="pm" as="li">
             act as a party to any lease, tenancy, reservation or sale contract made through the
-            platform;
+            platform; or
           </Only>
-          <Only for="pm" as="li">act as a real estate broker, letting agent, or property manager; or</Only>
+          <Only for="pm" as="li">act as a real estate broker, letting agent, or property manager.</Only>
           <Only for="sp" as="li">
-            perform, supervise or inspect any service you list, whether cleaning, maintenance, salon,
-            spa, fitness, photography or anything else;
+            perform, supervise or inspect any service you list, whether barbering, beauty, spa,
+            fitness, coaching, photography or anything else;
           </Only>
-          <Only for="sp" as="li">act as a party to any booking a customer makes with you;</Only>
-          <Only for="sp" as="li">employ you or your staff, or act as your agent; or</Only>
+          <Only for="sp" as="li">act as a party to any booking a customer makes with you; or</Only>
+          <Only for="sp" as="li">employ you or your staff, or act as your agent.</Only>
         </ul>
         <LegalCallout tone="warning" title="Disputes about what was booked or supplied">
           <p>
             Any dispute about what was booked or supplied (its condition, quality or safety,
             a cancellation, a deposit, or the conduct of anyone involved) is{' '}
-            <strong>between those parties</strong>. We are not a party to it
+            <strong>between the parties to that booking</strong>. We are not a party to it
             and do not adjudicate it. We may, at our discretion, provide records held on the
             platform to help the parties resolve it.
           </p>
@@ -166,9 +176,11 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         <Only for="sp">
           <p>
             Plan changes are prorated. Where a tier gates a feature or sets a limit, the platform
-            enforces that, and going beyond it requires changing tier.
+            enforces that, and going beyond it requires changing tier. We may change tier limits on
+            notice.
           </p>
         </Only>
+        <Only for="pm">
         <LegalCallout title="Free usage is limited by capacity, not by time">
           <p>
             Our free tier is not a countdown trial that expires. It is ongoing access with
@@ -176,6 +188,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
             upgrade. We may change the caps on notice.
           </p>
         </LegalCallout>
+        </Only>
         <p>
           We may change subscription prices. We will give you reasonable advance notice before a
           change takes effect, and the new price applies from your next renewal. Continuing to use
@@ -183,7 +196,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </p>
         <p>
           Subscription fees already paid are non-refundable except where the{' '}
-          <a href="/refund-policy/">Refund &amp; Cancellation Policy</a> or applicable Saudi law
+          <DocLink to="refund-policy">Refund &amp; Cancellation Policy</DocLink> or applicable Saudi law
           says otherwise.
         </p>
       </S>
@@ -243,7 +256,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
             rows={[
               ['Unit reservations', 'A percentage of the reservation value, set out in your account.'],
               [
-                'Resident and guest service bookings',
+                "Resident and guest bookings of your property's services",
                 'A percentage of the booking value, set out in your account.',
               ],
             ]}
@@ -271,11 +284,11 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         <ul>
           <Only for="sp" as="li">
             it is charged on the service subtotal. <strong>Tips are not subject to platform fees</strong>{' '}
-            and pass to you in full;
+            and pass to you in full; and
           </Only>
           <li>
             where a booking is taken with a partial deposit, the fee is charged proportionately on
-            the amount actually collected;
+            the amount actually collected.
           </li>
         </ul>
         <LegalCallout tone="warning" title="Payment processing fees are set by Stripe, not by us">
@@ -303,7 +316,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
                 <a key="s3" href="https://stripe.com/pricing" target="_blank" rel="noopener noreferrer">stripe.com/pricing</a>,
               ],
             ]}
-            caption="Stripe\u2019s published rates as at 26 August 2026. Stripe sets them and may change them; its published page prevails over this table. The three are cumulative where all apply. Stripe does not offer accounts established in Saudi Arabia, so the international card fee applies to most Saudi-issued cards."
+            caption="Stripe’s published rates as at 26 August 2026. Stripe sets them and may change them; its published page prevails over this table. The three are cumulative where all apply. Stripe does not offer accounts established in Saudi Arabia, so the international card fee applies to most Saudi-issued cards."
           />
           <p>
             Stripe does not return its processing fee when a payment is refunded (
@@ -347,16 +360,19 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
 
       <S id="refunds" title="Refunds, cancellations and chargebacks">
         <p>
-          Refund entitlements differ depending on what was booked. They are set out in full in our{' '}
-          <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>, which forms part of these
-          Terms. In summary:
+          Refund entitlements are set out in full in our{' '}
+          <DocLink to="refund-policy">Refund &amp; Cancellation Policy</DocLink>, which forms part of these
+          Terms.
         </p>
-        <ul>
-          <Only for="pm" as="li">
-            <strong>Unit reservations</strong> follow the cancellation policy set for the unit, or a
-            default sliding scale based on notice given before check-in.
-          </Only>
-        </ul>
+        <Only for="pm">
+          <p>In summary:</p>
+          <ul>
+            <li>
+              <strong>Unit reservations</strong> follow the cancellation policy set for the unit, or a
+              default sliding scale based on notice given before check-in.
+            </li>
+          </ul>
+        </Only>
         <p>
           <strong>Chargebacks.</strong> If a customer disputes a card payment, the disputed amount
           and any dispute fee are debited from the Accez platform account, and we are entitled to
@@ -372,7 +388,6 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
       </S>
 
       <S id="providers" title="Service providers on the marketplace">
-        <p>This section applies to service providers listing on the Accez marketplace.</p>
         <p>
           You are an <strong>independent business</strong>. Nothing in these Terms creates an
           employment, agency, partnership or joint-venture relationship between you and Accez. You
@@ -455,10 +470,14 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
             send marketing to anyone without the consent required by Saudi law, or use contact
             details obtained through the platform for unrelated marketing;
           </li>
-          <li>
+          <Only for="pm" as="li">
+            attempt to circumvent platform fees by moving a reservation or payment taken through the
+            platform off-platform in order to avoid them;
+          </Only>
+          <Only for="sp" as="li">
             attempt to circumvent platform fees by taking a booking introduced through the platform
             off-platform in order to avoid them;
-          </li>
+          </Only>
           <li>
             probe, scan, penetration-test, scrape, reverse-engineer or overload the platform, or
             access data belonging to another account; or
@@ -493,7 +512,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
       <S id="data" title="Data protection">
         <p>
           Our handling of personal data is described in the{' '}
-          <a href="/privacy/">Privacy Policy</a>. In summary, and for the purposes of the Saudi
+          <DocLink to="privacy">Privacy Policy</DocLink>. In summary, and for the purposes of the Saudi
           Personal Data Protection Law:
         </p>
         <ul>
@@ -582,10 +601,14 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
             any customer who books you is trustworthy, or that any business listed alongside you is
             licensed, solvent or suitable;
           </Only>
-          <li>
+          <Only for="pm" as="li">
             any document, contract or report generated by the platform is legally valid, complete
             or enforceable; or
-          </li>
+          </Only>
+          <Only for="sp" as="li">
+            any document or report generated by the platform is legally valid, complete or
+            enforceable; or
+          </Only>
           <li>
             any calculation, statement or report is free of error. You should verify figures
             before relying on them.
@@ -612,11 +635,20 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
           special, consequential or punitive loss, or for loss of profit, revenue, goodwill,
           business opportunity, or loss or corruption of data, however arising.
         </p>
-        <p>
-          We are not liable for losses arising from what any other user of the platform sells,
-          supplies, prices or agrees, or from their conduct, acts or omissions, or from any dispute
-          between them.
-        </p>
+        <Only for="pm">
+          <p>
+            We are not liable for losses arising from the conduct, acts or omissions of your
+            tenants, residents, owners, guests or any other user of the platform, or from any
+            dispute between you and them.
+          </p>
+        </Only>
+        <Only for="sp">
+          <p>
+            We are not liable for losses arising from what any other user of the platform sells,
+            supplies, prices or agrees, or from their conduct, acts or omissions, or from any dispute
+            between them.
+          </p>
+        </Only>
       </S>
 
       <S id="indemnity" title="Indemnity">
