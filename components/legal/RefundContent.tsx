@@ -16,7 +16,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
   return (
     <LegalLayout
       title="Refund & Cancellation Policy"
-      subtitle="How cancellations and refunds work across reservations, marketplace bookings and Accez subscriptions — including who bears which fees."
+      subtitle={audience === 'pm' ? 'How cancellations and refunds work for reservations and Accez subscriptions, and who bears which fees.' : 'How cancellations and refunds work for marketplace bookings and Accez subscriptions, and who bears which fees.'}
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
       doc="refund-policy"

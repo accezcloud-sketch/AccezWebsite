@@ -1,10 +1,11 @@
 /**
  * The legal documents Accez publishes, and where each version lives.
  *
- * A per-solution document (Terms, Refund) has one URL per solution:
- * /terms/property-managers/, /terms/service-providers/. Its bare URL (/terms/)
- * is a short "which applies to you?" page, so every link published before the
- * split still lands somewhere sensible. A shared document (Privacy) has one URL.
+ * Every document has one version per solution: /terms/property-managers/,
+ * /terms/service-providers/, and the same for the Refund and Privacy policies.
+ * The menus link straight to those versions. The bare URL (/terms/) is a short
+ * "which applies to you?" page, so links published before the split still land
+ * somewhere sensible.
  */
 import type { Metadata } from 'next'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
@@ -48,7 +49,7 @@ export const LEGAL_DOCUMENTS: LegalDocument[] = [
       en: 'How we collect, use and protect personal data under the Saudi Personal Data Protection Law.',
       ar: 'كيف نجمع البيانات الشخصية ونستخدمها ونحميها وفق نظام حماية البيانات الشخصية السعودي.',
     },
-    perSolution: false,
+    perSolution: true,
   },
 ]
 

@@ -15,15 +15,15 @@ describe('legalHref', () => {
     expect(legalHref('terms')).toBe('/terms')
   })
 
-  it('gives a shared document one address for everyone', () => {
-    expect(legalHref('privacy', pm)).toBe('/privacy')
-    expect(legalHref('privacy', sp)).toBe('/privacy')
+  it('gives each audience its own Privacy Policy', () => {
+    expect(legalHref('privacy', pm)).toBe('/privacy/property-managers')
+    expect(legalHref('privacy', sp)).toBe('/privacy/service-providers')
   })
 })
 
 describe('legalDocumentsFor', () => {
-  it("lists a solution's own versions plus the shared documents", () => {
-    expect(legalDocumentsFor(sp).map((d) => d.href)).toEqual(['/terms/service-providers', '/refund-policy/service-providers', '/privacy'])
+  it("lists only that solution's own versions", () => {
+    expect(legalDocumentsFor(sp).map((d) => d.href)).toEqual(['/terms/service-providers', '/refund-policy/service-providers', '/privacy/service-providers'])
   })
 })
 

@@ -9,11 +9,14 @@ import TermsContent from './TermsContent'
 import TermsContentAr from './TermsContentAr'
 import RefundContent from './RefundContent'
 import RefundContentAr from './RefundContentAr'
+import PrivacyContent from './PrivacyContent'
+import PrivacyContentAr from './PrivacyContentAr'
 
 /** The source of each per-solution document, by language. */
-const CONTENT: Record<'terms' | 'refund-policy', Record<Locale, ComponentType<{ audience: AudienceView }>>> = {
+const CONTENT: Record<'terms' | 'refund-policy' | 'privacy', Record<Locale, ComponentType<{ audience: AudienceView }>>> = {
   terms: { en: TermsContent, ar: TermsContentAr },
   'refund-policy': { en: RefundContent, ar: RefundContentAr },
+  privacy: { en: PrivacyContent, ar: PrivacyContentAr },
 }
 
 interface PageProps {
@@ -21,8 +24,8 @@ interface PageProps {
 }
 
 /**
- * Everything a /<document>/<solution>/ route exports, so the four route files
- * (two documents × two languages) are one line each and cannot drift apart.
+ * Everything a /<document>/<solution>/ route exports, so the six route files
+ * (three documents × two languages) are one line each and cannot drift apart.
  */
 export function legalVersionRoute(doc: keyof typeof CONTENT, locale: Locale) {
   const Content = CONTENT[doc][locale]

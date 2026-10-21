@@ -134,7 +134,6 @@ export default function LegalLayout({
               >
                 <span style={{ color: 'var(--text)' }}>
                   {c.versionFor} <strong>{solution.audience[language].replace(/^For /, '')}</strong>
-                  <span style={{ color: 'var(--text-muted)' }}> · {solution.name[language]}</span>
                 </span>
                 {others.map((o) => (
                   <Link
@@ -334,7 +333,7 @@ export function LegalTable({
  * A paragraph, list item or callout that speaks to one audience only.
  *
  * In a per-audience version it is rendered only in its own audience's
- * version. In a shared document (Privacy) every reader sees it, so it carries
+ * version. In a shared document every reader sees it, so it carries
  * a label saying who it is for.
  */
 export function Only({

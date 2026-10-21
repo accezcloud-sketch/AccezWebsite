@@ -16,7 +16,7 @@ export default function RefundContentAr({ audience }: { audience: AudienceView }
   return (
     <LegalLayout
       title="سياسة الاسترداد والإلغاء"
-      subtitle="كيف يعمل الإلغاء والاسترداد في حجوزات الوحدات وحجوزات السوق واشتراكات أكسيز، ومن يتحمل أي رسوم."
+      subtitle={audience === 'pm' ? 'كيف يعمل الإلغاء والاسترداد في حجوزات الوحدات واشتراكات أكسيز، ومن يتحمل أي رسوم.' : 'كيف يعمل الإلغاء والاسترداد في حجوزات السوق واشتراكات أكسيز، ومن يتحمل أي رسوم.'}
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
       doc="refund-policy"

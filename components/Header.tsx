@@ -9,7 +9,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import ThemeToggle from '@/components/ThemeToggle'
 import { localeHref } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS, solutionForPath } from '@/lib/platform/solutions'
-import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
+import { legalDocumentsFor } from '@/lib/legal/documents'
 import NavDropdown from '@/components/nav/NavDropdown'
 import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
@@ -61,11 +61,14 @@ export default function Header() {
     },
   ]
 
-  // Resources: the FAQ, then the legal documents (lib/legal/documents.ts). A
-  // per-solution document links to its "which applies to you?" page.
+  // Resources: the FAQ, then each audience's own legal documents
+  // (lib/legal/documents.ts), linked straight to that audience's version.
   const resourcesSections: NavSection[] = [
     { links: [{ label: t.header.faq, href: href('/faq') }] },
-    { heading: ar ? 'قانوني' : 'Legal', links: LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: href(legalHref(d.key)) })) },
+    ...PLATFORM_SOLUTIONS.map((s) => ({
+      heading: s.audience[language],
+      links: legalDocumentsFor(s).map(({ doc, href: to }) => ({ label: doc.title[language], href: href(to) })),
+    })),
   ]
 
   // Sign in: each solution has its own portal, so the menu names the role.

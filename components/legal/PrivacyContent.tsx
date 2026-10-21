@@ -6,20 +6,21 @@ import LegalLayout, {
   LegalTable,
   Only,
 } from '@/components/LegalLayout'
-import { PRIVACY_SECTIONS } from '@/lib/legal/audience'
+import { PRIVACY_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
-export default function PrivacyContent() {
+export default function PrivacyContent({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="Privacy Policy"
-      subtitle="How Cloud Valley LLC collects, uses, shares and protects personal data in the Accez platform and marketplace, and the rights you have under the Saudi Personal Data Protection Law."
+      subtitle={audience === 'pm' ? 'How Cloud Valley LLC collects, uses, shares and protects personal data in the Accez property management platform, and the rights you have under the Saudi Personal Data Protection Law.' : 'How Cloud Valley LLC collects, uses, shares and protects personal data in the Accez service marketplace, and the rights you have under the Saudi Personal Data Protection Law.'}
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
       doc="privacy"
       sections={PRIVACY_SECTIONS}
+      audience={audience}
     >
       <LegalCallout title="Summary">
         <p>

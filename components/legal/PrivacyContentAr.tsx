@@ -6,20 +6,21 @@ import LegalLayout, {
   LegalTable,
   Only,
 } from '@/components/LegalLayout'
-import { PRIVACY_SECTIONS } from '@/lib/legal/audience'
+import { PRIVACY_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
-export default function PrivacyContentAr() {
+export default function PrivacyContentAr({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="سياسة الخصوصية"
-      subtitle="كيف تجمع شركة كلاود فالي البيانات الشخصية في منصة أكسيز وسوق الخدمات وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي."
+      subtitle={audience === 'pm' ? 'كيف تجمع شركة كلاود فالي البيانات الشخصية في منصة أكسيز لإدارة العقارات وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي.' : 'كيف تجمع شركة كلاود فالي البيانات الشخصية في سوق خدمات أكسيز وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي.'}
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
       doc="privacy"
       sections={PRIVACY_SECTIONS}
+      audience={audience}
     >
       <LegalCallout title="الخلاصة">
         <p>

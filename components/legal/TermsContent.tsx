@@ -16,7 +16,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
   return (
     <LegalLayout
       title="Terms of Service"
-      subtitle="The agreement between you and Cloud Valley LLC governing your use of the Accez platform and the Accez service marketplace."
+      subtitle={audience === 'pm' ? 'The agreement between you and Cloud Valley LLC governing your use of the Accez property management platform.' : 'The agreement between you and Cloud Valley LLC governing your use of the Accez service marketplace.'}
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
       doc="terms"

@@ -34,7 +34,7 @@ function Shell({ title, subtitle, children }: { title: string; subtitle: string;
 }
 
 /**
- * /terms/, /refund-policy/: which version applies to you?
+ * /terms/, /refund-policy/, /privacy/: which version applies to you?
  * One card per solution, so a link published before the split still works.
  */
 export function LegalChooser({ doc: key, locale }: { doc: LegalDocKey; locale: Locale }) {

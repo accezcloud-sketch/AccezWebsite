@@ -2,14 +2,11 @@
  * The structure of each legal document: its sections in order, and which
  * audience each one speaks to.
  *
- * Accez is one platform with several solutions, and the Terms and the Refund
- * policy are published once per solution (/terms/property-managers/,
- * /terms/service-providers/, ...). Each version is rendered from the same
+ * Accez is one platform with several solutions, and every legal document is
+ * published once per solution (/terms/property-managers/,
+ * /privacy/service-providers/, ...). Each version is rendered from the same
  * source with the other audience's sections and <Only> passages left out, so a
- * reader only ever sees the clauses that apply to them. The Privacy Policy is
- * one shared document: it also covers guests, tenants and providers'
- * customers, who are neither audience, so its audience-specific passages are
- * labelled instead of removed.
+ * reader only ever sees the clauses that apply to them.
  *
  * Why a filter rather than separate documents: only a few sections are
  * genuinely single-audience. Copying ninety per cent of the wording into a

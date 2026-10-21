@@ -16,7 +16,7 @@ export default function TermsContentAr({ audience }: { audience: AudienceView })
   return (
     <LegalLayout
       title="شروط الخدمة"
-      subtitle="الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لمنصة أكسيز وسوق الخدمات التابع لها."
+      subtitle={audience === 'pm' ? 'الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لمنصة أكسيز لإدارة العقارات.' : 'الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لسوق خدمات أكسيز.'}
       lastUpdated={LAST_UPDATED}
       effectiveDate={EFFECTIVE}
       doc="terms"
