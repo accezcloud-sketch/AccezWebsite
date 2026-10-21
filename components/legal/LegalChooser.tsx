@@ -34,23 +34,21 @@ function Shell({ title, subtitle, children }: { title: string; subtitle: string;
 }
 
 /**
- * /terms/, /refund-policy/, /privacy/: which version applies to you?
- * One card per solution, so a link published before the split still works.
+ * /terms/, /refund-policy/, /privacy/: who are you? One card per audience,
+ * each leading to that audience's version of the document.
  */
 export function LegalChooser({ doc: key, locale }: { doc: LegalDocKey; locale: Locale }) {
   const doc = legalDocument(key)
   const c = LEGAL_COPY[locale]
   return (
-    <Shell title={doc.title[locale]} subtitle={`${doc.summary[locale]} ${c.chooserSubtitle}`}>
-      <ul className={`grid gap-6 max-w-4xl mx-auto ${PLATFORM_SOLUTIONS.length > 1 ? 'md:grid-cols-2' : ''}`}>
+    <Shell title={doc.title[locale]} subtitle={c.chooserSubtitle}>
+      <ul className={`grid gap-6 max-w-2xl mx-auto ${PLATFORM_SOLUTIONS.length > 1 ? 'md:grid-cols-2' : ''}`}>
         {PLATFORM_SOLUTIONS.map((s) => (
           <li key={s.key}>
             <Link href={localeHref(legalHref(key, s), locale)} prefetch={false} className="solution-card flex flex-col h-full rounded-[var(--radius-lg)] p-7">
-              <span className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: 'var(--accent-hi)' }}>{s.audience[locale]}</span>
-              <span className="hero-display text-strong mb-2" style={{ fontSize: 21 }}>{s.name[locale]}</span>
-              <span className="text-muted leading-relaxed mb-6">{s.summary[locale]}</span>
+              <span className="hero-display text-strong mb-6" style={{ fontSize: 24 }}>{s.role[locale]}</span>
               <span className="mt-auto inline-flex items-center gap-2 font-semibold" style={{ color: 'var(--accent-hi)' }}>
-                {c.read}: {doc.title[locale]} <Arrow locale={locale} />
+                {c.read} {doc.title[locale]} <Arrow locale={locale} />
               </span>
             </Link>
           </li>

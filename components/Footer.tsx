@@ -6,7 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import FadeUp from '@/components/animations/FadeUp'
 import { localeHref } from '@/lib/i18n'
-import { legalDocumentsFor } from '@/lib/legal/documents'
+import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -99,13 +99,13 @@ export default function Footer() {
         { label: t.footer.contact, href: '/#contact' },
       ],
     },
+    {
+      heading: language === 'ar' ? 'السياسات' : 'Policies',
+      links: [
+        ...LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: legalHref(d.key) })),
+      ],
+    },
   ]
-
-  // Policies: each audience's own versions, under its own heading.
-  const policyGroups = PLATFORM_SOLUTIONS.map((s) => ({
-    heading: s.audience[language],
-    links: legalDocumentsFor(s).map(({ doc, href }) => ({ label: doc.title[language], href })),
-  }))
 
   return (
     <footer className="relative overflow-hidden" style={{ background: 'var(--bg-deep)' }}>
@@ -205,27 +205,6 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
-
-            {/* Policies, grouped by audience */}
-            <div className="flex flex-col gap-4">
-              <h4 className="text-strong text-sm font-semibold" style={{ letterSpacing: '-0.01em' }}>
-                {language === 'ar' ? 'السياسات' : 'Policies'}
-              </h4>
-              {policyGroups.map(({ heading, links }) => (
-                <div key={heading} className="flex flex-col gap-2.5">
-                  <p className="text-soft text-xs font-semibold">{heading}</p>
-                  <ul className="flex flex-col gap-2.5">
-                    {links.map(({ label, href }) => (
-                      <li key={href}>
-                        <a href={localeHref(href, language)} className="text-faint text-sm transition-colors duration-150 hover:text-soft">
-                          {label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Bottom bar */}

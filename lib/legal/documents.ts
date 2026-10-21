@@ -3,9 +3,8 @@
  *
  * Every document has one version per solution: /terms/property-managers/,
  * /terms/service-providers/, and the same for the Refund and Privacy policies.
- * The menus link straight to those versions. The bare URL (/terms/) is a short
- * "which applies to you?" page, so links published before the split still land
- * somewhere sensible.
+ * The menus link to the bare URL (/terms/), a short "who are you?" page with
+ * one card per audience that leads to that audience's version.
  */
 import type { Metadata } from 'next'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
@@ -76,14 +75,14 @@ export function legalVersionRoutes(): string[] {
 
 export const LEGAL_COPY = {
   en: {
-    chooserSubtitle: 'Accez is one platform with two solutions, and each has its own version. Choose the one you use.',
-    read: 'Read',
+    chooserSubtitle: 'Who are you?',
+    read: 'Read the',
     versionFor: 'This version is for',
     otherVersion: 'Not you? Read the version',
     alsoApplies: 'Also applies to you',
   },
   ar: {
-    chooserSubtitle: 'أكسيز منصة واحدة بحلّين، ولكل منهما نسخته الخاصة. اختر الحل الذي تستخدمه.',
+    chooserSubtitle: 'من أنت؟',
     read: 'اقرأ',
     versionFor: 'هذه النسخة',
     otherVersion: 'لست منهم؟ اقرأ النسخة',
@@ -93,7 +92,7 @@ export const LEGAL_COPY = {
 
 export function legalChooserMetadata(key: LegalDocKey, locale: Locale): Metadata {
   const doc = legalDocument(key)
-  return staticPageMetadata({ route: key, locale, title: doc.title[locale], description: `${doc.summary[locale]} ${LEGAL_COPY[locale].chooserSubtitle}` })
+  return staticPageMetadata({ route: key, locale, title: doc.title[locale], description: doc.summary[locale] })
 }
 
 /** "Terms of Service for property managers" / "شروط الخدمة لمديري العقارات". */
