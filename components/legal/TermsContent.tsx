@@ -475,15 +475,13 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </p>
         <Only for="pm">
         <LegalCallout title="How reservation channels actually connect">
-          <Only for="pm">
-            <p>
-              Reservation synchronisation with external booking channels operates through{' '}
-              <strong>calendar feed import and export</strong> and through a connected channel
-              management service. It does not depend on us holding an account or a direct API
-              relationship with any particular booking site, and we make no commitment that any
-              specific channel is or will remain connected.
-            </p>
-          </Only>
+          <p>
+            Reservation synchronisation with external booking channels operates through{' '}
+            <strong>calendar feed import and export</strong> and through a connected channel
+            management service. It does not depend on us holding an account or a direct API
+            relationship with any particular booking site, and we make no commitment that any
+            specific channel is or will remain connected.
+          </p>
         </LegalCallout>
         </Only>
         <p>

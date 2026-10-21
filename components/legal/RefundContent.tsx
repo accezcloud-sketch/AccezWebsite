@@ -344,7 +344,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           Where what was booked could not go ahead because of circumstances outside
           everyone&apos;s control (a natural event, an official restriction, a utility
           failure), we encourage the parties to reach a fair outcome, and we
-          will support a manager or provider who chooses to refund in full. Accez does not decide
+          will support a business that chooses to refund in full. Accez does not decide
           those cases, and does not fund refunds beyond what was collected through the platform.
         </p>
         <p>
