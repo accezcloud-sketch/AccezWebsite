@@ -77,7 +77,7 @@ describe('sectionNumbers', () => {
 
   it('gives each refund version its own numbering', () => {
     expect(sectionNumbers(REFUND_SECTIONS, 'pm')).toMatchObject({ overview: 1, reservations: 2, deposits: 3, sales: 9 })
-    expect(sectionNumbers(REFUND_SECTIONS, 'sp')).toMatchObject({ overview: 1, marketplace: 2, deposits: 3 })
+    expect(sectionNumbers(REFUND_SECTIONS, 'sp')).toMatchObject({ overview: 1, deposits: 2 })
     expect(sectionNumbers(REFUND_SECTIONS, 'sp').sales).toBeUndefined()
   })
 

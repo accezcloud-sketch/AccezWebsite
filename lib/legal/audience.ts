@@ -47,7 +47,6 @@ export const TERMS_SECTIONS: LegalSection[] = [
 export const REFUND_SECTIONS: LegalSection[] = [
   { id: 'overview' },
   { id: 'reservations', for: 'pm' },
-  { id: 'marketplace', for: 'sp' },
   ...all('deposits', 'subscriptions', 'fees-on-refund', 'how-to-request', 'timing', 'chargebacks'),
   { id: 'sales', for: 'pm' },
   ...all('exceptions', 'contact'),

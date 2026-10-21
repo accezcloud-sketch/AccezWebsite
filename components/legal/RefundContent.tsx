@@ -27,10 +27,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
       <LegalCallout title="The one thing to understand first">
         <p>
           Accez processes payments, but Accez is <strong>not the seller</strong> of what was
-          booked. The cancellation terms that apply to a booking are set by{' '}
-          <strong>the business the booking was made with</strong>. This policy
-          explains how those terms are applied, what applies when none has been set, and
-          how fees are handled.
+          booked. This policy explains how refunds and fees are handled.
         </p>
       </LegalCallout>
 
@@ -61,11 +58,6 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           <LegalTable
             head={['What was paid for', 'Who sets the terms', 'Details']}
             rows={[
-              [
-                <strong key="b">A service booking</strong>,
-                'You, the service provider',
-                <>Your own cancellation terms (section <SectionNo to="marketplace" />)</>,
-              ],
               [
                 <strong key="c">An Accez subscription</strong>,
                 'Accez',
@@ -99,16 +91,6 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </p>
       </S>
 
-      <S id="marketplace" title="Marketplace service bookings">
-        <p>
-          The cancellation and refund terms for a service booking are <strong>yours to set</strong>{' '}
-          as the service provider, and the customer should see them before confirming a booking.
-        </p>
-        <p>
-          Whether to refund a customer, and how much, is your decision under your own terms. Accez
-          does not decide it and does not fund it.
-        </p>
-      </S>
 
       <S id="deposits" title="Deposits and part payments">
         <Only for="sp">
@@ -225,14 +207,6 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
             head={['Who', 'How a refund is handled']}
             rows={[
               [
-                'A customer who booked a service from you',
-                'They cancel through the platform or contact you.',
-              ],
-              [
-                'You, the service provider',
-                'Decide refund requests under your own cancellation terms.',
-              ],
-              [
                 'You, as an Accez subscriber',
                 <>Contact us through <a key="f" href="/support/">our support form</a> with your invoice reference.</>,
               ],
@@ -322,17 +296,19 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
       </S>
 
       <S id="exceptions" title="Exceptions and unusual circumstances">
-        <p>
-          A business using Accez may choose to issue a more generous refund than
-          their policy requires. Nothing here prevents that.
-        </p>
-        <p>
-          Where what was booked could not go ahead because of circumstances outside
-          everyone&apos;s control (a natural event, an official restriction, a utility
-          failure), we encourage the parties to reach a fair outcome, and we
-          will support a business that chooses to refund in full. Accez does not decide
-          those cases, and does not fund refunds beyond what was collected through the platform.
-        </p>
+        <Only for="pm">
+          <p>
+            A business using Accez may choose to issue a more generous refund than
+            their policy requires. Nothing here prevents that.
+          </p>
+          <p>
+            Where what was booked could not go ahead because of circumstances outside
+            everyone&apos;s control (a natural event, an official restriction, a utility
+            failure), we encourage the parties to reach a fair outcome, and we
+            will support a business that chooses to refund in full. Accez does not decide
+            those cases, and does not fund refunds beyond what was collected through the platform.
+          </p>
+        </Only>
         <p>
           Nothing in this policy limits rights you may have under mandatory Saudi consumer
           protection or e-commerce law.
