@@ -44,7 +44,7 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 0, originalPrice: null },
     highlight: false,
     showLaunchDiscount: false,
-    accentColor: '#319fd4',
+    accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
     glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
@@ -72,7 +72,7 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 480, originalPrice: 960 },
     highlight: false,
     showLaunchDiscount: true,
-    accentColor: '#319fd4',
+    accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
     glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
@@ -100,10 +100,10 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 1800, originalPrice: 3600 },
     highlight: true,
     showLaunchDiscount: true,
-    accentColor: '#319fd4',
-    borderColor: 'rgba(49, 159, 212,0.4)',
-    bgColor: 'rgba(49, 159, 212,0.06)',
-    glowShadow: '0 0 0 1px rgba(49, 159, 212,0.2), 0 20px 60px rgba(49, 159, 212,0.2), 0 4px 16px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
+    accentColor: 'var(--accent)',
+    borderColor: 'rgb(var(--accent-rgb) / 0.4)',
+    bgColor: 'rgb(var(--accent-rgb) / 0.06)',
+    glowShadow: '0 0 0 1px rgb(var(--accent-rgb) / 0.2), 0 20px 60px rgb(var(--accent-rgb) / 0.2), 0 4px 16px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
     ctaStyle: 'primary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -129,7 +129,7 @@ const PLANS: PlanConfig[] = [
     yearly: { price: 'Custom', originalPrice: null },
     highlight: false,
     showLaunchDiscount: false,
-    accentColor: '#319fd4',
+    accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
     glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
@@ -216,7 +216,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
 
               <button
                 onClick={() => setIsYearly(!isYearly)}
-                className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+                className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                 style={{
                   background: isYearly
                     ? 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))'
@@ -278,8 +278,8 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                     className="absolute top-0 left-0 right-0 h-[3px]"
                     style={{
                       background: plan.highlight
-                        ? 'linear-gradient(90deg, #319fd4, #5fb8e8, #5fb8e8)'
-                        : `linear-gradient(90deg, ${plan.accentColor}66, transparent)`,
+                        ? 'linear-gradient(90deg, var(--accent-solid), var(--accent-hi))'
+                        : 'linear-gradient(90deg, rgb(var(--accent-rgb) / 0.4), transparent)',
                     }}
                   />
 
@@ -289,8 +289,8 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                       <span
                         className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase"
                         style={{
-                          background: 'rgba(49, 159, 212,0.15)',
-                          border: '1px solid rgba(49, 159, 212,0.35)',
+                          background: 'rgb(var(--accent-rgb) / 0.15)',
+                          border: '1px solid rgb(var(--accent-rgb) / 0.35)',
                           color: 'var(--accent-hi)',
                         }}
                       >
@@ -381,7 +381,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                           ? {
                               background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
                               color: 'var(--on-accent)',
-                              boxShadow: '0 4px 20px rgba(49, 159, 212,0.35)',
+                              boxShadow: '0 4px 20px rgb(var(--accent-rgb) / 0.35)',
                             }
                           : {
                               background: 'var(--surface-hi)',
@@ -422,7 +422,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                             className="mt-0.5 w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0"
                             style={{
                               background: plan.highlight
-                                ? 'rgba(49, 159, 212,0.15)'
+                                ? 'rgb(var(--accent-rgb) / 0.15)'
                                 : 'rgba(16,185,129,0.12)',
                             }}
                           >

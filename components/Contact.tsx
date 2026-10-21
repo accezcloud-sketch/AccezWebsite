@@ -28,7 +28,7 @@ export default function Contact() {
   }, [])
 
   const inputClass =
-    'w-full px-4 py-3 rounded-lg text-strong placeholder:text-faint transition-all duration-200 outline-none focus:ring-2 focus:ring-[#319FD4]/60 focus:border-transparent'
+    'w-full px-4 py-3 rounded-lg text-strong placeholder:text-faint transition-all duration-200 outline-none focus:ring-2 focus:ring-[rgb(var(--accent-rgb)/0.6)] focus:border-transparent'
 
   const inputStyle: React.CSSProperties = {
     background: 'var(--surface)',

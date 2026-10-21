@@ -196,8 +196,8 @@ export default function Ecosystem() {
                 {/* Centred on the hub so every spoke reads the same, bright
                     near Accez and fading out toward each party. */}
                 <radialGradient id="eco-grad" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#7fcdef" stopOpacity="0.85" />
-                  <stop offset="100%" stopColor="#5fb8e8" stopOpacity="0.25" />
+                  <stop offset="0%" style={{ stopColor: 'var(--accent-hi)' }} stopOpacity="0.85" />
+                  <stop offset="100%" style={{ stopColor: 'var(--accent)' }} stopOpacity="0.25" />
                 </radialGradient>
               </defs>
 
@@ -230,9 +230,9 @@ export default function Ecosystem() {
                 transform: 'translate(-50%, -50%)',
                 width: 150,
                 height: 150,
-                background: 'radial-gradient(circle at 50% 40%, rgba(49, 159, 212,0.22), var(--panel))',
+                background: 'radial-gradient(circle at 50% 40%, rgb(var(--accent-rgb) / 0.22), var(--panel))',
                 border: '1px solid var(--accent-line)',
-                boxShadow: '0 0 0 8px rgba(49, 159, 212,0.05), 0 20px 60px rgba(38, 120, 166,0.35)',
+                boxShadow: '0 0 0 8px rgb(var(--accent-rgb) / 0.05), 0 20px 60px rgb(var(--accent-rgb) / 0.35)',
               }}
             >
               <Image src="/images/accez-logo.png" alt="Accez" width={40} height={40} className="rounded-lg mb-2" />
@@ -286,7 +286,7 @@ export default function Ecosystem() {
             <div
               className="flex items-center gap-4 rounded-2xl p-5 max-w-md mx-auto mb-6"
               style={{
-                background: 'radial-gradient(circle at 20% 30%, rgba(49, 159, 212,0.16), var(--surface))',
+                background: 'radial-gradient(circle at 20% 30%, rgb(var(--accent-rgb) / 0.16), var(--surface))',
                 border: '1px solid var(--accent-line)',
               }}
             >

@@ -171,7 +171,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse, rgba(49, 159, 212,0.05) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse, rgb(var(--accent-rgb) / 0.05) 0%, transparent 70%)',
           }}
           aria-hidden="true"
         />
@@ -217,8 +217,8 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 style={
                   activeCategory === key
                     ? {
-                        background: 'rgba(49, 159, 212,0.18)',
-                        border: '1px solid rgba(49, 159, 212,0.4)',
+                        background: 'rgb(var(--accent-rgb) / 0.18)',
+                        border: '1px solid rgb(var(--accent-rgb) / 0.4)',
                         color: 'var(--accent-hi)',
                       }
                     : {
@@ -242,9 +242,9 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                   <div
                     className="rounded-xl overflow-hidden transition-all duration-200"
                     style={{
-                      background: isOpen ? 'rgba(49, 159, 212,0.06)' : 'rgb(var(--fg-rgb) / 0.03)',
+                      background: isOpen ? 'rgb(var(--accent-rgb) / 0.06)' : 'rgb(var(--fg-rgb) / 0.03)',
                       border: isOpen
-                        ? '1px solid rgba(49, 159, 212,0.25)'
+                        ? '1px solid rgb(var(--accent-rgb) / 0.25)'
                         : '1px solid var(--border)',
                     }}
                   >
@@ -257,7 +257,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                       <div className="flex items-start gap-3 min-w-0">
                         <span
                           className="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0"
-                          style={{ background: '#319fd4' }}
+                          style={{ background: 'var(--accent)' }}
                         />
                         <span
                           className="font-medium text-strong leading-snug"
@@ -318,8 +318,8 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
             <div
               className="flex flex-col sm:flex-row items-center justify-between gap-5 rounded-2xl px-6 py-5"
               style={{
-                background: 'rgba(49, 159, 212,0.07)',
-                border: '1px solid rgba(49, 159, 212,0.18)',
+                background: 'rgb(var(--accent-rgb) / 0.07)',
+                border: '1px solid rgb(var(--accent-rgb) / 0.18)',
               }}
             >
               <div className="text-center sm:text-start">
@@ -332,7 +332,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 className="w-full sm:w-auto flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
-                  boxShadow: '0 4px 16px rgba(49, 159, 212,0.3)',
+                  boxShadow: '0 4px 16px rgb(var(--accent-rgb) / 0.3)',
                 }}
               >
                 {tf.bottomCtaButton}

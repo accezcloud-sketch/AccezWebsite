@@ -49,6 +49,10 @@ describe.each([
   })
 })
 
+it('light theme buttons, icons and links use the brand navy #102634', () => {
+  for (const name of ['accent', 'accent-solid', 'accent-hi']) expect(light[name]?.toUpperCase(), name).toBe('#102634')
+})
+
 it('both themes define the same tokens', () => {
   expect(Object.keys(light).sort()).toEqual(Object.keys(dark).sort())
 })

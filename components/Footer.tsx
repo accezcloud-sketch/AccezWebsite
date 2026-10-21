@@ -114,7 +114,7 @@ export default function Footer() {
         className="absolute top-0 left-0 right-0 h-px"
         style={{
           background:
-            'linear-gradient(90deg, transparent, rgba(49, 159, 212,0.4), rgba(95, 184, 232,0.4), transparent)',
+            'linear-gradient(90deg, transparent, rgb(var(--accent-rgb) / 0.4), rgb(var(--accent-rgb) / 0.4), transparent)',
         }}
       />
 
@@ -123,7 +123,7 @@ export default function Footer() {
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] rounded-full pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse, rgba(49, 159, 212,0.04) 0%, transparent 70%)',
+            'radial-gradient(ellipse, rgb(var(--accent-rgb) / 0.04) 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />
@@ -133,7 +133,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-12 py-14 lg:py-16">
             {/* Brand column */}
             <div className="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col gap-5">
-              <Link href={localeHref("/", language)} prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#319FD4]">
+              <Link href={localeHref("/", language)} prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                 <Image
                   src="/images/accez-logo.png"
                   alt="Accez Logo"
