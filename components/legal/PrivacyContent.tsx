@@ -25,7 +25,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
       <LegalCallout title="Summary">
         <p>
           We collect what we need to run the platform.
-          We do not sell personal data. Card details never reach our servers &mdash; Stripe handles
+          We do not sell personal data. Card details never reach our servers. Stripe handles
           them. Much of the data in the platform belongs to the business that uploaded it, not to
           us, and in those cases you should contact that business first. You can reach us any time
           at <a href="/support/">our support form</a>.
@@ -80,7 +80,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
             Your business profile and venue details, the services you list with their descriptions,
             durations and prices, your opening hours and calendar availability, your staff records
             with their schedules, assigned tasks and bookings, and the bookings customers make with
-            you &mdash; including the customer&apos;s name and contact details, what they booked,
+            you, including the customer&apos;s name and contact details, what they booked,
             when, and the amount paid.
           </p>
         </Only>
@@ -138,24 +138,24 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
 
       <S id="sources" title="Where it comes from">
         <ul>
-          <li><strong>From you</strong> — when you register, complete a profile, make or accept a booking, upload content, or contact us.</li>
+          <li><strong>From you</strong>: when you register, complete a profile, make or accept a booking, upload content, or contact us.</li>
           <Only for="pm" as="li">
-            <strong>From a business using Accez</strong> — a property manager may add you as a
+            <strong>From a business using Accez</strong>: a property manager may add you as a
             resident, tenant, owner or staff member. In that case we receive your data from them.
           </Only>
           <Only for="sp" as="li">
-            <strong>From a business using Accez</strong> — a service provider may add you as a
+            <strong>From a business using Accez</strong>: a service provider may add you as a
             customer or a staff member. In that case we receive your data from them.
           </Only>
           <Only for="pm" as="li">
-            <strong>From connected services</strong> — for example, guest details supplied by a
+            <strong>From connected services</strong>: for example, guest details supplied by a
             connected reservation channel, or verification status supplied by Stripe.
           </Only>
           <Only for="sp" as="li">
-            <strong>From connected services</strong> — for example, verification status supplied by
+            <strong>From connected services</strong>: for example, verification status supplied by
             Stripe.
           </Only>
-          <li><strong>Automatically</strong> — technical data generated as you use the platform.</li>
+          <li><strong>Automatically</strong>: technical data generated as you use the platform.</li>
         </ul>
         <p>
           Where we receive your data from someone other than you, and we are the controller of it,
@@ -170,10 +170,10 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
             head={['Purpose', 'Legal basis']}
             rows={[
               ['Creating and administering your account', 'Performance of a contract with you'],
-              ['Running the property manager portal — properties, units, leases, reservations, work orders and staff', 'Performance of a contract'],
+              ['Running the property manager portal: properties, units, leases, reservations, work orders and staff', 'Performance of a contract'],
               ['Recording owner earnings and payout records', 'Performance of a contract'],
               ['Processing payments, payouts, refunds and disputes', 'Performance of a contract; legal obligation'],
-              ['Sending service messages — confirmations, reminders, alerts', 'Performance of a contract'],
+              ['Sending service messages: confirmations, reminders, alerts', 'Performance of a contract'],
               ['Support and troubleshooting', 'Performance of a contract; legitimate interest'],
               ['Security, fraud detection and abuse prevention', 'Legitimate interest; legal obligation'],
               ['Keeping records and issuing invoices', 'Legal obligation'],
@@ -188,9 +188,9 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
             rows={[
               ['Creating and administering your account', 'Performance of a contract with you'],
               ['Publishing your listing on the marketplace so customers can find and book you', 'Performance of a contract'],
-              ['Running the provider portal — services, calendar, availability, staff and bookings', 'Performance of a contract'],
+              ['Running the provider portal: services, calendar, availability, staff and bookings', 'Performance of a contract'],
               ['Processing payments, payouts and commission', 'Performance of a contract; legal obligation'],
-              ['Sending service messages — booking confirmations, reminders, alerts', 'Performance of a contract'],
+              ['Sending service messages: booking confirmations, reminders, alerts', 'Performance of a contract'],
               ['Support and troubleshooting', 'Performance of a contract; legitimate interest'],
               ['Security, fraud detection and abuse prevention', 'Legitimate interest; legal obligation'],
               ['Keeping records and issuing invoices', 'Legal obligation'],
@@ -265,7 +265,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
               ['Channel management for reservations', 'Reservation and guest details for connected properties'],
               ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
             ]}
-            caption="The named suppliers in each category can change — for example, if we appoint an additional payment processor — and a current list is available on request through our support form."
+            caption="The named suppliers in each category can change (for example, if we appoint an additional payment processor), and a current list is available on request through our support form."
           />
         </Only>
         <Only for="sp">
@@ -281,22 +281,22 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
               ['Mapping and address lookup', 'The address or coordinates being looked up'],
               ['Customer relationship and support tools', 'Enquiry and ticket details you submit'],
             ]}
-            caption="The named suppliers in each category can change — for example, if we appoint an additional payment processor — and a current list is available on request through our support form."
+            caption="The named suppliers in each category can change (for example, if we appoint an additional payment processor), and a current list is available on request through our support form."
           />
         </Only>
 
         <h3>Other disclosures</h3>
         <ul>
           <li>
-            <strong>Legal and regulatory</strong> — where we are required to disclose by law, court
+            <strong>Legal and regulatory</strong>: where we are required to disclose by law, court
             order or a competent authority.
           </li>
           <li>
-            <strong>Protecting rights and safety</strong> — to investigate fraud, enforce our terms
+            <strong>Protecting rights and safety</strong>: to investigate fraud, enforce our terms
             or protect people from harm.
           </li>
           <li>
-            <strong>Business transfer</strong> — if the business is merged, acquired or
+            <strong>Business transfer</strong>: if the business is merged, acquired or
             reorganised, subject to the same protections and with notice where required.
           </li>
         </ul>
@@ -310,7 +310,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
         </p>
         <p>
           Where that happens, we transfer only what is necessary, and we rely on the safeguards the
-          Saudi Personal Data Protection Law permits &mdash; principally the{' '}
+          Saudi Personal Data Protection Law permits, principally the{' '}
           <strong>Standard Contractual Clauses issued by SDAIA</strong>, and where applicable an
           accreditation certificate or binding common rules. We assess the risks of a transfer
           before making it, and we document that assessment.
@@ -331,19 +331,19 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
         <p>We keep personal data for as long as we need it for the purpose it was collected for. In practice that means:</p>
         <ul>
           <li>
-            <strong>Account data</strong> — for as long as the account is active, and afterwards
+            <strong>Account data</strong>: for as long as the account is active, and afterwards
             only as long as needed to resolve disputes and meet legal obligations.
           </li>
           <li>
-            <strong>Transaction, invoice and tax records</strong> — for the period required by
+            <strong>Transaction, invoice and tax records</strong>: for the period required by
             Saudi tax and commercial law.
           </li>
           <li>
-            <strong>Data uploaded by a business using Accez</strong> — for as long as that business
+            <strong>Data uploaded by a business using Accez</strong>: for as long as that business
             instructs us to keep it, and then in accordance with its instructions.
           </li>
           <li>
-            <strong>Support correspondence</strong> — for as long as needed to handle the matter and
+            <strong>Support correspondence</strong>: for as long as needed to handle the matter and
             keep a record of it.
           </li>
         </ul>
@@ -372,13 +372,13 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
       <S id="rights" title="Your rights and how to use them">
         <p>Under the Saudi Personal Data Protection Law you have the right to:</p>
         <ul>
-          <li><strong>Be informed</strong> — know the legal basis and purpose for which your data is collected;</li>
-          <li><strong>Access</strong> — obtain confirmation and a copy of your personal data we hold;</li>
-          <li><strong>Obtain a copy</strong> — receive it in a readable, clear format;</li>
-          <li><strong>Correct</strong> — have inaccurate or incomplete data corrected, completed or updated;</li>
-          <li><strong>Request destruction</strong> — have data deleted when it is no longer needed for the purpose it was collected for;</li>
-          <li><strong>Withdraw consent</strong> — where we rely on consent; and</li>
-          <li><strong>Complain</strong> — to us and to the supervisory authority.</li>
+          <li><strong>Be informed</strong>: know the legal basis and purpose for which your data is collected;</li>
+          <li><strong>Access</strong>: obtain confirmation and a copy of your personal data we hold;</li>
+          <li><strong>Obtain a copy</strong>: receive it in a readable, clear format;</li>
+          <li><strong>Correct</strong>: have inaccurate or incomplete data corrected, completed or updated;</li>
+          <li><strong>Request destruction</strong>: have data deleted when it is no longer needed for the purpose it was collected for;</li>
+          <li><strong>Withdraw consent</strong>: where we rely on consent; and</li>
+          <li><strong>Complain</strong>: to us and to the supervisory authority.</li>
         </ul>
         <p>
           Some rights have limits. We may need to keep data to comply with a legal obligation, to
@@ -403,7 +403,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
         <p>
           Where we rely on your consent, you can withdraw it at any time, and withdrawing is as
           straightforward as giving it was. Withdrawal does not affect processing already carried
-          out, and does not affect processing that rests on another basis &mdash; for example, we
+          out, and does not affect processing that rests on another basis. For example, we
           still need to keep transaction records for tax purposes even if you withdraw marketing
           consent.
         </p>
@@ -413,11 +413,11 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
         <p>We use a small number of browser technologies:</p>
         <ul>
           <li>
-            <strong>Strictly necessary</strong> — to keep you signed in, keep your session secure,
+            <strong>Strictly necessary</strong>: to keep you signed in, keep your session secure,
             and remember your language choice. The platform cannot work without these.
           </li>
           <li>
-            <strong>Analytics and diagnostics</strong> — where enabled, to understand how the
+            <strong>Analytics and diagnostics</strong>: where enabled, to understand how the
             platform is used and to diagnose errors.
           </li>
         </ul>
@@ -475,7 +475,7 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
           service</strong> in order to generate a reply, together with the technical information any
           web request carries. We use it to answer questions about Accez and to pass you to our team
           when it cannot. Please do not enter passwords, card numbers or identity document numbers
-          into it &mdash; use <a href="/support/">our support form</a> for anything sensitive.
+          into it. Use <a href="/support/">our support form</a> for anything sensitive.
         </p>
         <p>
           You never have to use it. If you would rather deal with a person, say so and we will route

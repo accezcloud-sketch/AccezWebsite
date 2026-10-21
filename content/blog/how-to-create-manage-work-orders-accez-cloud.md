@@ -47,7 +47,7 @@ A new page will open with a comprehensive work order creation form.
 
 Complete the following information:
 
-**Title**: Create a clear, descriptive title for the work order (e.g., "Leaking Kitchen Faucet - Unit 204")
+**Title**: Create a clear, descriptive title for the work order (e.g., "Leaking Kitchen Faucet (Unit 204)")
 
 **Problem Category**: Select the appropriate category:
 - Plumbing
@@ -200,7 +200,7 @@ See the complete work order creation and management process:
 
 أكمل المعلومات التالية:
 
-**العنوان**: أنشئ عنواناً واضحاً ووصفياً لأمر العمل (مثل "تسرب صنبور المطبخ - الوحدة 204")
+**العنوان**: أنشئ عنواناً واضحاً ووصفياً لأمر العمل (مثل "تسرب صنبور المطبخ (الوحدة 204)")
 
 **فئة المشكلة**: حدد الفئة المناسبة:
 - السباكة

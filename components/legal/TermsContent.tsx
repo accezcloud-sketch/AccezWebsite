@@ -96,7 +96,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
           </Only>
           <Only for="pm" as="li">act as a real estate broker, letting agent, or property manager; or</Only>
           <Only for="sp" as="li">
-            perform, supervise or inspect any service you list &mdash; cleaning, maintenance, salon,
+            perform, supervise or inspect any service you list, whether cleaning, maintenance, salon,
             spa, fitness, photography or anything else;
           </Only>
           <Only for="sp" as="li">act as a party to any booking a customer makes with you;</Only>
@@ -104,8 +104,8 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </ul>
         <LegalCallout tone="warning" title="Disputes about what was booked or supplied">
           <p>
-            Any dispute about what was booked or supplied &mdash; its condition, quality or safety,
-            a cancellation, a deposit, or the conduct of anyone involved &mdash; is{' '}
+            Any dispute about what was booked or supplied (its condition, quality or safety,
+            a cancellation, a deposit, or the conduct of anyone involved) is{' '}
             <strong>between those parties</strong>. We are not a party to it
             and do not adjudicate it. We may, at our discretion, provide records held on the
             platform to help the parties resolve it.
@@ -140,7 +140,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </p>
         <Only for="sp">
           <p>
-            <strong>Provider plan tiers.</strong> Provider listings run on tiers &mdash; a free tier
+            <strong>Provider plan tiers.</strong> Provider listings run on tiers: a free tier
             and paid tiers. The tiers available to you, their prices and what each includes are shown
             in the plan picker when you set up your business and in your billing page afterwards.
             Some features are limited on the free and entry tiers. Choosing a paid plan takes you to
@@ -157,8 +157,8 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </Only>
         <Only for="pm">
           <p>
-            Plan changes are prorated. Where a plan includes usage limits &mdash; for example the
-            number of properties, units, residents, staff seats, check-ins or work orders &mdash;
+            Plan changes are prorated. Where a plan includes usage limits (for example the
+            number of properties, units, residents, staff seats, check-ins or work orders),
             those limits are enforced by the platform, and exceeding them may require an upgrade or
             an additional seat purchase.
           </p>
@@ -221,7 +221,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
             card disputes are debited from the Accez account in the first instance.
           </p>
           <p>
-            That is a mechanical fact about how funds move &mdash; it does{' '}
+            That is a mechanical fact about how funds move. It does{' '}
             <strong>not</strong> make us the seller of your goods or services, or a party to your
             contract with your customer. Where a refund or chargeback relates to your booking, we
             are entitled to recover it from you, including by reversing the corresponding transfer,
@@ -282,7 +282,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
           <p>
             Stripe charges its own fees on each transaction. They are deducted by Stripe, borne by
             the party receiving the funds, and we add nothing on top. The rates below are Stripe&apos;s
-            published rates &mdash; each links to the page we took it from.
+            published rates, and each links to the page we took it from.
           </p>
           <LegalTable
             head={['Stripe fee', 'Rate', 'Source']}
@@ -406,14 +406,14 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
       <S id="customer-content" title="Your content, your customers, your policies">
         <Only for="pm">
           <p>
-            You keep ownership of everything you upload &mdash; property and unit records,
+            You keep ownership of everything you upload: property and unit records,
             documents, photographs, contracts and messages
             (&ldquo;<strong>Your Content</strong>&rdquo;).
           </p>
         </Only>
         <Only for="sp">
           <p>
-            You keep ownership of everything you upload &mdash; your service listings, descriptions,
+            You keep ownership of everything you upload: your service listings, descriptions,
             pricing, photographs, documents and messages
             (&ldquo;<strong>Your Content</strong>&rdquo;).
           </p>
@@ -519,7 +519,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
         </ul>
         <p>
           You are responsible for giving the people whose data you upload the notices, and
-          obtaining the consents, that the law requires &mdash; including consent for any marketing
+          obtaining the consents, that the law requires, including consent for any marketing
           you send through the platform. You must not instruct us to process personal data in a way
           that would breach the law.
         </p>
@@ -589,7 +589,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
             or enforceable; or
           </li>
           <li>
-            any calculation, statement or report is free of error &mdash; you should verify figures
+            any calculation, statement or report is free of error. You should verify figures
             before relying on them.
           </li>
         </ul>

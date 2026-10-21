@@ -33,7 +33,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </p>
       </LegalCallout>
 
-      <S id="overview" title="Overview — which policy applies to you">
+      <S id="overview" title="Overview: which policy applies to you">
         <Only for="pm">
           <LegalTable
             head={['What was paid for', 'Who sets the terms', 'Default if none set']}
@@ -63,7 +63,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
               [
                 <strong key="b">A service booking</strong>,
                 'You, the service provider',
-                <><strong key="n">No refund</strong> — see section <SectionNo to="marketplace" /></>,
+                <><strong key="n">No refund</strong> (see section <SectionNo to="marketplace" />)</>,
               ],
               [
                 <strong key="c">An Accez subscription</strong>,
@@ -96,7 +96,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         <p>
           Payment processing fees are not returned by the payment processor when a payment is
           refunded, so the amount that reaches the guest is the amount you approve less those fees
-          &mdash; see section <SectionNo to="fees-on-refund" />.
+          (see section <SectionNo to="fees-on-refund" />).
         </p>
       </S>
 
@@ -129,7 +129,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         <ul>
           <li>refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value;</li>
           <li>platform fees are charged proportionately on the deposit, so a refund reverses them proportionately; and</li>
-          <Only for="sp" as="li">any balance a customer paid you directly, outside the platform, is a matter between you and that customer &mdash; we have no record of it and cannot refund it.</Only>
+          <Only for="sp" as="li">any balance a customer paid you directly, outside the platform, is a matter between you and that customer. We have no record of it and cannot refund it.</Only>
         </ul>
         <Only for="pm">
           <h3>Security deposits on tenancies</h3>
@@ -207,8 +207,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         <Only for="pm">
           <p>
             Property managers should take this into account when setting cancellation policies and
-            pricing. If you believe a platform fee should be returned in a particular case &mdash; for
-            example where a booking was cancelled because of a platform fault &mdash; contact{' '}
+            pricing. If you believe a platform fee should be returned in a particular case (for
+            example where a booking was cancelled because of a platform fault), contact{' '}
             <a href="/support/">our support form</a> and we will review it.
           </p>
         </Only>
@@ -256,7 +256,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         <p>
           Refunds are returned to the <strong>original payment method</strong>. We cannot send a
           refund to a different card or account. If the original card has expired or been closed,
-          the refund normally still reaches you through your card issuer &mdash; contact your bank
+          the refund normally still reaches you through your card issuer. Contact your bank
           if it does not appear.
         </p>
       </S>
@@ -295,7 +295,7 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           </p>
         </LegalCallout>
         <p>
-          A refund can fail where the bank or card issuer cannot process it &mdash; for example a
+          A refund can fail where the bank or card issuer cannot process it, for example a
           closed or cancelled account. The amount returns to us within the period above, and we will
           then contact you to arrange another way to return it. Refunds to an expired or cancelled
           card are handled by the card issuer, which usually credits a replacement card or, if there
@@ -324,8 +324,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
 
       <S id="sales" title="Property sale payments">
         <p>
-          Payments recorded against a property sale &mdash; deposits, instalments and settlement
-          amounts &mdash; are <strong>recorded</strong> in the platform but are made and returned{' '}
+          Payments recorded against a property sale (deposits, instalments and settlement
+          amounts) are <strong>recorded</strong> in the platform but are made and returned{' '}
           <strong>outside</strong> it, directly between buyer and seller.
         </p>
         <p>
@@ -342,8 +342,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </p>
         <p>
           Where what was booked could not go ahead because of circumstances outside
-          everyone&apos;s control &mdash; a natural event, an official restriction, a utility
-          failure &mdash; we encourage the parties to reach a fair outcome, and we
+          everyone&apos;s control (a natural event, an official restriction, a utility
+          failure), we encourage the parties to reach a fair outcome, and we
           will support a manager or provider who chooses to refund in full. Accez does not decide
           those cases, and does not fund refunds beyond what was collected through the platform.
         </p>

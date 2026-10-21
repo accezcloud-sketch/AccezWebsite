@@ -21,7 +21,7 @@ tags: ["property management", "occupancy", "revenue management", "rental strateg
 tagsAr: ["إدارة الممتلكات", "الإشغال", "إدارة الإيرادات", "استراتيجيات الإيجار", "المملكة العربية السعودية"]
 ---
 
-> Minimizing "gap nights"—the unoccupied periods between bookings—is crucial for maximizing revenue in rental and hospitality operations. Implementing strategic rules like minimum stay lengths and intelligent orphan-night policies can transform inconsistent occupancy into a predictable, profitable calendar. These rules prevent short, unprofitable bookings and ensure a consistent flow of guests, directly impacting your financial performance.
+> Minimizing "gap nights" (the unoccupied periods between bookings) is crucial for maximizing revenue in rental and hospitality operations. Implementing strategic rules like minimum stay lengths and intelligent orphan-night policies can transform inconsistent occupancy into a predictable, profitable calendar. These rules prevent short, unprofitable bookings and ensure a consistent flow of guests, directly impacting your financial performance.
 
 The elusive "full calendar" is the holy grail for property operators. Yet, for many, the reality is a frustrating dance with empty nights, those quiet periods between a checkout and a check-in that represent lost revenue and missed opportunities. This often happens with bookings that are just a day or two short of a longer, more profitable stay, creating "orphan nights" that disrupt optimal scheduling.
 
@@ -105,7 +105,7 @@ Visit portal.accez.cloud
 
 <!-- AR -->
 
-> يعد تقليل "الليالي الفارغة"—وهي الفترات غير المشغولة بين الحجوزات—أمرًا بالغ الأهمية لزيادة الإيرادات في عمليات التأجير والضيافة. يمكن أن يؤدي تطبيق قواعد استراتيجية مثل الحد الأدنى لطول الإقامة وسياسات الليالي اليتيمة الذكية إلى تحويل الإشغال غير المتسق إلى تقويم يمكن التنبؤ به ومربح. تمنع هذه القواعد الحجوزات القصيرة وغير المربحة وتضمن تدفقًا مستمرًا للضيوف، مما يؤثر بشكل مباشر على أدائك المالي.
+> يعد تقليل "الليالي الفارغة" (وهي الفترات غير المشغولة بين الحجوزات) أمرًا بالغ الأهمية لزيادة الإيرادات في عمليات التأجير والضيافة. يمكن أن يؤدي تطبيق قواعد استراتيجية مثل الحد الأدنى لطول الإقامة وسياسات الليالي اليتيمة الذكية إلى تحويل الإشغال غير المتسق إلى تقويم يمكن التنبؤ به ومربح. تمنع هذه القواعد الحجوزات القصيرة وغير المربحة وتضمن تدفقًا مستمرًا للضيوف، مما يؤثر بشكل مباشر على أدائك المالي.
 
 إن "التقويم الممتلئ" المنشود هو الهدف الأسمى لمشغلي العقارات. ومع ذلك، بالنسبة للكثيرين، فإن الواقع هو رقصة محبطة مع الليالي الفارغة، تلك الفترات الهادئة بين تسجيل المغادرة وتسجيل الوصول التي تمثل ضياعًا للإيرادات وفرصًا ضائعة. يحدث هذا غالبًا مع الحجوزات التي تكون أقصر بيوم أو يومين من إقامة أطول وأكثر ربحية، مما يخلق "ليالي يتيمة" تعطل الجدولة المثلى.
 

@@ -22,7 +22,7 @@ export const BLOG_INDEX_COPY = {
     browseByTopic: 'Browse by topic',
     allArticles: 'All articles',
     topicSubtitle: (topic: string) => `Articles on ${topic.toLowerCase()} for property operators in Saudi Arabia.`,
-    pageSuffix: (n: number) => ` – Page ${n}`,
+    pageSuffix: (n: number) => `, page ${n}`,
   },
   ar: {
     eyebrow: 'المدونة',
@@ -36,7 +36,7 @@ export const BLOG_INDEX_COPY = {
     browseByTopic: 'تصفح حسب الموضوع',
     allArticles: 'كل المقالات',
     topicSubtitle: (topic: string) => `مقالات حول ${topic} لمشغّلي العقارات في السعودية.`,
-    pageSuffix: (n: number) => ` – الصفحة ${n}`,
+    pageSuffix: (n: number) => `، الصفحة ${n}`,
   },
 } as const
 

@@ -13,7 +13,7 @@ author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/building-a-direct-booking-website-that-actually-gets-traffic.webp"
 coverImageAlt: "A person using a laptop with a website open on the screen"
-coverImageCredit: "Photo by Stephen Phillips - Hostreviews.co.uk on Unsplash"
+coverImageCredit: "Photo by Stephen Phillips (Hostreviews.co.uk) on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/turned-on-monitor-zs98a0DtKL4"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
@@ -27,7 +27,7 @@ tagsAr: ["حجز مباشر", "زيارات الموقع", "إدارة العق�
 
 Property managers often find themselves in a paradox: investing heavily in online travel agencies (OTAs) to gain visibility, only to see significant portions of their revenue disappear in commission fees. Simultaneously, their own direct booking website, a crucial asset for sustained growth, languishes with minimal traffic and even fewer conversions. This leaves them reliant on channels that, while providing reach, diminish profitability.
 
-The allure of immediate exposure on global platforms is undeniable, especially for independent operators or smaller chains. However, the long-term cost of this dependency is substantial. Each booking made through an OTA represents a percentage of revenue – sometimes as high as 20-30% – paid out to the platform. This cycle traps operators, making it difficult to invest in their own brand and directly connect with their customer base, ultimately hindering their ability to build a sustainable and profitable business.
+The allure of immediate exposure on global platforms is undeniable, especially for independent operators or smaller chains. However, the long-term cost of this dependency is substantial. Each booking made through an OTA represents a percentage of revenue (sometimes as high as 20-30%) paid out to the platform. This cycle traps operators, making it difficult to invest in their own brand and directly connect with their customer base, ultimately hindering their ability to build a sustainable and profitable business.
 
 ## The Erosion of Profitability: What Breaks Direct Booking Websites and Why
 
@@ -107,7 +107,7 @@ Drive more bookings directly at [Visit portal.accez.cloud](https://portal.accez.
 
 غالباً ما يجد مديرو العقارات أنفسهم في مفارقة: الاستثمار بكثافة في وكالات السفر عبر الإنترنت (OTAs) للحصول على رؤية، فقط لرؤية أجزاء كبيرة من إيراداتهم تختفي في رسوم العمولة. في الوقت نفسه، فإن موقع الحجز المباشر الخاص بهم، وهو أصل بالغ الأهمية للنمو المستدام، يعاني من الحد الأدنى من الزيارات وعدد أقل من التحويلات. هذا يتركهم يعتمدون على قنوات، بينما توفر الوصول، تقلل الربحية.
 
-جاذبية التعرض الفوري على المنصات العالمية لا يمكن إنكارها، خاصة بالنسبة للمشغلين المستقلين أو السلاسل الصغيرة. ومع ذلك، فإن التكلفة طويلة الأجل لهذا الاعتماد كبيرة. كل حجز يتم عبر وكالة سفر عبر الإنترنت يمثل نسبة من الإيرادات - تصل أحيانًا إلى 20-30٪ - تدفع للمنصة. هذه الدورة تحبس المشغلين، مما يجعل من الصعب الاستثمار في علامتهم التجارية والتواصل مباشرة مع قاعدة عملائهم، مما يعيق في النهاية قدرتهم على بناء عمل تجاري مستدام ومربح.
+جاذبية التعرض الفوري على المنصات العالمية لا يمكن إنكارها، خاصة بالنسبة للمشغلين المستقلين أو السلاسل الصغيرة. ومع ذلك، فإن التكلفة طويلة الأجل لهذا الاعتماد كبيرة. كل حجز يتم عبر وكالة سفر عبر الإنترنت يمثل نسبة من الإيرادات (تصل أحيانًا إلى 20-30٪) تدفع للمنصة. هذه الدورة تحبس المشغلين، مما يجعل من الصعب الاستثمار في علامتهم التجارية والتواصل مباشرة مع قاعدة عملائهم، مما يعيق في النهاية قدرتهم على بناء عمل تجاري مستدام ومربح.
 
 ## تآكل الربحية: ما الذي يكسر مواقع الحجز المباشر ولماذا
 

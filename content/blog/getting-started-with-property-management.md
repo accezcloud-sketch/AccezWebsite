@@ -17,7 +17,7 @@ Property management software has revolutionized how landlords and property manag
 
 ## Why Use Property Management Software?
 
-Managing rental properties involves countless tasks - from tenant screening to maintenance requests, rent collection to financial reporting. Property management software centralizes all these functions in one place.
+Managing rental properties involves countless tasks, from tenant screening to maintenance requests, rent collection to financial reporting. Property management software centralizes all these functions in one place.
 
 ### Key Benefits
 
@@ -52,7 +52,7 @@ Start your free trial today and experience the difference professional property 
 
 ## لماذا تستخدم برنامج إدارة العقارات؟
 
-تتضمن إدارة العقارات المؤجرة مهام لا حصر لها - من فحص المستأجرين إلى طلبات الصيانة، ومن تحصيل الإيجار إلى التقارير المالية. يجمع برنامج إدارة العقارات كل هذه الوظائف في مكان واحد.
+تتضمن إدارة العقارات المؤجرة مهام لا حصر لها، من فحص المستأجرين إلى طلبات الصيانة، ومن تحصيل الإيجار إلى التقارير المالية. يجمع برنامج إدارة العقارات كل هذه الوظائف في مكان واحد.
 
 ### الفوائد الرئيسية
 

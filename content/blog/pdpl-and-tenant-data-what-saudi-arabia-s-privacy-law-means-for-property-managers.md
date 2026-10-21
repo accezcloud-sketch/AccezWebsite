@@ -44,7 +44,7 @@ The process of collecting tenant information during the leasing phase will requi
 
 ### Data Storage and Access Control
 
-Secure storage of tenant data is paramount. This means moving away from unsecured spreadsheets or email attachments and adopting robust, encrypted databases. For property managers operating multiple properties or managing a large portfolio, this also includes ensuring that only authorized personnel have access to tenant data, and that this access is logged and monitored. The principle of **least privilege** – granting users only the necessary permissions to perform their job functions – becomes crucial. This requires a careful mapping of roles and responsibilities within the property management team and corresponding access levels within the chosen platforms.
+Secure storage of tenant data is paramount. This means moving away from unsecured spreadsheets or email attachments and adopting robust, encrypted databases. For property managers operating multiple properties or managing a large portfolio, this also includes ensuring that only authorized personnel have access to tenant data, and that this access is logged and monitored. The principle of **least privilege** (granting users only the necessary permissions to perform their job functions) becomes crucial. This requires a careful mapping of roles and responsibilities within the property management team and corresponding access levels within the chosen platforms.
 
 ### Third-Party Data Sharing
 
@@ -126,7 +126,7 @@ Penalties for non-compliance can be severe, including significant financial fine
 
 ### تخزين البيانات والتحكم في الوصول
 
-يعد التخزين الآمن لبيانات المستأجرين أمراً بالغ الأهمية. هذا يعني الابتعاد عن جداول البيانات غير الآمنة أو مرفقات البريد الإلكتروني وتبني قواعد بيانات قوية ومشفرة. بالنسبة لمديري العقارات الذين يديرون عقارات متعددة أو يديرون محفظة كبيرة، يشمل هذا أيضًا ضمان أن الأشخاص المصرح لهم فقط لديهم حق الوصول إلى بيانات المستأجرين، وأن هذا الوصول يتم تسجيله ومراقبته. يصبح مبدأ **أقل الامتيازات** - منح المستخدمين فقط الأذونات الضرورية لأداء وظائفهم الوظيفية - أمراً بالغ الأهمية. يتطلب هذا تعيينًا دقيقًا للأدوار والمسؤوليات داخل فريق إدارة العقارات ومستويات الوصول المقابلة داخل المنصات المختارة.
+يعد التخزين الآمن لبيانات المستأجرين أمراً بالغ الأهمية. هذا يعني الابتعاد عن جداول البيانات غير الآمنة أو مرفقات البريد الإلكتروني وتبني قواعد بيانات قوية ومشفرة. بالنسبة لمديري العقارات الذين يديرون عقارات متعددة أو يديرون محفظة كبيرة، يشمل هذا أيضًا ضمان أن الأشخاص المصرح لهم فقط لديهم حق الوصول إلى بيانات المستأجرين، وأن هذا الوصول يتم تسجيله ومراقبته. يصبح مبدأ **أقل الامتيازات** (منح المستخدمين فقط الأذونات الضرورية لأداء وظائفهم الوظيفية) أمراً بالغ الأهمية. يتطلب هذا تعيينًا دقيقًا للأدوار والمسؤوليات داخل فريق إدارة العقارات ومستويات الوصول المقابلة داخل المنصات المختارة.
 
 ### مشاركة البيانات مع أطراف ثالثة
 
