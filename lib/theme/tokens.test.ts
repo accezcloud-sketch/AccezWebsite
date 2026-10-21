@@ -44,13 +44,18 @@ describe.each([
     expect(contrast(v('on-accent'), v('accent-solid-hover'))).toBeGreaterThanOrEqual(4.5)
   })
 
-  it('filled accent controls stand out from the page (3:1)', () => {
-    expect(contrast(v('accent-solid'), v('bg'))).toBeGreaterThanOrEqual(3)
+  it('filled accent controls stand out from the page (3:1), by their fill or their outline', () => {
+    const edge = Math.max(contrast(v('accent-solid'), v('bg')), contrast(v('accent-ring'), v('bg')))
+    expect(edge).toBeGreaterThanOrEqual(3)
   })
 })
 
 it('light theme buttons, icons and links use the brand navy #102634', () => {
   for (const name of ['accent', 'accent-solid', 'accent-hi']) expect(light[name]?.toUpperCase(), name).toBe('#102634')
+})
+
+it('dark theme buttons use the brand navy #102634 too', () => {
+  expect(dark['accent-solid']?.toUpperCase()).toBe('#102634')
 })
 
 it('both themes define the same tokens', () => {

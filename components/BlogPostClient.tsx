@@ -115,7 +115,7 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
                 href={localeHref(`/blog/topic/${post.topic}`, language)}
                 prefetch={false}
                 className="text-white text-sm px-4 py-1 rounded-full font-medium"
-                style={{ background: 'var(--accent-solid)' }}
+                style={{ background: 'var(--accent-solid)', boxShadow: '0 0 0 1px var(--accent-ring)' }}
               >
                 {topicLabel(post.topic, language)}
               </Link>

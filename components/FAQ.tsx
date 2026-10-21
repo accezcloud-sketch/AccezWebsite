@@ -332,7 +332,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 className="w-full sm:w-auto flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
-                  boxShadow: '0 4px 16px rgb(var(--accent-rgb) / 0.3)',
+                  boxShadow: '0 0 0 1px var(--accent-ring), 0 4px 16px rgb(var(--accent-rgb) / 0.3)',
                 }}
               >
                 {tf.bottomCtaButton}

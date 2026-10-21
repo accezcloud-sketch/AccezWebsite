@@ -30,12 +30,12 @@ export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?
               <FadeUp key={plan.name} delay={0.1 + i * 0.08} className="h-full">
                 <div
                   className="ui-card relative flex flex-col p-6 h-full"
-                  style={plan.highlight ? { borderColor: 'var(--accent-line)', boxShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--accent-line), 0 20px 60px rgb(49 159 212 / 0.16)' } : undefined}
+                  style={plan.highlight ? { borderColor: 'var(--accent-line)', boxShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--accent-line), 0 20px 60px rgb(var(--accent-rgb) / 0.16)' } : undefined}
                 >
                   {plan.highlight && (
                     <span
                       className="absolute -top-3 start-6 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide"
-                      style={{ background: 'var(--accent-solid)', color: 'var(--on-accent)' }}
+                      style={{ background: 'var(--accent-solid)', color: 'var(--on-accent)', boxShadow: '0 0 0 1px var(--accent-ring)' }}
                     >
                       {p.mostPopular}
                     </span>
@@ -67,7 +67,7 @@ export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?
                     className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5 mb-6"
                     style={
                       plan.highlight
-                        ? { background: 'var(--accent-solid)', color: 'var(--on-accent)', fontSize: 14.5 }
+                        ? { background: 'var(--accent-solid)', color: 'var(--on-accent)', boxShadow: '0 0 0 1px var(--accent-ring)', fontSize: 14.5 }
                         : { background: 'var(--surface-hi)', border: '1px solid var(--border-hi)', color: 'var(--text)', fontSize: 14.5 }
                     }
                   >

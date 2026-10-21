@@ -381,7 +381,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                           ? {
                               background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
                               color: 'var(--on-accent)',
-                              boxShadow: '0 4px 20px rgb(var(--accent-rgb) / 0.35)',
+                              boxShadow: '0 0 0 1px var(--accent-ring), 0 4px 20px rgb(var(--accent-rgb) / 0.35)',
                             }
                           : {
                               background: 'var(--surface-hi)',
