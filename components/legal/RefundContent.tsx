@@ -37,12 +37,12 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
       <S id="overview" title="Overview: which policy applies to you">
         <Only for="pm">
           <LegalTable
-            head={['What was paid for', 'Who sets the terms', 'Default if none set']}
+            head={['What was paid for', 'Who sets the terms', 'Details']}
             rows={[
               [
                 <strong key="a">A stay in a unit</strong>,
                 'You, the property manager, per unit',
-                <>A sliding scale based on notice before check-in (section <SectionNo to="reservations" />)</>,
+                <>The cancellation policy set for the unit (section <SectionNo to="reservations" />)</>,
               ],
               [
                 <strong key="c">An Accez subscription</strong>,
@@ -59,12 +59,12 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </Only>
         <Only for="sp">
           <LegalTable
-            head={['What was paid for', 'Who sets the terms', 'Default if none set']}
+            head={['What was paid for', 'Who sets the terms', 'Details']}
             rows={[
               [
                 <strong key="b">A service booking</strong>,
                 'You, the service provider',
-                <><strong key="n">No refund</strong> (see section <SectionNo to="marketplace" />)</>,
+                <>Your own cancellation terms (section <SectionNo to="marketplace" />)</>,
               ],
               [
                 <strong key="c">An Accez subscription</strong>,
@@ -88,10 +88,8 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
         </p>
         <LegalCallout tone="warning" title="Accez does not impose a cancellation policy">
           <p>
-            We do not set a standard refund scale and we do not apply one on your behalf where you
-            have not configured a policy. The terms that apply to a booking are the terms you
-            published for that unit and that were shown to the guest before they confirmed. If you
-            have not set any, there is no refund entitlement created by this policy.
+            Accez does not set the cancellation policy. The terms that apply to a booking are the
+            terms you set for that unit and that were shown to the guest before they confirmed.
           </p>
         </LegalCallout>
         <p>
@@ -102,21 +100,13 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
       </S>
 
       <S id="marketplace" title="Marketplace service bookings">
-        <LegalCallout tone="warning" title="Cancelled service bookings are not refunded">
-          <p>
-            A marketplace service booking is <strong>not refundable</strong>. If the customer
-            cancels, no refund is due and Accez does not process one. This applies whether the
-            customer cancels well ahead of the appointment or does not attend at all.
-          </p>
-        </LegalCallout>
         <p>
-          This is stated to the customer before they confirm a booking, so nobody is surprised by it
-          after the fact.
+          The cancellation and refund terms for a service booking are <strong>yours to set</strong>{' '}
+          as the service provider, and the customer should see them before confirming a booking.
         </p>
         <p>
-          You may still choose to return money to a customer yourself, outside the platform, if you
-          decide the circumstances warrant it. That is your decision and your cost; Accez neither
-          requires it nor funds it.
+          Whether to refund a customer, and how much, is your decision under your own terms. Accez
+          does not decide it and does not fund it.
         </p>
       </S>
 
@@ -131,9 +121,9 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           <p>Where a reservation was paid with a deposit through the platform:</p>
         </Only>
         <ul>
-          <li>refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value;</li>
+          <Only for="pm" as="li">refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value;</Only>
+          <Only for="sp" as="li">refund calculations apply to the amount <strong>actually collected</strong>, not the full booking value; and</Only>
           <Only for="pm" as="li">the platform fee charged on the deposit is not automatically returned (section <SectionNo to="fees-on-refund" />).</Only>
-          <Only for="sp" as="li">platform fees are charged proportionately on the deposit, so a refund reverses them proportionately; and</Only>
           <Only for="sp" as="li">any balance a customer paid you directly, outside the platform, is a matter between you and that customer. We have no record of it and cannot refund it.</Only>
         </ul>
         <Only for="pm">
@@ -192,24 +182,15 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
           </LegalCallout>
         </Only>
 
-        <h3>Accez platform fees</h3>
-        <p>We would rather state this plainly than let it be discovered later:</p>
         <Only for="pm">
+          <h3>Accez platform fees</h3>
+          <p>We would rather state this plainly than let it be discovered later:</p>
           <p>
             On a <strong>unit reservation</strong>, the platform fee is{' '}
             <strong>not automatically returned</strong>. The refund is funded from the amount
             transferred to you, so you bear the refund while the platform fee already charged
             remains charged.
           </p>
-        </Only>
-        <Only for="sp">
-          <p>
-            On a <strong>marketplace booking</strong>, our commission is{' '}
-            <strong>refunded proportionately</strong>. On a full refund, the full commission is
-            returned to you.
-          </p>
-        </Only>
-        <Only for="pm">
           <p>
             Property managers should take this into account when setting cancellation policies and
             pricing. If you believe a platform fee should be returned in a particular case (for
@@ -245,11 +226,11 @@ export default function RefundContent({ audience }: { audience: AudienceView }) 
             rows={[
               [
                 'A customer who booked a service from you',
-                'They cancel through the platform or contact you. The refund due is quoted before they confirm.',
+                'They cancel through the platform or contact you.',
               ],
               [
                 'You, the service provider',
-                'Issue a refund on your own booking from your dashboard, in full or in part.',
+                'Decide refund requests under your own cancellation terms.',
               ],
               [
                 'You, as an Accez subscriber',

@@ -368,8 +368,7 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
           <p>In summary:</p>
           <ul>
             <li>
-              <strong>Unit reservations</strong> follow the cancellation policy set for the unit, or a
-              default sliding scale based on notice given before check-in.
+              <strong>Unit reservations</strong> follow the cancellation policy set for the unit.
             </li>
           </ul>
         </Only>

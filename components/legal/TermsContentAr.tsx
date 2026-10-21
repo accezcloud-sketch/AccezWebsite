@@ -319,8 +319,7 @@ export default function TermsContentAr({ audience }: { audience: AudienceView })
           <p>وباختصار:</p>
           <ul>
             <li>
-              <strong>حجوزات الوحدات</strong> تخضع لسياسة الإلغاء المحددة للوحدة، أو لجدول تنازلي
-              افتراضي يعتمد على مدة الإشعار قبل تسجيل الوصول.
+              <strong>حجوزات الوحدات</strong> تخضع لسياسة الإلغاء المحددة للوحدة.
             </li>
           </ul>
         </Only>
