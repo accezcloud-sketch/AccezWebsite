@@ -5,7 +5,7 @@ import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
 import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { SITE_DESCRIPTION, X_HANDLE } from '@/lib/site'
+import { SITE_DESCRIPTION, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
 import { websiteSchema } from '@/lib/content/siteSchema'
 import { THEME_INIT_SCRIPT } from '@/lib/theme/theme'
 
@@ -19,7 +19,7 @@ const heading = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-head
 export const metadata: Metadata = {
   title: {
     default: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
-    template: '%s | Accez',
+    template: `%s${TITLE_SUFFIX}`,
   },
   description: SITE_DESCRIPTION,
   // NOTE: no `keywords` here on purpose. Google confirms the meta keywords tag

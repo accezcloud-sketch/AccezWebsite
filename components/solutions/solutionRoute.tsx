@@ -22,10 +22,10 @@ export function solutionRoute(locale: Locale) {
       const solution = solutionByKey((await params).solution)
       const page = solution && SOLUTION_PAGES[solution.key]
       if (!page) notFound()
-      const { Page: Content, schema, description } = page
+      const { Page: Content, schema } = page
       return (
         <>
-          {schema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema(locale, description[locale])) }} />}
+          {schema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema(locale, solution.pageDescription[locale])) }} />}
           <main className="min-h-screen">
             <Header />
             <Content locale={locale} />

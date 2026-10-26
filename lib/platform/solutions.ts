@@ -37,6 +37,10 @@ export interface PlatformSolution {
   summary: Bilingual
   /** The solution's main page. */
   href: string
+  /** That page's search title, without the " | Accez" suffix (title + suffix within 60 characters). */
+  pageTitle: Bilingual
+  /** That page's search description (about 140 to 155 characters). */
+  pageDescription: Bilingual
   /** Its pricing page (route without locale). */
   pricingHref: string
   /** The pricing page's search description (about 140 to 155 characters). */
@@ -65,6 +69,11 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
       ar: 'الحجوزات والقنوات والإيجارات وأوامر العمل والملاك والمدفوعات والمبيعات والفنادق في نظام واحد.',
     },
     href: '/solutions/property-managers',
+    pageTitle: { en: 'Property management software for Saudi Arabia', ar: 'برنامج إدارة العقارات في السعودية' },
+    pageDescription: {
+      en: 'Property management software for Saudi Arabia: reservations synced with Airbnb, Booking.com and Expedia, leases, rent, work orders, sales and payouts.',
+      ar: 'برنامج إدارة العقارات في السعودية: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، وعقود الإيجار، والإيجارات، وأوامر العمل، والمبيعات، ومدفوعات الملاك.',
+    },
     pricingHref: '/pricing/property-managers',
     pricingDescription: {
       en: 'Plans and prices for Accez property management: reservations, channels, leases, rent, work orders and owner payouts. Compare the plans and choose yours.',
@@ -104,6 +113,11 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
       ar: 'أدرج نشاطك في سوق أكسيز، وانشر خدماتك وأسعارك، واستقبل الحجوزات من عملائك ومن عملاء جدد.',
     },
     href: '/solutions/service-providers',
+    pageTitle: { en: 'Service provider booking software in Saudi Arabia', ar: 'برنامج حجز المواعيد لمقدمي الخدمات في السعودية' },
+    pageDescription: {
+      en: 'Take bookings, manage your team and customers, and get found on the Accez marketplace. For barbers, salons, spas, coaches and every appointment business.',
+      ar: 'استقبل الحجوزات، وأدر فريقك وعملاءك، ودع العملاء الجدد يجدونك في سوق أكسيز. للحلاقين والصالونات والسبا والمدربين وكل نشاط يعمل بالمواعيد.',
+    },
     pricingHref: '/pricing/service-providers',
     pricingDescription: {
       en: 'Plans and prices for service providers on Accez: a free marketplace listing, bookings, team and customers, with a lower platform fee on higher plans.',

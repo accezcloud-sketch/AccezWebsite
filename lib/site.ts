@@ -4,6 +4,12 @@
  */
 export const SITE_NAME = 'Accez'
 
+/** Appended to page titles by the root layout's title template. */
+export const TITLE_SUFFIX = ` | ${SITE_NAME}`
+
+/** Search results show roughly 60 characters of a title before cutting it. */
+export const TITLE_MAX = 60
+
 /** The site's default meta description: what Accez is, in one sentence pair. */
 export const SITE_DESCRIPTION =
   'One platform, two solutions: property management for rentals, hotels and owners, and a marketplace where service providers get booked. Built for Saudi Arabia.'

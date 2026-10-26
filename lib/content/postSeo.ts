@@ -7,16 +7,10 @@
 import type { Metadata } from 'next'
 import type { BlogPostMeta } from '@/lib/blog'
 import { alternatesFor, localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
-import { X_HANDLE } from '@/lib/site'
+import { TITLE_MAX, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
 
 /** Google shows roughly 150–160 characters of a description. */
 export const DESCRIPTION_MAX = 160
-
-/** Appended to page titles by the root layout's title template. */
-export const TITLE_SUFFIX = ' | Accez'
-
-/** Search results show roughly 60 characters of a title before cutting it. */
-export const TITLE_MAX = 60
 
 /**
  * The `<title>` for a post: with the site suffix while it fits in TITLE_MAX

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { BlogPostMeta } from '@/lib/blog'
-import { postDocumentTitle, postMetadata, socialImageUrl, TITLE_MAX, TITLE_SUFFIX, truncateAtWord } from './postSeo'
+import { postDocumentTitle, postMetadata, socialImageUrl, truncateAtWord } from './postSeo'
+import { TITLE_MAX, TITLE_SUFFIX } from '@/lib/site'
 
 describe('truncateAtWord', () => {
   it('leaves short text alone', () => {
