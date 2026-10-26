@@ -8,9 +8,9 @@ interface IntegrationGroup {
   items: string[]
 }
 
-// The integrations the owner confirmed (2026-10-18): Airbnb, Booking.com and
-// Expedia; RoomCloud and iCal; Stripe and Tap; WhatsApp and Twilio. Nothing
-// else (no VRBO, no "400+ channels").
+// The integrations the owner confirmed (2026-10-18, updated 2026-10-26):
+// Airbnb, Booking.com and Expedia; RoomCloud and iCal; Stripe and Tap; Twilio
+// SMS. Nothing else (no VRBO, no "400+ channels", no WhatsApp integration).
 const INTEGRATIONS: IntegrationGroup[] = [
   {
     label: 'Booking channels',
@@ -30,7 +30,7 @@ const INTEGRATIONS: IntegrationGroup[] = [
   {
     label: 'Communications',
     labelAr: 'الاتصالات',
-    items: ['WhatsApp', 'Twilio SMS'],
+    items: ['Twilio SMS'],
   },
 ]
 
