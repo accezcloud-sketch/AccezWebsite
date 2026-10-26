@@ -11,6 +11,8 @@ import MoreFeatures from '@/components/product/MoreFeatures'
 import Pricing from '@/components/Pricing'
 import BlogStrip from '@/components/blog/BlogStrip'
 import { MODULES_COPY } from '@/lib/content/modulesCopy'
+import { subpageBySlug, subpageHref } from '@/lib/platform/subpages'
+import ModuleLinks from './ModuleLinks'
 import { PORTAL_SIGN_UP } from '@/lib/links'
 import { localeHref, type Locale } from '@/lib/i18n'
 
@@ -114,6 +116,9 @@ const COPY = {
 } as const
 
 const MORE_ICONS = [FileSignature, Wallet, FolderKanban, HandCoins, MessageSquareText, Inbox, UsersRound, Wrench]
+/** The module page that covers each of the "And more" items (lib/platform/modules.ts). */
+const MORE_MODULES = ['leases-and-rent', 'leases-and-rent', 'sales-and-projects', 'billing-and-payments', 'team-and-messaging', 'team-and-messaging', 'team-and-messaging', 'maintenance-work-orders']
+const moduleHref = (slug: string, locale: Locale) => localeHref(subpageHref(subpageBySlug('property-managers', slug)!), locale)
 
 /** Closing call to action, over the page's photo. */
 function ClosingCta({ locale }: { locale: Locale }) {
@@ -164,6 +169,7 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
             <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
               <SectionHeader lead={area.title} subtitle={area.subtitle} />
               <FeatureSteps id={area.id} steps={[...area.steps]} locale={locale} flip={i % 2 === 1} />
+              <ModuleLinks solution="property-managers" area={area.id} locale={locale} />
             </div>
           </section>
         </Band>
@@ -172,7 +178,7 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
       <Band shade="base">
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg))' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-            <MoreFeatures label={c.moreLabel} items={c.more.map((x, i) => ({ ...x, icon: MORE_ICONS[i] }))} />
+            <MoreFeatures label={c.moreLabel} items={c.more.map((x, i) => ({ ...x, icon: MORE_ICONS[i], href: moduleHref(MORE_MODULES[i], locale) }))} />
           </div>
         </section>
       </Band>

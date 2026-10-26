@@ -7,8 +7,8 @@ import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/site'
 import { solutionPricingMetadata } from '@/lib/platform/pricingPages'
 import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
 import { solutionPageMetadata } from '@/components/solutions/solutionPages'
-import { PM_PLAN_PRICES } from '@/lib/content/pmPlans'
-import { PROVIDER_PRICING_COPY } from '@/lib/content/providerPricing'
+import { subpageMetadata } from '@/components/solutions/subpageRoute'
+import { subpageHref, subpagesOf } from '@/lib/platform/subpages'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
@@ -37,6 +37,12 @@ const solutionPage = (key: string): LlmsLink => {
   return page(solution.href, solutionPageMetadata(solution, 'en'))
 }
 
+/** A solution's page followed by its module and customer pages. */
+const solutionPages = (key: string): LlmsLink[] => [
+  solutionPage(key),
+  ...[...subpagesOf(key, 'module'), ...subpagesOf(key, 'audience')].map((p) => page(subpageHref(p), subpageMetadata(p, 'en'))),
+]
+
 export function GET() {
   const posts = getAllPosts()
   const body = buildLlmsTxt({
@@ -49,11 +55,8 @@ export function GET() {
       `Service provider plans: ${PROVIDER_PRICING_COPY.en.plans.map((p) => `${p.name} (${p.price === 'Free' ? 'free' : `${p.price}/month`}, ${p.platformFee} platform fee per booking)`).join('; ')}.`,
     ],
     sections: [
-      {
-        heading: 'Property management solution',
-        links: [solutionPage('property-managers')],
-      },
-      { heading: 'Service provider solution', links: [solutionPage('service-providers')] },
+      { heading: 'Property management solution', links: solutionPages('property-managers') },
+      { heading: 'Service provider solution', links: solutionPages('service-providers') },
       {
         heading: 'Pricing',
         links: PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),

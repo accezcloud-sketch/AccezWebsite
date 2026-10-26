@@ -11,11 +11,11 @@ export interface Crumb {
  * Visible breadcrumb trail (Home › Blog › Topic). The same trail is
  * described to search engines as BreadcrumbList structured data.
  */
-export default function Breadcrumbs({ items, locale }: { items: Crumb[]; locale: Locale }) {
+export default function Breadcrumbs({ items, locale, className = '' }: { items: Crumb[]; locale: Locale; className?: string }) {
   const label = locale === 'ar' ? 'مسار التنقل' : 'Breadcrumb'
   return (
     <nav aria-label={label}>
-      <ol className="flex flex-wrap items-center gap-1.5 text-sm" style={{ color: 'var(--text-muted)' }}>
+      <ol className={`flex flex-wrap items-center gap-1.5 text-sm ${className}`} style={{ color: 'var(--text-muted)' }}>
         {items.map((item, i) => (
           <li key={i} className="inline-flex items-center gap-1.5">
             {i > 0 && (

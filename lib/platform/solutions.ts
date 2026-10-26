@@ -5,7 +5,8 @@
  * and the service-provider marketplace). Everything that presents them reads
  * this list: the header menus, the homepage, the pricing pages, the legal
  * documents and the sign-in/sign-up links. Adding a solution means adding an
- * entry here (plus its pages); nothing else has to know how many there are.
+ * entry here (plus its pages, and its module and customer pages in
+ * lib/platform/subpages.ts); nothing else has to know how many there are.
  */
 import type { AudienceView } from '@/lib/legal/audience'
 import { PORTAL_LOGIN, PORTAL_SIGN_UP, PROVIDER_LOGIN, PROVIDER_SIGN_UP } from '@/lib/links'
@@ -13,13 +14,6 @@ import { PORTAL_LOGIN, PORTAL_SIGN_UP, PROVIDER_LOGIN, PROVIDER_SIGN_UP } from '
 export interface Bilingual {
   en: string
   ar: string
-}
-
-export interface SolutionLink {
-  label: Bilingual
-  description: Bilingual
-  /** Site route (localised by the caller) or an absolute URL. */
-  href: string
 }
 
 export interface PlatformSolution {
@@ -53,8 +47,6 @@ export interface PlatformSolution {
   primaryAction: { label: Bilingual; href: string; external?: boolean }
   /** Which version of the legal documents applies (see lib/legal/audience.ts). */
   legalAudience: AudienceView
-  /** Pages within the solution, besides its main page (href), for the footer. */
-  pages: SolutionLink[]
 }
 
 export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
@@ -84,23 +76,6 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     loginUrl: PORTAL_LOGIN,
     legalAudience: 'pm',
     primaryAction: { label: { en: 'Book a demo', ar: 'اطلب عرضًا توضيحيًا' }, href: '/#contact' },
-    pages: [
-      {
-        label: { en: 'Rentals & reservations', ar: 'الإيجارات والحجوزات' },
-        description: { en: 'Calendar, bookings and add-ons', ar: 'التقويم والحجوزات والإضافات' },
-        href: '/solutions/property-managers#rentals',
-      },
-      {
-        label: { en: 'Sales & projects', ar: 'المبيعات والمشاريع' },
-        description: { en: 'Sale units and the sales path', ar: 'وحدات البيع ومسار المبيعات' },
-        href: '/solutions/property-managers#sales',
-      },
-      {
-        label: { en: 'Billing & operations', ar: 'الفوترة والعمليات' },
-        description: { en: 'Payments, integrations and messages', ar: 'المدفوعات والتكاملات والرسائل' },
-        href: '/solutions/property-managers#billing',
-      },
-    ],
   },
   {
     key: 'service-providers',
@@ -128,7 +103,6 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     loginUrl: PROVIDER_LOGIN,
     legalAudience: 'sp',
     primaryAction: { label: { en: 'Create a provider account', ar: 'أنشئ حساب مقدم خدمة' }, href: PROVIDER_SIGN_UP, external: true },
-    pages: [],
   },
 ]
 

@@ -17,6 +17,7 @@ export interface HeroBackdrop {
  * first screen, so the product sits half on the photo and half below it).
  */
 export default function CenteredHero({
+  above,
   eyebrow,
   title,
   accent,
@@ -25,6 +26,8 @@ export default function CenteredHero({
   media,
   backdrop,
 }: {
+  /** Above the headline, e.g. the breadcrumb trail. */
+  above?: ReactNode
   eyebrow?: string
   title: string
   /** The end of the headline, set in the brand gradient. */
@@ -52,6 +55,7 @@ export default function CenteredHero({
       )}
       <div className="page-top relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pb-16 lg:pb-24">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+          {above && <div className="mb-6">{above}</div>}
           {eyebrow && <span className="ui-chip mb-5">{eyebrow}</span>}
           <h1 className="hero-title hero-display text-balance text-strong leading-[1.08] tracking-tight mb-5" style={{ fontSize: 'clamp(34px, 5.4vw, 64px)' }}>
             {title}{accent && <> <span className="grad-text">{accent}</span></>}
