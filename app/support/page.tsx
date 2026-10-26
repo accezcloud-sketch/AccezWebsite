@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { alternatesFor } from '@/lib/i18n'
+import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import SupportPageClient from '@/components/SupportPageClient'
 
 // This route used to be a `'use client'` page, which cannot export `metadata`.
@@ -8,20 +8,13 @@ import SupportPageClient from '@/components/SupportPageClient'
 // telling Google it was a duplicate of the homepage and shouldn't be indexed,
 // while still being listed in the sitemap. The interactive form now lives in
 // components/SupportPageClient.tsx and this stays a server component.
-export const metadata: Metadata = {
+export const metadata: Metadata = staticPageMetadata({
+  route: 'support',
+  locale: 'en',
   title: 'Support, get help from our Riyadh team',
   description:
     'Need help with Accez? Send a support ticket and our team in Riyadh will reply. Help with reservations, work orders, payouts, bookings and your account.',
-  alternates: alternatesFor('support', 'en'),
-  openGraph: {
-    title: 'Support | Accez',
-    description:
-      'Submit a support ticket and our team in Riyadh will get back to you as soon as possible.',
-    type: 'website',
-    url: 'https://www.accez.cloud/support',
-    siteName: 'Accez',
-  },
-}
+})
 
 export default function SupportPage() {
   return <SupportPageClient />
