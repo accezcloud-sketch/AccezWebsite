@@ -62,16 +62,17 @@ export function softwareApplicationSchema(locale: Locale, description: string) {
       availability: 'https://schema.org/InStock',
       url: pricingUrl('property-managers', locale),
     },
+    // Only features in notes/PRODUCT_FACTS.md (no e-signing, no campaigns).
     featureList: [
-      'Reservations & channel sync (Airbnb, Booking.com, Expedia)',
-      'Rental & Sale Properties',
-      'Owner Management & Payouts',
-      'Sales & Developer Projects',
-      'Contracts & E-signing',
-      'Hotels & Serviced Apartments',
-      'Work Orders',
-      'Service Marketplace',
-      'Marketing Campaigns',
+      'Reservations and channel sync (Airbnb, Booking.com, Expedia)',
+      'Availability calendar',
+      'Leases and rent payments',
+      'Owners and payouts',
+      'Sale units and developer projects',
+      'Billing, invoices and refunds',
+      'Work orders',
+      'Email templates, SMS and one inbox',
+      'Service provider marketplace and bookings',
     ],
   }
 }

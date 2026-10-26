@@ -32,4 +32,9 @@ describe('site schema', () => {
     expect(pricingUrl('property-managers', 'en')).toBe('https://www.accez.cloud/pricing/property-managers/')
     expect(() => pricingUrl('nope', 'en')).toThrow()
   })
+
+  it('lists only features the product has', () => {
+    const list = softwareApplicationSchema('en', 'd').featureList.join('\n')
+    for (const claim of [/e-?sign/i, /campaign/i, /whatsapp/i, /portal/i]) expect(list, String(claim)).not.toMatch(claim)
+  })
 })

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 // Product description for structured data (the page's meta description is
 // the site default, inherited from the layout).
 const PRODUCT_DESCRIPTION =
-  'Accez is one platform with two solutions for Saudi Arabia. Property management: reservations and channels, work orders, rental and sale properties, sales and developer projects, contracts and e-signing, owner payouts, hotels and serviced apartments. And a service provider marketplace, where salons, spas, fitness coaches, photographers and home services are found and booked. In Arabic and English.'
+  'Accez is one platform with two solutions for Saudi Arabia. Property management: reservations and channels, work orders, rental and sale properties, sales and developer projects, leases and rent, owner payouts, hotels and serviced apartments. And a service provider marketplace, where salons, spas, fitness coaches, photographers and home services are found and booked. In Arabic and English.'
 
 export default function Home() {
   return (
