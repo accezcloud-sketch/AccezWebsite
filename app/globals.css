@@ -415,6 +415,7 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 
 /* Respect user motion preferences */
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
