@@ -67,7 +67,6 @@ export const en = {
     perMonth: '/mo',
     perYear: '/yr',
     title: 'Flexible Pricing for Every Portfolio Size',
-    subtitle: 'Start Your Free 14-Day Trial',
     monthly: 'Monthly',
     yearly: 'Yearly',
     popular: 'POPULAR',
@@ -181,7 +180,6 @@ export const en = {
     startFreeTrial: 'Start Free Trial',
     bookDemo: 'Book a demo',
     scheduleDemo: 'Schedule a Demo',
-    trialNote: 'No credit card required • 14-day free trial • Cancel anytime',
   },
 
   // Footer

@@ -67,7 +67,6 @@ export const ar = {
     perMonth: '/شهر',
     perYear: '/سنة',
     title: 'أسعار مرنة لكل حجم محفظة',
-    subtitle: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
     monthly: 'شهري',
     yearly: 'سنوي',
     popular: 'الأكثر شعبية',
@@ -181,7 +180,6 @@ export const ar = {
     startFreeTrial: 'ابدأ التجربة المجانية',
     bookDemo: 'اطلب عرضًا توضيحيًا',
     scheduleDemo: 'جدولة عرض توضيحي',
-    trialNote: 'لا حاجة لبطاقة ائتمان • تجربة مجانية 14 يومًا • إلغاء في أي وقت',
   },
 
   // Footer
