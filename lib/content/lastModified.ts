@@ -14,7 +14,7 @@ import PAGE_DATES from './page-dates.json'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { legalVersionRoutes } from '@/lib/legal/documents'
 import { routeKey } from '@/lib/build/pageDates.mjs'
-import { REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { CALCULATOR_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
 import { hubPostSlugs } from '@/lib/resources/saudiRegulations'
 
 export interface DatedPost {
@@ -60,6 +60,7 @@ export function sitemapStaticRoutes(): string[] {
     ...legalVersionRoutes(),
     // Free resources.
     REGULATIONS_HUB_ROUTE,
+    CALCULATOR_ROUTE,
   ].map(routeKey)
 }
 
