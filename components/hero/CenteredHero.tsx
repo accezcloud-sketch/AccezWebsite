@@ -53,7 +53,7 @@ export default function CenteredHero({
       <div className="page-top relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pb-16 lg:pb-24">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {eyebrow && <span className="ui-chip mb-5">{eyebrow}</span>}
-          <h1 className="hero-title hero-display text-strong leading-[1.08] tracking-tight mb-5" style={{ fontSize: 'clamp(34px, 5.4vw, 64px)' }}>
+          <h1 className="hero-title hero-display text-balance text-strong leading-[1.08] tracking-tight mb-5" style={{ fontSize: 'clamp(34px, 5.4vw, 64px)' }}>
             {title}{accent && <> <span className="grad-text">{accent}</span></>}
           </h1>
           <p className="hero-subtitle text-muted leading-relaxed max-w-2xl mb-8" style={{ fontSize: 'clamp(15px, 1.9vw, 18px)' }}>{subtitle}</p>
