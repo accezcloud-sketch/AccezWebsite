@@ -8,7 +8,7 @@ import { breadcrumbSchema, HOME_CRUMB } from '@/lib/content/breadcrumbSchema'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import type { Locale } from '@/lib/i18n'
 import { solutionByKey } from '@/lib/platform/solutions'
-import { SOLUTION_SUBPAGES, subpageBySlug, subpageHref, type SolutionSubpage } from '@/lib/platform/subpages'
+import { SOLUTION_SUBPAGES, subpageBySlug, subpageHref, subpagesOf, type SolutionSubpage } from '@/lib/platform/subpages'
 
 interface PageProps {
   params: Promise<{ solution: string; page: string }>
@@ -34,11 +34,15 @@ export function subpageView(page: SolutionSubpage, locale: Locale): DetailView {
     const m = subpageBySlug(page.solution, slug)!
     return { label: m.name[locale], text: m.summary[locale], href: subpageHref(m) }
   })
+  // A customer page without modules of its own points to the other kinds of customer instead.
+  const siblings = page.kind === 'audience' && modules.length === 0
+    ? subpagesOf(page.solution, 'audience').filter((p) => p.slug !== page.slug).map((p) => ({ label: p.name[locale], text: p.summary[locale], href: subpageHref(p) }))
+    : []
   return {
     ...dataView(page, locale),
     crumbs: trail(page, locale).map((t, i, all) => ({ label: t.name, href: i < all.length - 1 ? t.route || '/' : undefined })),
     ...solutionActions(solution, locale),
-    links: [...modules, ...solutionLinks(solution, locale)],
+    links: [...modules, ...siblings, ...solutionLinks(solution, locale)],
     cta: solutionCta(solution, locale),
   }
 }

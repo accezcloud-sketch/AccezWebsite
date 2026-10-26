@@ -11,6 +11,7 @@ import ProductShot from '@/components/product/ProductShot'
 import FeatureSteps, { type FeatureStep } from '@/components/product/FeatureSteps'
 import MoreFeatures from '@/components/product/MoreFeatures'
 import ProviderPricing from '@/components/ProviderPricing'
+import AudienceLinks from '@/components/solutions/AudienceLinks'
 
 interface Area {
   id: 'bookings' | 'team'
@@ -158,7 +159,9 @@ export default function ServiceProviderPage({ locale }: { locale: Locale }) {
         </section>
       </Band>
 
-      <Band shade="base">
+      <AudienceLinks solution="service-providers" locale={locale} shade="base" />
+
+      <Band shade="alt">
         <section className="section-y" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
           <div className="max-w-5xl mx-auto px-4">
             <SectionHeader lead={t.stepsTitle} />
@@ -175,7 +178,7 @@ export default function ServiceProviderPage({ locale }: { locale: Locale }) {
         </section>
       </Band>
 
-      <Band shade="alt"><ProviderPricing locale={locale} /></Band>
+      <Band shade="base"><ProviderPricing locale={locale} /></Band>
 
       <PhotoCta
         title={t.ctaTitle}

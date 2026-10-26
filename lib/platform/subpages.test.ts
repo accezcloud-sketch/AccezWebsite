@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { PLATFORM_SOLUTIONS, solutionByKey } from './solutions'
 import { SOLUTION_SUBPAGES, modulesInArea, subpageBySlug, subpageHref, subpagesOf } from './subpages'
-import { detailPageProblems } from './detailPageChecks'
+import { bilingualFields, detailPageProblems } from './detailPageChecks'
 import { sitemapStaticRoutes } from '@/lib/content/lastModified'
 import { routeKey } from '@/lib/build/pageDates.mjs'
 
@@ -57,5 +57,23 @@ describe('solution subpages (modules and kinds of customer)', () => {
   it('gives the property management solution its modules', () => {
     expect(subpagesOf('property-managers', 'module').length).toBeGreaterThanOrEqual(6)
     for (const s of PLATFORM_SOLUTIONS) expect(subpagesOf(s.key, 'module').every((p) => p.solution === s.key)).toBe(true)
+  })
+
+  it('gives every solution 3 or 4 pages for kinds of customer', () => {
+    for (const s of PLATFORM_SOLUTIONS) {
+      const n = subpagesOf(s.key, 'audience').length
+      expect(n, s.key).toBeGreaterThanOrEqual(3)
+      expect(n, s.key).toBeLessThanOrEqual(4)
+    }
+  })
+
+  it('keeps the two solutions apart: provider pages never speak of properties, tenants or owners', () => {
+    for (const p of SOLUTION_SUBPAGES.filter((x) => x.solution === 'service-providers')) {
+      for (const [field, value] of bilingualFields(p)) {
+        expect(value.en, `${p.slug}.${field}`).not.toMatch(/\b(propert|tenant|owner|lease|rent)/i)
+        expect(value.ar, `${p.slug}.${field}`).not.toMatch(/عقار|مستأجر|مالك|ملاك|إيجار/)
+      }
+      expect(p.posts, p.slug).toEqual([])
+    }
   })
 })

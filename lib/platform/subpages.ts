@@ -6,11 +6,12 @@
  */
 import { solutionByKey } from './solutions'
 import { MODULE_PAGES } from './modules'
+import { AUDIENCE_PAGES } from './audiences'
 import type { SolutionSubpage } from './subpageTypes'
 
 export type { SolutionSubpage } from './subpageTypes'
 
-export const SOLUTION_SUBPAGES: SolutionSubpage[] = [...MODULE_PAGES]
+export const SOLUTION_SUBPAGES: SolutionSubpage[] = [...MODULE_PAGES, ...AUDIENCE_PAGES]
 
 /** The page's route without locale, e.g. /solutions/property-managers/channel-manager. */
 export function subpageHref(page: Pick<SolutionSubpage, 'solution' | 'slug'>): string {

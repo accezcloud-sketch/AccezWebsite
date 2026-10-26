@@ -13,6 +13,7 @@ import BlogStrip from '@/components/blog/BlogStrip'
 import { MODULES_COPY } from '@/lib/content/modulesCopy'
 import { subpageBySlug, subpageHref } from '@/lib/platform/subpages'
 import ModuleLinks from './ModuleLinks'
+import AudienceLinks from './AudienceLinks'
 import { PORTAL_SIGN_UP } from '@/lib/links'
 import { localeHref, type Locale } from '@/lib/i18n'
 
@@ -182,7 +183,8 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
           </div>
         </section>
       </Band>
-      <Band shade="alt"><Pricing locale={locale} /></Band>
+      <AudienceLinks solution="property-managers" locale={locale} shade="alt" />
+      <Band shade="base"><Pricing locale={locale} /></Band>
       <ClosingCta locale={locale} />
       <Band shade="base"><BlogStrip locale={locale} /></Band>
     </>
