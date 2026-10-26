@@ -7,6 +7,7 @@ import { readingMinutes } from './content/readingMinutes'
 import { topicOf, type TopicKey } from './content/topics'
 import { tagKey } from './content/blogFilters'
 import { matchProductPage, type ProductPageKey } from './content/productMatch'
+import { toIsoDay } from './content/postDates'
 
 const blogDirectory = path.join(process.cwd(), 'content/blog')
 
@@ -26,6 +27,13 @@ export interface BlogPostMeta {
    * refreshed dates as a search-engine-first signal.
    */
   updated?: string
+  /**
+   * Day the post's facts were last checked, as `YYYY-MM-DD` (frontmatter
+   * `reviewed`, used on regulation posts). Shown as "Last reviewed" on the
+   * post, and used as dateModified when newer than `updated` / `date`.
+   * Undefined when absent or not a real day.
+   */
+  reviewed?: string
   /**
    * Optional SERP overrides.
    *
@@ -99,6 +107,7 @@ function toMeta(slug: string, data: Record<string, any>, body: { en: string; ar:
     excerptAr: data.excerptAr || data.excerpt || '',
     date: data.date || '',
     updated: data.updated || undefined,
+    reviewed: toIsoDay(data.reviewed),
     metaTitle: data.metaTitle || undefined,
     metaTitleAr: data.metaTitleAr || undefined,
     metaDescription: data.metaDescription || undefined,

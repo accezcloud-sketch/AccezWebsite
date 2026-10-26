@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPosts, getPostsByTopic, getPostsForProduct } from '@/lib/blog'
 import { newestDate, POST_LISTING_PAGES, sitemapStaticRoutes, staticPageDate } from '@/lib/content/lastModified'
 import { TOPICS } from '@/lib/content/topics'
+import { postDateModified } from '@/lib/content/postDates'
 import { localeUrl } from '@/lib/i18n'
 
 export const dynamic = 'force-static'
@@ -44,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Every post exists in both languages: the Arabic translation ships in the
   // same .md file, split on the <!-- AR --> marker.
   const blogPages: MetadataRoute.Sitemap = getAllPosts().flatMap((post) => {
-    const lastModified = post.updated || post.date || blogDate
+    const lastModified = post.date ? postDateModified(post) : blogDate
     return [
       { url: localeUrl(`blog/${post.slug}`, 'en'), lastModified },
       { url: localeUrl(`blog/${post.slug}`, 'ar'), lastModified },

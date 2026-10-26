@@ -14,6 +14,7 @@ import { blogFiltersQuery } from '@/lib/content/blogFilters'
 import { formatReadingTime } from '@/lib/content/readingTime'
 import { photoCreditText } from '@/lib/content/credit'
 import { topicLabel } from '@/lib/content/topics'
+import { formatDay, reviewedLabel } from '@/lib/content/postDates'
 
 interface PostArticleProps {
   post: BlogPostMeta | null
@@ -65,14 +66,7 @@ export default function PostArticle({ post, locale, contentHtml, toc, afterArtic
 
   const t = content[language]
 
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString)
-    return date.toLocaleDateString(language === 'ar' ? 'ar-SA' : 'en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    })
-  }
+  const formatDate = (day: string) => formatDay(day, language)
 
   if (!post) {
     return (
@@ -140,6 +134,14 @@ export default function PostArticle({ post, locale, contentHtml, toc, afterArtic
                   <span>·</span>
                   <span>
                     {t.updated} <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+                  </span>
+                </>
+              )}
+              {post.reviewed && (
+                <>
+                  <span>·</span>
+                  <span>
+                    {reviewedLabel(language)} <time dateTime={post.reviewed}>{formatDate(post.reviewed)}</time>
                   </span>
                 </>
               )}

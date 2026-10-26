@@ -2,7 +2,8 @@
  * Structured data (schema.org JSON-LD) for a blog post, for either language.
  *
  * - BlogPosting: canonical URLs (trailing slash), the topic as section,
- *   real modification date. With no named author, the author is the site's
+ *   real modification date (the newest of publish, update and fact review).
+ *   With no named author, the author is the site's
  *   own Organization entity (defined in app/layout.tsx), not a second,
  *   unnamed "Accez Team" organization. A post that sets `authorUrl` gets a
  *   Person, which is what Google's "who created this" guidance asks for.
@@ -13,6 +14,7 @@ import { localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
 import { socialImageUrl, truncateAtWord } from './postSeo'
 import { topicLabel } from './topics'
 import { ORGANIZATION_ID } from './siteSchema'
+import { postDateModified } from './postDates'
 
 
 const CRUMBS: Record<Locale, { home: string; blog: string }> = {
@@ -44,7 +46,7 @@ export function postSchemas(post: BlogPostMeta, locale: Locale): object[] {
     description: truncateAtWord(ar ? post.metaDescriptionAr || post.excerptAr : post.metaDescription || post.excerpt),
     image: socialImageUrl(post.coverImage),
     datePublished: post.date,
-    dateModified: post.updated || post.date,
+    dateModified: postDateModified(post),
     author,
     publisher: { '@id': ORGANIZATION_ID },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
