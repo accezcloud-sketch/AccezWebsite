@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ORGANIZATION_ID, providerMarketplaceSchema, providerPlanPrices, softwareApplicationSchema, websiteSchema } from './siteSchema'
+import { ORGANIZATION_ID, pricingUrl, providerMarketplaceSchema, providerPlanPrices, softwareApplicationSchema, websiteSchema } from './siteSchema'
 
 describe('site schema', () => {
   it('describes the website and points to the one Organization', () => {
@@ -11,7 +11,8 @@ describe('site schema', () => {
   it('builds the product for each homepage language', () => {
     const ar = softwareApplicationSchema('ar', 'وصف')
     expect(ar.url).toBe('https://www.accez.cloud/ar/')
-    expect(ar.offers.url).toBe('https://www.accez.cloud/ar/pricing/')
+    expect(ar.offers.url).toBe('https://www.accez.cloud/ar/pricing/property-managers/')
+    expect(softwareApplicationSchema('en', 'd').offers.url).toBe('https://www.accez.cloud/pricing/property-managers/')
     expect(ar.provider).toEqual({ '@id': ORGANIZATION_ID })
   })
 
@@ -23,5 +24,12 @@ describe('site schema', () => {
     const s = providerMarketplaceSchema('en', 'desc')
     expect(s.offers).toMatchObject({ lowPrice: 0, highPrice: 184, offerCount: 3 })
     expect(s.provider).toEqual({ '@id': ORGANIZATION_ID })
+    expect(s.offers.url).toBe('https://www.accez.cloud/pricing/service-providers/')
+    expect(providerMarketplaceSchema('ar', 'd').offers.url).toBe('https://www.accez.cloud/ar/pricing/service-providers/')
+  })
+
+  it('refuses a pricing link for a solution that does not exist', () => {
+    expect(pricingUrl('property-managers', 'en')).toBe('https://www.accez.cloud/pricing/property-managers/')
+    expect(() => pricingUrl('nope', 'en')).toThrow()
   })
 })

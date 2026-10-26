@@ -6,10 +6,18 @@
  * one entity, not several.
  */
 import { localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
+import { solutionByKey } from '@/lib/platform/solutions'
 import { PROVIDER_PRICING_COPY } from './providerPricing'
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`
 export const WEBSITE_ID = `${SITE_URL}/#website`
+
+/** The pricing page of one solution, as an absolute URL (bare /pricing/ only redirects). */
+export function pricingUrl(solutionKey: string, locale: Locale): string {
+  const solution = solutionByKey(solutionKey)
+  if (!solution) throw new Error(`Unknown solution: ${solutionKey}`)
+  return localeUrl(solution.pricingHref, locale)
+}
 
 /** WebSite: the site name Google can show in results, in both languages. */
 export function websiteSchema() {
@@ -25,7 +33,11 @@ export function websiteSchema() {
   }
 }
 
-/** The product, for the homepage in either language. Prices mirror components/Pricing.tsx. */
+/**
+ * The product, for the homepage in either language. The offers are the
+ * property-management plans (prices mirror components/Pricing.tsx), so they
+ * point at that pricing page.
+ */
 export function softwareApplicationSchema(locale: Locale, description: string) {
   return {
     '@context': 'https://schema.org',
@@ -47,7 +59,7 @@ export function softwareApplicationSchema(locale: Locale, description: string) {
       highPrice: 150,
       offerCount: 4,
       availability: 'https://schema.org/InStock',
-      url: localeUrl('pricing', locale),
+      url: pricingUrl('property-managers', locale),
     },
     featureList: [
       'Reservations & channel sync (Airbnb, Booking.com, Expedia)',
@@ -87,7 +99,7 @@ export function providerMarketplaceSchema(locale: Locale, description: string) {
       highPrice: Math.max(...prices),
       offerCount: prices.length,
       availability: 'https://schema.org/InStock',
-      url: `${localeUrl('solutions/service-providers', locale)}#provider-pricing`,
+      url: pricingUrl('service-providers', locale),
     },
   }
 }
