@@ -53,29 +53,33 @@ export function Analytics() {
         />
       )}
 
-      {/* Google Analytics. Consent Mode defaults (all denied) are set first,
-          in app/layout.tsx, so no analytics cookie is set before consent. */}
+      {/* Google Analytics loads only after the visitor accepts (Saudi PDPL):
+          before that, not even a cookieless ping is sent. Consent Mode
+          defaults (all denied) are still set first, in app/layout.tsx. */}
       {gaEnabled && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script
-            id="google-analytics"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(){
+              var started=false;
+              var start=function(){
+                if(started)return;started=true;
+                window.dataLayer=window.dataLayer||[];
+                var gtag=window.gtag||function(){window.dataLayer.push(arguments)};
+                gtag('js',new Date());
+                gtag('config','${GA_MEASUREMENT_ID}',{page_path:window.location.pathname});
+                var s=document.createElement('script');s.async=true;
+                s.src='https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}';
+                document.head.appendChild(s);
+              };
+              var c=null;try{c=localStorage.getItem('${CONSENT_STORAGE_KEY}')}catch(e){}
+              if(c==='granted'){start()}else{window.addEventListener('${CONSENT_CHANGE_EVENT}',function on(e){if(e.detail==='granted'){window.removeEventListener('${CONSENT_CHANGE_EVENT}',on);start()}})}
+            })()
           `,
-            }}
-          />
-        </>
+          }}
+        />
       )}
 
       {/* PostHog — only when a real project key is configured */}
