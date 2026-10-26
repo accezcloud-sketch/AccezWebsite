@@ -9,6 +9,7 @@ primaryKeyword: "zatca e-invoicing property manager"
 excerpt: "Navigating ZATCA's e-invoicing regulations is crucial for property managers in Saudi Arabia. This guide outlines the two Fatoora phases, which of your charges are affected, and the practical steps to prepare your team and systems."
 excerptAr: "فهم لوائح الفوترة الإلكترونية الصادرة عن هيئة الزكاة والضريبة والجمارك أمر بالغ الأهمية لمديري العقارات في المملكة العربية السعودية. يشرح هذا الدليل مرحلتي نظام فاتورة، وأي الرسوم تتأثر به، والخطوات العملية لتجهيز فريقك وأنظمتك."
 date: "2026-09-04"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/pm-default.webp"
@@ -54,7 +55,7 @@ Property managers who already run leases, payments and owner statements in one s
 
 ### Choosing a Compliant E-Invoicing Solution
 
-The cornerstone of Fatoora compliance is an e-invoicing solution that meets ZATCA's technical specifications, so that invoices are generated in the correct format, include all mandatory fields and, in Phase 2, are exchanged with ZATCA. On its [e-invoicing page](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx), ZATCA publishes an indicative list of solution providers that have passed its qualification process, and it states that taxpayers may use any provider that complies with the requirements, listed or not. Choose a provider that understands the Saudi market, and check how it will receive the lease and billing data from the systems you use to run your properties.
+The cornerstone of Fatoora compliance is an e-invoicing solution that meets ZATCA's technical specifications, so that invoices are generated in the correct format, include all mandatory fields and, in Phase 2, are exchanged with ZATCA. On its [e-invoicing page](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx), ZATCA publishes an indicative list of solution providers that have passed its qualification process, and it states that taxpayers may use any provider that complies with the requirements, listed or not. Choose a provider that understands the Saudi market, and check how it will receive the lease and billing data from the systems you use to run your properties. Our [guide to choosing property management software in Saudi Arabia](/blog/how-to-choose-property-management-software-in-saudi-arabia/) includes the questions to ask about how a vendor's invoices relate to your e-invoicing obligations.
 
 ### Training and Internal Readiness
 
@@ -68,7 +69,7 @@ E-invoicing is also separate from Ejar, the national platform for residential le
 
 ## Where Accez Fits
 
-The e-invoices themselves must come from a solution that meets ZATCA's requirements. Accez's role is the operational record behind your billing, so the figures you invoice are accurate and easy to trace. Within [Accez's billing and payments tools for property managers](/solutions/property-managers/#billing), you can:
+Whatever e-invoicing set-up you use, the figures on each invoice should come from accurate records that are easy to trace. Within [Accez's billing and payments tools for property managers](/solutions/property-managers/#billing), you can:
 
 - **Track reservations from Airbnb, Booking.com and Expedia:** each stay with its timeline, payment and accepted policies.
 - **Manage leases and rent payments:** long-term contracts with a clear view of what has been paid and what is due.
@@ -77,7 +78,7 @@ The e-invoices themselves must come from a solution that meets ZATCA's requireme
 - **Track work orders:** maintenance from request to done, so service charges can be traced to the work behind them.
 - **Control access with staff roles:** decide who can view and change financial records.
 
-*Accez is not presented here as a ZATCA e-invoicing solution. Confirm your e-invoicing set-up with your tax adviser and a solution that meets ZATCA's requirements.*
+Confirm your e-invoicing set-up with your tax adviser.
 
 ## Frequently Asked Questions
 
@@ -105,7 +106,7 @@ ZATCA has the power to levy penalties for non-compliance with its e-invoicing ru
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Navigate ZATCA e-invoicing with confidence and efficiency at [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps billing and lease records organised on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -144,7 +145,7 @@ Navigate ZATCA e-invoicing with confidence and efficiency at [Visit portal.accez
 
 ### اختيار حل فوترة إلكترونية متوافق
 
-حجر الزاوية في الامتثال لنظام "فاتورة" هو حل فوترة إلكترونية يستوفي المواصفات الفنية للهيئة، بحيث تصدر الفواتير بالصيغة الصحيحة، وتتضمن جميع الحقول الإلزامية، وتُتبادل مع الهيئة في المرحلة الثانية. وتنشر الهيئة في [صفحة الفوترة الإلكترونية](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx) قائمة استرشادية بمزودي الحلول الذين اجتازوا عملية التأهيل لديها، وتوضح أن للمكلفين استخدام أي مزود يلتزم بالمتطلبات، سواء كان مدرجاً في القائمة أم لا. اختر مزوداً يفهم السوق السعودية، وتحقق من الطريقة التي سيستقبل بها بيانات العقود والفوترة من الأنظمة التي تدير بها عقاراتك.
+حجر الزاوية في الامتثال لنظام "فاتورة" هو حل فوترة إلكترونية يستوفي المواصفات الفنية للهيئة، بحيث تصدر الفواتير بالصيغة الصحيحة، وتتضمن جميع الحقول الإلزامية، وتُتبادل مع الهيئة في المرحلة الثانية. وتنشر الهيئة في [صفحة الفوترة الإلكترونية](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx) قائمة استرشادية بمزودي الحلول الذين اجتازوا عملية التأهيل لديها، وتوضح أن للمكلفين استخدام أي مزود يلتزم بالمتطلبات، سواء كان مدرجاً في القائمة أم لا. اختر مزوداً يفهم السوق السعودية، وتحقق من الطريقة التي سيستقبل بها بيانات العقود والفوترة من الأنظمة التي تدير بها عقاراتك. ويتضمن [دليلنا لاختيار برنامج إدارة العقارات في السعودية](/ar/blog/how-to-choose-property-management-software-in-saudi-arabia/) الأسئلة التي تطرحها على المزود عن علاقة فواتيره بالتزاماتك في الفوترة الإلكترونية.
 
 ### التدريب والجاهزية الداخلية
 
@@ -158,7 +159,7 @@ Navigate ZATCA e-invoicing with confidence and efficiency at [Visit portal.accez
 
 ## أين يأتي دور أكسيز
 
-يجب أن تصدر الفواتير الإلكترونية نفسها من حل يستوفي متطلبات الهيئة. أما دور أكسيز فهو السجل التشغيلي الذي تقوم عليه فوترتك، لتكون المبالغ التي تصدر بها الفواتير دقيقة وسهلة التتبع. ومن خلال [أدوات الفوترة والمدفوعات في أكسيز لمديري العقارات](/ar/solutions/property-managers/#billing) يمكنك:
+أيًّا كان إعداد الفوترة الإلكترونية لديك، ينبغي أن تأتي المبالغ في كل فاتورة من سجلات دقيقة يسهل تتبعها. ومن خلال [أدوات الفوترة والمدفوعات في أكسيز لمديري العقارات](/ar/solutions/property-managers/#billing) يمكنك:
 
 - **تتبع الحجوزات من Airbnb وBooking.com وExpedia:** كل إقامة بجدولها الزمني ودفعتها والسياسات المقبولة.
 - **إدارة عقود الإيجار ودفعات الإيجار:** عقود طويلة الأجل مع رؤية واضحة لما دُفع وما هو مستحق.
@@ -167,7 +168,7 @@ Navigate ZATCA e-invoicing with confidence and efficiency at [Visit portal.accez
 - **تتبع أوامر العمل:** الصيانة من الطلب حتى الإنجاز، بحيث يمكن ربط رسوم الخدمات بالأعمال التي نُفذت.
 - **التحكم في الصلاحيات بأدوار الموظفين:** حدد من يمكنه عرض السجلات المالية وتعديلها.
 
-*لا يُقدَّم أكسيز هنا بوصفه حلاً للفوترة الإلكترونية لدى هيئة الزكاة والضريبة والجمارك. تأكد من إعداد الفوترة الإلكترونية لديك مع مستشارك الضريبي ومع حل يستوفي متطلبات الهيئة.*
+تأكد من إعداد الفوترة الإلكترونية لديك مع مستشارك الضريبي.
 
 ## الأسئلة الشائعة
 
@@ -195,4 +196,4 @@ Navigate ZATCA e-invoicing with confidence and efficiency at [Visit portal.accez
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع مختص مؤهل.*
 
-تنقل في الفواتير الإلكترونية ZATCA بثقة وكفاءة على [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تنظم أكسيز سجلات الفوترة والعقود في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

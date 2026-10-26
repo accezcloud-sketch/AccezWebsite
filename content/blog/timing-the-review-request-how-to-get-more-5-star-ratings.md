@@ -86,7 +86,7 @@ Automation can be very effective for timing and consistency, but it's crucial to
 On Airbnb and Booking.com, point guests to the review invitation the platform has already sent them. For Google or your own website, provide a direct, mobile-friendly link. Keep the message concise, clearly stating what you're asking for and where to click.
 
 ### What if a guest had a less-than-perfect experience?
-While the goal is 5-star ratings, negative feedback is also valuable. Some operators prefer to follow up after resolving any issues raised during the stay. This can sometimes turn a negative experience into a positive one, or at least provide constructive criticism. Never offer something of value in exchange for a review or pressure a guest to change one.
+While the goal is 5-star ratings, negative feedback is also valuable. Some operators prefer to follow up after resolving any issues raised during the stay. This can sometimes turn a negative experience into a positive one, or at least provide constructive criticism. Never offer something of value in exchange for a review or pressure a guest to change one. If complaints keep pointing at the space itself, our guide to [furnishing and staging a rental](/blog/furnishing-and-staging-a-rental-for-maximum-bookings/) can help you fix the cause.
 
 ## Key Takeaways
 
@@ -101,7 +101,7 @@ While the goal is 5-star ratings, negative feedback is also valuable. Some opera
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Get more 5-star ratings by optimizing your feedback strategy. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See the tools behind a smooth stay on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -123,7 +123,7 @@ Get more 5-star ratings by optimizing your feedback strategy. [Visit portal.acce
 
 صقل المشغلون ذوو الأداء العالي استراتيجياتهم لطلب التقييم، فحوّلوا نقطة تواصل بسيطة بعد الإقامة إلى آلية قوية لجمع الآراء. إنهم يدركون أن التقييمات الإيجابية المنتظمة ليست صدفة، بل نتيجة عملية منسقة جيدًا.
 
-### فن نافذة ما بعد المغادرة
+### فن اختيار التوقيت بعد المغادرة
 
 يعتبر أصحاب الأداء العالي الساعات من 12 إلى 24 بعد تسجيل المغادرة **"النافذة الذهبية"** لطلبات التقييم. فهم يسعون إلى التقاط المشاعر الإيجابية للضيف قبل أن تتلاشى الذكريات أو تخطر بباله مشكلات صغيرة لم ينتبه لها. لا يتعلق الأمر بمباغتته، بل بالتفاعل معه عندما تكون التجربة واضحة في ذهنه. ويتيح هذا التوقيت طلب ملاحظات محددة حول ما جعل الإقامة مميزة، مما يسهل على الضيوف تذكر النقاط الإيجابية والتعبير عنها.
 
@@ -139,7 +139,7 @@ Get more 5-star ratings by optimizing your feedback strategy. [Visit portal.acce
 
 لا تقدم أبدًا خصمًا أو استردادًا أو هدية مقابل تقييم. فـ[سياسة التقييمات في Airbnb](https://www.airbnb.com/help/article/2673) تنص على أنه لا يجوز تقديم التقييمات أو حجبها مقابل شيء ذي قيمة، وأنه لا يجوز للمضيفين الضغط على شخص آخر أو تحفيزه للتأثير في تقييمه. فالشكر الصادق والطلب الواضح يكفيان. وإذا ساءت إقامة ما، فراجع دليلنا عن [الرد على التقييمات السيئة دون الإضرار بسمعتك](/ar/blog/bad-reviews-happen-how-to-respond-without-damaging-your-reputation/).
 
-## خصوصيات المملكة العربية السعودية: المشهد الفريد للتقييمات في المملكة
+## خصوصيات المملكة العربية السعودية في التقييمات
 
 تشهد قطاعات العقارات والضيافة في المملكة العربية السعودية نموًا سريعًا، مدفوعًا بمبادرات طموحة مثل رؤية 2030. وتقدم هذه البيئة الديناميكية فرصًا وتحديات فريدة لجمع آراء الضيوف. ويُعد فهم السياق المحلي، بما في ذلك تفضيلات التواصل، أمرًا بالغ الأهمية لإدارة التقييمات بفعالية.
 
@@ -169,7 +169,7 @@ Get more 5-star ratings by optimizing your feedback strategy. [Visit portal.acce
 في Airbnb وBooking.com، وجّه الضيوف إلى دعوة التقييم التي أرسلتها المنصة لهم. أما في Google أو موقعك الخاص، فقدم رابطًا مباشرًا ومناسبًا للهاتف. واجعل الرسالة موجزة، توضح ما تطلبه وأين ينقر الضيف.
 
 ### ماذا لو كانت تجربة الضيف غير مثالية؟
-رغم أن الهدف هو تقييمات الخمس نجوم، فإن الملاحظات السلبية قيّمة أيضًا. ويفضل بعض المشغلين المتابعة بعد حل أي مشكلات طُرحت أثناء الإقامة، مما قد يحوّل تجربة سلبية إلى إيجابية، أو يوفر على الأقل نقدًا بنّاءً. ولا تقدم أبدًا شيئًا ذا قيمة مقابل تقييم، ولا تضغط على ضيف لتغيير تقييمه.
+رغم أن الهدف هو تقييمات الخمس نجوم، فإن الملاحظات السلبية قيّمة أيضًا. ويفضل بعض المشغلين المتابعة بعد حل أي مشكلات طُرحت أثناء الإقامة، مما قد يحوّل تجربة سلبية إلى إيجابية، أو يوفر على الأقل نقدًا بنّاءً. ولا تقدم أبدًا شيئًا ذا قيمة مقابل تقييم، ولا تضغط على ضيف لتغيير تقييمه. وإذا كانت الشكاوى تتكرر حول المكان نفسه، فقد يساعدك دليلنا عن [تأثيث الوحدة المؤجرة وتجهيزها](/ar/blog/furnishing-and-staging-a-rental-for-maximum-bookings/) على معالجة السبب.
 
 ## أبرز النقاط
 
@@ -184,4 +184,4 @@ Get more 5-star ratings by optimizing your feedback strategy. [Visit portal.acce
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-احصل على المزيد من تقييمات الخمس نجوم من خلال تحسين استراتيجية التقييمات لديك. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اطّلع على الأدوات التي تقف خلف إقامة سلسة في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

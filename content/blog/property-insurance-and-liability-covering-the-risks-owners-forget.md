@@ -7,7 +7,7 @@ metaDescription: "Owners often miss key insurance and liability risks, from tena
 metaDescriptionAr: "اكتشف مخاطر تأمين الممتلكات والمسؤولية الشائعة التي غالبًا ما يتجاهلها الملاك، من أضرار المستأجرين إلى الكوارث الطبيعية. احمِ استثماراتك بفعالية. اعرف المزيد."
 primaryKeyword: "property insurance and liability"
 excerpt: "Property owners often overlook critical insurance and liability risks, leaving them vulnerable to unexpected financial burdens. This post details common oversights and how to mitigate them."
-excerptAr: "غالباً ما يغفل مالكو العقارات عن مخاطر التأمين والمسؤولية الحاسمة، مما يجعلهم عرضة للأعباء المالية غير المتوقعة. يسلط هذا المنشور الضوء على الإغفالات الشائعة وكيفية التخفيف منها."
+excerptAr: "غالباً ما يغفل مالكو العقارات عن مخاطر التأمين والمسؤولية الحاسمة، مما يجعلهم عرضة للأعباء المالية غير المتوقعة. يسلط هذا المقال الضوء على الإغفالات الشائعة وكيفية التخفيف منها."
 date: "2026-10-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -105,7 +105,7 @@ If a tenant sues for an injury, your landlord insurance policy's liability cover
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Manage your property risks proactively and efficiently. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps the records that matter when something goes wrong on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -129,7 +129,7 @@ Manage your property risks proactively and efficiently. [Visit portal.accez.clou
 
 يتعامل الملاك والمديرون العقاريون الناجحون مع إدارة المخاطر باستراتيجية استباقية وشاملة، مما يميزهم عن أولئك الذين يعانون من خسائر يمكن تجنبها. إنهم يفهمون أن التأمين ليس عملية شراء لمرة واحدة ولكنه عملية مستمرة للتقييم والتكيف.
 
-### مراجعة وفهم شامل للسياسة
+### مراجعة وثيقة التأمين وفهمها جيدًا
 
 لا يشتري الملاك والمديرون ذوو الأداء العالي وثيقة تأمين فحسب، بل **يفهمون بعمق شروطها وأحكامها**. يتضمن ذلك مراجعات منتظمة، غالبًا سنويًا، لضمان توافق التغطية مع الاستخدام الحالي للعقار وظروف السوق والمخاطر المتطورة. إنهم يبحثون بنشاط عن سياسات مصممة خصيصًا للعقارات المؤجرة، مثل تأمين المالك أو سياسات العقارات التجارية، والتي توفر حماية أوسع. يعني هذا النهج الدقيق تحديد سد أي فجوات تغطية قبل وقوع حادث. وغالبًا ما تكفي محادثة سنوية قصيرة مع شركة التأمين أو الوسيط لاكتشاف أي فجوة قبل أن تتحول إلى مطالبة.
 
@@ -172,7 +172,7 @@ Accez.Cloud ليست شركة تأمين، لكن [حل Accez.Cloud لإدارة
 
 يعتمد مبلغ تغطية المسؤولية المطلوبة على عوامل مثل قيمة العقار وموقعه والتعرض للمخاطر. استشر متخصص تأمين مرخصًا يمكنه تقييم وضعك المحدد والتوصية بالحدود المناسبة.
 
-### هل يؤمن تأميني على أضرار المستأجر للعقار؟
+### هل يغطي تأميني الأضرار التي يسببها المستأجر للعقار؟
 
 عادةً ما تستبعد وثائق تأمين المسكن الشخصي الأضرار التي يسببها المستأجرون. ومن المرجح أن تغطي وثائق تأمين المؤجر الأضرار المتعلقة بالمستأجرين، ولكن المخاطر والحدود المحددة ستكون مفصلة في وثيقتك. من الضروري مراجعة وثائق وثيقتك بعناية.
 
@@ -193,4 +193,4 @@ Accez.Cloud ليست شركة تأمين، لكن [حل Accez.Cloud لإدارة
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست نصيحة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع محترف مؤهل.*
 
-قم بإدارة مخاطر عقارك بشكل استباقي وفعال. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تحفظ أكسيز السجلات التي تحتاجها عند وقوع أي طارئ في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

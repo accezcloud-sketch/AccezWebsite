@@ -57,7 +57,7 @@ The regulatory environment, including Ejar for residential rental contracts, req
 
 ## How Accez.Cloud Helps You Manage On the Go
 
-Accez.Cloud is a web-based property operations platform: your team signs in through the browser at portal.accez.cloud, with nothing to install, and works from the same records wherever they are. It does not currently offer a native mobile app, so if a dedicated app is a must for your team, factor that into your evaluation.
+Accez.Cloud is a web-based property operations platform: your team signs in through the browser on a desktop or phone, in Arabic or English, with nothing to install, and works from the same records wherever they are. It does not currently offer a native mobile app, so if a dedicated app is a must for your team, factor that into your evaluation.
 
 Here's what your team can keep in one place:
 
@@ -82,7 +82,7 @@ It depends on your workflows. Native apps can add features such as push notifica
 It usually helps. Mobile access enables faster responses to tenant requests, easier communication and more efficient service delivery, and that responsiveness is something tenants notice.
 
 ### Is mobile access secure for managing sensitive property data?
-Reputable property management platforms use industry-standard security measures, including encryption and secure sign-in, to protect sensitive data. Review a platform's security practices and use role-based access so each person sees only what they need.
+Reputable property management platforms use industry-standard security measures, including encryption and secure sign-in, to protect sensitive data. Review a platform's security practices and use role-based access so each person sees only what they need. Our guide to [cybersecurity for property managers](/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/) covers the habits that keep data safe on any device.
 
 ## Key Takeaways
 
@@ -96,7 +96,7 @@ Reputable property management platforms use industry-standard security measures,
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Manage your properties anytime, anywhere. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See what your team can reach from any browser on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -106,17 +106,17 @@ Manage your properties anytime, anywhere. [Visit portal.accez.cloud](https://por
 
 يؤدي هذا الانفصال إلى احتكاك ملموس في العمليات اليومية. عندما يبلغ مستأجر عن صنبور يسرب في الساعة 9 مساءً، أو يأتي طلب صيانة أثناء تواجد مدير عقارات بعيدًا في موقع زيارة، فإن عدم القدرة على الوصول إلى النظام فورًا يمكن أن يؤدي إلى تأخيرات، واستياء السكان، وتصور بعدم الاستجابة. يجبر الاعتماد التقليدي على الوصول عبر سطح المكتب المديرين إما على العودة بسرعة إلى المكتب أو تأجيل الإجراءات الحاسمة، مما يؤثر على الكفاءة العامة والصورة المهنية لعملياتهم.
 
-## معضلة سطح المكتب: لماذا التنقل أمر لا غنى عنه
+## معضلة المكتب: لماذا لا غنى عن العمل أثناء التنقل
 
 تكمن المشكلة الأساسية في المنصات العقارية التي تركز على سطح المكتب في محدوديتها المتأصلة في التنقل. إدارة العقارات، بحكم طبيعتها، هي مهنة ميدانية. سواء كان الأمر يتعلق بإجراء عمليات تفتيش روتينية، أو الاستجابة لحالات الطوارئ، أو مقابلة المستأجرين المحتملين، أو الإشراف على المقاولين في الموقع، نادرًا ما يكون مديرو العقارات مقيدين بالمكتب. توقع أن يكونوا دائمًا بالقرب من جهاز كمبيوتر للوصول إلى المعلومات الحيوية أو بدء الإجراءات هو مفهوم قديم في عالم اليوم المتصل.
 
 يمكن أن يؤدي هذا النقص في إمكانية الوصول عبر الهاتف المحمول إلى العديد من الأعطال التشغيلية الحرجة. تخيل مدير عقارات يحتاج إلى التحقق من توفر وحدة سكنية، أو تحديث حالة عقد إيجار، أو تعيين أمر عمل أثناء التنقل. بدون الوصول عبر الجوال، قد يضطرون إلى الاعتماد على الذاكرة، أو تدوين ملاحظات قد تُفقد، أو الانتظار حتى يتمكنوا من الوصول إلى سطح مكتب، وفي ذلك الوقت قد تكون الفرصة قد فاتت أو تفاقمت المشكلة. هذا لا يقلل فقط من الإنتاجية ولكنه يمكن أن يؤثر سلبًا على علاقات المستأجرين وانسيابية العمليات في العقار.
 
-## احتضان الثورة المتنقلة في العمليات العقارية
+## مواكبة التحول إلى الجوال في العمليات العقارية
 
 لقد أعادت الثورة الرقمية تشكيل كل صناعة تقريبًا، وإدارة العقارات ليست استثناءً. أدى ظهور الهواتف الذكية والإنترنت عبر الهاتف المحمول إلى توقع الاتصال المستمر والوصول الفوري إلى المعلومات والخدمات. بالنسبة لمديري العقارات، يترجم هذا إلى حاجة ماسة لأن تمتد منصتهم الإدارية إلى ما هو أبعد من جهاز المكتب.
 
-### الوصول الفوري إلى البيانات الهامة
+### الوصول الفوري إلى البيانات المهمة
 
 من أهم مزايا الوصول عبر الجوال القدرة على الوصول إلى بيانات العقارات الهامة في الوقت الفعلي. يشمل ذلك معلومات المستأجرين، وتفاصيل عقود الإيجار، وحالات الدفع، وتاريخ صيانة العقار. تتيح لهم هذه المعلومات في متناول أيديهم اتخاذ قرارات مستنيرة على الفور، سواء كانوا يلتقون بمستأجر أو يقيمون حاجة للإصلاح.
 
@@ -128,7 +128,7 @@ Manage your properties anytime, anywhere. [Visit portal.accez.cloud](https://por
 
 يتوقع المستأجرون المعاصرون قنوات اتصال سلسة. يمكن أن تكون قناة الجوال بمثابة خط مباشر للسكان لتقديم الطلبات، وتلقي تحديثات المبنى الهامة، وحتى إجراء المدفوعات. هذا لا يحسن رضا المستأجرين فحسب، بل يركز أيضًا الاتصالات، ويضمن عدم ضياع أي رسالة. ويشرح دليلنا حول [توحيد اتصالات العقارات في صندوق وارد واحد](/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/) كيفية تحقيق ذلك.
 
-## دفع الكفاءة في سوق العقارات المزدهر في المملكة العربية السعودية
+## رفع الكفاءة في سوق العقارات المزدهر في المملكة العربية السعودية
 
 تشهد سوق العقارات في المملكة العربية السعودية تحولًا ديناميكيًا، مدفوعًا بمبادرات طموحة مثل رؤية 2030، التي تهدف إلى تنويع الاقتصاد وتحسين نوعية الحياة لسكانها. في هذا المشهد المزدهر، تعد كفاءة واستجابة العمليات العقارية أمرًا بالغ الأهمية. تلعب التكنولوجيا المتنقلة دورًا محوريًا في تلبية هذه المتطلبات المتطورة، في بلد شديد الاتصال، إذ تفيد هيئة الاتصالات والفضاء والتقنية بأن [نسبة انتشار الإنترنت في المملكة بلغت 99% في عام 2024](https://www.cst.gov.sa/en/media-center/news/N2025051200).
 
@@ -136,7 +136,7 @@ Manage your properties anytime, anywhere. [Visit portal.accez.cloud](https://por
 
 ## كيف تساعدك Accez.Cloud في الإدارة أثناء التنقل
 
-Accez.Cloud منصة ويب لعمليات العقارات: يسجل فريقك الدخول عبر المتصفح على portal.accez.cloud دون تثبيت أي شيء، ويعمل الجميع على السجلات نفسها أينما كانوا. ولا توفر المنصة حاليًا تطبيق جوال مخصصًا، لذا إن كان التطبيق المخصص شرطًا أساسيًا لفريقك فضع ذلك في الحسبان عند التقييم.
+Accez.Cloud منصة ويب لعمليات العقارات: يسجل فريقك الدخول عبر المتصفح من الحاسوب أو الهاتف، بالعربية أو الإنجليزية، دون تثبيت أي شيء، ويعمل الجميع على السجلات نفسها أينما كانوا. ولا توفر المنصة حاليًا تطبيق جوال مخصصًا، لذا إن كان التطبيق المخصص شرطًا أساسيًا لفريقك فضع ذلك في الحسبان عند التقييم.
 
 إليك ما يمكن لفريقك جمعه في مكان واحد:
 
@@ -161,7 +161,7 @@ Accez.Cloud منصة ويب لعمليات العقارات: يسجل فريقك
 عادةً ما يساعد على ذلك. فالوصول عبر الجوال يتيح استجابة أسرع لطلبات المستأجرين وتواصلًا أسهل وخدمة أكثر كفاءة، وهي استجابة يلاحظها المستأجرون.
 
 ### هل الوصول عبر الجوال آمن لإدارة بيانات العقارات الحساسة؟
-تستخدم منصات إدارة العقارات الموثوقة معايير الأمان المعتمدة في الصناعة، بما في ذلك التشفير وتسجيل الدخول الآمن، لحماية البيانات الحساسة. راجع ممارسات الأمان لدى المنصة، واستخدم الصلاحيات حسب الدور ليطّلع كل شخص على ما يحتاج إليه فقط.
+تستخدم منصات إدارة العقارات الموثوقة معايير الأمان المعتمدة في الصناعة، بما في ذلك التشفير وتسجيل الدخول الآمن، لحماية البيانات الحساسة. راجع ممارسات الأمان لدى المنصة، واستخدم الصلاحيات حسب الدور ليطّلع كل شخص على ما يحتاج إليه فقط. ويتناول دليلنا عن [الأمن السيبراني لمديري العقارات](/ar/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/) العادات التي تحمي البيانات على أي جهاز.
 
 ## أبرز النقاط
 
@@ -175,4 +175,4 @@ Accez.Cloud منصة ويب لعمليات العقارات: يسجل فريقك
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع متخصص مؤهل.*
 
-أدر عقاراتك في أي وقت وفي أي مكان. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اطّلع على ما يمكن لفريقك الوصول إليه من أي متصفح في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

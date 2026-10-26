@@ -6,7 +6,7 @@ metaTitleAr: "معدل الإشغال مقابل RevPAR لمديري إيجار�
 metaDescription: "Why high occupancy can hide weak revenue: how vacation rental managers use RevPAR and ADR to price smarter, with worked examples and Saudi seasons."
 metaDescriptionAr: "لماذا قد يخفي الإشغال المرتفع إيرادات ضعيفة: كيف يستخدم مديرو إيجارات العطلات مقياسي RevPAR وADR لتسعير أذكى، مع أمثلة عملية وسياق المواسم السعودية."
 excerpt: "Unlock the secrets to maximizing vacation rental revenue by understanding the crucial difference between Occupancy Rate and RevPAR."
-excerptAr: "اكتشف أسرار تعظيم إيرادات العقارات المؤجرة للعطلات من خلال فهم الفرق الحاسم بين معدل الإشغال و RevPAR."
+excerptAr: "اكتشف أسرار تعظيم إيرادات العقارات المؤجرة للعطلات من خلال فهم الفرق الحاسم بين معدل الإشغال وRevPAR."
 date: "2026-07-14"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -83,7 +83,7 @@ By keeping pricing, reservations and payments in one place, Accez.Cloud helps yo
 - Saudi Arabia's market requires attention to Vision 2030, tourism licensing, local payment methods, and seasonal demand.
 - Accez.Cloud brings your channel calendar, bulk pricing, reservations, add-ons and payments together.
 
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+See how reservations, pricing and payments come together on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -113,7 +113,7 @@ By keeping pricing, reservations and payments in one place, Accez.Cloud helps yo
 
 تخيل عقارين مؤجرين للعطلات. العقار (أ) معدل إشغاله 90% لكن متوسط سعره اليومي (ADR) يبلغ 200 ريال سعودي، فيكون RevPAR الخاص به 180 ريالاً (90% × 200 ريال). أما العقار (ب) فمعدل إشغاله 80% لكن متوسط سعره اليومي يبلغ 300 ريال، فيكون RevPAR الخاص به 240 ريالاً (80% × 300 ريال). وبينما يبدو العقار (أ) أكثر نجاحًا بناءً على الإشغال وحده، فإن العقار (ب) يحقق إيرادات أعلى بكثير لكل ليلة متاحة. وقد يتجاهل مديرو العقارات الذين يركزون على نسبة الإشغال وحدها الأداء المالي المتفوق للعقار (ب)، فيسيئون توزيع جهود التسويق أو يغفلون عن استراتيجيات التسعير الديناميكي التي يمكن أن ترفع متوسط السعر اليومي للعقار (أ).
 
-### فهم المفاضلة بين ADR والإشغال
+### فهم المفاضلة بين متوسط السعر اليومي (ADR) والإشغال
 
 العلاقة بين متوسط السعر اليومي والإشغال توازن دقيق. فقد يؤدي رفع الأسعار أحيانًا إلى انخفاض الإشغال، وقد يؤدي خفضها إلى زيادة الحجوزات. وتكمن النقطة المثلى حيث يبلغ الأثر المشترك لهما أعلى RevPAR ممكن. ولأن RevPAR هو ببساطة حاصل ضرب متوسط السعر اليومي في الإشغال، فإن ارتفاع أي منهما بنسبة 1% يرفع RevPAR بنسبة 1%. لكن الفرق يظهر في الربح: فزيادة السعر الليلي بنسبة 1% لا تكلفك شيئًا إضافيًا، بينما تجلب زيادة الإشغال بنسبة 1% مزيدًا من التنظيف والغسيل والمرافق واستهلاك الوحدة. **ولهذا كثيرًا ما تحقق تعديلات التسعير المدروسة أثرًا أكبر على صافي الربح من مجرد مطاردة الحجوزات.** ويشرح [دليلنا إلى التسعير الديناميكي](/ar/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-every-night/) كيف تجد هذا التوازن ليلة بليلة.
 
@@ -150,4 +150,4 @@ By keeping pricing, reservations and payments in one place, Accez.Cloud helps yo
 - يتطلب السوق السعودي الاهتمام برؤية 2030، وترخيص السياحة، ووسائل الدفع المحلية، والطلب الموسمي.
 - يجمع Accez.Cloud تقويم القنوات، والتسعير الجماعي، والحجوزات، والخدمات الإضافية، والمدفوعات في مكان واحد.
 
-[زر portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تجتمع الحجوزات والأسعار والمدفوعات في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

@@ -7,8 +7,9 @@ metaDescription: "Saudi Arabia's PDPL sets rules on consent, security, retention
 metaDescriptionAr: "يضع نظام حماية البيانات الشخصية السعودي قواعد للموافقة والأمن والاحتفاظ بالبيانات والإبلاغ عن الاختراقات. تعرّف على ما يلزم مديري العقارات لحماية بيانات المستأجرين."
 primaryKeyword: "saudi pdpl tenant data property managers"
 excerpt: "Saudi Arabia's PDPL introduces strict rules for handling tenant data. Property managers must adapt to new consent, storage, and breach notification requirements to ensure compliance and maintain trust."
-excerptAr: "يقدم نظام حماية البيانات الشخصية السعودي قواعد صارمة للتعامل مع بيانات المستأجرين. يجب على مديري العقارات التكيف مع متطلبات الموافقة والتخزين والإبلاغ عن الخروقات الجديدة لضمان الامتثال والحفاظ على الثقة."
+excerptAr: "يقدم نظام حماية البيانات الشخصية السعودي قواعد صارمة للتعامل مع بيانات المستأجرين. ويجب على مديري العقارات التكيف مع المتطلبات الجديدة للموافقة والتخزين والإبلاغ عن الاختراقات لضمان الامتثال والحفاظ على الثقة."
 date: "2026-09-08"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-f.webp"
@@ -32,7 +33,7 @@ The Kingdom of Saudi Arabia's commitment to modernizing its legal framework exte
 
 The core of Saudi Arabia's PDPL lies in its comprehensive approach to personal data. It defines personal data broadly, encompassing any information that can identify an individual, whether directly or indirectly. For property managers, this translates to a wide array of information collected from tenants, including names, identification numbers, contact details (phone numbers, email addresses), financial information (bank details for rent payments), and even behavioral data derived from property usage. The law treats **consent** as the primary legal basis for processing this data, while setting out specific circumstances where consent is not required. In practice, property managers can no longer assume consent; where it is needed, they must obtain it from tenants in a clear and informed manner before collecting or processing their personal data for specific purposes.
 
-Beyond consent, the PDPL places a strong emphasis on **data security**. Property management platforms and internal systems must be designed and operated with robust security measures to prevent data breaches. This includes implementing technical safeguards like encryption, secure storage solutions, and access controls, as well as organizational measures such as regular employee training on data protection best practices. The law also introduces strict rules around **data retention**, requiring that data be kept only for as long as necessary for the purpose for which it was collected. This means property managers need to establish clear data lifecycle management policies, including secure deletion protocols for data that is no longer needed. The **obligation to notify** is another critical component: a breach must be reported to the regulator, the Saudi Data and Artificial Intelligence Authority (SDAIA), within 72 hours of becoming aware of it, and affected individuals must be told without undue delay. Our guide to [cybersecurity for property managers](/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/) covers how to prepare. Failure to comply with these provisions can result in significant fines, reputational damage, and a loss of trust from tenants.
+Beyond consent, the PDPL places a strong emphasis on **data security**. Property management platforms and internal systems must be designed and operated with robust security measures to prevent data breaches. This includes implementing technical safeguards like encryption, secure storage solutions, and access controls, as well as organizational measures such as regular employee training on data protection best practices. The law also introduces strict rules around **data retention**, requiring that data be kept only for as long as necessary for the purpose for which it was collected. This means property managers need to establish clear data lifecycle management policies, including secure deletion protocols for data that is no longer needed. The **obligation to notify** is another critical component: a breach must be reported to the regulator, the Saudi Data and Artificial Intelligence Authority (SDAIA), within 72 hours of becoming aware of it, and affected individuals must be told without undue delay, according to [DLA Piper's summary of the PDPL](https://www.dlapiperdataprotection.com/index.html?c=SA&t=law). Our guide to [cybersecurity for property managers](/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/) covers how to prepare. Failure to comply with these provisions can result in significant fines, reputational damage, and a loss of trust from tenants.
 
 ## The Impact on Property Management Operations
 
@@ -85,7 +86,7 @@ Existing contracts may need to be reviewed and updated to ensure they comply wit
 
 ### What are the penalties for PDPL non-compliance?
 
-Most violations can lead to a warning or a fine of up to SAR 5 million. Disclosing or publishing sensitive data to harm the data subject or for personal benefit can be punished by up to two years' imprisonment and/or a fine of up to SAR 3 million. Reputational damage and operational disruption come on top.
+According to [DLA Piper's summary of the PDPL](https://www.dlapiperdataprotection.com/index.html?c=SA&t=law), most violations can lead to a warning or a fine of up to SAR 5 million. Disclosing or publishing sensitive data to harm the data subject or for personal benefit can be punished by up to two years' imprisonment and/or a fine of up to SAR 3 million. Reputational damage and operational disruption come on top.
 
 ## Key Takeaways
 
@@ -99,7 +100,8 @@ Most violations can lead to a warning or a fine of up to SAR 5 million. Disclosi
 - Keeping tenant data in one managed system, with role-based access, makes these obligations easier to meet.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+
+See how staff roles and one managed system work in Accez on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -110,17 +112,17 @@ Most violations can lead to a warning or a fine of up to SAR 5 million. Disclosi
 
 إن التزام المملكة العربية السعودية بتحديث إطارها القانوني يمتد إلى المجال الرقمي، حيث يعيد نظام حماية البيانات الشخصية (PDPL)، الذي [دخل حيز التنفيذ في 14 سبتمبر 2023](https://www.dlapiperdataprotection.com/index.html?c=SA&t=law) مع مهلة امتثال عامة حتى 14 سبتمبر 2024، تشكيل كيفية تعامل الشركات، بما في ذلك شركات إدارة العقارات، مع البيانات الشخصية بشكل كبير. بالنسبة لمديري العقارات المعتادين على بيئة بيانات أكثر تساهلاً، يمثل نظام حماية البيانات الشخصية تحولاً كبيراً، حيث يقدم التزامات وعقوبات محددة تتطلب نهجاً استباقياً للامتثال. يستدعي هذا الواقع القانوني الجديد فهماً شاملاً لما يشكل بيانات شخصية، وكيف يجب معالجتها، وما هي الإجراءات المطلوبة لحمايتها من الوصول غير المصرح به أو سوء الاستخدام.
 
-## فهم المشهد الجديد لحماية بيانات المستأجرين
+## القواعد الجديدة لحماية بيانات المستأجرين
 
 يكمن جوهر نظام حماية البيانات الشخصية السعودي في نهجه الشامل للبيانات الشخصية. يُعرف البيانات الشخصية على نطاق واسع، ويشمل أي معلومات يمكن أن تحدد هوية الفرد، سواء بشكل مباشر أو غير مباشر. بالنسبة لمديري العقارات، يترجم هذا إلى مجموعة واسعة من المعلومات التي يتم جمعها من المستأجرين، بما في ذلك الأسماء، وأرقام الهوية، وتفاصيل الاتصال (أرقام الهواتف، وعناوين البريد الإلكتروني)، والمعلومات المالية (التفاصيل المصرفية لدفعات الإيجار)، وحتى بيانات سلوكية مستمدة من استخدام العقار. يعامل النظام **الموافقة** بوصفها الأساس النظامي الرئيسي لمعالجة هذه البيانات، مع تحديد حالات معينة لا تُشترط فيها الموافقة. وعمليًا، لم يعد بإمكان مديري العقارات افتراض الموافقة؛ فحيثما تكون مطلوبة، يجب الحصول عليها من المستأجرين بطريقة واضحة ومستنيرة قبل جمع بياناتهم الشخصية أو معالجتها لأغراض محددة.
 
-بالإضافة إلى الموافقة، يضع نظام حماية البيانات الشخصية تركيزًا قويًا على **أمن البيانات**. يجب تصميم وتشغيل منصات إدارة العقارات والأنظمة الداخلية بتدابير أمنية قوية لمنع خروقات البيانات. يشمل ذلك تنفيذ ضمانات فنية مثل التشفير، وحلول التخزين الآمنة، وضوابط الوصول، بالإضافة إلى تدابير تنظيمية مثل التدريب المنتظم للموظفين على أفضل ممارسات حماية البيانات. كما يقدم القانون قواعد صارمة بشأن **الاحتفاظ بالبيانات**، ويطلب الاحتفاظ بالبيانات فقط للمدة اللازمة للغرض الذي تم جمعها من أجله. هذا يعني أن مديري العقارات بحاجة إلى وضع سياسات واضحة لإدارة دورة حياة البيانات، بما في ذلك بروتوكولات الحذف الآمن للبيانات التي لم تعد هناك حاجة إليها. ويعد **الالتزام بالإبلاغ** مكونًا آخر بالغ الأهمية، إذ يجب إبلاغ الجهة المنظمة، وهي الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا)، بأي اختراق خلال 72 ساعة من العلم به، وإبلاغ الأفراد المتأثرين دون تأخير غير مبرر. ويشرح دليلنا عن [الأمن السيبراني لمديري العقارات](/ar/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/) كيفية الاستعداد لذلك. قد يؤدي عدم الامتثال لهذه الأحكام إلى فرض غرامات كبيرة، والإضرار بالسمعة، وفقدان الثقة من المستأجرين.
+بالإضافة إلى الموافقة، يضع نظام حماية البيانات الشخصية تركيزًا قويًا على **أمن البيانات**. يجب تصميم وتشغيل منصات إدارة العقارات والأنظمة الداخلية بتدابير أمنية قوية لمنع خروقات البيانات. يشمل ذلك تنفيذ ضمانات فنية مثل التشفير، وحلول التخزين الآمنة، وضوابط الوصول، بالإضافة إلى تدابير تنظيمية مثل التدريب المنتظم للموظفين على أفضل ممارسات حماية البيانات. كما يقدم القانون قواعد صارمة بشأن **الاحتفاظ بالبيانات**، ويطلب الاحتفاظ بالبيانات فقط للمدة اللازمة للغرض الذي تم جمعها من أجله. هذا يعني أن مديري العقارات بحاجة إلى وضع سياسات واضحة لإدارة دورة حياة البيانات، بما في ذلك بروتوكولات الحذف الآمن للبيانات التي لم تعد هناك حاجة إليها. ويعد **الالتزام بالإبلاغ** مكونًا آخر بالغ الأهمية، إذ يجب إبلاغ الجهة المنظمة، وهي الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا)، بأي اختراق خلال 72 ساعة من العلم به، وإبلاغ الأفراد المتأثرين دون تأخير غير مبرر، وفق [ملخص DLA Piper لنظام حماية البيانات الشخصية](https://www.dlapiperdataprotection.com/index.html?c=SA&t=law). ويشرح دليلنا عن [الأمن السيبراني لمديري العقارات](/ar/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/) كيفية الاستعداد لذلك. قد يؤدي عدم الامتثال لهذه الأحكام إلى فرض غرامات كبيرة، والإضرار بالسمعة، وفقدان الثقة من المستأجرين.
 
 ## التأثير على عمليات إدارة العقارات
 
 تداعيات نظام حماية البيانات الشخصية على عمليات إدارة العقارات بعيدة المدى، وتؤثر على كل شيء بدءاً من إدراج المستأجرين الأولي إلى الاتصالات المستمرة وتقديم الخدمات. يجب على المديرين إعادة تقييم ممارسات جمع البيانات وتخزينها واستخدامها بشكل نقدي. يتضمن ذلك تدقيقاً شاملاً لجميع الأنظمة والعمليات التي تتم فيها معالجة بيانات المستأجرين.
 
-### إدراج المستأجرين وإدارة الموافقة
+### استقبال المستأجرين الجدد وإدارة الموافقات
 
 ستتطلب عملية جمع معلومات المستأجرين أثناء مرحلة التأجير تعديلات كبيرة. يجب على مديري العقارات توضيح البيانات التي يتم جمعها، ولماذا يتم جمعها، وكيف سيتم استخدامها. يجب أن تكون نماذج الموافقة، سواء كانت رقمية أو مادية، سهلة الفهم وتسمح للمستأجرين بالموافقة على أنشطة معالجة البيانات المحددة. ومن الممارسات الجيدة أن تكون الموافقة مفصّلة، بحيث يستطيع المستأجر الموافقة على استخدامات معينة لبياناته، مثل الرسائل التسويقية، ورفض استخدامات أخرى. هذا يستدعي نهجًا أكثر تطوراً لإدارة موافقة البيانات داخل برامج إدارة العقارات.
 
@@ -167,7 +169,7 @@ Most violations can lead to a warning or a fine of up to SAR 5 million. Disclosi
 
 ### ما هي عقوبات عدم الامتثال لنظام حماية البيانات الشخصية؟
 
-قد تؤدي معظم المخالفات إلى إنذار أو غرامة تصل إلى 5 ملايين ريال. أما إفشاء البيانات الحساسة أو نشرها بقصد الإضرار بصاحبها أو لتحقيق منفعة شخصية فقد يعاقب عليه بالسجن مدة تصل إلى سنتين و/أو غرامة تصل إلى 3 ملايين ريال، إضافة إلى الإضرار بالسمعة واضطراب العمليات.
+وفق [ملخص DLA Piper لنظام حماية البيانات الشخصية](https://www.dlapiperdataprotection.com/index.html?c=SA&t=law)، قد تؤدي معظم المخالفات إلى إنذار أو غرامة تصل إلى 5 ملايين ريال. أما إفشاء البيانات الحساسة أو نشرها بقصد الإضرار بصاحبها أو لتحقيق منفعة شخصية فقد يعاقب عليه بالسجن مدة تصل إلى سنتين و/أو غرامة تصل إلى 3 ملايين ريال، إضافة إلى الإضرار بالسمعة واضطراب العمليات.
 
 ## أبرز النقاط
 
@@ -182,4 +184,4 @@ Most violations can lead to a warning or a fine of up to SAR 5 million. Disclosi
 
 *هذا المقال معلومات عامة لمشغلي العقارات وليس استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-[تفضل بزيارة portal.accez.cloud](https://portal.accez.cloud)
+تعرّف على أدوار الموظفين والنظام الموحد في أكسيز عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

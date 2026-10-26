@@ -39,7 +39,7 @@ High-performing property managers and operators don't leave inspections to chanc
 
 ### Standardized Checklists and Detailed Reporting
 
-They use the same room-by-room checklist for every unit, covering walls, floors, ceilings, doors, windows, fixtures, appliances, plumbing and electrical points. Each item is rated and described in plain words, and every issue is backed by a dated photo. Because the move-out inspection follows the same checklist as the move-in, any change in condition is easy to see and hard to argue about.
+They use the same room-by-room checklist for every unit, covering walls, floors, ceilings, doors, windows, fixtures, appliances, plumbing and electrical points. Each item is rated and described in plain words, and every issue is backed by a dated photo. Because the move-out inspection follows the same checklist as the move-in, any change in condition is easy to see and hard to argue about. Record meter readings at both handovers as well; our guide to [utility and bill management across a rental portfolio](/blog/utility-and-bill-management-across-a-rental-portfolio/) explains why they matter.
 
 ### Proactive Tenant Engagement and Education
 
@@ -96,7 +96,7 @@ If a tenant refuses to sign, the property manager should **proceed with the insp
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Ready to enhance your property operations and safeguard your assets? [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how work orders and lease records support every handover on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -118,7 +118,7 @@ Ready to enhance your property operations and safeguard your assets? [Visit port
 
 ### قوائم مرجعية موحدة وتقارير مفصلة
 
-يستخدمون القائمة المرجعية نفسها لكل وحدة، غرفةً غرفة، وتشمل الجدران والأرضيات والأسقف والأبواب والنوافذ والتجهيزات والأجهزة والسباكة ونقاط الكهرباء. يُقيَّم كل بند ويُوصف بكلمات واضحة، ويُدعَم كل عيب بصورة مؤرخة. ولأن فحص الخروج يتبع القائمة نفسها المستخدمة عند الدخول، يسهل رصد أي تغيير في الحالة ويصعب الجدال حوله.
+يستخدمون القائمة المرجعية نفسها لكل وحدة، غرفةً غرفة، وتشمل الجدران والأرضيات والأسقف والأبواب والنوافذ والتجهيزات والأجهزة والسباكة ونقاط الكهرباء. يُقيَّم كل بند ويُوصف بكلمات واضحة، ويُدعَم كل عيب بصورة مؤرخة. ولأن فحص الخروج يتبع القائمة نفسها المستخدمة عند الدخول، يسهل رصد أي تغيير في الحالة ويصعب الجدال حوله. وسجّل قراءات العدادات عند التسليم والاستلام أيضًا؛ ويشرح دليلنا عن [إدارة المرافق والفواتير في محفظة الإيجار](/ar/blog/utility-and-bill-management-across-a-rental-portfolio/) أهمية ذلك.
 
 ### إشراك المستأجر وتوعيته بشكل استباقي
 
@@ -175,4 +175,4 @@ Ready to enhance your property operations and safeguard your assets? [Visit port
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع متخصص مؤهل.*
 
-هل أنت مستعد لتحسين عمليات العقارات الخاصة بك وحماية أصولك؟ [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تدعم أوامر العمل وسجلات العقود كل عملية تسليم في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

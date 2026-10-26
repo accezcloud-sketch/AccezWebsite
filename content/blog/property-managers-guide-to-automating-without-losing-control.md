@@ -2,7 +2,7 @@
 title: "Property Management Automation: A Complete Guide"
 titleAr: "أتمتة إدارة العقارات: دليل شامل"
 excerpt: "Learn what to automate, what to keep human, and how to design hybrid workflows that boost efficiency while keeping the personal touch tenants value."
-excerptAr: "تعلم ما يجب أتمتته وما يجب إبقاؤه بشرياً وكيفية تصميم سير عمل هجين يعزز الكفاءة مع الحفاظ على اللمسة الشخصية التي يقدرها المستأجرون."
+excerptAr: "تعلّم ما الذي تؤتمته وما الذي تبقيه بيد فريقك، وكيف تصمم سير عمل هجين يعزز الكفاءة مع الحفاظ على اللمسة الشخصية التي يقدرها المستأجرون."
 metaTitle: "Property Management Automation Without Losing Control"
 metaTitleAr: "أتمتة إدارة العقارات دون فقدان السيطرة"
 metaDescription: "What to automate, what to keep human, and how to build hybrid workflows that free your team for tenants. A practical guide for Saudi property managers."
@@ -91,7 +91,7 @@ But Saudi Arabia also presents unique challenges that make the human element eve
 
 Vision 2030's mega-projects, NEOM, Diriyah, the Red Sea, are creating unprecedented demand for professional property management. The companies that will capture this growth aren't the ones avoiding technology or blindly automating everything. They're the ones finding the balance: using automation to achieve efficiency while preserving the human relationships that drive tenant retention and client satisfaction.
 
-The same principles apply whether you're managing properties in Riyadh, London, or New York: automate the routine, humanize the relational, and design systems that know the difference.
+The same principles apply whether you're managing properties in Riyadh, London, or New York: automate the routine, humanize the relational, and design systems that know the difference. If growth is your next step, our guide to [scaling your portfolio without losing control](/blog/how-to-scale-your-property-portfolio-without-losing-control/) shows how to keep your systems ahead of your headcount.
 
 ## Implementing Automation Without Losing Your Way
 
@@ -127,7 +127,7 @@ Automate the routine. Humanize the relational. That's how you scale without losi
 - [Improve Resident Communication Beyond WhatsApp](/blog/one-inbox-to-rule-them-all-centralizing-property-communications/)
 - [The Hidden Costs of Managing Properties Without a System](/blog/hidden-costs-of-managing-properties-without-a-system/)
 
-*Ready to automate intelligently? Visit [portal.accez.cloud](https://portal.accez.cloud) to see how.*
+See how Accez keeps routine work organised while your team stays in the loop on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -165,7 +165,7 @@ Automate the routine. Humanize the relational. That's how you scale without losi
 
 **تسلسلات الاتصال الروتينية.** رسائل الترحيب للمستأجرين الجدد وقوائم الانتقال والتحديثات المجتمعية والإعلانات القياسية يمكن قولبتها وجدولتها. هذا يضمن تواصلاً متسقاً دون استهلاك وقت الموظفين.
 
-## ما يجب إبقاؤه بشرياً: اللحظات المهمة
+## ما يجب أن يبقى بيد فريقك: اللحظات المهمة
 
 الأتمتة تتعامل مع المتكرر. البشر يتعاملون مع العلائقي. إليك حيث اللمسة الشخصية ليست اختيارية، إنها أساسية:
 
@@ -205,9 +205,9 @@ Automate the routine. Humanize the relational. That's how you scale without losi
 
 مشاريع رؤية 2030 الضخمة، نيوم والدرعية والبحر الأحمر، تخلق طلباً غير مسبوق على إدارة العقارات الاحترافية. الشركات التي ستستحوذ على هذا النمو ليست تلك التي تتجنب التكنولوجيا أو تؤتمت كل شيء بشكل أعمى. إنها تلك التي تجد التوازن: استخدام الأتمتة لتحقيق الكفاءة مع الحفاظ على العلاقات الإنسانية التي تدفع الاحتفاظ بالمستأجرين ورضا العملاء.
 
-نفس المبادئ تنطبق سواء كنت تدير عقارات في الرياض أو لندن أو نيويورك: أتمت الروتيني، أنسن العلائقي، وصمم أنظمة تعرف الفرق.
+نفس المبادئ تنطبق سواء كنت تدير عقارات في الرياض أو لندن أو نيويورك: أتمت الروتيني، أنسن العلائقي، وصمم أنظمة تعرف الفرق. وإذا كان النمو خطوتك التالية، فيوضح دليلنا عن [توسيع محفظتك العقارية دون فقدان السيطرة](/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/) كيف تبقي أنظمتك متقدمة على نمو فريقك.
 
-## تطبيق الأتمتة دون فقدان طريقك
+## تطبيق الأتمتة دون أن تحيد عن هدفك
 
 إذا كنت مستعداً للأتمتة بذكاء، إليك نهجاً عملياً:
 
@@ -235,4 +235,4 @@ Accez.cloud مبني على هذه الفلسفة. يجمع [حل إدارة ا�
 
 أتمت الروتيني. أنسن العلائقي. هكذا تتوسع دون أن تفقد روحك.
 
-*مستعد للأتمتة بذكاء؟ قم بزيارة [portal.accez.cloud](https://portal.accez.cloud) لترى كيف.*
+اكتشف كيف تنظم أكسيز العمل الروتيني مع بقاء فريقك على اطلاع في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

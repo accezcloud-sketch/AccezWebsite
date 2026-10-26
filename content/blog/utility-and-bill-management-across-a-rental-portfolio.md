@@ -100,7 +100,7 @@ Yes. A single register of every account, meter number and due date, kept in your
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Discover how Accez.Cloud can transform your operations. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps the work around utilities organised on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -183,4 +183,4 @@ Discover how Accez.Cloud can transform your operations. [Visit portal.accez.clou
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-اكتشف كيف يمكن لـ Accez.Cloud تحويل عملياتك. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تنظم أكسيز الأعمال المرتبطة بالمرافق في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

@@ -1,6 +1,6 @@
 ---
 title: "Streamline Property Onboarding From Paperwork Chaos"
-titleAr: "تبسيط إلحاق العقارات من فوضى الأوراق"
+titleAr: "إلحاق العقارات الجديدة: من فوضى الأوراق إلى إجراءات رقمية"
 excerpt: "Tired of drowning in paperwork when bringing on new properties? Discover how to ditch the manual processes and embrace digital efficiency for smoother property onboarding."
 excerptAr: "هل سئمت من الغرق في الأوراق عند إلحاق عقارات جديدة؟ اكتشف كيف تتخلص من العمليات اليدوية وتتبنى الكفاءة الرقمية لعملية إلحاق عقارات أكثر سلاسة."
 metaTitle: "Owner Onboarding: Bring On New Properties Without Chaos"
@@ -36,7 +36,7 @@ Leading property management firms have recognized that the old way of doing busi
 
 ### Embracing Digital Workflows
 
-High-performing property managers understand that a digitized onboarding process is not just about scanning documents; it's about fundamentally redesigning the workflow. This begins with implementing a **cloud-based property management system** that can handle document management, communication, and data capture within a single platform. Instead of relying on email chains and physical folders, they utilize digital forms and automated workflows that guide owners and tenants through the necessary steps. This includes [e-signatures for lease agreements](/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/), online portals for document submission, and automated reminders for outstanding information. This not only reduces the manual effort but also provides a clear audit trail for every step of the onboarding process.
+High-performing property managers understand that a digitized onboarding process is not just about scanning documents; it's about fundamentally redesigning the workflow. This begins with implementing a **cloud-based property management system** that can handle document management, communication, and data capture within a single platform. Instead of relying on email chains and physical folders, they utilize digital forms and automated workflows that guide owners and tenants through the necessary steps. This includes [e-signatures for lease agreements](/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/), online portals for document submission, and automated reminders for outstanding information. This not only reduces the manual effort but also provides a clear audit trail for every step of the onboarding process. If a new owner's records arrive in spreadsheets, our guide to [migrating from spreadsheets and legacy software](/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/) shows how to bring them in cleanly.
 
 ### Leveraging Automation for Efficiency
 
@@ -75,7 +75,7 @@ With Accez.Cloud, onboarding stops being a pile of paperwork and becomes a repea
 - Accez.Cloud brings properties, units, owners, leases and conversations into one platform, cutting paperwork and retyping.
 - Adopting a digital-first approach to onboarding accelerates business growth and improves client satisfaction.
 
-Visit portal.accez.cloud
+See how a new property gets its place in Accez on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -95,7 +95,7 @@ Visit portal.accez.cloud
 
 ### تبني سير العمل الرقمي
 
-يدرك مديرو العقارات ذوو الأداء العالي أن عملية الإلحاق الرقمية ليست مجرد مسح للمستندات؛ إنها تتعلق بإعادة تصميم سير العمل بشكل أساسي. يبدأ هذا بتطبيق **نظام إدارة عقارات قائم على السحابة** يمكنه التعامل مع إدارة المستندات والاتصالات والتقاط البيانات ضمن منصة واحدة. بدلاً من الاعتماد على سلاسل البريد الإلكتروني والمجلدات المادية، يستخدمون النماذج الرقمية وسير العمل الآلي التي توجه الملاك والمستأجرين خلال الخطوات اللازمة. يشمل ذلك [التوقيعات الإلكترونية لعقود الإيجار](/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/)، وبوابات عبر الإنترنت لتقديم المستندات، وتذكيرات آلية للمعلومات المعلقة. هذا لا يقلل من الجهد اليدوي فحسب، بل يوفر أيضًا مسار تدقيق واضح لكل خطوة من خطوات عملية الإلحاق.
+يدرك مديرو العقارات ذوو الأداء العالي أن عملية الإلحاق الرقمية ليست مجرد مسح للمستندات؛ إنها تتعلق بإعادة تصميم سير العمل بشكل أساسي. يبدأ هذا بتطبيق **نظام إدارة عقارات قائم على السحابة** يمكنه التعامل مع إدارة المستندات والاتصالات والتقاط البيانات ضمن منصة واحدة. بدلاً من الاعتماد على سلاسل البريد الإلكتروني والمجلدات المادية، يستخدمون النماذج الرقمية وسير العمل الآلي التي توجه الملاك والمستأجرين خلال الخطوات اللازمة. يشمل ذلك [التوقيعات الإلكترونية لعقود الإيجار](/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/)، وبوابات عبر الإنترنت لتقديم المستندات، وتذكيرات آلية للمعلومات المعلقة. هذا لا يقلل من الجهد اليدوي فحسب، بل يوفر أيضًا مسار تدقيق واضح لكل خطوة من خطوات عملية الإلحاق. وإذا وصلتك سجلات المالك الجديد في جداول بيانات، فيوضح دليلنا عن [الانتقال من جداول البيانات والبرامج القديمة](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/) كيف تنقلها دون أخطاء.
 
 ### الاستفادة من الأتمتة لتحقيق الكفاءة
 
@@ -134,4 +134,4 @@ Visit portal.accez.cloud
 - تجمع Accez.Cloud العقارات والوحدات والملاك والعقود والمحادثات في منصة واحدة، فتقلل الأوراق وإعادة الإدخال.
 - يؤدي اعتماد نهج رقمي أولاً للإلحاق إلى تسريع نمو الأعمال وتحسين رضا العملاء.
 
-Visit portal.accez.cloud
+اكتشف كيف يأخذ العقار الجديد مكانه في أكسيز عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

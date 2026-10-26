@@ -6,7 +6,7 @@ metaTitleAr: "كيف يغير الذكاء الاصطناعي إدارة الع�
 metaDescription: "AI is reshaping maintenance, pricing and tenant communication in property management. Here is what it does well and the human skills it cannot replace."
 metaDescriptionAr: "يعيد الذكاء الاصطناعي تشكيل الصيانة والتسعير والتواصل مع المستأجرين في إدارة العقارات. تعرّف على ما يجيده وعلى المهارات البشرية التي لا يستطيع استبدالها."
 excerpt: "Explore how AI is transforming property management, from streamlining operations to enhancing tenant experiences, and understand what human skills remain irreplaceable."
-excerptAr: "استكشف كيف يُحدث الذكاء الاصطناعي تحولاً في إدارة العقارات، من تبسيط العمليات إلى تحسين تجارب المستأجرين، وافهم ما هي المهارات البشرية التي لا تزال لا تُستبدل."
+excerptAr: "استكشف كيف يُحدث الذكاء الاصطناعي تحولاً في إدارة العقارات، من تبسيط العمليات إلى تحسين تجارب المستأجرين، وتعرّف على المهارات البشرية التي لا يمكن استبدالها."
 date: "2026-04-07"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -55,7 +55,7 @@ In the Kingdom of Saudi Arabia, the property management sector is undergoing a s
 
 Messaging apps are part of daily life in the Kingdom: a 2022 survey by the Saudi Center for Public Opinion Polling, [reported by Arab News](https://www.arabnews.com/node/2054631), found that 92% of Saudis use WhatsApp. That makes automated, Arabic-language messaging a natural fit. AI chatbots connected to messaging channels can answer routine questions about properties, share payment instructions for local methods such as **mada** or **SADAD**, and log routine maintenance requests in Arabic, enhancing accessibility and convenience. Housing and population data published by the **General Authority for Statistics (GASTAT)** can also be analyzed to inform leasing strategies, optimize property portfolios, and predict demand, especially in anticipation of increased seasonal demand around **Hajj and Umrah** pilgrimages, which often strain housing resources in key cities.
 
-AI can also assist in navigating the specific complexities of the Saudi market, such as managing short-term rentals during peak tourist seasons or optimizing energy efficiency in properties to align with the Kingdom's sustainability goals. By analyzing localized market data, AI can help property managers identify lucrative investment opportunities, predict rental yields, and manage risks associated with market fluctuations. This intelligent application of AI ensures that property managers can not only meet but exceed the expectations of a technologically savvy and increasingly discerning tenant base in Saudi Arabia, while remaining fully compliant with national regulations and contributing to the broader economic development goals of Vision 2030.
+AI can also assist in navigating the specific complexities of the Saudi market, such as managing short-term rentals during peak tourist seasons or optimizing energy efficiency in properties to align with the Kingdom's sustainability goals. By analyzing localized market data, AI can help property managers identify lucrative investment opportunities, predict rental yields, and manage risks associated with market fluctuations. This intelligent application of AI ensures that property managers can not only meet but exceed the expectations of a technologically savvy and increasingly discerning tenant base in Saudi Arabia, while remaining fully compliant with national regulations and contributing to the broader economic development goals of Vision 2030. Any of these tools is only as good as the data it receives, which is why [connecting your tools through integrations](/blog/connecting-your-tools-why-api-integrations-matter-for-property-managers/) comes first.
 
 ## How Accez.Cloud Helps You Streamline Property Operations
 
@@ -81,7 +81,7 @@ When your records live in one system, your team spends less time on admin and mo
 *   Accez.Cloud brings leases, rent, work orders, billing and conversations into one platform, the foundation that automation depends on.
 *   The future of property management lies in the synergistic combination of AI capabilities and essential human qualities.
 
-Transform your property management with intelligent solutions at [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps the records that automation depends on in one place on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -123,7 +123,7 @@ Transform your property management with intelligent solutions at [Visit portal.a
 
 تطبيقات المراسلة جزء من الحياة اليومية في المملكة: فقد وجد استطلاع أجراه المركز السعودي لاستطلاعات الرأي العام عام 2022، [ونشرته عرب نيوز](https://www.arabnews.com/node/2054631)، أن 92% من السعوديين يستخدمون واتساب. وهذا يجعل المراسلة الآلية باللغة العربية خياراً طبيعياً. يمكن لروبوتات الدردشة المدعومة بالذكاء الاصطناعي والمرتبطة بقنوات المراسلة الإجابة على الاستفسارات الروتينية عن العقارات، ومشاركة تعليمات الدفع عبر وسائل محلية مثل **مدى** أو **سداد**، وتسجيل طلبات الصيانة الروتينية باللغة العربية، مما يعزز سهولة الوصول والراحة. كما يمكن تحليل بيانات الإسكان والسكان التي تنشرها **الهيئة العامة للإحصاء** لتوجيه استراتيجيات التأجير، وتحسين محافظ العقارات، والتنبؤ بالطلب، خاصة تحسبًا للطلب الموسمي المتزايد حول مواسم **الحج والعمرة**، التي غالبًا ما تشكل ضغطًا على موارد الإسكان في المدن الرئيسية.
 
-يمكن للذكاء الاصطناعي أيضًا المساعدة في التعامل مع التعقيدات المحددة للسوق السعودي، مثل إدارة الإيجارات قصيرة الأجل خلال مواسم الذروة السياحية أو تحسين كفاءة الطاقة في العقارات تماشيًا مع الأهداف المستدامة للمملكة. من خلال تحليل بيانات السوق المحلية، يمكن للذكاء الاصطناعي مساعدة مديري العقارات في تحديد فرص الاستثمار المربحة، والتنبؤ بعوائد الإيجار، وإدارة المخاطر المرتبطة بتقلبات السوق. يضمن هذا التطبيق الذكي للذكاء الاصطناعي أن مديري العقارات لا يمكنهم فقط تلبية توقعات قاعدة مستأجرين متطورة تقنيًا ومتزايدة التمييز في المملكة العربية السعودية، بل تجاوزها أيضًا، مع البقاء ممتثلين تمامًا للوائح الوطنية والمساهمة في الأهداف الأوسع للتنمية الاقتصادية لرؤية 2030.
+يمكن للذكاء الاصطناعي أيضًا المساعدة في التعامل مع التعقيدات المحددة للسوق السعودي، مثل إدارة الإيجارات قصيرة الأجل خلال مواسم الذروة السياحية أو تحسين كفاءة الطاقة في العقارات تماشيًا مع الأهداف المستدامة للمملكة. من خلال تحليل بيانات السوق المحلية، يمكن للذكاء الاصطناعي مساعدة مديري العقارات في تحديد فرص الاستثمار المربحة، والتنبؤ بعوائد الإيجار، وإدارة المخاطر المرتبطة بتقلبات السوق. يضمن هذا التطبيق الذكي للذكاء الاصطناعي أن مديري العقارات لا يمكنهم فقط تلبية توقعات قاعدة مستأجرين متطورة تقنيًا ومتزايدة التمييز في المملكة العربية السعودية، بل تجاوزها أيضًا، مع البقاء ممتثلين تمامًا للوائح الوطنية والمساهمة في الأهداف الأوسع للتنمية الاقتصادية لرؤية 2030. وأي أداة من هذه الأدوات لا تتجاوز جودة البيانات التي تصلها، ولهذا يأتي [ربط أدواتك عبر التكاملات](/ar/blog/connecting-your-tools-why-api-integrations-matter-for-property-managers/) أولًا.
 
 ## كيف تساعدك Accez.Cloud في تبسيط العمليات العقارية
 
@@ -149,4 +149,4 @@ Transform your property management with intelligent solutions at [Visit portal.a
 *   تجمع Accez.Cloud عقود الإيجار والإيجارات وأوامر العمل والفوترة والمحادثات في منصة واحدة، وهو الأساس الذي تعتمد عليه الأتمتة.
 *   يكمن مستقبل إدارة العقارات في الجمع التآزري بين قدرات الذكاء الاصطناعي والصفات البشرية الأساسية.
 
-حوّل إدارة ممتلكاتك بحلول ذكية على [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تجمع أكسيز السجلات التي تعتمد عليها الأتمتة في مكان واحد عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

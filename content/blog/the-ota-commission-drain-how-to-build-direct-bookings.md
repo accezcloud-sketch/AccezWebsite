@@ -4,9 +4,9 @@ titleAr: "استنزاف عمولات وكالات السفر عبر الإنت�
 metaTitle: "OTA Commission Drain: How to Build Direct Bookings"
 metaTitleAr: "عمولات منصات الحجز: كيف تبني حجوزات مباشرة"
 metaDescription: "OTA commissions eat into every booking. Learn how property managers in Saudi Arabia can build direct bookings and keep more revenue from each stay."
-metaDescriptionAr: "عمولات منصات الحجز تقتطع جزءًا من كل حجز. تعرّف على كيف يبني مديرو العقارات في المملكة العربية السعودية حجوزات مباشرة ويحتفظون بإيرادات أكبر من كل إقامة."
+metaDescriptionAr: "عمولات منصات الحجز تقتطع جزءًا من كل حجز. اكتشف كيف يبني مديرو العقارات في المملكة العربية السعودية حجوزات مباشرة ويحتفظون بإيرادات أكبر من كل إقامة."
 excerpt: "Discover how to bypass OTA commissions and boost your direct bookings, reclaiming revenue and strengthening your property management business."
-excerptAr: "اكتشف كيفية تجاوز عمولات وكالات السفر عبر الإنترنت وزيادة حجوزاتك المباشرة، واستعادة الإيرادات وتعزيز أعمال إدارة الممتلكات الخاصة بك."
+excerptAr: "اكتشف كيفية تجاوز عمولات وكالات السفر عبر الإنترنت وزيادة حجوزاتك المباشرة، واستعادة الإيرادات وتعزيز أعمالك في إدارة العقارات."
 date: "2026-07-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -77,7 +77,7 @@ See how the [rentals features for property managers](/solutions/property-manager
 - **Localize Strategies:** Adapt to local market nuances, like fast mobile communication, licensing and payment preferences, especially in Saudi Arabia.
 - **Technology is the Enabler:** Use a platform like Accez.Cloud to keep OTA and direct reservations, payments and guest messages in one place.
 
-Boost your revenue and take control of your bookings. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez runs OTA and direct bookings side by side on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -95,7 +95,7 @@ Boost your revenue and take control of your bookings. [Visit portal.accez.cloud]
 
 مديرو العقارات الناجحون ليسوا مجرد متلقين سلبيين للحجوزات؛ بل هم مهندسون نشطون لمصادر إيراداتهم. إنهم يدركون أن بناء استراتيجية حجز مباشر قوية ليس خيارًا، بل ضرورة للاستدامة والنمو على المدى الطويل.
 
-### الاستثمار في موقع ويب احترافي وتجربة مستخدم متميزة
+### الاستثمار في موقع إلكتروني احترافي وتجربة استخدام متميزة
 
 تدرك العقارات ذات الأداء العالي أن موقعها على الويب هو واجهة متجرها الرقمية. يجب أن يكون أكثر من مجرد كتيب؛ يجب أن يكون محرك حجز سلس. يتضمن ذلك الاستثمار في موقع ويب احترافي ومتوافق مع الأجهزة المحمولة، مع صور عالية الجودة وأوصاف جذابة. يجب أن تكون عملية الحجز نفسها بديهية وسريعة وآمنة. سيؤدي موقع الويب الذي يصعب استخدامه أو مربك إلى دفع الضيوف المحتملين مرة أخرى إلى الراحة المألوفة لوكالات السفر عبر الإنترنت، حتى لو عثروا عليك في البداية من خلال قنواتك الخاصة. فكر في الأمر كنقطة الاتصال الأولى وأهم نقطة اتصال للحجز المباشر. تعد رحلة المستخدم السلسة من التصفح الأولي إلى التأكيد النهائي أمرًا بالغ الأهمية.
 
@@ -140,4 +140,4 @@ Boost your revenue and take control of your bookings. [Visit portal.accez.cloud]
 - **تخصيص الاستراتيجيات:** تكيف مع خصوصيات السوق المحلية، مثل التواصل السريع عبر الجوال والتراخيص وتفضيلات الدفع، خاصة في المملكة العربية السعودية.
 - **التكنولوجيا هي الممكّن:** استخدم منصة مثل Accez.Cloud لتجمع حجوزات المنصات والحجوزات المباشرة والمدفوعات ورسائل الضيوف في مكان واحد.
 
-عزز إيراداتك وتحكم في حجوزاتك. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تدير أكسيز حجوزات المنصات والحجوزات المباشرة جنبًا إلى جنب في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

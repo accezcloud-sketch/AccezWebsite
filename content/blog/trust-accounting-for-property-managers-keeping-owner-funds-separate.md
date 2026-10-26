@@ -40,7 +40,7 @@ High-performing managers establish and strictly maintain separate bank accounts 
 
 ### Rigorous Reconciliation and Reporting
 
-Beyond mere separation, these managers implement a disciplined process for regular reconciliation and transparent reporting. Trust accounts are reconciled at least monthly, comparing bank statements with internal ledgers. This ensures that every riyal is accounted for and that discrepancies are identified and resolved promptly. Owners receive detailed, accurate, and timely statements that clearly outline all income and expenses related to their properties. This level of transparency builds trust and confidence, making owners feel secure and informed about their investments. In property management, that translates directly into **owner retention and new client acquisition**. Our article on [owner statements that send themselves](/blog/automated-owner-reporting-statements-that-send-themselves/) shows how to make reporting routine.
+Beyond mere separation, these managers implement a disciplined process for regular reconciliation and transparent reporting. Trust accounts are reconciled at least monthly, comparing bank statements with internal ledgers. This ensures that every riyal is accounted for and that discrepancies are identified and resolved promptly. Owners receive detailed, accurate, and timely statements that clearly outline all income and expenses related to their properties. This level of transparency builds trust and confidence, making owners feel secure and informed about their investments. In property management, that translates directly into **owner retention and new client acquisition**. Our article on [owner statements that send themselves](/blog/automated-owner-reporting-statements-that-send-themselves/) shows how to make reporting routine. Your own operating cash needs the same discipline; see our guide to [cash flow forecasting for property management businesses](/blog/cash-flow-forecasting-for-property-management-businesses/).
 
 ## Trust Accounting in the Saudi Arabian Context
 
@@ -72,7 +72,7 @@ By keeping these records in one system, property managers can move away from sca
 - Clear financial records protect against fraud and reputational damage.
 - Accez keeps owner statements, payouts and rent records organized in one place.
 
-Empower your property management business with robust financial integrity and visit portal.accez.cloud
+See how owner statements and payouts work in Accez on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -96,7 +96,7 @@ Empower your property management business with robust financial integrity and vi
 
 ### التسوية الدقيقة وإعداد التقارير
 
-إلى جانب الفصل، يطبق هؤلاء المديرون عملية منضبطة للتسوية المنتظمة وإعداد التقارير الشفافة. تُسوّى الحسابات الائتمانية شهريًا على الأقل، بمقارنة كشوف الحسابات البنكية مع السجلات الداخلية. وهذا يضمن حصر كل ريال واكتشاف أي فروقات ومعالجتها فورًا. ويتلقى المالكون كشوفًا مفصلة ودقيقة وفي وقتها توضح جميع الإيرادات والنفقات المتعلقة بعقاراتهم. وهذا المستوى من الشفافية يبني الثقة، ويجعل المالكين يشعرون بالأمان والاطلاع على استثماراتهم. وفي إدارة العقارات، يترجم ذلك مباشرة إلى **الاحتفاظ بالمالكين واكتساب عملاء جدد**. ويوضح مقالنا عن [كشوف المالكين التي تُرسل تلقائيًا](/ar/blog/automated-owner-reporting-statements-that-send-themselves/) كيف تجعل التقارير عملًا روتينيًا.
+إلى جانب الفصل، يطبق هؤلاء المديرون عملية منضبطة للتسوية المنتظمة وإعداد التقارير الشفافة. تُسوّى الحسابات الائتمانية شهريًا على الأقل، بمقارنة كشوف الحسابات البنكية مع السجلات الداخلية. وهذا يضمن حصر كل ريال واكتشاف أي فروقات ومعالجتها فورًا. ويتلقى المالكون كشوفًا مفصلة ودقيقة وفي وقتها توضح جميع الإيرادات والنفقات المتعلقة بعقاراتهم. وهذا المستوى من الشفافية يبني الثقة، ويجعل المالكين يشعرون بالأمان والاطلاع على استثماراتهم. وفي إدارة العقارات، يترجم ذلك مباشرة إلى **الاحتفاظ بالمالكين واكتساب عملاء جدد**. ويوضح مقالنا عن [كشوف المالكين التي تُرسل تلقائيًا](/ar/blog/automated-owner-reporting-statements-that-send-themselves/) كيف تجعل التقارير عملًا روتينيًا. وتحتاج السيولة التشغيلية لشركتك إلى الانضباط نفسه؛ اطّلع على دليلنا عن [التنبؤ بالتدفق النقدي لشركات إدارة العقارات](/ar/blog/cash-flow-forecasting-for-property-management-businesses/).
 
 ## المحاسبة الائتمانية في سياق المملكة العربية السعودية
 
@@ -128,4 +128,4 @@ Empower your property management business with robust financial integrity and vi
 - السجلات المالية الواضحة تحمي من الاحتيال والضرر بالسمعة.
 - تنظم أكسيز كشوف المالكين ومدفوعاتهم وسجلات الإيجار في مكان واحد.
 
-مكّن عملك في إدارة العقارات بنزاهة مالية قوية وقم بزيارة portal.accez.cloud
+تعرّف على كشوف الملاك ومستحقاتهم في أكسيز عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

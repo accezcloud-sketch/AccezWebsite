@@ -1,12 +1,12 @@
 ---
 title: "Bad Reviews Happen: How to Respond Without Damaging Your Reputation"
-titleAr: "المراجعات السيئة تحدث: كيف تستجيب دون الإضرار بسمعتك"
+titleAr: "التقييمات السلبية واردة: كيف ترد دون الإضرار بسمعتك"
 metaTitle: "Bad Reviews: How to Respond Without Hurting Your Reputation"
-metaTitleAr: "المراجعات السيئة: كيف ترد دون الإضرار بسمعتك"
+metaTitleAr: "التقييمات السلبية: كيف ترد دون الإضرار بسمعتك"
 metaDescription: "A bad review does not have to cost you tenants or owners. Learn how property managers respond with empathy, resolve issues privately and improve service."
-metaDescriptionAr: "لا يجب أن تكلفك مراجعة سيئة مستأجرين أو ملاكاً. تعرّف على كيفية رد مديري العقارات بتعاطف وحل المشكلات بشكل خاص وتحسين الخدمة باستمرار."
+metaDescriptionAr: "لا ينبغي أن يكلفك تقييم سلبي خسارة مستأجرين أو ملاك. اكتشف كيف يرد مديرو العقارات بتعاطف، ويحلون المشكلات بعيدًا عن العلن، ويحسّنون الخدمة باستمرار."
 excerpt: "Negative feedback is inevitable. Learn how property managers can effectively respond to bad reviews and turn potentially damaging situations into opportunities for growth."
-excerptAr: "التعليقات السلبية لا مفر منها. تعلم كيف يمكن لمديري العقارات الاستجابة بفعالية للمراجعات السيئة وتحويل المواقف التي قد تكون ضارة إلى فرص للنمو."
+excerptAr: "التعليقات السلبية لا مفر منها. تعلّم كيف يرد مديرو العقارات بفعالية على التقييمات السلبية، ويحوّلون المواقف التي قد تضر بهم إلى فرص للنمو."
 date: "2026-07-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -34,7 +34,7 @@ Successful property management firms don't shy away from negative feedback; they
 
 ### Proactive Engagement and Monitoring
 
-The most effective property managers are not just reactive; they are proactive. This means implementing systems for continuous monitoring of online review platforms, social media mentions, and direct feedback channels. Setting up Google Alerts for your property names and management company is a basic but crucial step. Beyond that, utilizing specialized reputation management software can provide real-time alerts, ensuring you're among the first to know when a new review is posted, whether positive or negative. This allows for swift initial assessment and a timely response. Speed matters here as much as tone, as we explain in [the 48-hour rule on how response time predicts tenant retention](/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/).
+The most effective property managers are not just reactive; they are proactive. This means implementing systems for continuous monitoring of online review platforms, social media mentions, and direct feedback channels. Setting up Google Alerts for your property names and management company is a basic but crucial step. Beyond that, utilizing specialized reputation management software can provide real-time alerts, ensuring you're among the first to know when a new review is posted, whether positive or negative. This allows for swift initial assessment and a timely response. Speed matters here as much as tone, as we explain in [the 48-hour rule on how response time predicts tenant retention](/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/). Asking happy guests at the right moment also balances out the occasional bad review; see [how to time the review request](/blog/timing-the-review-request-how-to-get-more-5-star-ratings/).
 
 ### Empathy and Acknowledgment First
 
@@ -77,7 +77,7 @@ See how these work together in the [rentals section of our property manager solu
 - Accez.Cloud brings conversations into one inbox and tracks complaints as work orders until they are resolved.
 - A strong online reputation is a significant driver of new business.
 
-Turn feedback into opportunities. Visit [portal.accez.cloud](https://portal.accez.cloud)
+See how one inbox and work orders help you fix problems before they become reviews on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -85,7 +85,7 @@ Turn feedback into opportunities. Visit [portal.accez.cloud](https://portal.acce
 
 لقد ضاعف العصر الرقمي من تأثير ملاحظات العملاء. يمكن لتعليق سلبي واحد، إذا تُرك دون معالجة أو تم التعامل معه بشكل سيء، أن يتضخم ليصبح ضربة كبيرة لسمعتك على الإنترنت. يقوم المستأجرون والملاك المحتملون، المسلحون بمحركات البحث ومواقع المراجعة، غالبًا باتخاذ قرارات بناءً على هذه الشهادات الرقمية. بالنسبة لمديري العقارات في سوق تنافسي مثل المملكة العربية السعودية، حيث الثقة والموثوقية أمران ضروريان، لم تعد إدارة الرأي عبر الإنترنت أمرًا اختياريًا، بل هو ضروري.
 
-## تشريح المراجعة السيئة
+## تشريح التقييم السلبي
 
 لا تكون المراجعات السيئة دائمًا خبيثة أو غير دقيقة تمامًا. غالبًا ما تنبع من فجوة في التوقعات، أو سوء فهم، أو فشل حقيقي في الخدمة، مهما كان صغيرًا من وجهة نظر تشغيلية. فهم *سبب* ترك المراجعة هو الخطوة الأولى نحو استجابة بناءة. تشمل بعض الأسباب الشائعة التأخير في طلبات الصيانة، ومشاكل في نظافة العقار عند الانتقال، ونقص متصور في استجابة الإدارة، أو حتى تعارض شخصيات بين المستأجرين والموظفين. وجد [استطلاع BrightLocal لمراجعات المستهلكين المحليين لعام 2023](https://www.brightlocal.com/research/local-consumer-review-survey-2023/) أن 76٪ من المستهلكين يقرؤون المراجعات عبر الإنترنت "بانتظام" عند البحث عن الشركات المحلية، مما يسلط الضوء على الدور الحاسم الذي تلعبه هذه المراجعات في تصور العملاء. عندما لا يتم معالجة المشكلات بشكل استباقي، يشعر المستأجرون بأنهم غير مسموعين، ويجد استيائهم بشكل طبيعي متنفسًا عبر الإنترنت. يمكن أن يكون تصور **نقص التعاطف أو الفهم** من الإدارة دافعًا كبيرًا للملاحظات السلبية.
 
@@ -93,15 +93,15 @@ Turn feedback into opportunities. Visit [portal.accez.cloud](https://portal.acce
 
 لا تتجنب شركات إدارة العقارات الناجحة الملاحظات السلبية؛ بل تتبناها كأداة تشخيصية وفرصة لإظهار التزامها بالتعافي من الخدمة أمام الجمهور. يدرك هؤلاء المحترفون أن كيفية استجابتك غالبًا ما تكون أكثر أهمية من الشكوى الأولية نفسها.
 
-### المشاركة والمراقبة الاستباقية
+### المتابعة الاستباقية للتقييمات
 
-أكثر مديري العقارات فعالية ليسوا فقط تفاعليين؛ بل هم استباقيون. هذا يعني تنفيذ أنظمة للمراقبة المستمرة لمنصات المراجعة عبر الإنترنت، والإشارات على وسائل التواصل الاجتماعي، وقنوات الملاحظات المباشرة. يعد إعداد تنبيهات Google لأسماء عقاراتك وشركتك الإدارية خطوة أساسية ولكنها بالغة الأهمية. بخلاف ذلك، يمكن أن يوفر استخدام برامج إدارة السمعة المتخصصة تنبيهات في الوقت الفعلي، مما يضمن أن تكون من بين أول من يعرف عندما يتم نشر مراجعة جديدة، سواء كانت إيجابية أو سلبية. يسمح هذا بتقييم أولي سريع واستجابة في الوقت المناسب. فالسرعة لا تقل أهمية عن الأسلوب، كما نوضح في مقالنا عن [قاعدة الـ48 ساعة وكيف يتنبأ وقت الاستجابة بالاحتفاظ بالمستأجرين](/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/).
+أكثر مديري العقارات فعالية ليسوا فقط تفاعليين؛ بل هم استباقيون. هذا يعني تنفيذ أنظمة للمراقبة المستمرة لمنصات المراجعة عبر الإنترنت، والإشارات على وسائل التواصل الاجتماعي، وقنوات الملاحظات المباشرة. يعد إعداد تنبيهات Google لأسماء عقاراتك وشركتك الإدارية خطوة أساسية ولكنها بالغة الأهمية. بخلاف ذلك، يمكن أن يوفر استخدام برامج إدارة السمعة المتخصصة تنبيهات في الوقت الفعلي، مما يضمن أن تكون من بين أول من يعرف عندما يتم نشر مراجعة جديدة، سواء كانت إيجابية أو سلبية. يسمح هذا بتقييم أولي سريع واستجابة في الوقت المناسب. فالسرعة لا تقل أهمية عن الأسلوب، كما نوضح في مقالنا عن [قاعدة الـ48 ساعة وكيف يتنبأ وقت الاستجابة بالاحتفاظ بالمستأجرين](/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/). كما أن طلب التقييم من الضيوف الراضين في الوقت المناسب يوازن أثر التقييم السلبي العارض؛ اطّلع على [كيفية اختيار توقيت طلب التقييم](/ar/blog/timing-the-review-request-how-to-get-more-5-star-ratings/).
 
 ### التعاطف والاعتراف أولاً
 
 قبل الخوض في الحلول أو الدفاعات، يجب أن تنقل الاستجابة الأولية التعاطف. الاعتراف بمشاعر المراجع وشكره على ملاحظاته، حتى لو كانت سلبية، يضع نبرة إيجابية. عبارات مثل "نحن آسفون حقًا لسماع تجربتك" أو "شكرًا لك على لفت انتباهنا إلى هذا الأمر" يمكن أن تقطع شوطًا طويلاً. هذا **يظهر أنك تقدر وجهة نظرهم** ومستعد للاستماع، بغض النظر عن تفاصيل الموقف. إنه يحول التركيز من وضع دفاعي إلى وضع الفهم والتعاون.
 
-### الاستجابة علنًا، الحل سريًا
+### الرد علنًا والحل بعيدًا عن العلن
 
 يجب أن تكون الاستجابة العامة موجزة ومتعاطفة وتشير إلى الاستعداد لحل المشكلة. يجب ألا تتضمن أبدًا دفاعًا مطولاً أو جدالًا في قسم التعليقات. بدلاً من ذلك، اعرض نقل المحادثة إلى قناة خاصة. يتضمن الهيكل النموذجي اعترافًا واعتذارًا عن الإزعاج ودعوة للتواصل مباشرة. على سبيل المثال، "نحن نأسف لأن تجربتك الأخيرة لم ترق إلى مستوى توقعاتك. سنقدر الفرصة لمناقشة هذا الأمر معك بشكل أكبر. يرجى الاتصال بـ [الاسم / القسم] على [رقم الهاتف] أو [عنوان البريد الإلكتروني] حتى نتمكن من العمل نحو حل." هذا النهج يظهر للعملاء المحتملين الآخرين أنك سريع الاستجابة وملتزم برضا العملاء، بينما يسمح بمناقشة مفصلة وخاصة حول المشكلات المحددة.
 
@@ -115,7 +115,7 @@ Turn feedback into opportunities. Visit [portal.accez.cloud](https://portal.acce
 
 كان أحد أهم التغييرات التنظيمية هو التحول إلى تسجيل عقود الإيجار في منصة إيجار، شبكة خدمات الإيجار في المملكة. هذا لا يبسّط عملية التأجير فحسب، بل يزيد أيضًا من الشفافية. ومع ذلك، فهذا يعني أيضًا أن شكاوى المستأجرين يمكن ربطها بشكل مباشر بالالتزامات والمدد الزمنية التعاقدية المحددة، مما يجعل الاستجابة أكثر أهمية. ويمكن أن يؤدي الإخفاق في تسجيل العقود بشكل صحيح أو في معالجة مخاوف المستأجرين على الفور إلى نزاعات رسمية وإلحاق الضرر بالسمعة. علاوة على ذلك، فإن واتساب هو منصة التواصل الأكثر استخدامًا في المملكة، [بنسبة استخدام بلغت 92.7٪ وفق تقرير الإنترنت السعودي 2025 الصادر عن هيئة الاتصالات والفضاء والتقنية](https://www.arabnews.pk/node/2652325)، لذا يتوقع المستأجرون غالبًا الوصول إلى مدير العقار بالسرعة نفسها. يمكن أن يؤدي غياب الردود السريعة أو الاتصال الواضح إلى الإحباط، وبالتالي إلى مراجعات سلبية. يجب أن يكون مديرو العقارات بارعين في إدارة نقاط الاتصال الرقمية هذه بفعالية. ويساهم ضمان عمليات الدفع السلسة، مثل [سداد الإيجار عبر القنوات الرقمية لمنصة إيجار، مدى وسداد](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/)، في رضا المستأجرين. خلال المواسم الذروة مثل الحج والعمرة، عندما يمكن أن يزداد الطلب على العقارات للإيجار، تصبح القدرة على إدارة الاستفسارات والمشكلات بكفاءة أكثر وضوحًا. السمعة القوية عبر الإنترنت، المبنية على أساس الردود في الوقت المناسب وحل المشكلات الفعال، هي ميزة تنافسية كبيرة في هذا السوق المتطور.
 
-## كيف يساعدك Accez.Cloud في إتقان إدارة المراجعات
+## كيف يساعدك Accez.Cloud في إدارة التقييمات
 
 يمنح Accez.Cloud مديري العقارات في المملكة العربية السعودية الأدوات التشغيلية التي تمنع كثيرًا من المراجعات السيئة من الأساس: ردود سريعة وتواصل واضح ومشكلات تُحل فعلًا.
 
@@ -138,4 +138,4 @@ Turn feedback into opportunities. Visit [portal.accez.cloud](https://portal.acce
 - يجمع Accez.Cloud المحادثات في صندوق وارد واحد ويتابع الشكاوى كأوامر عمل حتى حلها.
 - السمعة القوية عبر الإنترنت هي محرك رئيسي للأعمال الجديدة.
 
-حوّل الملاحظات إلى فرص. قم بزيارة [portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف يساعدك صندوق الوارد الموحد وأوامر العمل على حل المشكلات قبل أن تتحول إلى تقييمات في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

@@ -88,7 +88,7 @@ Yes, most dedicated e-signature platforms provide real-time tracking. You can mo
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Accelerate your property operations with seamless digital lease signing. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps leases and rent payments together on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -159,4 +159,4 @@ Accelerate your property operations with seamless digital lease signing. [Visit 
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست نصيحة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع متخصص مؤهل.*
 
-سرّع عمليات عقاراتك مع التوقيع الرقمي السلس للعقود. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تجمع أكسيز العقود ودفعات الإيجار في مكان واحد عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

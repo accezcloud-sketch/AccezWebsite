@@ -71,7 +71,7 @@ If you run corporate stays next to holiday lets, read how to approach [managing 
 ## Frequently Asked Questions
 
 ### How do I find corporate housing clients?
-To find corporate housing clients, focus on business-to-business (B2B) outreach. Network with corporate travel managers, HR departments, and relocation specialists. Attend industry events, and consider listing your properties on corporate housing directories and B2B travel platforms.
+To find corporate housing clients, focus on business-to-business (B2B) outreach. Network with corporate travel managers, HR departments, and relocation specialists. Attend industry events, and consider listing your properties on corporate housing directories and B2B travel platforms. A website where companies can book you directly helps too; see our guide to [building a direct booking website that gets traffic](/blog/building-a-direct-booking-website-that-actually-gets-traffic/).
 
 ### What amenities are essential for corporate housing?
 Essential amenities include reliable high-speed internet, a dedicated workspace with a desk and chair, comfortable furnishings, a fully equipped kitchen, and laundry facilities. Regular cleaning services and flexible lease terms are also highly valued by corporate clients.
@@ -93,7 +93,8 @@ Corporate housing is specifically furnished and equipped for business travelers,
 - Effective B2B marketing and relationship building are key to landing corporate contracts.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+
+See how Accez runs short stays and long-term leases side by side on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -115,7 +116,7 @@ Corporate housing is specifically furnished and equipped for business travelers,
 
 يدرك مديرو العقارات ذوو الأداء العالي في قطاع الإسكان المؤسسي أن النجاح يعتمد على نهج استراتيجي يركز على العملاء. إنهم لا يدرجون العقارات فقط؛ بل يسوقون ويخصصون عروضهم لعالم الشركات بنشاط.
 
-### مساحة عمل مخصصة واتصال
+### مساحة عمل مخصصة واتصال موثوق بالإنترنت
 
 يدرك المتفوقون أن العقار بالنسبة للمسافرين من رجال الأعمال ليس مجرد مكان للنوم، بل مكان للعمل أيضًا. هذا يعني التأكد من أن كل وحدة مخصصة لضيوف الشركات مجهزة بمكتب وظيفي وكرسي مريح وإضاءة ممتازة. والأهم من ذلك، أن الإنترنت القوي والموثوق وعالي السرعة أمر لا غنى عنه. تعتمد الشركات على الاتصال السلس للاجتماعات الافتراضية والوصول إلى شبكات الشركة والبقاء منتجين. إن تقديم هذا كمعيار، بدلاً من إضافة، يميز العقار.
 
@@ -150,7 +151,7 @@ Corporate housing is specifically furnished and equipped for business travelers,
 ## الأسئلة الشائعة
 
 ### كيف أجد عملاء الإسكان المؤسسي؟
-للعثور على عملاء الإسكان المؤسسي، ركز على التواصل بين الشركات (B2B). قم ببناء علاقات مع مديري السفر للشركات، وإدارات الموارد البشرية، وأخصائيي الانتقال. احضر فعاليات الصناعة، وفكر في إدراج عقاراتك في أدلة الإسكان المؤسسي ومنصات السفر B2B.
+للعثور على عملاء الإسكان المؤسسي، ركز على التواصل بين الشركات (B2B). قم ببناء علاقات مع مديري السفر للشركات، وإدارات الموارد البشرية، وأخصائيي الانتقال. احضر فعاليات الصناعة، وفكر في إدراج عقاراتك في أدلة الإسكان المؤسسي ومنصات السفر B2B. ويساعدك أيضًا موقع إلكتروني تحجز فيه الشركات معك مباشرة؛ اطّلع على دليلنا عن [بناء موقع للحجز المباشر يجذب الزيارات](/ar/blog/building-a-direct-booking-website-that-actually-gets-traffic/).
 
 ### ما هي وسائل الراحة الضرورية للإسكان المؤسسي؟
 تشمل وسائل الراحة الأساسية الإنترنت عالي السرعة الموثوق به، ومساحة عمل مخصصة مع مكتب وكرسي، وأثاث مريح، ومطبخ مجهز بالكامل، ومرافق غسيل. كما أن خدمات التنظيف المنتظمة وشروط الإيجار المرنة تحظى بتقدير كبير من قبل العملاء المؤسسيين.
@@ -172,4 +173,5 @@ Corporate housing is specifically furnished and equipped for business travelers,
 - التسويق الفعال بين الشركات وبناء العلاقات هما مفتاح الحصول على العقود المؤسسية.
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست مشورة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع متخصص مؤهل.*
-[قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+
+اكتشف كيف تدير أكسيز الإقامات القصيرة والعقود طويلة الأجل جنبًا إلى جنب في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

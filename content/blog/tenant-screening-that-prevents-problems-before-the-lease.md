@@ -4,7 +4,7 @@ titleAr: "فحص المستأجرين الاستباقي لمنع نزاعات �
 metaTitle: "Tenant screening tips for Saudi property managers"
 metaTitleAr: "نصائح فحص المستأجرين لمديري العقارات بالسعودية"
 metaDescription: "Learn how thorough tenant screening before signing a lease can prevent future problems for property managers in Saudi Arabia. Get practical tips."
-metaDescriptionAr: "تعلم كيف يمكن لفحص المستأجرين الشامل قبل توقيع العقد منع مشاكل مستقبلية لمديري العقارات في السعودية. احصل على نصائح عملية."
+metaDescriptionAr: "تعلّم كيف يمكن لفحص المستأجرين الشامل قبل توقيع العقد منع مشاكل مستقبلية لمديري العقارات في السعودية. احصل على نصائح عملية."
 primaryKeyword: "tenant screening"
 excerpt: "Thorough tenant screening before lease signing is crucial for preventing future issues. This guide explores effective methods to ensure you select reliable tenants."
 excerptAr: "يعد فحص المستأجرين الشامل قبل توقيع عقد الإيجار أمرًا بالغ الأهمية لمنع المشاكل المستقبلية. يستكشف هذا الدليل الطرق الفعالة لضمان اختيار مستأجرين موثوقين."
@@ -74,7 +74,7 @@ A thorough tenant screening process usually takes **a few days**, depending on h
 You can set clear financial criteria and decline applicants who do not meet them, but apply the same criteria to everyone, obtain the applicant's consent before requesting a credit report, and handle their data in line with the Personal Data Protection Law. If in doubt, take legal advice.
 
 ### What red flags should I look for during tenant screening?
-Key red flags include a history of evictions, **significant debt, unstable employment, or evasiveness from the applicant**. Also, be wary of inconsistencies in their application or references.
+Key red flags include a history of evictions, **significant debt, unstable employment, or evasiveness from the applicant**. Also, be wary of inconsistencies in their application or references. Screening reduces disputes but cannot rule them out; our guide to [handling tenant disputes and evictions in Saudi Arabia](/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia/) covers what to do when one arises.
 
 ## Key Takeaways
 
@@ -88,7 +88,7 @@ Key red flags include a history of evictions, **significant debt, unstable emplo
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Learn more about streamlining your property operations at portal.accez.cloud
+See how Accez keeps each tenancy organised after you choose a tenant on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -145,7 +145,7 @@ Learn more about streamlining your property operations at portal.accez.cloud
 يمكنك وضع معايير مالية واضحة ورفض من لا يستوفيها، لكن طبّق المعايير نفسها على الجميع، واحصل على موافقة مقدم الطلب قبل طلب تقريره الائتماني، وتعامل مع بياناته وفق نظام حماية البيانات الشخصية. وعند الشك، استشر مختصًا قانونيًا.
 
 ### ما هي العلامات التحذيرية التي يجب أن أبحث عنها أثناء فحص المستأجرين؟
-تشمل العلامات التحذيرية الرئيسية تاريخ الإخلاء، **الديون الكبيرة، عدم استقرار الوظيفة، أو المراوغة من قبل مقدم الطلب**. كن حذرًا أيضًا من التناقضات في طلبه أو مراجعاته.
+تشمل العلامات التحذيرية الرئيسية تاريخ الإخلاء، **الديون الكبيرة، عدم استقرار الوظيفة، أو المراوغة من قبل مقدم الطلب**. كن حذرًا أيضًا من التناقضات في طلبه أو مراجعاته. يقلل الفحص من النزاعات لكنه لا يمنعها تمامًا؛ ويتناول دليلنا عن [التعامل مع نزاعات المستأجرين والإخلاء في السعودية](/ar/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia/) ما تفعله عند حدوث نزاع.
 
 ## أبرز النقاط
 
@@ -159,4 +159,4 @@ Learn more about streamlining your property operations at portal.accez.cloud
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-تعرف على المزيد حول تبسيط عمليات العقارات الخاصة بك على portal.accez.cloud
+اكتشف كيف تنظم أكسيز كل عقد إيجار بعد اختيار المستأجر في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

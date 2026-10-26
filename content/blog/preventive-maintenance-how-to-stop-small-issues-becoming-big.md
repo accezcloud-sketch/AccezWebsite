@@ -77,7 +77,7 @@ For a step-by-step approach, see our guide to [building a maintenance system tha
 - **Proactive is profitable:** Shifting to a preventive mindset boosts profitability and asset value.
 - **Data drives decisions:** Utilize property data to optimize maintenance strategies and budgets.
 
-Streamline your property maintenance and stop small issues becoming big bills. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how work orders give maintenance one organised home on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -91,7 +91,7 @@ Streamline your property maintenance and stop small issues becoming big bills. [
 
 تمتد العواقب إلى ما هو أبعد من تكاليف الإصلاح الفورية. **فترات التوقف للإصلاحات تعني خسارة الإيجارات**، خاصة بالنسبة للعقارات التجارية حيث يمكن أن يؤدي تعطل نظام تكييف الهواء والتهوية إلى إغلاق الأعمال التجارية. علاوة على ذلك، **تنخفض رضا المستأجرين بشكل كبير** عندما تتعطل بيئة معيشتهم أو عملهم بسبب مشكلات يمكن تجنبها. كما أن الصيانة المؤجلة تُضعف قيمة العقار بمرور الوقت وتجعل تأجير الوحدات أصعب، وتعد [طلبات الصيانة غير المتابعة](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) طريقًا شائعًا إلى خسارة المستأجرين وتكاليف تجهيز الوحدات من جديد. هذه آثار مالية ملموسة يمكن تخفيفها باتباع نهج استراتيجي للصيانة.
 
-## استراتيجيات وقائية للتجنب
+## استراتيجيات وقائية لتجنب الأعطال
 
 يدرك مديرو العقارات ذوو الأداء العالي أن دورهم لا يقتصر على الاستجابة للمشكلات، بل يشمل منعها بنشاط. يتضمن هذا التحول في العقلية تنفيذ عمليات منهجية تحدد وتعالج المشكلات المحتملة قبل أن تتجلى كإصلاحات مكلفة. يتعلق الأمر بالانتقال من عقلية "الإصلاح" التفاعلية إلى استراتيجية "المنع" الاستباقية.
 
@@ -138,4 +138,4 @@ Streamline your property maintenance and stop small issues becoming big bills. [
 - **الاستباقية مربحة:** التحول إلى عقلية وقائية يعزز الربحية وقيمة الأصول.
 - **البيانات تدفع القرارات:** استخدم بيانات العقارات لتحسين استراتيجيات وميزانيات الصيانة.
 
-قم بتبسيط صيانة عقاراتك وأوقف المشكلات الصغيرة لتجنب الفواتير الكبيرة. [تفضل بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تجمع أوامر العمل أعمال الصيانة في مكان منظم واحد عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

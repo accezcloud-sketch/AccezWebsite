@@ -4,7 +4,7 @@ titleAr: "القضاء على الليالي الفارغة: كيف تملأ ق�
 metaTitle: "Fill Rental Gaps with Minimum-Stay and Orphan-Night Rules"
 metaTitleAr: "املأ الليالي الفارغة بقواعد الحد الأدنى للإقامة"
 metaDescription: "Learn how minimum-stay and orphan-night rules cut costly gap nights in your rental calendar and lift occupancy, with practical examples to apply today."
-metaDescriptionAr: "تعرّف على كيف تقلل قواعد الحد الأدنى للإقامة والليالي اليتيمة من الليالي الفارغة المكلفة في تقويم الإيجار وترفع الإشغال، مع أمثلة عملية تطبقها اليوم."
+metaDescriptionAr: "اكتشف كيف تقلل قواعد الحد الأدنى للإقامة والليالي اليتيمة من الليالي الفارغة المكلفة في تقويم الإيجار وترفع الإشغال، مع أمثلة عملية تطبقها اليوم."
 primaryKeyword: "gap nights"
 excerpt: "Unoccupied nights in rental properties are a direct drain on revenue. Implementing strategic minimum-stay and orphan-night rules can effectively block these costly voids, ensuring a consistently full calendar and boosting your bottom line."
 excerptAr: "الليالي غير المشغولة في العقارات المؤجرة هي استنزاف مباشر للإيرادات. يمكن أن يؤدي تطبيق قواعد استراتيجية للحد الأدنى للإقامة والليالي اليتيمة إلى سد هذه الفجوات المكلفة بشكل فعال، مما يضمن تقويماً ممتلئاً باستمرار ويعزز أرباحك."
@@ -101,7 +101,8 @@ Adjust minimum stay requirements based on demand, seasonality, and property type
 -   Consistently high occupancy directly translates to increased profitability and operational efficiency.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
-Visit portal.accez.cloud
+
+See how one synced calendar helps you spot and fill gaps on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -158,7 +159,7 @@ Visit portal.accez.cloud
 
 ## الأسئلة الشائعة
 
-### كيف يمكنني إيقاف الحجوزات لليلة واحدة التي تخلق فجوات؟
+### كيف أمنع حجوزات الليلة الواحدة التي تخلق فجوات؟
 
 قم بتطبيق قواعد الحد الأدنى للإقامة. من خلال تحديد حد أدنى لليلتين أو ثلاث ليالٍ، فإنك تمنع تلقائيًا الحجوزات لليلة واحدة التي تؤدي إلى فجوات محبطة بين تسجيلات الدخول والمغادرة، مما يضمن إقامات أطول وأكثر ربحية.
 
@@ -185,4 +186,5 @@ Visit portal.accez.cloud
 -   الإشغال المرتفع باستمرار يترجم مباشرة إلى زيادة الربحية وكفاءة التشغيل.
 
 *هذا المقال معلومات عامة لمشغلي العقارات وليس استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
-تفضل بزيارة portal.accez.cloud
+
+اكتشف كيف يساعدك تقويم واحد متزامن على رصد الفجوات وملئها عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

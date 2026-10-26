@@ -7,7 +7,7 @@ metaDescription: "Clear policies, solid records and fast replies: how property m
 metaDescriptionAr: "سياسات واضحة وسجلات موثقة وردود سريعة: كيف يتعامل مديرو العقارات مع طلبات الاسترداد ورد المبالغ المدفوعة دون خسارة الإيرادات أو ثقة الضيوف والمستأجرين."
 primaryKeyword: "property management refunds chargebacks"
 excerpt: "Effectively manage refunds and chargebacks in property operations to safeguard revenue and maintain strong relationships with tenants and guests. Learn best practices for dispute resolution and proactive prevention."
-excerptAr: "قم بإدارة المبالغ المستردة ورد المبالغ المدفوعة بفعالية في عمليات العقارات لحماية الإيرادات والحفاظ على علاقات قوية مع المستأجرين والضيوف. تعرف على أفضل الممارسات لحل النزاعات والوقاية الاستباقية."
+excerptAr: "أدِر المبالغ المستردة ورد المبالغ المدفوعة بفعالية في عمليات العقارات لحماية الإيرادات والحفاظ على علاقات قوية مع المستأجرين والضيوف. تعرف على أفضل الممارسات لحل النزاعات والوقاية الاستباقية."
 date: "2026-08-29"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -53,7 +53,7 @@ When a dispute does arise, swift and fair resolution is paramount. This involves
 
 Operating within Saudi Arabia presents unique opportunities and regulatory considerations that can significantly affect refund and chargeback management. With Vision 2030 driving growth across real estate and hospitality, understanding local practice is crucial. For long-term rentals, the lease documented on Ejar, the national rental services platform supervised by the Real Estate General Authority, sets out the agreed terms and is the reference point if a payment is ever questioned.
 
-Digital payment is now the norm. For new residential Ejar contracts, [rent must be paid through Ejar's digital channels, mada and SADAD](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/), since January 2024. Guests booking short stays pay by card or wallet, which makes clear electronic refund and dispute procedures essential. For property managers and hotel operators, especially during peak seasons like Hajj and Umrah, ensuring seamless guest experiences and having clear protocols for unexpected issues is vital. **Understanding and following local licensing requirements and consumer protection rules is essential for preventing disputes before they arise.** For consumer rights and complaints in Saudi Arabia, the [Ministry of Commerce](https://mc.gov.sa/en) is the authoritative resource.
+Digital payment is now the norm. For new residential Ejar contracts, [rent must be paid through Ejar's digital channels, mada and SADAD](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/), since January 2024. Guests booking short stays pay by card or wallet, which makes clear electronic refund and dispute procedures essential. For property managers and hotel operators, especially during peak seasons like Hajj and Umrah, ensuring seamless guest experiences and having clear protocols for unexpected issues is vital. **Understanding and following local licensing requirements and consumer protection rules is essential for preventing disputes before they arise.** For consumer rights and complaints in Saudi Arabia, the [Ministry of Commerce](https://mc.gov.sa/en) is the authoritative resource. For the payment methods Saudi tenants and guests prefer, see our guide to [mada, STC Pay and Apple Pay](/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi/).
 
 ## How Accez.Cloud Helps You Manage Disputes
 
@@ -96,7 +96,7 @@ You can refuse a refund if the request **does not meet your policy's criteria or
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Streamline your property operations and handle refunds and chargebacks with confidence. Visit [portal.accez.cloud](https://portal.accez.cloud).
+See how billing and refunds work in Accez on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -128,11 +128,11 @@ Streamline your property operations and handle refunds and chargebacks with conf
 
 عندما ينشأ نزاع، يصبح الحل السريع والعادل أمراً بالغ الأهمية. ويشمل ذلك الاعتراف بقلق العميل فوراً، والتحقق من المشكلة بعناية، وإبلاغه بالنتائج بوضوح. كما أن منح موظفي الخط الأمامي صلاحية حل المشكلات البسيطة قد يمنع تصاعدها. فعلى سبيل المثال، قد يقدم الفندق ترقية مجانية أو خصماً على إقامة مستقبلية مقابل إزعاج بسيط، بدلاً من انتظار طلب استرداد رسمي. **فالحل السريع والمرضي كثيراً ما يحول تجربة قد تكون سلبية إلى تجربة إيجابية**، ويعزز ثقة العملاء.
 
-## التعامل مع المشهد العقاري في المملكة العربية السعودية
+## السوق العقاري في المملكة العربية السعودية
 
 يقدم العمل في المملكة العربية السعودية فرصاً فريدة واعتبارات تنظيمية قد تؤثر كثيراً في إدارة الاسترداد ورد المبالغ المدفوعة. ومع دفع رؤية 2030 للنمو في قطاعي العقار والضيافة، يصبح فهم الممارسات المحلية أمراً ضرورياً. ففي الإيجارات طويلة الأجل، يحدد العقد الموثق على منصة إيجار، وهي الشبكة الوطنية للخدمات الإيجارية التي تشرف عليها الهيئة العامة للعقار، الشروط المتفق عليها، وهو المرجع إذا ثار أي خلاف حول دفعة ما.
 
-وقد أصبح الدفع الرقمي هو القاعدة. فمنذ يناير 2024، [يجب دفع إيجار عقود إيجار السكنية الجديدة عبر القنوات الرقمية لمنصة إيجار، أي مدى وسداد](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/). ويدفع ضيوف الإقامات القصيرة بالبطاقات أو المحافظ الرقمية، مما يجعل وجود إجراءات واضحة للاسترداد والاعتراضات الإلكترونية أمراً أساسياً. وبالنسبة لمديري العقارات ومشغلي الفنادق، خاصة في مواسم الذروة مثل الحج والعمرة، فإن ضمان تجربة سلسة للضيوف ووجود بروتوكولات واضحة للمشكلات غير المتوقعة أمر حيوي. **ويعد فهم متطلبات الترخيص المحلية وقواعد حماية المستهلك والالتزام بها أمراً ضرورياً لمنع النزاعات قبل وقوعها.** وللاطلاع على حقوق المستهلك والشكاوى في المملكة، تُعد [وزارة التجارة](https://mc.gov.sa/en) المرجع الرسمي.
+وقد أصبح الدفع الرقمي هو القاعدة. فمنذ يناير 2024، [يجب دفع إيجار عقود إيجار السكنية الجديدة عبر القنوات الرقمية لمنصة إيجار، أي مدى وسداد](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/). ويدفع ضيوف الإقامات القصيرة بالبطاقات أو المحافظ الرقمية، مما يجعل وجود إجراءات واضحة للاسترداد والاعتراضات الإلكترونية أمراً أساسياً. وبالنسبة لمديري العقارات ومشغلي الفنادق، خاصة في مواسم الذروة مثل الحج والعمرة، فإن ضمان تجربة سلسة للضيوف ووجود بروتوكولات واضحة للمشكلات غير المتوقعة أمر حيوي. **ويعد فهم متطلبات الترخيص المحلية وقواعد حماية المستهلك والالتزام بها أمراً ضرورياً لمنع النزاعات قبل وقوعها.** وللاطلاع على حقوق المستهلك والشكاوى في المملكة، تُعد [وزارة التجارة](https://mc.gov.sa/en) المرجع الرسمي. وللاطلاع على طرق الدفع التي يفضلها المستأجرون والضيوف في المملكة، راجع دليلنا عن [مدى وSTC Pay وApple Pay](/ar/blog/mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi/).
 
 ## كيف يساعدك Accez.Cloud في إدارة النزاعات
 
@@ -175,4 +175,4 @@ Streamline your property operations and handle refunds and chargebacks with conf
 
 *هذا المقال معلومات عامة لمشغلي العقارات وليس مشورة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-بسّط عملياتك العقارية وتعامل مع الاسترداد ورد المبالغ المدفوعة بثقة. قم بزيارة [portal.accez.cloud](https://portal.accez.cloud).
+تعرّف على الفوترة والمبالغ المستردة في أكسيز عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

@@ -9,6 +9,7 @@ primaryKeyword: "saudi short term rental license"
 excerpt: "Navigating Saudi Arabia's short-term rental licensing can be complex. This guide provides a clear path to obtaining your STR permit efficiently, avoiding common pitfalls."
 excerptAr: "قد يكون التعامل مع لوائح ترخيص الإيجارات قصيرة الأجل في السعودية أمرًا معقدًا. يقدم هذا الدليل مسارًا واضحًا للحصول على تصريح الإيجار الخاص بك بكفاءة، وتجنب الأخطاء الشائعة."
 date: "2026-09-06"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit-.webp"
@@ -96,7 +97,7 @@ No. Booking platforms must remove unlicensed listings, and operating without a l
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Ready to simplify your Saudi property operations? [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez helps you run licensed units on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -106,7 +107,7 @@ Ready to simplify your Saudi property operations? [Visit portal.accez.cloud](htt
 
 ويتضاعف هذا التعقيد عند الحديث عن الترخيص. فما يبدو طلب تصريح بسيطًا قد يتحول سريعًا إلى سلسلة من المتطلبات والمستندات. وبالنسبة لمديري العقارات والملاك الراغبين في الاستفادة من نمو قطاع السياحة والضيافة في المملكة، فإن الحصول على ترخيص الإيجار قصير الأجل بالشكل الصحيح ليس مجرد إجراء بيروقراطي، بل خطوة حاسمة للعمل النظامي والنجاح على المدى الطويل. وقد تكون عقوبات المخالفة كبيرة وتؤثر في الربحية والسمعة معًا.
 
-## السير على الحبل التنظيمي: ما الذي يحدث بشكل خاطئ غالبًا
+## التحديات التنظيمية: أين تقع الأخطاء غالبًا
 
 السبب الأكثر شيوعًا لتعثر مشغلي العقارات في ترخيص الإيجارات قصيرة الأجل هو **الالتباس حول الجهة المسؤولة**. فالإيجارات قصيرة الأجل تُرخَّص من **وزارة السياحة**، وليس عبر منصة إيجار التي تُستخدم لتسجيل عقود الإيجار بين المؤجرين والمستأجرين.
 
@@ -114,7 +115,7 @@ Ready to simplify your Saudi property operations? [Visit portal.accez.cloud](htt
 
 كما أصبح التطبيق أكثر صرامة. فبموجب توجيه دخل حيز التنفيذ في 1 يناير 2025، ألزمت وزارة السياحة جميع منصات وتطبيقات الحجز بحذف إعلانات مرافق الضيافة السياحية والخاصة التي لا تحمل ترخيصًا ساريًا، [وفقًا لما نشرته صحيفة رياض ديلي](https://alriyadhdaily.com/article/aa8074dc0fc54afc9fab618770e10612). وقد يؤدي التشغيل دون ترخيص إلى غرامات تصل إلى مليون ريال، أو إغلاق المرفق، أو كليهما.
 
-## مفاتيح عملية الترخيص السلسة
+## مفاتيح الحصول على الترخيص بسلاسة
 
 يتعامل مديرو العقارات المتميزون في المملكة مع ترخيص الإيجارات قصيرة الأجل لا بوصفه عبئًا، بل جزءًا لا يتجزأ من استراتيجيتهم التشغيلية. فهم يدركون أن المبادرة المبكرة والفهم الشامل للمتطلبات أمران أساسيان.
 
@@ -126,7 +127,7 @@ Ready to simplify your Saudi property operations? [Visit portal.accez.cloud](htt
 
 يعني توجه المملكة نحو التحول الرقمي أن الترخيص يتم إلكترونيًا، وأن رقم الترخيص يجب أن يظهر في إعلاناتك. فعلى سبيل المثال، تطلب Airbnb من المضيفين إدخال رقم مرفق الضيافة السياحية الخاص، الذي يظهر للعموم في الإعلان، إلى جانب رقم الهوية الوطنية الذي يُستخدم للتحقق الحكومي فقط. ويحرص المتميزون على تنظيم أرقام التراخيص وتواريخ انتهائها وصكوك الملكية أو عقود الإيجار ومستندات السلامة في مكان واحد، لتظهر بيانات سارية في كل إعلان على كل قناة ولا يفوتهم أي تجديد. وإذا كنت تدير وحدات تستأجرها ولا تملكها، فتذكّر أن عقد الإيجار نفسه يجب تسجيله في منصة إيجار، ويشرح دليلنا عن [الامتثال لمتطلبات إيجار لمديري العقارات](/ar/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/) هذا الجانب.
 
-## مشهد ترخيص الإيجارات قصيرة الأجل في السعودية: رؤية 2030 وما بعدها
+## ترخيص الإيجارات قصيرة الأجل في السعودية: رؤية 2030 وما بعدها
 
 تضع رؤية المملكة 2030 السياحة في قلب التنويع الاقتصادي، وقد نما الطلب على الإقامات القصيرة معها. ويجعل هذا النمو وجود إطار ترخيص واضح أمرًا ضروريًا لضمان الجودة والسلامة وتجربة إيجابية للزوار.
 
@@ -175,4 +176,4 @@ Ready to simplify your Saudi property operations? [Visit portal.accez.cloud](htt
 
 *هذا المقال معلومات عامة لمشغلي العقارات وليس استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-هل أنت مستعد لتبسيط عمليات عقاراتك في السعودية؟ [تفضل بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تساعدك أكسيز على تشغيل الوحدات المرخصة في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

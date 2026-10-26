@@ -1,12 +1,12 @@
 ---
 title: "Vision 2030: Reshaping the Future of Property Management"
-titleAr: "رؤية 2030 تعيد تشكيل مستقبل إدارة الممتلكات"
+titleAr: "رؤية 2030 تصنع جيلًا جديدًا من مديري العقارات"
 metaTitle: "How Vision 2030 Is Changing Property Management in KSA"
 metaTitleAr: "كيف تغيّر رؤية 2030 إدارة العقارات في السعودية"
 metaDescription: "Vision 2030 is raising the bar for Saudi property managers. Learn the digital habits, data skills and compliance basics that set the new leaders apart."
 metaDescriptionAr: "ترفع رؤية 2030 سقف التوقعات من مديري العقارات في السعودية. تعرّف على العادات الرقمية ومهارات البيانات وأساسيات الامتثال التي تميّز القادة الجدد."
 excerpt: "Saudi Arabia's ambitious Vision 2030 is not just transforming the economy, but also the very role of property managers, demanding new skills and technological adoption."
-excerptAr: "رؤية المملكة 2030 الطموحة لا تحول الاقتصاد فحسب، بل وأيضاً دور مديري الممتلكات، مطالبة بمهارات جديدة واعتماد التكنولوجيا."
+excerptAr: "لا تقتصر رؤية المملكة 2030 على تحويل الاقتصاد، بل تغيّر دور مديري العقارات أيضًا، وتتطلب مهارات جديدة واعتمادًا أكبر على التقنية."
 date: "2026-05-27"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -50,7 +50,7 @@ Gone are the days of making decisions based on gut feelings alone. Leading prope
 
 Saudi Arabia's Vision 2030 is a powerful catalyst, driving significant changes that directly impact property management. The ambitious goals of economic diversification and an enhanced quality of life translate into massive urban development projects, increased foreign investment, and a growing population seeking modern housing and commercial spaces. This surge in demand, coupled with specific regulatory frameworks such as **Ejar**, the national platform for registering residential lease contracts, necessitates a more sophisticated and compliant approach to property management.
 
-The kingdom’s commitment to digital transformation is also visible in payments: local options such as **mada** cards and **SADAD** bill payments are part of everyday life, and tenants increasingly expect to pay rent online rather than by cheque or cash. Furthermore, understanding the **seasonal demand around Hajj and Umrah** is crucial for managing short-term rentals and commercial properties in relevant areas, requiring agile management strategies that can adapt to fluctuating occupancy and pricing. Population and housing data from the General Authority for Statistics (GASTAT) further underscores the need for scalable and efficient property management. The everyday use of smartphones and messaging apps also means communication strategies must be local, fast and easy to reach. This blend of national vision, regulatory requirements, and local digital habits creates a unique operational environment for property managers.
+The kingdom’s commitment to digital transformation is also visible in payments: local options such as **mada** cards and **SADAD** bill payments are part of everyday life, and tenants increasingly expect to pay rent online rather than by cheque or cash. Furthermore, understanding the **seasonal demand around Hajj and Umrah** is crucial for managing short-term rentals and commercial properties in relevant areas, requiring agile management strategies that can adapt to fluctuating occupancy and pricing. Population and housing data from the General Authority for Statistics (GASTAT) further underscores the need for scalable and efficient property management. The everyday use of smartphones and messaging apps also means communication strategies must be local, fast and easy to reach. This blend of national vision, regulatory requirements, and local digital habits creates a unique operational environment for property managers. Tourism growth also brings licensing rules for short stays; our guide to [short-term rental licensing in Saudi Arabia](/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/) explains what is required.
 
 ## How Accez.Cloud Helps You Adapt
 
@@ -78,7 +78,7 @@ Accez.Cloud is your partner in driving sustainable growth and maximizing asset v
 - Adapting to seasonal demand and local communication preferences, such as messaging apps, is key.
 - Accez.Cloud offers comprehensive solutions to meet these evolving needs.
 
-Navigate the future of property management with confidence. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez supports the new kind of property manager on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -86,7 +86,7 @@ Navigate the future of property management with confidence. [Visit portal.accez.
 
 هذا هو الواقع الذي يواجهه مديرو العقارات في المملكة العربية السعودية اليوم. السرعة المتزايدة للتنويع الاقتصادي والتحديث، المدفوعة برؤية 2030، تخلق نموذجاً جديداً. إنه مشهد لم تعد فيه الطرق القديمة كافية، وأصبح النهج الاستباقي والذكي تقنياً هو المعيار للنجاح. التوقعات من الملاك والمستأجرين على حد سواء تتطور، متجاوزة الصيانة الأساسية لتشمل تجربة عقارية شاملة ومتكاملة رقمياً.
 
-## المشهد المتطور الذي يكسر النماذج التقليدية
+## سوق متغير يتجاوز النماذج التقليدية
 
 لطالما تميز قطاع إدارة الممتلكات في المملكة العربية السعودية بعملياته اليدوية ونهجه التفاعلي في حل المشكلات. كان هذا يعمل بشكل كافٍ عندما كان السوق مستقراً نسبياً والطلب متوقعاً. ومع ذلك، فقد أشعلت رؤية 2030 طفرة في التطوير والاستثمار وزيادة هائلة في الطلب على مساحات المعيشة والعمل الحديثة. هذا التدفق، جنباً إلى جنب مع بيئة تنظيمية تتطور بسرعة، يكشف عن هشاشة الأنظمة القديمة.
 
@@ -108,11 +108,11 @@ Navigate the future of property management with confidence. [Visit portal.accez.
 
 لقد ولت الأيام التي كانت تتخذ فيها القرارات بناءً على الحدس وحده. يستخدم مديرو العقارات الرائدون البيانات لإعلام كل جانب من جوانب عملياتهم. هذا يعني تتبع [مؤشرات الأداء الرئيسية (KPIs)](/ar/blog/the-5-metrics-every-property-manager-should-check-daily/) مثل معدلات الإشغال، وكفاءة تحصيل الإيجارات، وأوقات الاستجابة للصيانة، وتقييمات رضا المستأجرين. من خلال تحليل هذه البيانات، يمكنهم تحديد مجالات التحسين، وتحسين استراتيجيات التسويق، وتقديم توصيات مستنيرة لأصحاب العقارات. يسمح هذا النهج المرتكز على البيانات **بالحل الاستباقي للمشكلات بدلاً من معالجة المشكلات بشكل تفاعلي**، مما يؤدي إلى أداء أفضل للأصول وثقة المستثمرين.
 
-## السياق السعودي المحدد: رؤية 2030 والتكيفات المحلية
+## السياق السعودي: رؤية 2030 ومتطلبات السوق المحلية
 
 تعتبر رؤية المملكة العربية السعودية 2030 محفزاً قوياً، تدفع تغييراً كبيراً يؤثر بشكل مباشر على إدارة الممتلكات. تترجم الأهداف الطموحة للتنويع الاقتصادي وتحسين جودة الحياة إلى مشاريع تطوير حضري ضخمة، وزيادة الاستثمار الأجنبي، وتزايد عدد السكان الذين يبحثون عن مساكن ومساحات تجارية حديثة. يتطلب هذا الارتفاع في الطلب، إلى جانب الأطر التنظيمية المحددة مثل **منصة "إيجار"** الوطنية لتوثيق عقود الإيجار السكنية، نهجاً أكثر تطوراً وتوافقاً مع الأنظمة في إدارة الممتلكات.
 
-ويتجلى التزام المملكة بالتحول الرقمي في المدفوعات أيضاً: فخيارات محلية مثل بطاقات **مدى** ومدفوعات فواتير **سداد** أصبحت جزءاً من الحياة اليومية، ويتوقع المستأجرون بشكل متزايد دفع الإيجار عبر الإنترنت بدلاً من الشيكات أو النقد. علاوة على ذلك، فإن فهم **الطلب الموسمي حول الحج والعمرة** أمر بالغ الأهمية لإدارة إيجارات الإقامات القصيرة والعقارات التجارية في المناطق ذات الصلة، ويتطلب استراتيجيات إدارة مرنة يمكنها التكيف مع تقلبات الإشغال والتسعير. وتؤكد بيانات السكان والمساكن الصادرة عن الهيئة العامة للإحصاء الحاجة إلى إدارة ممتلكات فعالة وقابلة للتوسع. كما أن الاستخدام اليومي للهواتف الذكية وتطبيقات المراسلة يعني أن استراتيجيات التواصل يجب أن تكون محلية وسريعة وسهلة الوصول. يخلق هذا المزيج من الرؤية الوطنية والمتطلبات التنظيمية والعادات الرقمية المحلية بيئة تشغيلية فريدة لمديري العقارات.
+ويتجلى التزام المملكة بالتحول الرقمي في المدفوعات أيضاً: فخيارات محلية مثل بطاقات **مدى** ومدفوعات فواتير **سداد** أصبحت جزءاً من الحياة اليومية، ويتوقع المستأجرون بشكل متزايد دفع الإيجار عبر الإنترنت بدلاً من الشيكات أو النقد. علاوة على ذلك، فإن فهم **الطلب الموسمي حول الحج والعمرة** أمر بالغ الأهمية لإدارة إيجارات الإقامات القصيرة والعقارات التجارية في المناطق ذات الصلة، ويتطلب استراتيجيات إدارة مرنة يمكنها التكيف مع تقلبات الإشغال والتسعير. وتؤكد بيانات السكان والمساكن الصادرة عن الهيئة العامة للإحصاء الحاجة إلى إدارة ممتلكات فعالة وقابلة للتوسع. كما أن الاستخدام اليومي للهواتف الذكية وتطبيقات المراسلة يعني أن استراتيجيات التواصل يجب أن تكون محلية وسريعة وسهلة الوصول. يخلق هذا المزيج من الرؤية الوطنية والمتطلبات التنظيمية والعادات الرقمية المحلية بيئة تشغيلية فريدة لمديري العقارات. ويأتي نمو السياحة أيضًا بقواعد ترخيص للإقامات القصيرة؛ ويشرح دليلنا عن [ترخيص الإيجار قصير الأجل في السعودية](/ar/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/) المتطلبات اللازمة.
 
 ## كيف تساعدك Accez.Cloud على التكيف
 
@@ -140,4 +140,4 @@ Accez.Cloud هي شريكك في قيادة النمو المستدام وتعظ
 - التكيف مع الطلب الموسمي وتفضيلات التواصل المحلية، مثل تطبيقات المراسلة، أمر أساسي.
 - تقدم Accez.Cloud حلولاً شاملة لتلبية هذه الاحتياجات المتطورة.
 
-تنقل في مستقبل إدارة الممتلكات بثقة. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تدعم أكسيز الجيل الجديد من مديري العقارات في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

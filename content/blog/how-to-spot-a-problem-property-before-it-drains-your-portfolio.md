@@ -1,12 +1,12 @@
 ---
 title: "Spotting Problem Properties Before They Sink Your Portfolio"
-titleAr: "اكتشاف العقارات المشكلة قبل أن تغرق محفظتك"
+titleAr: "اكتشف العقار المتعثر قبل أن يستنزف محفظتك"
 metaTitle: "How to Spot a Problem Property Before It Drains You"
-metaTitleAr: "كيف تكتشف العقار المشكل قبل أن يستنزف محفظتك"
+metaTitleAr: "كيف تكتشف العقار المتعثر قبل أن يستنزف محفظتك"
 metaDescription: "Learn the early warning signs of a problem property, from deferred maintenance to high turnover, and how to act before it drags down your whole portfolio."
-metaDescriptionAr: "تعرّف على العلامات المبكرة للعقار المشكل، من الصيانة المؤجلة إلى ارتفاع دوران المستأجرين، وكيف تتصرف قبل أن يؤثر سلباً على أداء محفظتك العقارية بأكملها."
+metaDescriptionAr: "تعرّف على العلامات المبكرة للعقار المتعثر، من الصيانة المؤجلة إلى ارتفاع دوران المستأجرين، وكيف تتصرف قبل أن يؤثر سلباً على أداء محفظتك العقارية بأكملها."
 excerpt: "Don't let underperforming assets drag down your real estate investments. Learn to identify and mitigate problem properties proactively."
-excerptAr: "لا تدع الأصول ضعيفة الأداء تسحب استثماراتك العقارية إلى الأسفل. تعلم كيفية تحديد العقارات المشكلة والتخفيف من حدتها بشكل استباقي."
+excerptAr: "لا تدع الأصول ضعيفة الأداء تسحب استثماراتك العقارية إلى الأسفل. تعلّم كيف ترصد العقارات المتعثرة وتعالج مشكلاتها مبكرًا."
 date: "2026-06-28"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -44,7 +44,7 @@ The foundation of a well-performing rental property is a stable, reliable tenant
 
 ### Financial Benchmarking and Performance Monitoring
 
-Exceptional property managers continuously monitor the financial performance of their assets against established benchmarks. They track key performance indicators (KPIs) such as occupancy rates, collection rates, maintenance costs, and net operating income (NOI) for each property. **Regular financial reviews are not a quarterly or annual event; they are a continuous process**, built on a short list of [metrics every property manager should check daily](/blog/the-5-metrics-every-property-manager-should-check-daily/). This allows for the early detection of deviations from expected performance. If a property’s expenses begin to trend upwards disproportionately or its revenue dips unexpectedly, it triggers an investigation. This proactive financial oversight enables timely intervention, whether it's adjusting rental rates, renegotiating service contracts, or addressing underlying operational inefficiencies before they become critical issues.
+Exceptional property managers continuously monitor the financial performance of their assets against established benchmarks. They track key performance indicators (KPIs) such as occupancy rates, collection rates, maintenance costs, and net operating income (NOI) for each property. **Regular financial reviews are not a quarterly or annual event; they are a continuous process**, built on a short list of [metrics every property manager should check daily](/blog/the-5-metrics-every-property-manager-should-check-daily/). This allows for the early detection of deviations from expected performance. If a property’s expenses begin to trend upwards disproportionately or its revenue dips unexpectedly, it triggers an investigation. This proactive financial oversight enables timely intervention, whether it's adjusting rental rates, renegotiating service contracts, or addressing underlying operational inefficiencies before they become critical issues. Feed those numbers into a [cash flow forecast](/blog/cash-flow-forecasting-for-property-management-businesses/) so a weak property shows up before it strains your finances.
 
 ## Problem Properties in the Saudi Market
 
@@ -75,7 +75,7 @@ By leveraging Accez.Cloud, you can transform your property management approach f
 - **Leveraging digital communication tools** enhances tenant satisfaction and operational efficiency.
 - **Data-driven decision-making** empowers managers to spot and address problems before they impact the portfolio.
 
-Don't let underperforming assets sink your real estate dreams. Proactively identify and manage potential problems with Accez.Cloud. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how the properties overview helps you spot a struggling property early on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -103,7 +103,7 @@ Don't let underperforming assets sink your real estate dreams. Proactively ident
 
 ### القياس المالي ومراقبة الأداء
 
-يراقب مديرو العقارات الاستثنائيون باستمرار الأداء المالي لأصولهم مقابل معايير محددة. يتتبعون مؤشرات الأداء الرئيسية (KPIs) مثل معدلات الإشغال، ومعدلات التحصيل، وتكاليف الصيانة، وصافي الدخل التشغيلي (NOI) لكل عقار. **المراجعات المالية المنتظمة ليست حدثًا ربع سنويًا أو سنويًا؛ إنها عملية مستمرة**، تقوم على قائمة قصيرة من [المقاييس التي يجب أن يتحقق منها مدير العقارات يوميًا](/ar/blog/the-5-metrics-every-property-manager-should-check-daily/). هذا يسمح بالكشف المبكر عن الانحرافات عن الأداء المتوقع. إذا بدأت نفقات عقار ما في الاتجاه التصاعدي بشكل غير متناسب أو انخفضت إيراداته بشكل غير متوقع، فإن ذلك يتطلب تحقيقًا. تسمح هذه الرقابة المالية الاستباقية بالتدخل في الوقت المناسب، سواء كان ذلك تعديل أسعار الإيجار، أو إعادة التفاوض على عقود الخدمة، أو معالجة أوجه القصور التشغيلية الأساسية قبل أن تصبح مشاكل حرجة.
+يراقب مديرو العقارات الاستثنائيون باستمرار الأداء المالي لأصولهم مقابل معايير محددة. يتتبعون مؤشرات الأداء الرئيسية (KPIs) مثل معدلات الإشغال، ومعدلات التحصيل، وتكاليف الصيانة، وصافي الدخل التشغيلي (NOI) لكل عقار. **المراجعات المالية المنتظمة ليست حدثًا ربع سنويًا أو سنويًا؛ إنها عملية مستمرة**، تقوم على قائمة قصيرة من [المقاييس التي يجب أن يتحقق منها مدير العقارات يوميًا](/ar/blog/the-5-metrics-every-property-manager-should-check-daily/). هذا يسمح بالكشف المبكر عن الانحرافات عن الأداء المتوقع. إذا بدأت نفقات عقار ما في الاتجاه التصاعدي بشكل غير متناسب أو انخفضت إيراداته بشكل غير متوقع، فإن ذلك يتطلب تحقيقًا. تسمح هذه الرقابة المالية الاستباقية بالتدخل في الوقت المناسب، سواء كان ذلك تعديل أسعار الإيجار، أو إعادة التفاوض على عقود الخدمة، أو معالجة أوجه القصور التشغيلية الأساسية قبل أن تصبح مشاكل حرجة. وأدخل هذه الأرقام في [توقعات التدفق النقدي](/ar/blog/cash-flow-forecasting-for-property-management-businesses/) ليظهر العقار الضعيف قبل أن يرهق أموالك.
 
 ## العقارات المتعثرة في السوق السعودي
 
@@ -134,4 +134,4 @@ Don't let underperforming assets sink your real estate dreams. Proactively ident
 - **الاستفادة من أدوات الاتصال الرقمية** يعزز رضا المستأجرين والكفاءة التشغيلية.
 - **اتخاذ القرارات المستندة إلى البيانات** يمكّن المديرين من اكتشاف المشكلات ومعالجتها قبل أن تؤثر على المحفظة.
 
-لا تدع الأصول ضعيفة الأداء تغرق أحلامك العقارية. حدد المشكلات المحتملة وقم بإدارتها بشكل استباقي باستخدام Accez.Cloud. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تساعدك النظرة العامة على العقارات في رصد العقار المتعثر مبكرًا عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

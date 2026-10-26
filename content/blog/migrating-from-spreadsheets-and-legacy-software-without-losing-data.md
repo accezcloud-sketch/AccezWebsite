@@ -7,7 +7,7 @@ metaDescription: "How to migrate property data from spreadsheets and legacy soft
 metaDescriptionAr: "ترحيل بيانات العقارات من جداول البيانات والبرامج القديمة دون فقدانها: نظّف البيانات، وطابق الحقول، واستورد على مراحل، وتحقق قبل الانتقال الكامل."
 primaryKeyword: "migrate data from spreadsheets"
 excerpt: "Moving your property operations from outdated spreadsheets and legacy software can seem daunting, but with the right strategy, you can ensure a seamless transition and prevent data loss. This guide outlines key steps to a successful migration."
-excerptAr: "قد يبدو نقل عملياتك العقارية من جداول البيانات القديمة والبرامج القديمة أمرًا شاقًا، ولكن مع الاستراتيجية الصحيحة، يمكنك ضمان انتقال سلس ومنع فقدان البيانات. هذا الدليل يوضح الخطوات الرئيسية للترحيل الناجح."
+excerptAr: "قد يبدو نقل عملياتك العقارية من جداول البيانات والبرامج القديمة أمرًا شاقًا، ولكن مع الاستراتيجية الصحيحة، يمكنك ضمان انتقال سلس ومنع فقدان البيانات. هذا الدليل يوضح الخطوات الرئيسية للترحيل الناجح."
 date: "2026-10-16"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -43,7 +43,7 @@ Top performers recognize that fragmented data across multiple spreadsheets and d
 
 ### Investing in Scalable, Integrated Solutions
 
-Instead of relying on point solutions that address only one aspect of their operations, leading organizations invest in comprehensive, integrated platforms. These modern solutions are built with **scalability and interoperability in mind**, allowing them to adapt to growing portfolios and evolving market demands. The ability to integrate with other essential services, such as payment gateways or communication tools, further streamlines workflows and enhances data flow. This strategic investment ensures that their operational backbone can support future growth and technological advancements, minimizing the need for disruptive migrations down the line.
+Instead of relying on point solutions that address only one aspect of their operations, leading organizations invest in comprehensive, integrated platforms. These modern solutions are built with **scalability and interoperability in mind**, allowing them to adapt to growing portfolios and evolving market demands. The ability to integrate with other essential services, such as payment gateways or communication tools, further streamlines workflows and enhances data flow. This strategic investment ensures that their operational backbone can support future growth and technological advancements, minimizing the need for disruptive migrations down the line. Before you pick the system you will move to, work through our [checklist for choosing property management software in Saudi Arabia](/blog/how-to-choose-property-management-software-in-saudi-arabia/).
 
 ## Navigating the Digital Shift in Saudi Arabia's Property Market
 
@@ -94,7 +94,7 @@ Yes, a phased migration approach is key. This involves migrating data and functi
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Ready to move your property operations forward? [Visit portal.accez.cloud](https://portal.accez.cloud)
+See where each kind of record lives in Accez on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -120,9 +120,9 @@ Ready to move your property operations forward? [Visit portal.accez.cloud](https
 
 ### الاستثمار في حلول قابلة للتطوير ومتكاملة
 
-بدلاً من الاعتماد على حلول نقطية تعالج جانبًا واحدًا فقط من عملياتهم، تستثمر المؤسسات الرائدة في منصات شاملة ومتكاملة. تم تصميم هذه الحلول الحديثة مع **قابلية التوسع وقابلية التشغيل البيني في الاعتبار**، مما يسمح لها بالتكيف مع محافظ متنامية ومتطلبات السوق المتطورة. القدرة على التكامل مع الخدمات الأساسية الأخرى، مثل بوابات الدفع أو أدوات الاتصال، تزيد من تبسيط سير العمل وتعزيز تدفق البيانات. يضمن هذا الاستثمار الاستراتيجي أن تكون بنيتهم التشغيلية قادرة على دعم النمو المستقبلي والتقدم التكنولوجي، مما يقلل الحاجة إلى عمليات ترحيل مزعجة في المستقبل.
+بدلاً من الاعتماد على حلول نقطية تعالج جانبًا واحدًا فقط من عملياتهم، تستثمر المؤسسات الرائدة في منصات شاملة ومتكاملة. تم تصميم هذه الحلول الحديثة مع **قابلية التوسع وقابلية التشغيل البيني في الاعتبار**، مما يسمح لها بالتكيف مع محافظ متنامية ومتطلبات السوق المتطورة. القدرة على التكامل مع الخدمات الأساسية الأخرى، مثل بوابات الدفع أو أدوات الاتصال، تزيد من تبسيط سير العمل وتعزيز تدفق البيانات. يضمن هذا الاستثمار الاستراتيجي أن تكون بنيتهم التشغيلية قادرة على دعم النمو المستقبلي والتقدم التكنولوجي، مما يقلل الحاجة إلى عمليات ترحيل مزعجة في المستقبل. وقبل أن تختار النظام الذي ستنتقل إليه، راجع [قائمة التحقق لاختيار برنامج إدارة العقارات في السعودية](/ar/blog/how-to-choose-property-management-software-in-saudi-arabia/).
 
-## التنقل في التحول الرقمي في سوق العقارات السعودي
+## التحول الرقمي في سوق العقارات السعودي
 
 تشهد المملكة العربية السعودية تحولًا رقميًا هائلاً، مع قطاع العقارات في طليعة هذا التحول. تؤكد مبادرات مثل **رؤية 2030** على الكفاءة والشفافية وتبني التقنيات المتقدمة في جميع الصناعات، بما في ذلك العقارات والضيافة. بالنسبة لمديري العقارات والمطورين والمشغلين، يعني هذا ضرورة متزايدة لتحديث العمليات والامتثال للأطر التنظيمية المتطورة. يتطلب الامتثال للوائح مثل **إيجار**، نظام التأجير في المملكة، إدارة دقيقة وحديثة للبيانات للعقود ومعلومات المستأجرين والمدفوعات.
 
@@ -171,4 +171,4 @@ Ready to move your property operations forward? [Visit portal.accez.cloud](https
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست نصيحة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع متخصص مؤهل.*
 
-هل أنت مستعد لتطوير عملياتك العقارية؟ [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اطّلع على مكان كل نوع من السجلات في أكسيز عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

@@ -32,6 +32,8 @@ Starting with property management in Accez.Cloud is simple and straightforward. 
 
 Begin by logging into your Accez.Cloud property manager portal. From your dashboard, navigate to the Properties section. If you're just getting started, you'll see an empty properties page ready for your first listing.
 
+![Accez dashboard overview showing total properties, tenants and revenue, with the occupancy tracker below](/product/pm/en/dashboard-1400.webp)
+
 ## Step 2: Create Your First Property
 
 Click on the "Add Property" button to begin the creation process. A form will appear where you'll enter your property's basic information:
@@ -56,6 +58,8 @@ Once you've completed all the necessary information, it's time to make your prop
 
 You can verify the publication by clicking on the property card and navigating to the property overview section. Once the property is live, the next step is to [create and manage its units](/blog/how-to-create-manage-units-accez-cloud/).
 
+![Property overview in Accez showing total revenue, active residents, total units and work orders for one property](/product/pm/en/property-overview-1400.webp)
+
 ## Step 5: Edit and Update Properties
 
 Need to make changes? No problem! Navigate back to your properties list and select the property you want to edit. You can:
@@ -65,7 +69,7 @@ Need to make changes? No problem! Navigate back to your properties list and sele
 - Change property details
 - Update availability status
 
-After making your changes, click the submit button to save your updates. When a tenant reports a problem at the property, you can log it as a work order; our guide to [creating and managing work orders in Accez.Cloud](/blog/how-to-create-manage-work-orders-accez-cloud/) shows how. For an overview of everything the platform covers, see the [Accez property management solution](/solutions/property-managers/).
+After making your changes, click the submit button to save your updates. When a tenant reports a problem at the property, you can log it as a work order; our guide to [creating and managing work orders in Accez.Cloud](/blog/how-to-create-manage-work-orders-accez-cloud/) shows how.
 
 ## Watch the Full Video Tutorial
 
@@ -80,6 +84,8 @@ For a visual walkthrough of the entire property creation process, watch our comp
 - Complete address information is essential for property management
 - Properties can be edited and updated at any time
 - The property card provides quick access to all property details
+
+For everything else the platform covers, from leases to billing, see the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -97,6 +103,8 @@ For a visual walkthrough of the entire property creation process, watch our comp
 
 ابدأ بتسجيل الدخول إلى بوابة مدير العقارات في Accez.Cloud. من لوحة التحكم، انتقل إلى قسم العقارات. إذا كنت قد بدأت للتو، سترى صفحة عقارات فارغة جاهزة لأول قائمة لك.
 
+![لوحة تحكم أكسيز وتظهر فيها أعداد العقارات والمستأجرين والإيرادات ومتتبع الإشغال](/product/pm/ar/dashboard-1400.webp)
+
 ## الخطوة 2: إنشاء أول عقار لك
 
 انقر على زر "إضافة عقار" لبدء عملية الإنشاء. سيظهر نموذج حيث ستدخل المعلومات الأساسية لعقارك:
@@ -112,7 +120,7 @@ For a visual walkthrough of the entire property creation process, watch our comp
 بعد الإنشاء، سيكون عقارك في حالة مسودة. انقر على بطاقة العقار للوصول إلى قسم تفاصيل العقار. هنا ستقوم بـ:
 
 - **رفع صور العقار**: اختر صوراً عالية الجودة تُظهر أفضل ميزات عقارك
-- **إضافة معلومات العنوان**: أدخل العنوان الكامل بما في ذلك الشارع والمدينة والولاية والرمز البريدي
+- **إضافة معلومات العنوان**: أدخل العنوان الكامل بما في ذلك الشارع والمدينة والمنطقة والرمز البريدي
 - **تضمين تفاصيل إضافية**: أضف أي معلومات أخرى ذات صلة بالعقار
 
 ## الخطوة 4: نشر عقارك
@@ -120,6 +128,8 @@ For a visual walkthrough of the entire property creation process, watch our comp
 بمجرد إكمال جميع المعلومات اللازمة، حان وقت جعل عقارك مباشراً. انقر على زر "نشر العقار". سيكون عقارك الآن نشطاً ومرئياً في نظام إدارة العقارات الخاص بك.
 
 يمكنك التحقق من النشر بالنقر على بطاقة العقار والانتقال إلى قسم نظرة عامة على العقار. وبعد أن يصبح العقار نشطاً، تكون الخطوة التالية [إنشاء وحداته وإدارتها](/ar/blog/how-to-create-manage-units-accez-cloud/).
+
+![نظرة عامة على العقار في أكسيز تعرض إجمالي الإيرادات والمقيمين النشطين وإجمالي الوحدات وأوامر العمل](/product/pm/ar/property-overview-1400.webp)
 
 ## الخطوة 5: تعديل وتحديث العقارات
 
@@ -130,7 +140,7 @@ For a visual walkthrough of the entire property creation process, watch our comp
 - تغيير تفاصيل العقار
 - تحديث حالة التوفر
 
-بعد إجراء تغييراتك، انقر على زر الإرسال لحفظ تحديثاتك. وعندما يبلغ مستأجر عن مشكلة في العقار، يمكنك تسجيلها كأمر عمل؛ ويوضح دليلنا عن [إنشاء أوامر العمل وإدارتها في Accez.Cloud](/ar/blog/how-to-create-manage-work-orders-accez-cloud/) طريقة ذلك. وللاطلاع على كل ما تغطيه المنصة، راجع [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/).
+بعد إجراء تغييراتك، انقر على زر الإرسال لحفظ تحديثاتك. وعندما يبلغ مستأجر عن مشكلة في العقار، يمكنك تسجيلها كأمر عمل؛ ويوضح دليلنا عن [إنشاء أوامر العمل وإدارتها في Accez.Cloud](/ar/blog/how-to-create-manage-work-orders-accez-cloud/) طريقة ذلك.
 
 ## شاهد الفيديو التعليمي الكامل
 
@@ -145,3 +155,6 @@ For a visual walkthrough of the entire property creation process, watch our comp
 - معلومات العنوان الكاملة ضرورية لإدارة العقارات
 - يمكن تعديل وتحديث العقارات في أي وقت
 - توفر بطاقة العقار وصولاً سريعاً لجميع تفاصيل العقار
+
+وللاطلاع على كل ما تغطيه المنصة، من العقود إلى الفوترة، زر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).
+

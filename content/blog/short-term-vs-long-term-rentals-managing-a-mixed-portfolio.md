@@ -1,13 +1,13 @@
 ---
 title: "Short-Term vs Long-Term Rentals: Managing a Mixed Portfolio Without the Headaches"
-titleAr: "الإيجارات قصيرة الأجل مقابل طويلة الأجل: إدارة محفظة مختلطة بدون صداع"
+titleAr: "الإيجارات قصيرة الأجل مقابل طويلة الأجل: إدارة محفظة مختلطة دون عناء"
 metaTitle: "Mixed Rental Portfolio Management Guide"
 metaTitleAr: "دليل إدارة المحفظة العقارية المختلطة"
 metaDescription: "How to run short-term and long-term rentals side by side: reservations, leases, maintenance and owner reporting for a mixed portfolio in Saudi Arabia."
 metaDescriptionAr: "كيف تدير الإيجارات قصيرة الأجل وطويلة الأجل جنباً إلى جنب: الحجوزات وعقود الإيجار والصيانة وتقارير المالكين لمحفظة عقارية مختلطة في المملكة العربية السعودية."
 primaryKeyword: "mixed rental portfolio management"
 excerpt: "Effectively manage mixed short-term and long-term rental portfolios by understanding operational differences, leveraging technology, and implementing streamlined processes for maximum profitability and tenant satisfaction."
-excerptAr: "قم بإدارة محافظ الإيجارات قصيرة وطويلة الأجل المختلطة بفعالية من خلال فهم الاختلافات التشغيلية، والاستفادة من التكنولوجيا، وتنفيذ عمليات مبسطة لتحقيق أقصى قدر من الربحية ورضا المستأجرين."
+excerptAr: "أدِر محافظ الإيجارات قصيرة وطويلة الأجل المختلطة بفعالية من خلال فهم الاختلافات التشغيلية، والاستفادة من التكنولوجيا، وتنفيذ عمليات مبسطة لتحقيق أقصى قدر من الربحية ورضا المستأجرين."
 date: "2026-09-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -105,7 +105,7 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez runs short stays and long leases in one system on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -135,11 +135,11 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 يقوم أصحاب الأداء العالي بمركزية أنظمة الحجز الخاصة بهم. هذا يعني استخدام **منصة واحدة تتكامل مع Airbnb وBooking.com وExpedia**، مما يضمن تزامن التقويمات والأسعار تلقائيًا. هذا يمنع الحجوزات المزدوجة ويضمن تحسين الأسعار عبر جميع المنصات، مما يلتقط أقصى قدر من الإيرادات لكل من الإقامات قصيرة الأجل وتحديد الفرص للحجوزات الأطول عندما تسمح أنماط الطلب بذلك. إنهم يستفيدون من **أدوات التسعير الذكية** التي يمكنها التكيف مع طلب السوق للإيجارات قصيرة الأجل مع الحفاظ على أسعار تنافسية للالتزامات الأطول. هذا النهج الاستباقي لإدارة القنوات بالغ الأهمية، ويتناول [دليلنا لاستراتيجية مدة الإقامة](/ar/blog/length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates/) متى تكون الإقامة الأطول أفضل من سعر ليلي أعلى.
 
-### مراكز اتصال متكاملة
+### قنوات تواصل موحدة
 
 لمعالجة احتياجات الاتصال المتنوعة، يقوم كبار المشغلين بتطبيق **منصات اتصال مركزية**. تسمح هذه المنصات بالاتصال المقسم: قنوات منفصلة للضيوف على المدى القصير والمقيمين على المدى الطويل، مما يضمن أن تكون الرسائل ذات صلة وفي الوقت المناسب. يمكن إعداد اتصالات آلية قبل الوصول وبعد المغادرة للضيوف على المدى القصير، بينما يمكن إنشاء قنوات مخصصة لطلبات الصيانة وتجديدات عقود الإيجار للمقيمين على المدى الطويل. هذا لا يعزز التجربة لكلا الشريحتين فحسب، بل **يقلل أيضًا من العبء الإداري على فريق العمليات**.
 
-### تتبع أوامر العمل والصيانة المبسط
+### تتبع مبسط لأوامر العمل والصيانة
 
 الفرق بين الجيد والرائع غالبًا ما يكون في تفاصيل الصيانة. يستخدم المديرون أصحاب الأداء العالي **أنظمة أوامر عمل متكاملة** يمكنها التعامل مع إلحاح تحويلات الإيجارات قصيرة الأجل (مثل التنظيف السريع والإصلاحات الطفيفة) والطبيعة المخطط لها للعناية بالممتلكات على المدى الطويل. يمكنهم تعيين المهام للفرق الداخلية أو لمقدمي الخدمات الخارجيين، وتتبع التقدم في الوقت الفعلي، والحفاظ على سجل مفصل لجميع أنشطة الصيانة لكل وحدة. هذا يضمن أن العقارات جاهزة دائمًا للضيوف وأن مشكلات المستأجرين يتم حلها بكفاءة، **مما يقلل من وقت التوقف عن العمل وعدم رضا المستأجرين**. كما تساعد الصيانة الاستباقية، المدعومة بمثل هذه الأنظمة، على إبقاء تكاليف الإصلاح تحت السيطرة.
 
@@ -193,4 +193,4 @@ Yes, managing both can be highly profitable by diversifying revenue streams and 
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست نصيحة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع متخصص مؤهل.*
 
-[قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تدير أكسيز الإقامات القصيرة والعقود الطويلة في نظام واحد عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

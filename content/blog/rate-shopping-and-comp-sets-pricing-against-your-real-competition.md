@@ -4,7 +4,7 @@ titleAr: "رصد الأسعار والمجموعات المقارنة: التس�
 metaTitle: "Rate Shopping & Comp Sets for Property Pricing"
 metaTitleAr: "رصد الأسعار والمجموعات المقارنة لتسعير العقارات"
 metaDescription: "Master rate shopping and competitive sets to price your Saudi properties against the rivals guests really compare you with, and stop pricing in a vacuum."
-metaDescriptionAr: "إتقان رصد الأسعار والمجموعات التنافسية لتسعير عقاراتك بفعالية في السوق الديناميكي في المملكة العربية السعودية. تعلم كيف تتفوق على المنافسة. احصل على رؤى."
+metaDescriptionAr: "أتقن رصد الأسعار وبناء المجموعات التنافسية لتسعير عقاراتك بفعالية في السوق السعودي المتغير، وتعلّم كيف تتفوق على منافسيك الحقيقيين."
 primaryKeyword: "rate shopping property pricing"
 excerpt: "Effective property pricing in Saudi Arabia requires more than just looking at your own costs. It means understanding the market through strategic rate shopping and building accurate competitive sets. This guide helps you price against your real rivals."
 excerptAr: "التسعير الفعال للعقارات في المملكة العربية السعودية يتطلب أكثر من مجرد النظر إلى تكاليفك الخاصة. إنه يعني فهم السوق من خلال الرصد الاستراتيجي للأسعار وبناء مجموعات تنافسية دقيقة. هذا الدليل يساعدك على التسعير في مواجهة منافسيك الحقيقيين."
@@ -103,7 +103,7 @@ Yes, you can price your property higher if you can demonstrate superior value, s
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+See how bulk price updates and the properties overview work on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -117,7 +117,7 @@ Yes, you can price your property higher if you can demonstrate superior value, s
 
 يكمن جوهر هذا التحدي في تقييم موقعك بدقة بالنسبة للاعبين الفعليين في سوقك المحلي. بدون فهم واضح لما يقدمه منافسوك المباشرون وبأي أسعار، فإنك تخاطر بالتسعير المبالغ فيه وفقدان المستأجرين أو المشترين المحتملين، أو التسعير المنخفض وترك المال على الطاولة. هذا الانفصال بين التصور الداخلي والواقع الخارجي هو عقبة كبيرة أمام تحقيق الأداء الأمثل للأصول.
 
-## مخاطر التسعير في فراغ
+## مخاطر التسعير بمعزل عن السوق
 
 تسعير العقار دون فهم قوي للمشهد التنافسي يشبه الإبحار بدون بوصلة. هنا يصبح مفهوما "رصد الأسعار" و "المجموعات التنافسية" أدوات لا غنى عنها. يتضمن رصد الأسعار البحث النشط عن أسعار العقارات المماثلة في سوقك المستهدف. الأمر لا يقتصر على النظر إلى الأسعار المدرجة علنًا؛ بل يتعلق بفهم أسعار المعاملات الفعلية، والتنازلات، والقيمة المتصورة التي يقدمها منافسوك.
 
@@ -189,4 +189,4 @@ Yes, you can price your property higher if you can demonstrate superior value, s
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع متخصص مؤهل.*
 
-[قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+تعرّف على التحديث الجماعي للأسعار والنظرة العامة على العقارات في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

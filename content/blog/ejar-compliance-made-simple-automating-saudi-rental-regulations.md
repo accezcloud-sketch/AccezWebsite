@@ -8,6 +8,7 @@ metaDescriptionAr: "ما الذي يعنيه إيجار للمؤجرين ومد�
 excerpt: "Navigating Saudi Arabia's evolving rental regulations can be a minefield for property managers. Learn what Ejar requires and how keeping lease and payment records in order makes compliance simpler."
 excerptAr: "يمكن أن يكون التنقل في لوائح الإيجار المتغيرة في المملكة العربية السعودية بمثابة حقل ألغام لمديري العقارات. تعرّف على متطلبات منصة إيجار وكيف يسهّل تنظيم سجلات العقود والمدفوعات الامتثال لها."
 date: "2026-04-22"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/ejar-compliance-made-simple-automating-saudi-rental-regulati.webp"
@@ -76,7 +77,7 @@ The result is less manual tracking and fewer gaps between what is registered on 
 *   Standardized Ejar contracts are enforceable instruments, so keep to the standard terms where you can.
 *   Accez.Cloud keeps leases, rent status, owner statements and tenant messages organised alongside the contracts you register on Ejar.
 
-Simplify your rental operations and keep your lease records in order. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps lease records in order on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -102,7 +103,7 @@ Simplify your rental operations and keep your lease records in order. [Visit por
 
 لا يقوم كبار مديري العقارات بأتمتة المهام فحسب؛ بل يستخدمون البيانات التي تولدها هذه الأنظمة المؤتمتة لاتخاذ قرارات أذكى. بدلاً من الاعتماد على الحدس أو جداول البيانات القديمة، لديهم وصول إلى **تحليلات في الوقت الفعلي حول معدلات الإشغال واتجاهات الدفع وانتهاء عقود الإيجار**. يتيح هذا النهج المستند إلى البيانات لهم تحديد الشواغر المحتملة بشكل استباقي، وتحسين استراتيجيات التسعير، وتوقع تقلبات التدفق النقدي. هذا التركيز على البيانات يسمح لهم ليس فقط بإدارة محفظتهم الحالية بشكل أكثر فعالية، بل أيضاً بتوسيع نطاق عملياتهم بثقة أكبر ورؤية استراتيجية.
 
-## التنقل في المشهد السعودي المتطور مع إيجار
+## منصة إيجار والأنظمة السعودية المتطورة
 
 تتضمن رؤية السعودية 2030 الطموحة تركيزاً قوياً على تحديث اقتصادها وتحسين نوعية حياة مواطنيها، مع التركيز بشكل كبير على قطاع عقاري أكثر تنظيماً وشفافية. ومنصة إيجار، التي تشرف عليها الهيئة العامة للعقار، هي حجر الزاوية في هذه المبادرة، إذ تضفي الهيكلة والمساءلة على عقود الإيجار في جميع أنحاء المملكة. ويكشف حجمها عن مدى مركزيتها: فقد [أعلنت الهيئة العامة للعقار تسجيل أكثر من 10 ملايين عقد إيجار على المنصة](https://rega.gov.sa/en/media-center/news-announcements/ejar-registers-over-10-million-rental-contracts-since-launch/) حتى سبتمبر 2024، نحو 82% منها عقود سكنية. وهناك ثلاث قواعد هي الأهم في العمل اليومي:
 
@@ -136,4 +137,4 @@ Simplify your rental operations and keep your lease records in order. [Visit por
 *   عقود إيجار الموحدة سندات تنفيذية، لذا التزم بالبنود الموحدة قدر الإمكان.
 *   ينظم Accez.Cloud العقود وحالة الإيجار وكشوف الملاك ورسائل المستأجرين إلى جانب العقود التي تسجلها على إيجار.
 
-بسّط عمليات الإيجار لديك وحافظ على تنظيم سجلات عقودك. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تحافظ أكسيز على تنظيم سجلات العقود في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

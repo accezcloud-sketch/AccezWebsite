@@ -1,13 +1,13 @@
 ---
 title: "Coordinating Cleaners Across a Portfolio: The Housekeeping System That Scales"
-titleAr: "تنسيق عمال النظافة عبر محفظة العقارات: نظام التدبير المنزلي الذي يتوسع"
+titleAr: "تنسيق عمال النظافة عبر محفظة العقارات: نظام تنظيف يواكب النمو"
 metaTitle: "How to Coordinate Cleaners Across a Rental Portfolio"
 metaTitleAr: "كيف تنسق عمال النظافة عبر محفظة عقارات الإيجار"
 metaDescription: "Manual cleaner scheduling breaks as your portfolio grows. Build a housekeeping system with clear checklists, live unit status and smoother turnovers."
-metaDescriptionAr: "تنهار الجدولة اليدوية لعمال النظافة مع نمو محفظتك. ابنِ نظام تدبير منزلي بقوائم تحقق واضحة وحالة مباشرة لكل وحدة وتسليم أسرع بين الإقامات."
+metaDescriptionAr: "تنهار الجدولة اليدوية لعمال النظافة مع نمو محفظتك. ابنِ نظامًا للتنظيف بقوائم تحقق واضحة وحالة مباشرة لكل وحدة وتسليم أسرع بين الإقامات."
 primaryKeyword: "scale housekeeping operations"
 excerpt: "Managing housekeeping across multiple properties presents unique challenges. This post explores how a scalable housekeeping system can streamline operations and improve efficiency."
-excerptAr: "تمثل إدارة التدبير المنزلي عبر عقارات متعددة تحديات فريدة. يستكشف هذا المنشور كيف يمكن لنظام تدبير منزلي قابل للتوسع تبسيط العمليات وتحسين الكفاءة."
+excerptAr: "تفرض إدارة التنظيف في عقارات متعددة تحديات خاصة. يوضح هذا المقال كيف يبسّط نظام تنظيف قابل للتوسع العمليات ويرفع الكفاءة."
 date: "2026-08-13"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -73,7 +73,7 @@ With the booking side organised, housekeeping becomes a planned part of operatio
 ## Frequently Asked Questions
 
 ### How can I ensure consistent cleaning quality across multiple properties?
-Focus on implementing standardized checklists and training protocols for all cleaning staff. A digital system can help enforce these standards by ensuring all required tasks are completed and documented for each property.
+Focus on implementing standardized checklists and training protocols for all cleaning staff. A digital system can help enforce these standards by ensuring all required tasks are completed and documented for each property. Cleanliness shows up directly in guest reviews; our guide to [timing the review request](/blog/timing-the-review-request-how-to-get-more-5-star-ratings/) covers how to turn good stays into good ratings.
 
 ### What is the best way to schedule cleaners for a large portfolio?
 Utilize a property operations platform that offers automated scheduling based on reservation calendars and property availability. This prevents double-bookings and ensures efficient allocation of cleaning resources.
@@ -97,7 +97,7 @@ By tracking cleaning times, supply usage, and labor costs through a unified plat
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Visit portal.accez.cloud
+See how the availability calendar and work orders support housekeeping on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -153,7 +153,7 @@ Visit portal.accez.cloud
 ## الأسئلة الشائعة
 
 ### كيف يمكنني ضمان جودة تنظيف متسقة عبر عقارات متعددة؟
-ركز على تنفيذ قوائم مرجعية موحدة وبروتوكولات تدريب لجميع موظفي التنظيف. يمكن للنظام الرقمي المساعدة في فرض هذه المعايير من خلال ضمان إكمال جميع المهام المطلوبة وتوثيقها لكل عقار.
+ركز على تنفيذ قوائم مرجعية موحدة وبروتوكولات تدريب لجميع موظفي التنظيف. يمكن للنظام الرقمي المساعدة في فرض هذه المعايير من خلال ضمان إكمال جميع المهام المطلوبة وتوثيقها لكل عقار. وتنعكس النظافة مباشرة في تقييمات الضيوف؛ ويتناول دليلنا عن [توقيت طلب التقييم](/ar/blog/timing-the-review-request-how-to-get-more-5-star-ratings/) كيف تحوّل الإقامات الجيدة إلى تقييمات جيدة.
 
 ### ما هي أفضل طريقة لجدولة عمال النظافة لمحفظة كبيرة؟
 استخدم منصة عمليات عقارية توفر جدولة آلية بناءً على تقويمات الحجوزات وتوافر العقارات. هذا يمنع الحجوزات المزدوجة ويضمن تخصيصًا فعالًا لموارد التنظيف.
@@ -161,7 +161,7 @@ Visit portal.accez.cloud
 ### كيف يمكنني تتبع تقدم التنظيف في الوقت الفعلي؟
 يسمح نظام إدارة التدبير المنزلي السحابي لعمال النظافة بتحديث حالة المهمة مباشرة من أجهزتهم. يمكن للمشرفين بعد ذلك عرض لوحات معلومات التقدم في الوقت الفعلي، وتحديد أي تأخيرات أو مشكلات على الفور.
 
-### كيف يمكنني إدارة تكاليف التدبير المنزلي بفعالية؟
+### كيف يمكنني إدارة تكاليف التنظيف بفعالية؟
 من خلال تتبع أوقات التنظيف، واستخدام الإمدادات، وتكاليف العمالة من خلال منصة موحدة. تسمح هذه البيانات بتحديد مجالات الإنفاق المفرط وتحسين تخصيص الموارد لتحكم أفضل في التكاليف.
 
 ## أبرز النقاط
@@ -177,4 +177,4 @@ Visit portal.accez.cloud
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست مشورة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع متخصص مؤهل.*
 
-Visit portal.accez.cloud
+اكتشف كيف يدعم تقويم التوفر وأوامر العمل أعمال التنظيف في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

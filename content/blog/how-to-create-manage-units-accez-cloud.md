@@ -36,6 +36,8 @@ Accez.Cloud supports two fundamentally different unit types, and the choice you 
 
 **Short-Term Units**: Built for vacation rentals, furnished apartments, and flexible booking arrangements. These units support nightly or weekly bookings, an availability calendar with bulk price updates, and guest management. If you list on Airbnb, Booking.com or Expedia, short-term units can sync with those channels.
 
+![Availability calendar for a short-term unit in Accez, with the Sync Channels, Bulk Update, Export and Import buttons](/product/pm/en/availability-calendar-1400.webp)
+
 **Important**: The unit type is set at creation and determines the management workflow. Choose carefully based on how you actually rent the unit. If you manage a mixed portfolio with both types, you'll create different units under the same property, Accez.Cloud handles both seamlessly.
 
 ## Step 1: Access Unit Creation
@@ -43,6 +45,8 @@ Accez.Cloud supports two fundamentally different unit types, and the choice you 
 From your dashboard, click on your property card to enter the property details section. Select the "Units" header from the navigation menu. If you haven't created any units yet, you'll see a prompt to add your first unit.
 
 Click the "Add Your First Unit" button to begin. If you already have units, you'll see a list of existing units with an "Add Unit" button at the top.
+
+![Property page in Accez with the Units tab in the top navigation, next to Overview, Contracts and Add-Ons](/product/pm/en/property-overview-1400.webp)
 
 ## Step 2: Choose Your Unit Type
 
@@ -65,7 +69,7 @@ This is the most detailed step. Take your time here, accurate information now pr
 
 ### Property Details and Amenities
 
-List everything the unit includes. Being thorough here pays off because this information appears in tenant-facing views:
+List everything the unit includes. Being thorough here pays off because your team relies on this information when answering tenant questions and preparing listings:
 
 - **Appliances**: Washer, dryer, dishwasher, refrigerator, oven, microwave
 - **Features**: Balcony, parking spot (include number), storage unit, built-in wardrobes
@@ -178,7 +182,7 @@ See the complete unit creation process in action:
 
 - Long-term units require active resident accounts for tenant assignment, create residents first
 - Ownership type (company vs. private) affects financial reporting and owner statements
-- Lease duration dates drive renewal alerts and occupancy metrics, set them accurately
+- Lease dates drive occupancy figures and show which leases are due for renewal, so set them accurately
 - Detailed amenity lists reduce tenant questions and set correct expectations
 - Units can be edited and updated at any time, keep availability status current
 - Aim for 5-8 quality images per unit so prospective tenants can decide faster
@@ -205,12 +209,15 @@ With your units created, you're ready to:
 - **Sync Airbnb, Booking.com and Expedia** for short-term units
 - **Start tracking metrics** like occupancy rates and rental income across your portfolio
 
+![Add-ons catalog in Accez with food and beverages, cleaning and transport add-ons assigned to a property's units](/product/pm/en/add-ons-1400.webp)
+
 ## Related Tutorials
 
 - [How to Create and Manage Properties in Accez.Cloud](/blog/how-to-create-manage-properties-accez-cloud/)
 - [How to Create and Manage Work Orders in Accez.Cloud](/blog/how-to-create-manage-work-orders-accez-cloud/)
 - [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide/)
-- [The Accez property management solution](/solutions/property-managers/)
+
+To see everything else the platform covers, visit the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -231,11 +238,15 @@ With your units created, you're ready to:
 
 **الوحدات قصيرة الأجل**: مثالية لإيجارات العطلات والإقامات المؤقتة وترتيبات الحجز المرنة، ويمكن مزامنتها مع Airbnb وBooking.com وExpedia.
 
+![تقويم التوفر لوحدة قصيرة الأجل في أكسيز مع أزرار مزامنة القنوات والتحديث الجماعي والتصدير والاستيراد](/product/pm/ar/availability-calendar-1400.webp)
+
 ## الخطوة 1: الوصول إلى إنشاء الوحدة
 
 من لوحة التحكم، انقر على بطاقة العقار للدخول إلى قسم تفاصيل العقار. حدد رأس "الوحدات" من قائمة التنقل. إذا لم تكن قد أنشأت أي وحدات بعد، سترى خياراً لإضافة أول وحدة.
 
 انقر على زر "إضافة أول وحدة لك" للبدء.
+
+![صفحة العقار في أكسيز وتظهر علامة تبويب الوحدات في شريط التنقل بجانب نظرة عامة والعقود والإضافات](/product/pm/ar/property-overview-1400.webp)
 
 ## الخطوة 2: اختر نوع الوحدة
 
@@ -264,7 +275,7 @@ With your units created, you're ready to:
 - مشغول
 - تحت الصيانة
 
-## الخطوة 4: تكوين معلومات الملكية والمستأجر
+## الخطوة 4: إعداد معلومات الملكية والمستأجر
 
 يتطلب هذا القسم الحاسم:
 
@@ -343,5 +354,7 @@ With your units created, you're ready to:
 - إعداد إدارة أوامر العمل لطلبات الصيانة، راجع [درس أوامر العمل](/ar/blog/how-to-create-manage-work-orders-accez-cloud/)
 - إعداد الإضافات مثل التنظيف أو النقل للإقامات القصيرة
 - مزامنة Airbnb وBooking.com وExpedia للوحدات قصيرة الأجل
+
+![كتالوج الإضافات في أكسيز مع إضافات الطعام والمشروبات والتنظيف والنقل المخصصة لوحدات العقار](/product/pm/ar/add-ons-1400.webp)
 
 وللاطلاع على كل ما تغطيه المنصة، راجع [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/).

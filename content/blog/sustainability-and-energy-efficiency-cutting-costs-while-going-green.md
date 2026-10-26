@@ -4,7 +4,7 @@ titleAr: "الاستدامة وكفاءة الطاقة: تقليل التكال�
 metaTitle: "Energy Efficiency for Rental Properties: Cut Costs"
 metaTitleAr: "كفاءة الطاقة في العقارات المؤجرة: خفض التكاليف"
 metaDescription: "Learn how energy efficiency cuts utility and maintenance costs for rental properties in Saudi Arabia, with practical steps for managers and owners."
-metaDescriptionAr: "تعرّف على كيف تخفض كفاءة الطاقة تكاليف المرافق والصيانة في العقارات المؤجرة بالسعودية، مع خطوات عملية يطبقها مديرو العقارات والملاك."
+metaDescriptionAr: "اكتشف كيف تخفض كفاءة الطاقة تكاليف المرافق والصيانة في العقارات المؤجرة بالسعودية، مع خطوات عملية يطبقها مديرو العقارات والملاك."
 primaryKeyword: "sustainability and energy efficiency property operations"
 excerpt: "Embracing sustainability and energy efficiency in property operations offers a dual benefit: it reduces environmental impact and, crucially, drives down operational costs for property managers and owners."
 excerptAr: "إن تبني الاستدامة وكفاءة الطاقة في العمليات العقارية يوفر فائدة مزدوجة: فهو يقلل من التأثير البيئي، والأهم من ذلك، أنه يقلل من التكاليف التشغيلية لمديري وملاك العقارات."
@@ -94,7 +94,8 @@ For property managers in Saudi Arabia, embracing green practices offers several 
 -   Digital platforms can centralize management, streamline communication, and facilitate data-driven sustainability efforts.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+
+See how work orders and the properties overview help you plan upgrades on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -170,4 +171,5 @@ For property managers in Saudi Arabia, embracing green practices offers several 
 -   يمكن للمنصات الرقمية مركزية الإدارة، تبسيط الاتصالات، وتسهيل الجهود المستدامة المدعومة بالبيانات.
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع أخصائي مؤهل.*
-[قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+
+اكتشف كيف تساعدك أوامر العمل والنظرة العامة على العقارات في التخطيط للتحسينات عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

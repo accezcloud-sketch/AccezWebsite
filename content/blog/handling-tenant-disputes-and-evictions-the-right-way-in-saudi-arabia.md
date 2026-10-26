@@ -9,6 +9,7 @@ primaryKeyword: "saudi arabia tenant disputes evictions"
 excerpt: "Effectively managing tenant disputes and navigating the eviction process in Saudi Arabia requires a deep understanding of local regulations and best practices. This guide offers actionable strategies for property managers and owners to resolve conflicts and conduct evictions smoothly and legally."
 excerptAr: "تتطلب الإدارة الفعالة لخلافات المستأجرين والتعامل مع إجراءات الإخلاء في المملكة العربية السعودية فهمًا عميقًا للأنظمة المحلية وأفضل الممارسات. يقدم هذا الدليل استراتيجيات عملية لمديري العقارات والملاك لحل النزاعات وإتمام الإخلاء بسلاسة وبشكل نظامي."
 date: "2026-09-14"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/handling-tenant-disputes-and-evictions-the-right-way-in-saud.webp"
@@ -110,7 +111,7 @@ Minor violations are usually best handled with a written warning and an opportun
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez keeps the full record of each tenancy on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -203,4 +204,4 @@ Minor violations are usually best handled with a written warning and an opportun
 
 *هذا المقال معلومات عامة لمشغلي العقارات وليس مشورة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-[قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تحفظ أكسيز السجل الكامل لكل عقد إيجار في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

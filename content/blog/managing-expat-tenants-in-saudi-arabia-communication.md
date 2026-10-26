@@ -36,7 +36,7 @@ Top-tier property managers working with expat tenants don't just overcome commun
 
 ### Proactive Cultural Onboarding
 
-High-performing managers initiate communication with a proactive approach to cultural understanding. Instead of waiting for issues to arise, they dedicate time at the lease signing to gently explain local customs relevant to tenancy. This might include information on waste disposal, building rules on noise and shared spaces, or the right channel for urgent maintenance requests. They provide this information in a welcoming, non-judgmental manner, perhaps through simple, visually supported guides. This sets a positive tone and demonstrates respect for the expat’s new environment, reducing the likelihood of unintentional missteps. They also recognize that **building trust is a universal language** and invest time in understanding their tenants' individual needs and communication preferences, perhaps asking directly about preferred contact methods and response times.
+High-performing managers initiate communication with a proactive approach to cultural understanding. Instead of waiting for issues to arise, they dedicate time at the lease signing to gently explain local customs relevant to tenancy. This might include information on waste disposal, building rules on noise and shared spaces, or the right channel for urgent maintenance requests. They provide this information in a welcoming, non-judgmental manner, perhaps through simple, visually supported guides. This sets a positive tone and demonstrates respect for the expat’s new environment, reducing the likelihood of unintentional missteps. They also recognize that **building trust is a universal language** and invest time in understanding their tenants' individual needs and communication preferences, perhaps asking directly about preferred contact methods and response times. That onboarding starts before the lease is signed; our guide to [tenant screening](/blog/tenant-screening-that-prevents-problems-before-the-lease/) covers the checks to make first.
 
 ### Utilizing Multilingual Support and Visual Aids
 
@@ -75,7 +75,7 @@ By keeping every lease, payment and conversation in one place, property managers
 - Accez.Cloud keeps leases, rent payments, work orders and tenant conversations in one place.
 - Investing in cross-cultural competence leads to better tenant relations and property performance.
 
-Elevate your property management strategy and connect with global tenants by mastering cross-cultural communication. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how one inbox and email templates keep tenant communication clear on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -95,7 +95,7 @@ Elevate your property management strategy and connect with global tenants by mas
 
 ### التأهيل الثقافي الاستباقي
 
-يبدأ مديرو الأداء العالي التواصل بنهج استباقي للفهم الثقافي. بدلاً من انتظار ظهور المشكلات، يخصصون وقتًا عند توقيع عقد الإيجار لشرح الأعراف المحلية المتعلقة بفترة الإيجار بلطف. قد يشمل ذلك معلومات حول التخلص من النفايات، وقواعد المبنى بشأن الضوضاء والمرافق المشتركة، والقناة الصحيحة لطلبات الصيانة العاجلة. يقدمون هذه المعلومات بأسلوب ودود بعيد عن إصدار الأحكام، ربما من خلال أدلة بسيطة مدعومة بصريًا. هذا يضع نغمة إيجابية ويظهر الاحترام لبيئة المغترب الجديدة، مما يقلل من احتمالية حدوث أخطاء غير مقصودة. كما أنهم يدركون أن **بناء الثقة هي لغة عالمية** ويستثمرون الوقت في فهم احتياجات مستأجريهم الفردية وتفضيلات الاتصال، وربما يسألون مباشرة عن طرق الاتصال المفضلة وأوقات الاستجابة.
+يبدأ مديرو الأداء العالي التواصل بنهج استباقي للفهم الثقافي. بدلاً من انتظار ظهور المشكلات، يخصصون وقتًا عند توقيع عقد الإيجار لشرح الأعراف المحلية المتعلقة بفترة الإيجار بلطف. قد يشمل ذلك معلومات حول التخلص من النفايات، وقواعد المبنى بشأن الضوضاء والمرافق المشتركة، والقناة الصحيحة لطلبات الصيانة العاجلة. يقدمون هذه المعلومات بأسلوب ودود بعيد عن إصدار الأحكام، ربما من خلال أدلة بسيطة مدعومة بصريًا. هذا يضع نغمة إيجابية ويظهر الاحترام لبيئة المغترب الجديدة، مما يقلل من احتمالية حدوث أخطاء غير مقصودة. كما أنهم يدركون أن **بناء الثقة هي لغة عالمية** ويستثمرون الوقت في فهم احتياجات مستأجريهم الفردية وتفضيلات الاتصال، وربما يسألون مباشرة عن طرق الاتصال المفضلة وأوقات الاستجابة. ويبدأ هذا التأهيل قبل توقيع العقد؛ ويتناول دليلنا عن [فحص المستأجرين](/ar/blog/tenant-screening-that-prevents-problems-before-the-lease/) ما ينبغي التحقق منه أولًا.
 
 ### استخدام الدعم متعدد اللغات والمساعدات البصرية
 
@@ -105,7 +105,7 @@ Elevate your property management strategy and connect with global tenants by mas
 
 إلى جانب سماع الكلمات ببساطة، يمارس مديرو العقارات النخبة **الاستماع التعاطفي**. هذا يعني محاولة فهم وجهة نظر المستأجر بنشاط، والاعتراف بمشاعره، والتحقق من مخاوفه، حتى لو بدت المشكلة بسيطة من وجهة نظر لوجستية بحتة. عندما يعبر مستأجر مغترب عن إحباطه، يستمع مدير الأداء العالي دون حكم مبدئي، ويطرح أسئلة توضيحية، ثم يعمل بشكل تعاوني لإيجاد حل. إنهم يفهمون أن المستأجر الذي يشعر بأنه مسموع ومفهوم من المرجح أن يكون صبورًا ومتعاونًا، حتى عندما تنشأ تحديات. هذا النهج يحول الصراعات المحتملة إلى فرص لإظهار الاحترافية وبناء ولاء المستأجرين على المدى الطويل.
 
-## التنقل في المشهد السعودي: رؤية 2030، إيجار، وديناميكيات محلية
+## السياق السعودي: رؤية 2030 ومنصة إيجار وخصوصيات السوق المحلية
 
 تتشكل إدارة المستأجرين المغتربين في المملكة العربية السعودية بشكل فريد من خلال الأهداف الإنمائية الطموحة للمملكة وإطارها التنظيمي. فهم هذه التفاصيل أمر بالغ الأهمية. تهدف **رؤية 2030** إلى تحويل المملكة إلى مركز عالمي، وجذب المهنيين المهرة والعائلات من جميع أنحاء العالم، مما يؤثر بشكل مباشر على الطلب على العقارات المؤجرة وتنوع المستأجرين. يستلزم هذا التدفق نهجًا متطورًا لإدارة الممتلكات يستوعب التوقعات الدولية مع الالتزام بالقوانين المحلية.
 
@@ -134,4 +134,4 @@ Elevate your property management strategy and connect with global tenants by mas
 - تجمع Accez.Cloud عقود الإيجار ومدفوعاته وأوامر العمل ومحادثات المستأجرين في مكان واحد.
 - يؤدي الاستثمار في الكفاءة عبر الثقافات إلى علاقات أفضل مع المستأجرين وأداء أفضل للعقارات.
 
-ارتقِ باستراتيجية إدارة الممتلكات الخاصة بك وتواصل مع المستأجرين العالميين من خلال إتقان التواصل عبر الثقافات. [زر portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف يحافظ صندوق الوارد الموحد وقوالب البريد على وضوح التواصل مع المستأجرين في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

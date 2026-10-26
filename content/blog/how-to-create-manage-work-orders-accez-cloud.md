@@ -17,7 +17,7 @@ categoryAr: "الدروس التعليمية"
 tags: ["Work Orders", "Maintenance", "Tutorial", "Property Management"]
 tagsAr: ["أوامر العمل", "الصيانة", "دروس تعليمية", "إدارة العقارات"]
 ---
-Effective maintenance management is crucial for property operations and resident satisfaction. Accez.Cloud's work order system helps you document, track, and resolve maintenance issues quickly and efficiently. Whether created by residents or property managers, work orders ensure nothing falls through the cracks.
+Effective maintenance management is crucial for property operations and resident satisfaction. Accez.Cloud's work order system helps you document, track, and resolve maintenance issues quickly and efficiently. Whether a resident reports the problem or your team spots it first, a work order makes sure nothing falls through the cracks.
 
 ## What Are Work Orders?
 
@@ -28,18 +28,20 @@ Work orders are formal requests to resolve maintenance issues or complete tasks 
 - Communication channels between residents and management
 - Historical records of property maintenance
 
-## Who Can Create Work Orders?
+## Where Work Orders Come From
 
-Work orders in Accez.Cloud can be created by:
+Your team creates work orders in Accez.Cloud in two situations:
 
-- **Residents**: Directly reporting issues they're experiencing
-- **Property Managers**: Creating work orders on behalf of residents or for proactive maintenance
+- **A resident reports a problem**: log it as a work order on the resident's behalf
+- **Proactive maintenance**: your team spots an issue or plans a routine check
 
-This flexibility ensures all maintenance needs are captured and addressed.
+This way every maintenance need is captured and addressed.
 
 ## Step 1: Navigate to Work Orders
 
 From your dashboard homepage, navigate to the Properties section. Select the property for which you want to create a work order. Once in the property view, click on the "Work Orders" tab.
+
+![Accez dashboard overview, the starting point for reaching your properties](/product/pm/en/dashboard-1400.webp)
 
 ## Step 2: Create Your First Work Order
 
@@ -100,6 +102,10 @@ All created work orders appear in the work orders list with key information:
 - Priority level
 - Assigned unit
 
+The property overview also shows how many work orders the property has in total and how many are still pending.
+
+![Property overview in Accez with the Work Orders and Pending Work Orders counts for the property](/product/pm/en/property-overview-1400.webp)
+
 ### Editing Work Orders
 
 To update a work order:
@@ -133,7 +139,7 @@ See the complete work order creation and management process:
 
 ## Key Takeaways
 
-- Work orders can be created by both residents and property managers
+- Your team logs work orders from resident reports and for proactive maintenance
 - Detailed descriptions help maintenance teams respond effectively
 - Photos provide valuable visual context for issues
 - Status tracking ensures nothing is overlooked
@@ -162,7 +168,7 @@ See the complete work order creation and management process:
 - **Document Everything**: Maintain detailed notes and photos for insurance and records
 - **Follow Up**: Verify resident satisfaction after work completion
 
-For the bigger picture of setting up maintenance across a portfolio, read [building a maintenance system that works from request to resolution](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/), or see how work orders fit into the [Accez property management solution](/solutions/property-managers/).
+For the bigger picture of setting up maintenance across a portfolio, read [building a maintenance system that works from request to resolution](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/).
 
 ## Related Tutorials
 
@@ -170,9 +176,11 @@ For the bigger picture of setting up maintenance across a portfolio, read [build
 - [How to Create and Manage Units in Accez.Cloud](/blog/how-to-create-manage-units-accez-cloud/)
 - [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide/)
 
+See how work orders fit with leases, owners and billing on the [property managers solution page](/solutions/property-managers/).
+
 <!-- AR -->
 
-إدارة الصيانة الفعالة أمر بالغ الأهمية لعمليات العقارات ورضا المقيمين. يساعدك نظام أوامر العمل في Accez.Cloud على توثيق وتتبع وحل مشاكل الصيانة بسرعة وكفاءة. سواء تم إنشاؤها من قبل المقيمين أو مديري العقارات، تضمن أوامر العمل عدم إغفال أي شيء.
+إدارة الصيانة الفعالة أمر بالغ الأهمية لعمليات العقارات ورضا المقيمين. يساعدك نظام أوامر العمل في Accez.Cloud على توثيق وتتبع وحل مشاكل الصيانة بسرعة وكفاءة. وسواء أبلغ المقيم عن المشكلة أو اكتشفها فريقك أولًا، يضمن أمر العمل ألا يُغفَل أي شيء.
 
 ## ما هي أوامر العمل؟
 
@@ -183,18 +191,20 @@ For the bigger picture of setting up maintenance across a portfolio, read [build
 - قنوات اتصال بين المقيمين والإدارة
 - سجلات تاريخية لصيانة العقار
 
-## من يمكنه إنشاء أوامر العمل؟
+## مصدر أوامر العمل
 
-يمكن إنشاء أوامر العمل في Accez.Cloud بواسطة:
+ينشئ فريقك أوامر العمل في Accez.Cloud في حالتين:
 
-- **المقيمين**: الإبلاغ مباشرة عن المشاكل التي يواجهونها
-- **مديري العقارات**: إنشاء أوامر العمل نيابة عن المقيمين أو للصيانة الاستباقية
+- **بلاغ من المقيم**: عندما يبلغك المقيم بمشكلة، سجّلها أمر عمل نيابة عنه
+- **الصيانة الاستباقية**: عندما يكتشف فريقك مشكلة أو يخطط لفحص دوري
 
-تضمن هذه المرونة التقاط ومعالجة جميع احتياجات الصيانة.
+وبذلك تُسجَّل احتياجات الصيانة كلها وتُعالَج.
 
 ## الخطوة 1: الانتقال إلى أوامر العمل
 
 من الصفحة الرئيسية للوحة التحكم، انتقل إلى قسم العقارات. حدد العقار الذي تريد إنشاء أمر عمل له. بمجرد الدخول إلى عرض العقار، انقر على علامة تبويب "أوامر العمل".
+
+![لوحة تحكم أكسيز، نقطة البداية للوصول إلى عقاراتك](/product/pm/ar/dashboard-1400.webp)
 
 ## الخطوة 2: إنشاء أول أمر عمل
 
@@ -255,6 +265,10 @@ For the bigger picture of setting up maintenance across a portfolio, read [build
 - مستوى الأولوية
 - الوحدة المعينة
 
+كما تعرض النظرة العامة على العقار إجمالي أوامر العمل الخاصة به وعدد الأوامر التي لا تزال معلقة.
+
+![نظرة عامة على العقار في أكسيز تعرض عدد أوامر العمل وأوامر العمل المعلقة](/product/pm/ar/property-overview-1400.webp)
+
 ### تعديل أوامر العمل
 
 لتحديث أمر العمل:
@@ -288,7 +302,7 @@ For the bigger picture of setting up maintenance across a portfolio, read [build
 
 ## أبرز النقاط
 
-- يمكن إنشاء أوامر العمل من قبل كل من المقيمين ومديري العقارات
+- يسجّل فريقك أوامر العمل من بلاغات المقيمين وللصيانة الاستباقية
 - الأوصاف التفصيلية تساعد فرق الصيانة على الاستجابة بفعالية
 - الصور توفر سياقاً بصرياً قيماً للمشاكل
 - تتبع الحالة يضمن عدم إغفال أي شيء
@@ -317,9 +331,12 @@ For the bigger picture of setting up maintenance across a portfolio, read [build
 - **وثق كل شيء**: حافظ على ملاحظات وصور مفصلة للتأمين والسجلات
 - **المتابعة**: تحقق من رضا المقيم بعد إكمال العمل
 
-وللصورة الأشمل عن إعداد الصيانة عبر محفظة كاملة، اقرأ [بناء نظام صيانة فعال من الطلب حتى الحل](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/)، أو تعرّف على موقع أوامر العمل ضمن [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/).
+وللصورة الأشمل عن إعداد الصيانة عبر محفظة كاملة، اقرأ [بناء نظام صيانة فعال من الطلب حتى الحل](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/).
 
 ## دروس ذات صلة
 
 - [كيفية إنشاء وإدارة العقارات في Accez.Cloud](/ar/blog/how-to-create-manage-properties-accez-cloud/)
 - [كيفية إنشاء وإدارة الوحدات في Accez.Cloud](/ar/blog/how-to-create-manage-units-accez-cloud/)
+
+اكتشف كيف ترتبط أوامر العمل بالعقود والملاك والفوترة في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).
+

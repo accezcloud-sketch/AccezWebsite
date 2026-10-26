@@ -81,7 +81,7 @@ The question isn't whether to upgrade your property management system. It's whet
 - [The Hidden Costs of Managing Properties Without a System](/blog/hidden-costs-of-managing-properties-without-a-system/)
 - [How to Scale Your Property Portfolio Successfully](/blog/how-to-scale-your-property-portfolio-without-losing-control/)
 
-Ready to see what modern property management looks like? Visit [portal.accez.cloud](https://portal.accez.cloud) to learn more.
+See what a modern system looks like on the [Accez property managers page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -143,4 +143,4 @@ Ready to see what modern property management looks like? Visit [portal.accez.clo
 
 السؤال ليس ما إذا كان يجب ترقية نظام إدارة العقارات لديك، بل ما إذا كنت تستطيع تحمّل الانتظار أكثر.
 
-هل أنت مستعد لرؤية كيف تبدو إدارة العقارات الحديثة؟ قم بزيارة [portal.accez.cloud](https://portal.accez.cloud) لمعرفة المزيد.
+اكتشف كيف يبدو النظام الحديث لإدارة العقارات في [صفحة أكسيز لمديري العقارات](/ar/solutions/property-managers/).

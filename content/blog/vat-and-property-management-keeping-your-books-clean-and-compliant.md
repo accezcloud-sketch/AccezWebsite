@@ -8,6 +8,7 @@ metaDescriptionAr: "كيف تنطبق ضريبة القيمة المضافة ع�
 excerpt: "Navigate the complexities of VAT in property management in Saudi Arabia, from exempt residential rent to taxable commercial leases, and keep your books clean."
 excerptAr: "تعرّف على تعقيدات ضريبة القيمة المضافة في إدارة العقارات بالسعودية، من الإيجار السكني المعفى إلى الإيجار التجاري الخاضع للضريبة، وحافظ على سجلاتك نظيفة."
 date: "2026-08-01"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/vat-and-property-management-keeping-your-books-clean-and-com.webp"
@@ -54,7 +55,7 @@ Compliance with Ejar, the Kingdom's electronic platform for real estate leasing 
 
 ## How Accez.Cloud Helps You Keep Your Books Organised
 
-VAT compliance starts with complete, well-organised records. Accez.Cloud does not replace your accountant or a ZATCA-approved e-invoicing solution, but it keeps the property-level financial data your VAT work depends on in one place.
+VAT compliance starts with complete, well-organised records. Accez.Cloud does not replace your accountant, but it keeps the property-level financial data your VAT work depends on in one place.
 
 - **Billing and payments**: Track revenue, invoices and refunds per property, so every taxable and exempt income stream is visible. See the [billing and payments features for property managers](/solutions/property-managers/#billing).
 - **Leases and rent payments**: Keep long-term contracts and rent payments (paid vs due) together, which helps you separate exempt residential rent from taxable commercial rent.
@@ -75,7 +76,7 @@ With clean records in one platform, your finance team and tax adviser spend less
 - Wide use of digital payments in KSA makes clean, traceable records easier to keep.
 - Accez.Cloud keeps invoices, rent payments, owner statements and online payments organised, so your VAT work starts from clean data.
 
-Simplify your VAT management and ensure compliance by visiting portal.accez.cloud.
+See how Accez keeps invoices and rent records organised on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -93,11 +94,11 @@ Simplify your VAT management and ensure compliance by visiting portal.accez.clou
 
 لا ترى شركات إدارة العقارات ذات الأداء العالي ضريبة القيمة المضافة على أنها مجرد عبء إداري إضافي؛ بل تدمجها في استراتيجيتها التشغيلية. إنهم يفهمون أن الامتثال الاستباقي لا يتعلق فقط بتجنب العقوبات، بل يتعلق أيضًا ببناء سمعة بالنزاهة المالية والكفاءة، مما يمكن أن يجذب العملاء والمستثمرين الأكثر تمييزًا.
 
-### دمج استراتيجية الضرائب الاستباقية
+### استراتيجية ضريبية استباقية
 
 يبدأ كبار مديري العقارات بدمج اعتبارات ضريبة القيمة المضافة في صياغة عقودهم واتفاقيات مستوى الخدمة. هذا يعني تحديد مسؤوليات دفع ضريبة القيمة المضافة بوضوح، وتحديد ما إذا كانت ضريبة القيمة المضافة مدرجة أو مستثناة من الأسعار المقتبسة للخدمات، وإنشاء إجراءات واضحة لإصدار الفواتير والدفع. من خلال توقع الآثار الضريبية في بداية أي اتفاق، فإنهم يتجنبون التعديلات بأثر رجعي والنزاعات المحتملة. كما أنهم يستثمرون في التدريب المستمر لفرقهم المالية وإدارة العقارات لضمان أن الجميع على اطلاع دائم بأحدث قوانين ضريبة القيمة المضافة وتفسيراتها ذات الصلة بقطاع العقارات.
 
-### تبني التكنولوجيا القوية
+### تبني تقنية موثوقة
 
 تستفيد الشركات الرائدة من التكنولوجيا لأتمتة حسابات ضريبة القيمة المضافة، وإنشاء الفواتير، وإعداد التقارير الضريبية. هذا يقلل من الأخطاء اليدوية، ويضمن الاتساق، ويحرر الموارد البشرية القيمة للمهام الأكثر استراتيجية. يمكن أن تكون برامج إدارة العقارات المتخصصة مع وحدات محاسبة وضريبة القيمة المضافة المدمجة ذات قيمة لا تقدر بثمن. يمكن لهذه الأنظمة تطبيق معدلات ضريبة القيمة المضافة الصحيحة تلقائيًا بناءً على أنواع المعاملات، وتتبع ضريبة القيمة المضافة المدخلة لاستردادها المحتمل، وإنشاء تقارير ضريبية متوافقة. **مكاسب الكفاءة** من هذه الأنظمة كبيرة، مما يسمح بمعالجة أسرع للمدفوعات وتقديم أكثر توقيتًا للسلطات الضريبية.
 
@@ -113,7 +114,7 @@ Simplify your VAT management and ensure compliance by visiting portal.accez.clou
 
 ## كيف يساعدك Accez.Cloud في تنظيم سجلاتك المالية
 
-يبدأ الامتثال لضريبة القيمة المضافة بسجلات كاملة ومنظمة. لا يحل Accez.Cloud محل محاسبك أو حل الفوترة الإلكترونية المعتمد من هيئة الزكاة والضريبة والجمارك، لكنه يجمع في مكان واحد البيانات المالية لكل عقار التي يعتمد عليها عملك الضريبي.
+يبدأ الامتثال لضريبة القيمة المضافة بسجلات كاملة ومنظمة. لا يحل Accez.Cloud محل محاسبك، لكنه يجمع في مكان واحد البيانات المالية لكل عقار التي يعتمد عليها عملك الضريبي.
 
 - **الفوترة والمدفوعات**: تتبّع الإيرادات والفواتير والمبالغ المستردة لكل عقار، بحيث يظهر كل مصدر دخل خاضع للضريبة أو معفى منها. اطّلع على [ميزات الفوترة والمدفوعات لمديري العقارات](/ar/solutions/property-managers/#billing).
 - **عقود الإيجار ودفعات الإيجار**: احتفظ بالعقود طويلة الأجل ودفعات الإيجار (المدفوع مقابل المستحق) معًا، مما يساعدك على فصل الإيجار السكني المعفى عن الإيجار التجاري الخاضع للضريبة.
@@ -134,4 +135,4 @@ Simplify your VAT management and ensure compliance by visiting portal.accez.clou
 - الانتشار الواسع للدفع الرقمي في المملكة يسهّل الاحتفاظ بسجلات نظيفة وقابلة للتتبع.
 - ينظّم Accez.Cloud الفواتير ودفعات الإيجار وكشوف حساب الملاك والمدفوعات الإلكترونية، ليبدأ عملك الضريبي من بيانات نظيفة.
 
-بسّط إدارة ضريبة القيمة المضافة الخاصة بك وضمن الامتثال عن طريق زيارة portal.accez.cloud.
+اكتشف كيف تنظم أكسيز الفواتير وسجلات الإيجار في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

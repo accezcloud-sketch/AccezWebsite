@@ -62,7 +62,7 @@ Leading managers embrace technology to streamline operations and reduce costs. T
 
 ### Developing and Monetizing Ancillary Services
 
-Exceptional managers view their properties as ecosystems that can offer more than just housing. They actively develop and monetize ancillary services. This might include offering premium parking spots, secure storage units, in-unit laundry upgrades, or even curated service packages like cleaning or pet-sitting. These services not only add revenue but also enhance the resident experience, contributing to retention.
+Exceptional managers view their properties as ecosystems that can offer more than just housing. They actively develop and monetize ancillary services. This might include offering premium parking spots, secure storage units, in-unit laundry upgrades, or even curated service packages like cleaning or pet-sitting. These services not only add revenue but also enhance the resident experience, contributing to retention. For short stays, our [upsell playbook](/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/) shows how to turn early check-ins and add-ons into steady revenue.
 
 ### Using Your Own Data to Spot Weak Areas
 
@@ -98,7 +98,7 @@ Accez.Cloud provides the tools necessary to transform your existing properties i
 -   Leverage Saudi-specific market dynamics like Vision 2030 and digital adoption.
 -   Utilize data analytics for informed, strategic decision-making.
 
-Maximize your portfolio's earning potential by optimizing your current assets. Visit portal.accez.cloud
+See how Accez helps you earn more from the properties you already manage on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -130,7 +130,7 @@ Maximize your portfolio's earning potential by optimizing your current assets. V
 
 لا يقتصر المديرون الناجحون على الإدارة؛ بل يقومون بالتحسين بشكل استباقي. إنهم يفهمون أن أصولهم الحالية هي منصات ديناميكية لتوليد الإيرادات، وليست استثمارات ثابتة. يركزون على استخلاص كل قطرة قيمة من خلال المبادرات الاستراتيجية التي تتجاوز الصيانة الأساسية وتحصيل الإيجار.
 
-### التسعير الديناميكي واستخبارات السوق
+### التسعير الديناميكي ومعلومات السوق
 
 يستخدم المديرون ذوو الأداء العالي استراتيجيات تسعير متطورة. إنهم يستفيدون من بيانات السوق، وتحليل المنافسين، وتنبؤات الطلب لوضع إيجارات تنافسية ولكنها تزيد من الربحية. غالبًا ما يتضمن ذلك استخدام برامج إدارة الإيرادات التي يمكنها تعديل الأسعار يوميًا بناءً على الإشغال، والموسمية، وأحداث السوق المحلية. وإذا كانت الفكرة جديدة عليك، فابدأ بدليلنا عن [التسعير الديناميكي للإيجارات](/ar/blog/dynamic-pricing-101-how-to-stop-leaving-money-on-the-table-every-night/).
 
@@ -144,13 +144,13 @@ Maximize your portfolio's earning potential by optimizing your current assets. V
 
 ### تطوير الخدمات الإضافية وتحقيق الدخل منها
 
-ينظر المديرون الاستثنائيون إلى ممتلكاتهم على أنها أنظمة بيئية يمكن أن تقدم أكثر من مجرد سكن. إنهم يطورون بنشاط الخدمات الإضافية ويحققون منها الدخل. قد يشمل ذلك تقديم مواقف سيارات مميزة، ووحدات تخزين آمنة، وترقيات غسيل الملابس في الوحدة، أو حتى حزم خدمات منسقة مثل التنظيف أو رعاية الحيوانات الأليفة. هذه الخدمات لا تضيف إيرادات فحسب، بل تعزز أيضًا تجربة المقيم، مما يساهم في الاحتفاظ بالمستأجرين.
+ينظر المديرون الاستثنائيون إلى ممتلكاتهم على أنها أنظمة بيئية يمكن أن تقدم أكثر من مجرد سكن. إنهم يطورون بنشاط الخدمات الإضافية ويحققون منها الدخل. قد يشمل ذلك تقديم مواقف سيارات مميزة، ووحدات تخزين آمنة، وترقيات غسيل الملابس في الوحدة، أو حتى حزم خدمات منسقة مثل التنظيف أو رعاية الحيوانات الأليفة. هذه الخدمات لا تضيف إيرادات فحسب، بل تعزز أيضًا تجربة المقيم، مما يساهم في الاحتفاظ بالمستأجرين. وللإقامات القصيرة، يوضح [دليل البيع الإضافي](/ar/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/) كيف تحوّل تسجيل الوصول المبكر والإضافات إلى دخل منتظم.
 
 ### استخدام بياناتك لاكتشاف مواطن الضعف
 
 الأفضل في هذا المجال لا يخمنون؛ بل يحللون. إنهم يستخدمون البيانات من برامج إدارة العقارات الخاصة بهم، وتقارير السوق، وردود فعل المستأجرين لاتخاذ قرارات مستنيرة بشأن التسعير والتسويق وعروض وسائل الراحة وتحسينات العمليات. تسمح لهم حلقة التغذية الراجعة المستمرة هذه بتحديد المجالات ضعيفة الأداء وفرص النمو.
 
-## المملكة العربية السعودية: تسخير الديناميكيات المحلية لنمو الإيرادات
+## المملكة العربية السعودية: الاستفادة من خصائص السوق المحلية لنمو الإيرادات
 
 في سوق العقارات النابض بالحياة والمتطور بسرعة في المملكة العربية السعودية، تقدم الديناميكيات المحلية المحددة فرصًا فريدة لزيادة الإيرادات. يعد فهم هذه العوامل والاستفادة منها أمرًا بالغ الأهمية لمديري العقارات الذين يهدفون إلى تجاوز أهداف إيراداتهم دون الاستحواذ على وحدات جديدة. تقود **رؤية 2030** الطموحة في المملكة العربية السعودية تحولات اقتصادية وديموغرافية كبيرة، مما يخلق أرضًا خصبة لإدارة العقارات الاستراتيجية. ويجعل الاستخدام الواسع لتطبيقات المراسلة مثل **واتساب** التواصل السريع والمباشر مع المستأجرين والضيوف أمرًا معتادًا. علاوة على ذلك، توفر منصة **إيجار**، وهي المنصة الوطنية لعقود الإيجار، إطارًا منظمًا للتأجير، في حين يجعل انتشار وسائل الدفع المحلية مثل **مدى** و**سداد** الدفع الرقمي مألوفًا لدى معظم المستأجرين.
 
@@ -180,4 +180,4 @@ Maximize your portfolio's earning potential by optimizing your current assets. V
 -   استفد من الديناميكيات السوقية الخاصة بالسعودية مثل رؤية 2030 والتبني الرقمي.
 -   استخدم تحليلات البيانات لاتخاذ قرارات استراتيجية مستنيرة.
 
-ضاعف إمكانات الكسب لمحفظتك من خلال تحسين أصولك الحالية. تفضل بزيارة portal.accez.cloud
+اكتشف كيف تساعدك أكسيز على زيادة دخل العقارات التي تديرها حاليًا في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

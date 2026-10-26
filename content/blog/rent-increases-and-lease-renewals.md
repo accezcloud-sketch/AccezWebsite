@@ -9,6 +9,7 @@ primaryKeyword: "saudi rental rules"
 excerpt: "Understanding Saudi Arabia's rental regulations is crucial for property owners and managers when it comes to rent increases and lease renewals. This guide breaks down the key rules to ensure compliance and smooth operations."
 excerptAr: "يعد فهم لوائح الإيجار في المملكة العربية السعودية أمرًا بالغ الأهمية لأصحاب العقارات والمديرين فيما يتعلق بزيادات الإيجار وتجديدات عقود الإيجار. يوضح هذا الدليل القواعد الرئيسية لضمان الامتثال والعمليات السلسة."
 date: "2026-09-12"
+reviewed: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/rent-increases-and-lease-renewals-staying-within-saudi-renta.webp"
@@ -94,7 +95,8 @@ By keeping these functions together, Accez.Cloud helps property managers handle 
 - Regulations can change quickly, so check the current rules for your city before each renewal cycle.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+
+See how Accez keeps lease dates and rent records ready for every renewal on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -124,7 +126,7 @@ By keeping these functions together, Accez.Cloud helps property managers handle 
 
 واحدة من أكثر الاستراتيجيات فعالية لمديري العقارات هي إعطاء الأولوية **للتواصل الشفاف والمتسق مع المستأجرين**. هذا يعني توضيح شروط الإيجار من البداية، بما في ذلك أي بنود تتعلق بمراجعات الإيجار أو عمليات التجديد. عندما يحين وقت تجديد عقد الإيجار، خاصة إذا كان سيتم اقتراح زيادة في الإيجار، فإن توصيل ذلك مسبقًا وشرح الأساس المنطقي وراءه يمكن أن يخفف بشكل كبير من مخاوف المستأجرين. يمكن أن يؤدي استخدام المنصات الرقمية للتواصل، وهي ممارسة يتم تبنيها بشكل متزايد في جميع أنحاء المملكة العربية السعودية، إلى تبسيط هذه العملية، مما يضمن تسليم الرسائل والإقرار بها.
 
-### إدارة تجديد عقود الإيجار الاستباقية
+### الإدارة الاستباقية لتجديد العقود
 
 بدلاً من الانتظار حتى اللحظة الأخيرة، يبدأ المديرون الاستباقيون محادثة تجديد عقد الإيجار مع المستأجرين قبل عدة أشهر من انتهاء العقد الحالي، ودائمًا قبل بداية مهلة الإشعار البالغة 60 يومًا. يسمح هذا النهج بوقت كافٍ للتفاوض، ومعالجة أي مخاوف لدى المستأجر، وإبرام اتفاقيات جديدة دون ضغط لا داعي له. كما أنه يمنح المديرين رؤية واضحة لمعدلات إشغالهم والإيرادات المحتملة، وهو أمر حيوي للتخطيط المالي. من خلال إظهار البصيرة والرغبة في مناقشة الشروط بشكل تعاوني، غالبًا ما يتمكن مديرو العقارات من تأمين التجديدات بأسعار متفق عليها بشكل متبادل، وبالتالي تقليل فترات الشغور والتكاليف المرتبطة بالعثور على مستأجرين جدد.
 
@@ -172,4 +174,4 @@ By keeping these functions together, Accez.Cloud helps property managers handle 
 
 *هذا المقال معلومات عامة لمشغلي العقارات وليس استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-[تفضل بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اكتشف كيف تُبقي أكسيز تواريخ العقود وسجلات الإيجار جاهزة لكل تجديد في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

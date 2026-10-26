@@ -103,7 +103,7 @@ The property management industry is at an inflection point. Rising costs, increa
 
 The hidden costs of operating without a system aren't going to decrease on their own. Markets will get more competitive. Tenants will expect more. Regulations will get more complex. The question isn't whether to invest in proper property management infrastructure, it's whether you can afford not to.
 
-Platforms like Accez.cloud are designed to remove these hidden costs. The [Accez property management solution](/solutions/property-managers/) keeps properties, units, leases and rent payments, work orders, owner statements and conversations in one system, so the routine runs itself and you can see what each property really earns.
+Platforms like Accez.cloud are designed to remove these hidden costs. The [Accez property management solution](/solutions/property-managers/) keeps properties, units, leases and rent payments, work orders, owner statements and conversations in one system, so routine work takes less effort and you can see what each property really earns.
 
 The most expensive system is the one you don't have. And the hidden costs of that choice show up every day, in lost time, lost tenants, and lost opportunities.
 
@@ -113,7 +113,7 @@ The most expensive system is the one you don't have. And the hidden costs of tha
 - [How to Scale Your Property Portfolio Without Losing Control](/blog/how-to-scale-your-property-portfolio-without-losing-control/)
 - [A Property Manager's Guide to Automating Without Losing Control](/blog/property-managers-guide-to-automating-without-losing-control/)
 
-Ready to eliminate the hidden costs? Visit [portal.accez.cloud](https://portal.accez.cloud) to learn more.
+See how Accez brings the whole operation into one system on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -197,14 +197,14 @@ Ready to eliminate the hidden costs? Visit [portal.accez.cloud](https://portal.a
 
 كثير من مديري العقارات الذين يكملون هذا التمرين يجدون أن التكاليف الخفية أكبر بكثير من تكلفة النظام الذي سيزيلها.
 
-## المسار إلى الأمام
+## ما الخطوة التالية؟
 
 صناعة إدارة العقارات في نقطة تحول. التكاليف المرتفعة وتوقعات المستأجرين المتزايدة وتعقيد المحافظ المتنامي يفرضون حساباً: اعمل بكفاءة أو شاهد الهوامش تتبخر.
 
 التكاليف الخفية للعمل بدون نظام لن تنخفض من تلقاء نفسها. الأسواق ستصبح أكثر تنافسية. المستأجرون سيتوقعون المزيد. اللوائح ستصبح أكثر تعقيداً. السؤال ليس ما إذا كان يجب الاستثمار في بنية تحتية مناسبة لإدارة العقارات، بل ما إذا كنت تستطيع تحمل عدم القيام بذلك.
 
-منصات مثل Accez.cloud مصممة للتخلص من هذه التكاليف الخفية. إذ يجمع [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/) العقارات والوحدات وعقود الإيجار ودفعات الإيجار وأوامر العمل وكشوف الملاك والمحادثات في نظام واحد، فيسير العمل الروتيني تلقائياً وترى ما يحققه كل عقار فعلاً. وإذا كنت تخطط للنمو، فاقرأ دليلنا عن [توسيع محفظتك العقارية دون فقدان السيطرة](/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/).
+منصات مثل Accez.cloud مصممة للتخلص من هذه التكاليف الخفية. إذ يجمع [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/) العقارات والوحدات وعقود الإيجار ودفعات الإيجار وأوامر العمل وكشوف الملاك والمحادثات في نظام واحد، فيقل الجهد الذي يتطلبه العمل الروتيني وترى ما يحققه كل عقار فعلاً. وإذا كنت تخطط للنمو، فاقرأ دليلنا عن [توسيع محفظتك العقارية دون فقدان السيطرة](/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/).
 
 أغلى نظام هو الذي لا تملكه. والتكاليف الخفية لهذا الاختيار تظهر كل يوم: في الوقت المفقود والمستأجرين المفقودين والفرص الضائعة.
 
-هل أنت مستعد للقضاء على التكاليف الخفية؟ قم بزيارة [portal.accez.cloud](https://portal.accez.cloud) لمعرفة المزيد.
+اكتشف كيف تجمع أكسيز العمل كله في نظام واحد عبر [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

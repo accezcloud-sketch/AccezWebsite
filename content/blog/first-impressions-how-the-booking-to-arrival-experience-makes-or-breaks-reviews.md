@@ -4,7 +4,7 @@ titleAr: "الانطباعات الأولى: كيف تصنع تجربة الحج
 metaTitle: "Guest Check-In Experience: How Arrivals Shape Reviews"
 metaTitleAr: "تجربة وصول الضيف: كيف يصنع تسجيل الوصول تقييماتك"
 metaDescription: "Guests rate check-in and communication on their own. See how clear booking, timed pre-arrival messages and a plan for late arrivals protect your reviews."
-metaDescriptionAr: "يقيّم الضيوف تسجيل الوصول والتواصل بشكل مستقل. تعرّف على كيف يحمي الحجز الواضح ورسائل ما قبل الوصول وخطة الوصول المتأخر تقييماتك وسمعة عقارك."
+metaDescriptionAr: "يقيّم الضيوف تسجيل الوصول والتواصل بشكل مستقل. اكتشف كيف يحمي الحجز الواضح ورسائل ما قبل الوصول وخطة الوصول المتأخر تقييماتك وسمعة عقارك."
 excerpt: "Many review points are decided before the guest opens the door. Here is how to run the journey from booking to arrival, including late check-ins, so it earns better reviews."
 excerptAr: "تُحسم نقاط كثيرة في التقييم قبل أن يفتح الضيف الباب. إليك كيف تدير الرحلة من الحجز حتى الوصول، بما فيها الوصول المتأخر، لتكسب تقييمات أفضل."
 date: "2026-07-26"

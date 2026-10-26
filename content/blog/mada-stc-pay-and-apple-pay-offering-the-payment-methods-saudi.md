@@ -69,7 +69,7 @@ The Saudi government's focus on digital transformation, as set out in [Vision 20
 Accez.Cloud, as an all-in-one property operations platform, helps property managers keep every payment visible and organised.
 
 - **Billing and Payments**: Track revenue, invoices and refunds in one place.
-- **Payment Gateway Integrations**: Connect Stripe or Tap to take online payments. The local methods you can accept, such as mada or Apple Pay, depend on your gateway and what is enabled on your merchant account, so confirm them with your provider.
+- **Payment Gateway Integrations**: Connect Stripe or Tap to take online payments. Which payment methods your customers can use depends on your gateway agreement and what is enabled on your merchant account, so confirm them with Stripe or Tap.
 - **Reservations with Payments**: See each stay with its timeline, payment and accepted policies.
 - **Leases and Rent Tracking**: Keep long-term contracts and see which rent payments are paid and which are due. For Saudi residential leases, rent is paid through Ejar's channels, and Accez.Cloud helps you track it rather than replacing Ejar.
 - **Reminders by SMS and Email**: Send SMS messages and use email templates to keep customers informed about upcoming payments.
@@ -91,7 +91,7 @@ It can be, for bookings and fees paid directly to you, because many customers al
 Offering Apple Pay provides a secure, fast and contactless payment method for customers who use Apple devices. It simplifies checkout, improves the experience and matches how many people already pay.
 
 ### How do I ensure my property management platform supports local Saudi payment methods?
-Check which payment gateways the platform integrates with, then confirm with each gateway which local methods (mada, Apple Pay, wallets) are enabled for your merchant account. Also check how the platform handles residential rent that is paid through Ejar.
+Check which payment gateways the platform integrates with, then confirm with each gateway which local methods (mada, Apple Pay, wallets) are enabled for your merchant account. Also check how the platform handles residential rent that is paid through Ejar. Payments are one of the checks in our [guide to choosing property management software in Saudi Arabia](/blog/how-to-choose-property-management-software-in-saudi-arabia/).
 
 ## Key Takeaways
 
@@ -104,7 +104,8 @@ Check which payment gateways the platform integrates with, then confirm with eac
 - Adapting to Saudi payment trends aligns with Vision 2030's digital transformation goals.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+
+See how billing and payments through Stripe and Tap work on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -155,7 +156,7 @@ Check which payment gateways the platform integrates with, then confirm with eac
 يساعد Accez.Cloud، بصفته منصة شاملة لعمليات العقارات، مديري العقارات على إبقاء كل دفعة واضحة ومنظمة.
 
 - **الفوترة والمدفوعات**: تابع الإيرادات والفواتير والمبالغ المستردة في مكان واحد.
-- **تكامل بوابات الدفع**: اربط Stripe أو Tap لقبول المدفوعات عبر الإنترنت. وتعتمد طرق الدفع المحلية التي يمكنك قبولها، مثل مدى أو Apple Pay، على بوابة الدفع وما هو مفعّل في حساب التاجر لديك، لذا تأكد منها مع مزود الخدمة.
+- **تكامل بوابات الدفع**: اربط Stripe أو Tap لقبول المدفوعات عبر الإنترنت. وتعتمد طرق الدفع المتاحة لعملائك على اتفاقك مع بوابة الدفع وما هو مفعّل في حساب التاجر لديك، لذا تأكد منها مع Stripe أو Tap.
 - **الحجوزات ومدفوعاتها**: اطّلع على كل إقامة بجدولها الزمني ودفعاتها والسياسات المقبولة.
 - **العقود ومتابعة الإيجارات**: احفظ العقود طويلة الأجل واعرف أي دفعات الإيجار مسددة وأيها مستحقة. وفي عقود الإيجار السكنية في المملكة، يُسدد الإيجار عبر قنوات منصة إيجار، ويساعدك Accez.Cloud على متابعته دون أن يحل محل المنصة.
 - **التذكيرات عبر الرسائل النصية والبريد الإلكتروني**: أرسل رسائل نصية واستخدم قوالب البريد الإلكتروني لإبقاء العملاء على علم بالدفعات القادمة.
@@ -177,7 +178,7 @@ Check which payment gateways the platform integrates with, then confirm with eac
 يوفر تقديم Apple Pay وسيلة دفع آمنة وسريعة ولاتلامسية للعملاء الذين يستخدمون أجهزة Apple، فيبسط عملية الدفع ويحسن التجربة ويتوافق مع الطريقة التي يدفع بها كثيرون اليوم.
 
 ### كيف أتأكد من أن منصة إدارة العقارات لديّ تدعم طرق الدفع السعودية المحلية؟
-تحقق من بوابات الدفع التي تتكامل معها المنصة، ثم تأكد مع كل بوابة من طرق الدفع المحلية المفعّلة في حساب التاجر لديك (مدى وApple Pay والمحافظ الرقمية). وتحقق كذلك من طريقة تعامل المنصة مع الإيجارات السكنية التي تُسدد عبر منصة إيجار.
+تحقق من بوابات الدفع التي تتكامل معها المنصة، ثم تأكد مع كل بوابة من طرق الدفع المحلية المفعّلة في حساب التاجر لديك (مدى وApple Pay والمحافظ الرقمية). وتحقق كذلك من طريقة تعامل المنصة مع الإيجارات السكنية التي تُسدد عبر منصة إيجار. والمدفوعات من البنود التي يغطيها [دليلنا لاختيار برنامج إدارة العقارات في السعودية](/ar/blog/how-to-choose-property-management-software-in-saudi-arabia/).
 
 ## أبرز النقاط
 
@@ -190,4 +191,5 @@ Check which payment gateways the platform integrates with, then confirm with eac
 - يتوافق التكيف مع اتجاهات الدفع السعودية مع أهداف التحول الرقمي لرؤية 2030.
 
 *هذه المقالة معلومات عامة لمشغلي العقارات وليست مشورة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع متخصص مؤهل.*
-[تفضل بزيارة portal.accez.cloud](https://portal.accez.cloud)
+
+تعرّف على الفوترة والمدفوعات عبر Stripe وTap في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

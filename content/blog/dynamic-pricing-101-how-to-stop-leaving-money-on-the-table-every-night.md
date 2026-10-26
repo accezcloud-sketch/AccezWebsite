@@ -1,12 +1,12 @@
 ---
 title: "Dynamic Pricing 101: Stop Leaving Money on the Table Every Night"
-titleAr: "التسعير الديناميكي 101: توقف عن خسارة الأموال كل ليلة"
+titleAr: "أساسيات التسعير الديناميكي: توقف عن خسارة الإيرادات كل ليلة"
 metaTitle: "Dynamic Pricing 101 for Short-Term Rental Managers"
-metaTitleAr: "التسعير الديناميكي 101 لمديري الإيجارات قصيرة الأجل"
+metaTitleAr: "أساسيات التسعير الديناميكي لمديري الإيجارات قصيرة الأجل"
 metaDescription: "Static rates leave money on the table. Learn how dynamic pricing works for Saudi rentals, which signals to watch, and when long-term leases differ."
 metaDescriptionAr: "الأسعار الثابتة تضيّع عليك إيرادات كل ليلة. تعرّف على كيفية عمل التسعير الديناميكي للإيجارات في السعودية، والمؤشرات التي تراقبها، ومتى تختلف العقود الطويلة."
 excerpt: "Property managers often struggle with static rental pricing, leaving potential revenue unrealized. This guide explores dynamic pricing and how Accez.cloud helps you apply your rates faster."
-excerptAr: "يكافح مديرو العقارات غالبًا مع التسعير الثابت للإيجارات، مما يؤدي إلى عدم تحقيق إيرادات محتملة. يستكشف هذا الدليل التسعير الديناميكي وكيف يساعدك Accez.cloud على تطبيق أسعارك بسرعة أكبر."
+excerptAr: "كثيرًا ما يُضيّع التسعير الثابت على مديري العقارات إيرادات كان بالإمكان تحقيقها. يشرح هذا الدليل التسعير الديناميكي وكيف يساعدك Accez.cloud على تطبيق أسعارك بسرعة أكبر."
 date: "2026-07-08"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -77,7 +77,7 @@ With the mechanics handled, you can spend your time on the pricing decisions the
 - Accez.Cloud lets you apply rate changes in bulk on one availability calendar and keep Airbnb, Booking.com and Expedia in sync.
 - Implementing dynamic pricing can lead to significant increases in rental income and profitability.
 
-Stop leaving money on the table. Optimize your revenue and unlock your property portfolio's full potential. [Visit portal.accez.cloud](https://portal.accez.cloud)
+See how bulk price updates and channel sync work on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -107,7 +107,7 @@ Stop leaving money on the table. Optimize your revenue and unlock your property 
 
 يعتمد مبدأ التسعير الديناميكي على فهم مدى حساسية الطلب لتغيرات الأسعار، مرونته. يدرك أصحاب الأداء العالي أن ليس كل الوحدات أو شرائح السوق تتصرف بنفس الطريقة. قد يحددون أن الشقق ذات المناظر المميزة تحقق علاوة أعلى خلال مواسم الذروة السياحية، بينما قد تكون الوحدات القياسية أكثر حساسية للسعر خلال الفترات غير المزدحمة. إنهم يقسمون سوقهم وعقاراتهم، ويطبقون استراتيجيات تسعير مختلفة بناءً على عوامل مثل حجم الوحدة، والمرافق، والموقع داخل العقار، ومدة الإيجار، والقيمة المتصورة لملفات تعريف المستأجرين المختلفة. يضمن هذا النهج المستهدف أن التسعير ليس حلاً واحدًا يناسب الجميع، بل استراتيجية مخصصة تزيد الإيرادات عبر المحفظة بأكملها من خلال جذب شرائح مختلفة بالسعر المناسب.
 
-## التنقل في سوق الإيجارات الديناميكي في المملكة العربية السعودية
+## سوق الإيجارات المتغير في المملكة العربية السعودية
 
 تقدم المملكة العربية السعودية بيئة فريدة ومتطورة بسرعة لمديري العقارات، تتميز بأهداف تنمية طموحة وسكان على دراية بالتكنولوجيا. يعد فهم ديناميكيات السوق هذه أمرًا بالغ الأهمية لتطبيق استراتيجيات تسعير فعالة. تقود رؤية المملكة 2030 نموًا كبيرًا وتوسعًا حضريًا، مما يؤدي إلى زيادة الطلب على المساكن والمساحات التجارية. هذا، جنبًا إلى جنب مع إطار تنظيمي قوي مثل الامتثال لـ "إيجار"، يعني أن مديري العقارات يجب أن يكونوا مرنين ومطلعين.
 
@@ -138,4 +138,4 @@ Stop leaving money on the table. Optimize your revenue and unlock your property 
 - تتيح لك Accez.Cloud تطبيق تغييرات الأسعار بالجملة من تقويم توفر واحد، مع مزامنة Airbnb وBooking.com وExpedia.
 - يمكن أن يؤدي تطبيق التسعير الديناميكي إلى زيادة كبيرة في دخل الإيجار والربحية.
 
-توقف عن خسارة الأموال. قم بتحسين إيراداتك وافتح الإمكانات الكاملة لمحفظة عقاراتك. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+تعرّف على التحديث الجماعي للأسعار ومزامنة القنوات في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

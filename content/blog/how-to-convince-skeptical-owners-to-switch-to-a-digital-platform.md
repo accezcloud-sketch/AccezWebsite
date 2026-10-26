@@ -43,7 +43,7 @@ The most compelling argument for digital adoption is demonstrating concrete impr
 
 ### Phased Implementation and Personalized Support
 
-Instead of a sudden, all-or-nothing switch, consider a phased approach. Introduce core functionalities first, such as online rent collection or digital statement delivery. Once owners become comfortable with these features, gradually introduce more advanced capabilities. Offering personalized training sessions, tailored to each owner's comfort level with technology, is crucial. This might involve one-on-one demonstrations, clear, jargon-free documentation, and readily available support channels. Making the transition feel manageable and supported is key to overcoming resistance.
+Instead of a sudden, all-or-nothing switch, consider a phased approach. Introduce core functionalities first, such as online rent collection or digital statement delivery. Once owners become comfortable with these features, gradually introduce more advanced capabilities. Offering personalized training sessions, tailored to each owner's comfort level with technology, is crucial. This might involve one-on-one demonstrations, clear, jargon-free documentation, and readily available support channels. Making the transition feel manageable and supported is key to overcoming resistance. When owners agree, moving their records over is the next step; our guide to [migrating from spreadsheets and legacy software](/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/) shows how to do it without losing data.
 
 ### Building Bridges with Communication and Collaboration
 
@@ -99,7 +99,7 @@ Reputable digital platforms employ robust security measures, including encryptio
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Ready to transform your property operations? [Visit portal.accez.cloud](https://portal.accez.cloud)
+See the statements and payouts you can show owners on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -115,23 +115,23 @@ Ready to transform your property operations? [Visit portal.accez.cloud](https://
 
 أحد العوامل المهمة هو **تصور التعقيد**. العديد من الملاك ليسوا خبراء في التكنولوجيا وقد ينظرون إلى منصة جديدة على أنها مرهقة. قد يتخيلون واجهات معقدة، وجلسات تدريب طويلة، واحتمال حدوث أخطاء تقنية قد تعطل دخلهم. يمكن أن يكون الخوف من المجهول رادعًا قويًا. علاوة على ذلك، فإن الافتقار إلى عروض توضيحية واضحة وملموسة لقيمة التكنولوجيا يمكن أن يترك الملاك غير مقتنعين. إذا لم يتمكنوا من رؤية كيف سيؤدي نظام رقمي مباشرة إلى تحسين أرباحهم النهائية أو تقليل عبء عملهم، فمن غير المرجح أن يتبنوه. يمكن للتجارب السلبية السابقة مع البرامج المطبقة بشكل سيء أو مقدمي الخدمات غير الموثوق بهم أن تخلق أيضًا عدم ثقة دائم في الحلول التكنولوجية الجديدة، مما يجعلهم حذرين بشكل خاص من التبديل. الاعتماد التقليدي على العلاقات الشخصية وقنوات الاتصال المباشر يمكن أن يعزز أيضًا الاعتقاد بأن البدائل الرقمية غير شخصية وأقل فعالية.
 
-## فتح ثقة المالك: استراتيجيات التبني الرقمي
+## كسب ثقة المالك: استراتيجيات التحول الرقمي
 
 يتطلب الانتقال الناجح للملاك إلى المنصات الرقمية نهجًا استراتيجيًا متعاطفًا يعالج مخاوفهم مباشرة ويسلط الضوء على الفوائد الملموسة. الأمر يتعلق ببناء الثقة وإظهار كيف يمكن للتكنولوجيا أن تعزز تجربتهم الملكية، بدلاً من تعقيدها. من خلال التركيز على الشفافية والكفاءة والتواصل الواضح، يمكن لمديري العقارات سد الفجوة الرقمية بفعالية.
 
-### أظهر، لا تخبر فقط: إظهار الفوائد الملموسة
+### أرِهم ولا تكتفِ بالكلام: اعرض الفوائد الملموسة
 
 الحجة الأكثر إقناعًا للتبني الرقمي هي إظهار التحسينات الملموسة. بالنسبة للملاك، غالبًا ما يترجم هذا إلى رؤية مالية أفضل وكفاءة تشغيلية متزايدة. على سبيل المثال، يمكن أن توفر المنصة الرقمية وصولاً في الوقت الفعلي إلى البيانات المالية، وحالة تحصيل الإيجارات، وتقارير المصروفات. هذا المستوى من الشفافية يقلل بشكل كبير من الحاجة إلى المتابعات اليدوية ويوفر للملاك راحة فورية. ويوضح دليلنا عن [تقارير الملاك المؤتمتة وكشوف الحساب التي تُرسل تلقائياً](/ar/blog/automated-owner-reporting-statements-that-send-themselves/) كيف يبدو ذلك عملياً.
 
 ### التنفيذ المرحلي والدعم الشخصي
 
-بدلاً من التحول المفاجئ بمنطق "الكل أو لا شيء"، ضع في اعتبارك نهجًا مرحليًا. قدم الوظائف الأساسية أولاً، مثل تحصيل الإيجارات عبر الإنترنت أو تسليم البيانات الرقمية. بمجرد أن يصبح الملاك مرتاحين لهذه الميزات، قم بتوسيعها تدريجيًا إلى إمكانيات أكثر تقدمًا. يعد تقديم جلسات تدريب شخصية، مصممة خصيصًا لمستوى راحة كل مالك مع التكنولوجيا، أمرًا بالغ الأهمية. قد يشمل ذلك عروضًا توضيحية فردية، ووثائق واضحة وخالية من المصطلحات، وقنوات دعم متاحة بسهولة. جعل الانتقال يبدو قابلاً للإدارة ومدعومًا هو مفتاح التغلب على المقاومة.
+بدلاً من التحول المفاجئ بمنطق "الكل أو لا شيء"، ضع في اعتبارك نهجًا مرحليًا. قدم الوظائف الأساسية أولاً، مثل تحصيل الإيجارات عبر الإنترنت أو تسليم البيانات الرقمية. بمجرد أن يصبح الملاك مرتاحين لهذه الميزات، قم بتوسيعها تدريجيًا إلى إمكانيات أكثر تقدمًا. يعد تقديم جلسات تدريب شخصية، مصممة خصيصًا لمستوى راحة كل مالك مع التكنولوجيا، أمرًا بالغ الأهمية. قد يشمل ذلك عروضًا توضيحية فردية، ووثائق واضحة وخالية من المصطلحات، وقنوات دعم متاحة بسهولة. جعل الانتقال يبدو قابلاً للإدارة ومدعومًا هو مفتاح التغلب على المقاومة. وبعد موافقة الملاك، تكون الخطوة التالية نقل سجلاتهم؛ ويوضح دليلنا عن [الانتقال من جداول البيانات والبرامج القديمة](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/) كيف تفعل ذلك دون فقدان البيانات.
 
 ### بناء الجسور بالتواصل والتعاون
 
 عزز بيئة التواصل المفتوح. قم بتحديث الملاك بانتظام حول الفوائد التي يستفيدون منها، مثل تحصيل الإيجارات بشكل أسرع، وتقليل الأخطاء الإدارية، وتحسين التواصل مع المستأجرين. شجع التعليقات واستخدمها بنشاط لتحسين عملية التنفيذ. إظهار الملاك أن مدخلاتهم ذات قيمة يمكن أن يعزز بشكل كبير استعدادهم للانخراط مع الأنظمة الجديدة. ولمعرفة المزيد عن توقعات الملاك، اقرأ [ما يريده ملاك العقارات حقاً من مديريهم](/ar/blog/owner-communication-that-builds-trust-not-just-reports/).
 
-## التنقل في مشهد العقارات السعودي بالأدوات الرقمية
+## الأدوات الرقمية في السوق العقاري السعودي
 
 يشهد سوق العقارات السعودي تحولًا كبيرًا، مدفوعًا بالأهداف الوطنية الطموحة والتزايد في الطلاقة الرقمية بين سكانه. بالنسبة لمديري العقارات، يعد فهم هذه الديناميكيات أمرًا أساسيًا لإقناع الملاك بضرورة وفوائد المنصات الرقمية. تشجع رؤية 2030، بتركيزها على التنويع الاقتصادي والتحديث، على تبني التقنيات المتقدمة عبر جميع القطاعات، بما في ذلك العقارات. يخلق هذا الدافع الوطني بيئة مواتية للحلول الرقمية التي تعزز الكفاءة والشفافية.
 
@@ -181,4 +181,4 @@ Ready to transform your property operations? [Visit portal.accez.cloud](https://
 
 *هذه المقالة هي معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع متخصص مؤهل.*
 
-هل أنت مستعد لتحويل عمليات عقاراتك؟ [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+اطّلع على كشوف الحساب والمستحقات التي يمكنك عرضها على الملاك في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

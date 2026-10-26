@@ -6,7 +6,7 @@ metaTitleAr: "قوالب رسائل الضيوف لمديري إيجارات ا�
 metaDescription: "The guest messages every vacation rental needs, from booking confirmation and arrival details to in-stay check-ins and post-stay review requests."
 metaDescriptionAr: "الرسائل التي يحتاجها كل مدير لإيجارات العطلات، من تأكيد الحجز وتفاصيل الوصول إلى المتابعة أثناء الإقامة وطلب التقييم بعد مغادرة الضيف."
 excerpt: "Streamline your guest communication with these must-have templates to enhance guest experience and boost bookings."
-excerptAr: "قم بتبسيط تواصلك مع الضيوف باستخدام هذه القوالب الضرورية لتعزيز تجربة الضيف وزيادة الحجوزات."
+excerptAr: "بسّط تواصلك مع الضيوف بهذه القوالب الأساسية لتحسين تجربة الضيف وزيادة الحجوزات."
 date: "2026-07-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -58,7 +58,7 @@ Accez.Cloud gives vacation rental managers the [messaging and billing tools](/so
 
 Here are the Accez.Cloud features that support your guest messaging:
 
--   **Email Templates:** Ready templates for booking confirmations, check-in details and cancellations, sent for you.
+-   **Email Templates:** Ready templates for booking confirmations, check-in details and cancellations, so every guest gets the same clear message.
 -   **SMS Messaging:** Text guests directly for short, time-sensitive updates such as arrival reminders.
 -   **One Inbox:** Keep every guest conversation in one place, so any team member can pick up where a colleague left off.
 -   **Reservations With Full Context:** Each stay shows its timeline, payment and accepted policies, so replies are based on what the guest actually booked.
@@ -77,7 +77,7 @@ By leveraging Accez.Cloud, you can elevate your guest experience, reduce operati
 -   Saudi Arabia's market demands tech-savvy, culturally sensitive, and compliant communication.
 -   Messaging apps are part of daily life in KSA, so consistent templates and one record of each conversation matter.
 
-Transform your guest communication and unlock new levels of efficiency with Accez.Cloud. Visit portal.accez.cloud
+See how email templates, SMS and one inbox work on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
@@ -99,7 +99,7 @@ Transform your guest communication and unlock new levels of efficiency with Acce
 
 تبدأ الرحلة قبل وقت طويل من دخول الضيف. يرسل المديرون ذوو الأداء العالي سلسلة من الرسائل الآلية والشخصية في نفس الوقت لتمهيد الطريق لإقامة مثالية. يتضمن ذلك تأكيد الحجز مع جميع التفاصيل الأساسية، متبوعًا بحزمة ما قبل الوصول. قد تحتوي هذه الحزمة على الاتجاهات إلى العقار، وتعليمات تسجيل الوصول (بما في ذلك رموز الدخول بدون مفتاح إذا كانت مطبقة)، واسم شبكة Wi-Fi وكلمة المرور، وقواعد المنزل، ومعلومات الاتصال لأي مشكلات عاجلة. ويوضح دليلنا عن [كيف تصنع تجربة ما بين الحجز والوصول التقييمات أو تهدمها](/ar/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/) سبب أهمية هذه المرحلة. إن تقديم هذه المعلومات مقدمًا يقلل من القلق ويسمح للضيوف بالتخطيط لوصولهم بثقة، مما يجعلهم يشعرون بالترحيب والاستعداد.
 
-### الدعم والمشاركة أثناء الإقامة
+### الدعم والتواصل أثناء الإقامة
 
 أثناء الإقامة، يضمن التواصل المستمر أن الضيوف يشعرون بالدعم والتقدير. يستخدم المديرون قوالب لفحص منتصف الإقامة للاستفسار عن تجربتهم ومعالجة أي احتياجات فورية. يمكن لهذا النهج الاستباقي اكتشاف المشكلات الصغيرة قبل تصعيدها إلى شكاوى رئيسية. على سبيل المثال، يمكن استخدام قالب لتقديم توصيات محلية بناءً على تفضيلات الضيف، أو لتقديم معلومات حول الأحداث القريبة. هذا يدل على الالتزام بتعزيز زيارة الضيف بما يتجاوز مجرد مكان الإقامة نفسه. علاوة على ذلك، فإن القوالب لا تقدر بثمن للاستجابة لأسئلة الإقامة الشائعة، مثل كيفية تشغيل الأجهزة أو مكان العثور على مناشف إضافية، مما يضمن حلاً سريعًا دون الحاجة إلى قيام المدير بكتابة نفس المعلومات مرارًا وتكرارًا.
 
@@ -107,7 +107,7 @@ Transform your guest communication and unlock new levels of efficiency with Acce
 
 تجربة الضيف لا تنتهي عند تسجيل المغادرة. يستخدم المديرون ذوو الأداء العالي قوالب لرسائل الشكر بعد الإقامة، وتشجيع الضيوف على ترك مراجعات وتقديم حوافز للحجوزات المتكررة. يمكن أن تتضمن هذه الرسائل أيضًا معلومات حول تمديد إقامتهم أو حجز عقارات مستقبلية ضمن المحفظة. يعد جمع الملاحظات أمرًا بالغ الأهمية للتحسين المستمر. يمكن لبريد إلكتروني جيد التنظيم بعد الإقامة أن يحث الضيوف على مشاركة أفكارهم، مما يوفر رؤى قيمة يمكن استخدامها لصقل الخدمات وتحديث عروض العقارات. وتوقيت طلب التقييم لا يقل أهمية عن مضمونه؛ اطلع على [توقيت طلب التقييم للحصول على مزيد من تقييمات الخمس نجوم](/ar/blog/timing-the-review-request-how-to-get-more-5-star-ratings/).
 
-## التنقل في مشهد تأجير العطلات السعودي بدقة
+## سوق إيجارات العطلات في السعودية
 
 تقدم المملكة العربية السعودية سوقًا فريدًا ومتطورًا لمديري العقارات المؤجرة لقضاء العطلات. ومع الأهداف الطموحة لرؤية 2030، هناك دفعة كبيرة نحو السياحة وتحسين تجارب الضيافة. وهذا يتطلب تواصلًا ليس فعالًا فحسب، بل مراعيًا للثقافة المحلية ومواكبًا للتقنية أيضًا. **والترخيص يأتي أولًا**: فالوحدات المفروشة التي تؤجر للسياح بالليلة تحتاج إلى ترخيص من وزارة السياحة (ويشرح دليلنا عن [الحصول على ترخيص الإيجار قصير الأجل في السعودية](/ar/blog/saudi-s-short-term-rental-licensing-getting-your-str-permit/) الخطوات)، وتساعد القوالب الواضحة على عرض قواعد السكن ومسؤوليات الضيف بدقة في كل مرة.
 
@@ -119,7 +119,7 @@ Transform your guest communication and unlock new levels of efficiency with Acce
 
 فيما يلي ميزات Accez.Cloud التي تدعم مراسلات الضيوف لديك:
 
--   **قوالب البريد الإلكتروني:** قوالب جاهزة لتأكيد الحجز وتفاصيل تسجيل الوصول والإلغاء، تُرسل نيابة عنك.
+-   **قوالب البريد الإلكتروني:** قوالب جاهزة لتأكيد الحجز وتفاصيل تسجيل الوصول والإلغاء، ليتلقى كل ضيف الرسالة الواضحة نفسها.
 -   **الرسائل النصية:** راسل الضيوف مباشرة للتحديثات القصيرة والعاجلة مثل تذكيرات الوصول.
 -   **صندوق وارد موحد:** اجمع كل محادثات الضيوف في مكان واحد، ليتمكن أي عضو في الفريق من متابعة ما بدأه زميله.
 -   **حجوزات بسياقها الكامل:** تعرض كل إقامة جدولها الزمني والدفع والسياسات المقبولة، لتستند الردود إلى ما حجزه الضيف فعلًا.
@@ -138,4 +138,4 @@ Transform your guest communication and unlock new levels of efficiency with Acce
 -   يتطلب سوق المملكة العربية السعودية تواصلًا ذكيًا تقنيًا وحساسًا ثقافيًا ومتوافقًا.
 -   تطبيقات المراسلة جزء من الحياة اليومية في المملكة، لذا تزداد أهمية القوالب المتسقة والسجل الموحد لكل محادثة.
 
-حوّل تواصلك مع الضيوف وأطلق العنان لمستويات جديدة من الكفاءة مع Accez.Cloud. تفضل بزيارة portal.accez.cloud
+تعرّف على قوالب البريد والرسائل النصية وصندوق الوارد الموحد في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).
