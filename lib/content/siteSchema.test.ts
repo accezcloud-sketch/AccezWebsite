@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ORGANIZATION_ID, pricingUrl, providerMarketplaceSchema, providerPlanPrices, softwareApplicationSchema, websiteSchema } from './siteSchema'
+import { ORGANIZATION_ID, organizationSchema, pricingUrl, providerMarketplaceSchema, providerPlanPrices, softwareApplicationSchema, websiteSchema } from './siteSchema'
 
 describe('site schema', () => {
   it('describes the website and points to the one Organization', () => {
@@ -36,5 +36,12 @@ describe('site schema', () => {
   it('lists only features the product has', () => {
     const list = softwareApplicationSchema('en', 'd').featureList.join('\n')
     for (const claim of [/e-?sign/i, /campaign/i, /whatsapp/i, /portal/i]) expect(list, String(claim)).not.toMatch(claim)
+  })
+
+  it('gives the Organization the office address shown on About, and no phone', () => {
+    const org = organizationSchema()
+    expect(org['@id']).toBe(ORGANIZATION_ID)
+    expect(org.address).toEqual({ '@type': 'PostalAddress', streetAddress: 'Almalqa', addressLocality: 'Riyadh', addressCountry: 'SA' })
+    expect(JSON.stringify(org)).not.toMatch(/telephone|openingHours/)
   })
 })

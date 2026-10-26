@@ -13,6 +13,54 @@ import { PM_PLAN_COUNT, pmMonthlyPrices } from './pmPlans'
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`
 export const WEBSITE_ID = `${SITE_URL}/#website`
 
+/**
+ * Site-wide Organization entity.
+ *
+ * `sameAs` is what lets Google and AI systems resolve every scattered mention
+ * of "Accez" — the X account, the LinkedIn page, the YouTube channel — to one
+ * entity instead of several unrelated ones. The profiles were already linked in
+ * the footer; this is the machine-readable version of the same facts.
+ *
+ * Rendered server-side as a raw <script> so it appears in the static HTML. Do
+ * not switch this to next/script — that injects client-side and would make it
+ * invisible to every crawler that doesn't execute JavaScript.
+ */
+export function organizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': ORGANIZATION_ID,
+    name: 'Accez',
+    alternateName: 'Accez Cloud',
+    legalName: 'Cloud Valley LLC',
+    url: 'https://www.accez.cloud',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.accez.cloud/images/accez-logo.png',
+    },
+    description:
+      'All-in-one property operations platform for Saudi Arabia. Reservations, rent, maintenance, owners, sales and hotels in one system, in Arabic and English.',
+    // The office shown on the About page and in the contact section.
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Almalqa',
+      addressLocality: 'Riyadh',
+      addressCountry: 'SA',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'Saudi Arabia',
+    },
+    sameAs: [
+      'https://x.com/accez_cloud',
+      'https://www.linkedin.com/company/accez-cloud/',
+      'https://www.youtube.com/@accez-cloud',
+      'https://www.instagram.com/accez.cloud',
+      'https://www.facebook.com/profile.php?id=61569153550177',
+    ],
+  }
+}
+
 /** The pricing page of one solution, as an absolute URL (bare /pricing/ only redirects). */
 export function pricingUrl(solutionKey: string, locale: Locale): string {
   const solution = solutionByKey(solutionKey)

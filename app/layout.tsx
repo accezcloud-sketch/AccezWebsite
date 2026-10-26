@@ -8,7 +8,7 @@ import ConversionTracking from '@/components/ConversionTracking'
 import ConsentBanner from '@/components/ConsentBanner'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { HOME_TITLE, SITE_DESCRIPTION, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
-import { websiteSchema } from '@/lib/content/siteSchema'
+import { organizationSchema, websiteSchema } from '@/lib/content/siteSchema'
 import { THEME_INIT_SCRIPT } from '@/lib/theme/theme'
 import { CONSENT_DEFAULT_SCRIPT } from '@/lib/analytics/consent'
 
@@ -101,50 +101,6 @@ export const metadata: Metadata = {
     : {}),
 }
 
-/**
- * Site-wide Organization entity.
- *
- * `sameAs` is what lets Google and AI systems resolve every scattered mention
- * of "Accez" — the X account, the LinkedIn page, the YouTube channel — to one
- * entity instead of several unrelated ones. The profiles were already linked in
- * the footer; this is the machine-readable version of the same facts.
- *
- * Rendered server-side as a raw <script> so it appears in the static HTML. Do
- * not switch this to next/script — that injects client-side and would make it
- * invisible to every crawler that doesn't execute JavaScript.
- */
-const organizationJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': 'https://www.accez.cloud/#organization',
-  name: 'Accez',
-  alternateName: 'Accez Cloud',
-  legalName: 'Cloud Valley LLC',
-  url: 'https://www.accez.cloud',
-  logo: {
-    '@type': 'ImageObject',
-    url: 'https://www.accez.cloud/images/accez-logo.png',
-  },
-  description:
-    'All-in-one property operations platform for Saudi Arabia. Reservations, rent, maintenance, owners, sales and hotels in one system, in Arabic and English.',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Riyadh',
-    addressCountry: 'SA',
-  },
-  areaServed: {
-    '@type': 'Country',
-    name: 'Saudi Arabia',
-  },
-  sameAs: [
-    'https://x.com/accez_cloud',
-    'https://www.linkedin.com/company/accez-cloud/',
-    'https://www.youtube.com/@accez-cloud',
-    'https://www.instagram.com/accez.cloud',
-    'https://www.facebook.com/profile.php?id=61569153550177',
-  ],
-}
-
 const HTML_LANG_SCRIPT =
   "(function(){var ar=/^\\/ar(\\/|$)/.test(location.pathname),d=document.documentElement;d.lang=ar?'ar':'en';d.dir=ar?'rtl':'ltr'})()"
 
@@ -165,7 +121,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
         />
         <script
           type="application/ld+json"
