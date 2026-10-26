@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { BlogPostMeta } from '@/lib/blog'
-import { postMetadata, socialImageUrl, truncateAtWord } from './postSeo'
+import { postDocumentTitle, postMetadata, socialImageUrl, TITLE_MAX, TITLE_SUFFIX, truncateAtWord } from './postSeo'
 
 describe('truncateAtWord', () => {
   it('leaves short text alone', () => {
@@ -61,5 +61,31 @@ describe('postMetadata', () => {
   it('uses canonical URLs with a trailing slash for Open Graph', () => {
     expect((postMetadata(post, 'en').openGraph as { url: string }).url).toBe('https://www.accez.cloud/blog/my-post/')
     expect((postMetadata(post, 'ar').openGraph as { url: string }).url).toBe('https://www.accez.cloud/ar/blog/my-post/')
+  })
+  it('drops the " | Accez" suffix when the title would pass 60 characters', () => {
+    const long = 'Utility and Bill Management Across a Rental Portfolio Guide'
+    const m = postMetadata({ ...post, metaTitle: long }, 'en')
+    expect(m.title).toEqual({ absolute: long })
+    // The share title never had the suffix and stays the plain title.
+    expect((m.openGraph as { title: string }).title).toBe(long)
+  })
+})
+
+describe('postDocumentTitle', () => {
+  it('keeps the suffix while title plus suffix fit in 60 characters', () => {
+    const fits = 'x'.repeat(TITLE_MAX - TITLE_SUFFIX.length)
+    expect(postDocumentTitle(fits)).toBe(fits)
+    expect(`${fits}${TITLE_SUFFIX}`.length).toBe(60)
+  })
+
+  it('uses the title alone, past the template, once it would not fit', () => {
+    const over = 'x'.repeat(TITLE_MAX - TITLE_SUFFIX.length + 1)
+    expect(postDocumentTitle(over)).toEqual({ absolute: over })
+  })
+
+  it('applies the same rule to Arabic titles', () => {
+    expect(postDocumentTitle('إدارة الفواتير')).toBe('إدارة الفواتير')
+    const longAr = 'إدارة المرافق والفواتير عبر محفظة عقارات الإيجار: دليل عملي شامل'
+    expect(postDocumentTitle(longAr)).toEqual({ absolute: longAr })
   })
 })

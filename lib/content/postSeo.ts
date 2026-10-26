@@ -12,6 +12,21 @@ import { X_HANDLE } from '@/lib/site'
 /** Google shows roughly 150–160 characters of a description. */
 export const DESCRIPTION_MAX = 160
 
+/** Appended to page titles by the root layout's title template. */
+export const TITLE_SUFFIX = ' | Accez'
+
+/** Search results show roughly 60 characters of a title before cutting it. */
+export const TITLE_MAX = 60
+
+/**
+ * The `<title>` for a post: with the site suffix while it fits in TITLE_MAX
+ * characters, otherwise the post title alone (`absolute` skips the template),
+ * so a long title is not pushed past the cut by " | Accez".
+ */
+export function postDocumentTitle(title: string): Metadata['title'] {
+  return title.length + TITLE_SUFFIX.length <= TITLE_MAX ? title : { absolute: title }
+}
+
 /**
  * Shortens text to at most `max` characters, cutting at a word boundary and
  * ending with an ellipsis, so a search snippet never ends mid-word
@@ -44,7 +59,7 @@ export function postMetadata(post: BlogPostMeta, locale: Locale): Metadata {
   const image = socialImageUrl(post.coverImage)
 
   return {
-    title,
+    title: postDocumentTitle(title),
     description,
     alternates: alternatesFor(`blog/${post.slug}`, locale),
     openGraph: {
