@@ -4,8 +4,6 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
-import FadeUp from '@/components/animations/FadeUp'
-import StaggerGrid, { staggerItem } from '@/components/animations/StaggerGrid'
 
 interface Feature {
   textKey: string
@@ -181,7 +179,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
       `}</style>
 
       <div className="container mx-auto px-4">
-        <FadeUp>
+        <div>
           <div className="text-center mb-10">
             {/* Eyebrow */}
             <div className="flex justify-center mb-4"><span className="ui-chip">{tp.eyebrow}</span></div>
@@ -243,21 +241,17 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
               </span>
             </div>
           </div>
-        </FadeUp>
+        </div>
 
-        <StaggerGrid
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 max-w-7xl mx-auto items-start"
-          staggerDelay={0.12}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 max-w-7xl mx-auto items-start">
           {PLANS.map((plan) => {
             const pricing = isYearly ? plan.yearly : plan.monthly
             const isCustom = pricing.price === 'Custom'
             const periodLabel = isYearly ? tp.perYear : tp.perMonth
 
             return (
-              <motion.div
+              <div
                 key={plan.id}
-                variants={staggerItem}
                 className={`${plan.mobileOrder} ${plan.desktopOrder} ${plan.highlight ? 'pricing-card-highlight' : ''}`}
               >
                 <motion.div
@@ -475,10 +469,10 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                     </ul>
                   </div>
                 </motion.div>
-              </motion.div>
+              </div>
             )
           })}
-        </StaggerGrid>
+        </div>
 
       </div>
     </section>

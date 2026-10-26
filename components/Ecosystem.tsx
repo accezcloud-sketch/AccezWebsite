@@ -11,7 +11,6 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import FadeUp from '@/components/animations/FadeUp'
 
 interface Party {
   icon: LucideIcon
@@ -121,19 +120,11 @@ export default function Ecosystem() {
   return (
     <section className="section-y" id="ecosystem" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <style>{`
-        /* Flow of connections travelling inward toward the hub. */
-        @keyframes eco-flow {
-          to { stroke-dashoffset: -24; }
-        }
-        @keyframes eco-pulse {
-          0%, 100% { transform: scale(1);   opacity: 0.5; }
-          50%      { transform: scale(1.6); opacity: 0;   }
-        }
+        /* Connections to the hub: a still dashed line (no looping motion). */
         .eco-line {
           stroke: url(#eco-grad);
           stroke-width: 1.5;
           stroke-dasharray: 4 8;
-          animation: eco-flow 1.1s linear infinite;
         }
         .eco-node {
           transition: transform 0.3s cubic-bezier(0.23,1,0.32,1),
@@ -150,7 +141,6 @@ export default function Ecosystem() {
         }
         .eco-card:hover { transform: translateY(-4px); border-color: var(--accent-line); }
         @media (prefers-reduced-motion: reduce) {
-          .eco-line { animation: none; }
           .eco-node:hover, .eco-card:hover { transform: none; }
         }
       `}</style>
@@ -159,7 +149,7 @@ export default function Ecosystem() {
           screen; on phones they stack. */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12 lg:items-center">
         {/* Section header */}
-        <FadeUp>
+        <div>
           <div className="text-center lg:text-start mb-12 lg:mb-0">
             <div className="flex justify-center lg:justify-start mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
 
@@ -180,10 +170,10 @@ export default function Ecosystem() {
               {t.tagline}
             </p>
           </div>
-        </FadeUp>
+        </div>
 
         {/* ── Desktop: radial hub-and-spoke ─────────────────────────── */}
-        <FadeUp delay={0.15} className="hidden lg:block">
+        <div className="hidden lg:block">
           <div className="relative mx-auto" style={{ width: 540, height: 540 }}>
             {/* Connecting lines + ambient rings */}
             <svg
@@ -278,11 +268,11 @@ export default function Ecosystem() {
             })}
           </div>
 
-        </FadeUp>
+        </div>
 
         {/* ── Mobile / tablet: hub card + party grid ────────────────── */}
         <div className="lg:hidden">
-          <FadeUp delay={0.1}>
+          <div>
             <div
               className="flex items-center gap-4 rounded-2xl p-5 max-w-md mx-auto mb-6"
               style={{
@@ -301,7 +291,7 @@ export default function Ecosystem() {
             <div className="flex justify-center mb-6" aria-hidden="true">
               <div className="w-px h-6" style={{ background: 'linear-gradient(to bottom, var(--accent-line), transparent)' }} />
             </div>
-          </FadeUp>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
             {PARTIES.map((party) => {

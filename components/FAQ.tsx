@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
-import FadeUp from '@/components/animations/FadeUp'
 import { CATEGORY_KEYS, FAQS, type FaqCategory } from '@/lib/content/faqs'
 
 const CATEGORY_TRANSLATION_KEY: Record<FaqCategory, string> = {
@@ -71,7 +70,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
         />
 
         <div className="relative z-10 max-w-3xl mx-auto">
-          <FadeUp className="text-center mb-10">
+          <div className="text-center mb-10">
             <div className="flex justify-center mb-4"><span className="ui-chip">{tf.eyebrow}</span></div>
 
             <Heading
@@ -96,10 +95,10 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 {tf.helpLink}
               </a>
             </p>
-          </FadeUp>
+          </div>
 
           {/* Category filter pills */}
-          <FadeUp delay={0.1} className="flex flex-wrap justify-center gap-2 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
             {allCategories.map(({ key, label }) => (
               <button
                 key={key}
@@ -125,14 +124,14 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 {label}
               </button>
             ))}
-          </FadeUp>
+          </div>
 
           {/* Accordion list */}
           <div className="flex flex-col gap-2">
             {filteredFaqs.map((faq, index) => {
               const isOpen = openIndex === index
               return (
-                <FadeUp key={faq.question} delay={index * 0.06}>
+                <div key={faq.question}>
                   <div
                     className="rounded-xl overflow-hidden transition-all duration-200"
                     style={{
@@ -202,13 +201,13 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                       </div>
                     </motion.div>
                   </div>
-                </FadeUp>
+                </div>
               )
             })}
           </div>
 
           {/* Bottom CTA */}
-          <FadeUp delay={0.2} className="mt-12">
+          <div className="mt-12">
             <div
               className="flex flex-col sm:flex-row items-center justify-between gap-5 rounded-2xl px-6 py-5"
               style={{
@@ -247,7 +246,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                 </svg>
               </a>
             </div>
-          </FadeUp>
+          </div>
         </div>
       </section>
     </>

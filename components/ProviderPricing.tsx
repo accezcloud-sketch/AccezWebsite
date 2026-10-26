@@ -4,7 +4,6 @@ import { Check } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import { PROVIDER_PRICING_COPY } from '@/lib/content/providerPricing'
-import FadeUp from '@/components/animations/FadeUp'
 import SectionHeader from '@/components/SectionHeader'
 
 /** Service-provider marketplace plans. Used on the Service Providers and Pricing pages. */
@@ -20,14 +19,14 @@ export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?
   return (
             <section id="provider-pricing" className="py-20" style={{ background: 'var(--section-bg, var(--bg))' }}>
         <div className="container mx-auto px-4">
-          <FadeUp>
+          <div>
             <SectionHeader eyebrow={p.pricingEyebrow} lead={p.pricingTitleLead} accent={p.pricingTitleAccent} subtitle={p.pricingSubtitle} isRTL={isRTL} headingLevel={headingLevel} />
-          </FadeUp>
+          </div>
 
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto items-stretch">
             {p.plans.map((plan, i) => (
-              <FadeUp key={plan.name} delay={0.1 + i * 0.08} className="h-full">
+              <div key={plan.name} className="h-full">
                 <div
                   className="ui-card relative flex flex-col p-6 h-full"
                   style={plan.highlight ? { borderColor: 'var(--accent-line)', boxShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--accent-line), 0 20px 60px rgb(var(--accent-rgb) / 0.16)' } : undefined}
@@ -85,7 +84,7 @@ export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?
                     ))}
                   </ul>
                 </div>
-              </FadeUp>
+              </div>
             ))}
           </div>
 

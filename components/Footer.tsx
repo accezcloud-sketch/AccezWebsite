@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
-import FadeUp from '@/components/animations/FadeUp'
 import { localeHref } from '@/lib/i18n'
 import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 
@@ -128,7 +127,7 @@ export default function Footer() {
         aria-hidden="true"
       />
 
-      <FadeUp distance={20}>
+      <div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-12 py-14 lg:py-16">
             {/* Brand column */}
@@ -244,7 +243,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </FadeUp>
+      </div>
     </footer>
   )
 }

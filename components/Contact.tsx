@@ -4,7 +4,6 @@ import { useEffect } from 'react'
 import Script from 'next/script'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { thankYouUrl } from '@/lib/analytics/conversions'
-import FadeUp from '@/components/animations/FadeUp'
 
 export default function Contact() {
   const { t, isRTL, language } = useLanguage()
@@ -42,7 +41,7 @@ export default function Contact() {
       <section className="py-20" id="contact" style={{ background: 'var(--section-bg, var(--bg))' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <FadeUp>
+            <div>
               <div className="text-center mb-10">
                 <div className="flex justify-center mb-4"><span className="ui-chip">{tc.eyebrow}</span></div>
 
@@ -63,12 +62,12 @@ export default function Contact() {
                   {tc.subtitle}
                 </p>
               </div>
-            </FadeUp>
+            </div>
 
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               {/* Left side - one cohesive contact panel */}
-              <FadeUp className="h-full">
+              <div className="h-full">
                 <div
                   className="ui-card p-6 sm:p-8 h-full flex flex-col"
                 >
@@ -115,10 +114,10 @@ export default function Contact() {
                     <span className="text-sm">{tc.whatsappCta}</span>
                   </a>
                 </div>
-              </FadeUp>
+              </div>
 
               {/* Right side - Salesforce Web-to-Lead Form */}
-              <FadeUp delay={0.15}>
+              <div>
                 <div
                   className="ui-card p-6 sm:p-8"
                 >
@@ -275,7 +274,7 @@ export default function Contact() {
                     </button>
                   </form>
                 </div>
-              </FadeUp>
+              </div>
             </div>
           </div>
         </div>

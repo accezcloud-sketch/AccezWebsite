@@ -3,7 +3,6 @@
 import { CreditCard, ShieldCheck, MapPin, type LucideIcon } from 'lucide-react'
 import ArabicEnglishIcon from '@/components/ui/ArabicEnglishIcon'
 import { useLanguage } from '@/contexts/LanguageContext'
-import FadeUp from '@/components/animations/FadeUp'
 
 interface IntegrationGroup {
   label: string
@@ -103,7 +102,7 @@ export default function Trust() {
   return (
     <section className="section-y" id="trust" style={{ background: 'var(--section-bg, var(--bg-alt))' }}>
       <div className="container mx-auto px-4">
-        <FadeUp>
+        <div>
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4"><span className="ui-chip">{t.eyebrow}</span></div>
             <h2
@@ -115,10 +114,10 @@ export default function Trust() {
             </h2>
             <p className="text-center max-w-2xl mx-auto mt-4 leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>{t.subtitle}</p>
           </div>
-        </FadeUp>
+        </div>
 
         {/* Integrations and trust points in one panel. */}
-        <FadeUp delay={0.1}>
+        <div>
           <div className="ui-card max-w-6xl mx-auto rounded-[var(--radius-lg)] p-5 sm:p-8">
             <p className="text-center text-xs font-semibold tracking-widest uppercase mb-6 text-faint">{t.integrationsHeading}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 sm:mb-10">
@@ -157,7 +156,7 @@ export default function Trust() {
               })}
             </div>
           </div>
-        </FadeUp>
+        </div>
       </div>
     </section>
   )
