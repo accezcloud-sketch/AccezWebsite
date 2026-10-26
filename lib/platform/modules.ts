@@ -101,7 +101,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     modules: ['channel-manager', 'billing-and-payments', 'team-and-messaging'],
     integrations: ['airbnb', 'booking-com', 'expedia'],
     posts: [
-      'from-5-dashboards-to-1-the-case-for-centralized-booking-management',
+      'the-double-booking-nightmare-how-to-sync-every-channel',
       'the-upsell-playbook-turning-early-check-ins-and-add-ons',
       'reducing-cancellations-why-guests-book-then-bail',
     ],
@@ -144,7 +144,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     modules: ['billing-and-payments', 'leases-and-rent', 'team-and-messaging'],
     integrations: [],
     posts: [
-      'why-your-spreadsheet-is-lying-to-you-about-property-performance',
+      'the-5-metrics-every-property-manager-should-check-daily',
       'migrating-from-spreadsheets-and-legacy-software-without-losing-data',
       'how-to-scale-your-property-portfolio-without-losing-control',
     ],

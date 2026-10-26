@@ -98,7 +98,7 @@ export const INTEGRATIONS: Integration[] = [
     ],
     faqs: CHANNEL_FAQ('Airbnb', { en: 'Booking.com and Expedia.', ar: 'Booking.com وExpedia.' }),
     modules: ['channel-manager', 'reservations-and-stays'],
-    posts: ['why-managing-airbnb-and-booking-com-separately-is-costing-you', 'the-double-booking-nightmare-how-to-sync-every-channel'],
+    posts: ['the-double-booking-nightmare-how-to-sync-every-channel'],
   },
   {
     slug: 'booking-com',
@@ -124,7 +124,7 @@ export const INTEGRATIONS: Integration[] = [
     ],
     faqs: CHANNEL_FAQ('Booking.com', { en: 'Airbnb and Expedia.', ar: 'Airbnb وExpedia.' }),
     modules: ['channel-manager', 'reservations-and-stays'],
-    posts: ['why-managing-airbnb-and-booking-com-separately-is-costing-you', 'how-poor-channel-management-costs-vacation-rental-managers-bookings'],
+    posts: ['the-double-booking-nightmare-how-to-sync-every-channel'],
   },
   {
     slug: 'expedia',
@@ -150,7 +150,7 @@ export const INTEGRATIONS: Integration[] = [
     ],
     faqs: CHANNEL_FAQ('Expedia', { en: 'Airbnb and Booking.com.', ar: 'Airbnb وBooking.com.' }),
     modules: ['channel-manager', 'reservations-and-stays'],
-    posts: ['the-double-booking-nightmare-how-to-sync-every-channel', 'how-poor-channel-management-costs-vacation-rental-managers-bookings'],
+    posts: ['the-double-booking-nightmare-how-to-sync-every-channel'],
   },
   {
     slug: 'stripe',
@@ -239,7 +239,7 @@ export const INTEGRATIONS: Integration[] = [
       { q: { en: 'What else can I connect?', ar: 'ما الذي يمكنني ربطه أيضًا؟' }, a: { en: 'Meta Pixel, Stripe, Tap and SMS through Twilio.', ar: 'Meta Pixel وStripe وTap والرسائل النصية عبر Twilio.' } },
     ],
     modules: [],
-    posts: ['flying-blind-what-happens-when-property-managers-don-t-track', 'the-5-metrics-every-property-manager-should-check-daily'],
+    posts: ['the-5-metrics-every-property-manager-should-check-daily'],
   },
   {
     slug: 'meta-pixel',
@@ -268,7 +268,7 @@ export const INTEGRATIONS: Integration[] = [
       { q: { en: 'What else can I connect?', ar: 'ما الذي يمكنني ربطه أيضًا؟' }, a: { en: 'Google Analytics, Stripe, Tap and SMS through Twilio.', ar: 'Google Analytics وStripe وTap والرسائل النصية عبر Twilio.' } },
     ],
     modules: [],
-    posts: ['building-a-brand-for-your-property-management-company', 'flying-blind-what-happens-when-property-managers-don-t-track'],
+    posts: ['building-a-brand-for-your-property-management-company', 'the-5-metrics-every-property-manager-should-check-daily'],
   },
   {
     slug: 'twilio-sms',
@@ -297,7 +297,7 @@ export const INTEGRATIONS: Integration[] = [
       { q: { en: 'Is SMS in both solutions?', ar: 'هل الرسائل النصية متاحة في الحلين؟' }, a: { en: 'Yes. Property managers and service providers can both send SMS.', ar: 'نعم. يستطيع مديرو العقارات ومقدمو الخدمات إرسال الرسائل النصية.' } },
     ],
     modules: ['team-and-messaging'],
-    posts: ['how-to-communicate-with-100-tenants-without-hiring-more-staff', 'the-guest-messaging-templates-every-vacation-rental-manager'],
+    posts: ['one-inbox-to-rule-them-all-centralizing-property-communications', 'the-guest-messaging-templates-every-vacation-rental-manager'],
   },
 ]
 

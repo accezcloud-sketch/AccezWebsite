@@ -72,7 +72,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
     modules: ['channel-manager', 'reservations-and-stays', 'billing-and-payments', 'team-and-messaging'],
     integrations: ['airbnb', 'booking-com', 'expedia'],
     posts: [
-      'why-managing-airbnb-and-booking-com-separately-is-costing-you',
+      'the-double-booking-nightmare-how-to-sync-every-channel',
       'length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates',
       'the-4-hour-turnover-systems-for-same-day-check-out-to-check-in',
     ],
@@ -154,8 +154,8 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
     modules: ['leases-and-rent', 'maintenance-work-orders', 'team-and-messaging', 'billing-and-payments'],
     integrations: ['twilio-sms'],
     posts: [
-      'how-to-communicate-with-100-tenants-without-hiring-more-staff',
-      'the-maintenance-request-black-hole-why-tenants-feel-ignored',
+      'one-inbox-to-rule-them-all-centralizing-property-communications',
+      'from-request-to-resolution-building-a-maintenance-system-that-works',
       'rent-increases-and-lease-renewals',
     ],
   },

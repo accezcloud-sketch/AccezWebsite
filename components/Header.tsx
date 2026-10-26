@@ -80,7 +80,14 @@ export default function Header() {
   // (lib/legal/documents.ts). Each legal link goes to its short "who are you?"
   // page, which leads to the reader's version.
   const resourcesSections: NavSection[] = [
-    { links: [{ label: t.header.faq, href: href('/faq') }, { label: t.footer.integrations, href: href('/integrations') }] },
+    {
+      links: [
+        { label: t.header.faq, href: href('/faq') },
+        { label: RESOURCE_MENU.regulations[language], href: href(`/${REGULATIONS_HUB_ROUTE}`) },
+        { label: RESOURCE_MENU.downloads[language], href: href(`/${DOWNLOADS_ROUTE}`) },
+        { label: t.footer.integrations, href: href('/integrations') },
+      ],
+    },
     { links: LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: href(legalHref(d.key)) })) },
   ]
 
