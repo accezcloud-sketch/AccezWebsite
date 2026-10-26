@@ -212,9 +212,10 @@ export default function Footer({ locale }: { locale: Locale }) {
             ))}
           </div>
 
-          {/* Bottom bar */}
+          {/* Bottom bar. Padded clear of the chat bubble (fixed, bottom right):
+              below it on phones, beside it on wider screens. */}
           <div
-            className="flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-xs text-faint border-t"
+            className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 pb-28 sm:pb-6 sm:pr-28 text-xs text-faint border-t"
             style={{ borderColor: 'var(--border)' }}
           >
             <div className="text-center sm:text-start">
