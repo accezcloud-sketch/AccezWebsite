@@ -7,7 +7,7 @@ import AboutPage from '@/components/AboutPage'
 export const metadata: Metadata = {
   title: 'About Accez, one platform with two solutions',
   description:
-    'Accez.cloud is one platform with two solutions, built in Riyadh by Cloud Valley LLC: property management for property managers, landlords and hotels, and a booking solution for service providers.',
+    'Accez is one platform with two solutions, built in Riyadh by Cloud Valley LLC: property management software and a booking solution for service providers.',
   alternates: alternatesFor('about', 'en'),
   openGraph: {
     title: 'About Accez',

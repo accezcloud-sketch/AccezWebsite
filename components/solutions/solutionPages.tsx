@@ -29,16 +29,16 @@ export const SOLUTION_PAGES: Record<string, SolutionPage> = {
     Page: PropertyManagementPage,
     title: { en: 'Property management solution', ar: 'حل إدارة العقارات' },
     description: {
-      en: 'Property management for vacation rentals, hotels, residential communities and owner portfolios: reservations synced with Airbnb, Booking.com and Expedia, work orders, rental and sale properties, sales and projects, contracts and e-signing, owners and payouts.',
-      ar: 'إدارة العقارات للإيجارات السياحية والفنادق والمجمعات السكنية ومحافظ الملاك: الحجوزات المتزامنة مع Airbnb وBooking.com وExpedia، وأوامر العمل، وعقارات الإيجار والبيع، والمبيعات والمشاريع، والعقود والتوقيع الإلكتروني، والملاك والمدفوعات.',
+      en: 'Property management software for Saudi Arabia: reservations synced with Airbnb, Booking.com and Expedia, leases, rent, work orders, sales and payouts.',
+      ar: 'برنامج إدارة العقارات في السعودية: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، وعقود الإيجار، والإيجارات، وأوامر العمل، والمبيعات، ومدفوعات الملاك.',
     },
   },
   'service-providers': {
     Page: ServiceProviderSolution,
     title: { en: 'Service provider solution', ar: 'حل مقدمي الخدمات' },
     description: {
-      en: 'List your business on the Accez marketplace, take bookings from your own clients and get found by new customers. Barbers, salons, spas, fitness, photography and home services. See provider plans and pricing.',
-      ar: 'أدرج نشاطك في سوق أكسيز، واستقبل الحجوزات من عملائك، وليجدك عملاء جدد. حلاقة وصالونات وسبا ولياقة وتصوير وخدمات منزلية.',
+      en: 'Take bookings, manage your team and customers, and get found on the Accez marketplace. For barbers, salons, spas, coaches and every appointment business.',
+      ar: 'استقبل الحجوزات، وأدر فريقك وعملاءك، ودع العملاء الجدد يجدونك في سوق أكسيز. للحلاقين والصالونات والسبا والمدربين وكل نشاط يعمل بالمواعيد.',
     },
     schema: providerMarketplaceSchema,
   },

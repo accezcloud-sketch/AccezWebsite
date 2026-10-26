@@ -5,7 +5,7 @@ import { alternatesFor, localeUrl } from '@/lib/i18n'
 export const metadata: Metadata = {
   title: 'الدعم، احصل على مساعدة من فريقنا في الرياض',
   description:
-    'تحتاج مساعدة في أكسيز؟ أرسل تذكرة دعم وسيعود إليك فريقنا في الرياض في أقرب وقت ممكن.',
+    'تحتاج مساعدة في أكسيز؟ أرسل تذكرة دعم وسيرد عليك فريقنا في الرياض. مساعدة في الحجوزات وأوامر العمل والمدفوعات وحسابك وكل ما يخص المنصة.',
   alternates: alternatesFor('support', 'ar'),
   openGraph: {
     title: 'الدعم | أكسيز',

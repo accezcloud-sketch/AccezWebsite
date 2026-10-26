@@ -39,6 +39,8 @@ export interface PlatformSolution {
   href: string
   /** Its pricing page (route without locale). */
   pricingHref: string
+  /** The pricing page's search description (about 140 to 155 characters). */
+  pricingDescription: Bilingual
   /** One line for the pricing menu, e.g. what the plans start at. */
   pricingNote: Bilingual
   signUpUrl: string
@@ -64,6 +66,10 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     },
     href: '/solutions/property-managers',
     pricingHref: '/pricing/property-managers',
+    pricingDescription: {
+      en: 'Plans and prices for Accez property management: reservations, channels, leases, rent, work orders and owner payouts. Compare the plans and choose yours.',
+      ar: 'باقات وأسعار أكسيز لإدارة العقارات: الحجوزات والقنوات وعقود الإيجار والإيجارات وأوامر العمل ومدفوعات الملاك. قارن الباقات واختر ما يناسبك.',
+    },
     pricingNote: { en: 'Plans for operators of every size', ar: 'خطط للمشغّلين بجميع الأحجام' },
     signUpUrl: PORTAL_SIGN_UP,
     loginUrl: PORTAL_LOGIN,
@@ -99,6 +105,10 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     },
     href: '/solutions/service-providers',
     pricingHref: '/pricing/service-providers',
+    pricingDescription: {
+      en: 'Plans and prices for service providers on Accez: a free marketplace listing, bookings, team and customers, with a lower platform fee on higher plans.',
+      ar: 'باقات وأسعار مقدمي الخدمات في أكسيز: إدراج مجاني في السوق، والحجوزات، والفريق والعملاء، مع رسوم منصة أقل في الباقات الأعلى.',
+    },
     pricingNote: { en: 'Free to list, lower fees as you grow', ar: 'الإدراج مجاني، ورسوم أقل مع نموك' },
     signUpUrl: PROVIDER_SIGN_UP,
     loginUrl: PROVIDER_LOGIN,

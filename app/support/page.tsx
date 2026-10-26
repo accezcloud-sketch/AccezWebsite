@@ -11,7 +11,7 @@ import SupportPageClient from '@/components/SupportPageClient'
 export const metadata: Metadata = {
   title: 'Support, get help from our Riyadh team',
   description:
-    'Need help with Accez? Submit a support ticket and our team in Riyadh will get back to you. Help with reservations, work orders, owner payouts, contracts and hotel operations.',
+    'Need help with Accez? Send a support ticket and our team in Riyadh will reply. Help with reservations, work orders, payouts, bookings and your account.',
   alternates: alternatesFor('support', 'en'),
   openGraph: {
     title: 'Support | Accez',

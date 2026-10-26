@@ -126,6 +126,7 @@ export const en = {
   faq: {
     title: 'Frequently Asked Questions',
     subtitle: 'Find answers to common questions about Accez',
+    metaDescription: 'Answers to common questions about Accez, the property management and service booking platform for Saudi Arabia: plans, payments, channels and setup.',
     eyebrow: 'FAQ',
     titleLead: 'Questions we get',
     titleAccent: 'all the time',

@@ -106,6 +106,6 @@ export function legalVersionMetadata(key: LegalDocKey, solution: PlatformSolutio
     route: legalHref(key, solution),
     locale,
     title: legalVersionTitle(key, solution, locale),
-    description: `${legalDocument(key).summary[locale]} ${solution.name[locale]}.`,
+    description: `${legalDocument(key).summary[locale]} ${solution.audience[locale]}.`,
   })
 }

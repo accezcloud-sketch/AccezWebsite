@@ -29,6 +29,6 @@ export function solutionPricingMetadata(solution: PlatformSolution, locale: Loca
     route: solution.pricingHref,
     locale,
     title: ar ? `الأسعار ${solution.audience.ar}` : `Pricing ${solution.audience.en.replace(/^For /, 'for ')}`,
-    description: `${solution.name[locale]}: ${solution.summary[locale]} ${solution.pricingNote[locale]}.`,
+    description: solution.pricingDescription[locale],
   })
 }

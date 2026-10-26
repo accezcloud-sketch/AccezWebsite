@@ -38,5 +38,5 @@ export function staticPageMetadata({
 /** /faq: wording from the FAQ section's own copy. */
 export function faqPageMetadata(locale: Locale): Metadata {
   const { faq } = translations[locale]
-  return staticPageMetadata({ route: 'faq', locale, title: faq.title, description: faq.subtitle })
+  return staticPageMetadata({ route: 'faq', locale, title: faq.title, description: faq.metaDescription })
 }
