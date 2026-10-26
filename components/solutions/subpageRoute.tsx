@@ -8,6 +8,7 @@ import { breadcrumbSchema, HOME_CRUMB } from '@/lib/content/breadcrumbSchema'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import type { Locale } from '@/lib/i18n'
 import { solutionByKey } from '@/lib/platform/solutions'
+import { integrationLinks } from '@/components/integrations/integrationRoute'
 import { SOLUTION_SUBPAGES, subpageBySlug, subpageHref, subpagesOf, type SolutionSubpage } from '@/lib/platform/subpages'
 
 interface PageProps {
@@ -42,7 +43,7 @@ export function subpageView(page: SolutionSubpage, locale: Locale): DetailView {
     ...dataView(page, locale),
     crumbs: trail(page, locale).map((t, i, all) => ({ label: t.name, href: i < all.length - 1 ? t.route || '/' : undefined })),
     ...solutionActions(solution, locale),
-    links: [...modules, ...siblings, ...solutionLinks(solution, locale)],
+    links: [...modules, ...integrationLinks(page.integrations, locale), ...siblings, ...solutionLinks(solution, locale)],
     cta: solutionCta(solution, locale),
   }
 }

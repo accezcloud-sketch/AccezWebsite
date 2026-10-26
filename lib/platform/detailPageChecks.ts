@@ -42,7 +42,8 @@ export function detailPageProblems(page: DetailPageData): string[] {
 
   for (const [field, value] of bilingualFields(page)) {
     if (!value.en.trim()) say(`${field}.en is empty`)
-    if (!ARABIC.test(value.ar)) say(`${field}.ar is not Arabic`)
+    // A brand name (an integration's name) stays as it is in Arabic.
+    if (!ARABIC.test(value.ar) && !(field === 'name' && value.ar === value.en)) say(`${field}.ar is not Arabic`)
     for (const locale of ['en', 'ar'] as const) if (DASH.test(value[locale])) say(`${field}.${locale} uses a dash as punctuation`)
   }
 

@@ -13,6 +13,7 @@ import type { ProductPageKey } from './productMatch'
 import PAGE_DATES from './page-dates.json'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { SOLUTION_SUBPAGES, subpageHref } from '@/lib/platform/subpages'
+import { INTEGRATIONS, INTEGRATIONS_HREF, integrationHref } from '@/lib/platform/integrations'
 import { legalVersionRoutes } from '@/lib/legal/documents'
 import { routeKey } from '@/lib/build/pageDates.mjs'
 import { CALCULATOR_ROUTE, checklistRoute, DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
@@ -61,6 +62,9 @@ export function sitemapStaticRoutes(): string[] {
     ...PLATFORM_SOLUTIONS.flatMap((s) => [s.href, s.pricingHref]),
     // Each solution's module and customer pages.
     ...SOLUTION_SUBPAGES.map(subpageHref),
+    // The integrations page and one page per integration.
+    INTEGRATIONS_HREF,
+    ...INTEGRATIONS.map((i) => integrationHref(i.slug)),
     ...legalVersionRoutes(),
     // Free resources.
     REGULATIONS_HUB_ROUTE,

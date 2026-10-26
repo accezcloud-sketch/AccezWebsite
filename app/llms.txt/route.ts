@@ -9,6 +9,9 @@ import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
 import { solutionPageMetadata } from '@/components/solutions/solutionPages'
 import { subpageMetadata } from '@/components/solutions/subpageRoute'
 import { subpageHref, subpagesOf } from '@/lib/platform/subpages'
+import { INTEGRATIONS, INTEGRATIONS_HREF, integrationHref } from '@/lib/platform/integrations'
+import { integrationMetadata } from '@/components/integrations/integrationRoute'
+import { integrationsHubMetadata } from '@/components/integrations/IntegrationsHub'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
@@ -57,6 +60,10 @@ export function GET() {
     sections: [
       { heading: 'Property management solution', links: solutionPages('property-managers') },
       { heading: 'Service provider solution', links: solutionPages('service-providers') },
+      {
+        heading: 'Integrations',
+        links: [page(INTEGRATIONS_HREF, integrationsHubMetadata('en')), ...INTEGRATIONS.map((i) => page(integrationHref(i.slug), integrationMetadata(i, 'en')))],
+      },
       {
         heading: 'Pricing',
         links: PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),

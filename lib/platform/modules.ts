@@ -61,7 +61,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       ARABIC_AND_ENGLISH,
     ],
     modules: ['reservations-and-stays', 'billing-and-payments', 'team-and-messaging'],
-    integrations: [],
+    integrations: ['airbnb', 'booking-com', 'expedia'],
     posts: [
       'the-double-booking-nightmare-how-to-sync-every-channel',
       'why-managing-airbnb-and-booking-com-separately-is-costing-you',
@@ -103,7 +103,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       { q: { en: 'Which channels does the calendar sync with?', ar: 'مع أي القنوات يتزامن التقويم؟' }, a: { en: 'Airbnb, Booking.com and Expedia, through the channel manager.', ar: 'Airbnb وBooking.com وExpedia، من خلال مدير القنوات.' } },
     ],
     modules: ['channel-manager', 'billing-and-payments', 'team-and-messaging'],
-    integrations: [],
+    integrations: ['airbnb', 'booking-com', 'expedia'],
     posts: [
       'from-5-dashboards-to-1-the-case-for-centralized-booking-management',
       'the-upsell-playbook-turning-early-check-ins-and-add-ons',
@@ -187,7 +187,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       { q: { en: 'Where do I see refunds?', ar: 'أين أرى المبالغ المستردة؟' }, a: { en: 'On the billing page, next to revenue and invoices.', ar: 'في صفحة الفوترة، بجانب الإيرادات والفواتير.' } },
     ],
     modules: ['leases-and-rent', 'reservations-and-stays', 'sales-and-projects'],
-    integrations: [],
+    integrations: ['stripe', 'tap'],
     posts: [
       'handling-refunds-and-chargebacks-without-losing-money-or-trust',
       'cash-flow-forecasting-for-property-management-businesses',
@@ -305,7 +305,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       { q: { en: 'Can I control what each team member sees?', ar: 'هل يمكنني التحكم فيما يراه كل عضو في الفريق؟' }, a: { en: 'Yes. Staff and roles give each person the access they need.', ar: 'نعم. تمنح الأدوار كل شخص الصلاحية التي يحتاجها.' } },
     ],
     modules: ['reservations-and-stays', 'maintenance-work-orders', 'channel-manager'],
-    integrations: [],
+    integrations: ['twilio-sms'],
     posts: [
       'role-based-access-giving-your-team-the-right-permissions',
       'one-inbox-to-rule-them-all-centralizing-property-communications',

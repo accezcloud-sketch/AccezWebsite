@@ -97,7 +97,7 @@ export default function Footer({ locale }: { locale: Locale }) {
     {
       heading: language === 'ar' ? 'الشركة' : 'Company',
       links: [
-        { label: t.footer.integrations, href: '/#trust' },
+        { label: t.footer.integrations, href: '/integrations' },
         { label: t.footer.about, href: '/about' },
         { label: t.footer.blog, href: '/blog' },
       ],

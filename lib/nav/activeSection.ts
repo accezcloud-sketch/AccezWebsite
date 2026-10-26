@@ -10,7 +10,7 @@ const SECTIONS: [NavSectionKey, RegExp][] = [
   ['blog', /^\/blog(\/|$)/],
   ['support', /^\/support(\/|$)/],
   ['about', /^\/about(\/|$)/],
-  ['resources', /^\/(faq|terms|privacy|refund-policy|resources|tools)(\/|$)/],
+  ['resources', /^\/(faq|integrations|terms|privacy|refund-policy)(\/|$)/],
 ]
 
 export function activeNavSection(pathname: string): NavSectionKey | null {

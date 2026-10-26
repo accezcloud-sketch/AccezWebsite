@@ -70,7 +70,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       PORTAL_LANGUAGES,
     ],
     modules: ['channel-manager', 'reservations-and-stays', 'billing-and-payments', 'team-and-messaging'],
-    integrations: [],
+    integrations: ['airbnb', 'booking-com', 'expedia'],
     posts: [
       'why-managing-airbnb-and-booking-com-separately-is-costing-you',
       'length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates',
@@ -112,7 +112,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       { q: { en: 'Which payment gateways can I use?', ar: 'ما بوابات الدفع التي يمكنني استخدامها؟' }, a: { en: 'Stripe and Tap.', ar: 'Stripe وTap.' } },
     ],
     modules: ['reservations-and-stays', 'channel-manager', 'team-and-messaging', 'billing-and-payments'],
-    integrations: [],
+    integrations: ['booking-com', 'expedia', 'stripe', 'tap'],
     posts: [
       'corporate-housing-landing-long-stay-business-clients',
       'first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews',
@@ -152,7 +152,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       PORTAL_LANGUAGES,
     ],
     modules: ['leases-and-rent', 'maintenance-work-orders', 'team-and-messaging', 'billing-and-payments'],
-    integrations: [],
+    integrations: ['twilio-sms'],
     posts: [
       'how-to-communicate-with-100-tenants-without-hiring-more-staff',
       'the-maintenance-request-black-hole-why-tenants-feel-ignored',
@@ -237,7 +237,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       DEPOSIT,
     ],
     modules: [],
-    integrations: [],
+    integrations: ['tap', 'stripe', 'twilio-sms'],
     posts: [],
   },
   {
@@ -275,7 +275,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       MARKETPLACE,
     ],
     modules: [],
-    integrations: [],
+    integrations: ['tap', 'stripe', 'twilio-sms'],
     posts: [],
   },
   {
@@ -314,7 +314,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       MARKETPLACE,
     ],
     modules: [],
-    integrations: [],
+    integrations: ['tap', 'stripe', 'twilio-sms'],
     posts: [],
   },
 ]
