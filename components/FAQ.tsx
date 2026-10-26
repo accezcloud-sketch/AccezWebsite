@@ -51,15 +51,6 @@ const FAQS: FaqItem[] = [
   },
   {
     category: 'serviceMarketplace',
-    question: 'How can I earn additional revenue with the service marketplace?',
-    questionAr: 'كيف يمكنني كسب إيرادات إضافية من سوق الخدمات؟',
-    answer:
-      'Our service marketplace connects property owners with local service providers for cleaning, maintenance, repairs, and other services. Property managers can earn 15 to 30% commission on every transaction, creating a new revenue stream within the first year.',
-    answerAr:
-      'يربط سوق الخدمات لدينا مالكي العقارات بمقدمي الخدمات المحليين للتنظيف والصيانة والإصلاحات وخدمات أخرى. يمكن لمديري العقارات كسب عمولة تتراوح بين 15-30% على كل معاملة، مما يخلق مصدر دخل جديد خلال السنة الأولى.',
-  },
-  {
-    category: 'serviceMarketplace',
     question: 'Who can become a service provider on Accez?',
     questionAr: 'من يمكنه أن يصبح مقدم خدمة على أكسيز؟',
     answer:
@@ -90,18 +81,18 @@ const FAQS: FaqItem[] = [
     question: 'Is my property and tenant data secure?',
     questionAr: 'هل بيانات عقاري والمستأجرين آمنة؟',
     answer:
-      'Yes, security is our top priority. All data is encrypted in transit and at rest. We are GDPR compliant and follow industry best practices for data protection. Enterprise plans include additional security features and on-premise deployment options.',
+      'We protect it with encryption in transit, passwords stored using one-way hashing, and role-based access, so each person sees only what their role requires. Each business keeps its data separate from every other business on the platform, and accounts are protected with verification codes, optional two-factor authentication and a lockout after repeated failed sign-ins. Our Privacy Policy explains how personal data is handled under the Saudi Personal Data Protection Law.',
     answerAr:
-      'نعم، الأمان هو أولويتنا القصوى. جميع البيانات مشفرة أثناء النقل وفي حالة السكون. نحن متوافقون مع GDPR ونتبع أفضل ممارسات الصناعة لحماية البيانات. تتضمن خطط المؤسسات ميزات أمان إضافية وخيارات نشر محلية.',
+      'نحميها بتشفير البيانات أثناء النقل، وتخزين كلمات المرور بتجزئة أحادية الاتجاه، وضوابط وصول قائمة على الأدوار بحيث لا يرى كل شخص إلا ما يقتضيه دوره. وتُفصل بيانات كل منشأة عن غيرها داخل المنصة، وتُحمى الحسابات برموز تحقق ومصادقة ثنائية اختيارية وإيقاف مؤقت بعد محاولات دخول فاشلة متكررة. وتوضح سياسة الخصوصية كيف نتعامل مع البيانات الشخصية وفق نظام حماية البيانات الشخصية السعودي.',
   },
   {
     category: 'pricingBilling',
-    question: 'Can I cancel my subscription at any time?',
-    questionAr: 'هل يمكنني إلغاء اشتراكي في أي وقت؟',
+    question: 'What happens if I cancel my subscription?',
+    questionAr: 'ماذا يحدث إذا ألغيت اشتراكي؟',
     answer:
-      'Yes, you can cancel your subscription at any time with no cancellation fees or penalties. Your access continues until the end of your current billing period.',
+      'When you cancel, your subscription stays active until the end of the period you have already paid for, and then it does not renew. The Refund & Cancellation Policy for your solution explains which subscription fees can be refunded.',
     answerAr:
-      'نعم، يمكنك إلغاء اشتراكك في أي وقت بدون رسوم أو عقوبات إلغاء. يستمر وصولك حتى نهاية فترة الفوترة الحالية.',
+      'عند الإلغاء يبقى اشتراكك نشطًا حتى نهاية المدة المدفوعة مسبقًا، ولا يتجدد بعدها. وتوضح سياسة الاسترداد والإلغاء الخاصة بحلّك أي رسوم اشتراك يمكن استردادها.',
   },
 ]
 
