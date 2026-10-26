@@ -3,6 +3,7 @@ import { Inter, Cairo, Bricolage_Grotesque } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
+import LanguageSuggestion from '@/components/LanguageSuggestion'
 import ConversionTracking from '@/components/ConversionTracking'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { SITE_DESCRIPTION, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
@@ -173,6 +174,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${cairo.variable} ${heading.variable} font-sans`}>
         <LanguageProvider>
           {children}
+          <LanguageSuggestion />
         </LanguageProvider>
         <ChatbotWidget />
         <ConversionTracking />

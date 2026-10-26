@@ -10,6 +10,9 @@ interface LanguageContextType {
   setLanguage: (lang: Language) => void
   t: Translations
   isRTL: boolean
+  /** A language to offer the visitor (never forced): set from their country when they have not chosen. */
+  suggestedLanguage: Language | null
+  dismissSuggestion: () => void
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
@@ -29,6 +32,8 @@ const ARABIC_COUNTRIES = ['SA', 'AE', 'KW', 'QA', 'BH', 'OM', 'EG', 'JO', 'LB', 
  */
 const LANG_KEY = 'accez.lang.v2'
 const LEGACY_LANG_KEY = 'language'
+/** Set when the visitor closes the language suggestion, so it is not shown again. */
+const SUGGEST_DISMISSED_KEY = 'accez.lang.suggest.dismissed'
 
 /**
  * Visitor country, read from Cloudflare's trace endpoint on our OWN domain.
@@ -86,6 +91,16 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
     routeLanguage ?? (pathname === '/ar' || pathname?.startsWith('/ar/') ? 'ar' : 'en')
 
   const [language, setLanguageState] = useState<Language>(urlLanguage)
+  const [suggestedLanguage, setSuggestedLanguage] = useState<Language | null>(null)
+
+  const dismissSuggestion = useCallback(() => {
+    setSuggestedLanguage(null)
+    try {
+      localStorage.setItem(SUGGEST_DISMISSED_KEY, '1')
+    } catch {
+      // Storage disabled: the suggestion simply returns on the next visit.
+    }
+  }, [])
 
   /**
    * Switching language is now a NAVIGATION, not a state flip.
@@ -100,6 +115,7 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
       if (next === language) return
       const target = counterpartPath(pathname || '/', next)
       setLanguageState(next)
+      setSuggestedLanguage(null)
       try {
         localStorage.setItem(LANG_KEY, next)
       } catch {
@@ -163,24 +179,25 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
         return
       }
 
-      // No stored choice: fall back to country. Only a positively identified
-      // Arabic-speaking country redirects; anything else (including a failed
-      // lookup) stays on English, so a US visitor can never land on Arabic.
+      // No stored choice: visitors from an Arabic-speaking country are OFFERED
+      // the Arabic page, never sent there. Google advises against redirecting
+      // by guessed location or language; the visitor decides.
+      if (urlLanguage !== 'en') return
+      try {
+        if (localStorage.getItem(SUGGEST_DISMISSED_KEY)) return
+      } catch {
+        // Storage disabled: offering the suggestion is still fine.
+      }
       const country = await detectCountry()
       if (cancelled || !country) return
-      if (ARABIC_COUNTRIES.includes(country)) {
-        // Send Gulf visitors to the real Arabic URL instead of swapping the
-        // content underneath them. Googlebot crawls from US IPs so it is not
-        // redirected, and keeps indexing the English page at this URL.
-        go(counterpartPath(here, 'ar'))
-      }
+      if (ARABIC_COUNTRIES.includes(country)) setSuggestedLanguage('ar')
     }
 
     detectLanguage()
     return () => {
       cancelled = true
     }
-  }, [routeLanguage, pathname, router])
+  }, [routeLanguage, pathname, router, urlLanguage])
 
   useEffect(() => {
     // Reflect the active language on <html> for assistive technology and for
@@ -195,6 +212,8 @@ export function LanguageProvider({ children, routeLanguage }: LanguageProviderPr
     setLanguage,
     t: translations[language],
     isRTL: language === 'ar',
+    suggestedLanguage,
+    dismissSuggestion,
   }
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>
