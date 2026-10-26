@@ -111,7 +111,7 @@ export const TOPICS = [
     label: { en: 'Growth & strategy', ar: 'النمو والاستراتيجية' },
     description: {
       en: 'Growing a property management business: pricing your services, scaling a portfolio, systems, revenue and the Saudi market.',
-      ar: 'تنمية نشاط إدارة العقارات: تسعير خدماتك، وتوسيع المحفظة، والأنظمة، والإيرادات، والسوق السعودي.',
+      ar: 'تنمية نشاط إدارة العقارات في السعودية: تسعير خدماتك، وتوسيع محفظتك دون فقدان السيطرة، واختيار الأنظمة، وزيادة الإيرادات، وفهم السوق السعودي.',
     },
     signals: [
       'scale', 'scaling', 'growth', 'grow', 'brand', 'branding', 'marketing', 'software', 'automation', 'ai',

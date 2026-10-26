@@ -45,7 +45,7 @@ export const DOWNLOADS_COPY = {
     title: 'Free checklists and tools',
     metaTitle: 'Free property management checklists',
     description:
-      'Free printable checklists for property managers in Saudi Arabia: move-in and move-out inspections, short-term rental licensing and new owner onboarding, as pages and PDFs.',
+      'Free printable checklists for Saudi property managers: move-in and move-out inspections, short-term rental licensing and new owner onboarding, as PDFs.',
     intro: 'Printable checklists for everyday property management work, in English and Arabic. Free to use and share, with no sign up.',
     crumbHome: 'Home',
     view: 'View checklist',
@@ -106,7 +106,7 @@ export const CHECKLISTS: Checklist[] = [
     title: { en: 'Move-in and move-out inspection checklist', ar: 'قائمة فحص الدخول والخروج' },
     summary: {
       en: 'A room by room checklist to record a unit’s condition when a tenant moves in, and compare it when they leave.',
-      ar: 'قائمة غرفة بغرفة لتوثيق حالة الوحدة عند دخول المستأجر، ومقارنتها عند خروجه.',
+      ar: 'قائمة فحص غرفة بغرفة لتوثيق حالة الوحدة عند دخول المستأجر ومقارنتها عند خروجه، مع صور مؤرخة، بالعربية والإنجليزية، وتتوفر للتنزيل مجانًا بصيغة PDF.',
     },
     intro: {
       en: 'Use the same checklist at move-in and at move-out. Note the condition of each item in plain words and back every issue with a dated photo. Inspect within 24 to 48 hours of the handover, with the tenant present if possible.',
@@ -193,7 +193,7 @@ export const CHECKLISTS: Checklist[] = [
     title: { en: 'Short-term rental licensing checklist (Saudi Arabia)', ar: 'قائمة ترخيص الإيجار قصير الأجل في السعودية' },
     summary: {
       en: 'The steps to license a short-term rental with the Ministry of Tourism, with the source of each fact.',
-      ar: 'خطوات ترخيص الإيجار قصير الأجل لدى وزارة السياحة، مع مصدر كل معلومة.',
+      ar: 'خطوات ترخيص الإيجار قصير الأجل في السعودية لدى وزارة السياحة، مع مصدر رسمي لكل معلومة، في قائمة مجانية قابلة للطباعة والتنزيل بصيغة PDF.',
     },
     intro: {
       en: 'Short-term rentals in Saudi Arabia are licensed by the Ministry of Tourism as private tourism hospitality facilities. Use this list to prepare, and confirm the current conditions and fees with the Ministry before you apply or renew, as they change.',
@@ -249,7 +249,7 @@ export const CHECKLISTS: Checklist[] = [
     title: { en: 'New owner onboarding checklist', ar: 'قائمة إلحاق مالك جديد' },
     summary: {
       en: 'What to collect and set up when you take on a new owner’s property, so the first month runs cleanly.',
-      ar: 'ما تجمعه وتجهّزه عند استلام عقار مالك جديد، ليمضي الشهر الأول بسلاسة.',
+      ar: 'ما تجمعه وتجهّزه عند استلام عقار مالك جديد من مستندات وبيانات وحسابات، ليمضي الشهر الأول بسلاسة، في قائمة مجانية قابلة للطباعة بصيغة PDF.',
     },
     intro: {
       en: 'Collect each document once, keep it in one place and agree the terms in writing before the first lease or booking.',
