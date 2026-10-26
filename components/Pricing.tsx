@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { translations } from '@/translations'
+import { PM_PLAN_PRICES, formatSar } from '@/lib/content/pmPlans'
 
 interface Feature {
   textKey: string
@@ -15,10 +16,9 @@ interface PlanConfig {
   id: string
   nameKey: 'free' | 'basic' | 'professional' | 'enterprise'
   descKey: 'freeDescription' | 'basicDescription' | 'professionalDescription' | 'enterpriseDescription'
-  monthly: { price: number | 'Custom'; originalPrice: number | null }
-  yearly: { price: number | 'Custom'; originalPrice: number | null }
+  monthly: number | 'Custom'
+  yearly: number | 'Custom'
   highlight: boolean
-  showLaunchDiscount: boolean
   accentColor: string
   borderColor: string
   bgColor: string
@@ -37,10 +37,8 @@ const PLANS: PlanConfig[] = [
     id: 'free',
     nameKey: 'free',
     descKey: 'freeDescription',
-    monthly: { price: 0, originalPrice: null },
-    yearly: { price: 0, originalPrice: null },
+    ...PM_PLAN_PRICES.free,
     highlight: false,
-    showLaunchDiscount: false,
     accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
@@ -50,12 +48,10 @@ const PLANS: PlanConfig[] = [
     ctaHref: 'https://portal.accez.cloud/sign-up',
     features: [
       { textKey: 'freeProperty1', highlight: true },
-      { textKey: 'freeUnlimitedServices', highlight: true },
       { textKey: 'freeCheckIns10', highlight: true },
       { textKey: 'freeWorkOrders10', highlight: true },
       { textKey: 'freeBasicDashboard' },
       { textKey: 'propertyManagement' },
-      { textKey: 'announcements' },
     ],
     missing: [{ textKey: 'freeNoPremiumSupport', excluded: true }],
     mobileOrder: 'order-2',
@@ -65,10 +61,8 @@ const PLANS: PlanConfig[] = [
     id: 'basic',
     nameKey: 'basic',
     descKey: 'basicDescription',
-    monthly: { price: 40, originalPrice: 80 },
-    yearly: { price: 480, originalPrice: 960 },
+    ...PM_PLAN_PRICES.basic,
     highlight: false,
-    showLaunchDiscount: true,
     accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
@@ -81,9 +75,6 @@ const PLANS: PlanConfig[] = [
       { textKey: 'propertyManagement' },
       { textKey: 'workOrdersManagement' },
       { textKey: 'moveInOutTracking' },
-      { textKey: 'announcements' },
-      { textKey: 'tenantPerks' },
-      { textKey: 'communityNewsFeed' },
     ],
     missing: [],
     mobileOrder: 'order-3',
@@ -93,10 +84,8 @@ const PLANS: PlanConfig[] = [
     id: 'professional',
     nameKey: 'professional',
     descKey: 'professionalDescription',
-    monthly: { price: 150, originalPrice: 300 },
-    yearly: { price: 1800, originalPrice: 3600 },
+    ...PM_PLAN_PRICES.professional,
     highlight: true,
-    showLaunchDiscount: true,
     accentColor: 'var(--accent)',
     borderColor: 'rgb(var(--accent-rgb) / 0.4)',
     bgColor: 'rgb(var(--accent-rgb) / 0.06)',
@@ -109,10 +98,7 @@ const PLANS: PlanConfig[] = [
       { textKey: 'properties6', highlight: true, suffixKey: 'unitsEach' },
       { textKey: 'upTo3Channels', highlight: true },
       { textKey: 'integratedCommunications' },
-      { textKey: 'amenitiesBooking' },
-      { textKey: 'servicesManagement' },
       { textKey: 'autoCalendarSync' },
-      { textKey: 'propertyOwnerPortal' },
     ],
     missing: [],
     mobileOrder: 'order-1',
@@ -122,10 +108,9 @@ const PLANS: PlanConfig[] = [
     id: 'enterprise',
     nameKey: 'enterprise',
     descKey: 'enterpriseDescription',
-    monthly: { price: 'Custom', originalPrice: null },
-    yearly: { price: 'Custom', originalPrice: null },
+    monthly: 'Custom',
+    yearly: 'Custom',
     highlight: false,
-    showLaunchDiscount: false,
     accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
@@ -135,10 +120,8 @@ const PLANS: PlanConfig[] = [
     ctaHref: '/#contact',
     features: [
       { textKey: 'everythingInProfessional' },
-      { textKey: 'customBrandedDomain' },
       { textKey: 'dedicatedAccountManager' },
-      { textKey: 'priority247Support' },
-      { textKey: 'apiAccess' },
+      { textKey: 'prioritySupport' },
       { textKey: 'customDevelopment' },
       { textKey: 'bulkDataImport' },
     ],
@@ -164,8 +147,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
 
   const getText = (key: string) => tp[key] ?? key
 
-  const formatPrice = (amount: number) =>
-    language === 'ar' ? `${amount} ريال` : `SAR ${amount}`
+  const formatPrice = (amount: number) => formatSar(amount, language)
 
   return (
     <section
@@ -250,8 +232,8 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 max-w-7xl mx-auto items-start">
           {PLANS.map((plan) => {
-            const pricing = isYearly ? plan.yearly : plan.monthly
-            const isCustom = pricing.price === 'Custom'
+            const price = isYearly ? plan.yearly : plan.monthly
+            const isCustom = price === 'Custom'
             const periodLabel = isYearly ? tp.perYear : tp.perMonth
 
             return (
@@ -311,11 +293,6 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
 
                     {/* Price */}
                     <div>
-                      {!isCustom && pricing.originalPrice && (
-                        <div className="text-faint line-through text-base mb-1">
-                          {formatPrice(pricing.originalPrice)}
-                        </div>
-                      )}
                       <div className="flex items-end gap-1.5">
                         {!isCustom ? (
                           <>
@@ -330,7 +307,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                                 className={switched ? 'motion-swap' : undefined}
                                 style={{ display: 'inline-block' }}
                               >
-                                {formatPrice(pricing.price as number)}
+                                {formatPrice(price)}
                               </span>
                             </span>
                             <span className="text-faint text-sm mb-1.5 leading-none">
@@ -348,19 +325,6 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                       </div>
                     </div>
 
-                    {/* Launch discount callout */}
-                    {plan.showLaunchDiscount && (
-                      <div
-                        className="text-xs font-medium px-3 py-1.5 rounded-lg"
-                        style={{
-                          background: 'rgba(16,185,129,0.08)',
-                          border: '1px solid rgba(16,185,129,0.18)',
-                          color: 'var(--ok)',
-                        }}
-                      >
-                        {tp.launchDiscount}
-                      </div>
-                    )}
 
                     {/* CTA */}
                     <a

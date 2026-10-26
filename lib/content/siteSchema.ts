@@ -7,7 +7,8 @@
  */
 import { localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
 import { solutionByKey } from '@/lib/platform/solutions'
-import { PROVIDER_PRICING_COPY } from './providerPricing'
+import { providerPlanPrices } from './providerPricing'
+import { PM_PLAN_COUNT, pmMonthlyPrices } from './pmPlans'
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`
 export const WEBSITE_ID = `${SITE_URL}/#website`
@@ -35,8 +36,8 @@ export function websiteSchema() {
 
 /**
  * The product, for the homepage in either language. The offers are the
- * property-management plans (prices mirror components/Pricing.tsx), so they
- * point at that pricing page.
+ * property-management plans (prices from lib/content/pmPlans.ts, as the
+ * plans section shows them), so they point at that pricing page.
  */
 export function softwareApplicationSchema(locale: Locale, description: string) {
   return {
@@ -55,9 +56,9 @@ export function softwareApplicationSchema(locale: Locale, description: string) {
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'SAR',
-      lowPrice: 0,
-      highPrice: 150,
-      offerCount: 4,
+      lowPrice: Math.min(...pmMonthlyPrices()),
+      highPrice: Math.max(...pmMonthlyPrices()),
+      offerCount: PM_PLAN_COUNT,
       availability: 'https://schema.org/InStock',
       url: pricingUrl('property-managers', locale),
     },
@@ -75,10 +76,7 @@ export function softwareApplicationSchema(locale: Locale, description: string) {
   }
 }
 
-/** Monthly provider plan prices in SAR, read from the plans copy ("Free" is 0). */
-export function providerPlanPrices(): number[] {
-  return PROVIDER_PRICING_COPY.en.plans.map((plan) => Number(plan.price.match(/\d+/)?.[0] ?? 0))
-}
+export { providerPlanPrices }
 
 /** The service-provider marketplace, for the Service Providers page in either language. */
 export function providerMarketplaceSchema(locale: Locale, description: string) {

@@ -118,3 +118,8 @@ export const PROVIDER_PRICING_COPY = {
     pricingNote: 'رسوم المنصة هي نسبة صغيرة من كل حجز مكتمل، وتنخفض كلما ارتقيت في الخطة. يمكنك تغيير خطتك أو إلغاؤها في أي وقت.',
   },
 } as const
+
+/** Monthly provider plan prices in SAR, read from the plans copy ("Free" is 0). */
+export function providerPlanPrices(): number[] {
+  return PROVIDER_PRICING_COPY.en.plans.map((plan) => Number(plan.price.match(/\d+/)?.[0] ?? 0))
+}

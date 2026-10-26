@@ -7,6 +7,12 @@
  * without shipping it as JavaScript.
  */
 import type { Locale } from '@/lib/i18n'
+import { PM_PLAN_PRICES } from './pmPlans'
+import { providerPlanPrices } from './providerPricing'
+
+// Prices in the answers come from the plans data, so they always match the plans.
+const PM = PM_PLAN_PRICES
+const [, SP_STARTER, SP_GROWTH] = providerPlanPrices()
 
 export type FaqCategory =
   | 'gettingStarted'
@@ -38,9 +44,9 @@ export const FAQS: FaqItem[] = [
     question: 'How much does Accez.cloud cost?',
     questionAr: 'كم تكلفة Accez.cloud؟',
     answer:
-      'Each solution has its own plans. For property managers there is a Free plan, Basic at SAR 40/month (3 properties with unlimited units), Professional at SAR 150/month (10 properties with unlimited units), and Enterprise for larger portfolios. Service providers list for free; the Starter (SAR 75/month) and Growth (SAR 184/month) plans lower the platform fee on each booking. No credit card is needed to start.',
+      `Each solution has its own plans. For property managers there is a Free plan, Basic at SAR ${PM.basic.monthly}/month (3 properties with unlimited units), Professional at SAR ${PM.professional.monthly}/month (10 properties with unlimited units), and Enterprise for larger portfolios. Service providers list for free; the Starter (SAR ${SP_STARTER}/month) and Growth (SAR ${SP_GROWTH}/month) plans lower the platform fee on each booking. No credit card is needed to start.`,
     answerAr:
-      'لكل حل خططه الخاصة. لمديري العقارات: خطة مجانية، والأساسية بـ 40 ريالًا شهريًا (3 عقارات بوحدات غير محدودة)، والاحترافية بـ 150 ريالًا شهريًا (10 عقارات بوحدات غير محدودة)، وخطة المؤسسات للمحافظ الأكبر. ولمقدمي الخدمات: الإدراج مجاني، وخطتا المبتدئة (75 ريالًا شهريًا) والنمو (184 ريالًا شهريًا) تخفضان رسوم المنصة على كل حجز. لا حاجة لبطاقة ائتمان للبدء.',
+      `لكل حل خططه الخاصة. لمديري العقارات: خطة مجانية، والأساسية بـ ${PM.basic.monthly} ريالًا شهريًا (3 عقارات بوحدات غير محدودة)، والاحترافية بـ ${PM.professional.monthly} ريالًا شهريًا (10 عقارات بوحدات غير محدودة)، وخطة المؤسسات للمحافظ الأكبر. ولمقدمي الخدمات: الإدراج مجاني، وخطتا المبتدئة (${SP_STARTER} ريالًا شهريًا) والنمو (${SP_GROWTH} ريالًا شهريًا) تخفضان رسوم المنصة على كل حجز. لا حاجة لبطاقة ائتمان للبدء.`,
   },
   {
     category: 'channelsIntegrations',

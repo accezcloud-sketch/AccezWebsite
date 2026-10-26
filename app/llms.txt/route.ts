@@ -7,6 +7,8 @@ import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/site'
 import { solutionPricingMetadata } from '@/lib/platform/pricingPages'
 import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
 import { solutionPageMetadata } from '@/components/solutions/solutionPages'
+import { PM_PLAN_PRICES } from '@/lib/content/pmPlans'
+import { PROVIDER_PRICING_COPY } from '@/lib/content/providerPricing'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
@@ -38,6 +40,8 @@ export function GET() {
     details: [
       'Market: Saudi Arabia. The whole site is available in Arabic at https://www.accez.cloud/ar/.',
       `Accez is one platform with ${PLATFORM_SOLUTIONS.length} solutions: ${PLATFORM_SOLUTIONS.map((s) => `${s.name.en} (${s.audience.en.toLowerCase()})`).join(' and ')}. Each has its own plans and pricing page.`,
+      `Property management plans: Free; Basic SAR ${PM_PLAN_PRICES.basic.monthly}/month; Professional SAR ${PM_PLAN_PRICES.professional.monthly}/month; Enterprise priced for each portfolio.`,
+      `Service provider plans: ${PROVIDER_PRICING_COPY.en.plans.map((p) => `${p.name} (${p.price === 'Free' ? 'free' : `${p.price}/month`}, ${p.platformFee} platform fee per booking)`).join('; ')}.`,
     ],
     sections: [
       {
