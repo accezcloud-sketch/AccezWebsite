@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import type { BlogPostMeta } from '@/lib/blog'
 import { localeHref, localeUrl, type Locale } from '@/lib/i18n'
 import ShareButtons from '@/components/blog/ShareButtons'
+import AuthorBox from '@/components/blog/AuthorBox'
 import Breadcrumbs from '@/components/blog/Breadcrumbs'
 import TableOfContents from '@/components/blog/TableOfContents'
 import type { TocEntry } from '@/lib/content/markdown'
@@ -184,6 +185,9 @@ export default function PostArticle({ post, locale, contentHtml, toc, afterArtic
               title={language === 'ar' ? post.titleAr : post.title}
               locale={language}
             />
+
+            {/* Team author (no named person): who writes the blog. */}
+            {!post.authorUrl && <AuthorBox locale={language} />}
           </div>
         </div>
       </article>
