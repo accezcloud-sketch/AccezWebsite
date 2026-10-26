@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { formatReadingTime, readingMinutes } from './readingTime'
+import { formatReadingTime } from './readingTime'
+import { readingMinutes } from './readingMinutes'
 
 describe('readingMinutes', () => {
   it('measures about 200 words a minute, rounding up', () => {

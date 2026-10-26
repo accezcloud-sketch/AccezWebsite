@@ -83,7 +83,7 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
         pagination={<Pagination base={base} page={page} total={totalPages} locale={locale} />}
       />
 
-      <Footer />
+      <Footer locale={locale} />
     </main>
   )
 }

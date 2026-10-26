@@ -1,21 +1,14 @@
-'use client'
-
-import LegalLayout, {
-  LegalSectionBlock as S,
-  LegalCallout,
-  LegalTable,
-  Only,
-  SectionNo,
-  DocLink,
-} from '@/components/LegalLayout'
+import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { TERMS_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
 export default function TermsContentAr({ audience }: { audience: AudienceView }) {
+  const { S, Only, SectionNo, DocLink } = legalDocumentParts(TERMS_SECTIONS, audience, 'ar')
   return (
     <LegalLayout
+      locale="ar"
       title="شروط الخدمة"
       subtitle={audience === 'pm' ? 'الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لمنصة أكسيز لإدارة العقارات.' : 'الاتفاقية المبرمة بينك وبين شركة كلاود فالي التي تحكم استخدامك لسوق خدمات أكسيز.'}
       lastUpdated={LAST_UPDATED}

@@ -1,21 +1,14 @@
-'use client'
-
-import LegalLayout, {
-  LegalSectionBlock as S,
-  LegalCallout,
-  LegalTable,
-  Only,
-  SectionNo,
-  DocLink,
-} from '@/components/LegalLayout'
+import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { TERMS_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
 export default function TermsContent({ audience }: { audience: AudienceView }) {
+  const { S, Only, SectionNo, DocLink } = legalDocumentParts(TERMS_SECTIONS, audience, 'en')
   return (
     <LegalLayout
+      locale="en"
       title="Terms of Service"
       subtitle={audience === 'pm' ? 'The agreement between you and Cloud Valley LLC governing your use of the Accez property management platform.' : 'The agreement between you and Cloud Valley LLC governing your use of the Accez service marketplace.'}
       lastUpdated={LAST_UPDATED}

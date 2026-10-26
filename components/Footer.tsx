@@ -1,15 +1,19 @@
-'use client'
-
 import Link from 'next/link'
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import FooterLanguageSwitch from '@/components/nav/FooterLanguageSwitch'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
-import { localeHref } from '@/lib/i18n'
+import { localeHref, type Locale } from '@/lib/i18n'
 import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
+import { translations } from '@/translations'
 
-export default function Footer() {
+/**
+ * The site footer. No client code of its own: on server-rendered pages it
+ * ships as HTML only; the language switch is the one interactive part.
+ */
+export default function Footer({ locale }: { locale: Locale }) {
   const currentYear = new Date().getFullYear()
-  const { t, language, setLanguage } = useLanguage()
+  const language = locale
+  const t = translations[locale]
 
   const socials = [
     {
@@ -219,27 +223,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <div className="flex items-center gap-1.5">
-                <span className="text-faint">🌐</span>
-                <button
-                  onClick={() => setLanguage('en')}
-                  className={`transition-colors duration-150 ${
-                    language === 'en' ? 'text-soft' : 'hover:text-muted'
-                  }`}
-                >
-                  English
-                </button>
-                <span className="text-faint">·</span>
-                <button
-                  onClick={() => setLanguage('ar')}
-                  className={`transition-colors duration-150 ${
-                    language === 'ar' ? 'text-soft' : 'hover:text-muted'
-                  }`}
-                  dir="rtl"
-                >
-                  العربية
-                </button>
-              </div>
+              <FooterLanguageSwitch language={language} />
             </div>
           </div>
         </div>

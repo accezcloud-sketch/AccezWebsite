@@ -1,12 +1,9 @@
-'use client'
-
 import Link from 'next/link'
 import { MapPin, Layers, Building2, type LucideIcon } from 'lucide-react'
-import { useLanguage } from '@/contexts/LanguageContext'
 import Band from '@/components/ui/Band'
 import ArabicEnglishIcon from '@/components/ui/ArabicEnglishIcon'
 import SectionHeader from '@/components/SectionHeader'
-import { localeHref } from '@/lib/i18n'
+import { localeHref, type Locale } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 
 type Icon = LucideIcon | typeof ArabicEnglishIcon
@@ -62,8 +59,7 @@ const CONTENT = {
 
 const VALUE_ICONS: Icon[] = [Layers, ArabicEnglishIcon, MapPin]
 
-export default function AboutPage() {
-  const { language } = useLanguage()
+export default function AboutPage({ locale: language }: { locale: Locale }) {
   const t = CONTENT[language]
 
   const facts: { label: string; value: string; icon: Icon }[] = [

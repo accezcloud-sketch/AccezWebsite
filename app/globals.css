@@ -644,3 +644,27 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 @keyframes shot-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .feature-shot-in { animation: shot-in .35s ease-out both; }
 @media (prefers-reduced-motion: reduce) { .feature-shot-in { animation: none; } }
+
+/* ── Interface motion: menus, accordions, toggles ─────────────────────────────
+   Small transitions that answer a click or hover, in CSS (no animation
+   library). A panel opens and closes with data-open="true|false"; panels that
+   are added and removed are kept mounted while closing by usePresence
+   (components/ui/usePresence.ts). --motion-dur sets the length per use. The
+   reduced-motion rule above shortens all of them to nothing. */
+.motion-pop {
+  opacity: 0; transform: translateY(6px);
+  transition: opacity var(--motion-dur, .16s) cubic-bezier(.21,.47,.32,.98), transform var(--motion-dur, .16s) cubic-bezier(.21,.47,.32,.98);
+}
+.motion-pop[data-open="true"] { opacity: 1; transform: none; }
+.motion-pop[data-open="false"], .motion-collapse[data-open="false"] { pointer-events: none; }
+/* Height from 0 to its content: the grid row grows from 0fr to 1fr. The one
+   child clips while it grows; keep padding on an element inside it. */
+.motion-collapse {
+  display: grid; grid-template-rows: 0fr; opacity: 0;
+  transition: grid-template-rows var(--motion-dur, .28s) cubic-bezier(.21,.47,.32,.98), opacity var(--motion-dur, .28s) cubic-bezier(.21,.47,.32,.98);
+}
+.motion-collapse[data-open="true"] { grid-template-rows: 1fr; opacity: 1; }
+.motion-collapse > * { min-height: 0; overflow: hidden; }
+/* A value that changed (the plan price on the monthly/yearly switch). */
+@keyframes motion-swap { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+.motion-swap { display: inline-block; animation: motion-swap .18s ease-out; }

@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
+import { usePresence } from '@/components/ui/usePresence'
 import { useLanguage } from '@/contexts/LanguageContext'
 import ThemeToggle from '@/components/ThemeToggle'
 import { localeHref } from '@/lib/i18n'
@@ -32,17 +32,31 @@ export default function Header() {
     : { label: t.header.bookDemo, href: localeHref('/#contact', language), external: false }
   const actionProps = action.external ? { target: '_blank', rel: 'noopener noreferrer' } : {}
 
-  const { scrollYProgress } = useScroll()
-  const scrollProgress = useSpring(scrollYProgress, { stiffness: 200, damping: 40, restDelta: 0.001 })
+  // Scroll progress bar: its width is set straight on the element (no React
+  // render per scroll event), and eased by a short CSS transition.
+  const progressRef = useRef<HTMLDivElement>(null)
+  const mobileMenu = usePresence(isMobileMenuOpen, 280)
 
   useEffect(() => {
-    const onScroll = () => {
+    let frame = 0
+    const update = () => {
+      frame = 0
       const y = window.scrollY
       setScrolled(y > 50)
+      const max = document.documentElement.scrollHeight - window.innerHeight
+      if (progressRef.current) progressRef.current.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`
     }
-    onScroll()
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update)
+    }
+    update()
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      cancelAnimationFrame(frame)
+    }
   }, [])
 
   // ── Menus, built from the platform's solutions (lib/platform/solutions.ts) ──
@@ -158,56 +172,51 @@ export default function Header() {
         </div>
 
         {/* Mobile navigation: the same menus as collapsible groups */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <motion.div
-              key="mobile-menu"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.28, ease: [0.21, 0.47, 0.32, 0.98] }}
-              className="nav-sheet lg:hidden overflow-hidden"
-              style={{ borderBottom: '1px solid var(--border)' }}
-            >
-              <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="flex flex-col gap-1 py-4 px-2">
-                <MobileNavGroup name="solutions" label={t.header.product} sections={markCurrent(productSections)} onNavigate={closeMobile} />
-                <MobileNavGroup name="pricing" label={t.header.pricing} sections={markCurrent(pricingSections)} onNavigate={closeMobile} />
-                {topLinks.map((item) => (
-                  <a
-                    key={item.key}
-                    href={href(item.to)}
-                    onClick={closeMobile}
-                    aria-current={isCurrentPath(href(item.to), pathname) ? 'page' : undefined}
-                    className={`hover:text-strong font-medium transition-colors duration-200 py-2.5 ${section === item.key ? 'text-strong' : 'text-soft'}`}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-                <MobileNavGroup name="resources" label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} onNavigate={closeMobile} />
-
-                {/* Sign in: flat, since a nested dropdown in a drawer is an extra tap. */}
-                <div className="mt-3 pt-3 flex flex-col gap-1" style={{ borderTop: '1px solid var(--border)' }}>
-                  <p className="text-[0.7rem] uppercase tracking-wider pb-1 text-muted">{t.header.signIn}</p>
-                  {PLATFORM_SOLUTIONS.map((s) => (
-                    <a key={s.key} href={s.loginUrl} target="_blank" rel="noopener noreferrer" onClick={closeMobile} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2">
-                      {s.role[language]}
+        {mobileMenu.mounted && (
+          <div className="nav-sheet lg:hidden" style={{ borderBottom: '1px solid var(--border)' }}>
+            <div className="motion-collapse" data-open={mobileMenu.shown}>
+              <div>
+                <nav aria-label={ar ? 'القائمة الرئيسية' : 'Main'} className="flex flex-col gap-1 py-4 px-2">
+                  <MobileNavGroup name="solutions" label={t.header.product} sections={markCurrent(productSections)} onNavigate={closeMobile} />
+                  <MobileNavGroup name="pricing" label={t.header.pricing} sections={markCurrent(pricingSections)} onNavigate={closeMobile} />
+                  {topLinks.map((item) => (
+                    <a
+                      key={item.key}
+                      href={href(item.to)}
+                      onClick={closeMobile}
+                      aria-current={isCurrentPath(href(item.to), pathname) ? 'page' : undefined}
+                      className={`hover:text-strong font-medium transition-colors duration-200 py-2.5 ${section === item.key ? 'text-strong' : 'text-soft'}`}
+                    >
+                      {item.label}
                     </a>
                   ))}
-                </div>
+                  <MobileNavGroup name="resources" label={ar ? 'الموارد' : 'Resources'} sections={markCurrent(resourcesSections)} onNavigate={closeMobile} />
 
-                <a href={action.href} {...actionProps} onClick={closeMobile} className="ui-btn ui-btn-primary mt-2">
-                  {action.label}
-                </a>
-              </nav>
-            </motion.div>
-          )}
-        </AnimatePresence>
+                  {/* Sign in: flat, since a nested dropdown in a drawer is an extra tap. */}
+                  <div className="mt-3 pt-3 flex flex-col gap-1" style={{ borderTop: '1px solid var(--border)' }}>
+                    <p className="text-[0.7rem] uppercase tracking-wider pb-1 text-muted">{t.header.signIn}</p>
+                    {PLATFORM_SOLUTIONS.map((s) => (
+                      <a key={s.key} href={s.loginUrl} target="_blank" rel="noopener noreferrer" onClick={closeMobile} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2">
+                        {s.role[language]}
+                      </a>
+                    ))}
+                  </div>
+
+                  <a href={action.href} {...actionProps} onClick={closeMobile} className="ui-btn ui-btn-primary mt-2">
+                    {action.label}
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Scroll progress bar */}
-      <motion.div
+      <div
+        ref={progressRef}
         className="absolute bottom-0 left-0 right-0 h-[1.5px] origin-left"
-        style={{ scaleX: scrollProgress, background: 'linear-gradient(90deg, var(--accent), var(--accent-hi))' }}
+        style={{ transform: 'scaleX(0)', transition: 'transform .12s linear', background: 'linear-gradient(90deg, var(--accent), var(--accent-hi))' }}
       />
     </header>
   )

@@ -1,9 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useLanguage } from '@/contexts/LanguageContext'
-import { localeHref } from '@/lib/i18n'
+import { localeHref, type Locale } from '@/lib/i18n'
+import { translations } from '@/translations'
 
 interface Feature {
   textKey: string
@@ -153,10 +152,14 @@ const PLANS: PlanConfig[] = [
  * Property-manager plans. On the homepage this is one section (`h2`); on the
  * Pricing page it is the page's subject, so its title is the `h1`.
  */
-export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
+export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?: 'h1' | 'h2'; locale: Locale }) {
   const Heading = headingLevel
   const [isYearly, setIsYearly] = useState(false)
-  const { t, isRTL, language } = useLanguage()
+  // Whether the visitor has used the monthly/yearly switch (only then do prices animate).
+  const [switched, setSwitched] = useState(false)
+  const language = locale
+  const isRTL = locale === 'ar'
+  const t = translations[locale]
   const tp = t.pricing as Record<string, string>
 
   const getText = (key: string) => tp[key] ?? key
@@ -213,7 +216,10 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
               </span>
 
               <button
-                onClick={() => setIsYearly(!isYearly)}
+                onClick={() => {
+                  setIsYearly(!isYearly)
+                  setSwitched(true)
+                }}
                 className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                 style={{
                   background: isYearly
@@ -226,10 +232,9 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                 aria-checked={isYearly}
                 aria-label="Toggle yearly billing"
               >
-                <motion.span
+                <span
                   className="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow-md"
-                  animate={{ x: isYearly ? 28 : 0 }}
-                  transition={{ type: 'spring', stiffness: 500, damping: 35 }}
+                  style={{ transform: `translateX(${isYearly ? 28 : 0}px)`, transition: 'transform .25s cubic-bezier(.34,1.3,.64,1)' }}
                 />
               </button>
 
@@ -254,14 +259,11 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                 key={plan.id}
                 className={`${plan.mobileOrder} ${plan.desktopOrder} ${plan.highlight ? 'pricing-card-highlight' : ''}`}
               >
-                <motion.div
+                <div
                   className="ui-card relative flex flex-col overflow-hidden h-full"
-                  animate={{
-                    scale: plan.highlight ? 1.03 : 1,
-                    y: plan.highlight ? -8 : 0,
-                  }}
-                  transition={{ duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
                   style={{
+                    // The recommended plan sits slightly forward of the others.
+                    transform: plan.highlight ? 'translateY(-8px) scale(1.03)' : undefined,
                     background: plan.bgColor,
                     border: `1px solid ${plan.borderColor}`,
                     boxShadow: plan.glowShadow,
@@ -321,20 +323,15 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                               className="text-strong font-bold leading-none"
                               style={{ fontSize: 'clamp(36px, 5vw, 48px)' }}
                             >
-                              {/* initial={false}: the first price is in the static HTML, visible;
-                                  only a monthly/yearly switch animates. */}
-                              <AnimatePresence mode="wait" initial={false}>
-                                <motion.span
-                                  key={`${plan.id}-${isYearly}-${language}`}
-                                  initial={{ opacity: 0, y: -10 }}
-                                  animate={{ opacity: 1, y: 0 }}
-                                  exit={{ opacity: 0, y: 10 }}
-                                  transition={{ duration: 0.18 }}
-                                  style={{ display: 'inline-block' }}
-                                >
-                                  {formatPrice(pricing.price as number)}
-                                </motion.span>
-                              </AnimatePresence>
+                              {/* The first price is in the static HTML, still; only a
+                                  monthly/yearly switch animates the new price in. */}
+                              <span
+                                key={`${plan.id}-${isYearly}-${language}`}
+                                className={switched ? 'motion-swap' : undefined}
+                                style={{ display: 'inline-block' }}
+                              >
+                                {formatPrice(pricing.price as number)}
+                              </span>
                             </span>
                             <span className="text-faint text-sm mb-1.5 leading-none">
                               {periodLabel}
@@ -468,7 +465,7 @@ export default function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' |
                       ))}
                     </ul>
                   </div>
-                </motion.div>
+                </div>
               </div>
             )
           })}

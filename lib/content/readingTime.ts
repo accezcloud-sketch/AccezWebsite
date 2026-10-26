@@ -1,17 +1,8 @@
 /**
- * Reading time, per language.
- *
- * Each post file contains the English and the Arabic article, so the time
- * must be measured on one language's half only. Measuring the whole file
- * (as before) roughly doubled every estimate.
+ * The reading-time label shown on posts and cards, per language. Safe for
+ * browser code; the measuring itself is in ./readingMinutes.ts (build time).
  */
-import readingTime from 'reading-time'
 import type { Locale } from '@/lib/i18n'
-
-/** Whole minutes to read a markdown body; never less than 1. */
-export function readingMinutes(markdown: string): number {
-  return Math.max(1, Math.ceil(readingTime(markdown).minutes))
-}
 
 const LABEL: Record<Locale, string> = { en: 'min read', ar: 'دقيقة قراءة' }
 

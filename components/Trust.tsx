@@ -1,8 +1,6 @@
-'use client'
-
 import { CreditCard, ShieldCheck, MapPin, type LucideIcon } from 'lucide-react'
 import ArabicEnglishIcon from '@/components/ui/ArabicEnglishIcon'
-import { useLanguage } from '@/contexts/LanguageContext'
+import type { Locale } from '@/lib/i18n'
 
 interface IntegrationGroup {
   label: string
@@ -95,8 +93,7 @@ const CONTENT = {
   },
 } as const
 
-export default function Trust() {
-  const { language } = useLanguage()
+export default function Trust({ locale: language }: { locale: Locale }) {
   const t = CONTENT[language]
 
   return (

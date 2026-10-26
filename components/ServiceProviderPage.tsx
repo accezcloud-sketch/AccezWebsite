@@ -1,7 +1,5 @@
-'use client'
-
 import { TicketPercent, Award, ListOrdered, Gift, Tag, Star, Scissors, MessageSquareText } from 'lucide-react'
-import { useLanguage } from '@/contexts/LanguageContext'
+import type { Locale } from '@/lib/i18n'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
@@ -120,8 +118,7 @@ const MORE_ICONS = [TicketPercent, Award, ListOrdered, Gift, Tag, Star, Scissors
  * /solutions/service-providers/: the service provider solution, shown with
  * real screens. Each area is a few steps; choosing one shows its screen.
  */
-export default function ServiceProviderPage() {
-  const { language: locale } = useLanguage()
+export default function ServiceProviderPage({ locale }: { locale: Locale }) {
   const t = CONTENT[locale]
 
   return (
@@ -178,7 +175,7 @@ export default function ServiceProviderPage() {
         </section>
       </Band>
 
-      <Band shade="alt"><ProviderPricing /></Band>
+      <Band shade="alt"><ProviderPricing locale={locale} /></Band>
 
       <PhotoCta
         title={t.ctaTitle}

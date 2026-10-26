@@ -29,7 +29,7 @@ export function solutionRoute(locale: Locale) {
           <main className="min-h-screen">
             <Header />
             <Content locale={locale} />
-            <Footer />
+            <Footer locale={locale} />
           </main>
         </>
       )

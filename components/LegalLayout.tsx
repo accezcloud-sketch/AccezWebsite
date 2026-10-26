@@ -1,6 +1,4 @@
-'use client'
-
-import { ReactNode, createContext, useContext } from 'react'
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 import {
   appliesTo,
@@ -14,15 +12,24 @@ import { LEGAL_COPY, LEGAL_DOCUMENTS, legalDocumentsFor, legalHref, type LegalDo
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useLanguage } from '@/contexts/LanguageContext'
-import { localeHref } from '@/lib/i18n'
+import { localeHref, type Locale } from '@/lib/i18n'
 
-/** The version being rendered, and this document's structure. */
-const DocumentContext = createContext<{
+/** The version being rendered, this document's structure, and its language. */
+interface DocumentInfo {
   view: AudienceView | undefined
   audienceOf: Record<string, Audience>
   numbers: Record<string, number>
-}>({ view: undefined, audienceOf: {}, numbers: {} })
+  language: Locale
+}
+
+function documentInfo(sections: LegalSection[], audience: AudienceView | undefined, language: Locale): DocumentInfo {
+  return {
+    view: audience,
+    audienceOf: Object.fromEntries(sections.map((s) => [s.id, s.for ?? 'all'])) as Record<string, Audience>,
+    numbers: sectionNumbers(sections, audience),
+    language,
+  }
+}
 
 interface LegalLayoutProps {
   doc: LegalDocKey
@@ -30,6 +37,7 @@ interface LegalLayoutProps {
   sections: LegalSection[]
   /** Which audience's version to render. Absent for a shared document. */
   audience?: AudienceView
+  locale: Locale
   title: string
   subtitle: string
   lastUpdated: string
@@ -40,7 +48,8 @@ interface LegalLayoutProps {
 const solutionFor = (view: AudienceView) => PLATFORM_SOLUTIONS.find((s) => s.legalAudience === view)
 
 /**
- * Shared shell for the legal pages.
+ * Shared shell for the legal pages. Rendered on the server: the document
+ * ships as HTML, and only the header and footer's switches run in the browser.
  *
  * A per-audience document is rendered as one version only: the other
  * audience's sections and passages are not in the page at all, the sections
@@ -53,13 +62,14 @@ export default function LegalLayout({
   doc,
   sections,
   audience,
+  locale,
   title,
   subtitle,
   lastUpdated,
   effectiveDate,
   children,
 }: LegalLayoutProps) {
-  const { language } = useLanguage()
+  const language = locale
   const ar = language === 'ar'
   const c = LEGAL_COPY[language]
   const L = {
@@ -73,12 +83,6 @@ export default function LegalLayout({
   const related = solution
     ? legalDocumentsFor(solution)
     : LEGAL_DOCUMENTS.map((d) => ({ doc: d, href: legalHref(d.key) }))
-
-  const context = {
-    view: audience,
-    audienceOf: Object.fromEntries(sections.map((s) => [s.id, s.for ?? 'all'])) as Record<string, Audience>,
-    numbers: sectionNumbers(sections, audience),
-  }
 
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
@@ -156,9 +160,7 @@ export default function LegalLayout({
       <section className="pb-20" style={{ borderTop: '1px solid var(--border)' }}>
         <div className="container mx-auto px-4 pt-10">
           <div className="mx-auto" style={{ maxWidth: 820 }}>
-            <DocumentContext.Provider value={context}>
-              <article className="legal-doc min-w-0">{children}</article>
-            </DocumentContext.Provider>
+            <article className="legal-doc min-w-0">{children}</article>
 
             {/* The reader's other documents: the same audience's versions. */}
             <nav
@@ -183,63 +185,9 @@ export default function LegalLayout({
         </div>
       </section>
 
-      <Footer />
+      <Footer locale={language} />
     </main>
   )
-}
-
-/** One numbered section of a legal document. Left out of versions it does not apply to. */
-export function LegalSectionBlock({
-  id,
-  title,
-  children,
-}: {
-  id: string
-  title: string
-  children: ReactNode
-}) {
-  const { language } = useLanguage()
-  const { view, audienceOf, numbers } = useContext(DocumentContext)
-
-  if (!(id in audienceOf)) throw new Error(`Legal section "${id}" is missing from the document's section list`)
-  if (!appliesTo(audienceOf[id], view)) return null
-
-  return (
-    <section id={id} className="mb-14">
-      <h2
-        className="hero-display text-strong tracking-tight mb-4"
-        style={{ fontSize: 'clamp(20px, 2.4vw, 26px)' }}
-      >
-        {formatSectionNumber(numbers[id], language)}. {title}
-      </h2>
-      <div className="legal-body space-y-4">{children}</div>
-    </section>
-  )
-}
-
-/**
- * The number of another section, as it appears in this version ("see section
- * <SectionNo to="fees" />"). Versions number their sections differently, so a
- * written number would be wrong in one of them. Fails the build if the section
- * is not in this version, rather than publishing a reference to nothing.
- */
-export function SectionNo({ to }: { to: string }) {
-  const { language } = useLanguage()
-  const { numbers, view } = useContext(DocumentContext)
-  const n = numbers[to]
-  if (n === undefined) throw new Error(`Section reference "${to}" is not in the ${view ?? 'shared'} version`)
-  return <a href={`#${to}`}>{formatSectionNumber(n, language)}</a>
-}
-
-/**
- * A link to another legal document, in the same audience's version as the
- * page it is on, so a reader never has to choose their version again.
- */
-export function DocLink({ to, children }: { to: LegalDocKey; children: ReactNode }) {
-  const { language } = useLanguage()
-  const { view } = useContext(DocumentContext)
-  const solution = view ? solutionFor(view) : undefined
-  return <Link href={localeHref(legalHref(to, solution), language)} prefetch={false}>{children}</Link>
 }
 
 /** A callout for terms a reader must not miss — fees, liability, deadlines. */
@@ -339,37 +287,86 @@ export function LegalTable({
   )
 }
 
-
 /**
- * A paragraph, list item or callout that speaks to one audience only.
- *
- * In a per-audience version it is rendered only in its own audience's
- * version. In a shared document every reader sees it, so it carries
- * a label saying who it is for.
+ * The parts of one legal document that depend on which version is shown:
+ * numbered sections, cross-references, links to the reader's other
+ * documents and audience-only passages. Each content file calls this once
+ * with its sections, the audience and its language, and writes the document
+ * with the parts it returns (server components, no React context needed).
  */
-export function Only({
-  for: audience,
-  as: Tag = 'div',
-  children,
-}: {
-  for: AudienceView
-  /** Use "li" inside a list: a <div> between <ul> and <li> is invalid HTML. */
-  as?: 'div' | 'li'
-  children: ReactNode
-}) {
-  const { language } = useLanguage()
-  const { view } = useContext(DocumentContext)
-  if (view !== undefined) return view === audience ? <Tag className="legal-only">{children}</Tag> : null
+export function legalDocumentParts(sections: LegalSection[], audience: AudienceView | undefined, language: Locale) {
+  const { view, audienceOf, numbers } = documentInfo(sections, audience, language)
 
-  const label = solutionFor(audience)?.audience[language]
-  return Tag === 'li' ? (
-    <li className="legal-only">
-      <strong className="legal-only-label">{label}:</strong> {children}
-    </li>
-  ) : (
-    <div className="legal-only legal-only-labelled">
-      <p className="legal-only-label">{label}</p>
-      {children}
-    </div>
-  )
+  /** One numbered section of a legal document. Left out of versions it does not apply to. */
+  function LegalSectionBlock({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+    if (!(id in audienceOf)) throw new Error(`Legal section "${id}" is missing from the document's section list`)
+    if (!appliesTo(audienceOf[id], view)) return null
+
+    return (
+      <section id={id} className="mb-14">
+        <h2
+          className="hero-display text-strong tracking-tight mb-4"
+          style={{ fontSize: 'clamp(20px, 2.4vw, 26px)' }}
+        >
+          {formatSectionNumber(numbers[id], language)}. {title}
+        </h2>
+        <div className="legal-body space-y-4">{children}</div>
+      </section>
+    )
+  }
+
+  /**
+   * The number of another section, as it appears in this version ("see section
+   * <SectionNo to="fees" />"). Versions number their sections differently, so a
+   * written number would be wrong in one of them. Fails the build if the section
+   * is not in this version, rather than publishing a reference to nothing.
+   */
+  function SectionNo({ to }: { to: string }) {
+    const n = numbers[to]
+    if (n === undefined) throw new Error(`Section reference "${to}" is not in the ${view ?? 'shared'} version`)
+    return <a href={`#${to}`}>{formatSectionNumber(n, language)}</a>
+  }
+
+  /**
+   * A link to another legal document, in the same audience's version as the
+   * page it is on, so a reader never has to choose their version again.
+   */
+  function DocLink({ to, children }: { to: LegalDocKey; children: ReactNode }) {
+    const solution = view ? solutionFor(view) : undefined
+    return <Link href={localeHref(legalHref(to, solution), language)} prefetch={false}>{children}</Link>
+  }
+
+  /**
+   * A paragraph, list item or callout that speaks to one audience only.
+   *
+   * In a per-audience version it is rendered only in its own audience's
+   * version. In a shared document every reader sees it, so it carries
+   * a label saying who it is for.
+   */
+  function Only({
+    for: forAudience,
+    as: Tag = 'div',
+    children,
+  }: {
+    for: AudienceView
+    /** Use "li" inside a list: a <div> between <ul> and <li> is invalid HTML. */
+    as?: 'div' | 'li'
+    children: ReactNode
+  }) {
+    if (view !== undefined) return view === forAudience ? <Tag className="legal-only">{children}</Tag> : null
+
+    const label = solutionFor(forAudience)?.audience[language]
+    return Tag === 'li' ? (
+      <li className="legal-only">
+        <strong className="legal-only-label">{label}:</strong> {children}
+      </li>
+    ) : (
+      <div className="legal-only legal-only-labelled">
+        <p className="legal-only-label">{label}</p>
+        {children}
+      </div>
+    )
+  }
+
+  return { S: LegalSectionBlock, SectionNo, DocLink, Only }
 }

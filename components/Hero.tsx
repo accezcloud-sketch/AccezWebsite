@@ -1,8 +1,5 @@
-'use client'
-
 import Link from 'next/link'
-import { useLanguage } from '@/contexts/LanguageContext'
-import { localeHref } from '@/lib/i18n'
+import { localeHref, type Locale } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroProductTabs from '@/components/home/HeroProductTabs'
@@ -24,8 +21,7 @@ const CONTENT = {
 } as const
 
 /** One door per solution (lib/platform/solutions.ts), equal weight. */
-function SolutionDoors() {
-  const { language } = useLanguage()
+function SolutionDoors({ language }: { language: Locale }) {
   return (
     <nav aria-label={CONTENT[language].doorsLabel} className="w-full max-w-2xl">
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -51,15 +47,14 @@ function SolutionDoors() {
 }
 
 /** The homepage top: the platform, a door into each solution, then the real product. */
-export default function Hero() {
-  const { language } = useLanguage()
+export default function Hero({ locale: language }: { locale: Locale }) {
   const t = CONTENT[language]
   return (
     <CenteredHero
       title={t.title}
       accent={t.accent}
       subtitle={t.subtitle}
-      actions={<SolutionDoors />}
+      actions={<SolutionDoors language={language} />}
       media={<HeroProductTabs locale={language} />}
       backdrop={RIYADH}
     />

@@ -1,19 +1,14 @@
-'use client'
-
-import LegalLayout, {
-  LegalSectionBlock as S,
-  LegalCallout,
-  LegalTable,
-  Only,
-} from '@/components/LegalLayout'
+import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { PRIVACY_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
 export default function PrivacyContentAr({ audience }: { audience: AudienceView }) {
+  const { S, Only } = legalDocumentParts(PRIVACY_SECTIONS, audience, 'ar')
   return (
     <LegalLayout
+      locale="ar"
       title="سياسة الخصوصية"
       subtitle={audience === 'pm' ? 'كيف تجمع شركة كلاود فالي البيانات الشخصية في منصة أكسيز لإدارة العقارات وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي.' : 'كيف تجمع شركة كلاود فالي البيانات الشخصية في سوق خدمات أكسيز وتستخدمها وتشاركها وتحميها، وما هي حقوقك بموجب نظام حماية البيانات الشخصية السعودي.'}
       lastUpdated={LAST_UPDATED}

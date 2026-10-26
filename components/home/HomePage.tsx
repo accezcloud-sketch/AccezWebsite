@@ -21,15 +21,15 @@ export default function HomePage({ locale }: { locale: Locale }) {
   return (
     <main className="min-h-screen">
       <Header />
-      <Band shade="base"><Hero /></Band>
-      <Band shade="alt"><Ecosystem /></Band>
+      <Band shade="base"><Hero locale={locale} /></Band>
+      <Band shade="alt"><Ecosystem locale={locale} /></Band>
       <Band shade="base"><SolutionsShowcase locale={locale} /></Band>
-      <Band shade="alt"><Trust /></Band>
+      <Band shade="alt"><Trust locale={locale} /></Band>
       <Band shade="base"><PricingOverview locale={locale} /></Band>
       <Band shade="alt"><FAQ /></Band>
       <Band shade="base"><BlogStrip locale={locale} /></Band>
       <Band shade="alt"><Contact /></Band>
-      <Footer />
+      <Footer locale={locale} />
     </main>
   )
 }

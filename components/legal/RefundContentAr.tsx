@@ -1,21 +1,14 @@
-'use client'
-
-import LegalLayout, {
-  LegalSectionBlock as S,
-  LegalCallout,
-  LegalTable,
-  Only,
-  SectionNo,
-  DocLink,
-} from '@/components/LegalLayout'
+import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { REFUND_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
 export default function RefundContentAr({ audience }: { audience: AudienceView }) {
+  const { S, Only, SectionNo, DocLink } = legalDocumentParts(REFUND_SECTIONS, audience, 'ar')
   return (
     <LegalLayout
+      locale="ar"
       title="سياسة الاسترداد والإلغاء"
       subtitle={audience === 'pm' ? 'كيف يعمل الإلغاء والاسترداد في حجوزات الوحدات واشتراكات أكسيز، ومن يتحمل أي رسوم.' : 'كيف يعمل الإلغاء والاسترداد في حجوزات السوق واشتراكات أكسيز، ومن يتحمل أي رسوم.'}
       lastUpdated={LAST_UPDATED}

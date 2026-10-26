@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { usePresence } from '@/components/ui/usePresence'
 import type { NavSection } from './types'
 
 const HOVER_OPEN_MS = 180
@@ -36,6 +36,7 @@ export default function NavDropdown({ name, label, sections, align = 'start', tr
   const rootRef = useRef<HTMLDivElement>(null)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const { mounted, shown } = usePresence(open, 160)
 
   const clearTimer = () => {
     if (timer.current) clearTimeout(timer.current)
@@ -98,15 +99,11 @@ export default function NavDropdown({ name, label, sections, align = 'start', tr
         </svg>
       </button>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
+      {mounted && (
+          <div
             id={panelId}
-            initial={{ opacity: 0, y: 6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 6 }}
-            transition={{ duration: 0.16, ease: [0.21, 0.47, 0.32, 0.98] }}
-            className={`absolute top-full ${align === 'end' ? 'end-0' : 'start-0'}`}
+            data-open={shown}
+            className={`motion-pop absolute top-full ${align === 'end' ? 'end-0' : 'start-0'}`}
             style={{ paddingTop: 12 }}
           >
             <div className="nav-panel rounded-2xl p-2 w-max flex flex-col" style={{ minWidth: 220, maxWidth: 340 }}>
@@ -133,9 +130,8 @@ export default function NavDropdown({ name, label, sections, align = 'start', tr
                 </div>
               ))}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+      )}
     </div>
   )
 }

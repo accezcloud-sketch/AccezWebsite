@@ -1,14 +1,12 @@
-'use client'
-
 import { Check } from 'lucide-react'
-import { useLanguage } from '@/contexts/LanguageContext'
+import type { Locale } from '@/lib/i18n'
 import { PROVIDER_SIGN_UP } from '@/lib/links'
 import { PROVIDER_PRICING_COPY } from '@/lib/content/providerPricing'
 import SectionHeader from '@/components/SectionHeader'
 
 /** Service-provider marketplace plans. Used on the Service Providers and Pricing pages. */
-export default function ProviderPricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
-  const { language, isRTL } = useLanguage()
+export default function ProviderPricing({ headingLevel = 'h2', locale: language }: { headingLevel?: 'h1' | 'h2'; locale: Locale }) {
+  const isRTL = language === 'ar'
   const p = PROVIDER_PRICING_COPY[language]
   const arrow = (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ transform: isRTL ? 'scaleX(-1)' : undefined }} aria-hidden="true">

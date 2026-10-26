@@ -15,7 +15,7 @@ export default function FaqPage() {
       <div style={{ paddingTop: 'var(--nav-h)' }}>
         <FAQ headingLevel="h1" />
       </div>
-      <Footer />
+      <Footer locale="en" />
     </main>
   )
 }

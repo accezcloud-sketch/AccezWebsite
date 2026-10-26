@@ -55,8 +55,30 @@ export default function ChatbotWidget() {
     return () => window.removeEventListener('message', handleMessage)
   }, [])
 
+  // The assistant is a separate app in a frame; load it once the page itself
+  // has loaded and the browser is idle, so it never competes with the page.
+  const [idle, setIdle] = useState(false)
+  useEffect(() => {
+    let cancelled = false
+    // Safari has no requestIdleCallback; a short timeout stands in for it.
+    const hasIdle = typeof window.requestIdleCallback === 'function'
+    let idleId = 0
+    const ready = () => {
+      if (cancelled) return
+      idleId = hasIdle ? window.requestIdleCallback(() => setIdle(true), { timeout: 2000 }) : globalThis.setTimeout(() => setIdle(true), 200) as unknown as number
+    }
+    if (document.readyState === 'complete') ready()
+    else window.addEventListener('load', ready, { once: true })
+    return () => {
+      cancelled = true
+      window.removeEventListener('load', ready)
+      if (hasIdle) window.cancelIdleCallback(idleId)
+      else globalThis.clearTimeout(idleId)
+    }
+  }, [])
+
   // Wait for the page's theme, so the assistant opens in it rather than switching after.
-  if (!firstTheme) return null
+  if (!firstTheme || !idle) return null
 
   return (
     <iframe

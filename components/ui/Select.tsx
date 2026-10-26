@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { usePresence } from './usePresence'
 
 export interface SelectOption {
   value: string
@@ -27,6 +27,7 @@ export default function Select({ value, onChange, options, ariaLabel, isRTL = fa
   const [activeIdx, setActiveIdx] = useState(0)
   const rootRef = useRef<HTMLDivElement>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
+  const { mounted, shown } = usePresence(open, 150)
 
   const selected = options.find((o) => o.value === value) ?? options[0]
 
@@ -99,19 +100,16 @@ export default function Select({ value, onChange, options, ariaLabel, isRTL = fa
         </svg>
       </button>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: 6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 6 }}
-            transition={{ duration: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
-            className="absolute z-30 mt-2 w-full rounded-xl overflow-hidden p-1.5"
+      {mounted && (
+          <div
+            data-open={shown}
+            className="motion-pop absolute z-30 mt-2 w-full rounded-xl overflow-hidden p-1.5"
             style={{
               background: 'var(--panel)',
               border: '1px solid var(--border-hi)',
               boxShadow: '0 20px 48px rgb(var(--shadow-rgb) / calc(0.5 * var(--shadow-k)))',
               backdropFilter: 'blur(20px)',
+              ['--motion-dur' as string]: '.15s',
             }}
             role="listbox"
             aria-label={ariaLabel}
@@ -145,9 +143,8 @@ export default function Select({ value, onChange, options, ariaLabel, isRTL = fa
                 )
               })}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+      )}
     </div>
   )
 }

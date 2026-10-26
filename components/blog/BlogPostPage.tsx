@@ -1,4 +1,4 @@
-import BlogPostClient from '@/components/BlogPostClient'
+import PostArticle from '@/components/blog/PostArticle'
 import PostFooter from '@/components/blog/PostFooter'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { renderArticle } from '@/lib/content/markdown'
@@ -23,8 +23,9 @@ export default function BlogPostPage({ slug, locale }: { slug: string; locale: L
         postSchemas(meta, locale).map((schema, index) => (
           <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         ))}
-      <BlogPostClient
+      <PostArticle
         post={meta}
+        locale={locale}
         contentHtml={article.html}
         toc={article.toc}
         afterArticle={<PostFooter slug={slug} locale={locale} />}

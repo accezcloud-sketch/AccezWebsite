@@ -12,7 +12,7 @@ const Arrow = ({ locale }: { locale: Locale }) => (
   </svg>
 )
 
-function Shell({ title, subtitle, children }: { title: string; subtitle: string; children: ReactNode }) {
+function Shell({ title, subtitle, locale, children }: { title: string; subtitle: string; locale: Locale; children: ReactNode }) {
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
       <Header />
@@ -28,7 +28,7 @@ function Shell({ title, subtitle, children }: { title: string; subtitle: string;
           {children}
         </div>
       </section>
-      <Footer />
+      <Footer locale={locale} />
     </main>
   )
 }
@@ -41,7 +41,7 @@ export function LegalChooser({ doc: key, locale }: { doc: LegalDocKey; locale: L
   const doc = legalDocument(key)
   const c = LEGAL_COPY[locale]
   return (
-    <Shell title={doc.title[locale]} subtitle={c.chooserSubtitle}>
+    <Shell title={doc.title[locale]} subtitle={c.chooserSubtitle} locale={locale}>
       <ul className={`grid gap-6 max-w-2xl mx-auto ${PLATFORM_SOLUTIONS.length > 1 ? 'md:grid-cols-2' : ''}`}>
         {PLATFORM_SOLUTIONS.map((s) => (
           <li key={s.key}>

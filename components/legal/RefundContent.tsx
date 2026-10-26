@@ -1,21 +1,14 @@
-'use client'
-
-import LegalLayout, {
-  LegalSectionBlock as S,
-  LegalCallout,
-  LegalTable,
-  Only,
-  SectionNo,
-  DocLink,
-} from '@/components/LegalLayout'
+import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { REFUND_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
 const LAST_UPDATED = '25 August 2026'
 const EFFECTIVE = '25 August 2026'
 
 export default function RefundContent({ audience }: { audience: AudienceView }) {
+  const { S, Only, SectionNo, DocLink } = legalDocumentParts(REFUND_SECTIONS, audience, 'en')
   return (
     <LegalLayout
+      locale="en"
       title="Refund & Cancellation Policy"
       subtitle={audience === 'pm' ? 'How cancellations and refunds work for reservations and Accez subscriptions, and who bears which fees.' : 'How cancellations and refunds work for marketplace bookings and Accez subscriptions, and who bears which fees.'}
       lastUpdated={LAST_UPDATED}

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { localeHref } from '@/lib/i18n'
 import { CATEGORY_KEYS, FAQS, type FaqCategory } from '@/lib/content/faqs'
@@ -160,10 +159,9 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                         </span>
                       </div>
 
-                      <motion.span
-                        animate={{ rotate: isOpen ? 180 : 0 }}
-                        transition={{ duration: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
+                      <span
                         className="flex-shrink-0 text-faint"
+                        style={{ transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform .25s cubic-bezier(.21,.47,.32,.98)' }}
                       >
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path
@@ -174,32 +172,30 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </motion.span>
+                      </span>
                     </button>
 
                     {/* Always rendered, so every answer is in the static HTML for
-                        search engines and AI crawlers; collapsed answers are
-                        animated to zero height and hidden from assistive tech. */}
-                    <motion.div
+                        search engines and AI crawlers; collapsed answers fold
+                        to zero height (CSS) and are hidden from assistive tech. */}
+                    <div
                       id={`faq-answer-${index}`}
-                      initial={false}
-                      animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
-                      transition={{
-                        height: { duration: 0.32, ease: [0.21, 0.47, 0.32, 0.98] },
-                        opacity: { duration: 0.22 },
-                      }}
-                      className="overflow-hidden"
+                      data-open={isOpen}
+                      className="motion-collapse"
+                      style={{ ['--motion-dur' as string]: '.32s' }}
                       aria-hidden={!isOpen}
                     >
-                      <div className={`pb-5 pt-1 ${isRTL ? 'pr-11 pl-5' : 'pl-11 pr-5'}`}>
-                        <p
-                          className="text-muted leading-relaxed"
-                          style={{ fontSize: 14.5 }}
-                        >
-                          {language === 'ar' ? faq.answerAr : faq.answer}
-                        </p>
+                      <div>
+                        <div className={`pb-5 pt-1 ${isRTL ? 'pr-11 pl-5' : 'pl-11 pr-5'}`}>
+                          <p
+                            className="text-muted leading-relaxed"
+                            style={{ fontSize: 14.5 }}
+                          >
+                            {language === 'ar' ? faq.answerAr : faq.answer}
+                          </p>
+                        </div>
                       </div>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
               )

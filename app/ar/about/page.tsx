@@ -27,8 +27,8 @@ export default function Page() {
   return (
     <main className="min-h-screen">
       <Header />
-      <AboutPage />
-      <Footer />
+      <AboutPage locale="ar" />
+      <Footer locale="ar" />
     </main>
   )
 }

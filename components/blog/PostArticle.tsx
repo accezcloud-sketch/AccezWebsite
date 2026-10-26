@@ -1,13 +1,10 @@
-'use client'
-
 import type { ReactNode } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useLanguage } from '@/contexts/LanguageContext'
-import { type BlogPostMeta } from '@/lib/blog'
-import { localeHref, localeUrl } from '@/lib/i18n'
+import type { BlogPostMeta } from '@/lib/blog'
+import { localeHref, localeUrl, type Locale } from '@/lib/i18n'
 import ShareButtons from '@/components/blog/ShareButtons'
 import Breadcrumbs from '@/components/blog/Breadcrumbs'
 import TableOfContents from '@/components/blog/TableOfContents'
@@ -17,22 +14,30 @@ import { formatReadingTime } from '@/lib/content/readingTime'
 import { photoCreditText } from '@/lib/content/credit'
 import { topicLabel } from '@/lib/content/topics'
 
-interface BlogPostClientProps {
+interface PostArticleProps {
   post: BlogPostMeta | null
+  locale: Locale
   /** The article body, already rendered to HTML on the server (lib/content/markdown.ts). */
   contentHtml: string
   /** The body's section headings, for the table of contents. */
   toc: TocEntry[]
   /**
    * Server-rendered content shown between the article and the footer (the
-   * related-articles block). Passed in as a slot so this client component
-   * stays unaware of how related posts are chosen.
+   * related-articles block). Passed in as a slot so this component stays
+   * unaware of how related posts are chosen.
    */
   afterArticle?: ReactNode
 }
 
-export default function BlogPostClient({ post, contentHtml, toc, afterArticle }: BlogPostClientProps) {
-  const { language, isRTL } = useLanguage()
+/**
+ * A blog post page's body: header, breadcrumbs, the article, its tags and
+ * share buttons, then the footer. Rendered on the server, so the article
+ * ships as HTML only; the header and the share buttons are the interactive
+ * parts.
+ */
+export default function PostArticle({ post, locale, contentHtml, toc, afterArticle }: PostArticleProps) {
+  const language = locale
+  const isRTL = locale === 'ar'
 
   const content = {
     en: {
@@ -83,7 +88,7 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
             {t.backToBlog}
           </Link>
         </div>
-        <Footer />
+        <Footer locale={language} />
       </main>
     )
   }
@@ -185,7 +190,7 @@ export default function BlogPostClient({ post, contentHtml, toc, afterArticle }:
 
       {afterArticle}
 
-      <Footer />
+      <Footer locale={language} />
     </main>
   )
 }

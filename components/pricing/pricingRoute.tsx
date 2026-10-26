@@ -29,10 +29,10 @@ export function pricingRoute(locale: Locale) {
         <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
           <Header />
           <div style={{ paddingTop: 'var(--nav-h)' }}>
-            <Plans headingLevel="h1" />
+            <Plans headingLevel="h1" locale={locale} />
           </div>
           <Band shade="alt"><PricingFaq locale={locale} /></Band>
-          <Footer />
+          <Footer locale={locale} />
         </main>
       )
     },

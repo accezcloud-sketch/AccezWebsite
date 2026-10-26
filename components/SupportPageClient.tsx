@@ -148,7 +148,7 @@ export default function SupportPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer locale={language} />
     </main>
   )
 }

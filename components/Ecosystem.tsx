@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import {
   Building2,
@@ -10,7 +8,7 @@ import {
   Wrench,
   type LucideIcon,
 } from 'lucide-react'
-import { useLanguage } from '@/contexts/LanguageContext'
+import type { Locale } from '@/lib/i18n'
 
 interface Party {
   icon: LucideIcon
@@ -113,8 +111,7 @@ function nodePosition(index: number) {
   }
 }
 
-export default function Ecosystem() {
-  const { language } = useLanguage()
+export default function Ecosystem({ locale: language }: { locale: Locale }) {
   const t = CONTENT[language]
 
   return (

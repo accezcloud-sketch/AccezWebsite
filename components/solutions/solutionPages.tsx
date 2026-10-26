@@ -7,11 +7,6 @@ import type { PlatformSolution } from '@/lib/platform/solutions'
 import PropertyManagementPage from './PropertyManagementPage'
 import ServiceProviderPage from '@/components/ServiceProviderPage'
 
-/** The provider page reads its language from context, so it takes no props. */
-function ServiceProviderSolution() {
-  return <ServiceProviderPage />
-}
-
 interface SolutionPage {
   Page: ComponentType<{ locale: Locale }>
   /** Structured data for the page, if any. */
@@ -28,7 +23,7 @@ export const SOLUTION_PAGES: Record<string, SolutionPage> = {
     Page: PropertyManagementPage,
   },
   'service-providers': {
-    Page: ServiceProviderSolution,
+    Page: ServiceProviderPage,
     schema: providerMarketplaceSchema,
   },
 }

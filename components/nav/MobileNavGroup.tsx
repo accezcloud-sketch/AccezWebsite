@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { usePresence } from '@/components/ui/usePresence'
 import type { NavSection } from './types'
 
 /** A collapsible group in the mobile menu, mirroring a desktop NavDropdown. */
@@ -9,6 +9,7 @@ export default function MobileNavGroup({ name, label, sections, onNavigate }: { 
   const [open, setOpen] = useState(false)
   // Fixed id (not useId), so server and browser agree.
   const id = `nav-mobile-${name}`
+  const { mounted, shown } = usePresence(open, 200)
 
   return (
     <div>
@@ -24,17 +25,9 @@ export default function MobileNavGroup({ name, label, sections, onNavigate }: { 
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            id={id}
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2 }}
-            className="overflow-hidden ps-3 border-s"
-            style={{ borderColor: 'var(--border)' }}
-          >
+      {mounted && (
+        <div id={id} data-open={shown} className="motion-collapse" style={{ ['--motion-dur' as string]: '.2s' }}>
+          <div className="ps-3 border-s" style={{ borderColor: 'var(--border)' }}>
             {sections.map((section, i) => (
               <div key={section.heading ?? i} className="pb-2">
                 {section.heading && (
@@ -56,9 +49,9 @@ export default function MobileNavGroup({ name, label, sections, onNavigate }: { 
                 ))}
               </div>
             ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -176,7 +176,7 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
           </div>
         </section>
       </Band>
-      <Band shade="alt"><Pricing /></Band>
+      <Band shade="alt"><Pricing locale={locale} /></Band>
       <ClosingCta locale={locale} />
       <Band shade="base"><BlogStrip locale={locale} /></Band>
     </>
