@@ -10,8 +10,10 @@ excerptAr: "تسريبات الوقت وتكاليف دوران المستأجر
 date: "2026-02-10"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm2.webp"
-coverImageAlt: "Chart showing hidden costs of manual property management including turnover and vacancy losses"
+coverImage: "/images/blog/hidden-costs-of-managing-properties-without-a-system.webp"
+coverImageAlt: "A thick, untidy stack of paper receipts, invoices and documents shown close up"
+coverImageCredit: "Photo by Camilo Rueda López on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/a-close-up-of-a-stack-of-papers-3CLPBgNuX40"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["Hidden Costs", "Property Management", "Efficiency", "Saudi Arabia", "ROI"]

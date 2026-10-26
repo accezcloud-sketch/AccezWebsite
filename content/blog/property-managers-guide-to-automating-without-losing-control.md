@@ -10,8 +10,10 @@ metaDescriptionAr: "ما الذي تؤتمته وما الذي تبقيه بيد
 date: "2026-02-19"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm5.webp"
-coverImageAlt: "Automated property management workflow with human oversight checkpoints"
+coverImage: "/images/blog/property-managers-guide-to-automating-without-losing-control.webp"
+coverImageAlt: "A large vintage control room with a long console of switches, gauges and dials"
+coverImageCredit: "Photo by Frantisek Duris on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/a-large-control-room-with-lots-of-control-knobs-C3DfIgig1j8"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["Automation", "Property Management", "Tenant Relations", "Saudi Arabia", "Technology"]

@@ -10,8 +10,10 @@ excerptAr: "دليل لإنشاء وإدارة الوحدات الإيجارية
 date: "2024-12-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm5.webp"
-coverImageAlt: "Accez.Cloud unit management interface showing long-term and short-term rental unit options"
+coverImage: "/images/blog/how-to-create-manage-units-accez-cloud.webp"
+coverImageAlt: "Repeating rows of white balconies and windows across a modern apartment building facade"
+coverImageCredit: "Photo by Anastasiya Badun on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/pattern-of-balconies-on-a-modern-building-cAFawuknN24"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"
 tags: ["Unit Management", "Getting Started", "Tutorial", "Units"]

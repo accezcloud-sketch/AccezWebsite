@@ -11,10 +11,10 @@ excerptAr: "أمّن عملياتك العقارية من خلال تطبيق ا
 date: "2026-08-25"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/role-based-access-giving-your-team-the-right-permissions-wit.webp"
-coverImageAlt: "A stylized graphic representing secure data access with locks and digital interfaces."
+coverImage: "/images/blog/role-based-access-giving-your-team-the-right-permissions.webp"
+coverImageAlt: "A hand holding up a small bunch of keys on a ring against a blurred background"
 coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
-coverImageCreditUrl: "https://unsplash.com/photos/a-house-shaped-keychain-hanging-from-a-key-chain-6TIlcP5af08"
+coverImageCreditUrl: "https://unsplash.com/photos/a-person-holding-a-bunch-of-keys-in-their-hand-Ebj87ehFNNU"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["role-based access", "access control", "property management", "cybersecurity", "operations"]

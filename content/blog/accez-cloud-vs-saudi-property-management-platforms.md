@@ -10,8 +10,10 @@ excerptAr: "قارن Accez بالأنواع الرئيسية لأدوات إدا
 date: "2026-01-21"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm6.webp"
-coverImageAlt: "Side-by-side comparison of Accez.Cloud features versus competing Saudi property management platforms"
+coverImage: "/images/blog/accez-cloud-vs-saudi-property-management-platforms.webp"
+coverImageAlt: "Al Faisaliah Tower rising behind King Fahad National Library and office buildings in Riyadh"
+coverImageCredit: "Photo by Tati Odintsova on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/riyadh-cityscape-with-kingdom-centre-tower-and-modern-buildings-kZ5nwgLVjqQ"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["PropTech", "Saudi Arabia", "Comparison", "Vision 2030", "Property Management"]

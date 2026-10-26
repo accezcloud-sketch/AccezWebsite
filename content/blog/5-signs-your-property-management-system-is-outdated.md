@@ -10,8 +10,10 @@ excerptAr: "هل برنامج إدارة العقارات الخاص بك يعي
 date: "2026-01-27"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm1.webp"
-coverImageAlt: "Outdated property management system compared to modern cloud-based platform interface"
+coverImage: "/images/blog/5-signs-your-property-management-system-is-outdated.webp"
+coverImageAlt: "An antique wooden roll top desk with an old typewriter and a wooden office chair"
+coverImageCredit: "Photo by Ray Shrewsberry on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/a-desk-with-a-chair-and-a-typewriter-on-it-2cWK8EW4fRw"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["PropTech", "Saudi Arabia", "Digital Transformation", "Property Management", "Technology"]

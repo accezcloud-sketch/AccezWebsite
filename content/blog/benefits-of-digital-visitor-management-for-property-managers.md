@@ -10,7 +10,10 @@ excerptAr: "اكتشف كيف تساعد إدارة الزوار الرقمية 
 date: "2026-04-02"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm3.webp"
+coverImage: "/images/blog/benefits-of-digital-visitor-management-for-property-managers.webp"
+coverImageAlt: "An empty modern lobby with a dark reception desk, colourful artwork and lounge chairs"
+coverImageCredit: "Photo by ZEIN ZAIN on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/a-modern-lobby-with-reception-desk-and-waiting-area-dDC4ig-ZFyk"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["Property Management", "Saudi Arabia", "Digital Transformation", "Visitor Management", "Real Estate"]

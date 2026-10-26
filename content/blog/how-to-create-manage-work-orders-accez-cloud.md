@@ -10,8 +10,10 @@ excerptAr: "بسّط إدارة الصيانة مع أوامر العمل في A
 date: "2026-01-19"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm3.webp"
-coverImageAlt: "Accez.Cloud work order creation form showing maintenance request details and status tracking"
+coverImage: "/images/blog/how-to-create-manage-work-orders-accez-cloud.webp"
+coverImageAlt: "An open socket wrench set in a black case with a ratchet and loose sockets on concrete"
+coverImageCredit: "Photo by LouisMoto on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/a-tool-kit-with-tools-in-it-sitting-on-a-table-m4XS2ACf85k"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"
 tags: ["Work Orders", "Maintenance", "Tutorial", "Property Management"]

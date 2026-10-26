@@ -10,8 +10,10 @@ excerptAr: "تعلم كيفية إنشاء ونشر وتعديل العقارا�
 date: "2024-12-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/create-properties.webp"
-coverImageAlt: "Accez.Cloud property creation dashboard showing property details form and image upload"
+coverImage: "/images/blog/how-to-create-manage-properties-accez-cloud.webp"
+coverImageAlt: "Two tall residential apartment towers seen from below against a pale blue sky"
+coverImageCredit: "Photo by Shahabudin Ibragimov on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/two-tall-buildings-against-a-clear-sky-ioLpjNp0fMY"
 category: "Tutorials"
 categoryAr: "الدروس التعليمية"
 tags: ["Property Management", "Getting Started", "Tutorial", "Properties"]
