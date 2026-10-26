@@ -344,7 +344,13 @@ img, video { max-width: 100%; }
 }
 
 /* RTL Support */
-html[dir="rtl"] {
+/* Arabic text uses Cairo. Inter's generated fallback (local Arial) contains
+   Arabic glyphs, so with Inter first the browser never reached Cairo: body
+   carries .font-sans, so the rule must reach it, and any Arabic element on an
+   English page (lang="ar") gets Cairo too. */
+html[dir="rtl"],
+html[dir="rtl"] .font-sans,
+:lang(ar) {
   font-family: var(--font-cairo), var(--font-inter), system-ui, sans-serif;
 }
 
