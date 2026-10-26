@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
+import { useDocumentTheme } from '@/lib/theme/useDocumentTheme'
+import type { Theme } from '@/lib/theme/theme'
 
 // Accez Assistant (the new bot, hosted on Railway). The previous bot's link is kept below so the team can switch back.
 // const WIDGET_ORIGIN = 'https://accez-chatbot-production.up.railway.app' // previous bot
@@ -15,6 +17,18 @@ export default function ChatbotWidget() {
   // Tells the assistant which language the site is showing, so its labels and text direction follow the site.
   const tellLanguage = () => iframeRef.current?.contentWindow?.postMessage({ type: 'accez-lang', lang }, WIDGET_ORIGIN)
   useEffect(tellLanguage, [lang])
+
+  // The assistant switches between light and dark itself; the site tells it which
+  // theme the page shows, once in its address and again on every change.
+  const theme = useDocumentTheme()
+  const [firstTheme, setFirstTheme] = useState<Theme | null>(null)
+  useEffect(() => {
+    if (theme && !firstTheme) setFirstTheme(theme)
+  }, [theme, firstTheme])
+  const tellTheme = () => {
+    if (theme) iframeRef.current?.contentWindow?.postMessage({ type: 'accez-theme', theme }, WIDGET_ORIGIN)
+  }
+  useEffect(tellTheme, [theme])
 
   useEffect(() => {
     const handleMessage = (e: MessageEvent) => {
@@ -41,20 +55,25 @@ export default function ChatbotWidget() {
     return () => window.removeEventListener('message', handleMessage)
   }, [])
 
+  // Wait for the page's theme, so the assistant opens in it rather than switching after.
+  if (!firstTheme) return null
+
   return (
     <iframe
       ref={iframeRef}
-      src={`${WIDGET_ORIGIN}/widget`}
+      src={`${WIDGET_ORIGIN}/widget?theme=${firstTheme}`}
       className={`fixed bottom-0 right-0 z-[9999] border-0 bg-transparent transition-[width,height] duration-200 ${
         isOpen
           ? 'w-full h-[100dvh] md:w-[400px] md:h-[600px]'
           : 'w-[90px] h-[90px] md:w-[110px] md:h-[110px]'
       }`}
-      // The assistant's page is a light page on a transparent background. If the frame
-      // inherited the site's dark color-scheme, browsers would paint a white box behind
-      // it in dark mode, so the frame states the same scheme as the page inside it.
-      style={{ colorScheme: 'light' }}
-      onLoad={tellLanguage}
+      // The frame states the same colour scheme as the assistant's page inside it;
+      // if they differed, browsers would paint an opaque box behind the transparent page.
+      style={{ colorScheme: theme ?? firstTheme }}
+      onLoad={() => {
+        tellLanguage()
+        tellTheme()
+      }}
       allow="clipboard-write"
     />
   )
