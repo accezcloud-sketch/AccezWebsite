@@ -22,9 +22,16 @@ describe('robots.txt', () => {
 
   it('keeps search engines and AI search crawlers allowed', () => {
     // Blocked groups list `Disallow: /`; these agents must not have one.
-    for (const agent of ['Googlebot', 'Bingbot', 'OAI-SearchBot', 'PerplexityBot', 'ClaudeBot']) {
+    for (const agent of ['Googlebot', 'Bingbot', 'Google-Extended', 'OAI-SearchBot', 'PerplexityBot', 'ClaudeBot']) {
       const group = robots.split(/\n(?=User-agent:)/).find((g) => new RegExp(`^User-agent:\\s*${agent}\\s*$`, 'im').test(g))
       if (group) expect(group, agent).not.toMatch(/^Disallow:\s*\/\s*$/m)
+    }
+  })
+
+  it('still blocks the training crawlers and SEO scrapers', () => {
+    for (const agent of ['GPTBot', 'CCBot', 'Bytespider', 'AhrefsBot']) {
+      const group = robots.split(/\n(?=User-agent:)/).find((g) => new RegExp(`^User-agent:\\s*${agent}\\s*$`, 'im').test(g))
+      expect(group, agent).toMatch(/^Disallow:\s*\/\s*$/m)
     }
   })
 })
