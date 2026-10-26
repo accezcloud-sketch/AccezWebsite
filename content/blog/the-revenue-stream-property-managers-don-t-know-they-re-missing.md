@@ -24,7 +24,7 @@ Many property managers are laser-focused on rent collection and tenant acquisiti
 
 This overlooked avenue isn't about finding new tenants or squeezing more from existing ones; it's about optimizing and leveraging a service already within your operational purview. By failing to identify and cultivate this particular aspect of property management, businesses are inadvertently leaving money behind, impacting their bottom line and limiting their growth trajectory.
 
-## The Invisible Expense Guarding Your Profit
+## Vendor Costs: The Revenue Stream Hiding in Plain Sight
 
 The crucial revenue stream property managers frequently miss is related to **vendor management and procurement**. While it might seem like a cost center, the way vendors are managed, invoices are processed, and contracts are negotiated holds the key to unlocking significant financial gains. The primary reason this is missed is the traditional perception of vendor interactions as purely transactional and cost-driven. Property managers often focus on simply getting the job done at the lowest apparent immediate cost, without a strategic view of the long-term financial impact or the potential for recouping costs. This leads to fragmented invoicing, a lack of consolidated data, and missed opportunities for bulk discounts or preferred vendor partnerships that can generate rebates or referral fees. Without a structured approach, these savings are lost, and worse, opportunities for earning are missed.
 
@@ -107,7 +107,7 @@ See how work orders and billing give you the records to negotiate with vendors o
 
 هذا المسار الذي يتم تجاهله لا يتعلق بالعثور على مستأجرين جدد أو استخلاص المزيد من المستأجرين الحاليين؛ بل يتعلق بتحسين واستغلال خدمة تقع بالفعل ضمن نطاق عملياتك التشغيلية. من خلال الفشل في تحديد هذا الجانب المعين من إدارة العقارات وتنميته، فإن الشركات تترك المال وراءها عن غير قصد، مما يؤثر على ميزانيتها العمومية ويحد من مسار نموها.
 
-## المصاريف الخفية التي تحمي أرباحك
+## تكاليف الموردين: مصدر إيرادات أمام عينيك
 
 مصدر الإيرادات الحاسم الذي يفوته مدراء العقارات في كثير من الأحيان يرتبط **بإدارة الموردين والمشتريات**. في حين أنه قد يبدو مركزًا للتكلفة، فإن طريقة إدارة الموردين، ومعالجة الفواتير، والتفاوض على العقود تحمل مفتاح فتح مكاسب مالية كبيرة. السبب الرئيسي وراء تفويت هذا هو التصور التقليدي لتفاعلات الموردين على أنها معاملات بحتة ومدفوعة بالتكلفة. غالبًا ما يركز مديرو العقارات ببساطة على إنجاز المهمة بأقل تكلفة فورية واضحة، دون رؤية استراتيجية للتأثير المالي طويل الأجل أو إمكانية استرداد التكاليف. يؤدي هذا إلى فواتير مجزأة، ونقص في البيانات المجمعة، وفرص ضائعة للخصومات بالجملة أو شراكات الموردين المفضلة التي يمكن أن تولد استردادات أو رسوم إحالة. وبدون نهج منظم، تضيع هذه الوفورات، والأسوأ من ذلك أن تفوت فرص الكسب.
 
