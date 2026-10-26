@@ -11,7 +11,7 @@ excerptAr: "غالباً ما يغفل مالكو العقارات عن مخاط
 date: "2026-10-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/property-insurance-and-liability-covering-the-risks-owners-f.jpg"
+coverImage: "/images/blog/property-insurance-and-liability-covering-the-risks-owners-forget.jpg"
 coverImageAlt: "A homeowner reviewing documents at a desk with a cityscape visible through a window"
 coverImageCredit: "Photo by Vlad Deep on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-magnifying-glass-sitting-on-top-of-a-piece-of-paper-mCqi3MljC4E"

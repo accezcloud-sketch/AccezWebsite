@@ -11,7 +11,7 @@ excerptAr: "تكاملات واجهة برمجة التطبيقات ضرورية
 date: "2026-10-20"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/connecting-your-tools-why-api-integrations-matter-for-proper.jpg"
+coverImage: "/images/blog/connecting-your-tools-why-api-integrations-matter-for-property-managers.jpg"
 coverImageAlt: "A graphic representing connections between various digital tools used in property management."
 coverImageCredit: "Photo by Stephen Phillips (Hostreviews.co.uk) on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/assorted-icon-lot-2kH-6T6x_0I"

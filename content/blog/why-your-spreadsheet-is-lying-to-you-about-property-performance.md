@@ -69,7 +69,7 @@ Embrace the future of property management and unlock your portfolio's true poten
 - Spreadsheets are prone to human error and often provide an incomplete, outdated view of property performance.
 - Manual data entry in spreadsheets is time-consuming and increases the risk of inaccuracies.
 - Static spreadsheets cannot dynamically link disparate data sources for holistic analysis.
-- Connected, current data is crucial for identifying hidden trends and opportunities. If you are ready to move, read [how to migrate from spreadsheets without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losi/).
+- Connected, current data is crucial for identifying hidden trends and opportunities. If you are ready to move, read [how to migrate from spreadsheets without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/).
 - High-performing property managers leverage technology to move beyond basic financial tracking.
 - Saudi Arabia's evolving market, Vision 2030, and regulatory landscape demand sophisticated data management.
 - Accez.Cloud brings revenue, rent payments, invoices and work orders for each property into one place.
@@ -130,7 +130,7 @@ Unlock the true potential of your property portfolio. [Visit portal.accez.cloud]
 - جداول البيانات عرضة للأخطاء البشرية وغالبًا ما تقدم رؤية غير مكتملة وقديمة لأداء العقارات.
 - يعد الإدخال اليدوي للبيانات في جداول البيانات مستهلكًا للوقت ويزيد من خطر عدم الدقة.
 - لا يمكن لجداول البيانات الثابتة ربط مصادر البيانات المتباينة ديناميكيًا للتحليل الشامل.
-- البيانات المترابطة والمحدّثة ضرورية لتحديد الاتجاهات والفرص المخفية. وإن كنت مستعدًا للانتقال، فاقرأ [كيف تنتقل من جداول البيانات دون فقدان بياناتك](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losi/).
+- البيانات المترابطة والمحدّثة ضرورية لتحديد الاتجاهات والفرص المخفية. وإن كنت مستعدًا للانتقال، فاقرأ [كيف تنتقل من جداول البيانات دون فقدان بياناتك](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/).
 - يستفيد مديرو العقارات ذوو الأداء العالي من التكنولوجيا لتجاوز تتبع الشؤون المالية الأساسية.
 - يتطلب السوق السعودي المتطور، ورؤية 2030، والمشهد التنظيمي إدارة بيانات متطورة.
 - تجمع Accez.Cloud الإيرادات ومدفوعات الإيجار والفواتير وأوامر العمل لكل عقار في مكان واحد.

@@ -11,7 +11,7 @@ excerptAr: "إن تبني الاستدامة وكفاءة الطاقة في ال
 date: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/sustainability-and-energy-efficiency-cutting-costs-while-goi.jpg"
+coverImage: "/images/blog/sustainability-and-energy-efficiency-cutting-costs-while-going-green.jpg"
 coverImageAr: "صورة توضيحية لعمليات إدارة العقارات"
 coverImageAlt: "A graphic illustrating sustainable property management practices"
 coverImageCredit: "Photo by Zac Wolff on Unsplash"

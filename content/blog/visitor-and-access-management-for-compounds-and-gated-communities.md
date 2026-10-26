@@ -11,7 +11,7 @@ excerptAr: "نظم إدارة الزوار والدخول في المجمعات 
 date: "2026-10-14"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/visitor-and-access-management-for-compounds-and-gated-commun.jpg"
+coverImage: "/images/blog/visitor-and-access-management-for-compounds-and-gated-communities.jpg"
 coverImageAlt: "A modern gated community entrance with security personnel and a sign."
 coverImageCredit: "Photo by Daria Nepriakhina 🇺🇦 on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-and-brown-house-near-green-grass-field-and-body-of-water-during-daytime-LZkbXfzJK4M"

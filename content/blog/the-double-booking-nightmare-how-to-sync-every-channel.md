@@ -16,7 +16,7 @@ coverImageCredit: "Photo by Marija Zaric on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/a-picture-of-a-sign-on-a-wall-that-says-in-the-opposite-direction-you-might-uO8nfhorfWA"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
-related: ["why-managing-airbnb-and-booking-com-separately-is-costing-you", "from-5-dashboards-to-1-the-case-for-centralized-booking-management", "how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management"]
+related: ["why-managing-airbnb-and-booking-com-separately-is-costing-you", "from-5-dashboards-to-1-the-case-for-centralized-booking-management", "how-poor-channel-management-costs-vacation-rental-managers-bookings"]
 tags: ["property management", "channel manager", "booking sync", "operations", "technology"]
 tagsAr: ["إدارة العقارات", "مدير القنوات", "مزامنة الحجز", "العمليات", "التكنولوجيا"]
 ---

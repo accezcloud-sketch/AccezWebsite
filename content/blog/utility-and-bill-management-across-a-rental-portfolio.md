@@ -46,7 +46,7 @@ The foundation of efficient management lies in centralizing all utility data. Th
 
 ### Proactive Tenant Engagement and Communication
 
-Tenant behavior plays a significant role in utility consumption. Effective managers foster a culture of conservation through clear communication and well-defined policies. This includes ensuring that lease agreements clearly state who is responsible for which utility bills and how shared costs are split. Property managers can further help tenants by sharing practical ways to reduce their own bills, such as tips for saving energy and water; our article on [sustainability and energy efficiency in rental properties](/blog/sustainability-and-energy-efficiency-cutting-costs-while-goi/) has more ideas. Short digital messages, by SMS or email, are an easy way to share this information and to give notice of planned maintenance or water shutoffs. This proactive engagement can reduce consumption and lead to fewer utility-related disputes.
+Tenant behavior plays a significant role in utility consumption. Effective managers foster a culture of conservation through clear communication and well-defined policies. This includes ensuring that lease agreements clearly state who is responsible for which utility bills and how shared costs are split. Property managers can further help tenants by sharing practical ways to reduce their own bills, such as tips for saving energy and water; our article on [sustainability and energy efficiency in rental properties](/blog/sustainability-and-energy-efficiency-cutting-costs-while-going-green/) has more ideas. Short digital messages, by SMS or email, are an easy way to share this information and to give notice of planned maintenance or water shutoffs. This proactive engagement can reduce consumption and lead to fewer utility-related disputes.
 
 ### Leveraging Technology for Sub-metering and Billing Accuracy
 
@@ -129,7 +129,7 @@ Discover how Accez.Cloud can transform your operations. [Visit portal.accez.clou
 
 ### التواصل الاستباقي مع المستأجرين
 
-يلعب سلوك المستأجرين دورًا مهمًا في استهلاك المرافق. ويعزز المديرون الفعالون ثقافة الترشيد من خلال التواصل الواضح والسياسات المحددة. ويشمل ذلك التأكد من أن عقود الإيجار تحدد بوضوح من يتحمل كل فاتورة وكيف تُقسم التكاليف المشتركة. ويمكن لمديري العقارات أيضًا مساعدة المستأجرين بمشاركة طرق عملية لخفض فواتيرهم، مثل نصائح ترشيد الكهرباء والمياه؛ وفي مقالنا عن [الاستدامة وكفاءة الطاقة في العقارات المؤجرة](/ar/blog/sustainability-and-energy-efficiency-cutting-costs-while-goi/) مزيد من الأفكار. والرسائل الرقمية القصيرة، عبر الرسائل النصية أو البريد الإلكتروني، طريقة سهلة لمشاركة هذه المعلومات والإبلاغ المسبق عن الصيانة المخطط لها أو انقطاع المياه. ويمكن لهذا التواصل الاستباقي أن يخفض الاستهلاك ويقلل النزاعات المتعلقة بالمرافق.
+يلعب سلوك المستأجرين دورًا مهمًا في استهلاك المرافق. ويعزز المديرون الفعالون ثقافة الترشيد من خلال التواصل الواضح والسياسات المحددة. ويشمل ذلك التأكد من أن عقود الإيجار تحدد بوضوح من يتحمل كل فاتورة وكيف تُقسم التكاليف المشتركة. ويمكن لمديري العقارات أيضًا مساعدة المستأجرين بمشاركة طرق عملية لخفض فواتيرهم، مثل نصائح ترشيد الكهرباء والمياه؛ وفي مقالنا عن [الاستدامة وكفاءة الطاقة في العقارات المؤجرة](/ar/blog/sustainability-and-energy-efficiency-cutting-costs-while-going-green/) مزيد من الأفكار. والرسائل الرقمية القصيرة، عبر الرسائل النصية أو البريد الإلكتروني، طريقة سهلة لمشاركة هذه المعلومات والإبلاغ المسبق عن الصيانة المخطط لها أو انقطاع المياه. ويمكن لهذا التواصل الاستباقي أن يخفض الاستهلاك ويقلل النزاعات المتعلقة بالمرافق.
 
 ### الاستفادة من التقنية في العدادات الفرعية ودقة الفوترة
 

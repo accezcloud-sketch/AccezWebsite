@@ -47,7 +47,7 @@ Legacy platforms typically struggle with direct connections to other tools, crea
 
 The costs of fragmentation are substantial. Teams spend hours compiling, reconciling, and validating data that connected systems keep in step automatically. Every manual copy is a chance for a double booking, a missed payment or a wrong owner statement.
 
-In Saudi Arabia, your system also has to work alongside the Kingdom's digital infrastructure: leases documented on Ejar, rent paid through mada and SADAD, and guests booking through the major online travel agencies. Systems that cannot fit into this picture will become increasingly unworkable. If you are planning a move, our guide to [migrating from spreadsheets and legacy software without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losi/) walks through the process.
+In Saudi Arabia, your system also has to work alongside the Kingdom's digital infrastructure: leases documented on Ejar, rent paid through mada and SADAD, and guests booking through the major online travel agencies. Systems that cannot fit into this picture will become increasingly unworkable. If you are planning a move, our guide to [migrating from spreadsheets and legacy software without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/) walks through the process.
 
 ## Sign 5: WhatsApp Has Become Your Primary Management Platform
 
@@ -115,7 +115,7 @@ Ready to see what modern property management looks like? Visit [portal.accez.clo
 
 وتكاليف هذا التشتت كبيرة. إذ تقضي الفرق ساعات في تجميع البيانات وتسويتها والتحقق منها، بينما تبقيها الأنظمة المترابطة متطابقة تلقائياً. وكل نسخ يدوي فرصة لحجز مزدوج أو دفعة مفقودة أو كشف حساب خاطئ لمالك.
 
-وفي المملكة العربية السعودية، يجب أن يعمل نظامك أيضاً جنباً إلى جنب مع البنية الرقمية للمملكة: عقود موثقة على منصة إيجار، وإيجار يُدفع عبر مدى وسداد، وضيوف يحجزون عبر وكالات السفر الإلكترونية الكبرى. والأنظمة التي لا تنسجم مع هذه الصورة ستصبح غير عملية بشكل متزايد. وإذا كنت تخطط للانتقال، فإن دليلنا عن [الانتقال من جداول البيانات والبرامج القديمة دون فقدان البيانات](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losi/) يشرح الخطوات.
+وفي المملكة العربية السعودية، يجب أن يعمل نظامك أيضاً جنباً إلى جنب مع البنية الرقمية للمملكة: عقود موثقة على منصة إيجار، وإيجار يُدفع عبر مدى وسداد، وضيوف يحجزون عبر وكالات السفر الإلكترونية الكبرى. والأنظمة التي لا تنسجم مع هذه الصورة ستصبح غير عملية بشكل متزايد. وإذا كنت تخطط للانتقال، فإن دليلنا عن [الانتقال من جداول البيانات والبرامج القديمة دون فقدان البيانات](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/) يشرح الخطوات.
 
 ## العلامة 5: أصبح واتساب منصة الإدارة الرئيسية لديك
 

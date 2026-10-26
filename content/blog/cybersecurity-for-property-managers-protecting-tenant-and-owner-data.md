@@ -11,7 +11,7 @@ excerptAr: "مديرو العقارات هم أمناء على كميات هائ
 date: "2026-10-18"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/cybersecurity-for-property-managers-protecting-tenant-and-ow.jpg"
+coverImage: "/images/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data.jpg"
 coverImageAlt: "A person using a laptop with a padlock icon overlayed on the screen"
 coverImageCredit: "Photo by FlyD on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/red-padlock-on-black-computer-keyboard-mT7lXZPjk7U"

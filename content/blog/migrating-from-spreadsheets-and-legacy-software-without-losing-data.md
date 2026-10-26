@@ -11,7 +11,7 @@ excerptAr: "قد يبدو نقل عملياتك العقارية من جداول
 date: "2026-10-16"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/migrating-from-spreadsheets-and-legacy-software-without-losi.jpg"
+coverImage: "/images/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data.jpg"
 coverImageAlt: "Man looking at a computer screen with data charts"
 coverImageCredit: "Photo by Gorilla ROI Data Connector on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/hands-typing-on-a-laptop-displaying-a-data-spreadsheet-9fZuqBYlV1w"
