@@ -9,9 +9,10 @@ import type { ProductPageKey } from './productMatch'
 import { SOLUTIONS } from './solutions'
 import { MODULES_COPY } from './modulesCopy'
 import { solutionByKey } from '@/lib/platform/solutions'
+import { subpageBySlug, subpageHref } from '@/lib/platform/subpages'
 
 export interface ProductCtaContent {
-  /** Where the product is explained, e.g. `/solutions/property-managers#sales`. */
+  /** Where the product is explained, e.g. `/solutions/property-managers/sales-and-projects`. */
   route: string
   eyebrow: string
   title: string
@@ -21,8 +22,8 @@ export interface ProductCtaContent {
   startFree: string
 }
 
-/** The section of the property management page that covers each topic. */
-const SECTION: Record<Exclude<ProductPageKey, 'modules'>, string> = { owners: 'billing', sales: 'sales', hotels: 'rentals' }
+/** The page of the property management solution that covers each topic (lib/platform/subpages.ts). */
+const PAGE: Record<Exclude<ProductPageKey, 'modules'>, string> = { owners: 'billing-and-payments', sales: 'sales-and-projects', hotels: 'hotels-and-serviced-apartments' }
 
 export function productCta(key: ProductPageKey, locale: Locale): ProductCtaContent {
   const modules = MODULES_COPY[locale]
@@ -41,7 +42,7 @@ export function productCta(key: ProductPageKey, locale: Locale): ProductCtaConte
 
   const s = SOLUTIONS[key]
   return {
-    route: `${solutionByKey('property-managers')!.href}#${SECTION[key]}`,
+    route: subpageHref(subpageBySlug('property-managers', PAGE[key])!),
     eyebrow: ar ? s.eyebrowAr : s.eyebrow,
     title: ar ? s.ctaTitleAr : s.ctaTitle,
     description: ar ? s.subtitleAr : s.subtitle,

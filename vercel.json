@@ -63,62 +63,62 @@
     },
     {
       "source": "/owners",
-      "destination": "/solutions/property-managers/#billing",
+      "destination": "/solutions/property-managers/billing-and-payments/",
       "permanent": true
     },
     {
       "source": "/owners/",
-      "destination": "/solutions/property-managers/#billing",
+      "destination": "/solutions/property-managers/billing-and-payments/",
       "permanent": true
     },
     {
       "source": "/ar/owners",
-      "destination": "/ar/solutions/property-managers/#billing",
+      "destination": "/ar/solutions/property-managers/billing-and-payments/",
       "permanent": true
     },
     {
       "source": "/ar/owners/",
-      "destination": "/ar/solutions/property-managers/#billing",
+      "destination": "/ar/solutions/property-managers/billing-and-payments/",
       "permanent": true
     },
     {
       "source": "/sales",
-      "destination": "/solutions/property-managers/#sales",
+      "destination": "/solutions/property-managers/sales-and-projects/",
       "permanent": true
     },
     {
       "source": "/sales/",
-      "destination": "/solutions/property-managers/#sales",
+      "destination": "/solutions/property-managers/sales-and-projects/",
       "permanent": true
     },
     {
       "source": "/ar/sales",
-      "destination": "/ar/solutions/property-managers/#sales",
+      "destination": "/ar/solutions/property-managers/sales-and-projects/",
       "permanent": true
     },
     {
       "source": "/ar/sales/",
-      "destination": "/ar/solutions/property-managers/#sales",
+      "destination": "/ar/solutions/property-managers/sales-and-projects/",
       "permanent": true
     },
     {
       "source": "/hotels",
-      "destination": "/solutions/property-managers/#rentals",
+      "destination": "/solutions/property-managers/hotels-and-serviced-apartments/",
       "permanent": true
     },
     {
       "source": "/hotels/",
-      "destination": "/solutions/property-managers/#rentals",
+      "destination": "/solutions/property-managers/hotels-and-serviced-apartments/",
       "permanent": true
     },
     {
       "source": "/ar/hotels",
-      "destination": "/ar/solutions/property-managers/#rentals",
+      "destination": "/ar/solutions/property-managers/hotels-and-serviced-apartments/",
       "permanent": true
     },
     {
       "source": "/ar/hotels/",
-      "destination": "/ar/solutions/property-managers/#rentals",
+      "destination": "/ar/solutions/property-managers/hotels-and-serviced-apartments/",
       "permanent": true
     },
     {
