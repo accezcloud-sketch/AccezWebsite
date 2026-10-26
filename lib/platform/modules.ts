@@ -62,11 +62,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     ],
     modules: ['reservations-and-stays', 'billing-and-payments', 'team-and-messaging'],
     integrations: ['airbnb', 'booking-com', 'expedia'],
-    posts: [
-      'the-double-booking-nightmare-how-to-sync-every-channel',
-      'why-managing-airbnb-and-booking-com-separately-is-costing-you',
-      'how-poor-channel-management-costs-vacation-rental-managers-bookings',
-    ],
+    posts: ['the-double-booking-nightmare-how-to-sync-every-channel', 'channel-manager-vs-property-management-system', 'the-ota-commission-drain-how-to-build-direct-bookings'],
   },
   {
     solution: 'property-managers',
