@@ -1,8 +1,12 @@
 ---
-title: "The Accez Marketplace Model Earning While Tenants Get What They Need"
-titleAr: "نموذج سوق Accez تحقيق الربح بينما يحصل المستأجرون على ما يحتاجون إليه"
-excerpt: "Discover how property managers can unlock new revenue streams and enhance tenant satisfaction through the innovative Accez marketplace model."
-excerptAr: "اكتشف كيف يمكن لمديري العقارات فتح مصادر دخل جديدة وتعزيز رضا المستأجرين من خلال نموذج سوق Accez المبتكر."
+title: "The Marketplace Model: Earning While Your Tenants Get What They Need"
+titleAr: "نموذج السوق: تحقيق الربح بينما يحصل المستأجرون على ما يحتاجون إليه"
+excerpt: "Discover how property managers can unlock new revenue streams and enhance tenant satisfaction by turning everyday services into a curated offer."
+excerptAr: "اكتشف كيف يمكن لمديري العقارات فتح مصادر دخل جديدة وتعزيز رضا المستأجرين من خلال تحويل الخدمات اليومية إلى عرض منسق."
+metaTitle: "The Service Marketplace Model for Property Managers"
+metaTitleAr: "نموذج سوق الخدمات لمديري العقارات"
+metaDescription: "Turn tenant and guest services from a cost center into extra revenue. Learn how property managers curate trusted providers and sell add-ons people value."
+metaDescriptionAr: "حوّل خدمات المستأجرين والضيوف من مركز تكلفة إلى دخل إضافي. تعرّف على كيف يختار مديرو العقارات مقدمي خدمات موثوقين ويبيعون إضافات يقدّرها العملاء."
 date: "2026-06-24"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -20,19 +24,19 @@ Property managers often feel caught in a perpetual cycle of reactive problem-sol
 
 This inherent tension highlights a fundamental challenge in property management: how can managers effectively serve their tenants’ diverse and evolving needs while also ensuring their own business thrives and generates additional value? The traditional model often views tenant services as a cost center, an obligation to be met rather than an opportunity to be leveraged for mutual benefit. This perspective can stifle innovation and limit the potential for creating a more dynamic and profitable ecosystem.
 
-## The Traditional Model's Strain What Breaks and Why
+## Why Arranging Tenant Services One by One Strains Managers
 
 The conventional property management paradigm often struggles with a fragmented approach to tenant services. When a tenant requires anything beyond basic repairs, be it cleaning, moving assistance, smart home installations, or even curated local experiences, the property manager’s role typically becomes that of a facilitator. This often involves researching third-party providers, vetting their reliability, negotiating rates, and then passing the cost, perhaps with a small markup, onto the tenant. This process is time-consuming, inefficient, and carries significant risk if a service provider fails to meet expectations.
 
-Moreover, this fragmented approach means that the property manager misses out on the opportunity to capture the full value of these transactions. The revenue generated from facilitating these services often flows to external vendors, leaving the property manager with a limited return on their effort. This creates a missed opportunity for **generating ancillary revenue streams** that could otherwise bolster the property’s profitability and fund improvements that benefit all residents. A study by JLL found that up to 30% of a building’s operational costs can be attributed to managing services and vendor relationships, highlighting the inherent inefficiency in many current models. The lack of integrated technology solutions further exacerbates this issue, making it difficult to track, manage, and monetize these service interactions effectively.
+Moreover, this fragmented approach means that the property manager misses out on the opportunity to capture the full value of these transactions. The revenue generated from facilitating these services often flows to external vendors, leaving the property manager with a limited return on their effort. This creates a missed opportunity for **generating ancillary revenue streams** that could otherwise bolster the property’s profitability and fund improvements that benefit all residents. We explore this shift in more depth in [from cost center to profit center: monetizing property services](/blog/from-cost-center-to-profit-center-monetizing-property-services/). The lack of integrated technology solutions further exacerbates this issue, making it difficult to track, manage, and monetize these service interactions effectively.
 
-## The Marketplace Advantage What High Performers Do Differently
+## Turning Tenant Services into Revenue
 
 High-performing property management firms are increasingly shifting towards an integrated ecosystem approach, leveraging technology to transform tenant services from a cost center into a revenue-generating engine. They recognize that tenants are not just looking for a place to live; they are seeking a holistic living experience that simplifies their lives and caters to their needs, both inside and outside their homes.
 
 ### Curated Service Integration
 
-Top property managers move beyond simple reactive maintenance. They proactively identify common tenant needs and partner with trusted, high-quality service providers to offer a curated selection directly through their platform. This isn't just about listing services; it's about **creating a seamless and reliable experience** for residents. By vetting providers rigorously and negotiating preferential rates, they ensure quality and affordability, fostering trust and encouraging adoption. This curated approach also allows for greater control over service delivery and customer satisfaction.
+Top property managers move beyond simple reactive maintenance. They proactively identify common tenant needs and partner with trusted, high-quality service providers to offer a curated selection directly through their platform. This isn't just about listing services; it's about **creating a seamless and reliable experience** for residents. By vetting providers rigorously and negotiating preferential rates, they ensure quality and affordability, fostering trust and encouraging adoption. It starts with [a reliable vendor network you can dispatch in minutes](/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minutes/). This curated approach also allows for greater control over service delivery and customer satisfaction.
 
 ### Creating a Value-Added Ecosystem
 
@@ -42,24 +46,23 @@ Leading property managers understand that a tenant's satisfaction extends beyond
 
 Forward-thinking managers utilize data analytics to understand tenant preferences and service utilization patterns. This allows them to tailor their offerings, identify emerging trends, and continuously optimize the marketplace for maximum tenant engagement and provider efficiency. By analyzing which services are most in-demand and which providers perform best, they can refine their offerings, negotiate better terms, and ensure a **consistently superior tenant experience**. This data-informed strategy is crucial for staying ahead in a competitive market and driving sustainable growth.
 
-## Saudi Arabia's Digital Leap Enhancing Property Management
+## Saudi Arabia's Digital Leap: Enhancing Property Management
 
-Saudi Arabia is undergoing a rapid digital transformation, driven by Vision 2030’s ambition to create a vibrant society and a thriving economy. This presents a unique opportunity for property managers to adopt innovative solutions that align with the Kingdom’s forward-thinking agenda. The high adoption rate of platforms like WhatsApp, exceeding 77% in KSA, demonstrates a clear consumer readiness for digital communication and service delivery. Furthermore, the widespread adoption of Mada and SADAD payment systems ensures that transactions are secure, convenient, and familiar for residents.
+Saudi Arabia is undergoing a rapid digital transformation, driven by Vision 2030’s ambition to create a vibrant society and a thriving economy. This presents a unique opportunity for property managers to adopt innovative solutions that align with the Kingdom’s forward-thinking agenda. Messaging apps such as WhatsApp are part of daily life in the Kingdom, a sign of clear consumer readiness for digital communication and service delivery. Furthermore, the widespread adoption of Mada and SADAD payment systems ensures that transactions are secure, convenient, and familiar for residents.
 
-Property managers in Saudi Arabia can leverage this digital landscape to enhance their offerings significantly. Compliance with Ejar regulations is paramount, and a digital marketplace can streamline adherence by providing transparent records of services and payments. The **seasonal demand around Hajj and Umrah**, for instance, creates specific needs for temporary accommodations, cleaning, and guest services that can be efficiently managed and monetized through a digital platform. GASTAT statistics on household spending also reveal opportunities for integrated service offerings that cater to the specific needs and preferences of Saudi residents. By understanding these local dynamics and embracing digital tools, property managers can unlock new revenue streams and build stronger tenant relationships in compliance with national objectives.
+Property managers in Saudi Arabia can leverage this digital landscape to enhance their offerings significantly. Clear digital records of every service and payment also make it easier to answer owner and tenant questions later. The **seasonal demand around Hajj and Umrah**, for instance, creates specific needs for temporary accommodations, cleaning, and guest services that can be efficiently managed and monetized through a digital platform, as our [upsell playbook for early check-ins and add-ons](/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/) shows. By understanding these local dynamics and embracing digital tools, property managers can unlock new revenue streams and build stronger tenant relationships in compliance with national objectives.
 
 ## How Accez.Cloud Helps You Monetize and Modernize
 
-Accez.Cloud empowers property managers to transition from a cost-burdened operational model to a revenue-generating marketplace, seamlessly integrating essential services and enhancing tenant satisfaction. Our platform is designed to be the central hub for all tenant needs, turning everyday necessities into opportunities for growth.
+Accez.Cloud does not run a service marketplace for your tenants, but the [Accez.Cloud property management solution](/solutions/property-managers/) gives you the building blocks to earn from the services guests and residents already want.
 
-- **Integrated Service Marketplace**: Access a pre-vetted network of reliable service providers for everything from cleaning and maintenance to moving and smart home installations, offering tenants convenience and property managers a revenue share.
-- **Tenant Request Management**: Streamline the submission and fulfillment of all tenant requests, from routine maintenance to bespoke service needs, through a unified digital portal.
-- **Automated Billing and Payments**: Facilitate secure and efficient payments for services rendered, integrating with popular local gateways like Mada, ensuring a smooth financial experience for both tenants and providers.
-- **Dynamic Pricing and Revenue Share**: Set flexible pricing models for services and automatically calculate and distribute revenue shares, creating a clear and profitable monetization strategy.
-- **Performance Analytics and Reporting**: Gain insights into service utilization, tenant satisfaction, and revenue generation to optimize offerings and drive strategic decisions.
-- **Enhanced Tenant Engagement**: Provide tenants with a one-stop shop for all their living needs, fostering loyalty and creating a superior living experience that differentiates your properties.
+- **Add-ons Sold With Stays**: Offer extras such as meals, cleaning and transport alongside a reservation, so guests can add what they need when they book.
+- **Reservations**: See each stay with its timeline, payment and accepted policies, including the add-ons attached to it.
+- **Billing and Payments**: Track revenue, invoices and refunds in one place, with payment integrations such as Stripe and Tap.
+- **Work Orders**: Handle maintenance from request to done, so service quality inside the unit stays visible.
+- **Owners and Payouts**: Keep statements and payouts per owner, so any extra revenue is reported clearly.
 
-By embracing the Accez.Cloud marketplace model, property managers can unlock significant revenue potential and foster deeper, more valuable relationships with their tenants, driving sustainable growth.
+Accez also offers a separate [solution for service businesses](/solutions/service-providers/) such as salons, spas and coaches, with a marketplace where their own customers find and book them. It runs independently of property management.
 
 ## Key Takeaways
 
@@ -68,8 +71,8 @@ By embracing the Accez.Cloud marketplace model, property managers can unlock sig
 - High performers create value-added ecosystems by integrating curated, high-quality services.
 - A digital marketplace transforms tenant services into a revenue-generating engine.
 - Saudi Arabia's digital transformation, driven by Vision 2030, offers fertile ground for such innovation.
-- Leveraging platforms like WhatsApp and payment systems like Mada is key to adoption.
-- Accez.Cloud provides a comprehensive solution for building and monetizing a tenant service marketplace.
+- Familiar digital payment methods such as mada make it easier for residents to adopt new services.
+- With Accez.Cloud you can sell add-ons such as meals, cleaning and transport with stays and track the revenue in billing and payments.
 - This model leads to increased tenant satisfaction, loyalty, and sustainable business growth.
 
 Transform your property management operations and unlock new revenue streams today. [Visit portal.accez.cloud](https://portal.accez.cloud)
@@ -80,19 +83,19 @@ Transform your property management operations and unlock new revenue streams tod
 
 يسلط هذا التوتر المتأصل الضوء على تحدٍ أساسي في إدارة العقارات: كيف يمكن للمديرين خدمة الاحتياجات المتنوعة والمتطورة لمستأجريهم بفعالية مع ضمان ازدهار أعمالهم وتوليد قيمة إضافية؟ غالبًا ما ينظر النموذج التقليدي إلى خدمات المستأجرين كمركز تكلفة، وهو التزام يجب تلبيته بدلاً من فرصة للاستفادة منها لتحقيق المنفعة المتبادلة. يمكن لهذا المنظور أن يخنق الابتكار ويحد من إمكانية إنشاء نظام بيئي أكثر ديناميكية وربحية.
 
-## إجهاد النموذج التقليدي ما الذي يتعطل ولماذا
+## لماذا يرهق ترتيب خدمات المستأجرين بشكل متفرق المديرين
 
 غالبًا ما يعاني نموذج إدارة العقارات التقليدي من نهج مجزأ لخدمات المستأجرين. عندما يحتاج المستأجر إلى أي شيء يتجاوز الإصلاحات الأساسية، سواء كان ذلك التنظيف، أو المساعدة في الانتقال، أو تركيب المنازل الذكية، أو حتى التجارب المحلية المنسقة، يصبح دور مدير العقارات هو دور الميسر. يتضمن هذا غالبًا البحث عن مزودي خدمات خارجيين، والتحقق من مصداقيتهم، والتفاوض على الأسعار، ثم تمرير التكلفة، ربما مع هامش ربح صغير، إلى المستأجر. هذه العملية تستغرق وقتًا طويلاً وغير فعالة وتحمل مخاطر كبيرة إذا فشل مقدم الخدمة في تلبية التوقعات.
 
-علاوة على ذلك، فإن هذا النهج المجزأ يعني أن مدير العقارات يفقد فرصة الاستفادة من القيمة الكاملة لهذه المعاملات. غالبًا ما تتدفق الإيرادات الناتجة عن تسهيل هذه الخدمات إلى بائعين خارجيين، تاركين مدير العقارات بعائد محدود على جهوده. هذا يخلق فرصة ضائعة **لتوليد مصادر إيرادات إضافية** يمكن أن تعزز ربحية العقار وتمول التحسينات التي تفيد جميع المقيمين. وجدت دراسة أجرتها JLL أن ما يصل إلى 30٪ من التكاليف التشغيلية للمبنى يمكن أن تُعزى إلى إدارة الخدمات وعلاقات البائعين، مما يسلط الضوء على عدم الكفاءة المتأصلة في العديد من النماذج الحالية. يؤدي الافتقار إلى حلول تكنولوجية متكاملة إلى تفاقم هذه المشكلة، مما يجعل من الصعب تتبع وإدارة وتسييل هذه التفاعلات الخدمية بفعالية.
+علاوة على ذلك، فإن هذا النهج المجزأ يعني أن مدير العقارات يفقد فرصة الاستفادة من القيمة الكاملة لهذه المعاملات. غالبًا ما تتدفق الإيرادات الناتجة عن تسهيل هذه الخدمات إلى بائعين خارجيين، تاركين مدير العقارات بعائد محدود على جهوده. هذا يخلق فرصة ضائعة **لتوليد مصادر إيرادات إضافية** يمكن أن تعزز ربحية العقار وتمول التحسينات التي تفيد جميع المقيمين. ونتناول هذا التحول بتفصيل أكبر في مقال [من مركز تكلفة إلى مركز ربح: تحقيق الدخل من خدمات العقارات](/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/). يؤدي الافتقار إلى حلول تكنولوجية متكاملة إلى تفاقم هذه المشكلة، مما يجعل من الصعب تتبع وإدارة وتسييل هذه التفاعلات الخدمية بفعالية.
 
-## ميزة السوق ما يفعله ذوو الأداء العالي بشكل مختلف
+## تحويل خدمات المستأجرين إلى مصدر دخل
 
 تتحول شركات إدارة العقارات عالية الأداء بشكل متزايد نحو نهج نظام بيئي متكامل، والاستفادة من التكنولوجيا لتحويل خدمات المستأجرين من مركز تكلفة إلى محرك لتوليد الإيرادات. إنهم يدركون أن المستأجرين لا يبحثون فقط عن مكان للعيش؛ بل يبحثون عن تجربة معيشية شاملة تبسط حياتهم وتلبي احتياجاتهم، داخل وخارج منازلهم.
 
 ### تكامل الخدمات المنسقة
 
-يتجاوز مديرو العقارات الرائدون الإصلاحات التفاعلية البسيطة. إنهم يحددون بشكل استباقي الاحتياجات الشائعة للمستأجرين ويتعاونون مع مقدمي خدمات موثوقين وعاليي الجودة لتقديم مجموعة منسقة مباشرة من خلال منصتهم. لا يتعلق الأمر فقط بإدراج الخدمات؛ بل يتعلق **بإنشاء تجربة سلسة وموثوقة** للمقيمين. من خلال التدقيق الدقيق في مقدمي الخدمات والتفاوض على أسعار تفضيلية، فإنهم يضمنون الجودة والقدرة على تحمل التكاليف، مما يعزز الثقة ويشجع على التبني. يسمح هذا النهج المنسق أيضًا بقدر أكبر من التحكم في تقديم الخدمة ورضا العملاء.
+يتجاوز مديرو العقارات الرائدون الإصلاحات التفاعلية البسيطة. إنهم يحددون بشكل استباقي الاحتياجات الشائعة للمستأجرين ويتعاونون مع مقدمي خدمات موثوقين وعاليي الجودة لتقديم مجموعة منسقة مباشرة من خلال منصتهم. لا يتعلق الأمر فقط بإدراج الخدمات؛ بل يتعلق **بإنشاء تجربة سلسة وموثوقة** للمقيمين. من خلال التدقيق الدقيق في مقدمي الخدمات والتفاوض على أسعار تفضيلية، فإنهم يضمنون الجودة والقدرة على تحمل التكاليف، مما يعزز الثقة ويشجع على التبني. ونقطة البداية هي [شبكة موردين موثوقة يمكنك توجيهها خلال دقائق](/ar/blog/building-a-reliable-vendor-network-you-can-dispatch-in-minutes/). يسمح هذا النهج المنسق أيضًا بقدر أكبر من التحكم في تقديم الخدمة ورضا العملاء.
 
 ### إنشاء نظام بيئي ذي قيمة مضافة
 
@@ -102,34 +105,33 @@ Transform your property management operations and unlock new revenue streams tod
 
 يستخدم المديرون ذوو الرؤية المستقبلية تحليلات البيانات لفهم تفضيلات المستأجرين وأنماط استخدام الخدمات. يتيح لهم ذلك تخصيص عروضهم، وتحديد الاتجاهات الناشئة، وتحسين السوق باستمرار لتحقيق أقصى قدر من مشاركة المستأجرين وكفاءة مقدمي الخدمات. من خلال تحليل الخدمات الأكثر طلبًا ومقدمي الخدمات الذين يقدمون أفضل أداء، يمكنهم تحسين عروضهم، والتفاوض على شروط أفضل، وضمان **تجربة مستأجر متفوقة باستمرار**. هذه الاستراتيجية المستنيرة بالبيانات ضرورية للبقاء في المقدمة في سوق تنافسي وقيادة النمو المستدام.
 
-## القفزة الرقمية في المملكة العربية السعودية تعزيز إدارة العقارات
+## القفزة الرقمية في المملكة العربية السعودية: تعزيز إدارة العقارات
 
-تشهد المملكة العربية السعودية تحولاً رقميًا سريعًا، مدفوعًا بطموح رؤية 2030 لإنشاء مجتمع نابض بالحياة واقتصاد مزدهر. يمثل هذا فرصة فريدة لمديري العقارات لتبني حلول مبتكرة تتماشى مع أجندة المملكة ذات الرؤية الثاقبة. يوضح معدل التبني المرتفع للمنصات مثل WhatsApp، الذي يتجاوز 77٪ في المملكة، استعدادًا واضحًا للمستهلكين للتواصل الرقمي وتقديم الخدمات. علاوة على ذلك، يضمن التبني الواسع لأنظمة الدفع مثل مدى وسداد أن تكون المعاملات آمنة ومريحة ومألوفة للمقيمين.
+تشهد المملكة العربية السعودية تحولاً رقميًا سريعًا، مدفوعًا بطموح رؤية 2030 لإنشاء مجتمع نابض بالحياة واقتصاد مزدهر. يمثل هذا فرصة فريدة لمديري العقارات لتبني حلول مبتكرة تتماشى مع أجندة المملكة ذات الرؤية الثاقبة. تطبيقات المراسلة مثل واتساب جزء من الحياة اليومية في المملكة، وهذا دليل على استعداد واضح لدى المستهلكين للتواصل الرقمي وتلقي الخدمات رقميًا. علاوة على ذلك، يضمن التبني الواسع لأنظمة الدفع مثل مدى وسداد أن تكون المعاملات آمنة ومريحة ومألوفة للمقيمين.
 
-يمكن لمديري العقارات في المملكة العربية السعودية الاستفادة من هذا المشهد الرقمي لتعزيز عروضهم بشكل كبير. الامتثال للوائح إيجار أمر بالغ الأهمية، ويمكن للسوق الرقمي تبسيط الامتثال من خلال توفير سجلات شفافة للخدمات والمدفوعات. على سبيل المثال، تخلق **الطلب الموسمي حول الحج والعمرة** احتياجات محددة للإقامة المؤقتة، والتنظيف، وخدمات الضيوف التي يمكن إدارتها وتسييلها بكفاءة من خلال منصة رقمية. تكشف إحصاءات الهيئة العامة للإحصاء حول الإنفاق الأسري أيضًا عن فرص لتقديم عروض خدمات متكاملة تلبي الاحتياجات والتفضيلات المحددة للمقيمين السعوديين. من خلال فهم هذه الديناميكيات المحلية واحتضان الأدوات الرقمية، يمكن لمديري العقارات فتح مصادر إيرادات جديدة وبناء علاقات أقوى مع المستأجرين بما يتوافق مع الأهداف الوطنية.
+يمكن لمديري العقارات في المملكة العربية السعودية الاستفادة من هذا المشهد الرقمي لتعزيز عروضهم بشكل كبير. كما أن السجلات الرقمية الواضحة لكل خدمة ودفعة تسهّل الإجابة لاحقًا عن أسئلة الملاك والمستأجرين. على سبيل المثال، يخلق **الطلب الموسمي حول الحج والعمرة** احتياجات محددة للإقامة المؤقتة، والتنظيف، وخدمات الضيوف التي يمكن إدارتها وتحقيق الدخل منها بكفاءة من خلال منصة رقمية، كما يوضح [دليل البيع الإضافي لتسجيل الوصول المبكر والإضافات](/ar/blog/the-upsell-playbook-turning-early-check-ins-and-add-ons/). من خلال فهم هذه الديناميكيات المحلية واحتضان الأدوات الرقمية، يمكن لمديري العقارات فتح مصادر إيرادات جديدة وبناء علاقات أقوى مع المستأجرين بما يتوافق مع الأهداف الوطنية.
 
 ## كيف يساعدك Accez.Cloud على تحقيق الدخل وتحديث عملياتك
 
-يمكّن Accez.Cloud مديري العقارات من الانتقال من نموذج تشغيل مثقل بالتكاليف إلى سوق يدر الإيرادات، مع دمج الخدمات الأساسية بسلاسة وتعزيز رضا المستأجرين. تم تصميم منصتنا لتكون المحور المركزي لجميع احتياجات المستأجرين، وتحويل الضروريات اليومية إلى فرص للنمو.
+لا يدير Accez.Cloud سوق خدمات لمستأجريك، لكن [حل إدارة العقارات من Accez.Cloud](/ar/solutions/property-managers/) يمنحك الأدوات اللازمة لتحقيق دخل من الخدمات التي يريدها الضيوف والمقيمون أصلًا.
 
-- **سوق خدمات متكامل**: الوصول إلى شبكة مدققين مسبقًا من مقدمي خدمات موثوقين لكل شيء بدءًا من التنظيف والصيانة وحتى الانتقال وتركيب المنازل الذكية، مما يوفر للمستأجرين الراحة وللمديرين حصة من الإيرادات.
-- **إدارة طلبات المستأجرين**: تبسيط تقديم وتلبية جميع طلبات المستأجرين، من الصيانة الروتينية إلى احتياجات الخدمات المتخصصة، من خلال بوابة رقمية موحدة.
-- **الفواتير والمدفوعات الآلية**: تسهيل المدفوعات الآمنة والفعالة للخدمات المقدمة، مع التكامل مع بوابات محلية شهيرة مثل مدى، مما يضمن تجربة مالية سلسة لكل من المستأجرين ومقدمي الخدمات.
-- **التسعير الديناميكي وتقاسم الإيرادات**: وضع نماذج تسعير مرنة للخدمات وحساب وتوزيع حصص الإيرادات تلقائيًا، مما يخلق استراتيجية تحقيق دخل واضحة ومربحة.
-- **تحليلات الأداء وإعداد التقارير**: الحصول على رؤى حول استخدام الخدمات ورضا المستأجرين وتوليد الإيرادات لتحسين العروض ودفع القرارات الاستراتيجية.
-- **تعزيز مشاركة المستأجرين**: تزويد المستأجرين بمتجر شامل لجميع احتياجاتهم المعيشية، مما يعزز الولاء ويخلق تجربة معيشية فائقة تميز عقاراتك.
+- **إضافات تُباع مع الإقامات**: قدّم خدمات إضافية مثل الوجبات والتنظيف والتنقل مع الحجز، ليضيف الضيوف ما يحتاجونه عند الحجز.
+- **الحجوزات**: اطلع على كل إقامة مع جدولها الزمني ودفعتها والسياسات المقبولة، بما في ذلك الإضافات المرتبطة بها.
+- **الفوترة والمدفوعات**: تابع الإيرادات والفواتير والمبالغ المستردة في مكان واحد، مع تكاملات دفع مثل Stripe وTap.
+- **أوامر العمل**: تابع الصيانة من الطلب حتى الإنجاز، لتبقى جودة الخدمة داخل الوحدة واضحة.
+- **الملاك والمدفوعات**: احتفظ بالكشوف والمدفوعات لكل مالك، ليظهر أي دخل إضافي بوضوح في تقاريره.
 
-من خلال تبني نموذج سوق Accez.Cloud، يمكن لمديري العقارات فتح إمكانات إيرادات كبيرة وتعزيز علاقات أعمق وأكثر قيمة مع مستأجريهم، مما يدفع النمو المستدام.
+كما يقدم Accez [حلًا منفصلًا لأنشطة الخدمات](/ar/solutions/service-providers/) مثل الصالونات والمنتجعات الصحية والمدربين، يتضمن سوقًا يجد فيه عملاؤهم الخاصون هذه الأنشطة ويحجزون لديها. ويعمل هذا الحل بشكل مستقل عن إدارة العقارات.
 
-## النقاط الرئيسية
+## أبرز النقاط
 
 - يواجه مديرو العقارات تحديًا مستمرًا في الموازنة بين التكاليف التشغيلية وتعزيز تجربة المستأجر.
 - غالبًا ما ينظر النموذج التقليدي إلى خدمات المستأجرين كمركز تكلفة، مما يضيع فرص الإيرادات.
-- يقوم ذوو الأداء العالي بإنشاء أنظمة بيئية ذات قيمة مضافة من خلال دمج خدمات منسقة وعالية الجودة.
+- يقوم المتميزون بإنشاء أنظمة بيئية ذات قيمة مضافة من خلال دمج خدمات منسقة وعالية الجودة.
 - يحول السوق الرقمي خدمات المستأجرين إلى محرك لتوليد الإيرادات.
-- توفر التحول الرقمي في المملكة العربية السعودية، المدفوع برؤية 2030، أرضية خصبة لمثل هذه الابتكارات.
-- يعد الاستفادة من منصات مثل WhatsApp وأنظمة الدفع مثل مدى مفتاحًا للتبني.
-- يوفر Accez.Cloud حلاً شاملاً لبناء سوق لخدمات المستأجرين وتحقيق الدخل منه.
+- يوفر التحول الرقمي في المملكة العربية السعودية، المدفوع برؤية 2030، أرضية خصبة لمثل هذه الابتكارات.
+- تسهّل وسائل الدفع الرقمية المألوفة مثل مدى على المقيمين تبني الخدمات الجديدة.
+- يتيح لك Accez.Cloud بيع إضافات مثل الوجبات والتنظيف والتنقل مع الإقامات ومتابعة إيراداتها في الفوترة والمدفوعات.
 - يؤدي هذا النموذج إلى زيادة رضا المستأجرين وولائهم ونمو الأعمال المستدام.
 
 حوّل عمليات إدارة الممتلكات الخاصة بك وافتح مصادر إيرادات جديدة اليوم. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)

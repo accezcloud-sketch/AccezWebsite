@@ -1,6 +1,10 @@
 ---
 title: "How to Create and Manage Units in Accez.Cloud"
 titleAr: "كيفية إنشاء وإدارة الوحدات في Accez.Cloud"
+metaTitle: "How to Create and Manage Units in Accez.Cloud"
+metaTitleAr: "كيفية إنشاء وإدارة الوحدات في Accez.Cloud"
+metaDescription: "Learn to create long-term and short-term units in Accez.Cloud: unit details, amenities, availability, ownership, tenant, lease dates and later edits."
+metaDescriptionAr: "تعلّم إنشاء الوحدات طويلة وقصيرة الأجل في Accez.Cloud: بيانات الوحدة والمرافق وحالة التوفر ونوع الملكية والمستأجر وتواريخ العقد وطريقة التعديل لاحقاً."
 excerpt: "Guide to creating and managing rental units in Accez.Cloud. Learn about long-term vs short-term units, pricing, lease management, and tenant assignments."
 excerptAr: "دليل لإنشاء وإدارة الوحدات الإيجارية في Accez.Cloud. تعرف على الوحدات طويلة وقصيرة الأجل والتسعير وإدارة العقود وتعيين المستأجرين."
 date: "2024-12-18"
@@ -21,7 +25,7 @@ Whether you're managing long-term residential rentals or short-term vacation pro
 
 Before creating units, make sure you have:
 
-- **An existing property in Accez.Cloud**, units live inside properties, so you need at least one property created first. If you haven't done this yet, follow our [property creation guide](/blog/how-to-create-manage-properties-accez-cloud).
+- **An existing property in Accez.Cloud**, units live inside properties, so you need at least one property created first. If you haven't done this yet, follow our [property creation guide](/blog/how-to-create-manage-properties-accez-cloud/).
 - **Active resident accounts** (required for long-term units only), long-term units must be assigned to a resident at creation. Create resident accounts before proceeding if you plan to set up long-term rentals.
 
 ## Understanding Unit Types
@@ -30,7 +34,7 @@ Accez.Cloud supports two fundamentally different unit types, and the choice you 
 
 **Long-Term Units**: Designed for traditional residential rentals, monthly or annual leases with specific tenants assigned to each unit. These units track lease start and end dates, rental pricing, and tenant information. They're the right choice for apartments, villas, and any unit rented on a lease agreement.
 
-**Short-Term Units**: Built for vacation rentals, furnished apartments, and flexible booking arrangements. These units support nightly or weekly bookings, dynamic pricing, and guest management. If you list on platforms like Airbnb or Booking.com, short-term units can connect to distribution channels.
+**Short-Term Units**: Built for vacation rentals, furnished apartments, and flexible booking arrangements. These units support nightly or weekly bookings, an availability calendar with bulk price updates, and guest management. If you list on Airbnb, Booking.com or Expedia, short-term units can sync with those channels.
 
 **Important**: The unit type is set at creation and determines the management workflow. Choose carefully based on how you actually rent the unit. If you manage a mixed portfolio with both types, you'll create different units under the same property, Accez.Cloud handles both seamlessly.
 
@@ -91,21 +95,21 @@ This section determines the financial and legal structure of the unit.
 - **Owned by Company**: The property management company owns this unit directly
 - **Privately Owned**: An individual owner has contracted your company to manage this unit on their behalf
 
-This distinction matters for financial reporting. Privately owned units may require separate owner statements and commission tracking, which Accez.Cloud handles automatically based on this setting.
+This distinction matters for financial reporting. Privately owned units need separate owner statements and payouts, which you manage per owner in Accez.Cloud.
 
 ### Tenant Assignment
 
 - **Select the resident** who will occupy the unit from the dropdown of active resident accounts
 - **Enter the rental price** you'll charge the resident per month
 
-Make sure the rental price reflects the actual agreed amount, this drives rent collection reminders, financial reports, and occupancy revenue calculations throughout the system.
+Make sure the rental price reflects the actual agreed amount, because it drives rent records (paid and due), financial reports, and revenue figures throughout the system.
 
 ### Lease Duration
 
 - **Start date**: When the lease begins and the tenant can move in
 - **End date**: When the lease expires
 
-The system uses these dates to track active leases, trigger renewal alerts (typically 90, 60, and 30 days before expiration), and calculate occupancy metrics. Setting accurate dates from the start means you won't miss renewal windows or have expired leases showing as active.
+The system uses these dates to track active leases and occupancy. Setting accurate dates from the start means you can see which leases are coming up for renewal and won't have expired leases showing as active.
 
 ## Step 5: Add Additional Information and Images
 
@@ -129,7 +133,7 @@ Upload high-quality images showing:
 - **Special features**: Balcony views, walk-in closets, upgraded finishes
 - **Storage and parking**: If applicable
 
-**Tip**: Aim for at least 5-8 images per unit. Properties with comprehensive image sets fill vacancies faster because prospective tenants can make informed decisions without requiring an in-person visit for every unit. Use natural lighting where possible and avoid wide-angle lens distortion that makes rooms look larger than they are, this sets unrealistic expectations and leads to tenant dissatisfaction.
+**Tip**: Aim for at least 5-8 images per unit. A comprehensive image set lets prospective tenants make informed decisions without requiring an in-person visit for every unit. Use natural lighting where possible and avoid wide-angle lens distortion that makes rooms look larger than they are, this sets unrealistic expectations and leads to tenant dissatisfaction.
 
 ## Step 6: Save Your Unit
 
@@ -151,7 +155,7 @@ If you need to update any information:
 2. Make your changes (e.g., update availability status, change pricing, modify amenities, swap images)
 3. Click "Save" to apply your updates
 
-The system will immediately reflect your changes across all views, dashboards, reports, and tenant-facing interfaces.
+The system will immediately reflect your changes across all views, dashboards and reports.
 
 ### Common Reasons to Edit Units
 
@@ -162,7 +166,7 @@ The system will immediately reflect your changes across all views, dashboards, r
 
 ### Deleting Units
 
-If a unit is removed from your portfolio (e.g., converted to commercial use or merged with another unit), you can delete it. However, exercise caution, deleting a unit removes its history. In most cases, it's better to mark the unit as inactive rather than delete it, preserving historical data for reporting.
+If a unit is removed from your portfolio (e.g., converted to commercial use or merged with another unit), you can delete it. However, exercise caution, deleting a unit removes its history. In most cases, it's better to keep the unit and update its details rather than delete it, preserving historical data for reporting.
 
 ## Watch the Full Video Tutorial
 
@@ -173,12 +177,12 @@ See the complete unit creation process in action:
 ## Key Takeaways
 
 - Long-term units require active resident accounts for tenant assignment, create residents first
-- Ownership type (company vs. private) affects financial reporting and commission tracking
+- Ownership type (company vs. private) affects financial reporting and owner statements
 - Lease duration dates drive renewal alerts and occupancy metrics, set them accurately
 - Detailed amenity lists reduce tenant questions and set correct expectations
 - Units can be edited and updated at any time, keep availability status current
-- Aim for 5-8 quality images per unit to reduce vacancy time
-- Prefer marking units inactive over deleting them to preserve historical data
+- Aim for 5-8 quality images per unit so prospective tenants can decide faster
+- Prefer keeping unit records over deleting them to preserve historical data
 
 ## Best Practices for Unit Management
 
@@ -186,7 +190,7 @@ See the complete unit creation process in action:
 
 **Keep information updated**: Review unit details at every tenant turnover. Update pricing, images, amenity lists, and availability status. Stale information creates confusion and slows down re-leasing.
 
-**Use high-quality images**: Professional photos reduce vacancy times measurably. If you can't hire a photographer, use a smartphone with good natural lighting and clean, decluttered spaces.
+**Use high-quality images**: Good photos make a unit far easier to let; see why [professional photography is the listing upgrade that pays for itself](/blog/professional-photography-the-listing-upgrade-that-pays-for-itself/). If you can't hire a photographer, use a smartphone with good natural lighting and clean, decluttered spaces.
 
 **Detailed amenity lists**: Every amenity you list is a selling point. Don't assume things are obvious, if the unit has a dishwasher, parking, or in-unit laundry, list it explicitly.
 
@@ -196,16 +200,17 @@ See the complete unit creation process in action:
 
 With your units created, you're ready to:
 
-- **Set up work order management** for maintenance requests, see our [work order tutorial](/blog/how-to-create-manage-work-orders-accez-cloud)
-- **Configure services and amenities** for resident bookings
-- **Connect distribution channels** for short-term units
+- **Set up work order management** for maintenance requests, see our [work order tutorial](/blog/how-to-create-manage-work-orders-accez-cloud/)
+- **Set up add-ons** such as cleaning or transport for short-term stays
+- **Sync Airbnb, Booking.com and Expedia** for short-term units
 - **Start tracking metrics** like occupancy rates and rental income across your portfolio
 
 ## Related Tutorials
 
-- [How to Create and Manage Properties in Accez.Cloud](/blog/how-to-create-manage-properties-accez-cloud)
-- [How to Create and Manage Work Orders in Accez.Cloud](/blog/how-to-create-manage-work-orders-accez-cloud)
-- [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide)
+- [How to Create and Manage Properties in Accez.Cloud](/blog/how-to-create-manage-properties-accez-cloud/)
+- [How to Create and Manage Work Orders in Accez.Cloud](/blog/how-to-create-manage-work-orders-accez-cloud/)
+- [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide/)
+- [The Accez property management solution](/solutions/property-managers/)
 
 <!-- AR -->
 
@@ -215,7 +220,7 @@ With your units created, you're ready to:
 
 قبل إنشاء الوحدات، تأكد من أن لديك:
 
-- عقار موجود في Accez.Cloud (تعرف على كيفية إنشاء العقارات)
+- عقار موجود في Accez.Cloud (تعرف على [كيفية إنشاء العقارات وإدارتها](/ar/blog/how-to-create-manage-properties-accez-cloud/))
 - حسابات مقيمين نشطة (مطلوبة للوحدات طويلة الأجل)
 
 ## فهم أنواع الوحدات
@@ -224,7 +229,7 @@ With your units created, you're ready to:
 
 **الوحدات طويلة الأجل**: مصممة للإيجارات السكنية التقليدية مع عقود الإيجار وتعيينات المستأجرين وفترات الإقامة الممتدة.
 
-**الوحدات قصيرة الأجل**: مثالية لإيجارات العطلات والإقامات المؤقتة وترتيبات الحجز المرنة.
+**الوحدات قصيرة الأجل**: مثالية لإيجارات العطلات والإقامات المؤقتة وترتيبات الحجز المرنة، ويمكن مزامنتها مع Airbnb وBooking.com وExpedia.
 
 ## الخطوة 1: الوصول إلى إنشاء الوحدة
 
@@ -312,7 +317,7 @@ With your units created, you're ready to:
 
 [شاهد: كيفية إنشاء وتعديل الوحدات في Accez.Cloud](https://youtu.be/YYPe_ZtuYWc?si=RBAiW_8kAQ4_c79Y)
 
-## النقاط الرئيسية
+## أبرز النقاط
 
 - تتطلب الوحدات طويلة الأجل حسابات مقيمين نشطة لتعيين المستأجر
 - يؤثر نوع الملكية على كيفية إدارة الوحدة والإبلاغ عنها
@@ -325,7 +330,7 @@ With your units created, you're ready to:
 
 **حافظ على تحديث المعلومات**: راجع وحدّث تفاصيل الوحدة بانتظام، خاصة حالة التوفر والتسعير.
 
-**استخدم صوراً عالية الجودة**: الصور الاحترافية تحسن جاذبية الوحدة بشكل كبير ويمكن أن تقلل من أوقات الشغور.
+**استخدم صوراً عالية الجودة**: الصور الجيدة تجعل تأجير الوحدة أسهل بكثير؛ اقرأ لماذا يُعد [التصوير الاحترافي تحسيناً للإعلان يغطي تكلفته](/ar/blog/professional-photography-the-listing-upgrade-that-pays-for-itself/).
 
 **قوائم مرافق مفصلة**: معلومات المرافق الشاملة تساعد المقيمين على اتخاذ قرارات مستنيرة.
 
@@ -335,6 +340,8 @@ With your units created, you're ready to:
 
 مع إنشاء وحداتك، أنت جاهز لـ:
 
-- إعداد إدارة أوامر العمل لطلبات الصيانة
-- تكوين الخدمات والمرافق لحجوزات المقيمين
-- توصيل قنوات التوزيع للوحدات قصيرة الأجل
+- إعداد إدارة أوامر العمل لطلبات الصيانة، راجع [درس أوامر العمل](/ar/blog/how-to-create-manage-work-orders-accez-cloud/)
+- إعداد الإضافات مثل التنظيف أو النقل للإقامات القصيرة
+- مزامنة Airbnb وBooking.com وExpedia للوحدات قصيرة الأجل
+
+وللاطلاع على كل ما تغطيه المنصة، راجع [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/).

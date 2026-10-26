@@ -1,6 +1,10 @@
 ---
 title: "Getting Started with Property Management Software"
 titleAr: "البدء باستخدام برنامج إدارة العقارات"
+metaTitle: "Getting Started with Property Management Software"
+metaTitleAr: "البدء باستخدام برنامج إدارة العقارات"
+metaDescription: "New to property management software? Learn the key benefits, the must-have features to look for, and how to start with one platform for your portfolio."
+metaDescriptionAr: "هل أنت جديد على برامج إدارة العقارات؟ تعرّف على أهم فوائدها والميزات الأساسية التي يجب البحث عنها، وكيف تبدأ بمنصة واحدة لإدارة محفظتك العقارية."
 excerpt: "Learn how property management software can transform your rental business and streamline your daily operations."
 excerptAr: "تعرف على كيف يمكن لبرنامج إدارة العقارات تحويل أعمال الإيجار الخاصة بك وتبسيط عملياتك اليومية."
 date: "2024-12-15"
@@ -13,7 +17,7 @@ tags: ["Property Management", "Software", "Beginner Guide"]
 tagsAr: ["إدارة العقارات", "البرمجيات", "دليل المبتدئين"]
 ---
 
-Property management software has revolutionized how landlords and property managers handle their rental portfolios. In this guide, we'll explore the key benefits and features you should look for.
+Property management software has revolutionized how landlords and property managers handle their rental portfolios. In this guide, we'll explore the key benefits and features you should look for. For a deeper walkthrough, see our [beginner's guide to property management software](/blog/property-management-software-beginners-guide/).
 
 ## Why Use Property Management Software?
 
@@ -40,15 +44,17 @@ When choosing property management software, consider these must-have features:
 - Document storage
 - Mobile accessibility
 
+Online rent collection and maintenance tracking usually deliver the quickest wins. Our articles on [automating rent collection](/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/) and [building a maintenance system that works](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) explain why.
+
 ## Getting Started with Accez
 
-Accez.cloud provides all these features and more, designed specifically for modern property managers. Our platform makes it easy to manage single properties or large portfolios with the same powerful tools.
+The [Accez property management solution](/solutions/property-managers/) is designed for modern property managers. It brings together properties and units, leases and rent payments (paid vs due), reservations synced with Airbnb, Booking.com and Expedia, work orders, invoices and refunds, owner statements and payouts, and one inbox for conversations. Our platform makes it easy to manage single properties or large portfolios with the same tools.
 
 Start your free trial today and experience the difference professional property management software can make.
 
 <!-- AR -->
 
-لقد أحدثت برامج إدارة العقارات ثورة في كيفية تعامل الملاك ومديري العقارات مع محافظهم الإيجارية. في هذا الدليل، سنستكشف الفوائد الرئيسية والميزات التي يجب أن تبحث عنها.
+لقد أحدثت برامج إدارة العقارات ثورة في كيفية تعامل الملاك ومديري العقارات مع محافظهم الإيجارية. في هذا الدليل، سنستكشف الفوائد الرئيسية والميزات التي يجب أن تبحث عنها. وللتعمق أكثر، اطلع على [دليل المبتدئين إلى برامج إدارة العقارات](/ar/blog/property-management-software-beginners-guide/).
 
 ## لماذا تستخدم برنامج إدارة العقارات؟
 
@@ -75,8 +81,10 @@ Start your free trial today and experience the difference professional property 
 - تخزين المستندات
 - إمكانية الوصول عبر الهاتف المحمول
 
+وغالباً ما يحقق تحصيل الإيجار عبر الإنترنت وتتبع الصيانة أسرع النتائج. ويشرح مقالانا عن [أتمتة تحصيل الإيجار](/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/) و[بناء نظام صيانة فعّال](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) السبب.
+
 ## البدء مع أكسيز
 
-يوفر Accez.cloud جميع هذه الميزات وأكثر، مصممة خصيصاً لمديري العقارات العصريين. تسهل منصتنا إدارة العقارات الفردية أو المحافظ الكبيرة بنفس الأدوات القوية.
+صُمم [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/) لمديري العقارات العصريين. فهو يجمع العقارات والوحدات، وعقود الإيجار ومدفوعاته (المدفوع والمستحق)، والحجوزات المتزامنة مع Airbnb وBooking.com وExpedia، وأوامر العمل، والفواتير والمبالغ المستردة، وكشوف حسابات الملاك ومدفوعاتهم، وصندوق وارد واحد للمحادثات. وتسهّل منصتنا إدارة العقارات الفردية أو المحافظ الكبيرة بالأدوات نفسها.
 
 ابدأ تجربتك المجانية اليوم واختبر الفرق الذي يمكن أن يحدثه برنامج إدارة العقارات الاحترافي.

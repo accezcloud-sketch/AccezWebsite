@@ -1,13 +1,13 @@
 ---
 title: "Saudi Arabia's Short-Term Rental Licensing: Getting Your STR Permit Right the First Time"
 titleAr: "ترخيص الإيجارات قصيرة الأجل في السعودية: الحصول على تصريحك من المرة الأولى"
-metaTitle: "Saudi STR Licensing Guide"
-metaTitleAr: "دليل ترخيص الإيجارات قصيرة الأجل السعودية"
-metaDescription: "Navigate Saudi Arabia's short-term rental licensing with ease. Understand requirements and get your STR permit right the first time. Avoid penalties."
-metaDescriptionAr: "دليلك الشامل لتراخيص الإيجارات قصيرة الأجل في السعودية. تعرف على المتطلبات واحصل على تصريحك لتجنب العقوبات."
+metaTitle: "Saudi Short-Term Rental License: Getting Your Permit"
+metaTitleAr: "ترخيص الإيجار قصير الأجل في السعودية: دليل التصريح"
+metaDescription: "Short-term rentals in Saudi Arabia need a Ministry of Tourism license. Learn who issues it, what you need to apply and how to avoid fines and delisting."
+metaDescriptionAr: "تحتاج الإيجارات قصيرة الأجل في السعودية إلى ترخيص من وزارة السياحة. تعرّف على الجهة المصدرة للترخيص وما تحتاجه للتقديم وكيف تتجنب الغرامات وحذف إعلاناتك."
 primaryKeyword: "saudi short term rental license"
 excerpt: "Navigating Saudi Arabia's short-term rental licensing can be complex. This guide provides a clear path to obtaining your STR permit efficiently, avoiding common pitfalls."
-excerptAr: "قد يكون التنقل في لوائح ترخيص الإيجارات قصيرة الأجل في السعودية أمرًا معقدًا. يقدم هذا الدليل مسارًا واضحًا للحصول على تصريح الإيجار الخاص بك بكفاءة، وتجنب الأخطاء الشائعة."
+excerptAr: "قد يكون التعامل مع لوائح ترخيص الإيجارات قصيرة الأجل في السعودية أمرًا معقدًا. يقدم هذا الدليل مسارًا واضحًا للحصول على تصريح الإيجار الخاص بك بكفاءة، وتجنب الأخطاء الشائعة."
 date: "2026-09-06"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -21,17 +21,19 @@ tags: ["saudi arabia", "short term rentals", "licensing", "property management",
 tagsAr: ["السعودية", "إيجارات قصيرة الأجل", "ترخيص", "إدارة العقارات", "عقارات"]
 ---
 
-> Saudi Arabia's short-term rental licensing requires adherence to specific regulations, often involving a municipal permit and compliance with a national platform like Ejar. Understanding these steps, including property suitability checks and documentation, is crucial for operating legally and avoiding fines. Early engagement with local authorities and leveraging digital tools can streamline the process.
+> Short-term rentals in Saudi Arabia are licensed by the Ministry of Tourism as private tourism hospitality facilities. Since 1 January 2025, booking platforms must remove listings that do not have a valid license, and operating without one can bring fines of up to SAR 1 million. Knowing who issues the permit, what documents you need and how the license number appears on your listings is essential for operating legally.
 
 Finding the right balance between maximizing rental income and navigating the evolving regulatory landscape is a perpetual challenge for property managers in Saudi Arabia. The rise of the short-term rental market, while offering immense opportunity, introduces a layer of complexity that can trip up even seasoned professionals.
 
-This complexity is amplified when it comes to licensing. What might seem like a straightforward permit application can quickly become a maze of requirements, documentation, and varying local interpretations. For property managers and owners eager to tap into Saudi Arabia's growing tourism and hospitality sector, understanding and correctly obtaining a short-term rental license (STR permit) is not just a bureaucratic hurdle, but a critical step for legal operation and long-term success. The penalties for non-compliance can be substantial, impacting both profitability and reputation.
+This complexity is amplified when it comes to licensing. What might seem like a straightforward permit application can quickly become a maze of requirements and documentation. For property managers and owners eager to tap into Saudi Arabia's growing tourism and hospitality sector, correctly obtaining a short-term rental license (STR permit) is not just a bureaucratic hurdle, but a critical step for legal operation and long-term success. The penalties for non-compliance can be substantial, impacting both profitability and reputation.
 
 ## The Regulatory Tightrope Walk: What Often Goes Wrong
 
-The primary reason property operators struggle with Saudi short-term rental licensing is a **lack of centralized, easily accessible information and a misunderstanding of the nuances across different municipalities**. While the intention is to standardize and ensure safety and quality, the execution can sometimes lead to confusion.
+The most common reason property operators struggle with Saudi short-term rental licensing is **confusion about which authority is responsible**. Short-term rentals are licensed by the **Ministry of Tourism**, not through the Ejar platform, which is used to register lease contracts between landlords and tenants.
 
-One of the most common pitfalls is failing to distinguish between general property permits and specific short-term rental licenses. Operators might assume their existing business licenses cover STR operations, only to discover later that a dedicated permit is required. Another frequent issue is the **inadequate preparation of required documentation**. This can include proof of ownership, property suitability assessments (like fire safety and structural integrity), and even details about management protocols. Missing a single document or failing to meet a specific technical requirement can lead to significant delays or outright rejection of an application. Furthermore, some operators underestimate the importance of complying with national platforms. For instance, being registered and compliant with the Ejar platform is often a prerequisite for obtaining or maintaining an STR license, and failing to do so can invalidate an application. The General Authority for Statistics (GASTAT) has highlighted the growing importance of the tourism sector, indicating a push for more formalized operations.
+One of the most common pitfalls is assuming that an existing lease, commercial registration or general business license covers short-term stays, only to discover later that a dedicated tourism license is required. Another frequent issue is **inadequate preparation of required documentation**. According to [Airbnb's guidance for hosts in Saudi Arabia](https://www.airbnb.com/help/article/3833), hosts register the property as a private tourism accommodation facility with the Ministry of Tourism, provide a title deed or lease contract, and pay an annual registration fee. The same guidance notes that individual owners may register and manage up to 8 units, while managing more requires a registered company with a tourist accommodation management license or a contract with a licensed provider. Missing a document or misreading these conditions can lead to delays or a rejected application.
+
+Enforcement has also tightened. In a directive that took effect on 1 January 2025, the Ministry of Tourism required all booking platforms and applications to remove listings for tourist and private hospitality facilities without a valid license, [as reported by Riyadh Daily](https://alriyadhdaily.com/article/aa8074dc0fc54afc9fab618770e10612). Operating without a license can lead to fines of up to SAR 1 million, closure of the facility, or both.
 
 ## Keys to a Smooth Licensing Process
 
@@ -39,159 +41,138 @@ High-performing property managers in Saudi Arabia approach STR licensing not as 
 
 ### Proactive Research and Consultation
 
-Leading operators don't wait until they're ready to launch a listing to look into licensing. Instead, they **begin their research long before acquiring a property for short-term rental or before a new regulation is introduced**. This involves identifying the relevant municipal authority overseeing short-term rentals in the specific location of the property. Engaging with these authorities early, whether through official channels or by consulting with legal or property management specialists familiar with local regulations, can provide invaluable clarity. Understanding specific zoning laws, safety standards, and application procedures upfront can prevent costly mistakes down the line.
+Leading operators don't wait until they're ready to launch a listing to look into licensing. Instead, they **check the requirements before acquiring or leasing a property for short-term rental**. This means reading the current conditions on the Ministry of Tourism's licensing portal, confirming whether the unit and the operator are eligible, and, for larger portfolios, deciding early whether to operate through a licensed management company. Consulting legal or property management specialists familiar with the rules can provide valuable clarity and prevent costly mistakes down the line.
 
 ### Digital Readiness and Compliance
 
-The Kingdom's push towards digital transformation, as evidenced by the widespread adoption of platforms like **Ejar for rental contracts and increasingly digitized municipal services**, means that being technologically prepared is no longer optional. High performers ensure their properties and documentation are digitally accessible and compliant with national mandates. This includes understanding how to integrate with platforms like Ejar for official rental agreements, which are often a prerequisite for licensing. They also ensure that all property information, including safety certificates and management plans, is organized and readily available for electronic submission. According to recent reports, over 77% of the Saudi population uses WhatsApp, indicating a high level of digital engagement, which translates to an expectation for streamlined, digital-first processes in all sectors, including property management.
+The Kingdom's push towards digital transformation means licensing is handled online, and the license number has to appear on your listings. Airbnb, for example, asks hosts to enter the private tourism accommodation number, which is shown publicly on the listing, along with a national identification number used only for government verification. High performers keep license numbers, expiry dates, title deeds or lease contracts and safety documents organized in one place, so every listing on every channel shows valid details and renewals are never missed. If you manage units you lease rather than own, remember that the lease itself must be registered on Ejar; our guide to [Ejar compliance for property managers](/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/) covers that side.
 
 ## Navigating the Saudi STR Licensing Landscape: Vision 2030 and Beyond
 
-Saudi Arabia's ambitious Vision 2030 has significantly bolstered the tourism and hospitality sectors, leading to a surge in demand for short-term rentals. This growth necessitates a robust and clear licensing framework to ensure quality, safety, and a positive experience for visitors. Navigating this landscape requires an understanding of specific Saudi initiatives and platforms.
+Saudi Arabia's Vision 2030 places tourism at the center of economic diversification, and demand for short-term stays has grown with it. This growth makes a clear licensing framework essential to ensure quality, safety and a positive experience for visitors.
 
-The **Balady platform**, managed by the Ministry of Municipal and Rural Affairs and Housing (MOMRAH), is often a central point for obtaining various municipal licenses, including those related to property operations. Property managers must familiarize themselves with the specific requirements outlined on the Balady portal or through direct municipal engagement. Understanding the intricacies of **Ejar compliance** is also non-negotiable. Ejar serves as the primary platform for formalizing rental contracts, and adherence to its regulations is frequently a prerequisite for obtaining or renewing a short-term rental permit. This ensures transparency and legal protection for both tenants and landlords. Seasonal demand, particularly around major events like Hajj and Umrah, further underscores the need for a legitimate and well-managed short-term rental supply. Property owners and operators who are properly licensed are better positioned to capitalize on these peak periods, ensuring compliance with any special event regulations that might be in place. GASTAT statistics consistently show the growing contribution of tourism and hospitality to the national economy, reinforcing the importance of a streamlined and compliant STR market.
+Seasonal demand, particularly around Ramadan, Hajj and Umrah, underscores the need for a legitimate and well-managed short-term rental supply; our article on [capturing seasonal demand around Ramadan, Hajj and Umrah](/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-demand/) looks at how to prepare. Property owners and operators who are properly licensed are better positioned to capitalize on these peak periods. Because rules and fees change, always confirm the current requirements with the Ministry of Tourism before you apply or renew.
 
-## How Accez.Cloud Helps You Streamline STR Licensing
+## How Accez.Cloud Helps You Run Licensed Short-Term Rentals
 
-Accez.Cloud is an all-in-one property operations platform designed for Saudi Arabia that simplifies the complexities of managing short-term rentals and ensures compliance with licensing requirements.
+The license itself is issued by the Ministry of Tourism, and Accez.Cloud does not apply for it on your behalf. Once your units are licensed, the [Accez.Cloud property management solution](/solutions/property-managers/#rentals) helps you run them in an organized way.
 
-- **Reservations and Channel Sync:** Effortlessly manage bookings from Airbnb, Booking.com and Expedia, ensuring all reservations are accounted for and easily trackable for licensing audits.
-- **Owner Management, Statements and Payouts:** Maintain clear financial records and transparent communication with owners, crucial for demonstrating operational legitimacy.
-- **Contracts and E-signing:** Generate and manage rental contracts digitally, ensuring compliance with platforms like Ejar and simplifying the documentation process for permits.
-- **Work Orders and Maintenance:** Track property maintenance and safety compliance, generating reports that can be used as evidence for property suitability during licensing applications.
-- **Service Provider Marketplace:** Efficiently manage and document services related to property upkeep and compliance, providing a clear audit trail.
-- **Marketing Campaigns and Analytics:** Understand occupancy trends and demand, helping to strategically plan and justify your operational needs when applying for licenses.
+- **Channel Sync:** Connect Airbnb, Booking.com and Expedia to one availability calendar, so every booking is accounted for and double bookings are avoided.
+- **Reservations:** See each stay with its timeline, payment and accepted policies, giving you a clear record of who stayed and when.
+- **Availability Calendar:** Update prices in bulk and import or export availability as you add or pause units.
+- **Work Orders:** Track maintenance and safety jobs from request to done, so issues are fixed before the next guest arrives.
+- **Owners and Payouts:** Keep statements and payouts per owner, useful when you manage licensed units on behalf of several owners.
+- **Staff and Roles:** Control what each team member can see and change.
 
-By integrating these essential functions, Accez.Cloud empowers property managers to focus on growth and operational excellence, confident in their compliance.
+By keeping these functions together, Accez.Cloud lets you focus on guests and growth while your licensing paperwork stays with the Ministry's own platform.
 
 ## Frequently Asked Questions
 
 ### How do I get a short-term rental license in Saudi Arabia?
 
-To get a short-term rental license in Saudi Arabia, you typically need to obtain a municipal permit from the local authority where the property is located. This often involves registering on platforms like Balady and ensuring your property meets specific safety and operational standards.
+Short-term rentals are licensed by the Ministry of Tourism. You register the property as a private tourism accommodation facility through the Ministry's online licensing portal and pay an annual fee. In AlUla, registration is handled by the Royal Commission for AlUla. Check the Ministry's portal for the current conditions and fees.
 
 ### What documents are needed for an STR permit?
 
-Required documents usually include proof of property ownership, identification of the applicant, property inspection reports (e.g., fire safety), and a completed application form. Specific requirements may vary by municipality, so direct confirmation is advised.
+Airbnb's guidance for Saudi hosts lists a title deed or lease contract as part of registration, and you will need your national identification details. Requirements can change, so confirm the full list on the Ministry of Tourism's portal before applying.
 
 ### Is Ejar registration required for short-term rentals?
 
-While Ejar is primarily for long-term rentals, compliance with its principles and often direct registration or acknowledgment on related government platforms can be a prerequisite or a supporting document for short-term rental licensing in Saudi Arabia.
+Ejar is the platform for registering lease contracts, not guest stays, and the license for short-term rentals comes from the Ministry of Tourism. If you operate a unit you lease from its owner, that lease must be registered on Ejar.
 
 ### Can I operate a short-term rental without a license?
 
-Operating a short-term rental without the necessary license is illegal in Saudi Arabia and can lead to significant fines, temporary or permanent closure of the rental, and damage to your reputation as an operator.
+No. Booking platforms must remove unlicensed listings, and operating without a license can lead to fines of up to SAR 1 million, closure of the facility, or both.
 
 ## Key Takeaways
 
--   Saudi Arabia's short-term rental market is growing rapidly, driven by Vision 2030.
--   Obtaining the correct STR permit is crucial for legal operation and avoiding penalties.
--   Key authorities include local municipalities and potentially platforms like Balady and Ejar.
--   Thorough documentation, including property safety reports, is essential for applications.
--   Digital compliance with platforms like Ejar is increasingly important for licensing.
--   Understanding specific municipal requirements is vital due to potential local variations.
--   Proactive research and early consultation with authorities can prevent common errors.
--   Leveraging property operations platforms can streamline compliance and documentation.
+-   Short-term rentals in Saudi Arabia are licensed by the Ministry of Tourism as private tourism hospitality facilities.
+-   Since 1 January 2025, booking platforms must remove listings without a valid license.
+-   Operating without a license can bring fines of up to SAR 1 million and closure.
+-   Registration requires documents such as a title deed or lease contract, and an annual fee applies.
+-   Managing more than 8 units requires a licensed company or a contract with a licensed provider, according to Airbnb's host guidance.
+-   Ejar is for lease contracts; it is not the STR licensing route.
+-   Check current requirements with the Ministry before applying or renewing, as rules and fees change.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
-Ready to simplify your Saudi property operations and ensure licensing compliance? [Visit portal.accez.cloud](https://portal.accez.cloud)
+Ready to simplify your Saudi property operations? [Visit portal.accez.cloud](https://portal.accez.cloud)
 
 <!-- AR -->
 
----
-title: "ترخيص الإيجارات قصيرة الأجل في السعودية: الحصول على تصريحك من المرة الأولى"
-titleAr: "ترخيص الإيجارات قصيرة الأجل في السعودية: الحصول على تصريحك من المرة الأولى"
-metaTitle: "دليل ترخيص الإيجارات قصيرة الأجل السعودية"
-metaTitleAr: "دليل ترخيص الإيجارات قصيرة الأجل السعودية"
-metaDescription: "دليلك الشامل لتراخيص الإيجارات قصيرة الأجل في السعودية. تعرف على المتطلبات واحصل على تصريحك لتجنب العقوبات."
-metaDescriptionAr: "دليلك الشامل لتراخيص الإيجارات قصيرة الأجل في السعودية. تعرف على المتطلبات واحصل على تصريحك لتجنب العقوبات."
-primaryKeyword: "saudi short term rental license"
-excerpt: "قد يكون التنقل في لوائح ترخيص الإيجارات قصيرة الأجل في السعودية أمرًا معقدًا. يقدم هذا الدليل مسارًا واضحًا للحصول على تصريح الإيجار الخاص بك بكفاءة، وتجنب الأخطاء الشائعة."
-excerptAr: "قد يكون التنقل في لوائح ترخيص الإيجارات قصيرة الأجل في السعودية أمرًا معقدًا. يقدم هذا الدليل مسارًا واضحًا للحصول على تصريح الإيجار الخاص بك بكفاءة، وتجنب الأخطاء الشائعة."
-date: "2026-09-06"
-author: "Accez Team"
-authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm-default.jpg"
-coverImageAlt: "A professional looking at a tablet displaying property management software on a desk"
-category: "Industry Insights"
-categoryAr: "رؤى الصناعة"
-tags: ["saudi arabia", "short term rentals", "licensing", "property management", "real estate"]
-tagsAr: ["السعودية", "إيجارات قصيرة الأجل", "ترخيص", "إدارة العقارات", "عقارات"]
----
+> تُرخَّص الإيجارات قصيرة الأجل في المملكة العربية السعودية من وزارة السياحة بوصفها مرافق ضيافة سياحية خاصة. ومنذ 1 يناير 2025، يجب على منصات الحجز حذف الإعلانات التي لا تحمل ترخيصًا ساريًا، وقد يؤدي التشغيل دون ترخيص إلى غرامات تصل إلى مليون ريال. إن معرفة الجهة المصدرة للتصريح والمستندات المطلوبة وكيفية ظهور رقم الترخيص في إعلاناتك أمر أساسي للعمل بشكل نظامي.
 
-> يتطلب ترخيص الإيجارات قصيرة الأجل في السعودية الالتزام بلوائح محددة، غالبًا ما تتضمن تصريحًا بلديًا والامتثال لمنصة وطنية مثل إيجار. يعد فهم هذه الخطوات، بما في ذلك فحوصات ملاءمة العقار والوثائق، أمرًا بالغ الأهمية للتشغيل القانوني وتجنب الغرامات. يمكن للمشاركة المبكرة مع السلطات المحلية والاستفادة من الأدوات الرقمية تبسيط العملية.
+يعد إيجاد التوازن الصحيح بين زيادة إيرادات الإيجار ومواكبة المشهد التنظيمي المتطور تحديًا دائمًا لمديري العقارات في المملكة العربية السعودية. ورغم أن نمو سوق الإيجارات قصيرة الأجل يتيح فرصًا كبيرة، فإنه يضيف طبقة من التعقيد قد تربك حتى المهنيين المتمرسين.
 
-يعد إيجاد التوازن الصحيح بين زيادة إيرادات الإيجار والتنقل في المشهد التنظيمي المتطور تحديًا دائمًا لمديري العقارات في المملكة العربية السعودية. يوفر صعود سوق الإيجارات قصيرة الأجل، رغم أنه يقدم فرصة هائلة، طبقة إضافية من التعقيد يمكن أن تعيق حتى المهنيين المتمرسين.
-
-يتضخم هذا التعقيد عندما يتعلق الأمر بالترخيص. ما قد يبدو وكأنه طلب تصريح مباشر يمكن أن يصبح بسرعة متاهة من المتطلبات والوثائق والتفسيرات المحلية المتفاوتة. بالنسبة لمديري العقارات والمالكين الذين يتوقون للاستفادة من قطاع السياحة والضيافة المتنامي في المملكة العربية السعودية، فإن فهم الحصول على ترخيص تأجير قصير الأجل (تصريح STR) بشكل صحيح ليس مجرد عقبة بيروقراطية، بل هو خطوة حاسمة للتشغيل القانوني والنجاح على المدى الطويل. يمكن أن تكون العقوبات على عدم الامتثال كبيرة، مما يؤثر على الربحية والسمعة على حد سواء.
+ويتضاعف هذا التعقيد عند الحديث عن الترخيص. فما يبدو طلب تصريح بسيطًا قد يتحول سريعًا إلى سلسلة من المتطلبات والمستندات. وبالنسبة لمديري العقارات والملاك الراغبين في الاستفادة من نمو قطاع السياحة والضيافة في المملكة، فإن الحصول على ترخيص الإيجار قصير الأجل بالشكل الصحيح ليس مجرد إجراء بيروقراطي، بل خطوة حاسمة للعمل النظامي والنجاح على المدى الطويل. وقد تكون عقوبات المخالفة كبيرة وتؤثر في الربحية والسمعة معًا.
 
 ## السير على الحبل التنظيمي: ما الذي يحدث بشكل خاطئ غالبًا
 
-السبب الرئيسي الذي يجعل مشغلي العقارات يواجهون صعوبة في ترخيص الإيجارات قصيرة الأجل في المملكة العربية السعودية هو **نقص المعلومات المركزية التي يسهل الوصول إليها وسوء فهم الفروق الدقيقة عبر البلديات المختلفة**. بينما يتمثل الهدف في توحيد وضمان السلامة والجودة، إلا أن التنفيذ يمكن أن يؤدي أحيانًا إلى الارتباك.
+السبب الأكثر شيوعًا لتعثر مشغلي العقارات في ترخيص الإيجارات قصيرة الأجل هو **الالتباس حول الجهة المسؤولة**. فالإيجارات قصيرة الأجل تُرخَّص من **وزارة السياحة**، وليس عبر منصة إيجار التي تُستخدم لتسجيل عقود الإيجار بين المؤجرين والمستأجرين.
 
-من أكثر الأخطاء شيوعًا الفشل في التمييز بين تصاريح العقارات العامة وتراخيص الإيجارات قصيرة الأجل المحددة. قد يفترض المشغلون أن تراخيص أعمالهم الحالية تغطي عمليات الإيجار قصير الأجل، فقط ليكتشفوا لاحقًا أن هناك حاجة إلى تصريح مخصص. قضية أخرى متكررة هي **الإعداد غير الكافي للوثائق المطلوبة**. يمكن أن يشمل هذا إثبات الملكية، وتقييمات ملاءمة العقار (مثل السلامة من الحرائق والسلامة الهيكلية)، وحتى تفاصيل بروتوكولات الإدارة. قد يؤدي فقدان مستند واحد أو الفشل في تلبية متطلب فني معين إلى تأخيرات كبيرة أو رفض كامل للطلب. علاوة على ذلك، يقلل بعض المشغلين من أهمية الامتثال للمنصات الوطنية. على سبيل المثال، غالبًا ما يكون التسجيل والامتثال لمنصة إيجار شرطًا أساسيًا للحصول على ترخيص الإيجار قصير الأجل أو الحفاظ عليه، وقد يؤدي عدم القيام بذلك إلى إبطال الطلب. سلطت الهيئة العامة للإحصاء (GASTAT) الضوء على الأهمية المتزايدة لقطاع السياحة، مما يشير إلى السعي نحو عمليات أكثر رسمية.
+ومن الأخطاء الشائعة افتراض أن عقد إيجار قائمًا أو سجلًا تجاريًا أو ترخيصًا تجاريًا عامًا يغطي الإقامات القصيرة، ثم اكتشاف الحاجة إلى ترخيص سياحي مخصص لاحقًا. ومن المشكلات المتكررة أيضًا **عدم إعداد المستندات المطلوبة بشكل كافٍ**. ووفقًا [لإرشادات Airbnb للمضيفين في السعودية](https://www.airbnb.com/help/article/3833)، يسجل المضيف العقار بوصفه مرفق ضيافة سياحية خاصًا لدى وزارة السياحة، ويقدم صك الملكية أو عقد الإيجار، ويدفع رسوم تسجيل سنوية. وتشير الإرشادات نفسها إلى أن الملاك الأفراد يمكنهم تسجيل وإدارة ما يصل إلى 8 وحدات، بينما تتطلب إدارة عدد أكبر شركة مسجلة لديها ترخيص إدارة مرافق الإيواء السياحي أو التعاقد مع مزود مرخص. وقد يؤدي نقص مستند أو سوء فهم هذه الشروط إلى تأخير الطلب أو رفضه.
+
+كما أصبح التطبيق أكثر صرامة. فبموجب توجيه دخل حيز التنفيذ في 1 يناير 2025، ألزمت وزارة السياحة جميع منصات وتطبيقات الحجز بحذف إعلانات مرافق الضيافة السياحية والخاصة التي لا تحمل ترخيصًا ساريًا، [وفقًا لما نشرته صحيفة رياض ديلي](https://alriyadhdaily.com/article/aa8074dc0fc54afc9fab618770e10612). وقد يؤدي التشغيل دون ترخيص إلى غرامات تصل إلى مليون ريال، أو إغلاق المرفق، أو كليهما.
 
 ## مفاتيح عملية الترخيص السلسة
 
-يتعامل مديرو العقارات ذوو الأداء العالي في المملكة العربية السعودية مع ترخيص الإيجارات قصيرة الأجل ليس كعبء، بل كجزء لا يتجزأ من استراتيجية التشغيل الخاصة بهم. إنهم يفهمون أن المشاركة الاستباقية والفهم الشامل للمتطلبات أمر بالغ الأهمية.
+يتعامل مديرو العقارات المتميزون في المملكة مع ترخيص الإيجارات قصيرة الأجل لا بوصفه عبئًا، بل جزءًا لا يتجزأ من استراتيجيتهم التشغيلية. فهم يدركون أن المبادرة المبكرة والفهم الشامل للمتطلبات أمران أساسيان.
 
-### البحث الاستباقي والاستشارات
+### البحث الاستباقي والاستشارة
 
-المشغلون الرائدون لا ينتظرون حتى يكونوا مستعدين لإطلاق قائمة إيجارات ليبدأوا في البحث عن الترخيص. بدلاً من ذلك، **يبدأون بحثهم قبل وقت طويل من اكتساب عقار للإيجار قصير الأجل أو قبل تقديم لائحة تنظيمية جديدة**. يتضمن ذلك تحديد السلطة البلدية المختصة بالإشراف على الإيجارات قصيرة الأجل في الموقع المحدد للعقار. يمكن أن توفر المشاركة المبكرة مع هذه السلطات، سواء من خلال القنوات الرسمية أو بالتشاور مع متخصصين قانونيين أو في إدارة العقارات على دراية باللوائح المحلية، وضوحًا لا يقدر بثمن. يمكن أن يمنع فهم قوانين تقسيم المناطق المحددة ومعايير السلامة وإجراءات التقديم مسبقًا الأخطاء المكلفة لاحقًا.
+لا ينتظر المشغلون الرائدون حتى موعد إطلاق الإعلان للبحث في الترخيص، بل **يتحققون من المتطلبات قبل شراء العقار أو استئجاره للإيجار قصير الأجل**. ويعني ذلك قراءة الشروط الحالية على بوابة التراخيص في وزارة السياحة، والتأكد من أهلية الوحدة والمشغل، وفي المحافظ الكبيرة، تحديد ما إذا كان العمل سيتم عبر شركة إدارة مرخصة. كما أن استشارة متخصصين قانونيين أو في إدارة العقارات على دراية بهذه القواعد يوفر وضوحًا قيّمًا ويمنع أخطاء مكلفة لاحقًا.
 
 ### الجاهزية الرقمية والامتثال
 
-يشير دفع المملكة نحو التحول الرقمي، كما يتضح من الانتشار الواسع لمنصات مثل **إيجار لعقود الإيجار والخدمات البلدية الرقمية المتزايدة**، إلى أن الاستعداد التكنولوجي لم يعد اختياريًا. يضمن أصحاب الأداء العالي أن تكون عقاراتهم ووثائقهم متاحة رقميًا ومتوافقة مع التفويضات الوطنية. يتضمن ذلك فهم كيفية التكامل مع منصات مثل إيجار لاتفاقيات الإيجار الرسمية، والتي غالبًا ما تكون شرطًا أساسيًا للترخيص. كما يضمنون أن جميع معلومات العقار، بما في ذلك شهادات السلامة وخطط الإدارة، منظمة ومتاحة بسهولة للإرسال الإلكتروني. وفقًا لتقارير حديثة، يستخدم أكثر من 77٪ من سكان المملكة العربية السعودية تطبيق WhatsApp، مما يشير إلى مستوى عالٍ من المشاركة الرقمية، مما يترجم إلى توقع عمليات مبسطة ورقمية أولاً في جميع القطاعات، بما في ذلك إدارة العقارات.
+يعني توجه المملكة نحو التحول الرقمي أن الترخيص يتم إلكترونيًا، وأن رقم الترخيص يجب أن يظهر في إعلاناتك. فعلى سبيل المثال، تطلب Airbnb من المضيفين إدخال رقم مرفق الضيافة السياحية الخاص، الذي يظهر للعموم في الإعلان، إلى جانب رقم الهوية الوطنية الذي يُستخدم للتحقق الحكومي فقط. ويحرص المتميزون على تنظيم أرقام التراخيص وتواريخ انتهائها وصكوك الملكية أو عقود الإيجار ومستندات السلامة في مكان واحد، لتظهر بيانات سارية في كل إعلان على كل قناة ولا يفوتهم أي تجديد. وإذا كنت تدير وحدات تستأجرها ولا تملكها، فتذكّر أن عقد الإيجار نفسه يجب تسجيله في منصة إيجار، ويشرح دليلنا عن [الامتثال لمتطلبات إيجار لمديري العقارات](/ar/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/) هذا الجانب.
 
-## التنقل في مشهد ترخيص الإيجارات قصيرة الأجل في السعودية: رؤية 2030 وما بعدها
+## مشهد ترخيص الإيجارات قصيرة الأجل في السعودية: رؤية 2030 وما بعدها
 
-عززت رؤية المملكة العربية السعودية 2030 الطموحة بشكل كبير قطاعي السياحة والضيافة، مما أدى إلى زيادة الطلب على الإيجارات قصيرة الأجل. يتطلب هذا النمو إطار ترخيص قوي وواضح لضمان الجودة والسلامة وتجربة إيجابية للزوار. يتطلب التنقل في هذا المشهد فهمًا لمبادرات ومنصات سعودية محددة.
+تضع رؤية المملكة 2030 السياحة في قلب التنويع الاقتصادي، وقد نما الطلب على الإقامات القصيرة معها. ويجعل هذا النمو وجود إطار ترخيص واضح أمرًا ضروريًا لضمان الجودة والسلامة وتجربة إيجابية للزوار.
 
-تعد **منصة بلدي**، التي تديرها وزارة الشؤون البلدية والقروية والإسكان (MOMRAH)، غالبًا نقطة مركزية للحصول على تراخيص بلدية مختلفة، بما في ذلك تلك المتعلقة بعمليات العقارات. يجب على مديري العقارات التعرف على المتطلبات المحددة الموضحة على بوابة بلدي أو من خلال التواصل المباشر مع البلديات. يعد فهم تعقيدات **الامتثال لإيجار** أمرًا غير قابل للتفاوض. تعمل إيجار كمنصة أساسية لإضفاء الطابع الرسمي على عقود الإيجار، وغالبًا ما يكون الالتزام بلوائحها شرطًا أساسيًا للحصول على ترخيص تأجير قصير الأجل أو تجديده. وهذا يضمن الشفافية والحماية القانونية للمستأجرين والمؤجرين على حد سواء. يؤكد الطلب الموسمي، لا سيما حول الأحداث الكبرى مثل الحج والعمرة، على الحاجة إلى إمدادات إيجار قصيرة الأجل مشروعة ومُدارة جيدًا. يعتبر أصحاب العقارات والمشغلون المرخصون بشكل صحيح في وضع أفضل للاستفادة من هذه الفترات الذروة، مما يضمن الامتثال لأي لوائح خاصة بالحدث قد تكون سارية. تظهر إحصاءات الهيئة العامة للإحصاء (GASTAT) باستمرار المساهمة المتزايدة للسياحة والضيافة في الاقتصاد الوطني، مما يعزز أهمية سوق إيجار قصير الأجل منظم ومتوافق.
+ويؤكد الطلب الموسمي، خاصة في رمضان والحج والعمرة، الحاجة إلى معروض نظامي وجيد الإدارة من الإيجارات قصيرة الأجل، ويتناول مقالنا عن [الاستفادة من الطلب الموسمي في رمضان والحج والعمرة](/ar/blog/ramadan-hajj-and-umrah-capturing-saudi-arabia-s-seasonal-demand/) كيفية الاستعداد لذلك. والملاك والمشغلون المرخصون في وضع أفضل للاستفادة من فترات الذروة هذه. ولأن القواعد والرسوم تتغير، تأكد دائمًا من المتطلبات الحالية لدى وزارة السياحة قبل التقديم أو التجديد.
 
-## كيف تساعدك Accez.Cloud في تبسيط ترخيص الإيجارات قصيرة الأجل
+## كيف يساعدك Accez.Cloud في تشغيل إيجارات قصيرة الأجل مرخصة
 
-Accez.Cloud هي منصة عمليات عقارية شاملة مصممة للمملكة العربية السعودية تعمل على تبسيط تعقيدات إدارة الإيجارات قصيرة الأجل وضمان الامتثال لمتطلبات الترخيص.
+تصدر وزارة السياحة الترخيص نفسه، ولا يتقدم Accez.Cloud بطلبه نيابة عنك. وبعد ترخيص وحداتك، يساعدك [حل إدارة العقارات من Accez.Cloud](/ar/solutions/property-managers/#rentals) على تشغيلها بشكل منظم.
 
-- **الحجوزات ومزامنة القنوات:** قم بإدارة الحجوزات من Airbnb وBooking.com وExpedia بسهولة، مما يضمن احتساب جميع الحجوزات وسهولة تتبعها لعمليات تدقيق الترخيص.
-- **إدارة الملاك، الكشوفات والمدفوعات:** حافظ على سجلات مالية واضحة وتواصل شفاف مع الملاك، وهو أمر بالغ الأهمية لإظهار الشرعية التشغيلية.
-- **العقود والتوقيع الإلكتروني:** قم بإنشاء وإدارة عقود الإيجار رقميًا، مما يضمن الامتثال لمنصات مثل إيجار وتبسيط عملية التوثيق للحصول على التصاريح.
-- **أوامر العمل والصيانة:** تتبع صيانة العقار والامتثال للسلامة، وإنشاء تقارير يمكن استخدامها كدليل لملاءمة العقار أثناء طلبات الترخيص.
-- **سوق مقدمي الخدمات:** قم بإدارة وتوثيق الخدمات المتعلقة بصيانة العقارات والامتثال بكفاءة، مما يوفر مسار تدقيق واضح.
-- **الحملات التسويقية والتحليلات:** فهم اتجاهات الإشغال والطلب، والمساعدة في التخطيط الاستراتيجي وتبرير احتياجاتك التشغيلية عند التقدم بطلب للحصول على تراخيص.
+- **مزامنة القنوات:** اربط Airbnb وBooking.com وExpedia بتقويم إتاحة واحد، ليُحتسب كل حجز وتتجنب الحجز المزدوج.
+- **الحجوزات:** اطلع على كل إقامة مع جدولها الزمني ودفعتها والسياسات المقبولة، ليكون لديك سجل واضح بمن أقام ومتى.
+- **تقويم الإتاحة:** حدّث الأسعار دفعة واحدة واستورد الإتاحة أو صدّرها عند إضافة وحدات أو إيقافها.
+- **أوامر العمل:** تابع أعمال الصيانة والسلامة من الطلب حتى الإنجاز، لتُصلح المشكلات قبل وصول الضيف التالي.
+- **الملاك والمدفوعات:** احتفظ بالكشوف والمدفوعات لكل مالك، وهو أمر مفيد عند إدارة وحدات مرخصة لعدة ملاك.
+- **الموظفون والأدوار:** تحكّم فيما يمكن لكل عضو في الفريق رؤيته وتعديله.
 
-من خلال دمج هذه الوظائف الأساسية، تمكّن Accez.Cloud مديري العقارات من التركيز على النمو والتميز التشغيلي، بثقة في امتثالهم.
+بجمع هذه الوظائف معًا، يتيح لك Accez.Cloud التركيز على الضيوف والنمو، بينما تبقى إجراءات الترخيص على منصة الوزارة.
 
-## أسئلة متكررة
+## الأسئلة الشائعة
 
 ### كيف أحصل على ترخيص تأجير قصير الأجل في السعودية؟
 
-للحصول على ترخيص تأجير قصير الأجل في المملكة العربية السعودية، تحتاج عادةً إلى الحصول على تصريح بلدي من السلطة المحلية التي يقع فيها العقار. غالبًا ما يتضمن ذلك التسجيل على منصات مثل بلدي والتأكد من أن عقارك يلبي معايير السلامة والتشغيل المحددة.
+تُرخَّص الإيجارات قصيرة الأجل من وزارة السياحة. وتسجّل العقار بوصفه مرفق ضيافة سياحية خاصًا عبر بوابة التراخيص الإلكترونية للوزارة وتدفع رسومًا سنوية. وفي العلا، تتولى الهيئة الملكية لمحافظة العلا التسجيل. راجع بوابة الوزارة لمعرفة الشروط والرسوم الحالية.
 
-### ما هي المستندات المطلوبة لتصريح STR؟
+### ما المستندات المطلوبة لتصريح الإيجار قصير الأجل؟
 
-عادةً ما تشمل المستندات المطلوبة إثبات ملكية العقار، وتحديد هوية مقدم الطلب، وتقارير فحص العقار (مثل السلامة من الحرائق)، ونموذج طلب مكتمل. قد تختلف المتطلبات المحددة حسب البلدية، لذا يُنصح بالتأكيد المباشر.
+تذكر إرشادات Airbnb للمضيفين في السعودية صك الملكية أو عقد الإيجار ضمن متطلبات التسجيل، وستحتاج إلى بيانات هويتك الوطنية. وقد تتغير المتطلبات، لذا تأكد من القائمة الكاملة على بوابة وزارة السياحة قبل التقديم.
 
 ### هل التسجيل في إيجار مطلوب للإيجارات قصيرة الأجل؟
 
-بينما إيجار مخصص في المقام الأول للإيجارات طويلة الأجل، فإن الامتثال لمبادئه وغالبًا ما يكون التسجيل المباشر أو الإقرار على المنصات الحكومية ذات الصلة شرطًا أساسيًا أو وثيقة داعمة لترخيص الإيجار قصير الأجل في المملكة العربية السعودية.
+منصة إيجار مخصصة لتسجيل عقود الإيجار، وليس إقامات الضيوف، ويصدر ترخيص الإيجار قصير الأجل من وزارة السياحة. وإذا كنت تشغّل وحدة تستأجرها من مالكها، فيجب تسجيل ذلك العقد في منصة إيجار.
 
-### هل يمكنني تشغيل إيجار قصير الأجل بدون ترخيص؟
+### هل يمكنني تشغيل إيجار قصير الأجل دون ترخيص؟
 
-يعد تشغيل إيجار قصير الأجل بدون الترخيص اللازم غير قانوني في المملكة العربية السعودية ويمكن أن يؤدي إلى غرامات كبيرة، وإغلاق مؤقت أو دائم للإيجار، والإضرار بسمعتك كمشغل.
+لا. يجب على منصات الحجز حذف الإعلانات غير المرخصة، وقد يؤدي التشغيل دون ترخيص إلى غرامات تصل إلى مليون ريال، أو إغلاق المرفق، أو كليهما.
 
-## نقاط رئيسية
+## أبرز النقاط
 
--   يشهد سوق الإيجارات قصيرة الأجل في المملكة العربية السعودية نموًا سريعًا، مدعومًا برؤية 2030.
--   يعد الحصول على تصريح STR الصحيح أمرًا بالغ الأهمية للتشغيل القانوني وتجنب العقوبات.
--   تشمل السلطات الرئيسية البلديات المحلية وربما منصات مثل بلدي وإيجار.
--   تعد الوثائق الشاملة، بما في ذلك تقارير سلامة العقارات، ضرورية للطلبات.
--   الامتثال الرقمي مع منصات مثل إيجار مهم بشكل متزايد للترخيص.
--   يعد فهم متطلبات البلدية المحددة أمرًا حيويًا نظرًا للاختلافات البلدية المحتملة.
--   يمكن للبحث الاستباقي والمشاورات المبكرة مع السلطات منع الأخطاء الشائعة.
--   يمكن لمنصات عمليات العقارات المبسطة الامتثال والتوثيق.
+-   تُرخَّص الإيجارات قصيرة الأجل في السعودية من وزارة السياحة بوصفها مرافق ضيافة سياحية خاصة.
+-   منذ 1 يناير 2025، يجب على منصات الحجز حذف الإعلانات التي لا تحمل ترخيصًا ساريًا.
+-   قد يؤدي التشغيل دون ترخيص إلى غرامات تصل إلى مليون ريال وإغلاق المرفق.
+-   يتطلب التسجيل مستندات مثل صك الملكية أو عقد الإيجار، مع رسوم سنوية.
+-   تتطلب إدارة أكثر من 8 وحدات شركة مرخصة أو التعاقد مع مزود مرخص، وفق إرشادات Airbnb للمضيفين.
+-   منصة إيجار مخصصة لعقود الإيجار، وليست مسار ترخيص الإيجار قصير الأجل.
+-   تحقق من المتطلبات الحالية لدى الوزارة قبل التقديم أو التجديد، لأن القواعد والرسوم تتغير.
 
-*هذه المقالة هي معلومات عامة لمشغلي العقارات وليست نصيحة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع متخصص مؤهل.*
+*هذا المقال معلومات عامة لمشغلي العقارات وليس استشارة قانونية أو ضريبية أو مالية. تحقق من التفاصيل مع مختص مؤهل.*
 
-هل أنت مستعد لتبسيط عمليات العقارات السعودية الخاصة بك وضمان الامتثال للترخيص؟ [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+هل أنت مستعد لتبسيط عمليات عقاراتك في السعودية؟ [تفضل بزيارة portal.accez.cloud](https://portal.accez.cloud)

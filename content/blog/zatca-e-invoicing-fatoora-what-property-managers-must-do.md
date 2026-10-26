@@ -1,13 +1,13 @@
 ---
 title: "ZATCA E-Invoicing (Fatoora) Compliance for Saudi Property Managers"
-titleAr: "الامتثال للفواتير الإلكترونية ZATCA (فاتورة) لمديري العقارات في السعودية"
-metaTitle: "ZATCA E-Invoicing Compliance for Saudi Property Managers"
-metaTitleAr: "امتثال مديري العقارات السعودي للفواتير الإلكترونية ZATCA"
-metaDescription: "Understand ZATCA e-invoicing (Fatoora) requirements for Saudi property managers. Learn how to ensure compliance and avoid penalties with practical steps."
-metaDescriptionAr: "تعرف على متطلبات الفواتير الإلكترونية ZATCA (فاتورة) لمديري العقارات في السعودية. اكتشف كيفية ضمان الامتثال وتجنب العقوبات بخطوات عملية."
+titleAr: "الامتثال للفوترة الإلكترونية (فاتورة) لمديري العقارات في السعودية"
+metaTitle: "ZATCA E-Invoicing (Fatoora): A Guide for Property Managers"
+metaTitleAr: "الفوترة الإلكترونية (فاتورة): دليل مديري العقارات"
+metaDescription: "What ZATCA e-invoicing (Fatoora) means for Saudi property managers: the two phases, clearance and reporting, VAT on leases, and how to prepare your team."
+metaDescriptionAr: "ما تعنيه الفوترة الإلكترونية (فاتورة) لمديري العقارات في السعودية: مرحلتا التطبيق، واعتماد الفواتير والإبلاغ عنها، وضريبة الإيجارات، وكيف تجهز فريقك."
 primaryKeyword: "zatca e-invoicing property manager"
-excerpt: "Navigating ZATCA's e-invoicing regulations is crucial for property managers in Saudi Arabia. This guide outlines essential steps to ensure full compliance with Fatoora requirements and maintain operational integrity."
-excerptAr: "يعد التنقل في لوائح الفواتير الإلكترونية ZATCA أمراً بالغ الأهمية لمديري العقارات في المملكة العربية السعودية. يوضح هذا الدليل الخطوات الأساسية لضمان الامتثال الكامل لمتطلبات الفوترة والحفاظ على سلامة العمليات."
+excerpt: "Navigating ZATCA's e-invoicing regulations is crucial for property managers in Saudi Arabia. This guide outlines the two Fatoora phases, which of your charges are affected, and the practical steps to prepare your team and systems."
+excerptAr: "فهم لوائح الفوترة الإلكترونية الصادرة عن هيئة الزكاة والضريبة والجمارك أمر بالغ الأهمية لمديري العقارات في المملكة العربية السعودية. يشرح هذا الدليل مرحلتي نظام فاتورة، وأي الرسوم تتأثر به، والخطوات العملية لتجهيز فريقك وأنظمتك."
 date: "2026-09-04"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -19,85 +19,89 @@ tags: ["zatca", "e-invoicing", "fatoora", "saudi arabia", "property management"]
 tagsAr: ["فاتورة", "الفواتير الإلكترونية", "ZATCA", "السعودية", "إدارة العقارات"]
 ---
 
-> ZATCA's e-invoicing (Fatoora) mandates require Saudi property managers to digitize their invoicing processes, ensuring all transactions are compliant with regulations. Key actions include understanding the phased implementation timeline, ensuring invoice data accuracy, integrating compliant systems, and preparing for Generation and Transmission phases. Non-compliance can lead to significant penalties, highlighting the urgency for proactive adoption.
+> ZATCA's e-invoicing programme, known as Fatoora, requires taxpayers in Saudi Arabia to issue tax invoices and notes through compliant electronic solutions. Phase 1 (generation) has applied since 4 December 2021, and Phase 2 (integration) has been rolling out in waves since 1 January 2023. For property managers, the practical work is knowing which of your charges need tax invoices, keeping lease and billing data accurate, and choosing an e-invoicing solution that meets ZATCA's requirements.
 
-Property managers in Saudi Arabia are facing a transformative shift in how they handle financial transactions, driven by the Saudi Tax Authority (ZATCA) e-invoicing regulations, also known as Fatoora. The pressure to adopt digital invoicing isn't just about modernization; it's about navigating a complex legal landscape that demands accuracy, transparency, and timely reporting for every rental agreement, service charge, and property sale.
+Property managers in Saudi Arabia are facing a real shift in how they handle invoicing, driven by the e-invoicing regulations of the Zakat, Tax and Customs Authority (ZATCA), also known as Fatoora. The pressure to adopt digital invoicing isn't just about modernization; it's about meeting rules that demand accuracy, structured data and, in Phase 2, direct exchange with ZATCA's systems for the management fees, commercial rents and service charges you bill.
 
-The transition to e-invoicing presents a significant operational challenge for property management firms. Balancing day-to-day property operations (from tenant communications and maintenance requests to owner payouts and marketing efforts) with the intricate technical and regulatory demands of Fatoora can feel overwhelming. Missing a crucial detail or failing to implement the correct system can lead to administrative burdens and, more critically, hefty fines, impacting both financial health and reputation.
+The transition to e-invoicing presents a significant operational challenge for property management firms. Balancing day-to-day property operations (from tenant communications and maintenance requests to owner payouts and marketing efforts) with the technical and regulatory demands of Fatoora can feel overwhelming. Missing a crucial detail or choosing the wrong system can create administrative burdens and expose the business to penalties, affecting both its finances and its reputation.
 
 ## Understanding the ZATCA E-Invoicing (Fatoora) Framework
 
-The Fatoora project, mandated by ZATCA, aims to enhance tax compliance and transparency across the Kingdom. For property managers, this means a complete overhaul of their invoicing practices. The regulations are being rolled out in phases, with distinct requirements for each stage. Initially, businesses were required to implement the "Generation" phase, focusing on generating compliant e-invoices. The subsequent "Transmission" phase, which began in January 2024 for applicable businesses, requires these e-invoices to be submitted to ZATCA for validation and archiving. This means invoices must be structured in a specific XML format and include a unique QR code.
+The Fatoora project, mandated by ZATCA, converts the issuing of paper invoices and notes into an electronic process. ZATCA states that a paper invoice converted into electronic form by copying or scanning is not an e-invoice. The rules are being applied in [two phases, set out on ZATCA's roll-out page](https://zatca.gov.sa/en/E-Invoicing/Introduction/Pages/Roll-out-phases.aspx):
 
-The core of the Fatoora regulation lies in its structured data requirements. Every invoice, whether for rent, maintenance services, or property sales, must contain specific mandatory fields. These include details about the buyer and seller, the nature of the goods or services provided, quantities, prices, taxes, and unique identification numbers. The General Authority of Zakat and Tax (GAZT) has published extensive guidelines and technical specifications detailing these requirements. Failure to adhere to these specifications can result in invoices being deemed non-compliant. For instance, a report by PwC highlighted that non-compliant invoices can lead to penalties ranging from 5% to 25% of the invoice value. This underscores the critical need for robust systems that can automatically capture and format this data accurately.
+- **Phase 1 (Generation)**, enforceable since 4 December 2021 for all taxpayers except non-resident taxpayers: tax invoices and notes must be generated and stored through electronic solutions that meet the Phase 1 requirements.
+- **Phase 2 (Integration)**, enforceable from 1 January 2023 in waves: e-invoicing solutions must meet additional technical requirements and integrate with ZATCA's systems. ZATCA notifies taxpayers of their wave at least six months in advance.
+
+According to [ZATCA's Detailed Guidelines for E-Invoicing](https://zatca.gov.sa/en/E-Invoicing/Introduction/Guidelines/Documents/E-Invoicing_Detailed__Guideline.pdf), once a business is integrated, each standard tax invoice (usually business to business) must be cleared by the Fatoora platform before it is shared with the buyer, while simplified tax invoices (usually business to consumer) must be reported to the platform in XML format within 24 hours of being issued.
+
+The core of the Fatoora regulation lies in its structured data requirements. Every tax invoice must contain specific mandatory fields, including details about the buyer and seller, the nature of the goods or services, quantities, prices, taxes and unique identification numbers. ZATCA has published guidelines and technical specifications detailing these requirements, and invoices that do not follow them are not compliant. ZATCA also has the power to levy penalties for non-compliance, which is why a robust system that captures and formats this data accurately matters.
 
 ### Data Accuracy and Integrity
 
-One of the primary challenges property managers face is ensuring the accuracy of the data being fed into their invoicing systems. Property management involves a high volume of transactions, often with varying details for each tenant or property. Manual data entry is prone to human error, which can lead to incorrect invoice generation, tax miscalculations, and ultimately, non-compliance. The Fatoora system is designed to catch these discrepancies, making it imperative for businesses to implement processes that minimize manual intervention and maximize data validation. This includes verifying tenant information, property details, rental amounts, service charges, and applicable taxes before an invoice is generated. The **integrity of the data** is paramount, as ZATCA’s system will cross-reference information to ensure accuracy.
+One of the primary challenges property managers face is ensuring the accuracy of the data being fed into their invoicing systems. Property management involves a high volume of transactions, often with varying details for each tenant or property. Manual data entry is prone to human error, which can lead to incorrect invoices, tax miscalculations and, ultimately, non-compliance. In Phase 2 the Fatoora platform validates the invoices it receives, so errors surface quickly, and it is better to catch them before an invoice is generated. This includes verifying tenant information, property details, rental amounts, service charges and applicable taxes. The **integrity of the data** is paramount.
 
 ### System Integration and Technical Readiness
 
-The Fatoora requirements necessitate a move away from traditional, paper-based, or simple digital invoicing methods towards integrated e-invoicing solutions. Property management firms need systems that can not only generate compliant e-invoices but also integrate seamlessly with their existing accounting and operational software. This requires an understanding of the technical specifications outlined by ZATCA, including the XML schema for invoices and the API protocols for transmitting data. For businesses that haven't digitized their operations significantly, this can represent a substantial technical hurdle, potentially requiring investment in new software or significant upgrades to existing ones. The **technical readiness** of a property management firm's IT infrastructure is a key determinant of its ability to comply efficiently.
+The Fatoora requirements mean moving away from paper or simple digital invoicing methods towards integrated e-invoicing solutions. Property management firms need systems that can generate compliant e-invoices and also work smoothly with their existing accounting and operational software. This requires an understanding of the technical specifications published by ZATCA, including the XML format for invoices and the APIs used to exchange data with the Fatoora platform. For businesses that haven't digitized their operations, this can be a substantial technical hurdle, potentially requiring new software or significant upgrades. The **technical readiness** of a firm's systems is a key factor in how efficiently it can comply. If you still run billing from spreadsheets, our guide to [migrating from spreadsheets and legacy software without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losi/) covers the groundwork.
 
 ## Strategies for Fatoora Compliance
 
-Successfully navigating the Fatoora e-invoicing mandate requires a proactive and strategic approach. It’s not merely about adopting new software; it’s about rethinking operational workflows and embracing digital transformation. High-performing property managers are those who view this as an opportunity to streamline operations, enhance efficiency, and build stronger relationships with tenants and owners through transparent and accurate financial dealings.
+Successfully navigating the Fatoora e-invoicing mandate requires a proactive approach. It's not merely about adopting new software; it's about rethinking operational workflows. Property managers can treat it as an opportunity to streamline operations and build stronger relationships with tenants and owners through transparent and accurate financial dealings.
 
-### Embracing Digital Transformation
+### Keeping Invoice Data in One Place
 
-The most successful property managers are those who have already embarked on a digital transformation journey. They understand that technology is not just a tool but a strategic asset. For Fatoora compliance, this means implementing a comprehensive property operations platform that integrates all aspects of their business. Such platforms can automate invoice generation based on lease agreements, track payments, manage maintenance requests, and provide owners with transparent financial statements. This holistic approach ensures that the data required for e-invoicing is readily available and accurate, reducing the manual effort and the risk of errors. A report by KPMG indicates that businesses that embrace digital transformation are better positioned to adapt to regulatory changes and gain a competitive edge.
+Property managers who already run leases, payments and owner statements in one system have an easier path. For Fatoora compliance, the data that feeds your invoices (lease terms, rent amounts, service charges and fees) should live in one reliable place rather than in scattered files. That reduces manual effort and the risk of errors when invoices are generated. Keeping owner funds and your own fees clearly separated, as described in our article on [trust accounting for property managers](/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/), also makes it clearer which amounts you are invoicing in your own name.
 
-### Investing in Compliant Software Solutions
+### Choosing a Compliant E-Invoicing Solution
 
-The cornerstone of Fatoora compliance for property managers is selecting and implementing a certified e-invoicing solution. These solutions are designed to meet ZATCA's technical specifications, ensuring that invoices are generated in the correct format, include all mandatory data fields, and can be seamlessly transmitted to ZATCA. It's crucial to choose a software provider that is knowledgeable about the Saudi market and the specific needs of the property and hospitality sectors. The solution should not only handle e-invoicing but also offer functionalities that support broader property management operations, such as lease management, payment processing, and resident communication. This integration is key to unlocking operational efficiencies beyond mere compliance.
+The cornerstone of Fatoora compliance is an e-invoicing solution that meets ZATCA's technical specifications, so that invoices are generated in the correct format, include all mandatory fields and, in Phase 2, are exchanged with ZATCA. On its [e-invoicing page](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx), ZATCA publishes an indicative list of solution providers that have passed its qualification process, and it states that taxpayers may use any provider that complies with the requirements, listed or not. Choose a provider that understands the Saudi market, and check how it will receive the lease and billing data from the systems you use to run your properties.
 
 ### Training and Internal Readiness
 
-Beyond software, human readiness is equally important. Property management teams need to be trained on the new e-invoicing procedures and the functionalities of the implemented software. This includes understanding the importance of accurate data input, the invoice generation process, and how to handle queries related to e-invoices. Establishing clear internal guidelines and responsibilities for e-invoicing processes ensures consistency and minimizes errors. A well-trained team can proactively identify and resolve issues, contributing to a smooth compliance experience and preventing potential penalties. **Continuous training** is vital as regulations may evolve.
+Beyond software, human readiness is equally important. Property management teams need to be trained on the new e-invoicing procedures and the software they will use. This includes understanding the importance of accurate data input, the invoice generation process and how to handle queries related to e-invoices. Clear internal guidelines and responsibilities keep the process consistent and minimize errors. A well-trained team can identify and resolve issues early, preventing potential penalties. **Continuous training** is vital, as regulations may evolve.
 
-## Fatoora Compliance in the Saudi Arabian Context
+## Fatoora Compliance in the Saudi Real Estate Context
 
-The Kingdom of Saudi Arabia is undergoing rapid economic and digital transformation, with initiatives like Vision 2030 driving innovation across all sectors, including real estate and hospitality. ZATCA's e-invoicing mandate is a critical component of this digital push, aiming to modernize tax administration and create a more transparent business environment. For property managers, this aligns with the broader goal of enhancing efficiency and customer experience.
+Real estate has its own tax rules, and they decide which of your charges carry VAT. According to [ZATCA's simplified guide to the real estate transactions tax](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified%20guide%20to%20the%20real%20estate%20transaction%20tax.pdf), leasing a residential property is exempt from VAT, leasing a commercial property is subject to VAT at 15%, and the sale of real estate is exempt from VAT and subject instead to the real estate transactions tax at 5%. Your own management fees and other services you sell are separate supplies that must be assessed on their own. Because the rules differ by type of charge, ask your tax adviser exactly which of your documents must be issued as e-invoices. Our article on [VAT and property management](/blog/vat-and-property-management-keeping-your-books-clean-and-compliant/) walks through how these categories affect your books.
 
-The adoption of digital payment solutions is also on the rise in Saudi Arabia, with platforms like Mada and SADAD widely used for various transactions. E-invoicing integrates seamlessly with these payment systems, allowing for a more streamlined financial process. Furthermore, the high adoption rate of platforms like WhatsApp in Saudi Arabia, estimated at over 77%, highlights the population's readiness for digital communication and transactions, which property managers can leverage for tenant engagement and service delivery. Ensuring Fatoora compliance also supports broader regulatory frameworks like Ejar, which governs rental agreements and aims to standardize the rental market. By adopting compliant e-invoicing, property managers are better positioned to meet **Ejar compliance** requirements and contribute to the Kingdom's Vision 2030 goals of a thriving, digitized economy. According to GASTAT, the Kingdom's General Authority for Statistics, digital transformation is a key driver for economic growth and efficiency.
+E-invoicing is also separate from Ejar, the national platform for residential lease contracts. Registering a lease on Ejar does not replace a tax invoice where one is required, and an e-invoice does not register a lease. Treat them as two obligations and keep the data for both consistent.
 
-## How Accez.Cloud Helps You Achieve Fatoora Compliance
+## Where Accez Fits
 
-Accez.cloud is an all-in-one property operations platform designed for Saudi Arabia, offering comprehensive solutions to meet the challenges of Fatoora e-invoicing and streamline your property management operations.
+The e-invoices themselves must come from a solution that meets ZATCA's requirements. Accez's role is the operational record behind your billing, so the figures you invoice are accurate and easy to trace. Within [Accez's billing and payments tools for property managers](/solutions/property-managers/#billing), you can:
 
-- **Reservations and Channel Sync:** Automatically capture booking details from Airbnb, Booking.com and Expedia, ensuring accurate data for invoice generation.
-- **Rental and Sale Properties Management:** Centralize all property-related transactions, making it easy to generate compliant invoices for rental income and property sales.
-- **Owner Management, Statements, and Payouts:** Generate transparent financial statements for owners, directly feeding into compliant invoicing processes.
-- **Contracts and E-signing:** Digitize lease agreements and contracts, ensuring all necessary data for e-invoicing is captured at the source.
-- **Work Orders and Maintenance:** Track maintenance services and associated costs, enabling accurate billing and e-invoice creation for service charges.
-- **Resident Communications:** Streamline communication with residents for billing inquiries, ensuring prompt and accurate responses.
+- **Track reservations from Airbnb, Booking.com and Expedia:** each stay with its timeline, payment and accepted policies.
+- **Manage leases and rent payments:** long-term contracts with a clear view of what has been paid and what is due.
+- **Follow billing and payments:** revenue, invoices and refunds in one place.
+- **Prepare owner statements and payouts:** statements and payouts per owner.
+- **Track work orders:** maintenance from request to done, so service charges can be traced to the work behind them.
+- **Control access with staff roles:** decide who can view and change financial records.
 
-By integrating these core functions, Accez.cloud empowers property managers to achieve seamless Fatoora compliance while enhancing operational efficiency and driving growth.
+*Accez is not presented here as a ZATCA e-invoicing solution. Confirm your e-invoicing set-up with your tax adviser and a solution that meets ZATCA's requirements.*
 
 ## Frequently Asked Questions
 
 ### What is ZATCA e-invoicing (Fatoora)?
-ZATCA e-invoicing, known as Fatoora, is a regulatory requirement in Saudi Arabia mandating the digitization of all invoices. It ensures that invoices are generated, transmitted, and stored in an electronic format compliant with the Saudi Tax Authority's specifications, enhancing tax transparency and accuracy.
+ZATCA e-invoicing, known as Fatoora, is a regulatory requirement in Saudi Arabia that converts paper tax invoices and notes into structured electronic ones, generated and stored through compliant electronic solutions. In Phase 2, those solutions are also integrated with ZATCA's Fatoora platform.
 
 ### When does Fatoora e-invoicing apply to property managers?
-Fatoora e-invoicing applies to all businesses, including property managers, based on their VAT registration threshold and the phased implementation timeline set by ZATCA. Property managers must adhere to the Generation and Transmission phases as they become applicable to their business size.
+Phase 1 has applied since 4 December 2021 to all taxpayers except non-resident taxpayers. Phase 2 is applied in waves that began on 1 January 2023, and ZATCA notifies each business of its wave at least six months in advance. Check with your adviser which of your charges require tax invoices, since residential leases are exempt from VAT while commercial leases are taxed at 15%.
 
 ### How can I ensure my invoices are Fatoora compliant?
-To ensure Fatoora compliance, you must use e-invoicing software that generates invoices in the required XML format, includes all mandatory data fields, and supports the transmission of these invoices to ZATCA for validation. Accurate data input and system integration are crucial.
+Use an e-invoicing solution that meets ZATCA's specifications: it should generate invoices with all mandatory fields and, once your Phase 2 wave applies, send standard tax invoices for clearance and report simplified tax invoices within 24 hours. Accurate lease and billing data are just as important as the software.
 
 ### What are the penalties for non-compliance with Fatoora e-invoicing?
-Penalties for non-compliance with Fatoora e-invoicing can be significant, ranging from 5% to 25% of the invoice value, in addition to potential administrative fines. ZATCA has outlined specific penalty structures for various violations.
+ZATCA has the power to levy penalties for non-compliance with its e-invoicing rules. The amounts depend on the type of violation and whether it is repeated, so check ZATCA's current published rules or ask your tax adviser rather than relying on a single figure.
 
 ## Key Takeaways
 
-- ZATCA's e-invoicing (Fatoora) is a mandatory regulation for businesses in Saudi Arabia.
-- Property managers must transition from traditional invoicing to compliant digital e-invoices.
-- The Fatoora project involves distinct "Generation" and "Transmission" phases with specific technical requirements.
-- Data accuracy, system integration, and technical readiness are crucial for compliance.
-- Selecting a ZATCA-certified e-invoicing solution is essential for property managers.
+- ZATCA's e-invoicing (Fatoora) is a mandatory regulation for taxpayers in Saudi Arabia.
+- Phase 1 (generation) has applied since 4 December 2021; Phase 2 (integration) has rolled out in waves since 1 January 2023.
+- In Phase 2, standard tax invoices are cleared by ZATCA before reaching the buyer, and simplified tax invoices are reported within 24 hours.
+- Residential leases are exempt from VAT, commercial leases carry 15%, and property sales pay the 5% real estate transactions tax instead of VAT.
+- Data accuracy, system integration and technical readiness are crucial for compliance.
+- ZATCA publishes an indicative list of qualified solution providers, but any provider that meets the requirements is acceptable.
 - Training staff and establishing clear internal procedures are vital for smooth adoption.
-- Fatoora compliance is part of Saudi Arabia's broader digital transformation under Vision 2030.
-- Non-compliance can result in substantial financial penalties.
 
 *This article is general information for property operators and is not legal, tax, or financial advice. Confirm specifics with a qualified professional.*
 
@@ -105,107 +109,90 @@ Navigate ZATCA e-invoicing with confidence and efficiency at [Visit portal.accez
 
 <!-- AR -->
 
----
-title: "الامتثال للفواتير الإلكترونية ZATCA (فاتورة) لمديري العقارات في السعودية"
-titleAr: "الامتثال للفواتير الإلكترونية ZATCA (فاتورة) لمديري العقارات في السعودية"
-metaTitle: "امتثال مديري العقارات السعودي للفواتير الإلكترونية ZATCA"
-metaTitleAr: "امتثال مديري العقارات السعودي للفواتير الإلكترونية ZATCA"
-metaDescription: "تعرف على متطلبات الفواتير الإلكترونية ZATCA (فاتورة) لمديري العقارات في السعودية. اكتشف كيفية ضمان الامتثال وتجنب العقوبات بخطوات عملية."
-metaDescriptionAr: "تعرف على متطلبات الفواتير الإلكترونية ZATCA (فاتورة) لمديري العقارات في السعودية. اكتشف كيفية ضمان الامتثال وتجنب العقوبات بخطوات عملية."
-primaryKeyword: "الفواتير الإلكترونية ZATCA لمديري العقارات"
-excerpt: "يعد التنقل في لوائح الفواتير الإلكترونية ZATCA أمراً بالغ الأهمية لمديري العقارات في المملكة العربية السعودية. يوضح هذا الدليل الخطوات الأساسية لضمان الامتثال الكامل لمتطلبات الفوترة والحفاظ على سلامة العمليات."
-excerptAr: "يعد التنقل في لوائح الفواتير الإلكترونية ZATCA أمراً بالغ الأهمية لمديري العقارات في المملكة العربية السعودية. يوضح هذا الدليل الخطوات الأساسية لضمان الامتثال الكامل لمتطلبات الفوترة والحفاظ على سلامة العمليات."
-date: "2026-09-04"
-author: "فريق أكسيز"
-authorAr: "فريق أكسيز"
-coverImage: "/images/blog/pm-default.jpg"
-coverImageAlt: "مدير عقارات يراجع المستندات باستخدام جهاز لوحي رقمي."
-category: "رؤى الصناعة"
-categoryAr: "رؤى الصناعة"
-tags: ["فاتورة", "الفواتير الإلكترونية", "ZATCA", "السعودية", "إدارة العقارات"]
-tagsAr: ["فاتورة", "الفواتير الإلكترونية", "ZATCA", "السعودية", "إدارة العقارات"]
----
+> يُلزم برنامج الفوترة الإلكترونية لهيئة الزكاة والضريبة والجمارك، المعروف باسم "فاتورة"، المكلفين في المملكة العربية السعودية بإصدار الفواتير الضريبية والإشعارات عبر حلول إلكترونية متوافقة. تُطبَّق المرحلة الأولى (مرحلة الإصدار) منذ 4 ديسمبر 2021، وتُطبَّق المرحلة الثانية (مرحلة الربط والتكامل) على دفعات منذ 1 يناير 2023. وبالنسبة لمديري العقارات، يتمثل العمل الفعلي في معرفة أي الرسوم تحتاج إلى فواتير ضريبية، والحفاظ على دقة بيانات العقود والفوترة، واختيار حل فوترة إلكترونية يستوفي متطلبات الهيئة.
 
-> تتطلب الفواتير الإلكترونية ZATCA (فاتورة) من مديري العقارات السعوديين رقمنة عمليات الفوترة الخاصة بهم، مما يضمن امتثال جميع المعاملات للوائح. تشمل الإجراءات الرئيسية فهم الجدول الزمني للتنفيذ المرحلي، وضمان دقة بيانات الفواتير، ودمج الأنظمة المتوافقة، والاستعداد لمرحلتي الإنشاء والإرسال. يمكن أن يؤدي عدم الامتثال إلى عقوبات كبيرة، مما يؤكد الحاجة الملحة للتبني الاستباقي.
+يواجه مديرو العقارات في المملكة العربية السعودية تحولاً حقيقياً في طريقة تعاملهم مع الفوترة، مدفوعاً بلوائح الفوترة الإلكترونية لهيئة الزكاة والضريبة والجمارك، المعروفة باسم "فاتورة". ولا يقتصر الدافع إلى تبني الفوترة الرقمية على التحديث فحسب، بل يتعلق بالالتزام بقواعد تتطلب الدقة والبيانات المهيكلة، وفي المرحلة الثانية تبادلاً مباشراً مع أنظمة الهيئة، وذلك لرسوم الإدارة والإيجارات التجارية ورسوم الخدمات التي تصدر بها فواتير.
 
-يواجه مديرو العقارات في المملكة العربية السعودية تحولاً جذرياً في كيفية تعاملهم مع المعاملات المالية، مدفوعين بلوائح الفواتير الإلكترونية للهيئة العامة للزكاة والضريبة والجمارك (GAZT)، والمعروفة أيضاً باسم "فاتورة". لا يقتصر الضغط لتبني الفوترة الرقمية على التحديث فحسب؛ بل يتعلق بالتنقل في مشهد قانوني معقد يتطلب الدقة والشفافية والإبلاغ في الوقت المناسب لكل عقد إيجار، ورسوم خدمة، وبيع عقار.
+يمثل الانتقال إلى الفوترة الإلكترونية تحدياً تشغيلياً كبيراً لشركات إدارة العقارات. فقد تبدو الموازنة بين العمليات اليومية (من التواصل مع المستأجرين وطلبات الصيانة إلى مدفوعات الملاك وجهود التسويق) والمتطلبات التقنية والتنظيمية لنظام "فاتورة" أمراً مرهقاً. وقد يؤدي إغفال تفصيل مهم أو اختيار نظام غير مناسب إلى أعباء إدارية وتعريض المنشأة للغرامات، مما يؤثر في وضعها المالي وسمعتها معاً.
 
-يمثل الانتقال إلى الفواتير الإلكترونية تحدياً تشغيلياً كبيراً لشركات إدارة العقارات. يمكن أن يكون الموازنة بين عمليات إدارة العقارات اليومية (بدءاً من اتصالات المستأجرين وطلبات الصيانة وصولاً إلى مدفوعات الملاك وجهود التسويق) مع المتطلبات التقنية والتنظيمية المعقدة لنظام "فاتورة" أمراً مربكاً. قد يؤدي تفويت تفصيل حاسم أو الفشل في تنفيذ النظام الصحيح إلى أعباء إدارية، والأهم من ذلك، غرامات باهظة، مما يؤثر على الصحة المالية والسمعة على حد سواء.
+## فهم إطار الفوترة الإلكترونية (فاتورة)
 
-## فهم إطار عمل الفواتير الإلكترونية ZATCA (فاتورة)
+يهدف مشروع "فاتورة" الذي تفرضه هيئة الزكاة والضريبة والجمارك إلى تحويل إصدار الفواتير والإشعارات الورقية إلى عملية إلكترونية. وتوضح الهيئة أن الفاتورة الورقية التي تُحوَّل إلى صيغة إلكترونية بالنسخ أو المسح الضوئي لا تُعد فاتورة إلكترونية. وتُطبَّق القواعد على [مرحلتين موضحتين في صفحة مراحل التطبيق لدى الهيئة](https://zatca.gov.sa/en/E-Invoicing/Introduction/Pages/Roll-out-phases.aspx):
 
-يهدف مشروع "فاتورة" الذي فرضته الهيئة العامة للزكاة والضريبة والجمارك (GAZT) إلى تعزيز الامتثال الضريبي والشفافية في جميع أنحاء المملكة. بالنسبة لمديري العقارات، يعني هذا تغييراً شاملاً في ممارسات الفوترة الخاصة بهم. يتم طرح اللوائح على مراحل، مع متطلبات متميزة لكل مرحلة. في البداية، طُلب من الشركات تطبيق مرحلة "الإنشاء"، مع التركيز على إنشاء فواتير إلكترونية متوافقة. تتطلب مرحلة "الإرسال" اللاحقة، التي بدأت في يناير 2024 للشركات المعمول بها، إرسال هذه الفواتير الإلكترونية إلى الهيئة العامة للزكاة والضريبة والجمارك للتحقق منها وأرشفتها. هذا يعني أنه يجب هيكلة الفواتير بتنسيق XML محدد وتضمين رمز QR فريد.
+- **المرحلة الأولى (الإصدار)**، وهي نافذة منذ 4 ديسمبر 2021 على جميع المكلفين باستثناء غير المقيمين: يجب إصدار الفواتير الضريبية والإشعارات وحفظها عبر حلول إلكترونية تستوفي متطلبات المرحلة الأولى.
+- **المرحلة الثانية (الربط والتكامل)**، وهي نافذة اعتباراً من 1 يناير 2023 على دفعات: يجب أن تستوفي حلول الفوترة الإلكترونية متطلبات تقنية إضافية وأن ترتبط بأنظمة الهيئة. وتُبلغ الهيئة المكلفين بالدفعة التي ينتمون إليها قبل ستة أشهر على الأقل.
 
-يكمن جوهر لائحة "فاتورة" في متطلبات البيانات المهيكلة الخاصة بها. يجب أن تحتوي كل فاتورة، سواء كانت للإيجار أو خدمات الصيانة أو مبيعات العقارات، على حقول إلزامية محددة. تشمل هذه الحقول تفاصيل حول المشتري والبائع، وطبيعة السلع أو الخدمات المقدمة، والكميات، والأسعار، والضرائب، وأرقام التعريف الفريدة. نشرت الهيئة العامة للزكاة والضريبة والجمارك (GAZT) إرشادات ومواصفات فنية شاملة توضح هذه المتطلبات. يمكن أن يؤدي الفشل في الالتزام بهذه المواصفات إلى اعتبار الفواتير غير متوافقة. على سبيل المثال، أبرز تقرير صادر عن PwC أن الفواتير غير المتوافقة يمكن أن تؤدي إلى عقوبات تتراوح بين 5% إلى 25% من قيمة الفاتورة. هذا يؤكد الحاجة الملحة لأنظمة قوية يمكنها التقاط هذه البيانات وتنسيقها تلقائياً بدقة.
+ووفقاً [للدليل التفصيلي للفوترة الإلكترونية الصادر عن الهيئة](https://zatca.gov.sa/en/E-Invoicing/Introduction/Guidelines/Documents/E-Invoicing_Detailed__Guideline.pdf)، بعد ربط المنشأة يجب اعتماد كل فاتورة ضريبية قياسية (غالباً بين المنشآت) من منصة "فاتورة" قبل مشاركتها مع المشتري، بينما يجب الإبلاغ عن الفواتير الضريبية المبسطة (غالباً للمستهلكين) إلى المنصة بصيغة XML خلال 24 ساعة من إصدارها.
+
+يكمن جوهر لائحة "فاتورة" في متطلبات البيانات المهيكلة. إذ يجب أن تتضمن كل فاتورة ضريبية حقولاً إلزامية محددة، منها بيانات البائع والمشتري، وطبيعة السلع أو الخدمات، والكميات، والأسعار، والضرائب، وأرقام التعريف الفريدة. وقد نشرت الهيئة أدلة ومواصفات فنية توضح هذه المتطلبات، والفواتير التي لا تلتزم بها لا تُعد متوافقة. كما تملك الهيئة صلاحية فرض الغرامات عند عدم الالتزام، ولهذا تبرز أهمية وجود نظام موثوق يلتقط هذه البيانات وينسقها بدقة.
 
 ### دقة البيانات وسلامتها
 
-أحد التحديات الرئيسية التي يواجهها مديرو العقارات هو ضمان دقة البيانات التي يتم إدخالها في أنظمة الفوترة الخاصة بهم. تنطوي إدارة العقارات على حجم كبير من المعاملات، وغالباً ما تكون بتفاصيل مختلفة لكل مستأجر أو عقار. الإدخال اليدوي للبيانات عرضة للأخطاء البشرية، مما قد يؤدي إلى إنشاء فواتير غير صحيحة، وحسابات ضريبية خاطئة، وفي النهاية، عدم الامتثال. تم تصميم نظام "فاتورة" لاكتشاف هذه التناقضات، مما يجعل من الضروري للشركات تطبيق عمليات تقلل من التدخل اليدوي وتزيد من التحقق من صحة البيانات. يشمل ذلك التحقق من معلومات المستأجر، وتفاصيل العقار، ومبالغ الإيجار، ورسوم الخدمة، والضرائب المطبقة قبل إنشاء الفاتورة. **سلامة البيانات** أمر بالغ الأهمية، حيث سيقوم نظام الهيئة العامة للزكاة والضريبة والجمارك (GAZT) بمقارنة المعلومات لضمان الدقة.
+من أبرز التحديات التي يواجهها مديرو العقارات ضمان دقة البيانات المدخلة في أنظمة الفوترة. فإدارة العقارات تنطوي على عدد كبير من المعاملات، وتختلف تفاصيلها غالباً من مستأجر إلى آخر ومن عقار إلى آخر. والإدخال اليدوي للبيانات عرضة للأخطاء البشرية، مما قد يؤدي إلى فواتير غير صحيحة وأخطاء في احتساب الضريبة، وفي النهاية إلى عدم الامتثال. وفي المرحلة الثانية تتحقق منصة "فاتورة" من الفواتير التي تتلقاها، فتظهر الأخطاء سريعاً، ومن الأفضل اكتشافها قبل إصدار الفاتورة. ويشمل ذلك التحقق من بيانات المستأجر، وتفاصيل العقار، ومبالغ الإيجار، ورسوم الخدمات، والضرائب المطبقة. **سلامة البيانات** أمر بالغ الأهمية.
 
-### تكامل الأنظمة والاستعداد التقني
+### تكامل الأنظمة والجاهزية التقنية
 
-تتطلب متطلبات "فاتورة" الابتعاد عن طرق الفوترة التقليدية، الورقية أو الرقمية البسيطة، نحو حلول فوترة إلكترونية متكاملة. تحتاج شركات إدارة العقارات إلى أنظمة لا يمكنها فقط إنشاء فواتير إلكترونية متوافقة، ولكن أيضاً التكامل بسلاسة مع برامجها المحاسبية والتشغيلية الحالية. يتطلب هذا فهماً للمواصفات الفنية التي وضعتها الهيئة العامة للزكاة والضريبة والجمارك (GAZT)، بما في ذلك مخطط XML للفواتير وبروتوكولات API لنقل البيانات. بالنسبة للشركات التي لم تقم برقمنة عملياتها بشكل كبير، يمكن أن يمثل هذا تحدياً تقنياً كبيراً، مما قد يتطلب الاستثمار في برامج جديدة أو ترقيات كبيرة للبرامج الحالية. **الاستعداد التقني** للبنية التحتية لتكنولوجيا المعلومات لشركة إدارة العقارات هو عامل رئيسي في قدرتها على الامتثال بكفاءة.
+تتطلب متطلبات "فاتورة" الانتقال من الفوترة الورقية أو الرقمية البسيطة إلى حلول فوترة إلكترونية متكاملة. وتحتاج شركات إدارة العقارات إلى أنظمة قادرة على إصدار فواتير إلكترونية متوافقة، وعلى العمل بسلاسة مع برامجها المحاسبية والتشغيلية الحالية. ويتطلب ذلك فهم المواصفات الفنية التي نشرتها الهيئة، ومنها صيغة XML للفواتير وواجهات البرمجة المستخدمة لتبادل البيانات مع منصة "فاتورة". وبالنسبة للمنشآت التي لم ترقمن عملياتها بعد، قد يمثل ذلك عقبة تقنية كبيرة تستلزم برامج جديدة أو تحديثات جوهرية. وتُعد **الجاهزية التقنية** لأنظمة المنشأة عاملاً رئيسياً في قدرتها على الامتثال بكفاءة. وإن كنت لا تزال تدير الفوترة عبر جداول البيانات، فإن دليلنا حول [الانتقال من جداول البيانات والبرامج القديمة دون فقدان البيانات](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losi/) يشرح الخطوات الأساسية.
 
 ## استراتيجيات الامتثال لنظام "فاتورة"
 
-يتطلب التنقل بنجاح في تفويض الفواتير الإلكترونية لنظام "فاتورة" اتباع نهج استباقي واستراتيجي. لا يتعلق الأمر بمجرد اعتماد برامج جديدة؛ بل يتعلق بإعادة التفكير في سير العمل التشغيلي واحتضان التحول الرقمي. مديرو العقارات ذوو الأداء العالي هم أولئك الذين ينظرون إلى هذا على أنه فرصة لتبسيط العمليات، وتعزيز الكفاءة، وبناء علاقات أقوى مع المستأجرين والملاك من خلال تعاملات مالية شفافة ودقيقة.
+يتطلب التعامل الناجح مع إلزامية الفوترة الإلكترونية نهجاً استباقياً. فالأمر لا يقتصر على اعتماد برنامج جديد، بل يشمل إعادة النظر في سير العمل التشغيلي. ويمكن لمديري العقارات أن يعدّوه فرصة لتبسيط العمليات وبناء علاقات أقوى مع المستأجرين والملاك من خلال تعاملات مالية شفافة ودقيقة.
 
-### تبني التحول الرقمي
+### حفظ بيانات الفواتير في مكان واحد
 
-أكثر مديري العقارات نجاحاً هم الذين بدأوا بالفعل في رحلة التحول الرقمي. إنهم يفهمون أن التكنولوجيا ليست مجرد أداة بل أصل استراتيجي. بالنسبة للامتثال لنظام "فاتورة"، يعني هذا تطبيق منصة عمليات عقارية شاملة تربط جميع جوانب أعمالهم. يمكن لمثل هذه المنصات أتمتة إنشاء الفواتير بناءً على اتفاقيات الإيجار، وتتبع المدفوعات، وإدارة طلبات الصيانة، وتزويد الملاك ببيانات مالية شفافة. يضمن هذا النهج الشامل توفر البيانات المطلوبة للفواتير الإلكترونية بدقة، مما يقلل من الجهد اليدوي وخطر الأخطاء. يشير تقرير صادر عن KPMG إلى أن الشركات التي تتبنى التحول الرقمي تكون في وضع أفضل للتكيف مع التغييرات التنظيمية واكتساب ميزة تنافسية.
+يكون الطريق أيسر لمديري العقارات الذين يديرون العقود والمدفوعات وكشوف حسابات الملاك في نظام واحد. فمن أجل الامتثال لنظام "فاتورة"، ينبغي أن تكون البيانات التي تُبنى عليها فواتيرك (شروط العقود، ومبالغ الإيجار، ورسوم الخدمات، والأتعاب) في مكان واحد موثوق بدلاً من ملفات متفرقة. وهذا يقلل الجهد اليدوي وخطر الأخطاء عند إصدار الفواتير. كما أن الفصل الواضح بين أموال الملاك وأتعابك الخاصة، كما نوضح في مقالنا حول [محاسبة أموال الملاك وفصلها عن أموال الشركة](/ar/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/)، يوضح المبالغ التي تصدر بها فواتير باسمك.
 
-### الاستثمار في حلول البرامج المتوافقة
+### اختيار حل فوترة إلكترونية متوافق
 
-حجر الزاوية للامتثال لنظام "فاتورة" لمديري العقارات هو اختيار وتنفيذ حل فوترة إلكترونية معتمد. تم تصميم هذه الحلول لتلبية المواصفات الفنية للهيئة العامة للزكاة والضريبة والجمارك (GAZT)، مما يضمن إنشاء الفواتير بالتنسيق الصحيح، وتضمين جميع الحقول الإلزامية، والقدرة على إرسال هذه الفواتير بسلاسة إلى الهيئة العامة للزكاة والضريبة والجمارك (GAZT) للتحقق منها. من الأهمية بمكان اختيار مزود برامج على دراية بالسوق السعودية والاحتياجات المحددة لقطاعي العقارات والضيافة. يجب ألا يتعامل الحل مع الفواتير الإلكترونية فحسب، بل يجب أن يقدم أيضاً وظائف تدعم عمليات إدارة العقارات الأوسع، مثل إدارة عقود الإيجار، ومعالجة المدفوعات، والتواصل مع السكان. هذا التكامل مفتاح لإطلاق العنان لكفاءات تشغيلية تتجاوز مجرد الامتثال.
+حجر الزاوية في الامتثال لنظام "فاتورة" هو حل فوترة إلكترونية يستوفي المواصفات الفنية للهيئة، بحيث تصدر الفواتير بالصيغة الصحيحة، وتتضمن جميع الحقول الإلزامية، وتُتبادل مع الهيئة في المرحلة الثانية. وتنشر الهيئة في [صفحة الفوترة الإلكترونية](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx) قائمة استرشادية بمزودي الحلول الذين اجتازوا عملية التأهيل لديها، وتوضح أن للمكلفين استخدام أي مزود يلتزم بالمتطلبات، سواء كان مدرجاً في القائمة أم لا. اختر مزوداً يفهم السوق السعودية، وتحقق من الطريقة التي سيستقبل بها بيانات العقود والفوترة من الأنظمة التي تدير بها عقاراتك.
 
-### التدريب والاستعداد الداخلي
+### التدريب والجاهزية الداخلية
 
-إلى جانب البرامج، فإن الاستعداد البشري مهم بنفس القدر. تحتاج فرق إدارة العقارات إلى التدريب على إجراءات الفوترة الإلكترونية الجديدة ووظائف البرامج المنفذة. يشمل ذلك فهم أهمية إدخال البيانات الدقيقة، وعملية إنشاء الفواتير، وكيفية التعامل مع الاستفسارات المتعلقة بالفواتير الإلكترونية. يضمن وضع مبادئ توجيهية داخلية واضحة ومسؤوليات لعمليات الفوترة الإلكترونية الاتساق وتقليل الأخطاء. يمكن لفريق مدرب تدريباً جيداً تحديد المشكلات وحلها بشكل استباقي، مما يساهم في تجربة امتثال سلسة ومنع العقوبات المحتملة. **التدريب المستمر** حيوي لأن اللوائح قد تتطور.
+إلى جانب البرامج، تُعد الجاهزية البشرية بالقدر نفسه من الأهمية. إذ تحتاج فرق إدارة العقارات إلى التدريب على إجراءات الفوترة الإلكترونية الجديدة والبرامج التي ستستخدمها. ويشمل ذلك فهم أهمية دقة إدخال البيانات، وخطوات إصدار الفواتير، وكيفية التعامل مع الاستفسارات المتعلقة بها. ويحافظ وضع إرشادات ومسؤوليات داخلية واضحة على اتساق العمل ويقلل الأخطاء. ويستطيع الفريق المدرب جيداً اكتشاف المشكلات وحلها مبكراً، مما يحول دون الغرامات المحتملة. **التدريب المستمر** ضروري لأن اللوائح قد تتطور.
 
-## الامتثال لنظام "فاتورة" في السياق السعودي
+## الامتثال لنظام "فاتورة" في سياق العقار السعودي
 
-تشهد المملكة العربية السعودية تحولاً اقتصادياً ورقمياً سريعاً، مع مبادرات مثل رؤية 2030 تدفع الابتكار في جميع القطاعات، بما في ذلك العقارات والضيافة. تعد لائحة الفواتير الإلكترونية للهيئة العامة للزكاة والضريبة والجمارك (GAZT) مكوناً حاسماً في هذا الدفع الرقمي، بهدف تحديث إدارة الضرائب وإنشاء بيئة أعمال أكثر شفافية. بالنسبة لمديري العقارات، يتماشى هذا مع الهدف الأوسع لتعزيز الكفاءة وتجربة العملاء.
+للعقار قواعده الضريبية الخاصة، وهي التي تحدد أي الرسوم تخضع لضريبة القيمة المضافة. فوفقاً [للدليل المبسط لضريبة التصرفات العقارية الصادر عن الهيئة](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified%20guide%20to%20the%20real%20estate%20transaction%20tax.pdf)، يُعفى تأجير العقار السكني من ضريبة القيمة المضافة، ويخضع تأجير العقار التجاري لها بنسبة 15%، ويُعفى بيع العقار من ضريبة القيمة المضافة ويخضع بدلاً منها لضريبة التصرفات العقارية بنسبة 5%. أما أتعاب الإدارة والخدمات الأخرى التي تقدمها فهي توريدات مستقلة يجب تقييمها كلٌّ على حدة. ولأن القواعد تختلف باختلاف نوع الرسوم، اسأل مستشارك الضريبي تحديداً عن المستندات التي يجب إصدارها فواتير إلكترونية. ويشرح مقالنا حول [ضريبة القيمة المضافة وإدارة العقارات](/ar/blog/vat-and-property-management-keeping-your-books-clean-and-compliant/) أثر هذه الفئات في دفاترك.
 
-يزداد أيضاً استخدام حلول الدفع الرقمية في المملكة العربية السعودية، مع استخدام منصات مثل مدى وسداد على نطاق واسع لمعاملات مختلفة. تتكامل الفواتير الإلكترونية بسلاسة مع أنظمة الدفع هذه، مما يسمح بعملية مالية أكثر انسيابية. علاوة على ذلك، تسلط معدلات التبني المرتفعة لمنصات مثل WhatsApp في المملكة العربية السعودية، والتي تقدر بأكثر من 77%، الضوء على استعداد السكان للتواصل والمعاملات الرقمية، والتي يمكن لمديري العقارات الاستفادة منها لمشاركة المستأجرين وتقديم الخدمات. يساهم الامتثال لنظام "فاتورة" أيضاً في دعم أطر تنظيمية أوسع مثل "إيجار"، الذي يحكم اتفاقيات الإيجار ويهدف إلى توحيد سوق الإيجارات. من خلال اعتماد الفواتير الإلكترونية المتوافقة، يكون مديرو العقارات في وضع أفضل لتلبية متطلبات **الامتثال لـ "إيجار"** والمساهمة في أهداف رؤية 2030 للمملكة لاقتصاد مزدهر ورقمي. وفقاً للهيئة العامة للإحصاء (GASTAT)، يعد التحول الرقمي محركاً رئيسياً للنمو الاقتصادي والكفاءة.
+والفوترة الإلكترونية منفصلة كذلك عن "إيجار"، المنصة الوطنية لعقود الإيجار السكنية. فتسجيل العقد في "إيجار" لا يغني عن الفاتورة الضريبية حيث تكون مطلوبة، والفاتورة الإلكترونية لا تسجل عقد الإيجار. تعامل معهما بوصفهما التزامين مستقلين، وحافظ على اتساق البيانات بينهما.
 
-## كيف يساعدك Accez.Cloud في تحقيق الامتثال لنظام "فاتورة"
+## أين يأتي دور أكسيز
 
-Accez.cloud هي منصة عمليات عقارية شاملة مصممة للمملكة العربية السعودية، وتقدم حلولاً شاملة لمواجهة تحديات الفواتير الإلكترونية لنظام "فاتورة" وتبسيط عمليات إدارة العقارات الخاصة بك.
+يجب أن تصدر الفواتير الإلكترونية نفسها من حل يستوفي متطلبات الهيئة. أما دور أكسيز فهو السجل التشغيلي الذي تقوم عليه فوترتك، لتكون المبالغ التي تصدر بها الفواتير دقيقة وسهلة التتبع. ومن خلال [أدوات الفوترة والمدفوعات في أكسيز لمديري العقارات](/ar/solutions/property-managers/#billing) يمكنك:
 
-- **إدارة الحجوزات ومزامنة القنوات:** تلتقط تفاصيل الحجز تلقائياً من Airbnb وBooking.com وExpedia، مما يضمن دقة البيانات لإنشاء الفواتير.
-- **إدارة العقارات للإيجار والبيع:** توحيد جميع المعاملات المتعلقة بالعقارات، مما يسهل إنشاء فواتير متوافقة لدخل الإيجار ومبيعات العقارات.
-- **إدارة الملاك، وكشوف الحسابات، والمدفوعات:** إنشاء كشوف حسابات مالية شفافة للملاك، تغذي مباشرة عمليات الفوترة المتوافقة.
-- **العقود والتوقيع الإلكتروني:** رقمنة اتفاقيات عقود الإيجار والعقود، مما يضمن التقاط جميع البيانات اللازمة للفواتير الإلكترونية من المصدر.
-- **أوامر العمل والصيانة:** تتبع خدمات الصيانة والتكاليف المرتبطة بها، مما يتيح الفوترة الدقيقة وإنشاء فواتير إلكترونية لرسوم الخدمة.
-- **التواصل مع السكان:** تبسيط التواصل مع السكان للاستفسارات المتعلقة بالفواتير، مما يضمن استجابات سريعة ودقيقة.
+- **تتبع الحجوزات من Airbnb وBooking.com وExpedia:** كل إقامة بجدولها الزمني ودفعتها والسياسات المقبولة.
+- **إدارة عقود الإيجار ودفعات الإيجار:** عقود طويلة الأجل مع رؤية واضحة لما دُفع وما هو مستحق.
+- **متابعة الفوترة والمدفوعات:** الإيرادات والفواتير والمبالغ المستردة في مكان واحد.
+- **إعداد كشوف حسابات الملاك ومدفوعاتهم:** كشوف حساب ومدفوعات لكل مالك.
+- **تتبع أوامر العمل:** الصيانة من الطلب حتى الإنجاز، بحيث يمكن ربط رسوم الخدمات بالأعمال التي نُفذت.
+- **التحكم في الصلاحيات بأدوار الموظفين:** حدد من يمكنه عرض السجلات المالية وتعديلها.
 
-من خلال دمج هذه الوظائف الأساسية، يمكّن Accez.cloud مديري العقارات من تحقيق الامتثال السلس لنظام "فاتورة" مع تعزيز الكفاءة التشغيلية وتحفيز النمو.
+*لا يُقدَّم أكسيز هنا بوصفه حلاً للفوترة الإلكترونية لدى هيئة الزكاة والضريبة والجمارك. تأكد من إعداد الفوترة الإلكترونية لديك مع مستشارك الضريبي ومع حل يستوفي متطلبات الهيئة.*
 
-## أسئلة متكررة
+## الأسئلة الشائعة
 
-### ما هي الفواتير الإلكترونية ZATCA (فاتورة)؟
-الفواتير الإلكترونية ZATCA، المعروفة باسم "فاتورة"، هي مطلب تنظيمي في المملكة العربية السعودية يلزم برقمنة جميع الفواتير. وهي تضمن إنشاء الفواتير وإرسالها وتخزينها بتنسيق إلكتروني متوافق مع مواصفات الهيئة العامة للزكاة والضريبة والجمارك (GAZT)، مما يعزز الشفافية والدقة الضريبية.
+### ما هي الفوترة الإلكترونية (فاتورة)؟
+الفوترة الإلكترونية، المعروفة باسم "فاتورة"، متطلب نظامي في المملكة العربية السعودية يحوّل الفواتير الضريبية والإشعارات الورقية إلى فواتير إلكترونية مهيكلة تصدر وتُحفظ عبر حلول إلكترونية متوافقة. وفي المرحلة الثانية تُربط هذه الحلول أيضاً بمنصة "فاتورة" التابعة للهيئة.
 
-### متى تنطبق الفواتير الإلكترونية لنظام "فاتورة" على مديري العقارات؟
-تنطبق الفواتير الإلكترونية لنظام "فاتورة" على جميع الشركات، بما في ذلك مديري العقارات، بناءً على عتبة تسجيل ضريبة القيمة المضافة الخاصة بهم والجدول الزمني للتنفيذ المرحلي الذي حددته الهيئة العامة للزكاة والضريبة والجمارك (GAZT). يجب على مديري العقارات الالتزام بمرحلتي الإنشاء والإرسال حسبما تنطبق عليهم.
+### متى تنطبق الفوترة الإلكترونية على مديري العقارات؟
+تُطبَّق المرحلة الأولى منذ 4 ديسمبر 2021 على جميع المكلفين باستثناء غير المقيمين. وتُطبَّق المرحلة الثانية على دفعات بدأت في 1 يناير 2023، وتُبلغ الهيئة كل منشأة بدفعتها قبل ستة أشهر على الأقل. وتحقق مع مستشارك من الرسوم التي تتطلب فواتير ضريبية، إذ يُعفى تأجير العقار السكني من ضريبة القيمة المضافة بينما يخضع تأجير العقار التجاري لها بنسبة 15%.
 
-### كيف يمكنني التأكد من أن فواتيري متوافقة مع نظام "فاتورة"؟
-للتأكد من الامتثال لنظام "فاتورة"، يجب عليك استخدام برامج فوترة إلكترونية تنشئ الفواتير بتنسيق XML المطلوب، وتتضمن جميع الحقول الإلزامية، وتدعم إرسال هذه الفواتير إلى الهيئة العامة للزكاة والضريبة والجمارك (GAZT) للتحقق منها. دقة إدخال البيانات وتكامل النظام ضروريان.
+### كيف أتأكد من أن فواتيري متوافقة مع نظام "فاتورة"؟
+استخدم حل فوترة إلكترونية يستوفي مواصفات الهيئة: يصدر الفواتير بجميع الحقول الإلزامية، وعند حلول دفعتك في المرحلة الثانية يرسل الفواتير الضريبية القياسية للاعتماد ويبلّغ عن الفواتير المبسطة خلال 24 ساعة. ودقة بيانات العقود والفوترة لا تقل أهمية عن البرنامج نفسه.
 
-### ما هي عقوبات عدم الامتثال للفواتير الإلكترونية لنظام "فاتورة"؟
-يمكن أن تكون عقوبات عدم الامتثال للفواتير الإلكترونية لنظام "فاتورة" كبيرة، وتتراوح من 5% إلى 25% من قيمة الفاتورة، بالإضافة إلى غرامات إدارية محتملة. حددت الهيئة العامة للزكاة والضريبة والجمارك (GAZT) هياكل عقوبات محددة لمخالفات مختلفة.
+### ما عقوبات عدم الامتثال للفوترة الإلكترونية؟
+تملك الهيئة صلاحية فرض الغرامات عند عدم الالتزام بقواعد الفوترة الإلكترونية. وتختلف المبالغ بحسب نوع المخالفة وتكرارها، لذا راجع القواعد المنشورة حالياً لدى الهيئة أو استشر مستشارك الضريبي بدلاً من الاعتماد على رقم واحد.
 
-## نقاط رئيسية
+## أبرز النقاط
 
-- الفواتير الإلكترونية ZATCA (فاتورة) هي لائحة إلزامية للشركات في المملكة العربية السعودية.
-- يجب على مديري العقارات الانتقال من الفوترة التقليدية إلى الفواتير الإلكترونية الرقمية المتوافقة.
-- يتضمن مشروع "فاتورة" مرحلتي "إنشاء" و "إرسال" متميزتين بمتطلبات فنية محددة.
-- تعد دقة البيانات وتكامل النظام والاستعداد التقني أمراً بالغ الأهمية للامتثال.
-- يعد اختيار حل فوترة إلكترونية معتمد من الهيئة العامة للزكاة والضريبة والجمارك (GAZT) أمراً ضرورياً لمديري العقارات.
-- يعد تدريب الموظفين ووضع إجراءات داخلية واضحة أمراً حيوياً لاعتماد سلس.
-- الامتثال لنظام "فاتورة" هو جزء من التحول الرقمي الأوسع في المملكة العربية السعودية بموجب رؤية 2030.
-- يمكن أن يؤدي عدم الامتثال إلى عقوبات مالية كبيرة.
+- الفوترة الإلكترونية (فاتورة) متطلب إلزامي على المكلفين في المملكة العربية السعودية.
+- تُطبَّق المرحلة الأولى (الإصدار) منذ 4 ديسمبر 2021، والمرحلة الثانية (الربط والتكامل) على دفعات منذ 1 يناير 2023.
+- في المرحلة الثانية تعتمد الهيئة الفواتير الضريبية القياسية قبل وصولها إلى المشتري، ويُبلَّغ عن الفواتير المبسطة خلال 24 ساعة.
+- يُعفى تأجير العقار السكني من ضريبة القيمة المضافة، ويخضع التأجير التجاري لها بنسبة 15%، ويخضع بيع العقار لضريبة التصرفات العقارية بنسبة 5% بدلاً منها.
+- دقة البيانات وتكامل الأنظمة والجاهزية التقنية عناصر أساسية للامتثال.
+- تنشر الهيئة قائمة استرشادية بمزودي الحلول المؤهلين، لكن أي مزود يستوفي المتطلبات مقبول.
+- تدريب الموظفين ووضع إجراءات داخلية واضحة أمران حيويان لتطبيق سلس.
 
-*هذه المقالة هي معلومات عامة لمشغلي العقارات وليست نصيحة قانونية أو ضريبية أو مالية. قم بتأكيد التفاصيل مع محترف مؤهل.*
+*هذه المقالة معلومات عامة لمشغلي العقارات وليست استشارة قانونية أو ضريبية أو مالية. تأكد من التفاصيل مع مختص مؤهل.*
 
 تنقل في الفواتير الإلكترونية ZATCA بثقة وكفاءة على [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)

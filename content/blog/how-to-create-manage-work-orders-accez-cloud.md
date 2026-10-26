@@ -1,6 +1,10 @@
 ---
 title: "How to Create and Manage Work Orders in Accez.Cloud"
 titleAr: "كيفية إنشاء وإدارة أوامر العمل في Accez.Cloud"
+metaTitle: "How to Create and Manage Work Orders in Accez.Cloud"
+metaTitleAr: "كيفية إنشاء وإدارة أوامر العمل في Accez.Cloud"
+metaDescription: "Learn to create, track and close work orders in Accez.Cloud: categories, location details, status and photos, plus best practices for faster maintenance."
+metaDescriptionAr: "تعلّم إنشاء أوامر العمل وتتبعها وإغلاقها في Accez.Cloud: الفئات وتفاصيل الموقع والحالة والصور، مع أفضل الممارسات لإنجاز الصيانة بسرعة أكبر وتنظيم أفضل."
 excerpt: "Streamline maintenance management with Accez.Cloud work orders. Learn how to create, track, and resolve maintenance issues reported by residents."
 excerptAr: "بسّط إدارة الصيانة مع أوامر العمل في Accez.Cloud. تعلم كيفية إنشاء وتتبع وحل مشاكل الصيانة التي يبلغ عنها المقيمون."
 date: "2026-01-19"
@@ -148,7 +152,7 @@ See the complete work order creation and management process:
 
 **Track Completion**: Always mark work orders as complete with resolution notes for future reference.
 
-**Review Patterns**: Regularly review work orders to identify recurring issues that may need proactive solutions.
+**Review Patterns**: Regularly review work orders to identify recurring issues that may need proactive solutions. Our guide to [preventive maintenance that stops small issues becoming big](/blog/preventive-maintenance-how-to-stop-small-issues-becoming-big/) explains how to act on those patterns.
 
 ## Work Order Workflow Tips
 
@@ -158,11 +162,13 @@ See the complete work order creation and management process:
 - **Document Everything**: Maintain detailed notes and photos for insurance and records
 - **Follow Up**: Verify resident satisfaction after work completion
 
+For the bigger picture of setting up maintenance across a portfolio, read [building a maintenance system that works from request to resolution](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/), or see how work orders fit into the [Accez property management solution](/solutions/property-managers/).
+
 ## Related Tutorials
 
-- [How to Create and Manage Properties in Accez.Cloud](/blog/how-to-create-manage-properties-accez-cloud)
-- [How to Create and Manage Units in Accez.Cloud](/blog/how-to-create-manage-units-accez-cloud)
-- [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide)
+- [How to Create and Manage Properties in Accez.Cloud](/blog/how-to-create-manage-properties-accez-cloud/)
+- [How to Create and Manage Units in Accez.Cloud](/blog/how-to-create-manage-units-accez-cloud/)
+- [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide/)
 
 <!-- AR -->
 
@@ -280,7 +286,7 @@ See the complete work order creation and management process:
 
 [شاهد: كيفية إنشاء وإدارة أوامر العمل في Accez.Cloud](https://youtu.be/qKjzk0ysrKo)
 
-## النقاط الرئيسية
+## أبرز النقاط
 
 - يمكن إنشاء أوامر العمل من قبل كل من المقيمين ومديري العقارات
 - الأوصاف التفصيلية تساعد فرق الصيانة على الاستجابة بفعالية
@@ -301,7 +307,7 @@ See the complete work order creation and management process:
 
 **تتبع الإكمال**: ضع دائماً علامة على أوامر العمل كمكتملة مع ملاحظات الحل للرجوع إليها في المستقبل.
 
-**راجع الأنماط**: راجع أوامر العمل بانتظام لتحديد المشاكل المتكررة التي قد تحتاج إلى حلول استباقية.
+**راجع الأنماط**: راجع أوامر العمل بانتظام لتحديد المشاكل المتكررة التي قد تحتاج إلى حلول استباقية. ويشرح دليلنا عن [الصيانة الوقائية وكيف تمنع تحول المشكلات الصغيرة إلى كبيرة](/ar/blog/preventive-maintenance-how-to-stop-small-issues-becoming-big/) كيفية التعامل مع هذه الأنماط.
 
 ## نصائح سير عمل أوامر العمل
 
@@ -310,3 +316,10 @@ See the complete work order creation and management process:
 - **تواصل مع المقيمين**: أبقِ المقيمين على اطلاع طوال عملية الحل
 - **وثق كل شيء**: حافظ على ملاحظات وصور مفصلة للتأمين والسجلات
 - **المتابعة**: تحقق من رضا المقيم بعد إكمال العمل
+
+وللصورة الأشمل عن إعداد الصيانة عبر محفظة كاملة، اقرأ [بناء نظام صيانة فعال من الطلب حتى الحل](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/)، أو تعرّف على موقع أوامر العمل ضمن [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/).
+
+## دروس ذات صلة
+
+- [كيفية إنشاء وإدارة العقارات في Accez.Cloud](/ar/blog/how-to-create-manage-properties-accez-cloud/)
+- [كيفية إنشاء وإدارة الوحدات في Accez.Cloud](/ar/blog/how-to-create-manage-units-accez-cloud/)

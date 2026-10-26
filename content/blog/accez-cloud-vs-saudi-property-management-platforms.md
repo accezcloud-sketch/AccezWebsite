@@ -1,8 +1,12 @@
 ---
 title: "Accez.Cloud vs Saudi Property Management Platforms"
 titleAr: "Accez.Cloud مقارنة بمنصات إدارة العقارات السعودية"
-excerpt: "Compare Accez.Cloud with top Saudi property management platforms. See how its three-sided marketplace and revenue generation set it apart from competitors."
-excerptAr: "اكتشف ما يميز Accez في مشهد التكنولوجيا العقارية السعودي، من نهج السوق ثلاثي الأطراف إلى توليد الإيرادات المدمج للمديرين."
+metaTitle: "Accez vs Saudi Property Management Platforms Compared"
+metaTitleAr: "مقارنة أكسيز بمنصات إدارة العقارات في السعودية"
+metaDescription: "How Accez compares with global suites, rent financing services, short-term rental operators and hotel systems used by Saudi property managers."
+metaDescriptionAr: "كيف يقارن أكسيز بالأنظمة العالمية وخدمات تمويل الإيجار ومشغلي الإيجارات قصيرة الأجل وأنظمة الفنادق التي يستخدمها مديرو العقارات في السعودية."
+excerpt: "Compare Accez.Cloud with the main types of property management tools used in Saudi Arabia, and see how one platform for rentals, leases, sales and billing sets it apart."
+excerptAr: "قارن Accez بالأنواع الرئيسية لأدوات إدارة العقارات المستخدمة في السعودية، واكتشف ما يميز منصة واحدة تجمع الإيجارات والعقود والمبيعات والفوترة."
 date: "2026-01-21"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -13,215 +17,187 @@ categoryAr: "رؤى الصناعة"
 tags: ["PropTech", "Saudi Arabia", "Comparison", "Vision 2030", "Property Management"]
 tagsAr: ["التكنولوجيا العقارية", "المملكة العربية السعودية", "مقارنة", "رؤية 2030", "إدارة العقارات"]
 ---
-Saudi Arabia's property management sector is undergoing a dramatic transformation. With the Kingdom's real estate market expanding rapidly under Vision 2030, property managers are seeking modern, technology-driven solutions to streamline their operations and enhance resident experiences. While several platforms have emerged to address these needs, Accez.cloud stands apart with a fundamentally different approach to property management software.
+Saudi Arabia's property management sector is undergoing a dramatic transformation. With the Kingdom's real estate market expanding under Vision 2030, property managers are seeking modern, technology-driven solutions to streamline their operations and serve residents and guests better. Several kinds of platforms have emerged to address these needs, and each solves a different part of the problem.
 
-Unlike traditional property management tools that focus solely on the landlord-tenant relationship, Accez.cloud has built a unified platform that connects three key stakeholders: property managers, residents, and local businesses. This innovative model is reshaping how communities operate across the Kingdom.
+Accez.cloud takes the approach of putting the whole property operation in one place: short-term stays, long-term leases, unit sales, billing, owners and maintenance. This article looks at the main types of tools Saudi property managers use today and where Accez fits among them.
 
-## The Problem with Traditional Property Management Platforms
+## The Problem with a Patchwork of Tools
 
-Most property management solutions in Saudi Arabia fall into one of two categories. On one hand, you have global platforms like Yardi, Buildium, and AppFolio that were designed for Western markets and later adapted for the Middle East. While these platforms offer robust accounting features, they often lack the cultural customization and local integrations that Saudi property managers need. Their interfaces can be complex, requiring extensive training, and their pricing models often exclude smaller property management companies.
+Many property management companies in Saudi Arabia end up running several systems side by side. One tool handles bookings, a spreadsheet tracks leases and rent, another app or a WhatsApp group handles maintenance, and owner statements are built by hand at the end of the month. If any of this sounds familiar, our article on [the signs your property management system is outdated](/blog/5-signs-your-property-management-system-is-outdated/) is a good place to start.
 
-On the other hand, local solutions like Ejari (the rent-now-pay-later platform), Mabaat (focused on short-term rentals), and RAY (compound management) each solve specific problems but operate in silos. Property managers using these tools often find themselves juggling multiple platforms, with data scattered across different systems. This fragmentation creates inefficiencies, increases the risk of errors, and makes it difficult to get a complete picture of property operations.
+This fragmentation creates inefficiencies, increases the risk of errors, and makes it difficult to get a complete picture of property operations. Data is scattered across systems, the same booking or payment is entered twice, and nobody can answer a simple owner question without opening three tools.
 
-Additionally, most existing platforms treat property management as purely a cost center. They help managers collect rent and handle maintenance requests, but they don't create opportunities for additional revenue generation. In today's competitive market, this represents a significant missed opportunity.
+## The Accez.cloud Difference: One Platform for the Whole Operation
 
-## The Accez.cloud Difference: A Three-Sided Marketplace
+The [Accez property management solution](/solutions/property-managers/) brings together the parts of the job that usually live in separate tools.
 
-Accez.cloud takes a fundamentally different approach by creating a three-sided marketplace that benefits all stakeholders in the property ecosystem. This isn't just property management software; it's a platform that transforms how residential communities function.
+### Rentals and Stays
 
-### For Property Managers
+An availability calendar keeps your units in sync with Airbnb, Booking.com and Expedia, with bulk price updates and import and export. Each reservation has its own timeline, payment record and accepted policies, and you can sell add-ons with a stay, such as meals, cleaning and transport.
 
-Accez provides a comprehensive suite of tools including visitor management, amenity booking, work order handling, lease management, and check-in/checkout services. All of these features are accessible through a single dashboard, eliminating the need to switch between multiple applications. The platform also offers white-label branded websites and mobile apps, allowing property management companies to present a professional, unified digital presence under their own brand.
+### Leases, Sales and Billing
 
-### For Residents
+Long-term leases and rent payments sit in the same system, so you can see at a glance what has been paid and what is due. For developers and sales teams, Accez tracks sale units with status, price and buyer, follows each sale through to a signed contract, groups units into projects and shows them on a units map. Billing covers revenue, invoices and refunds, with payments through Stripe and Tap.
 
-The resident experience is at the heart of Accez.cloud. Through a dedicated mobile app, residents can manage their entire living experience, from booking amenities to submitting maintenance requests and managing their leases. This level of digital convenience is exactly what modern renters, particularly Gen Z and millennials who are becoming the largest renter demographics, expect from their living spaces.
+### Owners, Teams and Operations
 
-### For Local Businesses
+Owner statements and payouts are prepared per owner. Staff and roles control who can see and do what, and work orders follow each maintenance job from request to done. Email templates for confirmations, check-ins and cancellations, SMS messaging and one inbox for conversations keep communication in one place.
 
-Here's where Accez truly differentiates itself. The platform includes a marketplace component that connects residents with local service providers. Whether it's home services, food delivery, or retail offerings, local businesses can reach a captive audience of residents directly through the platform. This creates value for businesses seeking customers, residents seeking convenience, and property managers who earn commissions on transactions.
+### A Separate Solution for Service Businesses
 
-## Turning Property Management into a Revenue Center
+Accez also offers an independent [solution for service providers](/solutions/service-providers/) such as barbers, salons, spas and coaches. It gives these businesses a marketplace listing where their own customers find and book them, along with bookings, calendar, team, promo codes, loyalty points, gift cards and reviews. The two solutions are separate products: each serves its own customers.
 
-Perhaps the most significant way Accez.cloud differs from competitors is in its approach to revenue. Traditional property management is viewed as an operational expense, something necessary but not profitable in itself. Accez changes this equation entirely.
+## How Accez Compares to Other Types of Platforms
 
-By facilitating transactions between residents and local businesses, property managers can earn a percentage of every transaction that occurs through the platform. This transforms the property management relationship from a pure cost center into a potential profit center. For property management companies operating on thin margins, this additional revenue stream can make a meaningful difference to their bottom line.
+Rather than judge individual companies, it is more useful to compare the main categories of tools a Saudi property manager is likely to consider. Each category does its own job well; the question is which job you need done.
 
-This model also creates a virtuous cycle: the more value the platform provides to residents through convenient services, the more engaged they become. Higher engagement leads to better resident satisfaction, which in turn drives lease renewals and reduces costly turnover. Industry data shows that tenant turnover can cost upwards of SAR 15,000 per unit when accounting for make-ready expenses, marketing, and lost rent during vacancy periods.
+### Global Property Management Suites
 
-## Built for the Saudi Market
+Platforms such as Yardi, Buildium and AppFolio were built first for the North American market. They are mature products with deep accounting features. If you are evaluating one, check how well it supports Arabic, Saudi payment methods, local lease practice and the booking channels your guests use, and what training and pricing look like for a portfolio of your size.
 
-Unlike global platforms that adapt their products for the Middle East as an afterthought, Accez.cloud was designed from the ground up with the Saudi market in mind. This is evident in several key areas.
+### Rent Financing Services
 
-The platform integrates with local Saudi service providers including Fanni for home services, WeBook for booking services, and Amazon for deliveries. These aren't generic integrations; they're partnerships that reflect how Saudi residents actually live and shop. The platform also supports Arabic-English bilingual interfaces, ensuring accessibility for the Kingdom's diverse population.
+Services such as Ejari offer a ["Rent Now, Pay Later" model for residential rentals](https://www.wamda.com/en/2023/10/saudi-proptech-ejari-closes-1-million-pre-seed-round), letting tenants pay monthly while landlords receive the yearly rent in full. This addresses the cost of paying a year's rent upfront. It solves a payment timing problem, which is a different job from running day-to-day operations, so many managers will use a financing service alongside an operations platform rather than instead of one.
 
-Furthermore, Accez understands the unique nature of Saudi Arabia's residential compound culture. Gated communities have been a housing staple in the Kingdom since the discovery of oil, and they remain popular today. These communities have specific needs around visitor management, security, amenity access, and community engagement that Accez is designed to address.
+### Short-Term Rental Operators
 
-## How Accez Compares to Other Saudi Platforms
+Operators such as Mabaat [onboard homes and manage them on the owner's behalf](https://www.wamda.com/en/2021/08/Saudi-proptech-Mabaat-raises-2-million-in-Seed-round), handling bookings, payments, cleaning and maintenance updates. This suits owners who want to hand over their property. Property management companies that run their own portfolios usually want software they control instead, which is where a platform like Accez fits.
 
-### Ejari
+### Hotel Property Management Systems
 
-Ejari has made waves in the Saudi market with its rent-now-pay-later model, allowing tenants to pay monthly while landlords receive their annual rent upfront. While innovative for addressing payment flexibility, Ejari is fundamentally a financial service rather than a property management platform. It doesn't help with day-to-day operations like maintenance, visitor management, or resident communication.
+Hospitality systems are built for hotels and serviced apartments: front desk, room inventory and guest folios. They work well for hotel operations, but they are not designed for long-term leases, rent collection or unit sales.
 
-### Mabaat
-
-Mabaat focuses specifically on short-term rentals, serving property owners who want to maximize returns through Airbnb-style bookings. While excellent for vacation rentals and furnished apartments, it's not designed for traditional residential property management with long-term tenants.
-
-### RAY
-
-RAY offers a tenant and property management system with strong communication features, and has found success in compounds across Saudi Arabia and the UAE. However, RAY focuses primarily on the manager-tenant relationship without the marketplace component that allows for revenue generation through local business partnerships.
-
-### Nazeel
-
-Nazeel serves the hospitality sector, managing over 6,000 hotels across Saudi Arabia. It's a powerful system for hotel and furnished apartment management, but it's designed for hospitality operations rather than residential property management.
-
-Accez.cloud combines the operational capabilities these platforms offer individually while adding the unique marketplace layer that none of them provide. It's designed to be a single platform that handles everything a modern Saudi property management company needs.
+Accez.cloud is designed for property management companies whose portfolios mix these needs: some units let by the night, some on annual leases, some for sale, all with owners who expect clear statements.
 
 ## The Future of Property Management in Saudi Arabia
 
-The Saudi property management software market is projected to grow at over 9% annually through 2032, driven by the Kingdom's massive real estate development initiatives including NEOM, the Red Sea Project, and ongoing urban expansion in Riyadh, Jeddah, and other major cities. As more residential properties come online, the demand for sophisticated management solutions will only increase.
+The Kingdom's large real estate and tourism programmes, together with ongoing urban growth in Riyadh, Jeddah and other major cities, will keep adding units that need to be managed. As portfolios grow and mix short and long stays, the cost of running them across disconnected tools grows too. Our guide to [managing a mixed portfolio of short-term and long-term rentals](/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/) looks at this in more detail.
 
-Modern residents, particularly the younger demographics that will dominate the rental market by 2030, expect digital-first experiences. They want to manage their living experience through apps, just as they manage their banking, shopping, and entertainment. Properties that can't offer this level of digital convenience will struggle to attract and retain tenants.
-
-Accez.cloud is positioned to meet these evolving expectations. By combining comprehensive property management tools, resident-focused mobile experiences, and innovative marketplace features, it offers a glimpse of what the future of property management looks like in the Kingdom.
+Residents and guests increasingly expect digital-first experiences: paying online, getting quick confirmations and reaching someone without chasing. Properties that can't offer this will struggle to attract and keep tenants and guests.
 
 ## Conclusion
 
-The property management software landscape in Saudi Arabia is crowded, but few platforms offer the comprehensive, forward-thinking approach that Accez.cloud brings to the table. By reimagining property management as a three-sided marketplace that creates value for managers, residents, and local businesses alike, Accez isn't just solving today's operational challenges. It's building the foundation for how Saudi communities will live and interact in the years to come.
+The property management software landscape in Saudi Arabia is crowded, and different tools solve different problems. Global suites, rent financing services, short-term rental operators and hotel systems each have their place. Accez.cloud's approach is to give property management companies one platform for rentals, leases, sales, billing, owners and maintenance, so the whole operation is visible in one place.
 
-For property managers looking to differentiate their offerings, improve resident satisfaction, and create new revenue streams, Accez.cloud represents a genuinely different approach to property technology, one that's been built specifically for the unique needs and opportunities of the Saudi market.
+For property managers looking to reduce tool sprawl, keep owners informed and run mixed portfolios without juggling systems, Accez.cloud offers a practical alternative built with the Saudi market in mind.
 
 ## Frequently Asked Questions
 
 ### How is Accez.Cloud different from Yardi or Buildium?
 
-Yardi and Buildium are global platforms designed primarily for Western markets and later adapted for the Middle East. They offer strong accounting features but lack Saudi-specific integrations (Ejar, SADAD/Mada), local service provider partnerships, and the marketplace revenue model. Accez.Cloud was built from the ground up for the Saudi market with Arabic-English bilingual support and local compliance built in.
+Yardi and Buildium are established global platforms that were built first for the North American market. Accez.Cloud focuses on what Saudi property management companies run day to day: short-term stays synced with Airbnb, Booking.com and Expedia, long-term leases and rent tracking, unit sales and projects, billing, owner statements and payouts, and work orders, in one platform. The best choice depends on your portfolio, so compare features and pricing for your own situation.
 
 ### Can Accez.Cloud handle both long-term and short-term rentals?
 
-Yes. Unlike platforms that specialize in one or the other (Mabaat for short-term, RAY for long-term), Accez.Cloud manages both rental types in a single system. This eliminates the need to run separate platforms for mixed portfolios and keeps all your data in one place.
+Yes. Accez.Cloud manages reservations and channel sync for short stays, and leases and rent payments for long-term tenants, in a single system. This removes the need to run separate tools for mixed portfolios and keeps all your data in one place.
 
-### What is the marketplace feature and how does it generate revenue?
+### What is the Accez marketplace?
 
-Accez.Cloud's marketplace connects residents with local service providers, home services, food delivery, retail, and more, directly through the platform. Property managers earn a commission on every transaction, transforming property management from a cost center into a revenue-generating operation. This is a feature no other Saudi property management platform currently offers.
+The marketplace is part of the Accez solution for service providers. Appointment businesses such as barbers, salons, spas and coaches get a listing where their customers can find and book them. It is a separate product from the property management solution, with its own customers.
 
 ### Is Accez.Cloud suitable for small property managers?
 
-Yes. The platform is designed to scale from small portfolios to large operations. Unlike global enterprise platforms that price out smaller companies or require extensive training, Accez.Cloud offers an intuitive interface with flexible pricing that works for property managers at any size.
+The platform is built to work for small portfolios as well as larger operations, with staff roles and owner statements that matter more as you grow. You can compare the plans on the [property manager pricing page](/pricing/property-managers/).
 
 ### Does Accez.Cloud integrate with Saudi government platforms like Ejar?
 
-Accez.Cloud is built for Saudi compliance requirements, including integration with the Ejar platform for mandatory lease registration and support for SADAD and Mada payment processing. The platform stays current with evolving Saudi regulatory standards so you don't have to manage compliance manually.
+Lease registration takes place on the Ejar platform itself. Accez.Cloud keeps your leases, rent payments (paid vs due) and owner payouts organised alongside it, and connects to Stripe and Tap for billing other charges, such as stays, add-ons and invoices, while rent on new residential leases is [paid through Ejar's digital channels](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/). For the current list of integrations, check with the Accez team.
 
 ## Related Articles
 
-- [5 Signs Your Property Management System is Outdated](/blog/5-signs-your-property-management-system-is-outdated)
-- [How to Scale Your Property Portfolio Successfully](/blog/how-to-scale-your-property-portfolio-without-losing-control)
-- [Improve Resident Communication Beyond WhatsApp](/blog/how-to-improve-resident-communication-without-whatsapp-overload)
-- [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide)
+- [5 Signs Your Property Management System is Outdated](/blog/5-signs-your-property-management-system-is-outdated/)
+- [How to Scale Your Property Portfolio Successfully](/blog/how-to-scale-your-property-portfolio-without-losing-control/)
+- [Improve Resident Communication Beyond WhatsApp](/blog/how-to-improve-resident-communication-without-whatsapp-overload/)
+- [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide/)
 
 Ready to transform your property management operations? Visit [accez.cloud](https://accez.cloud) to learn more.
 
 <!-- AR -->
 
-يشهد قطاع إدارة العقارات في المملكة العربية السعودية تحولاً جذرياً. مع توسع سوق العقارات في المملكة بسرعة في إطار رؤية 2030، يبحث مديرو العقارات عن حلول حديثة تعتمد على التكنولوجيا لتبسيط عملياتهم وتحسين تجارب المقيمين. وبينما ظهرت العديد من المنصات لتلبية هذه الاحتياجات، يبرز Accez.cloud بنهج مختلف جذرياً لبرامج إدارة العقارات.
+يشهد قطاع إدارة العقارات في المملكة العربية السعودية تحولاً جذرياً. ومع توسع السوق العقاري في المملكة في إطار رؤية 2030، يبحث مديرو العقارات عن حلول حديثة تعتمد على التقنية لتبسيط عملياتهم وخدمة السكان والضيوف بشكل أفضل. وقد ظهرت أنواع عدة من المنصات لتلبية هذه الاحتياجات، ويعالج كل منها جزءاً مختلفاً من المشكلة.
 
-على عكس أدوات إدارة العقارات التقليدية التي تركز فقط على العلاقة بين المالك والمستأجر، بنى Accez.cloud منصة موحدة تربط ثلاثة أطراف رئيسية: مديري العقارات والمقيمين والشركات المحلية. هذا النموذج المبتكر يعيد تشكيل طريقة عمل المجتمعات في جميع أنحاء المملكة.
+يتبنى Accez.cloud نهج جمع العمليات العقارية كلها في مكان واحد: الإقامات قصيرة الأجل، وعقود الإيجار طويلة الأجل، وبيع الوحدات، والفوترة، والملاك، والصيانة. ويستعرض هذا المقال الأنواع الرئيسية للأدوات التي يستخدمها مديرو العقارات في السعودية اليوم، وموقع أكسيز بينها.
 
-## مشكلة منصات إدارة العقارات التقليدية
+## مشكلة الاعتماد على أدوات متفرقة
 
-تندرج معظم حلول إدارة العقارات في المملكة العربية السعودية ضمن إحدى فئتين. من ناحية، لديك منصات عالمية مثل Yardi و Buildium و AppFolio التي صُممت للأسواق الغربية ثم تم تكييفها لاحقاً للشرق الأوسط. بينما تقدم هذه المنصات ميزات محاسبية قوية، إلا أنها غالباً ما تفتقر إلى التخصيص الثقافي والتكاملات المحلية التي يحتاجها مديرو العقارات السعوديون. يمكن أن تكون واجهاتها معقدة وتتطلب تدريباً مكثفاً، ونماذج تسعيرها غالباً ما تستبعد شركات إدارة العقارات الصغيرة.
+ينتهي الأمر بكثير من شركات إدارة العقارات في السعودية إلى تشغيل عدة أنظمة جنباً إلى جنب. فأداة تتولى الحجوزات، وجدول بيانات يتابع العقود والإيجارات، وتطبيق آخر أو مجموعة واتساب للصيانة، وكشوف حسابات الملاك تُعد يدوياً في نهاية كل شهر. وإذا بدا لك هذا مألوفاً، فإن مقالنا عن [العلامات التي تدل على أن نظام إدارة العقارات لديك قديم](/ar/blog/5-signs-your-property-management-system-is-outdated/) نقطة بداية جيدة.
 
-من ناحية أخرى، الحلول المحلية مثل إيجاري (منصة ادفع الإيجار لاحقاً)، ومباعات (متخصصة في الإيجارات قصيرة الأجل)، و RAY (إدارة المجمعات السكنية) كل منها يحل مشاكل محددة لكنها تعمل بشكل منعزل. مديرو العقارات الذين يستخدمون هذه الأدوات غالباً ما يجدون أنفسهم يتنقلون بين منصات متعددة، مع بيانات متناثرة عبر أنظمة مختلفة. هذا التجزؤ يخلق عدم كفاءة ويزيد من مخاطر الأخطاء ويجعل من الصعب الحصول على صورة كاملة لعمليات العقار.
+هذا التشتت يخلق عدم كفاءة، ويزيد من مخاطر الأخطاء، ويصعّب الحصول على صورة كاملة لعمليات العقار. فالبيانات موزعة على أنظمة مختلفة، والحجز أو الدفعة نفسها تُدخل مرتين، ولا يستطيع أحد الإجابة عن سؤال بسيط من مالك دون فتح ثلاث أدوات.
 
-بالإضافة إلى ذلك، معظم المنصات الحالية تتعامل مع إدارة العقارات على أنها مركز تكلفة فقط. تساعد المديرين على تحصيل الإيجار والتعامل مع طلبات الصيانة، لكنها لا تخلق فرصاً لتوليد إيرادات إضافية. في السوق التنافسي اليوم، هذا يمثل فرصة ضائعة كبيرة.
+## ما يميز Accez.cloud: منصة واحدة للعمليات كلها
 
-## اختلاف Accez.cloud: سوق ثلاثي الأطراف
+يجمع [حل أكسيز لإدارة العقارات](/ar/solutions/property-managers/) أجزاء العمل التي تكون عادةً موزعة على أدوات منفصلة.
 
-يتبنى Accez.cloud نهجاً مختلفاً جذرياً من خلال إنشاء سوق ثلاثي الأطراف يفيد جميع المعنيين في النظام البيئي العقاري. هذا ليس مجرد برنامج لإدارة العقارات؛ إنها منصة تحول طريقة عمل المجتمعات السكنية.
+### الإيجارات والإقامات
 
-### لمديري العقارات
+يبقي تقويم التوفر وحداتك متزامنة مع Airbnb وBooking.com وExpedia، مع تحديث الأسعار بشكل جماعي والاستيراد والتصدير. ولكل حجز جدوله الزمني وسجل دفعه والسياسات المقبولة، ويمكنك بيع إضافات مع الإقامة مثل الوجبات والتنظيف والنقل.
 
-يوفر Accez مجموعة شاملة من الأدوات تشمل إدارة الزوار وحجز المرافق والتعامل مع أوامر العمل وإدارة عقود الإيجار وخدمات تسجيل الدخول والخروج. كل هذه الميزات متاحة من خلال لوحة تحكم واحدة، مما يلغي الحاجة للتبديل بين تطبيقات متعددة. توفر المنصة أيضاً مواقع وتطبيقات بعلامة تجارية خاصة، مما يسمح لشركات إدارة العقارات بتقديم حضور رقمي احترافي وموحد تحت علامتها التجارية الخاصة.
+### العقود والمبيعات والفوترة
 
-### للمقيمين
+تُحفظ عقود الإيجار طويلة الأجل ومدفوعات الإيجار في النظام نفسه، فترى بنظرة واحدة ما دُفع وما هو مستحق. وللمطورين وفرق المبيعات، يتابع أكسيز وحدات البيع بحالتها وسعرها ومشتريها، ويتتبع كل عملية بيع حتى توقيع العقد، ويجمع الوحدات في مشاريع ويعرضها على خريطة للوحدات. وتشمل الفوترة الإيرادات والفواتير والمبالغ المستردة، مع الدفع عبر Stripe وTap.
 
-تجربة المقيم هي في صميم Accez.cloud. من خلال تطبيق جوال مخصص، يمكن للمقيمين إدارة تجربة معيشتهم بالكامل، من حجز المرافق إلى تقديم طلبات الصيانة وإدارة عقود إيجارهم. هذا المستوى من الراحة الرقمية هو بالضبط ما يتوقعه المستأجرون العصريون، خاصة جيل Z والألفية الذين أصبحوا أكبر شريحة ديموغرافية للمستأجرين، من مساحات معيشتهم.
+### الملاك والفرق والعمليات
 
-### للشركات المحلية
+تُعد كشوف الحسابات والمدفوعات لكل مالك على حدة. وتتحكم صلاحيات الموظفين والأدوار في من يرى ماذا ومن يفعل ماذا، وتتابع أوامر العمل كل مهمة صيانة من الطلب حتى الإنجاز. وتبقي قوالب البريد الإلكتروني للتأكيدات وتسجيل الوصول والإلغاء، والرسائل النصية، وصندوق الوارد الموحد للمحادثات، التواصلَ كله في مكان واحد.
 
-هنا يتميز Accez حقاً. تتضمن المنصة مكوناً للسوق يربط المقيمين بمقدمي الخدمات المحليين. سواء كانت خدمات منزلية أو توصيل طعام أو عروض تجزئة، يمكن للشركات المحلية الوصول إلى جمهور أسير من المقيمين مباشرة من خلال المنصة. هذا يخلق قيمة للشركات التي تبحث عن عملاء، والمقيمين الذين يبحثون عن الراحة، ومديري العقارات الذين يكسبون عمولات على المعاملات.
+### حل مستقل لأنشطة الخدمات
 
-## تحويل إدارة العقارات إلى مركز إيرادات
+يقدم أكسيز أيضاً [حلاً مستقلاً لمقدمي الخدمات](/ar/solutions/service-providers/) مثل الحلاقين والصالونات والمنتجعات الصحية والمدربين. يمنح هذا الحل تلك الأنشطة صفحة في سوق إلكتروني يجدها فيه عملاؤها ويحجزون مواعيدهم، إلى جانب إدارة الحجوزات والتقويم والفريق وأكواد الخصم ونقاط الولاء وبطاقات الهدايا والتقييمات. والحلان منتجان منفصلان، لكل منهما عملاؤه.
 
-ربما تكون أهم طريقة يختلف بها Accez.cloud عن المنافسين هي في نهجه تجاه الإيرادات. تُعتبر إدارة العقارات التقليدية نفقات تشغيلية، شيء ضروري لكنه غير مربح في حد ذاته. يغير Accez هذه المعادلة تماماً.
+## كيف يقارن أكسيز بالأنواع الأخرى من المنصات
 
-من خلال تسهيل المعاملات بين المقيمين والشركات المحلية، يمكن لمديري العقارات كسب نسبة مئوية من كل معاملة تتم عبر المنصة. هذا يحول علاقة إدارة العقارات من مركز تكلفة بحت إلى مركز ربح محتمل. بالنسبة لشركات إدارة العقارات التي تعمل بهوامش ربح ضئيلة، يمكن أن يحدث تدفق الإيرادات الإضافي هذا فرقاً ملموساً في أرباحها.
+بدلاً من الحكم على شركات بعينها، من الأنفع مقارنة الفئات الرئيسية للأدوات التي قد يفكر فيها مدير العقارات في السعودية. فكل فئة تؤدي مهمتها جيداً، والسؤال هو أي مهمة تحتاجها أنت.
 
-يخلق هذا النموذج أيضاً دورة إيجابية: كلما زادت القيمة التي توفرها المنصة للمقيمين من خلال الخدمات المريحة، زاد تفاعلهم. التفاعل الأعلى يؤدي إلى رضا أفضل للمقيمين، مما يؤدي بدوره إلى تجديد عقود الإيجار وتقليل معدل الدوران المكلف. تُظهر بيانات الصناعة أن دوران المستأجرين يمكن أن يكلف أكثر من 15,000 ريال سعودي لكل وحدة عند احتساب نفقات التجهيز والتسويق والإيجار المفقود خلال فترات الشغور.
+### الأنظمة العالمية لإدارة العقارات
 
-## مصمم للسوق السعودي
+بُنيت منصات مثل Yardi وBuildium وAppFolio في الأصل لسوق أمريكا الشمالية، وهي منتجات ناضجة بميزات محاسبية عميقة. وإذا كنت تقيّم أحدها، فتحقق من مدى دعمه للغة العربية ووسائل الدفع السعودية والممارسات المحلية في عقود الإيجار وقنوات الحجز التي يستخدمها ضيوفك، ومن متطلبات التدريب والتسعير لمحفظة بحجم محفظتك.
 
-على عكس المنصات العالمية التي تكيف منتجاتها للشرق الأوسط كفكرة لاحقة، صُمم Accez.cloud من الألف إلى الياء مع وضع السوق السعودي في الاعتبار. يتضح هذا في عدة مجالات رئيسية.
+### خدمات تمويل الإيجار
 
-تتكامل المنصة مع مزودي الخدمات السعوديين المحليين بما في ذلك فني للخدمات المنزلية و WeBook لخدمات الحجز وأمازون للتوصيل. هذه ليست تكاملات عامة؛ إنها شراكات تعكس كيف يعيش ويتسوق السكان السعوديون فعلياً. تدعم المنصة أيضاً واجهات ثنائية اللغة عربي-إنجليزي، مما يضمن إمكانية الوصول لسكان المملكة المتنوعين.
+تقدم خدمات مثل إيجاري [نموذج "استأجر الآن وادفع لاحقاً" للإيجارات السكنية](https://www.wamda.com/en/2023/10/saudi-proptech-ejari-closes-1-million-pre-seed-round)، إذ يدفع المستأجر شهرياً بينما يحصل المالك على الإيجار السنوي كاملاً. وهذا يعالج عبء دفع إيجار سنة مقدماً. فهي تحل مشكلة توقيت الدفع، وهي مهمة مختلفة عن إدارة العمليات اليومية، لذا قد يستخدم كثير من المديرين خدمة تمويل إلى جانب منصة تشغيل لا بديلاً عنها.
 
-علاوة على ذلك، يفهم Accez الطبيعة الفريدة لثقافة المجمعات السكنية في المملكة العربية السعودية. كانت المجتمعات المسورة عنصراً أساسياً في الإسكان في المملكة منذ اكتشاف النفط، ولا تزال شائعة حتى اليوم. لدى هذه المجتمعات احتياجات محددة حول إدارة الزوار والأمن والوصول إلى المرافق والمشاركة المجتمعية التي صُمم Accez لمعالجتها.
+### مشغلو الإيجارات قصيرة الأجل
 
-## كيف يقارن Accez بالمنصات السعودية الأخرى
+يتولى مشغلون مثل مباعات [استلام المنازل وإدارتها نيابة عن ملاكها](https://www.wamda.com/en/2021/08/Saudi-proptech-Mabaat-raises-2-million-in-Seed-round)، بما في ذلك الحجوزات والمدفوعات والتنظيف وتحديثات الصيانة. ويناسب ذلك الملاك الذين يريدون تسليم عقاراتهم. أما شركات إدارة العقارات التي تدير محافظها بنفسها فتريد عادةً برنامجاً تتحكم فيه هي، وهنا يأتي دور منصة مثل أكسيز.
 
-### إيجاري
+### أنظمة إدارة الفنادق
 
-أحدثت إيجاري ضجة في السوق السعودي بنموذج ادفع الإيجار لاحقاً، مما يسمح للمستأجرين بالدفع شهرياً بينما يحصل الملاك على إيجارهم السنوي مقدماً. بينما هو مبتكر لمعالجة مرونة الدفع، إيجاري هي في الأساس خدمة مالية وليست منصة لإدارة العقارات. لا تساعد في العمليات اليومية مثل الصيانة وإدارة الزوار أو التواصل مع المقيمين.
+صُممت أنظمة الضيافة للفنادق والشقق الفندقية: الاستقبال ومخزون الغرف وحسابات النزلاء. وهي تعمل جيداً في التشغيل الفندقي، لكنها غير مصممة لعقود الإيجار طويلة الأجل أو تحصيل الإيجار أو بيع الوحدات.
 
-### مباعات
-
-تركز مباعات بشكل خاص على الإيجارات قصيرة الأجل، وتخدم أصحاب العقارات الذين يريدون تعظيم العوائد من خلال الحجوزات على طراز Airbnb. بينما ممتازة لإيجارات العطلات والشقق المفروشة، إلا أنها غير مصممة لإدارة العقارات السكنية التقليدية مع المستأجرين على المدى الطويل.
-
-### RAY
-
-تقدم RAY نظام إدارة المستأجرين والعقارات مع ميزات اتصال قوية، وحققت نجاحاً في المجمعات عبر المملكة العربية السعودية والإمارات. ومع ذلك، تركز RAY بشكل أساسي على العلاقة بين المدير والمستأجر دون مكون السوق الذي يسمح بتوليد الإيرادات من خلال الشراكات مع الشركات المحلية.
-
-### نزيل
-
-تخدم نزيل قطاع الضيافة، وتدير أكثر من 6,000 فندق في جميع أنحاء المملكة العربية السعودية. إنه نظام قوي لإدارة الفنادق والشقق المفروشة، لكنه مصمم لعمليات الضيافة وليس إدارة العقارات السكنية.
-
-يجمع Accez.cloud القدرات التشغيلية التي تقدمها هذه المنصات بشكل فردي مع إضافة طبقة السوق الفريدة التي لا يوفرها أي منها. إنه مصمم ليكون منصة واحدة تتعامل مع كل ما تحتاجه شركة إدارة العقارات السعودية الحديثة.
+صُمم Accez.cloud لشركات إدارة العقارات التي تجمع محافظها بين هذه الاحتياجات: وحدات تؤجر بالليلة، وأخرى بعقود سنوية، وأخرى معروضة للبيع، ومع ملاك يتوقعون كشوف حسابات واضحة.
 
 ## مستقبل إدارة العقارات في المملكة العربية السعودية
 
-من المتوقع أن ينمو سوق برامج إدارة العقارات السعودي بأكثر من 9% سنوياً حتى عام 2032، مدفوعاً بمبادرات التطوير العقاري الضخمة في المملكة بما في ذلك نيوم ومشروع البحر الأحمر والتوسع الحضري المستمر في الرياض وجدة والمدن الكبرى الأخرى. مع دخول المزيد من العقارات السكنية إلى السوق، سيزداد الطلب على حلول الإدارة المتطورة فقط.
+ستواصل برامج التطوير العقاري والسياحي الكبرى في المملكة، إلى جانب النمو العمراني المستمر في الرياض وجدة والمدن الكبرى الأخرى، إضافة وحدات تحتاج إلى إدارة. ومع نمو المحافظ وجمعها بين الإقامات القصيرة والطويلة، تزداد كلفة تشغيلها عبر أدوات غير مترابطة. ويتناول دليلنا عن [إدارة محفظة مختلطة من الإيجارات قصيرة وطويلة الأجل](/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/) هذا الموضوع بتفصيل أكبر.
 
-يتوقع المقيمون العصريون، خاصة الفئات العمرية الأصغر التي ستهيمن على سوق الإيجار بحلول عام 2030، تجارب رقمية أولاً. يريدون إدارة تجربة معيشتهم من خلال التطبيقات، تماماً كما يديرون خدماتهم المصرفية والتسوق والترفيه. العقارات التي لا تستطيع تقديم هذا المستوى من الراحة الرقمية ستكافح لجذب المستأجرين والاحتفاظ بهم.
-
-Accez.cloud في وضع يمكنه من تلبية هذه التوقعات المتطورة. من خلال الجمع بين أدوات إدارة العقارات الشاملة وتجارب الجوال المركزة على المقيمين وميزات السوق المبتكرة، يقدم لمحة عما سيبدو عليه مستقبل إدارة العقارات في المملكة.
+ويتوقع السكان والضيوف بشكل متزايد تجارب رقمية أولاً: الدفع عبر الإنترنت، والحصول على تأكيدات سريعة، والوصول إلى من يساعدهم دون عناء. والعقارات التي لا تستطيع تقديم ذلك ستجد صعوبة في جذب المستأجرين والضيوف والاحتفاظ بهم.
 
 ## الخلاصة
 
-مشهد برامج إدارة العقارات في المملكة العربية السعودية مزدحم، لكن القليل من المنصات تقدم النهج الشامل والتطلعي الذي يجلبه Accez.cloud. من خلال إعادة تصور إدارة العقارات كسوق ثلاثي الأطراف يخلق قيمة للمديرين والمقيمين والشركات المحلية على حد سواء، لا يحل Accez تحديات التشغيل اليوم فحسب. إنه يبني الأساس لكيفية عيش المجتمعات السعودية وتفاعلها في السنوات القادمة.
+مشهد برامج إدارة العقارات في المملكة العربية السعودية مزدحم، وكل أداة تحل مشكلة مختلفة. فللأنظمة العالمية وخدمات تمويل الإيجار ومشغلي الإيجارات قصيرة الأجل وأنظمة الفنادق مكانها. ويتمثل نهج Accez.cloud في منح شركات إدارة العقارات منصة واحدة للإيجارات والعقود والمبيعات والفوترة والملاك والصيانة، بحيث تظهر العمليات كلها في مكان واحد.
 
-لمديري العقارات الذين يتطلعون إلى تمييز عروضهم وتحسين رضا المقيمين وإنشاء تدفقات إيرادات جديدة، يمثل Accez.cloud نهجاً مختلفاً حقاً للتكنولوجيا العقارية، تم بناؤه خصيصاً للاحتياجات والفرص الفريدة للسوق السعودي.
+ولمديري العقارات الذين يريدون تقليل عدد الأدوات، وإبقاء الملاك على اطلاع، وإدارة محافظ مختلطة دون التنقل بين الأنظمة، يقدم Accez.cloud بديلاً عملياً بُني مع مراعاة السوق السعودي.
 
 ## الأسئلة الشائعة
 
 ### كيف يختلف Accez.Cloud عن Yardi أو Buildium؟
 
-Yardi و Buildium منصات عالمية صُممت أساساً للأسواق الغربية ثم كُيفت لاحقاً للشرق الأوسط. تقدم ميزات محاسبية قوية لكنها تفتقر إلى التكاملات السعودية المحددة (إيجار، سداد/مدى)، وشراكات مقدمي الخدمات المحليين، ونموذج إيرادات السوق. صُمم Accez.Cloud من الألف إلى الياء للسوق السعودي مع دعم ثنائي اللغة عربي-إنجليزي والامتثال المحلي المدمج.
+Yardi وBuildium منصتان عالميتان راسختان بُنيتا في الأصل لسوق أمريكا الشمالية. أما Accez.Cloud فيركز على ما تديره شركات إدارة العقارات السعودية يومياً: الإقامات القصيرة المتزامنة مع Airbnb وBooking.com وExpedia، وعقود الإيجار طويلة الأجل ومتابعة الإيجارات، وبيع الوحدات والمشاريع، والفوترة، وكشوف حسابات الملاك ومدفوعاتهم، وأوامر العمل، في منصة واحدة. والخيار الأنسب يعتمد على محفظتك، لذا قارن الميزات والأسعار وفق وضعك الخاص.
 
 ### هل يمكن لـ Accez.Cloud التعامل مع الإيجارات طويلة وقصيرة الأجل؟
 
-نعم. على عكس المنصات المتخصصة في نوع أو آخر (مباعات للقصيرة الأجل، RAY للطويلة الأجل)، يدير Accez.Cloud كلا نوعي الإيجار في نظام واحد. هذا يلغي الحاجة لتشغيل منصات منفصلة للمحافظ المختلطة ويحافظ على جميع بياناتك في مكان واحد.
+نعم. يدير Accez.Cloud الحجوزات ومزامنة القنوات للإقامات القصيرة، وعقود الإيجار ومدفوعاته للمستأجرين على المدى الطويل، في نظام واحد. وهذا يلغي الحاجة إلى تشغيل أدوات منفصلة للمحافظ المختلطة ويحفظ بياناتك كلها في مكان واحد.
 
-### ما هي ميزة السوق وكيف تولد الإيرادات؟
+### ما هو سوق أكسيز؟
 
-يربط سوق Accez.Cloud المقيمين بمقدمي الخدمات المحليين، الخدمات المنزلية وتوصيل الطعام والتجزئة والمزيد، مباشرة عبر المنصة. يكسب مديرو العقارات عمولة على كل معاملة، مما يحول إدارة العقارات من مركز تكلفة إلى عملية مولدة للإيرادات. هذه ميزة لا تقدمها أي منصة إدارة عقارات سعودية أخرى حالياً.
+السوق جزء من حل أكسيز لمقدمي الخدمات. إذ تحصل أنشطة المواعيد مثل الحلاقين والصالونات والمنتجعات الصحية والمدربين على صفحة يجدها فيها عملاؤها ويحجزون عبرها. وهو منتج منفصل عن حل إدارة العقارات، وله عملاؤه.
 
 ### هل Accez.Cloud مناسب لمديري العقارات الصغار؟
 
-نعم. المنصة مصممة للتوسع من المحافظ الصغيرة إلى العمليات الكبيرة. على عكس المنصات العالمية المؤسسية التي تستبعد الشركات الصغيرة بأسعارها أو تتطلب تدريباً مكثفاً، يقدم Accez.Cloud واجهة بديهية مع تسعير مرن يناسب مديري العقارات بأي حجم.
+صُممت المنصة لتناسب المحافظ الصغيرة والعمليات الأكبر على حد سواء، مع صلاحيات للموظفين وكشوف حسابات للملاك تزداد أهميتها كلما نمَوت. ويمكنك مقارنة الباقات في [صفحة أسعار مديري العقارات](/ar/pricing/property-managers/).
 
 ### هل يتكامل Accez.Cloud مع المنصات الحكومية السعودية مثل إيجار؟
 
-صُمم Accez.Cloud لمتطلبات الامتثال السعودية، بما في ذلك التكامل مع منصة إيجار لتسجيل العقود الإلزامي ودعم معالجة مدفوعات سداد ومدى. تبقى المنصة محدثة مع المعايير التنظيمية السعودية المتطورة حتى لا تضطر لإدارة الامتثال يدوياً.
+يتم توثيق عقود الإيجار على منصة إيجار نفسها. ويحفظ Accez.Cloud عقودك ومدفوعات الإيجار (المدفوع والمستحق) ومدفوعات الملاك منظمة إلى جانبها، ويتكامل مع Stripe وTap لفوترة الرسوم الأخرى مثل الإقامات والإضافات والفواتير، بينما يُسدد إيجار العقود السكنية الجديدة [عبر القنوات الرقمية لمنصة إيجار](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/). وللاطلاع على قائمة التكاملات الحالية، تواصل مع فريق أكسيز.
 
-هل أنت مستعد لتحويل عمليات إدارة العقارات الخاصة بك؟ قم بزيارة [accez.cloud](https://accez.cloud) لمعرفة المزيد.
+هل أنت مستعد لتحويل عمليات إدارة العقارات لديك؟ قم بزيارة [accez.cloud](https://accez.cloud) لمعرفة المزيد.
