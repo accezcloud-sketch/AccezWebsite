@@ -55,7 +55,7 @@ WhatsApp is the most widely used social platform in the Kingdom. The Communicati
 
 This "WhatsApp overload" signals a fundamental gap in communication infrastructure. Requests arrive in personal chats, nobody can see who answered what, and nothing links a message to the unit, lease or work order it concerns.
 
-WhatsApp is part of how business gets done in Saudi Arabia, but it cannot replace a proper property management system. The goal is a single, shared record of every conversation, not dependence on one person's phone. Our article on [improving resident communication without WhatsApp overload](/blog/how-to-improve-resident-communication-without-whatsapp-overload/) covers practical ways to get there.
+WhatsApp is part of how business gets done in Saudi Arabia, but it cannot replace a proper property management system. The goal is a single, shared record of every conversation, not dependence on one person's phone. Our article on [improving resident communication without WhatsApp overload](/blog/one-inbox-to-rule-them-all-centralizing-property-communications/) covers practical ways to get there.
 
 ## The Hidden Cost of Staying Outdated
 
@@ -123,7 +123,7 @@ Ready to see what modern property management looks like? Visit [portal.accez.clo
 
 ويكشف هذا "الإغراق في واتساب" عن فجوة أساسية في البنية التحتية للتواصل. فالطلبات تصل إلى محادثات شخصية، ولا أحد يعرف من ردّ على ماذا، ولا شيء يربط الرسالة بالوحدة أو العقد أو أمر العمل الذي تخصه.
 
-واتساب جزء من طريقة إنجاز الأعمال في السعودية، لكنه لا يستطيع أن يحل محل نظام إدارة عقارات حقيقي. والهدف هو سجل واحد مشترك لكل محادثة، لا الاعتماد على هاتف شخص واحد. ويعرض مقالنا عن [تحسين التواصل مع السكان دون إغراق واتساب](/ar/blog/how-to-improve-resident-communication-without-whatsapp-overload/) طرقاً عملية للوصول إلى ذلك.
+واتساب جزء من طريقة إنجاز الأعمال في السعودية، لكنه لا يستطيع أن يحل محل نظام إدارة عقارات حقيقي. والهدف هو سجل واحد مشترك لكل محادثة، لا الاعتماد على هاتف شخص واحد. ويعرض مقالنا عن [تحسين التواصل مع السكان دون إغراق واتساب](/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/) طرقاً عملية للوصول إلى ذلك.
 
 ## التكلفة الخفية للبقاء على نظام قديم
 

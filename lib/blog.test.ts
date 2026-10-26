@@ -64,13 +64,16 @@ describe('getRelatedPosts', () => {
 
   // Relevance regression: topics with several posts must suggest each other.
   // Each case names a post and a word that its suggestions should mostly share.
+  // Minimums reflect the October 2026 merge of overlapping posts: the other
+  // channel sync posts were folded into the double-booking post, and the late
+  // check-in post into the first-impressions post, so fewer siblings remain.
   const onTopic: [slug: string, pattern: RegExp, minimum: number][] = [
     ['emergency-maintenance-at-2am-having-a-system-before-you-need', /maintenance|work-order/, 3],
     ['automated-owner-reporting-statements-that-send-themselves', /owner|report/, 2],
-    ['the-double-booking-nightmare-how-to-sync-every-channel', /booking|channel|airbnb/, 3],
+    ['the-double-booking-nightmare-how-to-sync-every-channel', /booking|channel|airbnb/, 2],
     ['how-to-create-manage-units-accez-cloud', /accez-cloud/, 2],
-    ['mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi', /rent|payment/, 2],
-    ['timing-the-review-request-how-to-get-more-5-star-ratings', /review|impression|check-in/, 3],
+    ['mada-stc-pay-and-apple-pay-offering-the-payment-methods-saudi', /rent|payment|refund|deposit/, 2],
+    ['timing-the-review-request-how-to-get-more-5-star-ratings', /review|impression|check-in/, 2],
   ]
 
   it.each(onTopic)('%s suggests on-topic posts', (slug, pattern, minimum) => {

@@ -1,13 +1,15 @@
 ---
-title: "The 5 Metrics Every Property Manager Should Check Daily"
-titleAr: "المقاييس الخمسة التي يجب على كل مدير عقارات التحقق منها يوميًا"
-excerpt: "In the fast-paced world of property management, knowing your numbers is key to success. Discover the 5 essential daily metrics that separate high-performing managers from the rest."
-excerptAr: "في عالم إدارة العقارات سريع الخطى، يعد فهم أرقامك مفتاح النجاح. اكتشف المقاييس اليومية الأساسية الخمسة التي تفصل بين المديرين ذوي الأداء العالي والباقين."
-metaTitle: "5 Metrics Every Property Manager Should Check Daily"
-metaTitleAr: "5 مقاييس يجب على مدير العقارات مراجعتها يوميًا"
-metaDescription: "Rent collected, maintenance requests, occupancy, response times and cash flow: the five numbers property managers should check daily, and why they matter."
-metaDescriptionAr: "الإيجار المحصل وطلبات الصيانة والإشغال وسرعة الاستجابة والتدفق النقدي: خمسة أرقام ينبغي لمدير العقارات مراجعتها يوميًا، ولماذا هي مهمة."
+title: "Property Management KPIs: The 5 Metrics Every Property Manager Should Check Daily"
+titleAr: "مؤشرات أداء إدارة العقارات: المقاييس الخمسة التي يجب على كل مدير عقارات مراجعتها يوميًا"
+excerpt: "Which property management metrics should you track? Start with five numbers every morning: rent paid vs due, maintenance requests, occupancy, response times and cash. Then add the weekly and monthly KPIs that show how each property really performs."
+excerptAr: "ما مقاييس إدارة العقارات التي يجب أن تتابعها؟ ابدأ بخمسة أرقام كل صباح: الإيجار المسدد والمستحق، وطلبات الصيانة، والإشغال، وسرعة الاستجابة، والنقد. ثم أضف مؤشرات الأداء الأسبوعية والشهرية التي تكشف الأداء الحقيقي لكل عقار."
+metaTitle: "Property Management KPIs: 5 Metrics to Check Daily"
+metaTitleAr: "مؤشرات أداء إدارة العقارات: 5 مقاييس تراجعها يوميًا"
+metaDescription: "The property management KPIs to track: five daily metrics, the weekly and monthly numbers behind them, how to calculate each, and why spreadsheets mislead."
+metaDescriptionAr: "مؤشرات الأداء التي يجب أن يتابعها مدير العقارات: خمسة مقاييس يومية، والأرقام الأسبوعية والشهرية خلفها، وطريقة حساب كل منها، ولماذا تضللك جداول البيانات."
+primaryKeyword: "property management KPIs"
 date: "2026-04-29"
+updated: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/the-5-metrics-every-property-manager-should-check-daily.webp"
@@ -16,158 +18,258 @@ coverImageCredit: "Photo by Tony Hand on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/white-number-5-illustration-P3uJUQ62uXE"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
-tags: ["property management", "metrics", "daily checks", "efficiency", "rent collection"]
-tagsAr: ["إدارة العقارات", "مقاييس", "فحوصات يومية", "كفاءة", "تحصيل الإيجار"]
+tags: ["property management", "KPIs", "property management metrics", "daily checks", "rent collection", "occupancy"]
+tagsAr: ["إدارة العقارات", "مؤشرات الأداء", "مقاييس إدارة العقارات", "مراجعة يومية", "تحصيل الإيجار", "الإشغال"]
 ---
 
-Navigating the daily deluge of tasks in property management can feel like trying to catch lightning in a bottle. You're juggling tenant inquiries, maintenance requests, rent collection, and a hundred other urgent demands. It’s easy to feel overwhelmed, wondering if you’re truly on top of things or just treading water.
+The property management metrics worth checking every day are five: rent paid versus due, new and open maintenance requests, occupancy and upcoming vacancies, how fast tenants get a reply, and your cash position. Behind them sit a handful of weekly and monthly KPIs, such as net operating income, collection rate, renewal rate, days to fill a vacancy and maintenance cost per unit, that tell you how each property really performs. Five minutes on the daily numbers turns most problems into small tasks; skipping them turns the same problems into expensive surprises.
 
-The paradox of property management is that while it's a people-centric business, its success hinges on relentless attention to data. Without a clear view of your operational pulse, you risk missing critical issues, letting revenue slip through the cracks, and ultimately, diminishing your portfolio's value. This isn't about micromanaging; it's about strategic oversight.
+This guide covers what each metric means, how to calculate it, what a warning sign looks like, why a spreadsheet often gives you the wrong answer, and how to use the numbers in the Saudi market.
 
-## The Daily Dashboard of Distress and Success
+## Why Tracking Matters: The Cost of Flying Blind
 
-What separates a property manager who thrives from one who merely survives? It's the disciplined, daily focus on a handful of crucial metrics. These aren't arbitrary numbers; they are the early warning signs of potential problems and the indicators of growing success. Ignoring them is like driving a car without a dashboard, you might get somewhere, but you won't know when you're about to run out of gas or overheat. **Consistent monitoring of key performance indicators (KPIs) directly correlates with operational efficiency and financial health.** A daily look at the right numbers turns problems into small tasks instead of expensive surprises, and it starts with records you can trust; see [why your spreadsheet may be lying to you about property performance](/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/).
+Experience and instinct matter in property management, but running a portfolio without numbers is like driving a city without a map. You may arrive, but slowly and with costly detours. When key data goes untracked, problems pile up in four places:
 
-The danger of neglecting these daily checks lies in the snowball effect. A minor maintenance issue that goes unnoticed can quickly escalate into a costly emergency. A single late payment, if unaddressed, can normalize and lead to a cascade of arrears. **The cost of reactive problem-solving is significantly higher than that of proactive management.** Unaddressed tenant complaints are a common reason tenants decide not to renew, which brings re-leasing costs and lost rental income. Focusing on a few key metrics daily allows you to catch these issues early, minimizing their impact.
+- **Financial performance.** Without rental income trends, vacancy by unit type and the true cost of repairs, you cannot forecast revenue or see where money leaks. Are some unit types always harder to let? Are repair costs climbing on one building? Without data, nobody knows.
+- **Tenant retention.** If you do not track turnover, reasons for leaving and complaints, you cannot fix what drives tenants away, and every departure brings vacancy, cleaning and re-letting costs.
+- **Operations.** Without request volumes, resolution times and vendor performance, recurring faults and slow contractors stay hidden, and staff time goes to firefighting.
+- **Missed opportunities.** Data shows where demand is growing, which units are underpriced and which upgrades would pay back. Without it, those opportunities stay invisible.
 
-## Reading Five Numbers Every Morning
+The snowball effect is the real danger. A small leak nobody logs becomes an emergency. One late payment nobody follows up becomes a habit. A complaint nobody answers becomes a non-renewal.
 
-Top-tier property managers aren't just good at dealing with people; they are masters of their data. They understand that numbers tell a story, and by reading that story daily, they can anticipate challenges and seize opportunities. Their approach is systematic, data-driven, and focused on actionable insights.
+## The Five Daily Metrics at a Glance
 
-### Rent Collection Status
+| Metric | What to look at each morning | Warning sign |
+|--------|------------------------------|--------------|
+| Rent paid vs due | Which units have not paid and for how many days | Overdue list growing or the same names every month |
+| Maintenance requests | New requests, urgency, open jobs and their age | Clusters of the same fault in one building, jobs open too long |
+| Occupancy and vacancy pipeline | Vacant units, days vacant, leases ending in 30 to 60 days | A unit vacant more than a week with no viewings |
+| Tenant response time | Unanswered messages and time to first reply | Response times creeping up week on week |
+| Cash position | Money in, money out, upcoming payables | Obligations due before expected income arrives |
 
-This is the lifeblood of any property portfolio. High performers know precisely how much rent is due, how much has been collected, and crucially, which tenants are late.
+### 1. Rent Paid vs Due
 
-A useful habit is to start the day with the rent roll. The point is not the total collected but the specific units that have not paid, how long each payment has been overdue, and what follow-up each one needs. This daily scan allows for immediate communication with tenants, offering flexible payment plans or addressing any underlying issues that might be causing the delay before it becomes a significant problem.
+This is the lifeblood of any portfolio. Start the day with the rent roll, but do not stop at the total collected. Look at the specific units that have not paid, how many days each is overdue, and what follow up each one needs. Catching a late payment on day one keeps the amount small and the conversation easy. Over a month, this daily number rolls up into your **collection rate** (rent collected divided by rent due). For a full routine, see our guide on [how to collect rent on time](/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/).
 
-### Maintenance Request Volume and Urgency
+### 2. Maintenance Request Volume and Urgency
 
-A sudden spike in maintenance requests can signal underlying building issues, tenant dissatisfaction, or even a poorly maintained property. High performers monitor the number of new requests daily and, more importantly, the urgency and type of issues reported.
+Count new requests, but read their type and urgency too. Three water leak reports in the same building on the same day are rarely a coincidence; they usually point to a wider plumbing fault. A surge in air conditioning requests during a heatwave needs action before tenants suffer. Also watch the age of open jobs: a request that sits for days damages trust faster than the fault itself. Our guide to [building a maintenance system that works](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) shows how to run requests from report to resolution.
 
-Three new water leak requests in the same building on the same day are rarely a coincidence; they often point to a broader plumbing problem that needs immediate attention. Similarly, a surge in air conditioning requests during a heatwave requires swift action before tenants are severely affected. This granular view helps in resource allocation, prioritizing critical repairs, and preventing small issues from escalating into major, expensive disasters that can also lead to reputational damage.
+### 3. Occupancy Rate and Vacancy Pipeline
 
-### Occupancy Rate and Vacancy Trends
+Occupancy is occupied units divided by total units, but the daily view is about the pipeline. Which leases end in the next 30 to 60 days, and have you started renewal talks or marketing? If a unit has been vacant for more than a week, ask why: is the rent too high, is the listing weak, or are viewings slow to arrange? For renewals, see our guide to [rent increases and lease renewals](/blog/rent-increases-and-lease-renewals/). For short-term units, occupancy alone can mislead, so pair it with revenue per available night, as explained in [occupancy rate vs RevPAR](/blog/occupancy-rate-vs-revpar-the-revenue-metrics-vacation-rental/).
 
-While occupancy might seem like a long-term metric, tracking daily changes and understanding vacancy pipelines is crucial. High performers are constantly aware of how many units are occupied, how many are vacant, and what the lease renewal rates are.
+### 4. Tenant Communication and Response Time
 
-Knowing which leases come up for renewal in the next 30 to 60 days lets you start marketing those units early. If a unit has been vacant for more than a week, dig into why: is the rent too high, is the listing weak, or is the viewing process slow? Understanding the speed at which vacancies are filled and the reasons for any extended vacancies informs pricing strategies and marketing efforts, directly impacting revenue. For short-term units, pair occupancy with revenue per available night, as explained in [occupancy rate vs RevPAR](/blog/occupancy-rate-vs-revpar-the-revenue-metrics-vacation-rental/).
+How quickly tenants hear back shapes how they feel about the whole tenancy. A practical target is to acknowledge every message within a couple of hours during working time and resolve non-urgent requests within 24 to 48 hours. If response times start creeping up, treat it as a red flag: the team may be stretched, requests may be scattered across too many channels, or priorities may be unclear. Our article on [how response time predicts tenant retention](/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/) goes deeper.
 
-### Tenant Communication and Response Times
+### 5. Cash Position
 
-The speed and quality of your communication directly impact tenant satisfaction and retention. High performers track how quickly inquiries are responded to and resolved.
+A full financial review may happen monthly, but a quick daily look at cash answers simple questions. Are this week's obligations covered? Is a large unexpected expense coming? Will owner payouts go out on time? This habit prevents short-term cash squeezes and supports better decisions on repairs and upgrades. Over time, the daily numbers feed into [cash flow forecasting](/blog/cash-flow-forecasting-for-property-management-businesses/).
 
-A practical target is to acknowledge every tenant message within a couple of business hours and resolve non-urgent requests within 24 to 48 hours. If response times start creeping up, treat it as a red flag: the team may be understaffed, systems may be inefficient, or priorities may be unclear. Prompt and effective communication builds trust and loyalty, reducing turnover and its associated costs.
+## The Weekly and Monthly KPIs Behind the Daily Numbers
 
-### Financial Performance Snapshot (Cash Flow)
+Daily metrics tell you what needs attention today. These KPIs tell you whether the portfolio is getting healthier. Review them weekly or monthly, per property, and compare against the same period last year.
 
-Beyond just rent collection, a daily glance at your cash flow, inflows versus outflows, provides an immediate sense of financial health. This includes monitoring operational expenses, upcoming payables, and overall cash reserves.
+| KPI | How to calculate | What it tells you |
+|-----|------------------|-------------------|
+| Net operating income (NOI) | Revenue minus operating expenses | Whether a property actually makes money |
+| Collection rate | Rent collected divided by rent due | How well your rent routine works |
+| Occupancy rate | Occupied units divided by total units | How much of your capacity earns income |
+| Renewal rate | Leases renewed divided by leases ending | Tenant satisfaction and future vacancy risk |
+| Days to fill a vacancy | Average days from move out to new lease start | Pricing, listing quality and leasing speed |
+| Maintenance cost per unit | Maintenance spend divided by units | Ageing assets, poor vendors or recurring faults |
+| Average resolution time | Average days from request to completed job | Service quality and team capacity |
+| Revenue per unit | Total revenue divided by units | Which properties and unit types perform best |
 
-A full financial review may happen monthly, but a quick daily look at cash answers simple questions: are immediate obligations covered, and are there unexpected large expenses that need attention or a reallocation of funds? This daily check helps you avoid being caught off guard by short-term liquidity issues and supports better decisions about repairs, upgrades and investments. Over time, these daily numbers feed into [cash flow forecasting](/blog/cash-flow-forecasting-for-property-management-businesses/), which is essential for sustainable growth and avoiding cash flow crises.
+No single KPI tells the whole story. A high occupancy rate does not mean high profit if expenses are out of control or rents sit below market. Look at how the numbers move together. When several of them turn the wrong way on the same property, read our guide on [how to spot a problem property before it drains your portfolio](/blog/how-to-spot-a-problem-property-before-it-drains-your-portfolio/).
 
-## Property Management in the Kingdom: Vision 2030 and Local Nuances
+## Why Your Spreadsheet May Be Lying to You
 
-In Saudi Arabia, the property management landscape is dynamic, shaped by ambitious national goals and evolving tenant expectations. Property managers here must align their daily operations with the Kingdom's **Vision 2030**, which emphasizes a more vibrant and organized real estate sector, including increased homeownership and improved quality of life. This translates to a greater demand for professional, efficient property management services.
+Most managers start tracking these numbers in a spreadsheet, and that is a reasonable first step. The trouble is that a spreadsheet can look precise while being wrong.
 
-Staying compliant with **Ejar** is paramount: residential leases are documented on the platform, so make sure every active lease in your records is registered and its details match. Messaging apps such as **WhatsApp** are widely used in the Kingdom and are a natural channel for tenant communication. High-performing managers monitor these conversations daily, ensure prompt responses, and use them for timely notices about rent, maintenance or building updates, while keeping a record in their own system. Seasonal factors, particularly around **Hajj and Umrah**, can also create specific demand for short-term rentals or affect tenant mobility, so managers in affected cities should watch these trends closely. Payment methods such as **mada and SADAD** are part of everyday transactions, so reconciling these payments against what is due is a critical daily task.
+- **Errors hide easily.** A misplaced decimal, a duplicated row or a broken formula flows straight into your reports. Research by University of Hawaii professor Raymond Panko, [reported by Computerworld](https://www.computerworld.com/article/1704893/sidebar-oops.html), found errors in 49 of 54 audited spreadsheets, or 91%.
+- **The data is stale.** Spreadsheets are updated by hand and in batches, so today's figures may be days or weeks old.
+- **Sources are disconnected.** Linking maintenance costs to a unit's income, or payment history to renewals, is laborious when each lives in a different tab or file.
+- **Versions multiply.** When several people keep their own copies, nobody is sure which number is true.
 
-## Seeing Your Daily Numbers in Accez
+A metric is only useful if you trust it. That means one record per property, lease and job, updated as things happen, so the daily numbers come from the same data your team works in. If you are ready to move, read [how to migrate from spreadsheets without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/).
 
-Accez.Cloud puts several of these daily numbers in one place.
+## Turning Metrics into Decisions
 
-- **Rent Payments per Lease:** See which rent payments are paid and which are due on every long-term contract.
-- **Work Orders:** Log, prioritize and track maintenance from request to done.
-- **Properties Overview:** See revenue, residents, units and work orders for each property, with an availability calendar for short-term units.
-- **One Inbox:** Keep tenant conversations in one shared inbox, with email templates and SMS for quick replies.
-- **Billing and Owner Statements:** Track revenue, invoices and refunds, and prepare statements and payouts per owner.
+Tracking is only worth it if the numbers change what you do. A few examples:
+
+- **Water costs creeping up on one building:** check for leaks or faulty fixtures before the next bill doubles.
+- **The same fault reported repeatedly:** schedule preventive work instead of paying for repeated call outs.
+- **One vendor's jobs always open longest:** review the contract or move the work.
+- **A unit type that always takes longer to let:** revisit pricing, layout or the listing.
+- **Rising late payments in one property:** look at whether the payment routine or reminders broke down there.
+- **Owners asking the same questions:** share these numbers in a regular statement; see [automated owner reporting](/blog/automated-owner-reporting-statements-that-send-themselves/).
+
+## Using Property Metrics in Saudi Arabia
+
+Three local factors shape which numbers matter most in the Kingdom.
+
+- **Ejar records.** Residential leases are documented on Ejar, the official rental platform, so make sure every active lease in your own records matches what is registered: tenant, unit, rent and dates.
+- **Residential rent channels.** The Real Estate General Authority (REGA) [restricted rent payment for new residential contracts to Ejar's digital channels](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/), mada and SADAD, applied gradually from 15 January 2024. Your daily paid versus due check therefore needs to reflect what has been paid through those channels, so reconciling your records with them becomes part of the routine.
+- **Seasonality.** Around Ramadan, Hajj and Umrah, demand for short stays can change sharply in affected cities, and household budgets can tighten. Compare occupancy, revenue and late payments against the same season last year rather than against the previous month.
+
+## How Accez Helps You See Your Daily Numbers
+
+Accez puts the records behind these metrics in one place, so your daily check starts from the same data your team works in.
+
+- **Properties overview:** See revenue, residents, units and work orders for each property side by side.
+- **Leases and rent payments:** See which rent payments are paid and which are due on every long-term contract.
+- **Work orders:** Log, prioritise and track maintenance from request to done, building a history of what breaks, where and how often.
+- **Availability calendar and reservations:** See which short-term units are booked in the availability calendar, and open each reservation to see its payment.
+- **One inbox:** Keep tenant conversations in one shared inbox, with email templates and SMS for quick replies.
+- **Billing, owners and payouts:** Track revenue, invoices and refunds, and prepare statements and payouts per owner.
 
 See all features on the [property management solution page](/solutions/property-managers/).
 
+## Frequently Asked Questions
+
+**What are the most important KPIs for property managers?** Collection rate, occupancy, net operating income, renewal rate, days to fill a vacancy, maintenance cost per unit and resolution time. Check rent, maintenance, vacancies, response times and cash daily, and review the rest weekly or monthly.
+
+**How often should property managers review metrics?** Five operational numbers daily, collection and maintenance trends weekly, and NOI, renewals and cost per unit monthly, compared with the same period last year.
+
+**Is a spreadsheet enough to track property performance?** It can work for a few units, but errors, stale data and disconnected tabs make it unreliable as a portfolio grows.
+
 ## Key Takeaways
 
-- Daily tracking of rent collection status is crucial for cash flow and tenant management.
-- Monitoring maintenance requests daily helps in early problem detection and cost prevention.
-- A close eye on occupancy and vacancy trends prevents extended periods of lost revenue.
-- Prompt tenant communication and fast response times are key to high satisfaction and retention.
-- Daily financial snapshots ensure proactive cash flow management and prevent liquidity crises.
-- Staying abreast of Ejar compliance is non-negotiable for legal and operational integrity in KSA.
-- Answering on familiar channels like WhatsApp, while keeping a record, enhances tenant engagement.
-- Understanding local economic and seasonal trends allows for strategic adaptation.
+- Check five numbers daily: rent paid vs due, maintenance requests, occupancy pipeline, response time and cash.
+- Review weekly and monthly KPIs such as NOI, collection rate, renewal rate, days to fill and maintenance cost per unit.
+- Read metrics together; high occupancy with rising costs is not success.
+- Untracked data hurts finances, retention and operations, and hides growth opportunities.
+- Spreadsheets hide errors and go stale; trustworthy metrics need one up to date record.
+- In Saudi Arabia, keep records aligned with Ejar, reconcile rent paid through Ejar's channels and compare seasons year on year.
+- Accez brings property revenue, rent status, work orders, conversations and billing into one place.
 
-Take control of your property management operations and drive growth with Accez.Cloud. [Visit portal.accez.cloud](https://portal.accez.cloud)
+Ready to start each day with numbers you can trust? Explore [Accez for property managers](/solutions/property-managers/).
 
 <!-- AR -->
 
-في عالم إدارة العقارات سريع الخطى، يمكن أن تشعر بالتعامل مع سيل المهام اليومي وكأنك تحاول الإمساك بالبرق في زجاجة. أنت تتنقل بين استفسارات المستأجرين، وطلبات الصيانة، وتحصيل الإيجارات، ومئات المطالب الملحة الأخرى. من السهل الشعور بالإرهاق، والتساؤل عما إذا كنت حقًا مسيطرًا على الأمور أم مجرد محاولة البقاء على قيد الحياة.
+المقاييس التي تستحق المراجعة يوميًا في إدارة العقارات خمسة: الإيجار المسدد مقابل المستحق، وطلبات الصيانة الجديدة والمفتوحة، والإشغال والشواغر القادمة، وسرعة الرد على المستأجرين، ووضعك النقدي. وخلفها مجموعة من مؤشرات الأداء الأسبوعية والشهرية، مثل صافي الدخل التشغيلي ونسبة التحصيل ونسبة التجديد وعدد أيام شغل الوحدة الشاغرة وتكلفة الصيانة لكل وحدة، تكشف الأداء الحقيقي لكل عقار. خمس دقائق مع الأرقام اليومية تحوّل معظم المشكلات إلى مهام صغيرة، وتجاهلها يحوّل المشكلات نفسها إلى مفاجآت مكلفة.
 
-المفارقة في إدارة العقارات هي أنه بينما هي عمل يركز على الأفراد، فإن نجاحها يعتمد على الاهتمام الدؤوب بالبيانات. بدون رؤية واضحة لنبض عملياتك، فإنك تخاطر بتفويت المشكلات الحرجة، وترك الإيرادات تتسرب، وفي النهاية، تقليل قيمة محفظتك. هذا لا يتعلق بالإدارة التفصيلية؛ بل يتعلق بالإشراف الاستراتيجي.
+يشرح هذا الدليل معنى كل مقياس، وطريقة حسابه، وشكل إشارة التحذير فيه، ولماذا تعطيك جداول البيانات إجابة خاطئة في كثير من الأحيان، وكيف تستخدم هذه الأرقام في السوق السعودي.
 
-## لوحة القيادة اليومية للمشاكل والنجاح
+## لماذا يهم التتبع: ثمن العمل دون رؤية
 
-ما الذي يميز مدير عقارات يزدهر عن مدير يكتفي بالبقاء؟ إنه التركيز المنضبط واليومي على عدد قليل من المقاييس الحاسمة. هذه ليست أرقامًا اعتباطية؛ إنها علامات إنذار مبكر للمشاكل المحتملة ومؤشرات النجاح المتزايد. تجاهلها يشبه قيادة سيارة بدون لوحة قيادة، قد تصل إلى وجهتك، لكنك لن تعرف متى سينفد الوقود أو ترتفع درجة حرارة المحرك. **المراقبة المستمرة لمؤشرات الأداء الرئيسية (KPIs) ترتبط مباشرة بالكفاءة التشغيلية والصحة المالية.** فالنظرة اليومية إلى الأرقام الصحيحة تحوّل المشكلات إلى مهام صغيرة بدلًا من مفاجآت مكلفة، وتبدأ بسجلات يمكنك الوثوق بها؛ اطّلع على مقال [لماذا قد تضللك جداول البيانات بشأن أداء عقاراتك](/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/).
+الخبرة والحدس مهمان في إدارة العقارات، لكن إدارة محفظة بلا أرقام تشبه التنقل في مدينة دون خريطة: قد تصل، لكن ببطء ومع تحويلات مكلفة. وحين لا تُتابع البيانات الأساسية، تتراكم المشكلات في أربعة مواضع:
 
-يتمثل خطر إهمال هذه الفحوصات اليومية في تأثير كرة الثلج. مشكلة صيانة صغيرة تمر دون أن يلاحظها أحد يمكن أن تتصاعد بسرعة لتصبح حالة طوارئ مكلفة. دفعة إيجار واحدة متأخرة، إذا لم يتم معالجتها، يمكن أن تصبح أمرًا طبيعيًا وتؤدي إلى سلسلة من المتأخرات. **تكلفة حل المشكلات التفاعلي أعلى بكثير من تكلفة الإدارة الاستباقية.** وشكاوى المستأجرين التي لا تُعالج من الأسباب الشائعة لقرار المستأجر بعدم التجديد، مما يجلب تكاليف إعادة التأجير وفقدان دخل الإيجار. يسمح لك التركيز على عدد قليل من المقاييس الرئيسية يوميًا باكتشاف هذه المشكلات مبكرًا، مما يقلل من تأثيرها.
+- **الأداء المالي.** دون اتجاهات دخل الإيجار والشواغر حسب نوع الوحدة والتكلفة الفعلية للإصلاحات، لا يمكنك توقع الإيرادات أو معرفة مواضع التسرب. هل بعض أنواع الوحدات أصعب تأجيرًا دائمًا؟ هل تتصاعد تكاليف الإصلاح في مبنى بعينه؟ دون بيانات لا أحد يعرف.
+- **الاحتفاظ بالمستأجرين.** إذا لم تتابع معدل المغادرة وأسبابها والشكاوى، فلن تعالج ما يدفع المستأجرين إلى الرحيل، وكل مغادرة تجلب تكاليف الشغور والتنظيف وإعادة التأجير.
+- **العمليات.** دون حجم الطلبات وأوقات إنجازها وأداء المقاولين، تبقى الأعطال المتكررة والمقاولون البطيئون مخفيين، ويذهب وقت الفريق في إطفاء الحرائق.
+- **الفرص الضائعة.** تكشف البيانات أين ينمو الطلب، وأي الوحدات مسعّرة بأقل من قيمتها، وأي التحسينات ستسترد تكلفتها. ودونها تبقى هذه الفرص غير مرئية.
 
-## قراءة خمسة أرقام كل صباح
+والخطر الحقيقي هو أثر كرة الثلج: تسرب صغير لم يسجله أحد يصبح حالة طارئة، ودفعة متأخرة لم يتابعها أحد تصبح عادة، وشكوى لم يرد عليها أحد تصبح قرارًا بعدم التجديد.
 
-لا يقتصر مديرو العقارات المتميزون على التعامل الجيد مع الأشخاص؛ بل هم سادة بياناتهم. إنهم يفهمون أن الأرقام تحكي قصة، ومن خلال قراءة هذه القصة يوميًا، يمكنهم توقع التحديات واغتنام الفرص. نهجهم منهجي، ومدعوم بالبيانات، ويركز على الرؤى القابلة للتنفيذ.
+## المقاييس اليومية الخمسة في لمحة
 
-### حالة تحصيل الإيجارات
+| المقياس | ما تراجعه كل صباح | إشارة التحذير |
+|---------|--------------------|----------------|
+| الإيجار المسدد مقابل المستحق | الوحدات التي لم تسدد وعدد أيام التأخر | قائمة المتأخرين تكبر أو الأسماء نفسها كل شهر |
+| طلبات الصيانة | الطلبات الجديدة ودرجة إلحاحها والأعمال المفتوحة وعمرها | تكرار العطل نفسه في مبنى واحد أو أعمال مفتوحة لمدة طويلة |
+| الإشغال والشواغر القادمة | الوحدات الشاغرة وأيام شغورها والعقود المنتهية خلال 30 إلى 60 يومًا | وحدة شاغرة أكثر من أسبوع دون معاينات |
+| سرعة الرد على المستأجرين | الرسائل التي لم يُرد عليها ووقت الرد الأول | أوقات الرد ترتفع أسبوعًا بعد أسبوع |
+| الوضع النقدي | الداخل والخارج والمدفوعات القادمة | التزامات مستحقة قبل وصول الدخل المتوقع |
 
-هذا هو شريان الحياة لأي محفظة عقارية. يعرف أصحاب الأداء العالي بالضبط مقدار الإيجار المستحق، ومقدار ما تم تحصيله، والأهم من ذلك، المستأجرين المتأخرين.
+### 1. الإيجار المسدد مقابل المستحق
 
-من العادات المفيدة أن تبدأ يومك بمراجعة كشف الإيجارات. والمهم ليس إجمالي المبلغ المحصل، بل الوحدات المحددة التي لم تدفع، ومدة تأخر كل دفعة، والمتابعة التي تحتاجها كل حالة. يسمح هذا المسح اليومي بالتواصل الفوري مع المستأجرين، وتقديم خطط سداد مرنة، أو معالجة أي أسباب قد تكون وراء التأخير قبل أن تتحول إلى مشكلة كبيرة.
+هذا شريان الحياة لأي محفظة. ابدأ يومك بكشف الإيجارات، لكن لا تتوقف عند إجمالي المحصل. انظر إلى الوحدات التي لم تسدد تحديدًا، وعدد أيام تأخر كل منها، والمتابعة التي تحتاجها كل حالة. فاكتشاف التأخر في يومه الأول يبقي المبلغ صغيرًا والحديث سهلًا. وعلى مدى الشهر، يتحول هذا الرقم اليومي إلى **نسبة التحصيل**، أي الإيجار المحصل مقسومًا على الإيجار المستحق. وللاطلاع على روتين كامل، راجع دليلنا عن [كيفية تحصيل الإيجار في موعده](/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/).
 
-### حجم طلبات الصيانة والإلحاح
+### 2. حجم طلبات الصيانة ودرجة إلحاحها
 
-يمكن أن يشير الارتفاع المفاجئ في طلبات الصيانة إلى مشكلات أساسية في المبنى، أو عدم رضا المستأجرين، أو حتى عقار سيئ الصيانة. يراقب أصحاب الأداء العالي عدد الطلبات الجديدة يوميًا، والأهم من ذلك، مدى إلحاح ونوع المشكلات المبلغ عنها.
+احسب الطلبات الجديدة، لكن اقرأ نوعها ودرجة إلحاحها أيضًا. فثلاثة بلاغات عن تسرب مياه في المبنى نفسه وفي اليوم نفسه نادرًا ما تكون مصادفة، وغالبًا ما تشير إلى عطل أوسع في السباكة. وزيادة طلبات التكييف في موجة حر تتطلب تحركًا قبل أن يتضرر المستأجرون. وراقب كذلك عمر الأعمال المفتوحة، فالطلب الذي يبقى أيامًا دون معالجة يضر بالثقة أسرع من العطل نفسه. ويشرح دليلنا عن [بناء نظام صيانة فعّال](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) كيفية إدارة الطلبات من البلاغ حتى الإنجاز.
 
-ثلاثة طلبات جديدة لتسرب المياه في المبنى نفسه وفي اليوم نفسه نادرًا ما تكون مصادفة؛ فهي تشير غالبًا إلى مشكلة أوسع في السباكة تحتاج إلى اهتمام فوري. وبالمثل، فإن زيادة طلبات التكييف خلال موجات الحر تتطلب إجراءً سريعًا قبل أن يتأثر المستأجرون بشدة. يساعد هذا العرض التفصيلي في توزيع الموارد، وتحديد أولويات الإصلاحات الحرجة، ومنع المشكلات الصغيرة من التحول إلى أعطال كبيرة ومكلفة قد تضر أيضًا بالسمعة.
+### 3. معدل الإشغال والشواغر القادمة
 
-### معدل الإشغال واتجاهات الشواغر
+معدل الإشغال هو عدد الوحدات المشغولة مقسومًا على إجمالي الوحدات، لكن المراجعة اليومية تتعلق بما هو قادم. أي العقود تنتهي خلال 30 إلى 60 يومًا، وهل بدأت محادثات التجديد أو التسويق؟ وإذا بقيت وحدة شاغرة أكثر من أسبوع، فاسأل عن السبب: هل الإيجار مرتفع، أم الإعلان ضعيف، أم ترتيب المعاينات بطيء؟ وللتجديدات، راجع دليلنا عن [زيادة الإيجار وتجديد العقود](/ar/blog/rent-increases-and-lease-renewals/). أما في الوحدات قصيرة الأجل فقد يضلل الإشغال وحده، لذا اربطه بالإيراد لكل ليلة متاحة كما نشرح في مقال [معدل الإشغال مقابل RevPAR](/ar/blog/occupancy-rate-vs-revpar-the-revenue-metrics-vacation-rental/).
 
-بينما قد يبدو الإشغال مقياسًا طويل الأجل، فإن تتبع التغييرات اليومية وفهم خطوط أنابيب الشواغر أمر بالغ الأهمية. يدرك أصحاب الأداء العالي باستمرار عدد الوحدات المشغولة، وعدد الشواغر، ومعدلات تجديد عقود الإيجار.
+### 4. التواصل مع المستأجرين وسرعة الرد
 
-معرفة العقود التي يحين موعد تجديدها خلال 30 إلى 60 يومًا القادمة تتيح لك البدء في تسويق تلك الوحدات مبكرًا. وإذا ظلت وحدة شاغرة أكثر من أسبوع، فابحث عن السبب: هل الإيجار مرتفع، أم أن الإعلان ضعيف، أم أن عملية المعاينة بطيئة؟ إن فهم سرعة شغل الوحدات وأسباب طول فترات الشغور يوجّه استراتيجيات التسعير وجهود التسويق، ويؤثر مباشرة على الإيرادات. وفي الوحدات قصيرة الأجل، اربط الإشغال بالإيراد لكل ليلة متاحة كما نشرح في مقال [معدل الإشغال مقابل RevPAR](/ar/blog/occupancy-rate-vs-revpar-the-revenue-metrics-vacation-rental/).
+سرعة وصول الرد إلى المستأجر تشكّل انطباعه عن الإيجار كله. ومن الأهداف العملية الإقرار باستلام كل رسالة خلال ساعتين تقريبًا في وقت العمل، وحل الطلبات غير العاجلة خلال 24 إلى 48 ساعة. وإذا بدأت أوقات الرد في الارتفاع، فاعتبرها إشارة تحذير: فقد يكون الفريق مثقلًا، أو الطلبات موزعة على قنوات كثيرة، أو الأولويات غير واضحة. ويتعمق مقالنا عن [كيف يتنبأ وقت الاستجابة بالاحتفاظ بالمستأجرين](/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/) في هذا الموضوع.
 
-### اتصالات المستأجرين وأوقات الاستجابة
+### 5. الوضع النقدي
 
-تؤثر سرعة وجودة اتصالاتك بشكل مباشر على رضا المستأجرين والاحتفاظ بهم. يتتبع أصحاب الأداء العالي مدى سرعة الاستجابة للاستفسارات وحلها.
+قد تجري المراجعة المالية الكاملة شهريًا، لكن نظرة يومية سريعة على النقد تجيب عن أسئلة بسيطة: هل التزامات هذا الأسبوع مغطاة؟ هل هناك مصروف كبير غير متوقع قادم؟ هل ستُحوَّل مستحقات الملاك في موعدها؟ هذه العادة تمنع ضغوط السيولة قصيرة الأجل وتدعم قرارات أفضل بشأن الإصلاحات والتحسينات. ومع الوقت تغذي الأرقام اليومية [توقع التدفق النقدي](/ar/blog/cash-flow-forecasting-for-property-management-businesses/).
 
-من الأهداف العملية الرد على كل رسالة من المستأجرين خلال ساعتي عمل تقريبًا، وحل الطلبات غير العاجلة خلال 24 إلى 48 ساعة. وإذا بدأت أوقات الاستجابة في الارتفاع، فاعتبر ذلك إشارة تحذير: فقد يكون الفريق أقل من الحاجة، أو الأنظمة غير فعالة، أو الأولويات غير واضحة. يبني التواصل السريع والفعال الثقة والولاء، مما يقلل من مغادرة المستأجرين وتكاليفها.
+## مؤشرات الأداء الأسبوعية والشهرية خلف الأرقام اليومية
 
-### لقطة الأداء المالي (التدفق النقدي)
+تخبرك المقاييس اليومية بما يحتاج إلى اهتمامك اليوم، أما هذه المؤشرات فتخبرك هل تتحسن صحة المحفظة. راجعها أسبوعيًا أو شهريًا لكل عقار، وقارنها بالفترة نفسها من العام الماضي.
 
-إلى جانب تحصيل الإيجارات، يوفر إلقاء نظرة يومية على التدفق النقدي، التدفقات الداخلة مقابل التدفقات الخارجة، إحساسًا فوريًا بالصحة المالية. وهذا يشمل مراقبة نفقات التشغيل، والمدفوعات القادمة، وإجمالي الاحتياطيات النقدية.
+| المؤشر | طريقة الحساب | ما يكشفه |
+|--------|--------------|-----------|
+| صافي الدخل التشغيلي | الإيرادات ناقص المصروفات التشغيلية | هل يحقق العقار ربحًا فعلًا |
+| نسبة التحصيل | الإيجار المحصل مقسومًا على الإيجار المستحق | مدى نجاح روتين التحصيل لديك |
+| معدل الإشغال | الوحدات المشغولة مقسومة على إجمالي الوحدات | الجزء المدر للدخل من طاقتك |
+| نسبة التجديد | العقود المجددة مقسومة على العقود المنتهية | رضا المستأجرين وخطر الشغور القادم |
+| أيام شغل الوحدة الشاغرة | متوسط الأيام بين خروج المستأجر وبدء العقد الجديد | التسعير وجودة الإعلان وسرعة التأجير |
+| تكلفة الصيانة لكل وحدة | إنفاق الصيانة مقسومًا على عدد الوحدات | تقادم الأصول أو ضعف المقاولين أو الأعطال المتكررة |
+| متوسط وقت الإنجاز | متوسط الأيام من الطلب حتى إتمام العمل | جودة الخدمة وطاقة الفريق |
+| الإيراد لكل وحدة | إجمالي الإيرادات مقسومًا على عدد الوحدات | أي العقارات وأنواع الوحدات أفضل أداءً |
 
-قد تتم المراجعة المالية الكاملة شهريًا، لكن نظرة يومية سريعة على النقد تجيب عن أسئلة بسيطة: هل الالتزامات العاجلة مغطاة؟ وهل توجد مصروفات كبيرة غير متوقعة تحتاج إلى اهتمام أو إعادة توزيع للأموال؟ يساعدك هذا الفحص اليومي على تجنب مفاجآت السيولة قصيرة الأجل، ويدعم قرارات أفضل بشأن الإصلاحات والتحديثات والاستثمارات. ومع الوقت، تغذي هذه الأرقام اليومية [التنبؤ بالتدفق النقدي](/ar/blog/cash-flow-forecasting-for-property-management-businesses/)، وهو أمر ضروري للنمو المستدام وتجنب أزمات السيولة.
+لا يروي مؤشر واحد القصة كاملة. فمعدل الإشغال المرتفع لا يعني ربحًا مرتفعًا إذا كانت المصروفات خارج السيطرة أو الإيجارات أقل من السوق. انظر إلى حركة الأرقام معًا، وإذا اتجه عدد منها في الاتجاه الخاطئ في العقار نفسه، فاقرأ دليلنا عن [كيف تكتشف العقار المتعثر قبل أن يستنزف محفظتك](/ar/blog/how-to-spot-a-problem-property-before-it-drains-your-portfolio/).
 
-## إدارة العقارات في المملكة: رؤية 2030 والفروقات المحلية
+## لماذا قد تضللك جداول البيانات
 
-في المملكة العربية السعودية، يشهد قطاع إدارة العقارات ديناميكية، يتشكل بفعل الأهداف الوطنية الطموحة وتوقعات المستأجرين المتطورة. يجب على مديري العقارات هنا مواءمة عملياتهم اليومية مع **رؤية 2030** للمملكة، التي تؤكد على قطاع عقاري أكثر حيوية وتنظيمًا، بما في ذلك زيادة ملكية المنازل وتحسين جودة الحياة. وهذا يترجم إلى طلب أكبر على خدمات إدارة العقارات الاحترافية والفعالة.
+يبدأ معظم المديرين بتتبع هذه الأرقام في جدول بيانات، وهي خطوة أولى معقولة. لكن المشكلة أن الجدول قد يبدو دقيقًا وهو خاطئ.
 
-يعد الالتزام بمتطلبات **إيجار** أمرًا بالغ الأهمية: فعقود الإيجار السكنية توثَّق عبر المنصة، لذا تأكد من أن كل عقد ساري في سجلاتك مسجل وأن بياناته مطابقة. وتطبيقات المراسلة مثل **واتساب** منتشرة على نطاق واسع في المملكة وتعد قناة طبيعية للتواصل مع المستأجرين. ويتابع المديرون المتميزون هذه المحادثات يوميًا، ويضمنون الرد السريع، ويستخدمونها لإرسال إشعارات في الوقت المناسب بشأن الإيجار أو الصيانة أو مستجدات المبنى، مع الاحتفاظ بسجل في نظامهم الخاص. كما يمكن للعوامل الموسمية، لا سيما في **الحج والعمرة**، أن تخلق طلبًا خاصًا على الإيجارات قصيرة الأجل أو تؤثر على تنقل المستأجرين، لذا ينبغي للمديرين في المدن المعنية متابعة هذه الاتجاهات عن كثب. وطرق الدفع مثل **مدى وسداد** جزء من المعاملات اليومية، لذا فإن مطابقة هذه المدفوعات مع المستحقات مهمة يومية حاسمة.
+- **الأخطاء تختبئ بسهولة.** فاصلة عشرية في غير مكانها، أو صف مكرر، أو معادلة معطوبة، تنتقل مباشرة إلى تقاريرك. وقد وجدت أبحاث البروفيسور ريموند بانكو من جامعة هاواي، [كما نقلتها Computerworld](https://www.computerworld.com/article/1704893/sidebar-oops.html)، أخطاءً في 49 من أصل 54 جدول بيانات خضعت للتدقيق، أي 91%.
+- **البيانات قديمة.** تُحدَّث الجداول يدويًا وعلى دفعات، فقد تكون أرقام اليوم متأخرة أيامًا أو أسابيع.
+- **المصادر منفصلة.** ربط تكاليف الصيانة بدخل الوحدة، أو سجل الدفع بالتجديدات، عمل مرهق حين يكون كل منها في تبويب أو ملف مختلف.
+- **النسخ تتكاثر.** حين يحتفظ عدة أشخاص بنسخهم الخاصة، لا يعرف أحد أي رقم هو الصحيح.
 
-## متابعة أرقامك اليومية في Accez
+المقياس لا يفيد إلا إذا وثقت به، وهذا يعني سجلًا واحدًا لكل عقار وعقد وعمل صيانة، يُحدَّث لحظة حدوث الأمور، لتأتي الأرقام اليومية من البيانات نفسها التي يعمل عليها فريقك. وإذا كنت مستعدًا للانتقال، فاقرأ دليلنا عن [الانتقال من جداول البيانات دون فقدان البيانات](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/).
 
-يجمع Accez.Cloud عددًا من هذه الأرقام اليومية في مكان واحد.
+## من المقاييس إلى القرارات
 
-- **دفعات الإيجار لكل عقد:** اعرف الدفعات المدفوعة والمستحقة في كل عقد طويل الأجل.
-- **أوامر العمل:** سجّل الصيانة وحدد أولوياتها وتابعها من الطلب حتى الإنجاز.
-- **نظرة عامة على العقارات:** اطّلع على الإيرادات والسكان والوحدات وأوامر العمل لكل عقار، مع تقويم إتاحة للوحدات قصيرة الأجل.
-- **صندوق وارد موحد:** اجمع محادثات المستأجرين في صندوق وارد مشترك واحد، مع قوالب البريد الإلكتروني والرسائل النصية للردود السريعة.
-- **الفوترة وكشوف حساب الملاك:** تابع الإيرادات والفواتير والمبالغ المستردة، وأعدّ كشوف الحساب والمدفوعات لكل مالك.
+لا قيمة للتتبع ما لم تغيّر الأرقام ما تفعله. وهذه بعض الأمثلة:
+
+- **تكاليف المياه ترتفع تدريجيًا في مبنى واحد:** افحص التسربات أو التجهيزات المعطلة قبل أن تتضاعف الفاتورة التالية.
+- **العطل نفسه يُبلَّغ عنه مرارًا:** جدول صيانة وقائية بدل دفع تكلفة الزيارات المتكررة.
+- **أعمال مقاول بعينه تبقى مفتوحة أطول من غيرها:** راجع العقد أو انقل العمل.
+- **نوع وحدة يستغرق تأجيره وقتًا أطول دائمًا:** أعد النظر في السعر أو التصميم أو الإعلان.
+- **ارتفاع التأخر في السداد في عقار واحد:** تحقق هل تعطل روتين الدفع أو التذكير فيه.
+- **الملاك يطرحون الأسئلة نفسها:** شارك هذه الأرقام في كشف دوري، وراجع دليلنا عن [التقارير الآلية للملاك](/ar/blog/automated-owner-reporting-statements-that-send-themselves/).
+
+## استخدام مقاييس العقارات في السعودية
+
+ثلاثة عوامل محلية تحدد أي الأرقام أهم في المملكة.
+
+- **سجلات منصة إيجار.** توثَّق عقود الإيجار السكنية في منصة إيجار، المنصة الرسمية للإيجار، لذا تأكد من أن كل عقد ساري في سجلاتك يطابق ما هو مسجل: المستأجر والوحدة والإيجار والتواريخ.
+- **قنوات سداد الإيجار السكني.** [قصرت الهيئة العامة للعقار سداد إيجارات العقود السكنية الجديدة على القنوات الرقمية لمنصة إيجار](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/)، أي مدى وسداد، وطُبق ذلك تدريجيًا ابتداءً من 15 يناير 2024. لذلك يجب أن تعكس مراجعتك اليومية للمسدد والمستحق ما دُفع عبر هذه القنوات، فتصبح مطابقة سجلاتك معها جزءًا من الروتين.
+- **المواسم.** في رمضان ومواسم الحج والعمرة قد يتغير الطلب على الإقامات القصيرة بشدة في المدن المعنية، وقد تضيق ميزانيات الأسر. قارن الإشغال والإيرادات والتأخر في السداد بالموسم نفسه من العام الماضي لا بالشهر السابق.
+
+## كيف يساعدك أكسيز على رؤية أرقامك اليومية
+
+يجمع أكسيز السجلات التي تقوم عليها هذه المقاييس في مكان واحد، لتبدأ مراجعتك اليومية من البيانات نفسها التي يعمل عليها فريقك.
+
+- **نظرة عامة على العقارات:** اطّلع على الإيرادات والسكان والوحدات وأوامر العمل لكل عقار جنبًا إلى جنب.
+- **العقود ومدفوعات الإيجار:** اعرف الدفعات المسددة والمستحقة في كل عقد طويل الأجل.
+- **أوامر العمل:** سجّل الصيانة وحدد أولوياتها وتابعها من الطلب حتى الإنجاز، لتبني سجلًا بما يتعطل وأين وكم مرة.
+- **تقويم الإتاحة والحجوزات:** اعرف الوحدات قصيرة الأجل المحجوزة من تقويم الإتاحة، وافتح كل حجز لترى دفعته.
+- **صندوق وارد موحد:** اجمع محادثات المستأجرين في صندوق وارد مشترك، مع قوالب البريد الإلكتروني والرسائل النصية للردود السريعة.
+- **الفوترة والملاك والمستحقات:** تابع الإيرادات والفواتير والمبالغ المستردة، وأعدّ الكشوف والمستحقات لكل مالك.
 
 اطّلع على جميع الميزات في [صفحة حل إدارة العقارات](/ar/solutions/property-managers/).
 
+## أسئلة شائعة
+
+**ما أهم مؤشرات الأداء لمديري العقارات؟** نسبة التحصيل، والإشغال، وصافي الدخل التشغيلي، ونسبة التجديد، وأيام شغل الوحدة الشاغرة، وتكلفة الصيانة لكل وحدة، ووقت الإنجاز. راجع الإيجار والصيانة والشواغر وسرعة الرد والنقد يوميًا، والبقية أسبوعيًا أو شهريًا.
+
+**كم مرة يجب أن يراجع مدير العقارات المقاييس؟** خمسة أرقام تشغيلية يوميًا، واتجاهات التحصيل والصيانة أسبوعيًا، وصافي الدخل التشغيلي والتجديدات وتكلفة الوحدة شهريًا، مع مقارنتها بالفترة نفسها من العام الماضي.
+
+**هل يكفي جدول البيانات لتتبع أداء العقارات؟** قد يكفي لعدد قليل من الوحدات، لكن الأخطاء والبيانات القديمة والتبويبات المنفصلة تجعله غير موثوق مع نمو المحفظة.
+
 ## أبرز النقاط
 
-- يعد التتبع اليومي لحالة تحصيل الإيجارات أمرًا بالغ الأهمية للتدفق النقدي وإدارة المستأجرين.
-- تساعد مراقبة طلبات الصيانة يوميًا في الكشف المبكر عن المشكلات ومنع التكاليف.
-- تمنع المراقبة الدقيقة لاتجاهات الإشغال والشواغر فترات طويلة من فقدان الإيرادات.
-- يعد التواصل السريع مع المستأجرين وأوقات الاستجابة السريعة مفتاح الرضا والاحتفاظ المرتفعين.
-- تضمن اللقطات المالية اليومية إدارة استباقية للتدفق النقدي وتمنع أزمات السيولة.
-- يعد البقاء على اطلاع دائم بالامتثال لإيجار أمرًا غير قابل للتفاوض للنزاهة القانونية والتشغيلية في المملكة العربية السعودية.
-- الرد عبر القنوات المألوفة مثل واتساب، مع الاحتفاظ بسجل، يعزز تفاعل المستأجرين.
-- يسمح فهم الاتجاهات الاقتصادية والموسمية المحلية بالتكيف الاستراتيجي.
+- راجع خمسة أرقام يوميًا: الإيجار المسدد مقابل المستحق، وطلبات الصيانة، والشواغر القادمة، وسرعة الرد، والنقد.
+- راجع المؤشرات الأسبوعية والشهرية مثل صافي الدخل التشغيلي ونسبة التحصيل ونسبة التجديد وأيام الشغل وتكلفة الصيانة لكل وحدة.
+- اقرأ المقاييس معًا، فالإشغال المرتفع مع تكاليف متصاعدة ليس نجاحًا.
+- البيانات غير المتابعة تضر بالمالية والاحتفاظ بالمستأجرين والعمليات، وتخفي فرص النمو.
+- جداول البيانات تخفي الأخطاء وتتقادم بسرعة، والمقاييس الموثوقة تحتاج إلى سجل واحد محدّث.
+- في المملكة، طابق سجلاتك مع منصة إيجار، وتابع الإيجار المسدد عبر قنواتها، وقارن المواسم سنة بسنة.
+- يجمع أكسيز إيرادات العقارات وحالة الإيجار وأوامر العمل والمحادثات والفوترة في مكان واحد.
 
-تحكم في عمليات إدارة الممتلكات الخاصة بك وحقق النمو مع Accez.Cloud. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+هل تريد أن تبدأ كل يوم بأرقام تثق بها؟ تعرّف على [أكسيز لمديري العقارات](/ar/solutions/property-managers/).

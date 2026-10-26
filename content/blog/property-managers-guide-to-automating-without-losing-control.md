@@ -39,7 +39,7 @@ The property managers winning today aren't choosing between technology and perso
 
 Not everything should be automated. But these tasks are almost always better handled by systems than humans:
 
-**Rent reminders and payment processing.** Automated reminders a few days before due dates and real-time payment logging help reduce late payments while eliminating the awkwardness of personal collection calls for routine situations. We cover this in depth in [how to collect rent while you sleep](/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/).
+**Rent reminders and payment processing.** Automated reminders a few days before due dates and real-time payment logging help reduce late payments while eliminating the awkwardness of personal collection calls for routine situations. We cover this in depth in [how to collect rent while you sleep](/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/).
 
 **Maintenance request intake and routing.** When a tenant submits a request through a portal, the system can automatically categorize it, assign priority, route it to the right vendor, and send status updates. This isn't replacing human judgment, it's ensuring requests don't get lost and tenants stay informed without your team manually updating everyone. See [building a maintenance system that works from request to resolution](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) for a step-by-step setup.
 
@@ -124,7 +124,7 @@ Automate the routine. Humanize the relational. That's how you scale without losi
 ## Related Articles
 
 - [How to Scale Your Property Portfolio Successfully](/blog/how-to-scale-your-property-portfolio-without-losing-control/)
-- [Improve Resident Communication Beyond WhatsApp](/blog/how-to-improve-resident-communication-without-whatsapp-overload/)
+- [Improve Resident Communication Beyond WhatsApp](/blog/one-inbox-to-rule-them-all-centralizing-property-communications/)
 - [The Hidden Costs of Managing Properties Without a System](/blog/hidden-costs-of-managing-properties-without-a-system/)
 
 *Ready to automate intelligently? Visit [portal.accez.cloud](https://portal.accez.cloud) to see how.*
@@ -153,7 +153,7 @@ Automate the routine. Humanize the relational. That's how you scale without losi
 
 ليس كل شيء يجب أتمتته. لكن هذه المهام تكون دائماً تقريباً أفضل عندما تتولاها الأنظمة بدلاً من البشر:
 
-**تذكيرات الإيجار ومعالجة المدفوعات.** التذكيرات الآلية قبل أيام قليلة من تواريخ الاستحقاق، وتسجيل المدفوعات فور حدوثها، تساعد على تقليل المدفوعات المتأخرة مع إلغاء الحرج في مكالمات التحصيل الشخصية للحالات الروتينية. نتناول ذلك بالتفصيل في مقال [كيف تحصّل الإيجار وأنت نائم](/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/).
+**تذكيرات الإيجار ومعالجة المدفوعات.** التذكيرات الآلية قبل أيام قليلة من تواريخ الاستحقاق، وتسجيل المدفوعات فور حدوثها، تساعد على تقليل المدفوعات المتأخرة مع إلغاء الحرج في مكالمات التحصيل الشخصية للحالات الروتينية. نتناول ذلك بالتفصيل في مقال [كيف تحصّل الإيجار وأنت نائم](/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/).
 
 **استقبال طلبات الصيانة وتوجيهها.** عندما يقدم المستأجر طلباً عبر البوابة، يمكن للنظام تصنيفه تلقائياً وتحديد الأولوية وتوجيهه إلى المورد المناسب وإرسال تحديثات الحالة. هذا لا يحل محل الحكم البشري، إنه يضمن عدم ضياع الطلبات وبقاء المستأجرين على اطلاع دون أن يقوم فريقك بتحديث الجميع يدوياً. راجع مقال [بناء نظام صيانة فعّال من الطلب إلى الحل](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) لخطوات الإعداد.
 

@@ -107,7 +107,7 @@ Lease registration takes place on the Ejar platform itself. Accez.Cloud keeps yo
 
 - [5 Signs Your Property Management System is Outdated](/blog/5-signs-your-property-management-system-is-outdated/)
 - [How to Scale Your Property Portfolio Successfully](/blog/how-to-scale-your-property-portfolio-without-losing-control/)
-- [Improve Resident Communication Beyond WhatsApp](/blog/how-to-improve-resident-communication-without-whatsapp-overload/)
+- [Improve Resident Communication Beyond WhatsApp](/blog/one-inbox-to-rule-them-all-centralizing-property-communications/)
 - [Property Management Software: A Beginner's Guide](/blog/property-management-software-beginners-guide/)
 
 Ready to transform your property management operations? Visit [accez.cloud](https://accez.cloud) to learn more.

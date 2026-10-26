@@ -303,22 +303,22 @@
     },
     {
       "source": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana",
-      "destination": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana/",
-      "destination": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana",
-      "destination": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-mana/",
-      "destination": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
@@ -343,22 +343,22 @@
     },
     {
       "source": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca",
-      "destination": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
       "permanent": true
     },
     {
       "source": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca/",
-      "destination": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
       "permanent": true
     },
     {
       "source": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca",
-      "destination": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
       "permanent": true
     },
     {
       "source": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-sca/",
-      "destination": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
       "permanent": true
     },
     {
@@ -443,42 +443,42 @@
     },
     {
       "source": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut",
-      "destination": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut/",
-      "destination": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut",
-      "destination": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-aut/",
-      "destination": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf",
-      "destination": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
       "source": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf/",
-      "destination": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf",
-      "destination": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staf/",
-      "destination": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
@@ -523,42 +523,42 @@
     },
     {
       "source": "/blog/how-transparency-wins-and-keeps-property-management-contract",
-      "destination": "/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "destination": "/blog/owner-communication-that-builds-trust-not-just-reports/",
       "permanent": true
     },
     {
       "source": "/blog/how-transparency-wins-and-keeps-property-management-contract/",
-      "destination": "/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "destination": "/blog/owner-communication-that-builds-trust-not-just-reports/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-transparency-wins-and-keeps-property-management-contract",
-      "destination": "/ar/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "destination": "/ar/blog/owner-communication-that-builds-trust-not-just-reports/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-transparency-wins-and-keeps-property-management-contract/",
-      "destination": "/ar/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "destination": "/ar/blog/owner-communication-that-builds-trust-not-just-reports/",
       "permanent": true
     },
     {
       "source": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po",
-      "destination": "/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po/",
-      "destination": "/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po",
-      "destination": "/ar/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-po/",
-      "destination": "/ar/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
@@ -983,22 +983,22 @@
     },
     {
       "source": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle",
-      "destination": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle/",
-      "destination": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle",
-      "destination": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
       "source": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-colle/",
-      "destination": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
       "permanent": true
     },
     {
@@ -1043,42 +1043,42 @@
     },
     {
       "source": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w",
-      "destination": "/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w/",
-      "destination": "/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w",
-      "destination": "/ar/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-w/",
-      "destination": "/ar/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov",
-      "destination": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "destination": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
       "permanent": true
     },
     {
       "source": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov/",
-      "destination": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "destination": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov",
-      "destination": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "destination": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnov/",
-      "destination": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "destination": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
       "permanent": true
     },
     {
@@ -1223,22 +1223,22 @@
     },
     {
       "source": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg",
-      "destination": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
       "source": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg/",
-      "destination": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg",
-      "destination": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-bigg/",
-      "destination": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
       "permanent": true
     },
     {
@@ -1283,82 +1283,82 @@
     },
     {
       "source": "/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-",
-      "destination": "/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-/",
-      "destination": "/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-",
-      "destination": "/ar/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours-and-how-/",
-      "destination": "/ar/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo",
-      "destination": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo/",
-      "destination": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo",
-      "destination": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-yo/",
-      "destination": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa",
-      "destination": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "destination": "/blog/the-5-metrics-every-property-manager-should-check-daily/",
       "permanent": true
     },
     {
       "source": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa/",
-      "destination": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "destination": "/blog/the-5-metrics-every-property-manager-should-check-daily/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa",
-      "destination": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "destination": "/ar/blog/the-5-metrics-every-property-manager-should-check-daily/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performa/",
-      "destination": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "destination": "/ar/blog/the-5-metrics-every-property-manager-should-check-daily/",
       "permanent": true
     },
     {
       "source": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-co",
-      "destination": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-co/",
-      "destination": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-co",
-      "destination": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-co/",
-      "destination": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
@@ -1583,62 +1583,62 @@
     },
     {
       "source": "/blog/how-untracked-maintenance-requests-become-5-000-turnovers",
-      "destination": "/blog/untracked-maintenance-requests-costing-landlords-thousands/",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
       "permanent": true
     },
     {
       "source": "/blog/how-untracked-maintenance-requests-become-5-000-turnovers/",
-      "destination": "/blog/untracked-maintenance-requests-costing-landlords-thousands/",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-untracked-maintenance-requests-become-5-000-turnovers",
-      "destination": "/ar/blog/untracked-maintenance-requests-costing-landlords-thousands/",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-untracked-maintenance-requests-become-5-000-turnovers/",
-      "destination": "/ar/blog/untracked-maintenance-requests-costing-landlords-thousands/",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
       "permanent": true
     },
     {
       "source": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management",
-      "destination": "/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management/",
-      "destination": "/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management",
-      "destination": "/ar/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/ar/blog/how-vacation-rental-managers-are-losing-20-of-bookings-to-poor-channel-management/",
-      "destination": "/ar/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
       "permanent": true
     },
     {
       "source": "/blog/why-87-of-tenants-expect-a-response-within-24-hours",
-      "destination": "/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/blog/why-87-of-tenants-expect-a-response-within-24-hours/",
-      "destination": "/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours",
-      "destination": "/ar/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
       "source": "/ar/blog/why-87-of-tenants-expect-a-response-within-24-hours/",
-      "destination": "/ar/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
       "permanent": true
     },
     {
@@ -1663,22 +1663,582 @@
     },
     {
       "source": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need",
-      "destination": "/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need/",
-      "destination": "/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need",
-      "destination": "/ar/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
       "permanent": true
     },
     {
       "source": "/ar/blog/the-accez-marketplace-model-earning-while-your-tenants-get-what-they-need/",
-      "destination": "/ar/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-poor-channel-management-costs-vacation-rental-managers-bookings/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-managing-airbnb-and-booking-com-separately-is-costing-you/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "destination": "/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-5-dashboards-to-1-the-case-for-centralized-booking-management/",
+      "destination": "/ar/blog/the-double-booking-nightmare-how-to-sync-every-channel/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-collect-rent-while-you-sleep-the-case-for-payment-automation/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/stop-being-your-tenants-payment-reminder-automate-rent-collection/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-chasing-rent-payments-is-the-worst-use-of-your-time",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-chasing-rent-payments-is-the-worst-use-of-your-time/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-chasing-rent-payments-is-the-worst-use-of-your-time",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-chasing-rent-payments-is-the-worst-use-of-your-time/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-2am-rent-payment-why-your-tenants-need-24-7-access",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-2am-rent-payment-why-your-tenants-need-24-7-access/",
+      "destination": "/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-2am-rent-payment-why-your-tenants-need-24-7-access",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-2am-rent-payment-why-your-tenants-need-24-7-access/",
+      "destination": "/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-monthly-report-nobody-reads-and-what-to-send-instead",
+      "destination": "/blog/automated-owner-reporting-statements-that-send-themselves/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-monthly-report-nobody-reads-and-what-to-send-instead/",
+      "destination": "/blog/automated-owner-reporting-statements-that-send-themselves/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-monthly-report-nobody-reads-and-what-to-send-instead",
+      "destination": "/ar/blog/automated-owner-reporting-statements-that-send-themselves/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-monthly-report-nobody-reads-and-what-to-send-instead/",
+      "destination": "/ar/blog/automated-owner-reporting-statements-that-send-themselves/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-transparency-wins-and-keeps-property-management-contracts",
+      "destination": "/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "destination": "/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-transparency-wins-and-keeps-property-management-contracts",
+      "destination": "/ar/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-transparency-wins-and-keeps-property-management-contracts/",
+      "destination": "/ar/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-property-owners-really-want-from-their-managers",
+      "destination": "/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-property-owners-really-want-from-their-managers/",
+      "destination": "/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/what-property-owners-really-want-from-their-managers",
+      "destination": "/ar/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/what-property-owners-really-want-from-their-managers/",
+      "destination": "/ar/blog/owner-communication-that-builds-trust-not-just-reports/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-maintenance-request-black-hole-why-tenants-feel-ignored",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-maintenance-request-black-hole-why-tenants-feel-ignored/",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-maintenance-request-black-hole-why-tenants-feel-ignored",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-maintenance-request-black-hole-why-tenants-feel-ignored/",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/untracked-maintenance-requests-costing-landlords-thousands",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/untracked-maintenance-requests-costing-landlords-thousands/",
+      "destination": "/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/untracked-maintenance-requests-costing-landlords-thousands",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/untracked-maintenance-requests-costing-landlords-thousands/",
+      "destination": "/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers",
+      "destination": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "destination": "/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers",
+      "destination": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/",
+      "destination": "/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-improve-resident-communication-without-whatsapp-overload",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-improve-resident-communication-without-whatsapp-overload/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-improve-resident-communication-without-whatsapp-overload",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-improve-resident-communication-without-whatsapp-overload/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-whatsapp-trap-why-your-communication-system-is-your-biggest-risk/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "destination": "/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-communicate-with-100-tenants-without-hiring-more-staff/",
+      "destination": "/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them",
+      "destination": "/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them",
+      "destination": "/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/tenant-expectations-for-a-swift-response-and-how-to-meet-them/",
+      "destination": "/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-10-unit-ceiling-why-most-property-managers-can-t-scale",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-10-unit-ceiling-why-most-property-managers-can-t-scale/",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-10-unit-ceiling-why-most-property-managers-can-t-scale",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-10-unit-ceiling-why-most-property-managers-can-t-scale/",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-50-properties-with-the-same-effort-as-10",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-50-properties-with-the-same-effort-as-10/",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/managing-50-properties-with-the-same-effort-as-10",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/managing-50-properties-with-the-same-effort-as-10/",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/from-landlord-to-portfolio-manager-the-mindset-shift-for-scale/",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-add-properties-without-adding-headaches",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-add-properties-without-adding-headaches/",
+      "destination": "/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-add-properties-without-adding-headaches",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-to-add-properties-without-adding-headaches/",
+      "destination": "/ar/blog/how-to-scale-your-property-portfolio-without-losing-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-marketplace-model-earning-while-your-tenants-get-what-they-need/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-could",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "destination": "/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-could",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-tenants-are-paying-someone-else-for-services-you-could/",
+      "destination": "/ar/blog/from-cost-center-to-profit-center-monetizing-property-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/flying-blind-what-happens-when-property-managers-don-t-track",
+      "destination": "/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/flying-blind-what-happens-when-property-managers-don-t-track/",
+      "destination": "/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/flying-blind-what-happens-when-property-managers-don-t-track",
+      "destination": "/ar/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/flying-blind-what-happens-when-property-managers-don-t-track/",
+      "destination": "/ar/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance",
+      "destination": "/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "destination": "/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance",
+      "destination": "/ar/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/why-your-spreadsheet-is-lying-to-you-about-property-performance/",
+      "destination": "/ar/blog/the-5-metrics-every-property-manager-should-check-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/getting-started-with-property-management",
+      "destination": "/blog/property-management-software-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/getting-started-with-property-management/",
+      "destination": "/blog/property-management-software-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/getting-started-with-property-management",
+      "destination": "/ar/blog/property-management-software-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/getting-started-with-property-management/",
+      "destination": "/ar/blog/property-management-software-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-late-check-ins-kill-your-vacation-rental-reviews",
+      "destination": "/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-late-check-ins-kill-your-vacation-rental-reviews/",
+      "destination": "/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-late-check-ins-kill-your-vacation-rental-reviews",
+      "destination": "/ar/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/how-late-check-ins-kill-your-vacation-rental-reviews/",
+      "destination": "/ar/blog/first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-tenant-app-advantage-self-service-that-saves-you-hours",
+      "destination": "/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-tenant-app-advantage-self-service-that-saves-you-hours/",
+      "destination": "/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-tenant-app-advantage-self-service-that-saves-you-hours",
+      "destination": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/the-tenant-app-advantage-self-service-that-saves-you-hours/",
+      "destination": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
       "permanent": true
     }
   ],

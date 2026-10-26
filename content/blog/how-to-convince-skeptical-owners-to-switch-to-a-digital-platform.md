@@ -47,7 +47,7 @@ Instead of a sudden, all-or-nothing switch, consider a phased approach. Introduc
 
 ### Building Bridges with Communication and Collaboration
 
-Foster an environment of open communication. Regularly update owners on the benefits they are experiencing, such as faster rent collection, reduced administrative errors, and improved communication with tenants. Encourage feedback and actively use it to refine the implementation process. Showing owners that their input is valued can significantly boost their willingness to engage with new systems. For more on what owners expect, read [what property owners really want from their managers](/blog/what-property-owners-really-want-from-their-managers/).
+Foster an environment of open communication. Regularly update owners on the benefits they are experiencing, such as faster rent collection, reduced administrative errors, and improved communication with tenants. Encourage feedback and actively use it to refine the implementation process. Showing owners that their input is valued can significantly boost their willingness to engage with new systems. For more on what owners expect, read [what property owners really want from their managers](/blog/owner-communication-that-builds-trust-not-just-reports/).
 
 ## Navigating the Saudi Arabian Property Landscape with Digital Tools
 
@@ -129,7 +129,7 @@ Ready to transform your property operations? [Visit portal.accez.cloud](https://
 
 ### بناء الجسور بالتواصل والتعاون
 
-عزز بيئة التواصل المفتوح. قم بتحديث الملاك بانتظام حول الفوائد التي يستفيدون منها، مثل تحصيل الإيجارات بشكل أسرع، وتقليل الأخطاء الإدارية، وتحسين التواصل مع المستأجرين. شجع التعليقات واستخدمها بنشاط لتحسين عملية التنفيذ. إظهار الملاك أن مدخلاتهم ذات قيمة يمكن أن يعزز بشكل كبير استعدادهم للانخراط مع الأنظمة الجديدة. ولمعرفة المزيد عن توقعات الملاك، اقرأ [ما يريده ملاك العقارات حقاً من مديريهم](/ar/blog/what-property-owners-really-want-from-their-managers/).
+عزز بيئة التواصل المفتوح. قم بتحديث الملاك بانتظام حول الفوائد التي يستفيدون منها، مثل تحصيل الإيجارات بشكل أسرع، وتقليل الأخطاء الإدارية، وتحسين التواصل مع المستأجرين. شجع التعليقات واستخدمها بنشاط لتحسين عملية التنفيذ. إظهار الملاك أن مدخلاتهم ذات قيمة يمكن أن يعزز بشكل كبير استعدادهم للانخراط مع الأنظمة الجديدة. ولمعرفة المزيد عن توقعات الملاك، اقرأ [ما يريده ملاك العقارات حقاً من مديريهم](/ar/blog/owner-communication-that-builds-trust-not-just-reports/).
 
 ## التنقل في مشهد العقارات السعودي بالأدوات الرقمية
 

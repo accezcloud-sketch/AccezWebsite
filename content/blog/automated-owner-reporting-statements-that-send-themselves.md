@@ -1,13 +1,15 @@
 ---
-title: "Automated Owner Reporting: Statements That Send Themselves"
-titleAr: "التقارير الآلية للملاك: كشوفات ترسل نفسها"
-metaTitle: "Automated Owner Reporting: Statements That Send Themselves"
-metaTitleAr: "التقارير الآلية للملاك: كشوفات ترسل نفسها"
-metaDescription: "Manual owner statements eat hours and invite errors. See how property managers automate owner reporting to save time and earn the trust of owners."
-metaDescriptionAr: "كشوفات الملاك اليدوية تستهلك الساعات وتفتح الباب للأخطاء. تعرّف على كيفية أتمتة تقارير الملاك لتوفير الوقت وكسب ثقة أصحاب العقارات."
-excerpt: "Tired of chasing down owner reports? Discover how automated reporting can save time, boost transparency, and delight your property owners."
-excerptAr: "هل سئمت من مطاردة تقارير الملاك؟ اكتشف كيف يمكن لإعداد التقارير الآلي توفير الوقت وزيادة الشفافية وإرضاء أصحاب العقارات لديك."
+title: "Owner Statements and Reports: What Property Managers Should Send"
+titleAr: "كشوفات الملاك وتقاريرهم: ما الذي يجب أن يرسله مديرو العقارات"
+metaTitle: "Owner Statements and Reports: A Property Manager's Guide"
+metaTitleAr: "كشوفات الملاك وتقاريرهم: دليل مديري العقارات"
+metaDescription: "What a good owner statement includes, how often to send it and how to pair it with short updates owners read. A practical guide for property managers."
+metaDescriptionAr: "ما الذي يتضمنه كشف المالك الجيد، وكم مرة ترسله، وكيف تقرنه بتحديثات قصيرة يقرؤها الملاك فعلًا. دليل عملي لمديري العقارات لبناء تقارير ملاك موثوقة."
+primaryKeyword: "owner statements for property managers"
+excerpt: "A clear guide to owner statements and owner reports: what to include, how often to send them, why long monthly reports go unread and how to build a repeatable reporting routine."
+excerptAr: "دليل واضح لكشوفات الملاك وتقاريرهم: ما الذي تتضمنه، وكم مرة ترسلها، ولماذا لا تُقرأ التقارير الشهرية الطويلة، وكيف تبني روتينًا ثابتًا لإعداد التقارير."
 date: "2026-07-30"
+updated: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/automated-owner-reporting-statements-that-send-themselves.webp"
@@ -16,120 +18,232 @@ coverImageCredit: "Photo by Stephen Dawson on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
-tags: ["Property Management", "Automation", "Owner Relations", "Financial Reporting", "Efficiency"]
-tagsAr: ["إدارة الممتلكات", "الأتمتة", "علاقات الملاك", "التقارير المالية", "الكفاءة"]
+tags: ["Owner Statements", "Owner Reporting", "Property Management", "Owner Relations", "Financial Reporting"]
+tagsAr: ["كشوفات الملاك", "تقارير الملاك", "إدارة العقارات", "علاقات الملاك", "التقارير المالية"]
 ---
 
-Property managers often find themselves in a perpetual cycle of data collection, analysis, and manual reporting, a process that consumes valuable time and can lead to delays in communicating crucial financial updates to property owners. The paradox is that while owners demand transparency and prompt information, the very systems designed to provide this can become a significant operational bottleneck.
+An owner statement is the record a property manager sends each owner, usually monthly, showing what the property earned, what was spent, what fees were deducted and what was paid out. A good one goes out on the same date every period, fits the key numbers on one page, explains anything unusual in a sentence or two, and can be traced line by line to leases, invoices, work orders and bank transfers. On its own, though, a long monthly report is often skimmed or ignored. The managers owners trust most pair a clean statement with short, timely updates that explain what the numbers mean.
 
-This constant demand for detailed, accurate, and timely owner statements can divert attention from core management tasks like tenant acquisition, maintenance coordination, and proactive problem-solving. The sheer volume of individual owner reports, each requiring specific data compilation and personalized delivery, can overwhelm even the most organized teams, leading to a strain on resources and potential lapses in communication.
+This guide covers what to put in an owner statement, how often to send it, why traditional monthly reports go unread, and how to build a reporting routine that does not eat your month.
 
-## Why Manual Owner Reports Eat Up Your Month
+## What Every Owner Statement Should Include
 
-The traditional approach to owner reporting is inherently labor-intensive and prone to error. Imagine the process: pulling data from multiple sources (rent rolls, expense logs, vendor invoices, bank statements), then manually consolidating it into a clear, digestible format for each owner. This often involves spreadsheet gymnastics, cross-referencing countless entries, and then physically sending out these documents, whether via email, mail, or even in-person. The inefficiencies add up quickly, and the hours grow with every owner you add when there is no system behind the reports. That is time that could be channeled into revenue-generating activities. The reliance on manual checks and balances means that a single overlooked entry or calculation error can propagate through the entire report, necessitating a painstaking review process and potentially damaging trust with owners. Furthermore, the lack of standardization in manual reporting can lead to inconsistencies in the information provided, making it difficult for owners to compare performance across different properties or time periods. **The sheer volume of administrative overhead** associated with manual reporting is a primary detractor from a property manager's ability to focus on strategic growth and service enhancement.
+Owners compare statements month to month, so the structure should never change. Use the same sections, in the same order, for every owner.
 
-## How Efficient Firms Handle Owner Reporting
+| Section | What it shows | Why owners care |
+|---|---|---|
+| Period and property | Statement dates, property and unit names | Confirms which asset and which month they are reading |
+| Opening balance | Funds held for the owner at the start of the period | Lets them follow the money from one statement to the next |
+| Income | Rent collected per unit, booking revenue, other charges | The first number every owner looks at |
+| Outstanding rent | Rent due but not yet paid, by unit | Arrears should never come as a surprise |
+| Expenses | Each repair, service or bill, with a reference to its invoice or work order | Shows where the money went and why |
+| Management fee | Your fee, calculated the way your agreement says | Removes any doubt about what you charged |
+| Owner payout | Amount transferred, date and reference | Matches what they see in their bank account |
+| Closing balance and reserve | What is still held and why | Explains money that was not paid out |
+| Notes | Two or three sentences on anything unusual | Answers the question before the owner asks it |
 
-High-performing property management firms have long understood that efficiency in administrative tasks is not a luxury but a necessity for scaling and delivering exceptional service. They recognize that investing in smart solutions to automate repetitive processes frees up their team to engage in more value-added activities.
+Keep the summary to a single page and put the line items behind it. An owner who wants detail can read every row; an owner who does not can stop after the totals.
 
-### Embracing Technology for Seamless Information Flow
+## Why Manual Owner Statements Eat Your Month
 
-Leading property managers are not afraid to embrace technology. They see software not as a cost, but as a strategic enabler. This means moving beyond basic accounting software to integrated platforms that can handle the entire property management lifecycle, from leasing and rent collection to maintenance tracking and, crucially, owner reporting. By adopting these tools, they create a centralized hub for all property-related data, drastically reducing the need for manual data entry and consolidation. This technological adoption ensures that information is consistently captured and readily available for reporting purposes.
+The traditional approach is labour intensive and easy to get wrong. A manager pulls figures from rent rolls, expense logs, supplier invoices and bank statements, then copies them into a spreadsheet for each owner and sends the result by email. Every owner you add multiplies the work when there is no system behind the reports.
 
-### Proactive Communication as a Competitive Edge
+Manual reporting also spreads errors. One mistyped entry flows through the totals, the owner spots a figure that does not match their bank account, and you spend an afternoon reconciling instead of managing. Statements built by hand also drift in format from month to month, which makes it hard for an owner to compare performance across properties or periods. **The administrative weight of manual reporting is time taken directly from leasing, maintenance and growth.**
 
-Exceptional property managers understand that **proactive communication builds stronger owner relationships**. Instead of waiting for an owner to inquire about their property’s performance, they set up systems to deliver regular, transparent updates. This includes establishing clear reporting cadences, such as monthly or quarterly statements, and ensuring these are delivered consistently and on time. High performers also leverage digital channels to deliver these reports, offering owners convenient access to their financial data whenever and wherever they need it. This approach not only enhances owner satisfaction but also minimizes ad-hoc inquiries, allowing the management team to focus on operational excellence. For ideas on what owners actually want to see, read our guide to [owner communication that builds trust, not just reports](/blog/owner-communication-that-builds-trust-not-just-reports/).
+## Why Long Monthly Reports Go Unread
 
-### Data-Driven Decision Making at Every Level
+Many managers go further and compile a long monthly performance report on top of the statement. It is careful work, and it is often met with silence. The problem is rarely the effort; it is how the report is built.
 
-The insights gleaned from consistent, accurate financial reporting are invaluable. High-performing property managers use this data not just to inform owners, but to drive their own business decisions. They analyze trends in rental income, occupancy rates, and operating expenses to identify areas for improvement or potential risks. This data-driven approach allows them to optimize rental pricing, negotiate better vendor contracts, and forecast future performance with greater accuracy. For instance, understanding seasonal variations in income and expenses can help in better cash flow management, a critical factor for property owners seeking stable returns. A [study of 179 large publicly traded firms](https://aisel.aisnet.org/icis2011/proceedings/economicvalueIS/13) by researchers at MIT and the University of Pennsylvania found that firms adopting data-driven decision making had output and productivity **5 to 6% higher** than their other investments and IT use would predict.
+- **The format asks too much.** A dense PDF attachment needs dedicated time to open and understand. For a busy owner it becomes one more task to postpone.
+- **It looks backwards.** Most of the content describes what already happened, with little on what is happening now or what comes next.
+- **It lacks context.** Figures arrive without explanation, on the assumption that the reader knows how to interpret an occupancy rate or a maintenance spike. Most owners do not.
+- **It is not personal.** The owner of a residential building may care about tenant retention and maintenance costs, while the owner of a commercial unit watches occupancy and renewals. One generic report speaks to neither.
+- **It arrives too late.** A once a month document cannot deal with a problem that started on the third.
+- **It competes with everything else.** Owners receive a steady stream of emails and notifications every day, and a long attachment rarely cuts through.
 
-## Saudi Arabia Specific Considerations: The Kingdom's Real Estate Transformation
+The common thread is that these reports are built for the sender's convenience rather than the reader's understanding.
 
-In Saudi Arabia, the property management landscape is undergoing a rapid and exciting transformation, driven by ambitious national goals and evolving market dynamics. The Saudi Vision 2030 initiative, with its focus on economic diversification and increased homeownership, places a significant emphasis on efficient and transparent real estate operations. For property managers, this translates to an increased need for streamlined processes that can support a growing market. Leases registered on **Ejar**, the Kingdom's rental services network, give every tenancy a standard digital contract, and rent on new residential Ejar contracts [must now be paid through Ejar's digital channels](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/), mada and SADAD. Owner statements that match those registered contracts and payment records are easier for owners to trust. Owners are also used to fast digital communication: WhatsApp is the most used social platform in the Kingdom, with a [usage rate of 92.7% in the CST Saudi Internet Report 2025](https://www.arabnews.pk/node/2652325). Owners expect updates to reach them quickly, so delivering statements digitally and on a fixed schedule matters. Furthermore, understanding local economic rhythms, such as the seasonal demand spikes around Hajj and Umrah, and being able to present their financial impact clearly to owners, showcases a property manager's local market expertise. GASTAT statistics on real estate market performance provide further context that astute managers can integrate into their owner reporting, demonstrating a deep understanding of the forces shaping their clients' investments. Digital rent payments through mada and SADAD also leave a clear record to reconcile against, a key component of accurate owner statements.
+## What to Send Instead: Statement Plus Short Updates
 
-## How Accez.Cloud Helps You Streamline Owner Reporting
+Do not drop the data. Change how you deliver it.
 
-Accez.Cloud keeps the data behind owner reports in one place, so preparing statements no longer means pulling numbers from separate spreadsheets.
+### Explain the number, not just the number
 
-Here are the Accez.Cloud features that support your owner reporting:
+A useful report does not just say "occupancy was 92%". It says why, and what happens next. For example: "Occupancy held at 92% because two leases renewed early. One unit becomes vacant next month and is already listed." Two sentences of interpretation are worth more to most owners than five pages of tables. Put this commentary in the notes section of the statement or in a short email that goes out with it.
 
-- **Owners and Payouts**: Keep statements and payouts per owner, so each owner's figures sit in one record.
-- **Billing and Payments**: Track revenue, invoices and refunds in the same system that holds your reservations and leases.
-- **Leases and Rent Payments**: See which rent payments are paid and which are still due on each long-term contract.
-- **Properties Overview**: View revenue, residents, units and work orders for each property, the context owners ask about most.
-- **Work Orders**: Follow maintenance from request to done, so you can show owners exactly what work was carried out on their property.
+### Send short updates when something happens
 
-See how these fit together on the [billing and payments section of our property manager solution](/solutions/property-managers/#billing). With the numbers already in one place, you can send owners consistent statements and foster stronger, more transparent relationships with them.
+Between statements, send brief, event driven updates: a major repair approved or completed, a vacancy, a lease renewal, a late payment that needs a decision. Keep them to a few lines, lead with what the owner needs to know or decide, and attach a photo or invoice when it helps. This is where trust is built, as we explain in our guide to [owner communication that builds trust](/blog/owner-communication-that-builds-trust-not-just-reports/).
+
+### Tailor detail and channel to each owner
+
+Ask every owner at onboarding how much detail they want and how they prefer to hear from you. Some want every work order; others want the totals and a call when something is wrong. Email suits statements and anything that needs a record. Phone calls suit bad news and decisions. Messaging apps suit quick alerts, as long as the formal record still lives in your system.
+
+### A reporting cadence that works
+
+| Communication | Frequency | Content |
+|---|---|---|
+| Owner statement | Monthly, same date | Income, expenses, fee, payout, short notes |
+| Event update | When it happens | Repairs, vacancies, renewals, arrears, decisions needed |
+| Performance review | Quarterly | Trends, market changes, recommendations |
+| Annual summary | Once a year | Full year results, budget and plans for next year |
+
+## Building a Repeatable Reporting Routine
+
+A statement owners trust is the output of a routine, not a heroic effort at month end.
+
+1. **Fix a close date.** Decide the day each month when the books close and the day statements go out, and keep to both.
+2. **Record everything as it happens.** Log rent payments against the lease, expenses against an invoice or work order, and payouts against a bank reference during the month, not at the end.
+3. **Reconcile before you send.** Check that rent received matches what each lease says is due, that every expense has supporting paperwork, and that payouts match bank transfers.
+4. **Use one template.** The same layout for every owner makes statements faster to produce and easier to compare.
+5. **Write the notes last.** Once the numbers are final, add the two or three sentences that explain them.
+6. **Keep owner money separate.** Clear statements depend on clean books; our guide to [trust accounting for property managers](/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/) covers how to keep owner funds apart from your own.
+
+The same records help you run the business, not just report on it. Trends in rental income, occupancy and operating costs show where to adjust rents, renegotiate supplier contracts or plan cash flow around seasonal swings. Research supports the effort: a [study of 179 large publicly traded firms](https://aisel.aisnet.org/icis2011/proceedings/economicvalueIS/13) by researchers at MIT and the University of Pennsylvania found that firms adopting data driven decision making had output and productivity **5 to 6% higher** than their other investments and IT use would predict. For the figures worth watching every day, see [the 5 metrics every property manager should check daily](/blog/the-5-metrics-every-property-manager-should-check-daily/).
+
+## Owner Reporting in Saudi Arabia
+
+In the Kingdom, the records behind an owner statement are increasingly digital. Residential leases are registered on **Ejar**, the national rental services network, which gives every tenancy a standard digital contract. Since January 2024, rent on new residential Ejar contracts [must be paid through Ejar's digital channels](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/), which REGA names as mada and SADAD, and payments made outside them are not accepted as proof of payment. For property managers this is good news: there is an official record of rent to reconcile against, and a statement that matches the registered contract and the payment record is easy for an owner to trust.
+
+Owners also expect fast, digital contact. WhatsApp is the most used social platform in the Kingdom, with a [usage rate of 92.7% in the Saudi Internet Report 2025](https://www.arabnews.pk/node/2652325) from the Communications, Space and Technology Commission. Short updates should reach owners where they already are, while the statement itself stays a formal document with a clear record.
+
+Seasonality matters too. Short stay properties in Makkah and Madinah see demand rise around Hajj and Umrah, so income can swing sharply between months. Explaining those swings in the notes, before the owner asks, shows you know the local market. Vision 2030's push for a more transparent, professional real estate sector only raises the bar for clear reporting.
+
+## How Accez Helps With Owner Statements
+
+Accez keeps the data behind owner statements in one place, so preparing them no longer means pulling numbers from separate spreadsheets. You still decide what to send and when; the records are already there.
+
+- **Owners and Payouts:** Keep statements and payouts per owner, so each owner's figures sit in one record.
+- **Billing and Payments:** Track revenue, invoices and refunds in the same system that holds your reservations and leases, with online payments through Stripe and Tap.
+- **Leases and Rent Payments:** See which rent payments are paid and which are still due on each long term contract.
+- **Properties Overview:** View revenue, residents, units and work orders for each property, the context owners ask about most.
+- **Work Orders:** Follow maintenance from request to done, so every expense on a statement can point to the job behind it.
+- **One Inbox, Email Templates and SMS:** Keep conversations in one inbox and send owners consistent updates by email or SMS.
+
+See how these fit together in the [billing and payments section of our property manager solution](/solutions/property-managers/#billing).
 
 ## Key Takeaways
 
-- Manual owner reporting is time-consuming, inefficient, and prone to errors.
-- Automated reporting saves significant administrative hours, freeing up property managers for core tasks.
-- Transparency and timely communication are critical for building strong owner relationships.
-- Technology adoption is key for high-performing property management firms.
-- Ejar-registered contracts and digital rent payments give owner statements a reliable record to build on.
-- Owners in KSA expect fast digital updates, so statements should be delivered digitally and on schedule.
-- Accez.Cloud keeps statements and payouts per owner alongside billing, leases, rent payments and work orders.
-- Implementing automated reporting leads to increased efficiency, accuracy, and owner satisfaction.
+- An owner statement shows income, expenses, fees, payout and balances for a period, in the same format every time.
+- Keep the summary to one page, put line items behind it, and add a few sentences explaining anything unusual.
+- Long monthly reports go unread because they are dense, backward looking, generic and late.
+- Pair the statement with short, event driven updates and a quarterly review tailored to each owner.
+- A fixed close date, records kept as you go and reconciliation before sending make statements reliable.
+- In Saudi Arabia, Ejar contracts and Ejar's digital rent channels give statements an official record to match.
+- Accez keeps statements and payouts per owner alongside billing, leases, rent payments and work orders.
 
-[Visit portal.accez.cloud](https://portal.accez.cloud)
+See how Accez supports owner statements and payouts on the [property managers solution page](/solutions/property-managers/).
 
 <!-- AR -->
 
-## التقارير الآلية للملاك: كشوفات ترسل نفسها
+كشف المالك هو السجل الذي يرسله مدير العقار إلى كل مالك، شهريًا في الغالب، ويبين ما حققه العقار من دخل، وما أُنفق عليه، وما خُصم من رسوم، وما حُوّل إلى المالك. الكشف الجيد يصل في التاريخ نفسه كل فترة، ويعرض الأرقام الرئيسية في صفحة واحدة، ويشرح أي أمر غير معتاد في جملة أو جملتين، ويمكن تتبع كل بند فيه إلى عقد أو فاتورة أو أمر عمل أو تحويل بنكي. غير أن التقرير الشهري الطويل وحده كثيرًا ما يُتصفح على عجل أو يُهمل. والمديرون الذين يحظون بأكبر قدر من ثقة الملاك يقرنون الكشف الواضح بتحديثات قصيرة في وقتها تشرح معنى الأرقام.
 
-غالباً ما يجد مديرو العقارات أنفسهم في دورة لا نهاية لها من جمع البيانات وتحليلها وإعداد التقارير اليدوية، وهي عملية تستهلك وقتاً ثميناً ويمكن أن تؤدي إلى تأخير في إيصال التحديثات المالية الهامة لأصحاب العقارات. المفارقة هي أنه بينما يطلب المالكون الشفافية والمعلومات الفورية، فإن الأنظمة المصممة لتوفير ذلك يمكن أن تصبح عنق زجاجة تشغيلي كبير.
+يتناول هذا الدليل ما يجب أن يتضمنه كشف المالك، وكم مرة ترسله، ولماذا لا تُقرأ التقارير الشهرية التقليدية، وكيف تبني روتينًا لإعداد التقارير لا يستهلك شهرك كله.
 
-يمكن لهذا الطلب المستمر على كشوفات الملاك المفصلة والدقيقة وفي الوقت المناسب أن يحول الانتباه عن مهام الإدارة الأساسية مثل اكتساب المستأجرين، وتنسيق الصيانة، وحل المشكلات الاستباقي. يمكن أن يؤدي الحجم الهائل للتقارير الفردية للملاك، التي يتطلب كل منها تجميع بيانات محددة وتسليم شخصي، إلى إرباك حتى الفرق الأكثر تنظيماً، مما يؤدي إلى إجهاد الموارد واحتمال حدوث فجوات في التواصل.
+## ما الذي يجب أن يتضمنه كل كشف للمالك
 
-## لماذا تستهلك تقارير الملاك اليدوية وقتك كل شهر
+يقارن الملاك الكشوفات شهرًا بعد شهر، لذلك ينبغي ألا يتغير هيكلها أبدًا. استخدم الأقسام نفسها وبالترتيب نفسه لكل مالك.
 
-النهج التقليدي لإعداد تقارير الملاك كثيف العمالة بطبيعته وعرضة للخطأ. تخيل العملية: سحب البيانات من مصادر متعددة (قوائم الإيجار، وسجلات المصاريف، وفواتير الموردين، وكشوفات الحسابات المصرفية)، ثم تجميعها يدوياً في شكل واضح وسهل الفهم لكل مالك. يتضمن ذلك غالباً حركات جداول بيانات معقدة، ومقارنة إدخالات لا حصر لها، ثم إرسال هذه المستندات جسدياً، سواء عبر البريد الإلكتروني أو البريد العادي أو حتى شخصياً. تتراكم أوجه القصور بسرعة، وتزداد الساعات المهدرة مع كل مالك جديد حين لا يوجد نظام يقف خلف التقارير. وهذا وقت كان يمكن توجيهه نحو الأنشطة المدرة للدخل. الاعتماد على المراجعات والتدقيق اليدوي يعني أن إدخالاً واحداً تم تجاهله أو خطأ في الحساب يمكن أن ينتشر عبر التقرير بأكمله، مما يستلزم عملية مراجعة شاقة وربما يضر بالثقة مع الملاك. علاوة على ذلك، فإن الافتقار إلى التوحيد القياسي في إعداد التقارير اليدوية يمكن أن يؤدي إلى تناقضات في المعلومات المقدمة، مما يجعل من الصعب على الملاك مقارنة الأداء عبر عقارات مختلفة أو فترات زمنية مختلفة. **الحجم الهائل للنفقات الإدارية** المرتبطة بإعداد التقارير اليدوية هو عامل رئيسي يعيق قدرة مدير الممتلكات على التركيز على النمو الاستراتيجي وتحسين الخدمة.
+| القسم | ما يعرضه | لماذا يهم المالك |
+|---|---|---|
+| الفترة والعقار | تواريخ الكشف وأسماء العقار والوحدات | يؤكد أي أصل وأي شهر يقرأ عنه |
+| الرصيد الافتتاحي | الأموال المحتفظ بها للمالك في بداية الفترة | يتيح له تتبع المال من كشف إلى آخر |
+| الدخل | الإيجار المحصّل لكل وحدة وإيرادات الحجوزات والرسوم الأخرى | أول رقم ينظر إليه كل مالك |
+| الإيجار المستحق | الإيجار الواجب الذي لم يُسدد بعد، لكل وحدة | المتأخرات لا يجوز أن تكون مفاجأة |
+| المصروفات | كل إصلاح أو خدمة أو فاتورة مع الإشارة إلى فاتورتها أو أمر العمل الخاص بها | يوضح أين ذهب المال ولماذا |
+| رسوم الإدارة | رسومك محسوبة وفق ما ينص عليه اتفاقكما | يزيل أي شك فيما تقاضيته |
+| المبلغ المحوّل للمالك | المبلغ وتاريخ التحويل ومرجعه | يطابق ما يراه في حسابه البنكي |
+| الرصيد الختامي والاحتياطي | ما بقي محتفظًا به وسبب ذلك | يشرح الأموال التي لم تُحوّل |
+| ملاحظات | جملتان أو ثلاث عن أي أمر غير معتاد | تجيب عن السؤال قبل أن يطرحه المالك |
 
-## كيف تتعامل الشركات الفعالة مع تقارير الملاك
+اجعل الملخص في صفحة واحدة وضع البنود التفصيلية خلفه. المالك الذي يريد التفاصيل يستطيع قراءة كل سطر، ومن لا يريدها يكتفي بالإجماليات.
 
-لقد أدركت شركات إدارة الممتلكات ذات الأداء المرتفع منذ فترة طويلة أن الكفاءة في المهام الإدارية ليست رفاهية بل ضرورة للتوسع وتقديم خدمة استثنائية. إنهم يدركون أن الاستثمار في حلول ذكية لأتمتة العمليات المتكررة يحرر فريقهم للانخراط في أنشطة ذات قيمة مضافة أكبر.
+## لماذا تستهلك الكشوفات اليدوية شهرك
 
-### تبني التكنولوجيا لتدفق معلومات سلس
+الطريقة التقليدية مرهقة وسهلة الخطأ. يجمع المدير الأرقام من سجلات الإيجار وسجلات المصروفات وفواتير الموردين وكشوفات البنك، ثم ينسخها في جدول بيانات لكل مالك ويرسل النتيجة بالبريد الإلكتروني. ومع كل مالك جديد يتضاعف العمل ما دام لا يوجد نظام يقف خلف التقارير.
 
-مديرو العقارات الرائدون ليسوا خائفين من تبني التكنولوجيا. إنهم يرون البرامج ليس كتكلفة، بل كعامل تمكين استراتيجي. هذا يعني تجاوز برامج المحاسبة الأساسية إلى منصات متكاملة يمكنها التعامل مع دورة حياة إدارة الممتلكات بأكملها، من التأجير وجمع الإيجارات إلى تتبع الصيانة، وبشكل حاسم، تقارير الملاك. من خلال اعتماد هذه الأدوات، فإنهم ينشئون مركزاً مركزياً لجميع بيانات العقارات، مما يقلل بشكل كبير من الحاجة إلى إدخال البيانات والتجميع اليدوي. يضمن هذا التبني التكنولوجي التقاط المعلومات باستمرار وتوفيرها بسهولة لأغراض إعداد التقارير.
+والإعداد اليدوي ينشر الأخطاء أيضًا. إدخال واحد خاطئ يمتد إلى الإجماليات، فيلاحظ المالك رقمًا لا يطابق حسابه البنكي، وتقضي بعد الظهر في المطابقة بدلًا من الإدارة. كما أن الكشوفات المعدة يدويًا يتغير شكلها من شهر لآخر، فيصعب على المالك مقارنة الأداء بين العقارات أو الفترات. **العبء الإداري للتقارير اليدوية وقت يُقتطع مباشرة من التأجير والصيانة والنمو.**
 
-### التواصل الاستباقي كحافة تنافسية
+## لماذا لا تُقرأ التقارير الشهرية الطويلة
 
-يدرك مديرو العقارات الاستثنائيون أن **التواصل الاستباقي يبني علاقات أقوى مع الملاك**. بدلاً من انتظار المالك للاستفسار عن أداء ممتلكاته، يقومون بإعداد أنظمة لتقديم تحديثات منتظمة وشفافة. يشمل ذلك وضع جداول زمنية واضحة لإعداد التقارير، مثل البيانات الشهرية أو الفصلية، والتأكد من تسليمها باستمرار وفي الوقت المحدد. يستفيد أصحاب الأداء العالي أيضاً من القنوات الرقمية لتقديم هذه التقارير، مما يوفر للملاك وصولاً مريحاً إلى بياناتهم المالية متى وأينما احتاجوا إليها. لا يعزز هذا النهج رضا المالك فحسب، بل يقلل أيضاً من الاستفسارات المرتجلة، مما يسمح لفريق الإدارة بالتركيز على التميز التشغيلي. ولمعرفة ما يريد الملاك رؤيته فعلاً، اقرأ دليلنا حول [التواصل مع الملاك الذي يبني الثقة لا مجرد التقارير](/ar/blog/owner-communication-that-builds-trust-not-just-reports/).
+يذهب كثير من المديرين أبعد من ذلك فيعدّون تقرير أداء شهريًا طويلًا إلى جانب الكشف. إنه عمل دقيق، لكنه كثيرًا ما يُقابل بالصمت. والمشكلة نادرًا ما تكون في الجهد، بل في طريقة بناء التقرير.
 
-### اتخاذ القرارات المستندة إلى البيانات على كل مستوى
+- **الشكل يطلب الكثير.** ملف PDF كثيف يحتاج إلى وقت مخصص لفتحه وفهمه، فيصبح عند المالك المشغول مهمة أخرى تؤجَّل.
+- **ينظر إلى الوراء.** معظم محتواه يصف ما حدث بالفعل، مع القليل عما يجري الآن أو ما هو قادم.
+- **يفتقر إلى السياق.** تصل الأرقام دون شرح، على افتراض أن القارئ يعرف كيف يفسر نسبة إشغال أو ارتفاعًا في تكاليف الصيانة، ومعظم الملاك لا يعرفون.
+- **ليس شخصيًا.** مالك المبنى السكني قد يهتم بالاحتفاظ بالمستأجرين وتكاليف الصيانة، بينما يتابع مالك الوحدة التجارية الإشغال والتجديدات. والتقرير العام لا يخاطب أيًّا منهما.
+- **يصل متأخرًا.** وثيقة تصدر مرة في الشهر لا تعالج مشكلة بدأت في اليوم الثالث منه.
+- **ينافس كل شيء آخر.** يتلقى الملاك كل يوم سيلًا من الرسائل والإشعارات، ونادرًا ما يلفت مرفق طويل انتباههم.
 
-الأفكار المستمدة من إعداد التقارير المالية المتسقة والدقيقة لا تقدر بثمن. يستخدم مديرو العقارات ذوو الأداء العالي هذه البيانات ليس فقط لإعلام الملاك، ولكن لدفع قرارات أعمالهم الخاصة. يقومون بتحليل الاتجاهات في دخل الإيجار، ومعدلات الإشغال، ونفقات التشغيل لتحديد مجالات التحسين أو المخاطر المحتملة. يسمح هذا النهج المستند إلى البيانات لهم بتحسين أسعار الإيجار، والتفاوض على عقود موردين أفضل، والتنبؤ بالأداء المستقبلي بدقة أكبر. على سبيل المثال، يمكن أن يساعد فهم الاختلافات الموسمية في الدخل والمصروفات في إدارة أفضل للتدفق النقدي، وهو عامل حاسم للمالكين الذين يسعون للحصول على عوائد مستقرة. وقد وجدت [دراسة شملت 179 شركة كبيرة مدرجة](https://aisel.aisnet.org/icis2011/proceedings/economicvalueIS/13) أجراها باحثون من معهد ماساتشوستس للتكنولوجيا وجامعة بنسلفانيا أن الشركات التي تعتمد على البيانات في اتخاذ القرار حققت إنتاجاً وإنتاجية أعلى **بنسبة 5 إلى 6%** مما تتوقعه استثماراتها الأخرى واستخدامها لتقنية المعلومات.
+القاسم المشترك أن هذه التقارير تُبنى لراحة المرسل لا لفهم القارئ.
 
-## اعتبارات خاصة بالمملكة العربية السعودية: تحول القطاع العقاري في المملكة
+## ماذا ترسل بدلًا منها: كشف وتحديثات قصيرة
 
-في المملكة العربية السعودية، تشهد صناعة إدارة العقارات تحولاً سريعاً ومثيراً، مدفوعاً بأهداف وطنية طموحة وديناميكيات سوق متطورة. تركز مبادرة رؤية المملكة 2030، مع تركيزها على التنويع الاقتصادي وزيادة ملكية المنازل، بشكل كبير على عمليات عقارية فعالة وشفافة. بالنسبة لمديري العقارات، يعني هذا حاجة متزايدة للعمليات المبسطة التي يمكن أن تدعم سوقاً متنامياً. تمنح العقود المسجلة في **إيجار**، شبكة خدمات الإيجار في المملكة، كل عقد صيغة رقمية موحدة، كما [أصبح سداد إيجار العقود السكنية الجديدة عبر القنوات الرقمية لمنصة إيجار](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/) إلزامياً، وهي مدى وسداد. والكشوفات التي تتطابق مع هذه العقود وسجلات الدفع أسهل على الملاك في الوثوق بها. كما اعتاد الملاك على التواصل الرقمي السريع، فواتساب هو منصة التواصل الأكثر استخداماً في المملكة، [بنسبة استخدام بلغت 92.7% وفق تقرير الإنترنت السعودي 2025 الصادر عن هيئة الاتصالات والفضاء والتقنية](https://www.arabnews.pk/node/2652325). ولأن الملاك يتوقعون وصول التحديثات إليهم بسرعة، فإن تسليم الكشوفات رقمياً وفق جدول ثابت أمر مهم. علاوة على ذلك، فإن فهم الإيقاعات الاقتصادية المحلية، مثل ذروات الطلب الموسمية حول الحج والعمرة، والقدرة على تقديم تأثيرها المالي بوضوح للملاك، يظهر خبرة مدير العقارات في السوق المحلية. توفر إحصاءات **الهيئة العامة للإحصاء** حول أداء السوق العقاري سياقاً إضافياً يمكن للمديرين الأذكياء دمجه في تقارير الملاك الخاصة بهم، مما يدل على فهم عميق للقوى التي تشكل استثمارات عملائهم. كما يترك سداد الإيجار رقمياً عبر **مدى** و**سداد** سجلاً واضحاً تسهل مطابقته، وهو مكون رئيسي لكشوفات الملاك الدقيقة.
+لا تتخلَّ عن البيانات، بل غيّر طريقة تقديمها.
 
-## كيف تساعدك Accez.Cloud في تبسيط تقارير الملاك
+### اشرح الرقم ولا تكتفِ به
 
-تحفظ Accez.Cloud البيانات التي تقوم عليها تقارير الملاك في مكان واحد، فلا يعود إعداد الكشوفات يعني جمع الأرقام من جداول بيانات متفرقة.
+التقرير المفيد لا يقول فقط إن "الإشغال بلغ 92%"، بل يقول لماذا وماذا بعد. مثلًا: "حافظ الإشغال على 92% لأن عقدين جُددا مبكرًا. ستشغر وحدة واحدة الشهر القادم وقد عُرضت للتأجير بالفعل". جملتان من التفسير أنفع لمعظم الملاك من خمس صفحات من الجداول. ضع هذا التعليق في قسم الملاحظات في الكشف أو في رسالة بريد قصيرة ترافقه.
 
-فيما يلي ميزات Accez.Cloud التي تدعم إعداد تقارير الملاك:
+### أرسل تحديثات قصيرة عند وقوع الحدث
 
-- **الملاك والمدفوعات**: احتفظ بالكشوفات والمدفوعات لكل مالك، لتبقى أرقام كل مالك في سجل واحد.
-- **الفوترة والمدفوعات**: تابع الإيرادات والفواتير والمبالغ المستردة في النظام نفسه الذي يضم الحجوزات وعقود الإيجار.
-- **عقود الإيجار ودفعات الإيجار**: اعرف الدفعات المسددة والمستحقة لكل عقد طويل الأجل.
-- **نظرة عامة على العقارات**: اطلع على الإيرادات والسكان والوحدات وأوامر العمل لكل عقار، وهي المعلومات التي يسأل عنها الملاك أكثر من غيرها.
-- **أوامر العمل**: تابع الصيانة من الطلب حتى الإنجاز، لتُطلع الملاك بدقة على الأعمال التي نُفذت في عقاراتهم.
+بين الكشوفات، أرسل تحديثات موجزة مرتبطة بالأحداث: إصلاح كبير اعتُمد أو أُنجز، أو وحدة شاغرة، أو عقد جُدد، أو دفعة متأخرة تحتاج إلى قرار. اجعلها في أسطر قليلة، وابدأ بما يحتاج المالك إلى معرفته أو تقريره، وأرفق صورة أو فاتورة عند الحاجة. هنا تُبنى الثقة، كما نشرح في دليلنا حول [التواصل مع الملاك الذي يبني الثقة](/ar/blog/owner-communication-that-builds-trust-not-just-reports/).
 
-تعرّف على كيفية تكامل هذه الميزات في [قسم الفوترة والمدفوعات ضمن حلنا لمديري العقارات](/ar/solutions/property-managers/#billing). وحين تكون الأرقام في مكان واحد، يمكنك إرسال كشوفات متسقة للملاك وبناء علاقات أقوى وأكثر شفافية معهم.
+### كيّف مستوى التفاصيل والقناة لكل مالك
+
+اسأل كل مالك عند بدء التعامل عن مقدار التفاصيل الذي يريده وكيف يفضل أن تتواصل معه. بعضهم يريد كل أمر عمل، وآخرون يريدون الإجماليات ومكالمة عند حدوث مشكلة. البريد الإلكتروني يناسب الكشوفات وكل ما يحتاج إلى سجل، والمكالمة تناسب الأخبار السيئة والقرارات، وتطبيقات المراسلة تناسب التنبيهات السريعة ما دام السجل الرسمي محفوظًا في نظامك.
+
+### إيقاع تقارير ناجح
+
+| نوع التواصل | التكرار | المحتوى |
+|---|---|---|
+| كشف المالك | شهريًا وفي التاريخ نفسه | الدخل والمصروفات والرسوم والمبلغ المحوّل وملاحظات قصيرة |
+| تحديث الحدث | عند وقوعه | الإصلاحات والشواغر والتجديدات والمتأخرات والقرارات المطلوبة |
+| مراجعة الأداء | كل ربع سنة | الاتجاهات وتغيرات السوق والتوصيات |
+| الملخص السنوي | مرة في السنة | نتائج العام كاملة والميزانية وخطط العام القادم |
+
+## بناء روتين ثابت لإعداد التقارير
+
+الكشف الذي يثق به الملاك ثمرة روتين منتظم، لا جهد بطولي في آخر الشهر.
+
+1. **حدد موعدًا للإقفال.** اختر يومًا كل شهر تُقفل فيه الحسابات ويومًا تُرسل فيه الكشوفات، والتزم بهما.
+2. **سجّل كل شيء في حينه.** سجّل دفعات الإيجار مقابل العقد، والمصروفات مقابل فاتورة أو أمر عمل، والتحويلات مقابل مرجع بنكي، خلال الشهر لا في نهايته.
+3. **طابق قبل الإرسال.** تحقق من أن الإيجار المستلم يطابق المستحق في كل عقد، وأن لكل مصروف مستنداته، وأن التحويلات تطابق الحوالات البنكية.
+4. **استخدم قالبًا واحدًا.** التصميم الموحد لكل الملاك يجعل الكشوفات أسرع إعدادًا وأسهل مقارنة.
+5. **اكتب الملاحظات في النهاية.** بعد اعتماد الأرقام، أضف الجمل القليلة التي تشرحها.
+6. **افصل أموال الملاك.** الكشوفات الواضحة تقوم على حسابات نظيفة، ودليلنا حول [حسابات الأمانة لمديري العقارات](/ar/blog/trust-accounting-for-property-managers-keeping-owner-funds-separate/) يشرح كيف تُبقي أموال الملاك منفصلة عن أموالك.
+
+والسجلات نفسها تساعدك على إدارة العمل لا على إعداد التقارير فقط. فاتجاهات دخل الإيجار والإشغال وتكاليف التشغيل تبين أين تعدّل الإيجارات، أو تعيد التفاوض مع الموردين، أو تخطط للتدفق النقدي حول التقلبات الموسمية. والأبحاث تدعم هذا الجهد: فقد وجدت [دراسة شملت 179 شركة كبيرة مدرجة](https://aisel.aisnet.org/icis2011/proceedings/economicvalueIS/13) أجراها باحثون من معهد ماساتشوستس للتقنية وجامعة بنسلفانيا أن الشركات التي تعتمد على البيانات في اتخاذ القرار حققت إنتاجًا وإنتاجية أعلى **بنسبة 5 إلى 6%** مما تتوقعه استثماراتها الأخرى واستخدامها لتقنية المعلومات. وللأرقام التي تستحق المتابعة يوميًا، اطلع على [المؤشرات الخمسة التي يجب أن يراجعها مدير العقار يوميًا](/ar/blog/the-5-metrics-every-property-manager-should-check-daily/).
+
+## تقارير الملاك في المملكة العربية السعودية
+
+في المملكة، أصبحت السجلات التي يقوم عليها كشف المالك رقمية أكثر فأكثر. تُسجَّل عقود الإيجار السكنية في **إيجار**، شبكة خدمات الإيجار الوطنية، فيحصل كل عقد على صيغة رقمية موحدة. ومنذ يناير 2024 [أصبح سداد إيجار العقود السكنية الجديدة في إيجار ملزمًا عبر قنواتها الرقمية](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/)، وهي وفق الهيئة العامة للعقار مدى وسداد، ولا يُعتد بالسداد خارجها إثباتًا للدفع. وهذا خبر جيد لمديري العقارات: فهناك سجل رسمي للإيجار تمكن المطابقة عليه، والكشف الذي يطابق العقد المسجل وسجل الدفع يسهل على المالك الوثوق به.
+
+ويتوقع الملاك كذلك تواصلًا رقميًا سريعًا. فواتساب هو منصة التواصل الأكثر استخدامًا في المملكة، [بنسبة استخدام بلغت 92.7% وفق تقرير الإنترنت السعودي 2025](https://www.arabnews.pk/node/2652325) الصادر عن هيئة الاتصالات والفضاء والتقنية. لذا ينبغي أن تصل التحديثات القصيرة إلى الملاك حيث هم، مع بقاء الكشف نفسه مستندًا رسميًا بسجل واضح.
+
+وللمواسم أثرها أيضًا. ففي عقارات الإقامة القصيرة في مكة المكرمة والمدينة المنورة يرتفع الطلب حول مواسم الحج والعمرة، فيتقلب الدخل بشدة بين شهر وآخر. وشرح هذه التقلبات في الملاحظات قبل أن يسأل المالك يُظهر معرفتك بالسوق المحلية. كما أن توجه رؤية 2030 نحو قطاع عقاري أكثر شفافية واحترافية يرفع سقف التوقعات من وضوح التقارير.
+
+## كيف تساعدك أكسيز في كشوفات الملاك
+
+تحفظ أكسيز البيانات التي تقوم عليها كشوفات الملاك في مكان واحد، فلا يعود إعدادها يعني جمع الأرقام من جداول متفرقة. أنت من يقرر ماذا ترسل ومتى، والسجلات جاهزة.
+
+- **الملاك والمدفوعات:** احتفظ بالكشوفات والمدفوعات لكل مالك، لتبقى أرقام كل مالك في سجل واحد.
+- **الفوترة والمدفوعات:** تابع الإيرادات والفواتير والمبالغ المستردة في النظام نفسه الذي يضم الحجوزات والعقود، مع الدفع الإلكتروني عبر Stripe وTap.
+- **عقود الإيجار ودفعات الإيجار:** اعرف الدفعات المسددة والمستحقة لكل عقد طويل الأجل.
+- **نظرة عامة على العقارات:** اطلع على الإيرادات والسكان والوحدات وأوامر العمل لكل عقار، وهي المعلومات التي يسأل عنها الملاك أكثر من غيرها.
+- **أوامر العمل:** تابع الصيانة من الطلب حتى الإنجاز، ليشير كل مصروف في الكشف إلى العمل الذي يقف خلفه.
+- **صندوق وارد واحد وقوالب البريد والرسائل النصية:** اجمع المحادثات في صندوق وارد واحد وأرسل للملاك تحديثات متسقة عبر البريد الإلكتروني أو الرسائل النصية.
+
+تعرّف على كيفية تكامل هذه الميزات في [قسم الفوترة والمدفوعات ضمن حلنا لمديري العقارات](/ar/solutions/property-managers/#billing).
 
 ## أبرز النقاط
 
-- إعداد تقارير الملاك اليدوي يستهلك الوقت، وغير فعال، وعرضة للأخطاء.
-- توفر التقارير المؤتمتة ساعات إدارية كبيرة، مما يحرر مديري العقارات للمهام الأساسية.
-- الشفافية والتواصل في الوقت المناسب أمران حاسمان لبناء علاقات قوية مع الملاك.
-- يعد تبني التكنولوجيا أمراً أساسياً لشركات إدارة العقارات ذات الأداء العالي.
-- تمنح العقود المسجلة في إيجار والسداد الرقمي للإيجار كشوفات الملاك سجلاً موثوقاً تُبنى عليه.
-- يتوقع الملاك في المملكة تحديثات رقمية سريعة، لذا ينبغي تسليم الكشوفات رقمياً وفي موعدها.
-- تحفظ Accez.Cloud الكشوفات والمدفوعات لكل مالك إلى جانب الفوترة وعقود الإيجار ودفعات الإيجار وأوامر العمل.
-- يؤدي تنفيذ التقارير المؤتمتة إلى زيادة الكفاءة والدقة ورضا الملاك.
+- يعرض كشف المالك الدخل والمصروفات والرسوم والمبلغ المحوّل والأرصدة لفترة محددة، بالشكل نفسه في كل مرة.
+- اجعل الملخص في صفحة واحدة، وضع البنود خلفه، وأضف جملًا قليلة تشرح أي أمر غير معتاد.
+- لا تُقرأ التقارير الشهرية الطويلة لأنها كثيفة وتنظر إلى الوراء وعامة ومتأخرة.
+- اقرن الكشف بتحديثات قصيرة عند وقوع الأحداث وبمراجعة ربع سنوية تناسب كل مالك.
+- موعد إقفال ثابت وتسجيل أولًا بأول ومطابقة قبل الإرسال تجعل الكشوفات موثوقة.
+- في المملكة، تمنح عقود إيجار وقنوات السداد الرقمية فيها الكشوفات سجلًا رسميًا للمطابقة.
+- تحفظ أكسيز الكشوفات والمدفوعات لكل مالك إلى جانب الفوترة والعقود ودفعات الإيجار وأوامر العمل.
 
-[قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+تعرّف على كيف تدعم أكسيز كشوفات الملاك ومدفوعاتهم في [صفحة حل مديري العقارات](/ar/solutions/property-managers/).

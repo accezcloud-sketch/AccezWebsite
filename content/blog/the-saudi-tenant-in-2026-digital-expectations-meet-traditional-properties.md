@@ -1,13 +1,15 @@
 ---
-title: "The Saudi Tenant in 2026: Digital Expectations Meet Traditional Properties"
-titleAr: "المستأجر السعودي في 2026: التوقعات الرقمية تلتقي بالعقارات التقليدية"
-metaTitle: "The Saudi Tenant in 2026: Digital Expectations"
-metaTitleAr: "المستأجر السعودي في 2026: توقعات رقمية وعقارات تقليدية"
-metaDescription: "Saudi tenants in 2026 expect fast, digital service. See where traditional property management falls short and how managers can close the gap."
-metaDescriptionAr: "يتوقع المستأجرون في السعودية عام 2026 خدمة رقمية سريعة. تعرّف على مواطن قصور إدارة العقارات التقليدية وكيف يسد مديرو العقارات هذه الفجوة بخطوات عملية."
-excerpt: "In 2026, Saudi tenants expect seamless digital interactions. Are your traditional properties ready for this evolution?"
-excerptAr: "في عام 2026، يتوقع المستأجرون السعوديون تفاعلات رقمية سلسة. هل عقاراتكم التقليدية مستعدة لهذا التطور؟"
+title: "The Saudi Tenant in 2026: Digital Expectations, Self-Service and Traditional Properties"
+titleAr: "المستأجر السعودي في 2026: توقعات رقمية وخدمة ذاتية وعقارات تقليدية"
+metaTitle: "Saudi Tenant Digital Expectations and Self-Service in 2026"
+metaTitleAr: "المستأجر السعودي في 2026: التوقعات الرقمية والخدمة الذاتية"
+metaDescription: "What Saudi tenants expect in 2026: paying, reporting and getting answers by phone at any hour. Where traditional operations fall short and how to adapt."
+metaDescriptionAr: "ما يتوقعه المستأجر السعودي في 2026: الدفع والإبلاغ والحصول على إجابات من الهاتف في أي ساعة. أين تقصر الإدارة التقليدية وكيف يسد مديرو العقارات هذه الفجوة."
+excerpt: "Saudi tenants expect to handle routine tasks themselves, from a phone, at any hour. Here is what they expect, where traditional properties fall short, how tenant self-service works and what to fix in your back office first."
+excerptAr: "يتوقع المستأجرون في المملكة إنجاز المهام الروتينية بأنفسهم من الهاتف وفي أي ساعة. إليك ما يتوقعونه، وأين تقصر العقارات التقليدية، وكيف تعمل الخدمة الذاتية للمستأجرين، وما الذي يجب إصلاحه في عملياتك الداخلية أولًا."
+primaryKeyword: "Saudi tenant digital expectations"
 date: "2026-06-16"
+updated: "2026-10-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
 coverImage: "/images/blog/the-saudi-tenant-in-2026-digital-expectations-meet-tradition.webp"
@@ -16,136 +18,218 @@ coverImageCredit: "Photo by Sulthan Auliya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/people-walking-on-street-near-brown-concrete-building-during-daytime-XykW1VgvTa4"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
-tags: ["Saudi Arabia", "Property Management", "Digital Transformation", "Tenant Experience", "Real Estate Technology"]
-tagsAr: ["السعودية", "إدارة الممتلكات", "التحول الرقمي", "تجربة المستأجر", "تقنية العقارات"]
+tags: ["Saudi Arabia", "tenant experience", "tenant self-service", "digital transformation", "property management"]
+tagsAr: ["السعودية", "تجربة المستأجر", "الخدمة الذاتية للمستأجرين", "التحول الرقمي", "إدارة العقارات"]
 ---
 
-Property managers often find themselves juggling the legacy of brick-and-mortar assets with the escalating demands of a digitally native clientele. This paradox intensifies when the traditional landlord-tenant relationship is increasingly expected to mirror the effortless online experiences we encounter daily.
+Saudi tenants in 2026 expect to handle the routine parts of renting themselves, from a phone, at any hour: see what they owe and pay it, report a fault and follow its progress, get a quick answer, and find their lease without calling the office. Many traditional properties still run on paper files, phone calls and office hours, and that gap shows up as frustrated tenants, overloaded staff and avoidable non-renewals. Closing it starts in the back office: organised records, one place for conversations and clear processes, so that whatever self-service channels you offer give tenants fast, accurate answers.
 
-The chasm between outdated operational practices and the sophisticated digital expectations of today's tenants is widening, particularly in dynamic markets like Saudi Arabia. Property managers are challenged to bridge this gap, ensuring that the tangible reality of their physical assets doesn't become a bottleneck for delivering the intangible, yet crucial, digital convenience tenants now deem standard.
+This guide looks at who the Saudi tenant is today, what they expect, where traditional operations fall short, how tenant self-service works in practice, and a step by step plan to close the gap.
 
-## Where Paper-Based Workflows Fall Short
+## The Saudi Tenant in Numbers
 
-The core issue often lies in the **fragmented and manual nature of traditional property management workflows**. Leases are still sometimes signed with pen and paper, rent collection relies heavily on manual transfers or physical checks, and maintenance requests can be a frustrating game of phone tag. This lack of a unified digital system creates inefficiencies that directly impact tenant satisfaction and, by extension, property profitability. For instance, the process of onboarding a new tenant can be a multi-day affair involving physical paperwork, in-person verification, and sequential approvals. Similarly, reporting a maintenance issue might involve leaving a voicemail, sending an email that gets buried, and waiting for a reactive response rather than a proactive digital alert. This friction not only delays resolution but also fosters a perception of **unresponsiveness and outdatedness**, which is increasingly unacceptable. In property management, tenants who feel heard and efficiently served are more likely to renew, which means fewer vacancies and a stronger market reputation.
+The expectations come from how people in the Kingdom already live and pay:
 
-### Operational Silos and Outdated Systems
+- **Almost everyone is online, mostly by phone, and often late in the evening.** The Communications, Space and Technology Commission reports that [internet penetration reached 99% in 2024, phones account for 99.4% of browsing, and usage peaks between 9 and 11 PM](https://www.cst.gov.sa/en/media-center/news/N2025051200).
+- **Digital payment is the norm.** According to the Saudi Central Bank, [electronic payments made up 79% of retail payments in 2024, up from 70% in 2023](https://www.argaam.com/en/article/articledetail/id/1805070).
+- **The population is young and diverse.** The 2022 census by the General Authority for Statistics counted [32.2 million people, 41.6% of them non-Saudis, with 63% of Saudis under 30](https://www.argaam.com/en/article/articledetail/id/1647819). Many tenants grew up with apps, and many are expatriates who may prefer English; see our guide to [managing expat tenants in Saudi Arabia](/blog/managing-expat-tenants-in-saudi-arabia-communication/).
+- **Renting itself is already digital.** Residential leases are documented on Ejar, the official rental platform, and the Real Estate General Authority (REGA) [restricted rent payment for new residential contracts to Ejar's digital channels](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/), mada and SADAD, applied gradually from 15 January 2024.
 
-Many property management firms operate with disparate systems for accounting, leasing, and maintenance. Data isn't integrated, leading to a lack of a 360-degree view of a tenant's lifecycle or a property's performance. This can result in missed opportunities, such as identifying tenants likely to renew based on payment history and communication patterns, or failing to spot recurring maintenance issues that indicate a systemic problem. The reliance on legacy software, or worse, manual spreadsheets and paper files, makes **real-time decision-making nearly impossible**. This can lead to longer vacancy periods because property listings aren't updated promptly, or lease renewals are missed because the expiry date wasn't flagged effectively. The digital tenant expects instant confirmation of payments, immediate updates on maintenance progress, and easy access to their lease agreements, all of which are difficult to provide when systems don't talk to each other.
+Put together, a tenant who signs a digital contract and pays rent through a digital channel naturally expects the rest of the tenancy to work the same way. Vision 2030's push for digital government services has raised that bar further.
 
-### The Communication Breakdown
+## What Saudi Tenants Expect from Property Management
 
-Effective communication is paramount, yet traditional methods often fall short. Tenants accustomed to instant messaging and push notifications find the slow pace of emails or phone calls frustrating. **Communication is a major factor in tenant satisfaction**, and poor communication gives tenants one more reason to move out. Our article on [how response time predicts tenant retention](/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/) looks at this in detail. When tenants can't easily reach their property manager or get timely updates on their inquiries, their perception of the service deteriorates rapidly. This is particularly true for urgent matters like a burst pipe or an electrical outage, where a delayed response can have significant consequences. The expectation for 24/7 availability, or at least the assurance that an issue is being handled promptly, is a direct byproduct of living in a digitally connected world.
+| Expectation | What it looks like | Where traditional operations fall short |
+|-------------|--------------------|------------------------------------------|
+| Know what is due, pay any time | Clear amount and date, digital payment channel, confirmation | Unclear schedules, office hours, no confirmation |
+| Report a fault and track it | Request with photos at 10 PM, status updates until done | Voicemails, lost emails, no update until someone visits |
+| Fast answers | Acknowledgement within hours, one consistent thread | Phone tag, answers depend on who picks up |
+| Access to documents | Lease, payment history and notices on request without delay | Paper files in the office, copies take days |
+| A digital lease process | Contract documented and shared digitally | Pen and paper, repeated visits, sequential approvals |
+| Their language | Messages in Arabic or English as preferred | One language for everyone |
+| Notice before things happen | Advance word on maintenance visits, renewals and changes | Surprises at the door or at renewal time |
 
-## Digitizing the Tenant Journey from Inquiry to Move-Out
+## Where Traditional Properties Fall Short
 
-High-performing property management firms are not just adapting to digital; they are **embracing it as a core strategy** for enhancing tenant satisfaction and operational efficiency. They understand that the tenant journey, from initial inquiry to lease termination, can be significantly improved through smart technological integration.
+### Paper-based workflows
 
-### Seamless Digital Onboarding and Lease Management
+Leases signed on paper, rent tracked by bank transfer screenshots and maintenance requests left on voicemail all create delay. Onboarding a new tenant can take several days of paperwork, in-person verification and sequential approvals. Every delay feels like unresponsiveness to a tenant used to instant service.
 
-Top-tier firms have digitized the entire leasing process. Prospective tenants can view virtual tours, submit applications online, and sign leases electronically within minutes, not days. This not only accelerates the leasing cycle but also appeals to a generation that prefers online transactions. See [how e-signatures speed up every new tenancy](/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/) for the practical side. Lease agreements are stored securely in a digital vault, accessible to tenants at any time, reducing the need for paper copies and easing the process of document retrieval. This digital-first approach aligns perfectly with the **convenience-driven mindset** of modern renters.
+### Operational silos
 
-### Proactive Maintenance and Responsive Support
+When accounting, leasing and maintenance each live in a different file or system, nobody has the full picture. Lease expiries get missed because nothing flagged them. A recurring fault across one building goes unnoticed because requests sit in different inboxes. Payment history is never connected to renewal conversations. And a tenant who asks "has my payment arrived?" or "when is the technician coming?" waits while staff search for the answer.
 
-Instead of waiting for tenants to report issues, leading property managers utilize technology for proactive maintenance. IoT sensors can alert them to potential problems before they escalate, allowing for scheduled repairs that minimize disruption. For reported issues, digital platforms provide tenants with clear status updates, estimated resolution times, and the ability to track progress. This transparency fosters trust and reduces anxiety. Mapping the **tenant journey** helps here. In property management, this means actively managing the tenant's experience through every interaction, especially during critical moments like a maintenance request.
+### Communication breakdown
 
-### Integrated Communication Channels
+Tenants used to instant messaging find slow email and phone replies frustrating, and poor communication gives them one more reason to move out. This matters most for urgent issues like a burst pipe or a power cut, where a slow response has real consequences. Our article on [how response time predicts tenant retention](/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/) looks at this in detail.
 
-High performers offer tenants multiple, integrated communication channels. This might include a dedicated tenant portal, in-app messaging, and even chatbots for instant answers to common queries, all feeding into a centralized customer relationship management (CRM) system. This ensures that no inquiry gets lost and that tenants receive consistent, timely responses, regardless of the channel they choose. The goal is to create a **unified and responsive communication ecosystem** that makes tenants feel valued and supported.
+## Tenant Self-Service: What It Is and What It Saves
 
-## The Saudi Arabian Landscape: Vision 2030 and the Digital Native Tenant
+Tenant self-service means letting tenants complete routine tasks without waiting for a member of staff: checking what is due, paying, submitting a maintenance request, following its status, finding a document or reading the answer to a common question. It can take many forms, from a dedicated tenant portal or app to simple request forms, a published FAQ, digital payment channels and clear automated notifications.
 
-Saudi Arabia is undergoing a profound transformation, driven by Vision 2030, which emphasizes modernization, digitalization, and an improved quality of life for its citizens. This national ambition is directly reflected in the expectations of its growing population, particularly the younger demographic who are digital natives. For property managers in the Kingdom, understanding these specific trends is crucial.
+The appeal is time. Much of a property manager's week goes on the same questions: when is rent due, did my payment arrive, where is my repair, can I have a copy of my lease. Each one is quick, but together they crowd out work that actually grows the business. When tenants can answer these themselves, staff can focus on complex cases, renewals and new business, and tenants get their answer at 10 PM on a Sunday instead of Monday morning.
 
-The Saudi government's commitment to digital transformation is evident in initiatives like the **Ejar platform**, which aims to streamline rental processes and enhance transparency. Compliance with Ejar mandates a certain level of digital record-keeping and transaction management, pushing property managers towards more organized, albeit sometimes complex, digital frameworks. Beyond regulatory requirements, the ubiquity of smartphones and messaging apps such as **WhatsApp** has fundamentally altered communication norms. Tenants expect immediate, conversational interactions and updates delivered through these familiar channels. Property managers who can integrate these local communication preferences into their operational strategies will gain a significant advantage. Furthermore, Saudi Arabia has a young and largely urban population. This generation is accustomed to the ease of online payments through services like **Mada and SADAD**, and they expect the same seamlessness when paying rent or managing their tenancy. The unique seasonal demands around religious events like Hajj and Umrah also create surges in rental demand and require agile, responsive management, a challenge that digital solutions are well-equipped to address by facilitating rapid communication and transaction processing. Therefore, the Saudi tenant in 2026 is not just digitally savvy; they are influenced by national digital agendas and local technological behaviors, demanding a property management experience that is both efficient and culturally attuned.
+Not everything should be self-service. A useful split:
 
-## How Accez.Cloud Helps You Modernize
+| Good for self-service | Keep a person involved |
+|-----------------------|------------------------|
+| Checking amounts and due dates | Payment difficulties and payment plans |
+| Paying through approved channels | Disputes and complaints |
+| Submitting a maintenance request with photos | Emergencies such as leaks, power or gas |
+| Following request status | Renewal and rent negotiations |
+| Finding lease documents and common answers | Move out inspections and deposit questions |
 
-Accez.Cloud helps property managers bridge the gap between traditional assets and the digital expectations of Saudi tenants by bringing the core of their operations into one platform.
+## Fix the Back Office Before You Add Self-Service
 
-- **Leases and Rent Payments:** Keep long-term lease contracts in one place and see at a glance which rent payments are paid and which are due.
-- **Online Billing:** Accept payments for other charges, such as stays, add-ons and invoices, through the Stripe and Tap integrations, and see which rent is paid and which is due, since rent on new residential leases goes through Ejar's channels.
-- **One Inbox, Email Templates and SMS:** Keep conversations in one inbox and send consistent emails and SMS messages, so tenants get timely answers.
-- **Work Orders:** Track maintenance from request to done, so you can give tenants clear updates on progress.
-- **Properties Overview:** See revenue, residents, units and work orders for each property in one view, supporting data-driven decisions.
-- **Staff and Roles:** Control what each team member can see and do as your team grows.
+Self-service only works when the information behind it is right. A tenant who logs in and sees a wrong balance, or a request status nobody updated, trusts you less than before. Whatever channels you choose, prepare the foundation first:
 
-Explore the [rentals and leasing features for property managers](/solutions/property-managers/#rentals) to see how they fit together. By leveraging Accez.Cloud, property managers can transform their operations, enhance tenant satisfaction, and drive sustainable growth in the evolving Saudi real estate market.
+1. **Put records in one place.** Each lease, unit, payment and maintenance job should have one record that staff update as things happen. If you are still on spreadsheets, see [how to migrate without losing data](/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/).
+2. **Bring conversations into one inbox.** Tenants should get the same answer whoever replies, with the history visible to the whole team. See [centralising property communications](/blog/one-inbox-to-rule-them-all-centralizing-property-communications/).
+3. **Standardise the common answers.** Write templates for rent reminders, payment confirmations, maintenance updates and renewal notices, in Arabic and English.
+4. **Make maintenance trackable.** Every request should have a status from report to done, so anyone can tell a tenant where it stands. Our guide to [building a maintenance system that works](/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) covers the process.
+5. **Use clear digital payment channels.** For new residential leases that means Ejar's channels; for other charges, a digital payment option. Our guide to [collecting rent on time](/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/) covers the routine around it.
+6. **Plan for peaks.** Around Ramadan, Hajj and Umrah, inquiries and activity can rise sharply in some cities. Templates and clear processes stop the backlog from growing.
+7. **Protect tenant data.** Digital records bring obligations under Saudi Arabia's Personal Data Protection Law; see our guide to [PDPL and tenant data](/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers/).
+
+For the lease itself, our article on [digital lease signing](/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/) explains how electronic signatures shorten onboarding.
+
+## How Accez Helps Property Managers Meet Tenant Expectations
+
+Accez is the property manager's side of this picture: the organised back office that makes fast, accurate answers to tenants possible.
+
+- **Leases and rent payments:** Keep long-term contracts in one place and see at a glance which rent payments are paid and which are due, so a payment question gets a quick, correct answer.
+- **Work orders:** Track every maintenance job from request to done, so you can tell a tenant exactly where their request stands.
+- **One inbox:** Keep tenant conversations in a single shared inbox, so nothing gets lost between staff members.
+- **Email templates and SMS:** Send consistent confirmations, reminders and updates without writing each message from scratch.
+- **Billing and payments:** Track revenue, invoices and refunds, and connect Stripe or Tap for charges you bill online. Rent on new residential leases goes through Ejar's channels, and Accez shows it as paid or due.
+- **Properties overview:** See revenue, residents, units and work orders for each property in one view.
+- **Staff and roles:** Control what each team member can see and do as your team grows.
+
+Your team uses Accez in Arabic or English, in the browser on desktop or phone. Explore the [rentals and leasing features for property managers](/solutions/property-managers/#rentals).
+
+## Frequently Asked Questions
+
+**What is tenant self-service?** Letting tenants complete routine tasks such as checking what is due, paying, reporting a fault, following its status or finding a document without waiting for staff.
+
+**Do I need a tenant app to meet Saudi tenants' expectations?** Not necessarily. What tenants want is fast, accurate answers and easy ways to pay and report problems. Clear digital payment channels, quick replies from one inbox, consistent templates and trackable maintenance go a long way, and any app or portal you add later depends on that foundation.
+
+**What do Saudi tenants expect most in 2026?** Doing things from their phone at any hour, quick replies, clear payment information and visible progress on maintenance, in Arabic or English.
 
 ## Key Takeaways
 
-- Saudi tenants in 2026 expect a seamless digital experience that mirrors their daily online interactions.
-- Traditional property management often suffers from fragmented systems and manual processes, leading to inefficiencies.
-- The lack of integrated digital tools creates communication breakdowns and delays, impacting tenant satisfaction.
-- Leading property managers are adopting digital strategies for tenant onboarding, communication, and maintenance.
-- Vision 2030 is driving digital transformation in Saudi Arabia, influencing tenant expectations.
-- Ejar lease documentation and the everyday use of messaging apps like WhatsApp are key local factors.
-- Tenants used to paying through mada and SADAD expect the same ease when paying rent.
-- Accez.Cloud brings leases, rent payments, work orders and communication into one platform for property managers in Saudi Arabia.
+- Saudi tenants live online and on their phones: 99% internet penetration and 99.4% of browsing on mobile in 2024.
+- Digital contracts on Ejar and digital rent channels set the expectation that the whole tenancy should be digital.
+- Traditional properties fall short through paper workflows, siloed systems and slow communication.
+- Tenant self-service saves staff time on repetitive questions, but some matters still need a person.
+- Self-service only works on top of accurate, centralised records and clear processes.
+- Plan for bilingual communication, seasonal peaks and tenant data protection.
+- Accez gives property managers that back office: leases, rent status, work orders, one inbox, templates and billing in one place.
 
-Enhance your property management capabilities and meet the demands of the modern Saudi tenant. [Visit portal.accez.cloud](https://portal.accez.cloud)
+Ready to give tenants faster, clearer answers? Explore [Accez for property managers](/solutions/property-managers/).
 
 <!-- AR -->
 
-غالباً ما يجد مديرو العقارات أنفسهم يتنقلون بين إرث الأصول المبنية بالطوب والأسمنت والمطالب المتزايدة لجمهور أصيل رقمياً. تتفاقم هذه المفارقة عندما يُتوقع بشكل متزايد أن تعكس العلاقة التقليدية بين المالك والمستأجر التجارب السلسة عبر الإنترنت التي نواجهها يومياً.
+يتوقع المستأجر في المملكة عام 2026 أن ينجز الأجزاء الروتينية من الإيجار بنفسه، من هاتفه، وفي أي ساعة: أن يعرف ما عليه ويسدده، وأن يبلّغ عن عطل ويتابع تقدمه، وأن يحصل على إجابة سريعة، وأن يجد عقده دون الاتصال بالمكتب. ولا تزال عقارات تقليدية كثيرة تعمل بالملفات الورقية والمكالمات وساعات الدوام، وتظهر هذه الفجوة في صورة مستأجرين محبطين وفريق مثقل وحالات عدم تجديد كان يمكن تجنبها. وسدّها يبدأ من العمليات الداخلية: سجلات منظمة، ومكان واحد للمحادثات، وإجراءات واضحة، حتى تمنح أي قناة خدمة ذاتية تقدمها للمستأجرين إجابات سريعة ودقيقة.
 
-الفجوة بين الممارسات التشغيلية القديمة والتوقعات الرقمية المتطورة للمستأجرين الحاليين تتسع، لا سيما في الأسواق الديناميكية مثل المملكة العربية السعودية. يواجه مديرو العقارات تحديًا لسد هذه الفجوة، لضمان أن الواقع الملموس لأصولهم المادية لا يصبح عنق زجاجة لتقديم الراحة الرقمية غير الملموسة، وإن كانت ضرورية، والتي يعتبرها المستأجرون الآن معيارًا.
+يتناول هذا الدليل ملامح المستأجر في المملكة اليوم، وما يتوقعه، وأين تقصر الإدارة التقليدية، وكيف تعمل الخدمة الذاتية للمستأجرين عمليًا، وخطة خطوة بخطوة لسد الفجوة.
 
-## أين تقصر الإجراءات الورقية التقليدية
+## المستأجر السعودي بالأرقام
 
-غالباً ما تكمن المشكلة الأساسية في **الطبيعة المجزأة واليدوية لعمليات إدارة العقارات التقليدية**. لا يزال توقيع عقود الإيجار يتم أحيانًا بالقلم والورق، ويعتمد تحصيل الإيجارات بشكل كبير على التحويلات اليدوية أو الشيكات المادية، ويمكن أن تكون طلبات الصيانة عبارة عن لعبة محبطة من انتظار الرد عبر الهاتف. يؤدي هذا النقص في نظام رقمي موحد إلى عدم الكفاءة التي تؤثر بشكل مباشر على رضا المستأجر، وبالمقابل، على ربحية العقار. على سبيل المثال، يمكن أن تستغرق عملية تسجيل مستأجر جديد عدة أيام وتتضمن أوراقًا مادية، وتحققًا شخصيًا، وموافقات متسلسلة. وبالمثل، قد يتضمن الإبلاغ عن مشكلة صيانة ترك رسالة صوتية، وإرسال بريد إلكتروني يضيع، والانتظار لرد تفاعلي بدلاً من تنبيه رقمي استباقي. هذا الاحتكاك لا يؤخر الحل فحسب، بل يعزز أيضًا تصور **عدم الاستجابة والتقادم**، وهو أمر غير مقبول بشكل متزايد. في إدارة العقارات، يكون المستأجرون الذين يشعرون بأنهم مسموعون ويُخدمون بكفاءة أكثر ميلًا إلى تجديد عقودهم، مما يعني فترات شغور أقل وسمعة أقوى في السوق.
+تنبع هذه التوقعات من طريقة عيش الناس في المملكة وطريقة دفعهم:
 
-### صوامع العمليات والأنظمة القديمة
+- **الجميع تقريبًا متصلون، ومعظمهم عبر الهاتف، وكثيرًا في ساعات المساء.** تفيد هيئة الاتصالات والفضاء والتقنية بأن [انتشار الإنترنت بلغ 99% في عام 2024، وأن الهاتف يستحوذ على 99.4% من التصفح، وأن ذروة الاستخدام بين التاسعة والحادية عشرة مساءً](https://www.cst.gov.sa/en/media-center/news/N2025051200).
+- **الدفع الرقمي هو القاعدة.** يفيد البنك المركزي السعودي بأن [المدفوعات الإلكترونية شكّلت 79% من مدفوعات التجزئة في عام 2024 مقارنة بـ 70% في عام 2023](https://www.argaam.com/en/article/articledetail/id/1805070).
+- **السكان شباب ومتنوعون.** أحصى تعداد 2022 الصادر عن الهيئة العامة للإحصاء [32.2 مليون نسمة، منهم 41.6% من غير السعوديين، و63% من السعوديين دون سن الثلاثين](https://www.argaam.com/en/article/articledetail/id/1647819). فكثير من المستأجرين نشؤوا مع التطبيقات، وكثير منهم مقيمون قد يفضلون الإنجليزية، وهو ما يتناوله دليلنا عن [إدارة المستأجرين المقيمين في السعودية](/ar/blog/managing-expat-tenants-in-saudi-arabia-communication/).
+- **الإيجار نفسه أصبح رقميًا.** توثَّق عقود الإيجار السكنية في منصة إيجار، المنصة الرسمية للإيجار، وقد [قصرت الهيئة العامة للعقار سداد إيجارات العقود السكنية الجديدة على القنوات الرقمية لمنصة إيجار](https://rega.gov.sa/en/media-center/news-announcements/restricting-rent-payment-for-residential-contracts-through-digital-channels-starting-15-january/)، أي مدى وسداد، وطُبق ذلك تدريجيًا ابتداءً من 15 يناير 2024.
 
-تعمل العديد من شركات إدارة العقارات بأنظمة منفصلة للمحاسبة والتأجير والصيانة. لا يتم دمج البيانات، مما يؤدي إلى نقص رؤية شاملة لدورة حياة المستأجر أو أداء العقار. هذا يمكن أن يؤدي إلى فرص ضائعة، مثل تحديد المستأجرين الذين من المحتمل أن يجددوا بناءً على تاريخ الدفع وأنماط الاتصال، أو الفشل في اكتشاف مشكلات الصيانة المتكررة التي تشير إلى مشكلة نظامية. الاعتماد على البرامج القديمة، أو ما هو أسوأ، جداول البيانات اليدوية والملفات الورقية، يجعل **اتخاذ القرارات في الوقت الفعلي مستحيلاً**. هذا يمكن أن يؤدي إلى فترات شغور أطول لأن قوائم العقارات لا يتم تحديثها على الفور، أو يتم تفويت تجديدات عقود الإيجار لأن تاريخ الانتهاء لم يتم تحديده بفعالية. يتوقع المستأجر الرقمي تأكيدًا فوريًا للدفعات، وتحديثات فورية لتقدم الصيانة، وسهولة الوصول إلى اتفاقيات الإيجار الخاصة بهم، وكل هذه الأمور يصعب تقديمها عندما لا تتحدث الأنظمة مع بعضها البعض.
+وحين يوقّع المستأجر عقدًا رقميًا ويسدد إيجاره عبر قناة رقمية، فمن الطبيعي أن يتوقع أن يسير بقية الإيجار بالطريقة نفسها. وقد رفعت جهود رؤية 2030 في رقمنة الخدمات الحكومية هذا السقف أكثر.
 
-### انهيار الاتصال
+## ما الذي يتوقعه المستأجر السعودي من إدارة العقار
 
-يعد التواصل الفعال أمرًا بالغ الأهمية، ومع ذلك فإن الطرق التقليدية غالبًا ما تكون قاصرة. يجد المستأجرون الذين اعتادوا على المراسلة الفورية والإشعارات الفورية بطء وتيرة رسائل البريد الإلكتروني أو المكالمات الهاتفية محبطًا. **التواصل عامل رئيسي في رضا المستأجرين**، وسوء التواصل يمنح المستأجر سببًا إضافيًا للانتقال. ويتناول مقالنا حول [كيف يتنبأ وقت الاستجابة بالاحتفاظ بالمستأجرين](/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/) هذا الموضوع بالتفصيل. عندما لا يتمكن المستأجرون من الوصول بسهولة إلى مدير العقار الخاص بهم أو الحصول على تحديثات في الوقت المناسب بشأن استفساراتهم، فإن تصورهم للخدمة يتدهور بسرعة. هذا صحيح بشكل خاص للمسائل العاجلة مثل انفجار أنبوب أو انقطاع التيار الكهربائي، حيث يمكن أن يكون للتأخير في الاستجابة عواقب وخيمة. توقع التوفر على مدار الساعة طوال أيام الأسبوع، أو على الأقل التأكيد على أن المشكلة قيد المعالجة بسرعة، هو نتيجة مباشرة للعيش في عالم متصل رقميًا.
+| التوقع | كيف يبدو | أين تقصر الإدارة التقليدية |
+|--------|----------|-----------------------------|
+| معرفة المستحق والدفع في أي وقت | مبلغ وموعد واضحان وقناة دفع رقمية وتأكيد | جداول غير واضحة وساعات دوام ولا تأكيد |
+| الإبلاغ عن عطل ومتابعته | طلب مع صور في العاشرة ليلًا وتحديثات حتى الإنجاز | رسائل صوتية وبريد ضائع ولا تحديث حتى يزور أحد |
+| إجابات سريعة | إقرار بالاستلام خلال ساعات ومحادثة واحدة متسقة | اتصالات متبادلة وإجابات تتوقف على من يرد |
+| الوصول إلى المستندات | العقد وسجل الدفع والإشعارات عند الطلب دون تأخير | ملفات ورقية في المكتب ونسخ تستغرق أيامًا |
+| إجراءات عقد رقمية | توثيق العقد ومشاركته رقميًا | قلم وورق وزيارات متكررة وموافقات متتالية |
+| لغته المفضلة | رسائل بالعربية أو الإنجليزية حسب الرغبة | لغة واحدة للجميع |
+| إشعار مسبق | إبلاغ مبكر بزيارات الصيانة والتجديدات والتغييرات | مفاجآت عند الباب أو عند التجديد |
 
-## رقمنة رحلة المستأجر من الاستفسار حتى المغادرة
+## أين تقصر العقارات التقليدية
 
-لا تكتفي شركات إدارة العقارات عالية الأداء بالتكيف مع العالم الرقمي فحسب، بل **تحتضنه كاستراتيجية أساسية** لتعزيز رضا المستأجرين والكفاءة التشغيلية. إنهم يدركون أن رحلة المستأجر، من الاستفسار الأولي إلى إنهاء عقد الإيجار، يمكن تحسينها بشكل كبير من خلال التكامل التكنولوجي الذكي.
+### الإجراءات الورقية
 
-### تجربة رقمية سلسة لتسجيل المستأجرين وإدارة العقود
+العقود الموقعة على الورق، والإيجار المتابَع بلقطات شاشة للتحويلات البنكية، وطلبات الصيانة المتروكة في البريد الصوتي، كلها تصنع التأخير. وقد يستغرق تسجيل مستأجر جديد عدة أيام من الأوراق والتحقق الحضوري والموافقات المتتالية. وكل تأخير يبدو للمستأجر المعتاد على الخدمة الفورية تجاهلًا له.
 
-تتمتع الشركات الرائدة برقمنة عملية التأجير بأكملها. يمكن للمستأجرين المحتملين مشاهدة جولات افتراضية، وتقديم طلبات عبر الإنترنت، وتوقيع عقود إيجار إلكترونية في غضون دقائق، وليس أيام. هذا لا يسرع دورة التأجير فحسب، بل يجذب أيضًا جيلًا يفضل المعاملات عبر الإنترنت. واطلع على [كيف تسرّع التوقيعات الإلكترونية كل عقد إيجار جديد](/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/) للجانب العملي. يتم تخزين اتفاقيات الإيجار بشكل آمن في خزانة رقمية، يمكن للمستأجرين الوصول إليها في أي وقت، مما يقلل الحاجة إلى نسخ ورقية ويسهل عملية استرداد المستندات. تتوافق هذه الاستراتيجية الرقمية أولاً تمامًا مع **عقلية تركز على الراحة** للمستأجرين الحاليين.
+### العمل في جزر منفصلة
 
-### صيانة استباقية ودعم سريع الاستجابة
+حين تكون المحاسبة والتأجير والصيانة كل منها في ملف أو نظام مختلف، لا يرى أحد الصورة كاملة. فتفوت مواعيد انتهاء العقود لأن شيئًا لم ينبه إليها، ويمر عطل متكرر في مبنى واحد دون ملاحظة لأن الطلبات موزعة على صناديق بريد مختلفة، ولا يُربط سجل الدفع أبدًا بمحادثات التجديد. وحين يسأل المستأجر "هل وصلت دفعتي؟" أو "متى يأتي الفني؟" ينتظر بينما يبحث الموظفون عن الإجابة.
 
-بدلاً من انتظار المستأجرين للإبلاغ عن المشاكل، تستخدم الشركات الرائدة التكنولوجيا للصيانة الاستباقية. يمكن لأجهزة إنترنت الأشياء (IoT) تنبيههم إلى المشاكل المحتملة قبل تفاقمها، مما يسمح بإجراء إصلاحات مجدولة تقلل من الاضطراب. بالنسبة للمشاكل المبلغ عنها، توفر المنصات الرقمية للمستأجرين تحديثات واضحة للحالة، وأوقات تقديرية للحل، والقدرة على تتبع التقدم. تعزز هذه الشفافية الثقة وتقلل من القلق. ويساعد **رسم رحلة المستأجر** على ذلك. في إدارة العقارات، يعني هذا إدارة تجربة المستأجر بنشاط من خلال كل تفاعل، خاصة خلال اللحظات الحرجة مثل طلب الصيانة.
+### تعثر التواصل
 
-### قنوات اتصال متكاملة
+يجد المستأجرون المعتادون على المراسلة الفورية بطء ردود البريد والهاتف محبطًا، وسوء التواصل يمنحهم سببًا إضافيًا للانتقال. ويظهر ذلك أكثر في الحالات العاجلة مثل انفجار أنبوب أو انقطاع الكهرباء، حيث يكون للرد البطيء عواقب حقيقية. ويتناول مقالنا عن [كيف يتنبأ وقت الاستجابة بالاحتفاظ بالمستأجرين](/ar/blog/the-48-hour-rule-how-response-time-predicts-tenant-retention/) هذا الموضوع بالتفصيل.
 
-يقدم أصحاب الأداء العالي للمستأجرين قنوات اتصال متعددة ومتكاملة. قد يشمل ذلك بوابة مستأجر مخصصة، ومراسلة داخل التطبيق، وحتى روبوتات الدردشة للحصول على إجابات فورية للاستفسارات الشائعة، وكلها تغذي نظام إدارة علاقات العملاء (CRM) المركزي. هذا يضمن عدم ضياع أي استفسار وأن المستأجرين يتلقون ردودًا متسقة وفي الوقت المناسب، بغض النظر عن القناة التي يختارونها. الهدف هو إنشاء **نظام اتصال موحد وسريع الاستجابة** يجعل المستأجرين يشعرون بالتقدير والدعم.
+## الخدمة الذاتية للمستأجرين: ما هي وماذا توفر
 
-## المشهد السعودي: رؤية 2030 والمستأجر الرقمي الأصيل
+الخدمة الذاتية للمستأجرين تعني تمكينهم من إنجاز المهام الروتينية دون انتظار أحد الموظفين: معرفة المستحق، والدفع، وتقديم طلب صيانة، ومتابعة حالته، والعثور على مستند، أو قراءة إجابة سؤال شائع. ويمكن أن تأخذ أشكالًا كثيرة، من بوابة أو تطبيق مخصص للمستأجرين إلى نماذج طلبات بسيطة، وصفحة أسئلة شائعة منشورة، وقنوات دفع رقمية، وإشعارات آلية واضحة.
 
-تشهد المملكة العربية السعودية تحولًا عميقًا، مدفوعًا برؤية 2030، التي تؤكد على التحديث والرقمنة وتحسين نوعية الحياة لمواطنيها. ينعكس هذا الطموح الوطني بشكل مباشر في توقعات سكانها المتزايدين، وخاصة الفئة الشابة من السكان الرقميين الأصيلين. بالنسبة لمديري العقارات في المملكة، يعد فهم هذه الاتجاهات المحددة أمرًا بالغ الأهمية.
+وجاذبيتها في الوقت. فجزء كبير من أسبوع مدير العقار يذهب في الأسئلة نفسها: متى يستحق الإيجار؟ هل وصلت دفعتي؟ أين وصل الإصلاح؟ هل يمكنني الحصول على نسخة من عقدي؟ كل سؤال سريع، لكنها مجتمعة تزاحم العمل الذي ينمّي النشاط فعلًا. وحين يجد المستأجرون هذه الإجابات بأنفسهم، يتفرغ الفريق للحالات المعقدة والتجديدات والأعمال الجديدة، ويحصل المستأجر على إجابته في العاشرة من مساء الأحد بدل صباح الاثنين.
 
-يتجلى التزام الحكومة السعودية بالتحول الرقمي في مبادرات مثل **منصة إيجار**، التي تهدف إلى تبسيط عمليات الإيجار وتعزيز الشفافية. يتطلب الامتثال لإيجار مستوى معين من حفظ السجلات الرقمية وإدارة المعاملات، مما يدفع مديري العقارات نحو أطر رقمية أكثر تنظيمًا، وإن كانت معقدة في بعض الأحيان. وبخلاف المتطلبات التنظيمية، أدى الانتشار الواسع للهواتف الذكية وتطبيقات المراسلة مثل **WhatsApp** إلى تغيير جذري في معايير التواصل. يتوقع المستأجرون تفاعلات فورية وحوارية وتحديثات يتم تسليمها عبر هذه القنوات المألوفة. سيحصل مديرو العقارات الذين يمكنهم دمج هذه التفضيلات المحلية للاتصال في استراتيجياتهم التشغيلية على ميزة كبيرة. علاوة على ذلك، يتسم سكان المملكة العربية السعودية بأنهم شباب ويعيش أغلبهم في المدن. وهذا الجيل معتاد على سهولة المدفوعات عبر الإنترنت من خلال خدمات مثل **مدى وسداد**، ويتوقعون نفس السلاسة عند دفع الإيجار أو إدارة عقود الإيجار الخاصة بهم. تخلق متطلبات الموسم الفريدة حول المناسبات الدينية مثل الحج والعمرة أيضًا زيادة في الطلب على الإيجارات وتتطلب إدارة سريعة الاستجابة، وهو تحدٍ مجهز جيدًا للحلول الرقمية من خلال تسهيل الاتصال السريع ومعالجة المعاملات. لذلك، فإن المستأجر السعودي في عام 2026 ليس فقط ذكيًا رقميًا؛ بل يتأثر بالأجندات الرقمية الوطنية والسلوكيات التكنولوجية المحلية، مطالبًا بتجربة إدارة عقارات تتسم بالكفاءة والانتباه الثقافي.
+ولا يصلح كل شيء للخدمة الذاتية. وهذا تقسيم مفيد:
 
-## كيف يساعدك Accez.Cloud في التحديث
+| يصلح للخدمة الذاتية | يحتاج إلى تدخل شخص |
+|---------------------|----------------------|
+| معرفة المبالغ ومواعيد الاستحقاق | صعوبات السداد وخطط الدفع |
+| الدفع عبر القنوات المعتمدة | النزاعات والشكاوى |
+| تقديم طلب صيانة مع صور | الطوارئ مثل التسربات والكهرباء والغاز |
+| متابعة حالة الطلب | مفاوضات التجديد والإيجار |
+| العثور على مستندات العقد والإجابات الشائعة | معاينة الخروج وأسئلة التأمين |
 
-يساعد Accez.Cloud مديري العقارات على سد الفجوة بين الأصول التقليدية والتوقعات الرقمية للمستأجرين في المملكة من خلال جمع جوهر عملياتهم في منصة واحدة.
+## أصلح عملياتك الداخلية قبل إضافة الخدمة الذاتية
 
-- **عقود الإيجار ودفعات الإيجار:** احتفظ بعقود الإيجار طويلة الأجل في مكان واحد، واعرف بنظرة واحدة الدفعات المسددة والمستحقة.
-- **الفوترة الإلكترونية:** استقبل مدفوعات الرسوم الأخرى مثل الإقامات والإضافات والفواتير عبر التكامل مع Stripe وTap، واعرف الإيجار المدفوع والمستحق، إذ يُسدد إيجار العقود السكنية الجديدة عبر قنوات منصة إيجار.
-- **صندوق وارد واحد وقوالب بريد ورسائل SMS:** اجمع المحادثات في صندوق وارد واحد، وأرسل رسائل بريد إلكتروني ورسائل نصية متسقة، ليحصل المستأجرون على ردود في وقتها.
-- **أوامر العمل:** تابع الصيانة من الطلب حتى الإنجاز، لتقدم للمستأجرين تحديثات واضحة عن التقدم.
-- **نظرة عامة على العقارات:** اطلع على الإيرادات والسكان والوحدات وأوامر العمل لكل عقار في عرض واحد، لدعم القرارات المبنية على البيانات.
-- **الموظفون والأدوار:** تحكم فيما يراه كل عضو في الفريق وما يمكنه فعله مع نمو فريقك.
+لا تنجح الخدمة الذاتية إلا إذا كانت المعلومات خلفها صحيحة. فالمستأجر الذي يدخل ليجد رصيدًا خاطئًا، أو حالة طلب لم يحدّثها أحد، يثق بك أقل من ذي قبل. وأيًا كانت القنوات التي تختارها، جهّز الأساس أولًا:
 
-تعرّف على [مزايا الإيجارات والعقود لمديري العقارات](/ar/solutions/property-managers/#rentals) لترى كيف تتكامل معًا. من خلال الاستفادة من Accez.Cloud، يمكن لمديري العقارات تحويل عملياتهم، وتعزيز رضا المستأجرين، وتحقيق نمو مستدام في سوق العقارات السعودي المتطور.
+1. **اجمع السجلات في مكان واحد.** ينبغي أن يكون لكل عقد ووحدة ودفعة وعمل صيانة سجل واحد يحدّثه الموظفون لحظة حدوث الأمور. وإذا كنت لا تزال تعتمد على جداول البيانات، فراجع دليلنا عن [الانتقال دون فقدان البيانات](/ar/blog/migrating-from-spreadsheets-and-legacy-software-without-losing-data/).
+2. **اجمع المحادثات في صندوق وارد واحد.** يجب أن يحصل المستأجر على الإجابة نفسها أيًا كان من يرد، مع سجل ظاهر للفريق كله. راجع دليلنا عن [توحيد اتصالات العقارات](/ar/blog/one-inbox-to-rule-them-all-centralizing-property-communications/).
+3. **وحّد الإجابات الشائعة.** اكتب قوالب لتذكيرات الإيجار وتأكيدات الدفع وتحديثات الصيانة وإشعارات التجديد، بالعربية والإنجليزية.
+4. **اجعل الصيانة قابلة للتتبع.** يجب أن يكون لكل طلب حالة من البلاغ حتى الإنجاز، ليتمكن أي شخص من إخبار المستأجر بموقعه. ويشرح دليلنا عن [بناء نظام صيانة فعّال](/ar/blog/from-request-to-resolution-building-a-maintenance-system-that-works/) هذه العملية.
+5. **استخدم قنوات دفع رقمية واضحة.** في العقود السكنية الجديدة يعني ذلك قنوات منصة إيجار، وفي الرسوم الأخرى خيار دفع رقمي. ويتناول دليلنا عن [تحصيل الإيجار في موعده](/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/) الروتين المحيط بذلك.
+6. **خطط لفترات الذروة.** في رمضان ومواسم الحج والعمرة قد ترتفع الاستفسارات والنشاط بشدة في بعض المدن، والقوالب والإجراءات الواضحة تمنع تراكم الطلبات.
+7. **احمِ بيانات المستأجرين.** تفرض السجلات الرقمية التزامات بموجب نظام حماية البيانات الشخصية في المملكة، راجع دليلنا عن [نظام حماية البيانات الشخصية وبيانات المستأجرين](/ar/blog/pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers/).
+
+أما العقد نفسه، فيشرح مقالنا عن [توقيع العقود رقميًا](/ar/blog/digital-lease-signing-how-e-signatures-speed-up-every-new-tenancy/) كيف تختصر التوقيعات الإلكترونية إجراءات استقبال المستأجر.
+
+## كيف يساعد أكسيز مديري العقارات على تلبية توقعات المستأجرين
+
+يمثل أكسيز جانب مدير العقار من هذه الصورة: العمليات الداخلية المنظمة التي تجعل الإجابات السريعة والدقيقة للمستأجرين ممكنة.
+
+- **العقود ومدفوعات الإيجار:** احتفظ بعقود الإيجار طويلة الأجل في مكان واحد، واعرف بنظرة واحدة الدفعات المسددة والمستحقة، لتجيب عن أي سؤال عن الدفع بسرعة ودقة.
+- **أوامر العمل:** تابع كل عمل صيانة من الطلب حتى الإنجاز، لتخبر المستأجر بموقع طلبه بدقة.
+- **صندوق وارد موحد:** اجمع محادثات المستأجرين في صندوق وارد مشترك واحد، فلا يضيع شيء بين الموظفين.
+- **قوالب البريد الإلكتروني والرسائل النصية:** أرسل التأكيدات والتذكيرات والتحديثات بصياغة متسقة دون كتابة كل رسالة من البداية.
+- **الفوترة والمدفوعات:** تابع الإيرادات والفواتير والمبالغ المستردة، واربط Stripe أو Tap للرسوم التي تفوترها إلكترونيًا. أما إيجار العقود السكنية الجديدة فيُسدد عبر قنوات منصة إيجار، ويعرضه أكسيز مسددًا أو مستحقًا.
+- **نظرة عامة على العقارات:** اطّلع على الإيرادات والسكان والوحدات وأوامر العمل لكل عقار في عرض واحد.
+- **الموظفون والصلاحيات:** حدد ما يراه كل عضو في الفريق وما يمكنه فعله مع نمو فريقك.
+
+يستخدم فريقك أكسيز بالعربية أو الإنجليزية من المتصفح على الحاسوب أو الهاتف. تعرّف على [مزايا الإيجارات والعقود لمديري العقارات](/ar/solutions/property-managers/#rentals).
+
+## أسئلة شائعة
+
+**ما الخدمة الذاتية للمستأجرين؟** تمكين المستأجرين من إنجاز المهام الروتينية، مثل معرفة المستحق والدفع والإبلاغ عن عطل ومتابعة حالته والعثور على مستند، دون انتظار الموظفين.
+
+**هل أحتاج إلى تطبيق للمستأجرين لتلبية توقعاتهم في المملكة؟** ليس بالضرورة. فما يريده المستأجر هو إجابات سريعة ودقيقة وطرق سهلة للدفع والإبلاغ عن المشكلات. وتقطع قنوات الدفع الرقمية الواضحة والردود السريعة من صندوق وارد واحد والقوالب المتسقة والصيانة القابلة للتتبع شوطًا كبيرًا، وأي تطبيق أو بوابة تضيفها لاحقًا يعتمد على هذا الأساس.
+
+**ما أكثر ما يتوقعه المستأجر السعودي في 2026؟** إنجاز الأمور من هاتفه في أي ساعة، وردودًا سريعة، ومعلومات دفع واضحة، وتقدمًا ظاهرًا في الصيانة، بالعربية أو الإنجليزية.
 
 ## أبرز النقاط
 
-- يتوقع المستأجرون السعوديون في عام 2026 تجربة رقمية سلسة تعكس تفاعلاتهم اليومية عبر الإنترنت.
-- غالبًا ما تعاني إدارة العقارات التقليدية من أنظمة مجزأة وعمليات يدوية، مما يؤدي إلى عدم الكفاءة.
-- يؤدي نقص الأدوات الرقمية المتكاملة إلى انهيار الاتصال والتأخير، مما يؤثر على رضا المستأجرين.
-- تتبنى شركات إدارة العقارات الرائدة استراتيجيات رقمية لتسجيل المستأجرين والتواصل والصيانة.
-- تدفع رؤية 2030 التحول الرقمي في المملكة العربية السعودية، مما يؤثر على توقعات المستأجرين.
-- توثيق العقود في منصة إيجار والاستخدام اليومي لتطبيقات المراسلة مثل WhatsApp من العوامل المحلية الرئيسية.
-- المستأجرون المعتادون على الدفع عبر مدى وسداد يتوقعون السهولة نفسها عند دفع الإيجار.
-- يجمع Accez.Cloud عقود الإيجار ودفعاته وأوامر العمل والتواصل في منصة واحدة لمديري العقارات في المملكة العربية السعودية.
+- يعيش المستأجرون في المملكة على الإنترنت وعلى هواتفهم: انتشار الإنترنت 99% و99.4% من التصفح عبر الهاتف في عام 2024.
+- العقود الرقمية في منصة إيجار وقنوات سداد الإيجار الرقمية ترسّخ توقع أن يكون الإيجار كله رقميًا.
+- تقصر العقارات التقليدية بسبب الإجراءات الورقية والأنظمة المنفصلة والتواصل البطيء.
+- توفر الخدمة الذاتية وقت الفريق في الأسئلة المتكررة، لكن بعض الأمور تحتاج دائمًا إلى شخص.
+- لا تنجح الخدمة الذاتية إلا فوق سجلات دقيقة وموحدة وإجراءات واضحة.
+- خطط للتواصل بلغتين ولفترات الذروة الموسمية ولحماية بيانات المستأجرين.
+- يمنح أكسيز مديري العقارات هذا الأساس: العقود وحالة الإيجار وأوامر العمل وصندوق الوارد والقوالب والفوترة في مكان واحد.
 
-عزز قدراتك في إدارة العقارات وتلبية متطلبات المستأجر السعودي الحديث. [قم بزيارة portal.accez.cloud](https://portal.accez.cloud)
+هل تريد أن تمنح مستأجريك إجابات أسرع وأوضح؟ تعرّف على [أكسيز لمديري العقارات](/ar/solutions/property-managers/).

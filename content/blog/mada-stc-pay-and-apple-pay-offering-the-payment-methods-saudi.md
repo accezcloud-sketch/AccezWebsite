@@ -19,6 +19,7 @@ category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["payment methods", "saudi arabia", "property management", "mada", "stc pay", "apple pay"]
 tagsAr: ["طرق الدفع", "المملكة العربية السعودية", "إدارة العقارات", "مدى", "STC Pay", "Apple Pay"]
+related: ["late-rent-payments-are-a-systems-problem-not-a-tenant-problem", "handling-refunds-and-chargebacks-without-losing-money-or-trust", "security-deposits-done-right-avoiding-disputes-at-move-out"]
 ---
 
 > To serve Saudi tenants and guests well, property operators should accept the payment methods people actually use. Mada, STC Pay (now STC Bank) and Apple Pay are part of everyday payments in the Kingdom. For new residential leases, rent itself must be paid through Ejar's digital channels, so these methods matter most for short-stay bookings, service charges and other fees that are paid directly to the operator.
@@ -31,7 +32,7 @@ The challenge for property operators is to build a payment setup that is both mo
 
 The way tenants and guests pay rent, bookings and other property-related fees has changed significantly, driven by technology and by government initiatives that promote digital transactions. For property managers, staying ahead of these trends is crucial for maintaining cash flow and customer satisfaction. The expectation of seamless, instant and secure payment options is now the norm, not the exception.
 
-This shift is particularly evident in Saudi Arabia. Property managers who ignore preferred payment methods risk creating friction in their tenant and guest relationships. This friction can show up as delayed collections, more manual processing and a general perception of being out of touch, which can affect bookings and overall property performance. Making it easy to pay at any hour matters too, a point we cover in [why tenants need 24/7 access to pay](/blog/the-2am-rent-payment-why-your-tenants-need-24-7-access/).
+This shift is particularly evident in Saudi Arabia. Property managers who ignore preferred payment methods risk creating friction in their tenant and guest relationships. This friction can show up as delayed collections, more manual processing and a general perception of being out of touch, which can affect bookings and overall property performance. Making it easy to pay at any hour matters too, a point we cover in [why tenants need 24/7 access to pay](/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/).
 
 ## Understanding Tenant Payment Preferences
 
@@ -117,7 +118,7 @@ Check which payment gateways the platform integrates with, then confirm with eac
 
 تغيرت الطريقة التي يدفع بها المستأجرون والضيوف الإيجارات والحجوزات والرسوم العقارية الأخرى تغيرًا كبيرًا، بفعل التقنية والمبادرات الحكومية التي تشجع المعاملات الرقمية. وبالنسبة لمديري العقارات، فإن مواكبة هذه الاتجاهات أمر بالغ الأهمية للحفاظ على التدفق النقدي ورضا العملاء. فقد أصبح توقع خيارات دفع سلسة وفورية وآمنة هو القاعدة لا الاستثناء.
 
-ويظهر هذا التحول بوضوح في المملكة العربية السعودية. فمديرو العقارات الذين يتجاهلون طرق الدفع المفضلة يخاطرون بخلق احتكاك في علاقاتهم مع المستأجرين والضيوف، يتجلى في تأخر التحصيل وزيادة المعالجة اليدوية وانطباع عام بعدم مواكبة احتياجات العملاء، مما قد يؤثر على الحجوزات وعلى الأداء العام للعقار. كما أن إتاحة الدفع في أي ساعة أمر مهم، وهو ما نتناوله في مقال [لماذا يحتاج المستأجرون إلى الدفع على مدار الساعة](/ar/blog/the-2am-rent-payment-why-your-tenants-need-24-7-access/).
+ويظهر هذا التحول بوضوح في المملكة العربية السعودية. فمديرو العقارات الذين يتجاهلون طرق الدفع المفضلة يخاطرون بخلق احتكاك في علاقاتهم مع المستأجرين والضيوف، يتجلى في تأخر التحصيل وزيادة المعالجة اليدوية وانطباع عام بعدم مواكبة احتياجات العملاء، مما قد يؤثر على الحجوزات وعلى الأداء العام للعقار. كما أن إتاحة الدفع في أي ساعة أمر مهم، وهو ما نتناوله في مقال [لماذا يحتاج المستأجرون إلى الدفع على مدار الساعة](/ar/blog/late-rent-payments-are-a-systems-problem-not-a-tenant-problem/).
 
 ## فهم تفضيلات المستأجرين للدفع
 

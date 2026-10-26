@@ -68,7 +68,7 @@ Accez.Cloud offers an all-in-one [property management platform for rentals](/sol
 - **One inbox, SMS and email templates:** Keep guest messages about arrival times and cleaning requests in one place.
 - **Owners and payouts:** Statements per owner keep operating costs visible for transparent owner reporting.
 
-With the booking side organised, housekeeping becomes a planned part of operations instead of a daily scramble. For the step-by-step turnover routine, read our guide to [the chaos between check-out and check-in](/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/).
+With the booking side organised, housekeeping becomes a planned part of operations instead of a daily scramble. For the step-by-step turnover routine, read our guide to [the chaos between check-out and check-in](/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/).
 
 ## Frequently Asked Questions
 
@@ -148,7 +148,7 @@ Visit portal.accez.cloud
 - **صندوق وارد واحد ورسائل نصية وقوالب بريد إلكتروني:** احتفظ برسائل الضيوف حول مواعيد الوصول وطلبات التنظيف في مكان واحد.
 - **الملاك والمستحقات:** تُبقي الكشوفات لكل مالك تكاليف التشغيل واضحة لتقارير شفافة للملاك.
 
-عندما يكون جانب الحجوزات منظمًا، يصبح التدبير المنزلي جزءًا مخططًا من التشغيل بدلًا من سباق يومي. وللاطلاع على روتين التسليم خطوة بخطوة، اقرأ دليلنا حول [الفوضى بين المغادرة والوصول](/ar/blog/the-chaos-between-check-out-and-check-in-streamlining-turnovers/).
+عندما يكون جانب الحجوزات منظمًا، يصبح التدبير المنزلي جزءًا مخططًا من التشغيل بدلًا من سباق يومي. وللاطلاع على روتين التسليم خطوة بخطوة، اقرأ دليلنا حول [الفوضى بين المغادرة والوصول](/ar/blog/the-4-hour-turnover-systems-for-same-day-check-out-to-check-in/).
 
 ## الأسئلة الشائعة
 
