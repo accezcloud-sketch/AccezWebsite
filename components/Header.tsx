@@ -110,7 +110,9 @@ export default function Header() {
       className={[
         'fixed top-0 left-0 right-0 z-[100] w-full border-b',
         'transition-all duration-300 ease-in-out',
-        scrolled ? 'glass-bar' : 'border-transparent',
+        // The open mobile menu needs the bar's own background: its buttons switch to
+        // dark text, which would vanish over a dark photo on a transparent bar.
+        scrolled || isMobileMenuOpen ? 'glass-bar' : 'border-transparent',
         onPhoto ? 'header-on-photo' : '',
       ].join(' ')}
     >
