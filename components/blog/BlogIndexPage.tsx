@@ -7,7 +7,7 @@ import { getAllPosts, getAllTags, getPostsByTopic } from '@/lib/blog'
 import { BLOG_INDEX_COPY, blogIndexRoute } from '@/lib/content/blogIndex'
 import { pageCount, pageItems, pageRoute } from '@/lib/content/pagination'
 import { toPostCardData } from '@/lib/content/postCard'
-import { TOPICS, topicLabel, type TopicKey } from '@/lib/content/topics'
+import { TOPICS, topicDescription, topicLabel, type TopicKey } from '@/lib/content/topics'
 import { localeUrl, type Locale } from '@/lib/i18n'
 
 /**
@@ -22,7 +22,7 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
   const posts = pageItems(allPosts, page)
   const base = blogIndexRoute(topic)
   const heading = topic ? topicLabel(topic, locale) : c.title
-  const subtitle = topic ? c.topicSubtitle(topicLabel(topic, locale)) : c.subtitle
+  const subtitle = topic ? topicDescription(topic, locale) : c.subtitle
 
   const jsonLd = {
     '@context': 'https://schema.org',

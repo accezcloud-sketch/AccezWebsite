@@ -5,7 +5,7 @@
  */
 import type { Metadata } from 'next'
 import { alternatesFor, localeUrl, SITE_URL, type Locale } from '@/lib/i18n'
-import { topicLabel, type TopicKey } from './topics'
+import { topicDescription, topicLabel, type TopicKey } from './topics'
 import { pageRoute } from './pagination'
 import { feedUrl } from './rss'
 
@@ -16,12 +16,11 @@ export const BLOG_INDEX_COPY = {
     subtitle: 'Insights, tips and updates about running property in the Kingdom.',
     metaTitle: 'Blog',
     metaDescription:
-      'Property management insights, tips, and tutorials from the Accez Cloud team. Learn how to scale your portfolio, automate operations, and manage properties in Saudi Arabia.',
+      'Property management guides for Saudi Arabia from the Accez team: rentals, owners, maintenance, rent, regulations and growing a portfolio.',
     socialTitle: 'Blog | Accez',
     socialDescription: 'Property management insights, tips, and tutorials from the Accez Cloud team.',
     browseByTopic: 'Browse by topic',
     allArticles: 'All articles',
-    topicSubtitle: (topic: string) => `Articles on ${topic.toLowerCase()} for property operators in Saudi Arabia.`,
     pageSuffix: (n: number) => `, page ${n}`,
   },
   ar: {
@@ -35,7 +34,6 @@ export const BLOG_INDEX_COPY = {
     socialDescription: 'رؤى ونصائح وأدلة في إدارة العقارات من فريق أكسيز.',
     browseByTopic: 'تصفح حسب الموضوع',
     allArticles: 'كل المقالات',
-    topicSubtitle: (topic: string) => `مقالات حول ${topic} لمشغّلي العقارات في السعودية.`,
     pageSuffix: (n: number) => `، الصفحة ${n}`,
   },
 } as const
@@ -51,7 +49,7 @@ export function blogIndexMetadata(locale: Locale, topic?: TopicKey, page = 1): M
   const route = pageRoute(blogIndexRoute(topic), page)
   const label = topic ? topicLabel(topic, locale) : null
   const title = (label ?? c.metaTitle) + (page > 1 ? c.pageSuffix(page) : '')
-  const description = label ? c.topicSubtitle(label) : c.metaDescription
+  const description = topic ? topicDescription(topic, locale) : c.metaDescription
 
   return {
     title,
