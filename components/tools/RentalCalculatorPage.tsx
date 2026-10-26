@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Scale } from 'lucide-react'
+import { ClipboardCheck, Scale } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Band from '@/components/ui/Band'
@@ -9,7 +9,7 @@ import ResourceHero from '@/components/resources/ResourceHero'
 import ResourceLinks from '@/components/resources/ResourceLinks'
 import RentalCalculator from '@/components/tools/RentalCalculator'
 import { localeHref, type Locale } from '@/lib/i18n'
-import { CALCULATOR_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { CALCULATOR_ROUTE, DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
 import { REGULATIONS_COPY } from '@/lib/resources/saudiRegulations'
 import { breadcrumbSchema, webApplicationSchema, webPageSchema } from '@/lib/resources/schema'
 import { CALCULATOR_COPY } from '@/lib/tools/calculatorCopy'
@@ -60,7 +60,10 @@ export default function RentalCalculatorPage({ locale }: { locale: Locale }) {
 
             <div>
               <h2 className="hero-display text-strong tracking-tight mb-5" style={{ fontSize: 'clamp(22px, 2.6vw, 28px)' }}>{c.moreTitle}</h2>
-              <ResourceLinks locale={locale} links={[{ title: hub.title, description: hub.description, route: REGULATIONS_HUB_ROUTE, icon: Scale }]} />
+              <ResourceLinks locale={locale} links={[
+                  { title: hub.title, description: hub.description, route: REGULATIONS_HUB_ROUTE, icon: Scale },
+                  { title: hub.downloadsTitle, description: hub.downloadsDesc, route: DOWNLOADS_ROUTE, icon: ClipboardCheck },
+                ]} />
             </div>
           </div>
         </section>

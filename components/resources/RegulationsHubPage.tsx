@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Calculator, CalendarClock, FileText, Hotel, Receipt, ShieldCheck, Wallet, type LucideIcon } from 'lucide-react'
+import { Calculator, CalendarClock, ClipboardCheck, FileText, Hotel, Receipt, ShieldCheck, Wallet, type LucideIcon } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Band from '@/components/ui/Band'
@@ -12,7 +12,7 @@ import SectionHeader from '@/components/SectionHeader'
 import { getAllPosts } from '@/lib/blog'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { formatDay } from '@/lib/content/postDates'
-import { CALCULATOR_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { CALCULATOR_ROUTE, DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
 import { guidesFor, REGULATION_TOPICS, REGULATIONS_COPY } from '@/lib/resources/saudiRegulations'
 import { breadcrumbSchema, webPageSchema } from '@/lib/resources/schema'
 
@@ -116,7 +116,10 @@ export default function RegulationsHubPage({ locale }: { locale: Locale }) {
             <SectionHeader lead={c.toolsTitle} subtitle={c.toolsSubtitle} className="mb-10" />
             <ResourceLinks
               locale={locale}
-              links={[{ title: c.calculatorTitle, description: c.calculatorDesc, route: CALCULATOR_ROUTE, icon: Calculator }]}
+              links={[
+                { title: c.calculatorTitle, description: c.calculatorDesc, route: CALCULATOR_ROUTE, icon: Calculator },
+                { title: c.downloadsTitle, description: c.downloadsDesc, route: DOWNLOADS_ROUTE, icon: ClipboardCheck },
+              ]}
             />
           </div>
         </section>

@@ -14,7 +14,9 @@ import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
 import { metadata as regulationsHub } from '../resources/saudi-regulations/page'
 import { metadata as calculator } from '../tools/rental-revenue-calculator/page'
-import { CALCULATOR_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { metadata as downloads } from '../resources/downloads/page'
+import { CALCULATOR_ROUTE, checklistRoute, DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { CHECKLISTS } from '@/lib/resources/checklists'
 
 /**
  * /llms.txt, generated at build time from each page's own title and
@@ -59,7 +61,12 @@ export function GET() {
       { heading: 'Company and help', links: [page('faq', faq), page('about', about), page('support', support)] },
       {
         heading: 'Free resources',
-        links: [page(REGULATIONS_HUB_ROUTE, regulationsHub), page(CALCULATOR_ROUTE, calculator)],
+        links: [
+          page(REGULATIONS_HUB_ROUTE, regulationsHub),
+          page(CALCULATOR_ROUTE, calculator),
+          page(DOWNLOADS_ROUTE, downloads),
+          ...CHECKLISTS.map((c) => ({ title: c.title.en, url: localeUrl(checklistRoute(c.id), 'en'), description: c.summary.en })),
+        ],
       },
       {
         heading: 'Blog topics',

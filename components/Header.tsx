@@ -14,7 +14,7 @@ import NavDropdown from '@/components/nav/NavDropdown'
 import MobileNavGroup from '@/components/nav/MobileNavGroup'
 import type { NavSection } from '@/components/nav/types'
 import { activeNavSection, isCurrentPath, type NavSectionKey } from '@/lib/nav/activeSection'
-import { REGULATIONS_HUB_ROUTE, RESOURCE_MENU } from '@/lib/resources/routes'
+import { DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE, RESOURCE_MENU } from '@/lib/resources/routes'
 
 /** Pages whose top is a photo (components/hero/photos.ts): the header starts in white on it. */
 const PHOTO_TOPS = new Set(['/', '/ar', '/solutions/property-managers', '/ar/solutions/property-managers', '/solutions/service-providers', '/ar/solutions/service-providers'])
@@ -84,6 +84,7 @@ export default function Header() {
       links: [
         { label: t.header.faq, href: href('/faq') },
         { label: RESOURCE_MENU.regulations[language], href: href(`/${REGULATIONS_HUB_ROUTE}`) },
+        { label: RESOURCE_MENU.downloads[language], href: href(`/${DOWNLOADS_ROUTE}`) },
       ],
     },
     { links: LEGAL_DOCUMENTS.map((d) => ({ label: d.title[language], href: href(legalHref(d.key)) })) },

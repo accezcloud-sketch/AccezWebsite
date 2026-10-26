@@ -17,4 +17,5 @@ export const checklistPdfPath = (id: string, locale: 'en' | 'ar') => `/downloads
 /** Menu labels of the resources (kept here, not with the page data, so the header's client code stays small). */
 export const RESOURCE_MENU = {
   regulations: { en: 'Saudi regulations', ar: 'الأنظمة السعودية' },
+  downloads: { en: 'Free checklists and tools', ar: 'قوائم تحقق وأدوات مجانية' },
 } as const

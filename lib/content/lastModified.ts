@@ -14,7 +14,8 @@ import PAGE_DATES from './page-dates.json'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { legalVersionRoutes } from '@/lib/legal/documents'
 import { routeKey } from '@/lib/build/pageDates.mjs'
-import { CALCULATOR_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { CALCULATOR_ROUTE, checklistRoute, DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { CHECKLISTS } from '@/lib/resources/checklists'
 import { hubPostSlugs } from '@/lib/resources/saudiRegulations'
 
 export interface DatedPost {
@@ -61,6 +62,8 @@ export function sitemapStaticRoutes(): string[] {
     // Free resources.
     REGULATIONS_HUB_ROUTE,
     CALCULATOR_ROUTE,
+    DOWNLOADS_ROUTE,
+    ...CHECKLISTS.map((c) => checklistRoute(c.id)),
   ].map(routeKey)
 }
 
