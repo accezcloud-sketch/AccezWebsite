@@ -11,7 +11,7 @@ excerptAr: "التنبؤ الفعال بالتدفق النقدي ضروري ل�
 date: "2026-10-22"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/cash-flow-forecasting-for-property-management-businesses.jpg"
+coverImage: "/images/blog/cash-flow-forecasting-for-property-management-businesses.webp"
 coverImageAlt: "A graph showing upward trending financial data with property icons."
 coverImageCredit: "Photo by Towfiqu barbhuiya on Unsplash"
 coverImageCreditUrl: "https://unsplash.com/photos/person-in-black-suit-jacket-holding-white-tablet-computer-nApaSgkzaxg"
