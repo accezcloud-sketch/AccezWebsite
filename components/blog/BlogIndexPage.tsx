@@ -8,7 +8,9 @@ import { BLOG_INDEX_COPY, blogIndexRoute } from '@/lib/content/blogIndex'
 import { pageCount, pageItems, pageRoute } from '@/lib/content/pagination'
 import { toPostCardData } from '@/lib/content/postCard'
 import { TOPICS, topicDescription, topicLabel, type TopicKey } from '@/lib/content/topics'
-import { localeUrl, type Locale } from '@/lib/i18n'
+import { localeHref, localeUrl, type Locale } from '@/lib/i18n'
+import { REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { REGULATIONS_COPY } from '@/lib/resources/saudiRegulations'
 
 /**
  * The blog index (all articles) or a topic hub, in either language, at any
@@ -69,6 +71,14 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
           <p className="max-w-2xl mx-auto leading-relaxed" style={{ fontSize: 17, color: 'var(--text-muted)' }}>
             {subtitle}
           </p>
+          {topic === 'saudi-regulations' && (
+            <a href={localeHref(`/${REGULATIONS_HUB_ROUTE}`, locale)} className="ui-btn ui-btn-glass mt-6" style={{ fontSize: 14, padding: '.65rem 1.1rem' }}>
+              {REGULATIONS_COPY[locale].topicLink}
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 rtl:-scale-x-100" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          )}
         </div>
       </section>
 

@@ -12,6 +12,8 @@ import { PROVIDER_PRICING_COPY } from '@/lib/content/providerPricing'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
 import { metadata as support } from '../support/page'
+import { metadata as regulationsHub } from '../resources/saudi-regulations/page'
+import { REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
 
 /**
  * /llms.txt, generated at build time from each page's own title and
@@ -54,6 +56,10 @@ export function GET() {
         links: PLATFORM_SOLUTIONS.map((s) => page(s.pricingHref, solutionPricingMetadata(s, 'en'))),
       },
       { heading: 'Company and help', links: [page('faq', faq), page('about', about), page('support', support)] },
+      {
+        heading: 'Free resources',
+        links: [page(REGULATIONS_HUB_ROUTE, regulationsHub)],
+      },
       {
         heading: 'Blog topics',
         links: TOPICS.map((t) => ({ title: t.label.en, url: localeUrl(`blog/topic/${t.key}`, 'en') })),

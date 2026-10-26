@@ -14,10 +14,14 @@ import PAGE_DATES from './page-dates.json'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { legalVersionRoutes } from '@/lib/legal/documents'
 import { routeKey } from '@/lib/build/pageDates.mjs'
+import { REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
+import { hubPostSlugs } from '@/lib/resources/saudiRegulations'
 
 export interface DatedPost {
   date: string
   updated?: string
+  /** Day the post's facts were last checked (see lib/content/postDates.ts). */
+  reviewed?: string
 }
 
 /** Pages whose content includes a strip of posts, and which posts they show. */
@@ -30,9 +34,20 @@ export const POST_LISTING_PAGES: Record<string, ProductPageKey | 'all'> = {
 /** The later of two `YYYY-MM-DD` dates. */
 const later = (a: string, b: string) => (a > b ? a : b)
 
-/** Most recent publish/update date among the posts, or `fallback` if none is newer. */
+/** Most recent publish, update or review date among the posts, or `fallback` if none is newer. */
 export function newestDate(posts: DatedPost[], fallback: string): string {
-  return posts.reduce((acc, p) => later(acc, (p.updated || p.date || '').slice(0, 10)), fallback)
+  return posts.reduce(
+    (acc, p) => [p.date, p.updated, p.reviewed].reduce<string>((a, d) => later(a, (d || '').slice(0, 10)), acc),
+    fallback,
+  )
+}
+
+/**
+ * Pages that link to a fixed set of posts and show each one's review date
+ * (the Saudi regulations hub): they change when one of those posts does.
+ */
+export const PAGES_LINKING_POSTS: Record<string, string[]> = {
+  [REGULATIONS_HUB_ROUTE]: hubPostSlugs(),
 }
 
 /** Every static page in the sitemap (both languages each), as route keys. */
@@ -43,6 +58,8 @@ export function sitemapStaticRoutes(): string[] {
     // One page per solution: its page, its pricing, and its version of each per-solution legal document.
     ...PLATFORM_SOLUTIONS.flatMap((s) => [s.href, s.pricingHref]),
     ...legalVersionRoutes(),
+    // Free resources.
+    REGULATIONS_HUB_ROUTE,
   ].map(routeKey)
 }
 

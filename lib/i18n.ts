@@ -101,6 +101,8 @@ const AR_ROUTES = new Set([
   'pricing',
   'faq',
   'thankyou',
+  'resources',
+  'tools',
 ])
 
 /**

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts, getPostsByTopic, getPostsForProduct } from '@/lib/blog'
-import { newestDate, POST_LISTING_PAGES, sitemapStaticRoutes, staticPageDate } from '@/lib/content/lastModified'
+import { newestDate, PAGES_LINKING_POSTS, POST_LISTING_PAGES, sitemapStaticRoutes, staticPageDate } from '@/lib/content/lastModified'
 import { TOPICS } from '@/lib/content/topics'
 import { postDateModified } from '@/lib/content/postDates'
 import { localeUrl } from '@/lib/i18n'
@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Pages that show a strip of posts change when those posts do.
   const lastModifiedFor = (route: string): string => {
     const own = staticPageDate(route)
+    const linked = PAGES_LINKING_POSTS[route]
+    if (linked) return newestDate(getAllPosts().filter((p) => linked.includes(p.slug)), own)
     const shows = POST_LISTING_PAGES[route]
     if (!shows) return own
     const posts = shows === 'all' ? getAllPosts() : getPostsForProduct(shows, Number.MAX_SAFE_INTEGER)

@@ -12,6 +12,9 @@ describe('activeNavSection', () => {
     expect(activeNavSection('/about/')).toBe('about')
     expect(activeNavSection('/terms/property-managers/')).toBe('resources')
     expect(activeNavSection('/ar/faq/')).toBe('resources')
+    expect(activeNavSection('/resources/saudi-regulations/')).toBe('resources')
+    expect(activeNavSection('/ar/resources/downloads/move-in-move-out-inspection-checklist/')).toBe('resources')
+    expect(activeNavSection('/tools/rental-revenue-calculator/')).toBe('resources')
   })
 
   it('leaves the homepage and unknown pages unmarked', () => {

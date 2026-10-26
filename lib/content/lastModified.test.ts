@@ -9,6 +9,10 @@ describe('newestDate', () => {
     expect(newestDate([{ date: '2026-03-01' }, { date: '2026-01-01', updated: '2026-05-02' }], '2026-01-01')).toBe('2026-05-02')
   })
 
+  it('counts a fact review as a change', () => {
+    expect(newestDate([{ date: '2026-03-01', updated: '2026-04-01', reviewed: '2026-10-26' }], '2026-01-01')).toBe('2026-10-26')
+  })
+
   it('never goes earlier than the fallback', () => {
     expect(newestDate([{ date: '2025-01-01' }], '2026-07-01')).toBe('2026-07-01')
     expect(newestDate([], '2026-07-01')).toBe('2026-07-01')
