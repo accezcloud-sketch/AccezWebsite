@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import HomePage from '@/components/home/HomePage'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
 import { softwareApplicationSchema } from '@/lib/content/siteSchema'
+import { HOME_TITLE } from '@/lib/site'
 
 // Arabic homepage: the same page as the English one (components/home/HomePage),
 // with the locale pinned so the Arabic copy is server-rendered.
-const TITLE = 'أكسيز | إدارة العقارات وسوق الخدمات في السعودية'
+const TITLE = HOME_TITLE.ar
 const DESCRIPTION =
   'منصة واحدة بحلّين: إدارة العقارات للإيجارات والفنادق والملاك، وسوق خدمات يحصل فيه مقدمو الخدمات على الحجوزات. مبنية للسعودية بالعربية والإنجليزية.'
 

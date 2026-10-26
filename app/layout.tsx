@@ -7,7 +7,7 @@ import LanguageSuggestion from '@/components/LanguageSuggestion'
 import ConversionTracking from '@/components/ConversionTracking'
 import ConsentBanner from '@/components/ConsentBanner'
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { SITE_DESCRIPTION, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
+import { HOME_TITLE, SITE_DESCRIPTION, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
 import { websiteSchema } from '@/lib/content/siteSchema'
 import { THEME_INIT_SCRIPT } from '@/lib/theme/theme'
 import { CONSENT_DEFAULT_SCRIPT } from '@/lib/analytics/consent'
@@ -21,7 +21,7 @@ const heading = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-head
 
 export const metadata: Metadata = {
   title: {
-    default: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
+    default: HOME_TITLE.en,
     template: `%s${TITLE_SUFFIX}`,
   },
   description: SITE_DESCRIPTION,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     apple: [{ url: '/images/apple-touch-icon.png', sizes: '180x180' }],
   },
   openGraph: {
-    title: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
+    title: HOME_TITLE.en,
     description: 'Run reservations, rent, maintenance, owners, sales and hotels in one platform. Built for Saudi operators, in Arabic and English.',
     type: 'website',
     siteName: 'Accez',

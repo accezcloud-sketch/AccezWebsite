@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
 import HomePage from '@/components/home/HomePage'
 import { alternatesFor } from '@/lib/i18n'
+import { HOME_TITLE } from '@/lib/site'
 import { softwareApplicationSchema } from '@/lib/content/siteSchema'
 
 // The root layout deliberately no longer sets a canonical (it was being
 // inherited by every page). The homepage declares its own here.
 export const metadata: Metadata = {
+  // `absolute`: the layout's '%s | Accez' template would pass 60 characters.
+  title: { absolute: HOME_TITLE.en },
   alternates: alternatesFor('', 'en'),
 }
 

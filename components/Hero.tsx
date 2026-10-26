@@ -8,14 +8,14 @@ import { RIYADH } from '@/components/hero/photos'
 const CONTENT = {
   en: {
     title: 'One platform for property managers',
-    accent: 'and service providers',
-    subtitle: 'Property management for rentals, hotels and sales. Bookings for barbers, salons, spas and coaches.',
+    accent: 'and service providers in Saudi Arabia',
+    subtitle: 'Property management software for rentals, hotels and sales. Booking software for barbers, salons, spas and coaches.',
     doorsLabel: 'Choose your solution',
   },
   ar: {
     title: 'منصة واحدة لمديري العقارات',
-    accent: 'ومقدمي الخدمات',
-    subtitle: 'إدارة العقارات للإيجارات والفنادق والمبيعات. وحجوزات للحلاقين والصالونات والمنتجعات الصحية والمدربين.',
+    accent: 'ومقدمي الخدمات في السعودية',
+    subtitle: 'برنامج إدارة عقارات للإيجارات والفنادق والمبيعات، وبرنامج حجوزات للحلاقين والصالونات والمنتجعات الصحية والمدربين.',
     doorsLabel: 'اختر الحل المناسب لك',
   },
 } as const
