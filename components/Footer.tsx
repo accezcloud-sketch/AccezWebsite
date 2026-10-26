@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import FooterLanguageSwitch from '@/components/nav/FooterLanguageSwitch'
+import CookieSettingsButton from '@/components/nav/CookieSettingsButton'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
@@ -8,7 +9,8 @@ import { translations } from '@/translations'
 
 /**
  * The site footer. No client code of its own: on server-rendered pages it
- * ships as HTML only; the language switch is the one interactive part.
+ * ships as HTML only; the language switch and "Cookie settings" are the
+ * interactive parts.
  */
 export default function Footer({ locale }: { locale: Locale }) {
   const currentYear = new Date().getFullYear()
@@ -223,6 +225,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
+              <CookieSettingsButton label={t.footer.cookieSettings} />
               <FooterLanguageSwitch language={language} />
             </div>
           </div>

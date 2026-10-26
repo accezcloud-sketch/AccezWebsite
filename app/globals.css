@@ -669,3 +669,20 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 /* A value that changed (the plan price on the monthly/yearly switch). */
 @keyframes motion-swap { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
 .motion-swap { display: inline-block; animation: motion-swap .18s ease-out; }
+
+/* Cookie consent banner (components/ConsentBanner.tsx). Phone: full width,
+   above the chat bubble (bottom right, 90px). Wider screens: bottom centre,
+   narrow enough to clear the bubble; lifted when the Arabic language offer
+   (bottom left) is showing. */
+.consent-banner {
+  position: fixed; z-index: 9998;
+  left: 16px; right: 16px; bottom: 104px;
+}
+@media (min-width: 640px) {
+  .consent-banner {
+    left: 50%; right: auto; bottom: 24px;
+    width: min(560px, calc(100vw - 280px));
+    transform: translateX(-50%);
+  }
+  body:has(.lang-offer) .consent-banner { bottom: 104px; }
+}

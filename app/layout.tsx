@@ -5,10 +5,12 @@ import { Analytics } from '@/components/Analytics'
 import ChatbotWidget from '@/components/ChatbotWidget'
 import LanguageSuggestion from '@/components/LanguageSuggestion'
 import ConversionTracking from '@/components/ConversionTracking'
+import ConsentBanner from '@/components/ConsentBanner'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { SITE_DESCRIPTION, TITLE_SUFFIX, X_HANDLE } from '@/lib/site'
 import { websiteSchema } from '@/lib/content/siteSchema'
 import { THEME_INIT_SCRIPT } from '@/lib/theme/theme'
+import { CONSENT_DEFAULT_SCRIPT } from '@/lib/analytics/consent'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
@@ -169,6 +171,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
         />
+        {/* Consent Mode v2: every Google signal denied until the visitor
+            accepts. Must run before <Analytics /> configures gtag. */}
+        <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
         <Analytics />
       </head>
       <body className={`${inter.variable} ${cairo.variable} ${heading.variable} font-sans`}>
@@ -177,6 +182,7 @@ export default function RootLayout({
           <LanguageSuggestion />
         </LanguageProvider>
         <ChatbotWidget />
+        <ConsentBanner />
         <ConversionTracking />
       </body>
     </html>

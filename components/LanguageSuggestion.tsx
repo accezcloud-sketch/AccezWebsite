@@ -18,7 +18,8 @@ export default function LanguageSuggestion() {
       lang="ar"
       dir="rtl"
       // Bottom-left, clear of the chat bubble on the right; solid so it reads over any section.
-      className="fixed bottom-4 left-4 right-24 sm:right-auto z-[9998] flex items-center gap-3 rounded-xl border px-4 py-3 shadow-lg"
+      // .lang-offer lifts the cookie banner above it (globals.css).
+      className="lang-offer fixed bottom-4 left-4 right-24 sm:right-auto z-[9998] flex items-center gap-3 rounded-xl border px-4 py-3 shadow-lg"
       style={{ background: 'var(--panel-solid)', borderColor: 'var(--border-hi)' }}
     >
       <span className="min-w-0 flex-1 text-[13px] leading-snug text-soft sm:text-sm">يتوفر هذا الموقع باللغة العربية</span>

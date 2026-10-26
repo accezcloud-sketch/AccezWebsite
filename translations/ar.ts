@@ -149,6 +149,7 @@ export const ar = {
 
   // Footer
   footer: {
+    cookieSettings: 'إعدادات ملفات تعريف الارتباط',
     description: 'منصة واحدة بحلّين: إدارة العقارات وسوق مقدمي الخدمات، مبنية للسعودية.',
     product: 'المنتج',
     features: 'المميزات',

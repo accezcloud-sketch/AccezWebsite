@@ -149,6 +149,7 @@ export const en = {
 
   // Footer
   footer: {
+    cookieSettings: 'Cookie settings',
     description: 'One platform, two solutions: property management and a service provider marketplace, built for Saudi Arabia.',
     product: 'Product',
     features: 'Features',
