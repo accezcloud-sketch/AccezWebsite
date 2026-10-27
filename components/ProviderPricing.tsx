@@ -48,14 +48,18 @@ export default function ProviderPricing({ headingLevel = 'h2', locale: language 
                     )}
                   </div>
 
-                  {/* Platform fee, the per-booking cut, dropping with each tier */}
-                  <div
-                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg mb-6 self-start"
-                    style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}
-                  >
-                    <span className="font-bold" style={{ fontSize: 13, color: 'var(--accent-hi)' }}>{plan.platformFee}</span>
-                    <span style={{ fontSize: 11.5, color: 'var(--text-muted)' }}>{p.feeSuffix}</span>
-                  </div>
+                  {/* Platform fee per booking: stated only where the plan data gives one (the Free plan) */}
+                  {'platformFee' in plan && plan.platformFee ? (
+                    <div
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg mb-6 self-start"
+                      style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}
+                    >
+                      <span className="font-bold" style={{ fontSize: 13, color: 'var(--accent-hi)' }}>{plan.platformFee}</span>
+                      <span style={{ fontSize: 11.5, color: 'var(--text-muted)' }}>{p.feeSuffix}</span>
+                    </div>
+                  ) : (
+                    <div className="mb-6" aria-hidden="true" />
+                  )}
 
                   <a
                     href={PROVIDER_SIGN_UP}

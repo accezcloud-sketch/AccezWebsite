@@ -98,7 +98,7 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
       en: 'Plans and prices for service providers on Accez: a free marketplace listing, bookings, team and customers, with a lower platform fee on higher plans.',
       ar: 'باقات وأسعار مقدمي الخدمات في أكسيز: إدراج مجاني في السوق، والحجوزات، والفريق والعملاء، مع رسوم منصة أقل في الباقات الأعلى.',
     },
-    pricingNote: { en: 'Free to list, lower fees on higher plans', ar: 'الإدراج مجاني، ورسوم أقل في الخطط الأعلى' },
+    pricingNote: { en: 'Free to list, with a 10% fee per booking', ar: 'الإدراج مجاني، مع رسوم 10% لكل حجز' },
     signUpUrl: PROVIDER_SIGN_UP,
     loginUrl: PROVIDER_LOGIN,
     legalAudience: 'sp',

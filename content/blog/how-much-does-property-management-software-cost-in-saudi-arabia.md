@@ -51,7 +51,7 @@ Most vendors use one of five models, or a mix of them. The examples below come f
 | Per listing or per unit | A fixed amount for each listing or unit, every month | [Guesty](https://www.guesty.com/pricing/) states that Guesty Lite starts at $9 per listing per month | Small short-term rental portfolios | The bill grows with every unit you add |
 | Flat tier | One monthly price per tier, with a limit on properties or features | [Buildium](https://www.buildium.com/pricing/) lists Essential starting at $62 per month, Growth at $192 and Premium at $400 | Teams that want a predictable bill | What happens when you pass the tier limit |
 | Tiered by property count | A price per tier, where each tier allows a set number of properties | [Accez property manager plans](/pricing/property-managers/): Basic SAR 40 per month for 3 properties, Professional SAR 150 per month for 10 properties, both with unlimited units | Portfolios with many units per building | Moving up a tier when you add a property |
-| Per booking or commission | A percentage of each completed booking, sometimes with a lower subscription | [Accez service provider plans](/pricing/service-providers/): a platform fee of 10%, 5% or 3.5% per booking depending on the plan | Businesses with uneven booking volumes | The fee scales with your revenue |
+| Per booking or commission | A percentage of each completed booking, sometimes with a lower subscription | [Accez service provider plans](/pricing/service-providers/): a 10% platform fee per booking on the Free plan | Businesses with uneven booking volumes | The fee scales with your revenue |
 | Custom quote | Priced to your portfolio after a sales call | Guesty states that Guesty Pro is priced by your number of listings; Accez Enterprise is tailored to the portfolio | Large portfolios and companies | Onboarding, contract length and add-ons in the quote |
 
 There is no single best model. A per-unit price is fair for a few scattered apartments but adds up quickly in a large residential building. A tier priced by property count suits buildings with many units, because the number of units does not change the price. A commission model is easy to start with, but on a busy month it can cost more than a fixed fee.
@@ -67,21 +67,21 @@ These are the plans shown on the [Accez property manager pricing page](/pricing/
 | Plan | Price | What the plan includes, as listed on the pricing page |
 |---|---|---|
 | Free | SAR 0 | 1 property, unlimited services, 10 check-ins and 10 work orders per month, a basic dashboard and property management. No premium support |
-| Basic | SAR 40 per month, or SAR 480 per year billed yearly | 3 properties with unlimited units, property management, work orders management and check-in and check-out tracking |
-| Professional | SAR 150 per month, or SAR 1,800 per year billed yearly | Everything in Basic, 10 properties with unlimited units, integrated communications, services management and automatic calendar sync |
-| Enterprise | Tailored to your needs | Everything in Professional, plus a custom branded domain, a dedicated account manager, priority 24/7 support, API access, custom development and bulk data import |
+| Basic | SAR 40 per month, or SAR 480 per year billed yearly | 3 properties with unlimited units, property management, work orders management |
+| Professional | SAR 150 per month, or SAR 1,800 per year billed yearly | Everything in Basic, 10 properties with unlimited units, up to 3 channels |
+| Enterprise | Tailored to your needs | Everything in Professional, plus priority support, for large portfolios |
 
-The Free plan needs no credit card. If you cancel a paid subscription, it stays active until the end of the period you have already paid for and then does not renew.
+If you cancel a paid subscription, it stays active until the end of the period you have already paid for and then does not renew.
 
 ### Service provider plans
 
-These are the plans shown on the [Accez service provider pricing page](/pricing/service-providers/). Every plan includes a marketplace listing, and the platform fee is a percentage of each completed booking.
+These are the plans shown on the [Accez service provider pricing page](/pricing/service-providers/). Every plan includes a marketplace listing. On the Free plan, Accez takes a 10% platform fee on each booking.
 
-| Plan | Price | Platform fee per booking | What the plan includes |
-|---|---|---|---|
-| Free | Free | 10% | Public marketplace listing, 1 staff member, up to 5 services, provider dashboard, ratings and reviews |
-| Starter | SAR 75 per month | 5% | Everything in Free, up to 20 services, instant order confirmation |
-| Growth | SAR 184 per month | 3.5% | Everything in Starter, up to 5 staff members, up to 100 services, promo codes and analytics |
+| Plan | Price | What the plan includes |
+|---|---|---|
+| Free | Free, with a 10% platform fee per booking | Public marketplace listing, 1 staff member, up to 5 services, provider dashboard, ratings and reviews |
+| Starter | SAR 75 per month | Everything in Free, up to 20 services |
+| Growth | SAR 184 per month | Everything in Starter, up to 5 staff members, up to 100 services, promo codes |
 
 ## The Costs That Do Not Appear on the Pricing Page
 
@@ -134,7 +134,7 @@ Price is only one part of the decision. Our [buyer's checklist for choosing prop
 ## Frequently Asked Questions
 
 ### Is there free property management software in Saudi Arabia?
-Some vendors offer free plans with limits. Accez, for example, has a Free plan for property managers covering 1 property with 10 check-ins and 10 work orders per month, and no credit card is needed to start. Free plans are useful for testing, but check the limits against your real portfolio.
+Some vendors offer free plans with limits. Accez, for example, has a Free plan for property managers covering 1 property with 10 check-ins and 10 work orders per month. Free plans are useful for testing, but check the limits against your real portfolio.
 
 ### Is per-unit or per-property pricing cheaper?
 It depends on how your units are spread. If you manage a few large buildings with many apartments, pricing by property is usually cheaper, because adding units does not raise the price. If you manage scattered single units, the two models come out closer.
@@ -153,7 +153,7 @@ Start monthly while you test the system with real data. Move to yearly once you 
 - Property management software in Saudi Arabia ranges from free plans to custom quotes; the pricing model matters as much as the headline price.
 - The five common models are per listing or unit, flat tier, tiered by property count, commission per booking and custom quote.
 - Accez property manager plans: Free, Basic at SAR 40 per month for 3 properties, Professional at SAR 150 per month for 10 properties (both with unlimited units), and Enterprise tailored to the portfolio.
-- Accez service provider plans: Free with a 10% platform fee, Starter at SAR 75 per month with 5%, Growth at SAR 184 per month with 3.5%.
+- Accez service provider plans: Free with a 10% platform fee per booking, Starter at SAR 75 per month, Growth at SAR 184 per month.
 - Payment processing, channel commissions, onboarding, add-ons and 15% VAT can outweigh the subscription; put them all in one comparison.
 - Count your properties and units, including next year's growth, before you request any quote.
 
@@ -191,7 +191,7 @@ See what the Accez property management solution includes on the [property manage
 | لكل إعلان أو وحدة | مبلغ ثابت لكل إعلان أو وحدة شهريًا | تذكر [Guesty](https://www.guesty.com/pricing/) أن باقة Guesty Lite تبدأ من 9 دولارات لكل إعلان شهريًا | محافظ الإيجار قصير الأجل الصغيرة | الفاتورة تكبر مع كل وحدة تضيفها |
 | باقة ثابتة | سعر شهري واحد لكل باقة مع حد للعقارات أو المزايا | تعرض [Buildium](https://www.buildium.com/pricing/) باقة Essential بدءًا من 62 دولارًا شهريًا، وGrowth بـ 192 دولارًا، وPremium بـ 400 دولار | الفرق التي تريد فاتورة متوقعة | ما يحدث عند تجاوز حد الباقة |
 | باقات حسب عدد العقارات | سعر لكل باقة تسمح بعدد محدد من العقارات | [باقات أكسيز لمديري العقارات](/ar/pricing/property-managers/): الأساسية بـ 40 ريالًا شهريًا لثلاثة عقارات، والاحترافية بـ 150 ريالًا شهريًا لعشرة عقارات، وكلتاهما بوحدات غير محدودة | المحافظ التي تضم وحدات كثيرة في كل مبنى | الانتقال إلى باقة أعلى عند إضافة عقار |
-| لكل حجز أو بالعمولة | نسبة من كل حجز مكتمل، أحيانًا مع اشتراك أقل | [باقات أكسيز لمقدمي الخدمات](/ar/pricing/service-providers/): رسوم منصة 10% أو 5% أو 3.5% لكل حجز حسب الباقة | الأنشطة ذات الحجوزات المتفاوتة | الرسوم ترتفع مع إيراداتك |
+| لكل حجز أو بالعمولة | نسبة من كل حجز مكتمل، أحيانًا مع اشتراك أقل | [باقات أكسيز لمقدمي الخدمات](/ar/pricing/service-providers/): رسوم منصة 10% لكل حجز في الباقة المجانية | الأنشطة ذات الحجوزات المتفاوتة | الرسوم ترتفع مع إيراداتك |
 | عرض سعر مخصص | يُسعّر حسب محفظتك بعد التواصل مع المبيعات | تذكر Guesty أن باقة Guesty Pro تُسعّر حسب عدد الإعلانات، وباقة المؤسسات في أكسيز مصممة حسب المحفظة | المحافظ الكبيرة والشركات | الإعداد ومدة العقد والإضافات داخل العرض |
 
 لا يوجد نموذج أفضل في كل الحالات. فالتسعير لكل وحدة عادل لعدد قليل من الشقق المتفرقة، لكنه يتراكم بسرعة في مبنى سكني كبير. والتسعير حسب عدد العقارات يناسب المباني ذات الوحدات الكثيرة لأن عدد الوحدات لا يغير السعر. ونموذج العمولة سهل في البداية، لكنه قد يكلف في الشهر المزدحم أكثر من رسوم ثابتة.
@@ -207,21 +207,21 @@ See what the Accez property management solution includes on the [property manage
 | الباقة | السعر | ما تتضمنه الباقة كما تذكره صفحة الأسعار |
 |---|---|---|
 | المجانية | 0 ريال | عقار واحد، وخدمات غير محدودة، و10 تسجيلات دخول و10 أوامر عمل شهريًا، ولوحة تحكم أساسية، وإدارة العقارات، دون دعم متميز |
-| الأساسية | 40 ريالًا شهريًا، أو 480 ريالًا سنويًا عند الفوترة السنوية | 3 عقارات بوحدات غير محدودة، وإدارة العقارات، وإدارة أوامر العمل، وتتبع تسجيل الدخول والخروج |
-| الاحترافية | 150 ريالًا شهريًا، أو 1,800 ريال سنويًا عند الفوترة السنوية | كل ما في الأساسية، و10 عقارات بوحدات غير محدودة، والاتصالات المتكاملة، وإدارة الخدمات، ومزامنة التقويم التلقائية |
-| المؤسسات | مصممة حسب احتياجاتك | كل ما في الاحترافية، إضافة إلى نطاق مخصص بعلامتك التجارية، ومدير حساب مخصص، ودعم ذي أولوية على مدار الساعة، والوصول إلى API، وتطوير مخصص، واستيراد البيانات بالجملة |
+| الأساسية | 40 ريالًا شهريًا، أو 480 ريالًا سنويًا عند الفوترة السنوية | 3 عقارات بوحدات غير محدودة، وإدارة العقارات، وإدارة أوامر العمل |
+| الاحترافية | 150 ريالًا شهريًا، أو 1,800 ريال سنويًا عند الفوترة السنوية | كل ما في الأساسية، و10 عقارات بوحدات غير محدودة، وربط حتى 3 قنوات |
+| المؤسسات | مصممة حسب احتياجاتك | كل ما في الاحترافية، إضافة إلى دعم ذي أولوية، للمحافظ الكبيرة |
 
-لا تحتاج الباقة المجانية إلى بطاقة ائتمان. وإذا ألغيت اشتراكًا مدفوعًا، يبقى نشطًا حتى نهاية المدة المدفوعة ثم لا يتجدد.
+وإذا ألغيت اشتراكًا مدفوعًا، يبقى نشطًا حتى نهاية المدة المدفوعة ثم لا يتجدد.
 
 ### باقات مقدمي الخدمات
 
-هذه الباقات كما تظهر في [صفحة أسعار أكسيز لمقدمي الخدمات](/ar/pricing/service-providers/). كل باقة تشمل صفحة في السوق، ورسوم المنصة نسبة من كل حجز مكتمل.
+هذه الباقات كما تظهر في [صفحة أسعار أكسيز لمقدمي الخدمات](/ar/pricing/service-providers/). كل باقة تشمل صفحة في السوق. وفي الباقة المجانية تتقاضى أكسيز رسوم منصة 10% على كل حجز.
 
-| الباقة | السعر | رسوم المنصة لكل حجز | ما تتضمنه الباقة |
-|---|---|---|---|
-| المجانية | مجانًا | 10% | صفحة عامة في السوق، وموظف واحد، وحتى 5 خدمات، ولوحة تحكم مقدم الخدمة، والتقييمات والمراجعات |
-| المبتدئة | 75 ريالًا شهريًا | 5% | كل ما في المجانية، وحتى 20 خدمة، وتأكيد فوري للطلبات |
-| النمو | 184 ريالًا شهريًا | 3.5% | كل ما في المبتدئة، وحتى 5 موظفين، وحتى 100 خدمة، وأكواد الخصم، والتحليلات |
+| الباقة | السعر | ما تتضمنه الباقة |
+|---|---|---|
+| المجانية | مجانًا، مع رسوم منصة 10% لكل حجز | صفحة عامة في السوق، وموظف واحد، وحتى 5 خدمات، ولوحة تحكم مقدم الخدمة، والتقييمات والمراجعات |
+| المبتدئة | 75 ريالًا شهريًا | كل ما في المجانية، وحتى 20 خدمة |
+| النمو | 184 ريالًا شهريًا | كل ما في المبتدئة، وحتى 5 موظفين، وحتى 100 خدمة، وأكواد الخصم |
 
 ## التكاليف التي لا تظهر في صفحة الأسعار
 
@@ -274,7 +274,7 @@ See what the Accez property management solution includes on the [property manage
 ## الأسئلة الشائعة
 
 ### هل يوجد برنامج مجاني لإدارة العقارات في السعودية؟
-يقدم بعض المزودين باقات مجانية بحدود معينة. فلدى أكسيز مثلًا باقة مجانية لمديري العقارات تغطي عقارًا واحدًا مع 10 تسجيلات دخول و10 أوامر عمل شهريًا، ولا تحتاج إلى بطاقة ائتمان للبدء. والباقات المجانية مفيدة للتجربة، لكن قارن حدودها بمحفظتك الفعلية.
+يقدم بعض المزودين باقات مجانية بحدود معينة. فلدى أكسيز مثلًا باقة مجانية لمديري العقارات تغطي عقارًا واحدًا مع 10 تسجيلات دخول و10 أوامر عمل شهريًا. والباقات المجانية مفيدة للتجربة، لكن قارن حدودها بمحفظتك الفعلية.
 
 ### أيهما أرخص: التسعير لكل وحدة أم لكل عقار؟
 يعتمد ذلك على توزيع وحداتك. فإذا كنت تدير مباني كبيرة قليلة فيها شقق كثيرة، فالتسعير لكل عقار أرخص عادة لأن إضافة الوحدات لا ترفع السعر. أما إذا كانت وحداتك متفرقة، فيقترب النموذجان من بعضهما.
@@ -293,7 +293,7 @@ See what the Accez property management solution includes on the [property manage
 - تتراوح تكلفة برامج إدارة العقارات في السعودية بين الباقات المجانية وعروض الأسعار المخصصة، ونموذج التسعير لا يقل أهمية عن السعر المعلن.
 - النماذج الخمسة الشائعة: لكل إعلان أو وحدة، والباقة الثابتة، والباقات حسب عدد العقارات، والعمولة على كل حجز، وعرض السعر المخصص.
 - باقات أكسيز لمديري العقارات: المجانية، والأساسية بـ 40 ريالًا شهريًا لثلاثة عقارات، والاحترافية بـ 150 ريالًا شهريًا لعشرة عقارات (وكلتاهما بوحدات غير محدودة)، والمؤسسات المصممة حسب المحفظة.
-- باقات أكسيز لمقدمي الخدمات: المجانية برسوم منصة 10%، والمبتدئة بـ 75 ريالًا شهريًا مع 5%، والنمو بـ 184 ريالًا شهريًا مع 3.5%.
+- باقات أكسيز لمقدمي الخدمات: المجانية برسوم منصة 10% لكل حجز، والمبتدئة بـ 75 ريالًا شهريًا، والنمو بـ 184 ريالًا شهريًا.
 - قد تفوق رسوم المعالجة وعمولات القنوات والإعداد والإضافات وضريبة 15% قيمة الاشتراك، فضعها كلها في مقارنة واحدة.
 - احصر عقاراتك ووحداتك، مع نمو العام المقبل، قبل طلب أي عرض سعر.
 

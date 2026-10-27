@@ -54,7 +54,7 @@ export function GET() {
       'Market: Saudi Arabia. The whole site is available in Arabic at https://www.accez.cloud/ar/.',
       `Accez is one platform with ${PLATFORM_SOLUTIONS.length} solutions: ${PLATFORM_SOLUTIONS.map((s) => `${s.name.en} (${s.audience.en.toLowerCase()})`).join(' and ')}. Each has its own plans and pricing page.`,
       `Property management plans: Free; Basic SAR ${PM_PLAN_PRICES.basic.monthly}/month; Professional SAR ${PM_PLAN_PRICES.professional.monthly}/month; Enterprise priced for each portfolio.`,
-      `Service provider plans: ${PROVIDER_PRICING_COPY.en.plans.map((p) => `${p.name} (${p.price === 'Free' ? 'free' : `${p.price}/month`}, ${p.platformFee} platform fee per booking)`).join('; ')}.`,
+      `Service provider plans: ${PROVIDER_PRICING_COPY.en.plans.map((p) => `${p.name} (${p.price === 'Free' ? 'free' : `${p.price}/month`}${'platformFee' in p && p.platformFee ? `, ${p.platformFee} platform fee per booking` : ''})`).join('; ')}.`,
     ],
     sections: [
       { heading: 'Property management solution', links: solutionPages('property-managers') },

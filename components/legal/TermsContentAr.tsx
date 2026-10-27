@@ -128,8 +128,7 @@ export default function TermsContentAr({ audience }: { audience: AudienceView })
             <LegalCallout tone="warning" title="الباقة المجانية تكلّف عمولة بدلًا من رسم">
               <p>
                 الباقة المجانية <strong>بلا حد زمني وبلا رسم دوري</strong>. وبدلًا من ذلك نتقاضى عمولة
-                قدرها <strong>٥٪ من قيمة كل حجز</strong> تستقبله عبر السوق ما دمت عليها. أما الباقات
-                المدفوعة فتحمل عمولة أقل، أو لا عمولة إطلاقًا على نموذج الفوترة بالاشتراك.
+                قدرها <strong>١٠٪ من قيمة كل حجز</strong> تستقبله عبر السوق ما دمت عليها.
               </p>
             </LegalCallout>
           </Only>

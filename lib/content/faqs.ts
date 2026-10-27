@@ -44,9 +44,9 @@ export const FAQS: FaqItem[] = [
     question: 'How much does Accez.cloud cost?',
     questionAr: 'كم تكلفة Accez.cloud؟',
     answer:
-      `Each solution has its own plans. For property managers there is a Free plan, Basic at SAR ${PM.basic.monthly}/month (3 properties with unlimited units), Professional at SAR ${PM.professional.monthly}/month (10 properties with unlimited units), and Enterprise for larger portfolios. Service providers list for free; the Starter (SAR ${SP_STARTER}/month) and Growth (SAR ${SP_GROWTH}/month) plans lower the platform fee on each booking.`,
+      `Each solution has its own plans. For property managers there is a Free plan, Basic at SAR ${PM.basic.monthly}/month (3 properties with unlimited units), Professional at SAR ${PM.professional.monthly}/month (10 properties with unlimited units), and Enterprise for larger portfolios. Service providers can list for free, with a 10% platform fee on each booking, or choose the Starter (SAR ${SP_STARTER}/month) or Growth (SAR ${SP_GROWTH}/month) plan.`,
     answerAr:
-      `لكل حل خططه الخاصة. لمديري العقارات: خطة مجانية، والأساسية بـ ${PM.basic.monthly} ريالًا شهريًا (3 عقارات بوحدات غير محدودة)، والاحترافية بـ ${PM.professional.monthly} ريالًا شهريًا (10 عقارات بوحدات غير محدودة)، وخطة المؤسسات للمحافظ الأكبر. ولمقدمي الخدمات: الإدراج مجاني، وخطتا المبتدئة (${SP_STARTER} ريالًا شهريًا) والنمو (${SP_GROWTH} ريالًا شهريًا) تخفضان رسوم المنصة على كل حجز.`,
+      `لكل حل خططه الخاصة. لمديري العقارات: خطة مجانية، والأساسية بـ ${PM.basic.monthly} ريالًا شهريًا (3 عقارات بوحدات غير محدودة)، والاحترافية بـ ${PM.professional.monthly} ريالًا شهريًا (10 عقارات بوحدات غير محدودة)، وخطة المؤسسات للمحافظ الأكبر. ولمقدمي الخدمات: الإدراج مجاني مع رسوم منصة 10% على كل حجز، أو خطة المبتدئة (${SP_STARTER} ريالًا شهريًا) أو النمو (${SP_GROWTH} ريالًا شهريًا).`,
   },
   {
     category: 'channelsIntegrations',

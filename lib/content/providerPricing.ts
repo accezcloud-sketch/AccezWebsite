@@ -31,8 +31,7 @@ export const PROVIDER_PRICING_COPY = {
       {
         name: 'Starter',
         price: 'SAR 75',
-        platformFee: '5%',
-        tagline: 'Lower fees and more services.',
+        tagline: 'More services for your business.',
         cta: 'Choose Starter',
         highlight: false,
         features: [
@@ -43,8 +42,7 @@ export const PROVIDER_PRICING_COPY = {
       {
         name: 'Growth',
         price: 'SAR 184',
-        platformFee: '3.5%',
-        tagline: 'More staff, more services and the lowest fee.',
+        tagline: 'More staff and more services.',
         cta: 'Choose Growth',
         highlight: true,
         features: [
@@ -55,7 +53,7 @@ export const PROVIDER_PRICING_COPY = {
         ],
       },
     ],
-    pricingNote: 'The platform fee is a percentage of each booking, and it is lower on higher plans.',
+    pricingNote: 'On the Free plan, Accez takes a 10% platform fee on each booking.',
   },
   ar: {
     pricingEyebrow: 'أسعار مقدمي الخدمات',
@@ -85,8 +83,7 @@ export const PROVIDER_PRICING_COPY = {
       {
         name: 'المبتدئة',
         price: '75 ريال',
-        platformFee: '5%',
-        tagline: 'رسوم أقل وخدمات أكثر.',
+        tagline: 'خدمات أكثر لنشاطك.',
         cta: 'اختر المبتدئة',
         highlight: false,
         features: [
@@ -97,8 +94,7 @@ export const PROVIDER_PRICING_COPY = {
       {
         name: 'النمو',
         price: '184 ريال',
-        platformFee: '3.5%',
-        tagline: 'موظفون وخدمات أكثر وأقل رسوم.',
+        tagline: 'موظفون أكثر وخدمات أكثر.',
         cta: 'اختر النمو',
         highlight: true,
         features: [
@@ -109,7 +105,7 @@ export const PROVIDER_PRICING_COPY = {
         ],
       },
     ],
-    pricingNote: 'رسوم المنصة نسبة من كل حجز، وتكون أقل في الخطط الأعلى.',
+    pricingNote: 'في الخطة المجانية تتقاضى أكسيز رسوم منصة 10% على كل حجز.',
   },
 } as const
 

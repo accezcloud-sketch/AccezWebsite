@@ -152,9 +152,8 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
           <LegalCallout tone="warning" title="The free tier costs a commission instead of a fee">
             <p>
               The free tier has <strong>no time limit and no recurring fee</strong>. Instead, we
-              charge a commission of <strong>5% of the value of each booking</strong> you take
-              through the marketplace while you are on it. Paid tiers carry a lower commission or,
-              on a subscription billing model, none at all.
+              charge a commission of <strong>10% of the value of each booking</strong> you take
+              through the marketplace while you are on it.
             </p>
           </LegalCallout>
         </Only>
