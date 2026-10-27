@@ -1,6 +1,6 @@
 import { subpageRoute } from '@/components/solutions/subpageRoute'
 
-// One page per module and per kind of customer: /ar/solutions/<solution>/<page>/.
+// One page per module: /ar/solutions/<solution>/<page>/.
 const route = subpageRoute('ar')
 
 export const dynamicParams = false

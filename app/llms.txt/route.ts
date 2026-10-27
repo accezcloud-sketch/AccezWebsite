@@ -41,7 +41,7 @@ const solutionPage = (key: string): LlmsLink => {
 /** A solution's page followed by its module and customer pages. */
 const solutionPages = (key: string): LlmsLink[] => [
   solutionPage(key),
-  ...[...subpagesOf(key, 'module'), ...subpagesOf(key, 'audience')].map((p) => page(subpageHref(p), subpageMetadata(p, 'en'))),
+  ...subpagesOf(key, 'module').map((p) => page(subpageHref(p), subpageMetadata(p, 'en'))),
 ]
 
 export function GET() {

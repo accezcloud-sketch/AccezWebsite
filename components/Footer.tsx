@@ -79,12 +79,11 @@ export default function Footer({ locale }: { locale: Locale }) {
 
   const columns: Array<{ heading: string; links: FooterLink[] }> = [
     // One column per solution (lib/platform/solutions.ts): its main page, its
-    // pages for each kind of customer, its pricing and its sign-up.
+    // pricing and its sign-up.
     ...PLATFORM_SOLUTIONS.map((s) => ({
       heading: s.name[language],
       links: [
         { label: language === 'ar' ? 'نظرة عامة' : 'Overview', href: s.href },
-        ...SOLUTION_SUBPAGES.filter((p) => p.solution === s.key && p.kind === 'audience').map((p) => ({ label: p.name[language], href: subpageHref(p) })),
         { label: language === 'ar' ? 'الأسعار' : 'Pricing', href: s.pricingHref },
         { label: language === 'ar' ? 'أنشئ حسابًا' : 'Create an account', href: s.signUpUrl, external: true },
       ],

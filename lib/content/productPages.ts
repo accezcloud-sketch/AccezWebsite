@@ -28,7 +28,7 @@ export interface ProductCtaContent {
 export type ProductCtaKey = ProductPageKey | 'providers'
 
 /** The page of the property management solution that covers each topic (lib/platform/subpages.ts). */
-const PAGE: Record<Exclude<ProductPageKey, 'modules'>, string> = { owners: 'billing-and-payments', sales: 'sales-and-projects', hotels: 'hotels-and-serviced-apartments' }
+const PAGE: Record<Exclude<ProductPageKey, 'modules'>, string> = { owners: 'billing-and-payments', sales: 'sales-and-projects', hotels: 'reservations-and-stays' }
 
 export function productCta(key: ProductCtaKey, locale: Locale): ProductCtaContent {
   const modules = MODULES_COPY[locale]

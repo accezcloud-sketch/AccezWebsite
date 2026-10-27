@@ -1,17 +1,17 @@
 /**
- * The pages inside each solution, besides its main page: one per module and
- * one per kind of customer, served at /solutions/<solution>/<slug>/. The
- * routes, the sitemap, llms.txt, the footer and the solution pages all read
- * this list, so a new page is a new entry in modules.ts or audiences.ts.
+ * The pages inside each solution, besides its main page: one per module,
+ * served at /solutions/<solution>/<slug>/. Kinds of customer are cards on
+ * the solution page, not pages (lib/platform/audiences.ts). The routes, the
+ * sitemap, llms.txt, the footer and the solution pages all read this list,
+ * so a new page is a new entry in modules.ts.
  */
 import { solutionByKey } from './solutions'
 import { MODULE_PAGES } from './modules'
-import { AUDIENCE_PAGES } from './audiences'
 import type { SolutionSubpage } from './subpageTypes'
 
 export type { SolutionSubpage } from './subpageTypes'
 
-export const SOLUTION_SUBPAGES: SolutionSubpage[] = [...MODULE_PAGES, ...AUDIENCE_PAGES]
+export const SOLUTION_SUBPAGES: SolutionSubpage[] = MODULE_PAGES
 
 /** The page's route without locale, e.g. /solutions/property-managers/channel-manager. */
 export function subpageHref(page: Pick<SolutionSubpage, 'solution' | 'slug'>): string {

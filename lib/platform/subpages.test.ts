@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { PLATFORM_SOLUTIONS, solutionByKey } from './solutions'
+import { CUSTOMER_TYPES, customerTypesOf } from './audiences'
 import { SOLUTION_SUBPAGES, modulesInArea, subpageBySlug, subpageHref, subpagesOf } from './subpages'
 import { bilingualFields, detailPageProblems } from './detailPageChecks'
 import { sitemapStaticRoutes } from '@/lib/content/lastModified'
@@ -59,11 +60,16 @@ describe('solution subpages (modules and kinds of customer)', () => {
     for (const s of PLATFORM_SOLUTIONS) expect(subpagesOf(s.key, 'module').every((p) => p.solution === s.key)).toBe(true)
   })
 
-  it('gives every solution 3 or 4 pages for kinds of customer', () => {
+  it('shows the kinds of customer of every solution as 3 or 4 cards, with no page of their own', () => {
     for (const s of PLATFORM_SOLUTIONS) {
-      const n = subpagesOf(s.key, 'audience').length
+      const n = customerTypesOf(s.key).length
       expect(n, s.key).toBeGreaterThanOrEqual(3)
       expect(n, s.key).toBeLessThanOrEqual(4)
+    }
+    const slugs = new Set(CUSTOMER_TYPES.map((c) => c.slug))
+    expect(SOLUTION_SUBPAGES.filter((p) => slugs.has(p.slug))).toEqual([])
+    for (const c of CUSTOMER_TYPES.filter((x) => x.solution === 'service-providers')) {
+      expect(`${c.name.en} ${c.summary.en}`, c.slug).not.toMatch(/\b(propert|tenant|owner|lease|rent)/i)
     }
   })
 
