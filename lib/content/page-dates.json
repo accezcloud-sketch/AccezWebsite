@@ -20,11 +20,7 @@
   "refund-policy": "2026-10-26",
   "refund-policy/property-managers": "2026-10-26",
   "refund-policy/service-providers": "2026-10-26",
-  "resources/downloads": "2026-10-26",
-  "resources/downloads/move-in-move-out-inspection-checklist": "2026-10-26",
-  "resources/downloads/new-owner-onboarding-checklist": "2026-10-26",
-  "resources/downloads/short-term-rental-licensing-checklist": "2026-10-26",
-  "resources/saudi-regulations": "2026-10-26",
+  "resources/saudi-regulations": "2026-10-27",
   "solutions/property-managers": "2026-10-26",
   "solutions/property-managers/billing-and-payments": "2026-10-26",
   "solutions/property-managers/channel-manager": "2026-10-26",
@@ -44,6 +40,5 @@
   "support": "2026-10-26",
   "terms": "2026-10-26",
   "terms/property-managers": "2026-10-26",
-  "terms/service-providers": "2026-10-26",
-  "tools/rental-revenue-calculator": "2026-10-26"
+  "terms/service-providers": "2026-10-26"
 }

@@ -693,38 +693,3 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
   body:has(.lang-offer) .consent-banner { bottom: 104px; }
 }
 
-/* ── Printable checklists (components/resources/ChecklistPage.tsx) ──────────
-   On screen, .print-only parts are hidden. On paper (and in the PDFs printed
-   from these pages), the page is a plain light sheet: no site header, footer,
-   chat or buttons, flat cards, blank fields and a notes column to write in. */
-.print-only { display: none; }
-.print-cell { display: none; }
-@media print {
-  @page { size: A4; margin: 14mm 13mm 16mm; }
-  html:root:has(.print-doc) {
-    --bg: #fff; --bg-alt: #fff; --section-bg: #fff; --card-bg: #fff; --panel-solid: #fff;
-    --card-border: #c9d2db; --card-ring: transparent; --card-highlight: transparent; --border: #d5dce3; --border-hi: #b9c4ce;
-    --text-strong: #0b1a26; --text: #1c2b38; --text-soft: #1c2b38; --text-muted: #33424f; --text-faint: #4e5d6c;
-    --accent: #102634; --accent-hi: #102634; --accent-dim: transparent; --accent-line: #b9c4ce;
-    --ambient-1: transparent; --ambient-2: transparent;
-    background: #fff;
-  }
-  body:has(.print-doc) { background: #fff; }
-  body:has(.print-doc) header, body:has(.print-doc) footer, body:has(.print-doc) iframe, .no-print { display: none !important; }
-  .print-doc .band-base, .print-doc .band-alt { --section-bg: #fff; }
-  .print-doc .page-top { padding-top: 0; padding-bottom: 6mm; }
-  .print-doc .section-y { padding-top: 0; padding-bottom: 0; }
-  .print-doc h1 { font-size: 24pt !important; margin-bottom: 3mm; }
-  .print-doc .ui-card { box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; border-radius: 6px; padding: 4mm 5mm; }
-  .print-doc .checklist-section { break-inside: avoid; }
-  .print-doc tr { break-inside: avoid; }
-  .print-only { display: block; }
-  .print-cell { display: table-cell; }
-  .checklist-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm; margin-bottom: 2mm; font-size: 10.5pt; }
-  .checklist-fields > div { display: flex; gap: 2mm; align-items: flex-end; }
-  .checklist-fields dt { white-space: nowrap; font-weight: 600; color: #0b1a26; }
-  .checklist-fields dd { flex: 1; border-bottom: 1px solid #8a97a3; min-height: 6mm; }
-  .checklist-table { font-size: 10.5pt !important; }
-  .checklist-table td, .checklist-table th { padding-top: 1.6mm; padding-bottom: 1.6mm; }
-  .checklist-table input[type="checkbox"] { width: 4mm; height: 4mm; }
-}

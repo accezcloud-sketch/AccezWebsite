@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { breadcrumbSchema, webApplicationSchema, webPageSchema } from './schema'
+import { breadcrumbSchema, webPageSchema } from './schema'
 
 describe('resource structured data', () => {
   it('builds breadcrumbs with canonical URLs per language', () => {
@@ -17,12 +17,4 @@ describe('resource structured data', () => {
     expect(page.publisher).toEqual({ '@id': 'https://www.accez.cloud/#organization' })
   })
 
-  it('marks the calculator as a free web application without ratings', () => {
-    const app = webApplicationSchema({ route: 'tools/rental-revenue-calculator', locale: 'en', name: 'N', description: 'D' }) as Record<string, any>
-    expect(app['@type']).toBe('WebApplication')
-    expect(app.offers.price).toBe('0')
-    expect(app.isAccessibleForFree).toBe(true)
-    expect(app).not.toHaveProperty('aggregateRating')
-    expect(app).not.toHaveProperty('review')
-  })
 })

@@ -4,7 +4,7 @@ import Breadcrumbs, { type Crumb } from '@/components/blog/Breadcrumbs'
 import type { Locale } from '@/lib/i18n'
 
 /**
- * The top of a resource page (hub, downloads, checklist, calculator): the
+ * The top of a resource page (the Saudi regulations hub): the
  * breadcrumb trail, a section label, the page title and a short intro, with
  * room for a note or actions below. Server-rendered.
  */

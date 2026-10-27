@@ -49,26 +49,3 @@ export function webPageSchema({
   }
 }
 
-export function webApplicationSchema({
-  route, locale, name, description,
-}: {
-  route: string
-  locale: Locale
-  name: string
-  description: string
-}): object {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name,
-    description,
-    url: localeUrl(route, locale),
-    inLanguage: locale === 'ar' ? 'ar' : 'en',
-    applicationCategory: 'FinanceApplication',
-    operatingSystem: 'Any',
-    browserRequirements: 'Requires JavaScript',
-    isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'SAR' },
-    publisher: { '@id': ORGANIZATION_ID },
-  }
-}

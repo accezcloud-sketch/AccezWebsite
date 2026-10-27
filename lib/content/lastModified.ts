@@ -16,8 +16,7 @@ import { SOLUTION_SUBPAGES, subpageHref } from '@/lib/platform/subpages'
 import { INTEGRATIONS, INTEGRATIONS_HREF, integrationHref } from '@/lib/platform/integrations'
 import { legalVersionRoutes } from '@/lib/legal/documents'
 import { routeKey } from '@/lib/build/pageDates.mjs'
-import { CALCULATOR_ROUTE, checklistRoute, DOWNLOADS_ROUTE, REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
-import { CHECKLISTS } from '@/lib/resources/checklists'
+import { REGULATIONS_HUB_ROUTE } from '@/lib/resources/routes'
 import { hubPostSlugs } from '@/lib/resources/saudiRegulations'
 
 export interface DatedPost {
@@ -68,9 +67,6 @@ export function sitemapStaticRoutes(): string[] {
     ...legalVersionRoutes(),
     // Free resources.
     REGULATIONS_HUB_ROUTE,
-    CALCULATOR_ROUTE,
-    DOWNLOADS_ROUTE,
-    ...CHECKLISTS.map((c) => checklistRoute(c.id)),
   ].map(routeKey)
 }
 

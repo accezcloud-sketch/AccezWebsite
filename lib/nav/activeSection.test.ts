@@ -13,8 +13,6 @@ describe('activeNavSection', () => {
     expect(activeNavSection('/terms/property-managers/')).toBe('resources')
     expect(activeNavSection('/ar/faq/')).toBe('resources')
     expect(activeNavSection('/resources/saudi-regulations/')).toBe('resources')
-    expect(activeNavSection('/ar/resources/downloads/move-in-move-out-inspection-checklist/')).toBe('resources')
-    expect(activeNavSection('/tools/rental-revenue-calculator/')).toBe('resources')
     expect(activeNavSection('/integrations/stripe/')).toBe('resources')
   })
 
