@@ -256,20 +256,16 @@ export default function TermsContent({ audience }: { audience: AudienceView }) {
           />
         </Only>
         <Only for="sp">
-          <p>The fee depends on the type of transaction and on your plan:</p>
+          <p>The fee on marketplace bookings:</p>
           <LegalTable
             head={['Transaction type', 'Fee basis']}
             rows={[
               [
                 'Marketplace bookings',
-                'A commission that varies by provider plan tier, shown in your provider dashboard before you list.',
-              ],
-              [
-                'Providers on a subscription billing model',
-                'No per-transaction commission; a flat recurring fee applies instead.',
+                'On the Free plan, a commission of 10% of each booking. The fee for your account is shown in your provider dashboard.',
               ],
             ]}
-            caption="The rates applicable to your account are shown in the platform and in your provider dashboard. We may agree different rates with individual providers."
+            caption="The fee applicable to your account is shown in your provider dashboard. We may agree different rates with individual providers."
           />
         </Only>
         <p><strong>How the fee is calculated:</strong></p>
