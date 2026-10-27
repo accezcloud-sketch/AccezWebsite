@@ -61,7 +61,7 @@ export function sitemapStaticRoutes(): string[] {
     ...PLATFORM_SOLUTIONS.flatMap((s) => [s.href, s.pricingHref]),
     // Each solution's module and customer pages.
     ...SOLUTION_SUBPAGES.map(subpageHref),
-    // The integrations page and one page per integration.
+    // The integrations page and one page per group with its own screens.
     INTEGRATIONS_HREF,
     ...INTEGRATIONS.map((i) => integrationHref(i.slug)),
     ...legalVersionRoutes(),

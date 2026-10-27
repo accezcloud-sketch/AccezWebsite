@@ -16,11 +16,19 @@ import { breadcrumbSchema, HOME_CRUMB } from '@/lib/content/breadcrumbSchema'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
-import { INTEGRATION_GROUPS, INTEGRATIONS, INTEGRATIONS_HREF, INTEGRATIONS_HUB as HUB, integrationHref } from '@/lib/platform/integrations'
+import { INTEGRATION_GROUPS, INTEGRATION_SERVICES, INTEGRATIONS, INTEGRATIONS_HREF, INTEGRATIONS_HUB as HUB, integrationHref } from '@/lib/platform/integrations'
 
 const COPY = {
-  en: { ctaTitle: 'Connect Accez to the tools you use', ctaSub: 'Pick your solution to get started.' },
-  ar: { ctaTitle: 'اربط أكسيز بالأدوات التي تستخدمها', ctaSub: 'اختر الحل المناسب لتبدأ.' },
+  en: {
+    ctaTitle: 'Connect Accez to the tools you use',
+    ctaSub: 'Property managers: book a demo. Service providers: create your provider account.',
+    learnMore: 'Learn more',
+  },
+  ar: {
+    ctaTitle: 'اربط أكسيز بالأدوات التي تستخدمها',
+    ctaSub: 'مديرو العقارات: اطلبوا عرضًا توضيحيًا. مقدمو الخدمات: أنشئوا حساب مقدم الخدمة.',
+    learnMore: 'اعرف المزيد',
+  },
 } as const
 
 export function integrationsHubMetadata(locale: Locale): Metadata {
@@ -29,8 +37,11 @@ export function integrationsHubMetadata(locale: Locale): Metadata {
 
 /**
  * /integrations/: every service Accez connects to, by group, each card
- * naming the solutions it is in and opening its own page. Names are plain
- * text marks, no third-party logos.
+ * naming the solutions it is in. A group with a page of its own (booking
+ * channels, payments) links to it. The top has no buttons: the page serves
+ * both solutions, so the choice between them is made at the end, where the
+ * closing text says which button is for whom. Names are plain text marks,
+ * no third-party logos.
  */
 export default function IntegrationsHub({ locale }: { locale: Locale }) {
   const trail = [
@@ -53,7 +64,6 @@ export default function IntegrationsHub({ locale }: { locale: Locale }) {
             title={HUB.hero.title[locale]}
             accent={HUB.hero.accent[locale]}
             subtitle={HUB.hero.subtitle[locale]}
-            actions={actions}
             media={
               <figure>
                 <ProductShot shot={HUB.shot.shot} locale={locale} priority />
@@ -72,18 +82,21 @@ export default function IntegrationsHub({ locale }: { locale: Locale }) {
               <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
                 <SectionHeader lead={group.name[locale]} className="mb-10" />
                 <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                  {INTEGRATIONS.filter((i) => i.group === group.key).map((i) => (
-                    <li key={i.slug} className="flex">
-                      <Link href={localeHref(integrationHref(i.slug), locale)} prefetch={false} className="ui-card ui-card-interactive w-full p-6 flex flex-col gap-3">
-                        <span className="hero-display text-strong text-xl">{i.name[locale]}</span>
-                        <span className="text-sm text-muted leading-relaxed">{i.summary[locale]}</span>
-                        <span className="mt-auto pt-2 text-xs font-medium" style={{ color: 'var(--accent-hi)' }}>
-                          {i.solutions.map((key) => solutionByKey(key)!.name[locale]).join(locale === 'ar' ? '، ' : ', ')}
-                        </span>
-                      </Link>
+                  {INTEGRATION_SERVICES.filter((i) => i.group === group.key).map((i) => (
+                    <li key={i.name.en} className="ui-card w-full p-6 flex flex-col gap-3">
+                      <span className="hero-display text-strong text-xl">{i.name[locale]}</span>
+                      <span className="text-sm text-muted leading-relaxed">{i.summary[locale]}</span>
+                      <span className="mt-auto pt-2 text-xs font-medium" style={{ color: 'var(--accent-hi)' }}>
+                        {i.solutions.map((key) => solutionByKey(key)!.name[locale]).join(locale === 'ar' ? '، ' : ', ')}
+                      </span>
                     </li>
                   ))}
                 </ul>
+                {INTEGRATIONS.filter((p) => p.group === group.key).map((p) => (
+                  <Link key={p.slug} href={localeHref(integrationHref(p.slug), locale)} prefetch={false} className="ui-btn ui-btn-glass mt-6">
+                    {COPY[locale].learnMore}: {p.name[locale]}
+                  </Link>
+                ))}
               </div>
             </section>
           </Band>

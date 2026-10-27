@@ -6,7 +6,7 @@ import DetailPage, { type DetailLink, type DetailView } from '@/components/detai
 import { dataView, solutionActions, solutionCta } from '@/components/detail/detailCopy'
 import { breadcrumbSchema, HOME_CRUMB } from '@/lib/content/breadcrumbSchema'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
-import type { Locale } from '@/lib/i18n'
+import { localeHref, type Locale } from '@/lib/i18n'
 import { solutionByKey } from '@/lib/platform/solutions'
 import { subpageBySlug, subpageHref } from '@/lib/platform/subpages'
 import { INTEGRATIONS, INTEGRATIONS_HREF, INTEGRATIONS_HUB, integrationBySlug, integrationHref, type Integration } from '@/lib/platform/integrations'
@@ -48,19 +48,19 @@ export function integrationView(i: Integration, locale: Locale): DetailView {
     const m = subpageBySlug('property-managers', slug)!
     return { label: m.name[locale], text: m.summary[locale], href: subpageHref(m) }
   })
-  const siblings = INTEGRATIONS.filter((x) => x.group === i.group && x.slug !== i.slug).map((x) => x.slug)
-  // The page's buttons: the main solution's action, then the other solution's (or the main one's pricing).
-  const actions = solutionActions(main, locale)
-  const secondary = other ? solutionActions(other, locale).primary : actions.secondary
+  // A page for one solution gets its action and pricing. A page for both
+  // offers the two solution pages, named, so each visitor sees which is theirs.
+  const actions = other
+    ? { primary: { label: main.name[locale], href: localeHref(main.href, locale) }, secondary: { label: other.name[locale], href: localeHref(other.href, locale) } }
+    : solutionActions(main, locale)
   return {
     // An integration in one solution shows that solution's posts; one in both shows any.
     ...dataView(i, locale, i.solutions.length === 1 ? (i.solutions[0] as PostAudience) : undefined),
     crumbs: trail(i, locale).map((t, n, all) => ({ label: t.name, href: n < all.length - 1 ? t.route || '/' : undefined })),
     primary: actions.primary,
-    secondary,
+    secondary: actions.secondary,
     links: [
       ...modules,
-      ...integrationLinks(siblings, locale),
       ...solutions.map((s) => ({ label: s.name[locale], text: s.roleSummary[locale], href: s.href })),
       { ...ALL[locale], href: INTEGRATIONS_HREF },
     ],
