@@ -144,9 +144,9 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     modules: ['billing-and-payments', 'leases-and-rent', 'team-and-messaging'],
     integrations: [],
     posts: [
-      'the-5-metrics-every-property-manager-should-check-daily',
+      'how-to-choose-property-management-software-in-saudi-arabia',
+      'accez-cloud-vs-saudi-property-management-platforms',
       'migrating-from-spreadsheets-and-legacy-software-without-losing-data',
-      'how-to-scale-your-property-portfolio-without-losing-control',
     ],
   },
   {

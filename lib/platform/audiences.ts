@@ -196,9 +196,9 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
     modules: ['sales-and-projects', 'billing-and-payments', 'leases-and-rent', 'team-and-messaging'],
     integrations: [],
     posts: [
-      'why-vision-2030-is-creating-a-new-kind-of-property-manager',
+      'how-to-choose-property-management-software-in-saudi-arabia',
+      'accez-cloud-vs-saudi-property-management-platforms',
       'migrating-from-spreadsheets-and-legacy-software-without-losing-data',
-      'the-5-metrics-every-property-manager-should-check-daily',
     ],
   },
 
