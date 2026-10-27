@@ -9,7 +9,7 @@ import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import type { Locale } from '@/lib/i18n'
 import type { PostAudience } from '@/lib/content/postAudience'
 import { solutionByKey } from '@/lib/platform/solutions'
-import { integrationLinks } from '@/components/integrations/integrationRoute'
+import { integrationLinks } from '@/components/integrations/integrationLinks'
 import { SOLUTION_SUBPAGES, subpageBySlug, subpageHref, subpagesOf, type SolutionSubpage } from '@/lib/platform/subpages'
 
 interface PageProps {

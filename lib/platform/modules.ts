@@ -61,7 +61,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       ARABIC_AND_ENGLISH,
     ],
     modules: ['reservations-and-stays', 'billing-and-payments', 'team-and-messaging'],
-    integrations: ['booking-channels'],
+    integrations: ['channels'],
     posts: ['the-double-booking-nightmare-how-to-sync-every-channel', 'channel-manager-vs-property-management-system', 'the-ota-commission-drain-how-to-build-direct-bookings'],
   },
   {
@@ -99,7 +99,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       { q: { en: 'Which channels does the calendar sync with?', ar: 'مع أي القنوات يتزامن التقويم؟' }, a: { en: 'Airbnb, Booking.com and Expedia, through the channel manager.', ar: 'Airbnb وBooking.com وExpedia، من خلال مدير القنوات.' } },
     ],
     modules: ['channel-manager', 'billing-and-payments', 'team-and-messaging'],
-    integrations: ['booking-channels'],
+    integrations: ['channels'],
     posts: [
       'the-double-booking-nightmare-how-to-sync-every-channel',
       'the-upsell-playbook-turning-early-check-ins-and-add-ons',

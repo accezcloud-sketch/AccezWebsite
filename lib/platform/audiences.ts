@@ -70,7 +70,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       PORTAL_LANGUAGES,
     ],
     modules: ['channel-manager', 'reservations-and-stays', 'billing-and-payments', 'team-and-messaging'],
-    integrations: ['booking-channels'],
+    integrations: ['channels'],
     posts: [
       'the-double-booking-nightmare-how-to-sync-every-channel',
       'length-of-stay-strategy-when-longer-bookings-beat-higher-nightly-rates',
@@ -113,7 +113,7 @@ export const AUDIENCE_PAGES: SolutionSubpage[] = [
       { q: { en: 'Which payment gateways can I use?', ar: 'ما بوابات الدفع التي يمكنني استخدامها؟' }, a: { en: 'Stripe and Tap.', ar: 'Stripe وTap.' } },
     ],
     modules: ['reservations-and-stays', 'channel-manager', 'team-and-messaging', 'billing-and-payments'],
-    integrations: ['booking-channels', 'payments'],
+    integrations: ['channels', 'payments'],
     posts: [
       'corporate-housing-landing-long-stay-business-clients',
       'first-impressions-how-the-booking-to-arrival-experience-makes-or-breaks-reviews',

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -16,18 +15,16 @@ import { breadcrumbSchema, HOME_CRUMB } from '@/lib/content/breadcrumbSchema'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
-import { INTEGRATION_GROUPS, INTEGRATION_SERVICES, INTEGRATIONS, INTEGRATIONS_HREF, INTEGRATIONS_HUB as HUB, integrationHref } from '@/lib/platform/integrations'
+import { INTEGRATION_GROUPS, INTEGRATION_SERVICES, INTEGRATIONS_HREF, INTEGRATIONS_HUB as HUB } from '@/lib/platform/integrations'
 
 const COPY = {
   en: {
     ctaTitle: 'Connect Accez to the tools you use',
     ctaSub: 'Property managers: book a demo. Service providers: create your provider account.',
-    learnMore: 'Learn more',
   },
   ar: {
     ctaTitle: 'اربط أكسيز بالأدوات التي تستخدمها',
     ctaSub: 'مديرو العقارات: اطلبوا عرضًا توضيحيًا. مقدمو الخدمات: أنشئوا حساب مقدم الخدمة.',
-    learnMore: 'اعرف المزيد',
   },
 } as const
 
@@ -37,8 +34,7 @@ export function integrationsHubMetadata(locale: Locale): Metadata {
 
 /**
  * /integrations/: every service Accez connects to, by group, each card
- * naming the solutions it is in. A group with a page of its own (booking
- * channels, payments) links to it. The top has no buttons: the page serves
+ * naming the solutions it is in. It is the only integrations page. The top has no buttons: the page serves
  * both solutions, so the choice between them is made at the end, where the
  * closing text says which button is for whom. Names are plain text marks,
  * no third-party logos.
@@ -92,11 +88,6 @@ export default function IntegrationsHub({ locale }: { locale: Locale }) {
                     </li>
                   ))}
                 </ul>
-                {INTEGRATIONS.filter((p) => p.group === group.key).map((p) => (
-                  <Link key={p.slug} href={localeHref(integrationHref(p.slug), locale)} prefetch={false} className="ui-btn ui-btn-glass mt-6">
-                    {COPY[locale].learnMore}: {p.name[locale]}
-                  </Link>
-                ))}
               </div>
             </section>
           </Band>

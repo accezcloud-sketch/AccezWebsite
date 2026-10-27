@@ -11,8 +11,7 @@ import { PM_PLAN_PRICES } from '@/lib/content/pmPlans'
 import { PROVIDER_PRICING_COPY } from '@/lib/content/providerPricing'
 import { subpageMetadata } from '@/components/solutions/subpageRoute'
 import { subpageHref, subpagesOf } from '@/lib/platform/subpages'
-import { INTEGRATIONS, INTEGRATIONS_HREF, integrationHref } from '@/lib/platform/integrations'
-import { integrationMetadata } from '@/components/integrations/integrationRoute'
+import { INTEGRATIONS_HREF } from '@/lib/platform/integrations'
 import { integrationsHubMetadata } from '@/components/integrations/IntegrationsHub'
 import { metadata as faq } from '../faq/page'
 import { metadata as about } from '../about/page'
@@ -61,7 +60,7 @@ export function GET() {
       { heading: 'Service provider solution', links: solutionPages('service-providers') },
       {
         heading: 'Integrations',
-        links: [page(INTEGRATIONS_HREF, integrationsHubMetadata('en')), ...INTEGRATIONS.map((i) => page(integrationHref(i.slug), integrationMetadata(i, 'en')))],
+        links: [page(INTEGRATIONS_HREF, integrationsHubMetadata('en'))],
       },
       {
         heading: 'Pricing',

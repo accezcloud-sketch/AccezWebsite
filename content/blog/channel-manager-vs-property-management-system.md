@@ -122,7 +122,7 @@ Language matters too. If your team works in Arabic, check that both the channel 
 
 ## Where Accez Fits
 
-Accez is a property management system with channel sync built into its availability calendar. The calendar syncs with Airbnb, Booking.com and Expedia only, and supports bulk price updates, import and export. Around it, Accez handles reservations (each stay with its timeline, payment and accepted policies), add-ons sold with stays, leases and rent payments, billing through Stripe and Tap, email templates and SMS with one inbox, work orders, owners and payouts, and staff roles. If you sell on channels other than those three, you would need another tool for them.
+Accez is a property management system with channel sync built into its availability calendar. The calendar syncs with Airbnb, Booking.com and Expedia, connects to RoomCloud, imports iCal calendars and supports bulk price updates, import and export. Around it, Accez handles reservations (each stay with its timeline, payment and accepted policies), add-ons sold with stays, leases and rent payments, billing through Stripe and Tap, email templates and SMS with one inbox, work orders, owners and payouts, and staff roles. If you sell on channels other than those three, you would need another tool for them.
 
 ## Frequently Asked Questions
 
@@ -148,7 +148,7 @@ No. Annual tenants do not book through travel sites, so a long-term leasing busi
 - Many PMSs include channel sync, so check before buying a separate channel manager.
 - Ask each vendor which channels it connects to, what is synced (availability, rates, bookings) and how quickly.
 - Connecting software can change channel fees: Airbnb makes its single fee structure mandatory for hosts using property management software.
-- Accez is a PMS whose availability calendar syncs with Airbnb, Booking.com and Expedia only.
+- Accez is a PMS whose availability calendar syncs with Airbnb, Booking.com and Expedia, connects to RoomCloud and imports iCal calendars.
 
 *This article is general information. Booking channel terms and fees change; check each channel's current terms.*
 
@@ -255,7 +255,7 @@ See how Accez handles reservations and channel sync on the [property managers pa
 
 ## أين يأتي دور أكسيز
 
-أكسيز نظام لإدارة العقارات يتضمن مزامنة القنوات ضمن تقويم التوفر. ويتزامن التقويم مع Airbnb وBooking.com وExpedia فقط، ويدعم تحديث الأسعار بالجملة والاستيراد والتصدير. وحوله يتولى أكسيز الحجوزات (كل إقامة بمسارها الزمني ودفعها والسياسات المقبولة)، والإضافات المباعة مع الإقامات، والعقود ومدفوعات الإيجار، والفوترة عبر Stripe وTap، وقوالب البريد الإلكتروني ورسائل SMS مع صندوق وارد واحد، وأوامر العمل، والملاك ومستحقاتهم، وأدوار الموظفين. وإذا كنت تبيع عبر قنوات غير هذه الثلاث، فستحتاج إلى أداة أخرى لها.
+أكسيز نظام لإدارة العقارات يتضمن مزامنة القنوات ضمن تقويم التوفر. ويتزامن التقويم مع Airbnb وBooking.com وExpedia، ويتصل بـRoomCloud ويستورد تقاويم iCal، ويدعم تحديث الأسعار بالجملة والاستيراد والتصدير. وحوله يتولى أكسيز الحجوزات (كل إقامة بمسارها الزمني ودفعها والسياسات المقبولة)، والإضافات المباعة مع الإقامات، والعقود ومدفوعات الإيجار، والفوترة عبر Stripe وTap، وقوالب البريد الإلكتروني ورسائل SMS مع صندوق وارد واحد، وأوامر العمل، والملاك ومستحقاتهم، وأدوار الموظفين. وإذا كنت تبيع عبر قنوات غير هذه الثلاث، فستحتاج إلى أداة أخرى لها.
 
 ## الأسئلة الشائعة
 
@@ -281,7 +281,7 @@ See how Accez handles reservations and channel sync on the [property managers pa
 - كثير من أنظمة إدارة العقارات تتضمن مزامنة القنوات، فتحقق من ذلك قبل شراء مدير قنوات منفصل.
 - اسأل كل مزود عن القنوات التي يرتبط بها، وما الذي يتزامن (التوفر والأسعار والحجوزات)، وبأي سرعة.
 - قد يغيّر ربط البرامج رسوم القنوات، إذ تجعل Airbnb هيكل الرسوم الموحدة إلزاميًا للمضيفين الذين يستخدمون برامج إدارة العقارات.
-- أكسيز نظام لإدارة العقارات يتزامن تقويم التوفر فيه مع Airbnb وBooking.com وExpedia فقط.
+- أكسيز نظام لإدارة العقارات يتزامن تقويم التوفر فيه مع Airbnb وBooking.com وExpedia، ويتصل بـRoomCloud ويستورد تقاويم iCal.
 
 *هذه المقالة معلومات عامة. شروط قنوات الحجز ورسومها تتغير، فراجع الشروط الحالية لكل قناة.*
 

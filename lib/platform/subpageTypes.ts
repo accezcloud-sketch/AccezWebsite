@@ -1,4 +1,5 @@
 import type { DetailPageData } from './detailPages'
+import type { IntegrationGroup } from './integrations'
 
 /**
  * A page inside a solution, served at /solutions/<solution>/<slug>/: either
@@ -12,6 +13,6 @@ export interface SolutionSubpage extends DetailPageData {
   area?: string
   /** Modules of the same solution to link to (slugs). */
   modules: string[]
-  /** Integrations to link to (slugs from lib/platform/integrations.ts). */
-  integrations: string[]
+  /** Groups on the /integrations/ page to link to (lib/platform/integrations.ts). */
+  integrations: IntegrationGroup[]
 }
