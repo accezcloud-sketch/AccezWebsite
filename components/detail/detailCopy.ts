@@ -41,8 +41,8 @@ const SOLUTION_CTA: Record<string, Record<Locale, { title: string; subtitle: str
     photo: RIYADH_CENTRE,
   },
   'service-providers': {
-    en: { title: 'Ready to take bookings?', subtitle: 'Create your provider account in minutes.' },
-    ar: { title: 'مستعد لاستقبال الحجوزات؟', subtitle: 'أنشئ حساب مقدم الخدمة خلال دقائق.' },
+    en: { title: 'Ready to take bookings?', subtitle: 'Create your provider account and add your services.' },
+    ar: { title: 'مستعد لاستقبال الحجوزات؟', subtitle: 'أنشئ حساب مقدم الخدمة وأضف خدماتك.' },
     photo: SHOPPING_CENTRE,
   },
 }

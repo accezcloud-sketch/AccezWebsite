@@ -83,7 +83,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     },
     shots: [
       { shot: 'pmReservation', title: { en: 'A reservation', ar: 'الحجز' }, text: { en: 'The timeline, payment summary and accepted policies of one stay.', ar: 'الجدول الزمني وملخص الدفع والسياسات المقبولة لإقامة واحدة.' } },
-      { shot: 'pmAddons', title: { en: 'Add-ons', ar: 'الإضافات' }, text: { en: 'Sell meals, cleaning and transport with every stay.', ar: 'بِع الوجبات والتنظيف والنقل مع كل إقامة.' } },
+      { shot: 'pmAddons', title: { en: 'Add-ons', ar: 'الإضافات' }, text: { en: 'Sell meals, cleaning and transport with stays.', ar: 'بِع الوجبات والتنظيف والنقل مع الإقامات.' } },
       { shot: 'pmProperty', title: { en: 'Every property at a glance', ar: 'كل عقار في لمحة' }, text: { en: 'Revenue, residents, units and work orders for each property.', ar: 'الإيرادات والسكان والوحدات وأوامر العمل لكل عقار.' } },
     ],
     points: [
@@ -126,18 +126,18 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     shots: [
       { shot: 'pmSaleUnits', title: { en: 'Sale units', ar: 'وحدات البيع' }, text: { en: 'Every unit with its status, price and buyer.', ar: 'كل وحدة مع حالتها وسعرها والمشتري.' } },
       { shot: 'pmSalesPath', title: { en: 'Sales path', ar: 'مسار المبيعات' }, text: { en: 'Move each sale from new to contract signed.', ar: 'انقل كل صفقة من جديدة إلى موقّعة.' } },
-      { shot: 'pmSalesRecords', title: { en: 'All records', ar: 'كل السجلات' }, text: { en: 'Every sale in one sheet, filtered your way.', ar: 'كل المبيعات في جدول واحد بالتصفية التي تريدها.' } },
-      { shot: 'pmUnitsMap', title: { en: 'Units map', ar: 'خريطة الوحدات' }, text: { en: 'See where every unit is.', ar: 'اعرف مكان كل وحدة.' } },
+      { shot: 'pmSalesRecords', title: { en: 'All records', ar: 'كل السجلات' }, text: { en: 'Every sale record in one sheet, with filters.', ar: 'كل سجلات البيع في جدول واحد مع عوامل التصفية.' } },
+      { shot: 'pmUnitsMap', title: { en: 'Units map', ar: 'خريطة الوحدات' }, text: { en: 'Sale units on a map.', ar: 'وحدات البيع على الخريطة.' } },
     ],
     points: [
       { icon: Building2, title: { en: 'Sale units', ar: 'وحدات البيع' }, text: { en: 'Status, price and buyer for every unit.', ar: 'الحالة والسعر والمشتري لكل وحدة.' } },
       { icon: Route, title: { en: 'Sales path', ar: 'مسار المبيعات' }, text: { en: 'From new to contract signed.', ar: 'من صفقة جديدة إلى عقد موقّع.' } },
-      { icon: Table2, title: { en: 'All records', ar: 'كل السجلات' }, text: { en: 'One sheet with the filters you need.', ar: 'جدول واحد بالتصفية التي تحتاجها.' } },
-      { icon: Map, title: { en: 'Units map', ar: 'خريطة الوحدات' }, text: { en: 'Every unit on the map.', ar: 'كل وحدة على الخريطة.' } },
+      { icon: Table2, title: { en: 'All records', ar: 'كل السجلات' }, text: { en: 'Every sale record in one sheet, with filters.', ar: 'كل سجلات البيع في جدول واحد مع عوامل التصفية.' } },
+      { icon: Map, title: { en: 'Units map', ar: 'خريطة الوحدات' }, text: { en: 'Sale units on a map.', ar: 'وحدات البيع على الخريطة.' } },
       { icon: FolderKanban, title: { en: 'Projects', ar: 'المشاريع' }, text: { en: 'Group sale units by development.', ar: 'جمّع وحدات البيع حسب المشروع.' } },
     ],
     faqs: [
-      { q: { en: 'Can I group units by project?', ar: 'هل يمكنني تجميع الوحدات حسب المشروع؟' }, a: { en: 'Yes. Projects group sale units, so each development has its own list.', ar: 'نعم. تجمع المشاريع وحدات البيع، فلكل مشروع قائمته الخاصة.' } },
+      { q: { en: 'Can I group units by project?', ar: 'هل يمكنني تجميع الوحدات حسب المشروع؟' }, a: { en: 'Yes. Projects group sale units, and you can filter the units by project.', ar: 'نعم. تجمع المشاريع وحدات البيع، ويمكنك تصفية الوحدات حسب المشروع.' } },
       { q: { en: 'How do I follow a sale?', ar: 'كيف أتابع صفقة البيع؟' }, a: { en: 'On the sales path, each sale moves from new to contract signed.', ar: 'في مسار المبيعات، تنتقل كل صفقة من جديدة إلى عقد موقّع.' } },
       { q: { en: 'Can sales and rentals run in one system?', ar: 'هل يمكن إدارة المبيعات والإيجارات في نظام واحد؟' }, a: { en: 'Yes. Sales and projects sit in the same property management solution as rentals and reservations.', ar: 'نعم. المبيعات والمشاريع جزء من حل إدارة العقارات نفسه مع الإيجارات والحجوزات.' } },
     ],
@@ -198,26 +198,26 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     summary: { en: 'Long-term contracts and rent payments, paid and due.', ar: 'عقود طويلة الأمد ودفعات إيجار، المدفوع منها والمستحق.' },
     metaTitle: { en: 'Lease and rent management software in Saudi Arabia', ar: 'برنامج إدارة عقود الإيجار والإيجارات في السعودية' },
     metaDescription: {
-      en: 'Keep long-term leases with every tenant and see which rent is paid and which is due, next to residents and occupancy for each property. For Saudi Arabia.',
-      ar: 'احفظ عقود الإيجار طويلة الأمد مع كل مستأجر، واعرف ما دُفع من الإيجار وما هو مستحق، بجانب السكان والإشغال لكل عقار. برنامج مصمم للسوق السعودي.',
+      en: 'Keep long-term leases with your tenants and see which rent is paid and which is due, with active residents for each property. Built for Saudi Arabia.',
+      ar: 'احفظ عقود الإيجار طويلة الأمد مع مستأجريك، واعرف ما دُفع من الإيجار وما هو مستحق، مع عدد السكان النشطين في كل عقار. برنامج مصمم للسوق السعودي.',
     },
     hero: {
       title: { en: 'Lease and rent management', ar: 'إدارة عقود الإيجار والإيجارات' },
       accent: { en: 'for Saudi property managers', ar: 'لمديري العقارات في السعودية' },
-      subtitle: { en: 'Long-term contracts with every tenant, and rent payments you can follow: paid and due.', ar: 'عقود طويلة الأمد مع كل مستأجر، ودفعات إيجار تتابعها: المدفوع والمستحق.' },
+      subtitle: { en: 'Long-term contracts with your tenants, and rent payments you can follow: paid and due.', ar: 'عقود طويلة الأمد مع مستأجريك، ودفعات إيجار تتابعها: المدفوع والمستحق.' },
     },
     shots: [
       { shot: 'pmProperty', title: { en: 'Every property at a glance', ar: 'كل عقار في لمحة' }, text: { en: 'Active residents, leases, units and work orders for each property.', ar: 'السكان النشطون والعقود والوحدات وأوامر العمل لكل عقار.' } },
       { shot: 'pmDashboard', title: { en: 'Your portfolio', ar: 'محفظتك' }, text: { en: 'Properties, tenants, revenue and occupancy in one dashboard.', ar: 'العقارات والمستأجرون والإيرادات والإشغال في لوحة واحدة.' } },
     ],
     points: [
-      { icon: FileSignature, title: { en: 'Leases', ar: 'عقود الإيجار' }, text: { en: 'Long-term contracts with every tenant.', ar: 'عقود طويلة الأمد مع كل مستأجر.' } },
+      { icon: FileSignature, title: { en: 'Leases', ar: 'عقود الإيجار' }, text: { en: 'Long-term contracts with your tenants.', ar: 'عقود طويلة الأمد مع مستأجريك.' } },
       { icon: Wallet, title: { en: 'Rent payments', ar: 'دفعات الإيجار' }, text: { en: 'See what is paid and what is due.', ar: 'اعرف ما دُفع وما هو مستحق.' } },
       { icon: UsersRound, title: { en: 'Residents', ar: 'السكان' }, text: { en: 'Active residents for each property.', ar: 'السكان النشطون لكل عقار.' } },
       { icon: PieChart, title: { en: 'Occupancy', ar: 'الإشغال' }, text: { en: 'Occupied and vacant units on the dashboard.', ar: 'الوحدات المشغولة والشاغرة في لوحة التحكم.' } },
     ],
     faqs: [
-      { q: { en: 'Does Accez handle long-term leases?', ar: 'هل يدير أكسيز عقود الإيجار طويلة الأمد؟' }, a: { en: 'Yes. Leases hold the long-term contracts with each tenant.', ar: 'نعم. تحفظ العقود الاتفاقات طويلة الأمد مع كل مستأجر.' } },
+      { q: { en: 'Does Accez handle long-term leases?', ar: 'هل يدير أكسيز عقود الإيجار طويلة الأمد؟' }, a: { en: 'Yes. Leases hold the long-term contracts with your tenants.', ar: 'نعم. تحفظ العقود الاتفاقات طويلة الأمد مع مستأجريك.' } },
       { q: { en: 'Can I see which rent is unpaid?', ar: 'هل أستطيع معرفة الإيجار غير المدفوع؟' }, a: { en: 'Yes. Rent payments show what is paid and what is due.', ar: 'نعم. تعرض دفعات الإيجار ما دُفع وما هو مستحق.' } },
       { q: { en: 'Can short stays and long leases run together?', ar: 'هل يمكن إدارة الإقامات القصيرة والعقود الطويلة معًا؟' }, a: { en: 'Yes. Reservations and leases are both part of the property management solution.', ar: 'نعم. الحجوزات والعقود كلاهما جزء من حل إدارة العقارات.' } },
     ],
@@ -249,7 +249,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       { shot: 'pmProperty', title: { en: 'Work orders on every property', ar: 'أوامر العمل في كل عقار' }, text: { en: 'Total and pending work orders on each property overview.', ar: 'إجمالي أوامر العمل والمعلّق منها في نظرة كل عقار.' } },
     ],
     points: [
-      { icon: Wrench, title: { en: 'Request to done', ar: 'من الطلب حتى الإنجاز' }, text: { en: 'Follow each maintenance job to the end.', ar: 'تابع كل أعمال الصيانة حتى نهايتها.' } },
+      { icon: Wrench, title: { en: 'Request to done', ar: 'من الطلب حتى الإنجاز' }, text: { en: 'Follow each maintenance job until it is done.', ar: 'تابع كل عمل صيانة حتى إنجازه.' } },
       { icon: ClipboardList, title: { en: 'Pending at a glance', ar: 'المعلّق في لمحة' }, text: { en: 'Pending work orders on each property overview.', ar: 'أوامر العمل المعلقة في نظرة كل عقار.' } },
       { icon: Building2, title: { en: 'Per property', ar: 'لكل عقار' }, text: { en: 'Work orders next to revenue, residents and units.', ar: 'أوامر العمل بجانب الإيرادات والسكان والوحدات.' } },
       { icon: UsersRound, title: { en: 'Staff and roles', ar: 'الموظفون والأدوار' }, text: { en: 'Give each person the access they need.', ar: 'امنح كل شخص الصلاحية التي يحتاجها.' } },
@@ -276,8 +276,8 @@ export const MODULE_PAGES: SolutionSubpage[] = [
     summary: { en: 'Email templates, SMS, one inbox, and staff roles.', ar: 'قوالب البريد والرسائل النصية وصندوق وارد واحد وأدوار الموظفين.' },
     metaTitle: { en: 'Team and guest messaging for property managers', ar: 'الفريق ومراسلة الضيوف لمديري العقارات' },
     metaDescription: {
-      en: 'Send guests confirmations, check-ins and cancellations from email templates, text by SMS, keep every conversation in one inbox and set staff roles.',
-      ar: 'أرسل للضيوف التأكيدات وتسجيل الوصول والإلغاء من قوالب البريد، وراسلهم برسائل نصية، واجمع المحادثات في صندوق وارد واحد، وحدد أدوار موظفيك وصلاحياتهم.',
+      en: 'Email templates for guest confirmations, check-ins and cancellations, SMS through Twilio, one inbox for conversations, and staff roles for access.',
+      ar: 'قوالب بريد لتأكيد حجوزات الضيوف وتسجيل الوصول والإلغاء، ورسائل نصية عبر Twilio، وصندوق وارد واحد للمحادثات، وأدوار للموظفين تحدد صلاحيات كل منهم.',
     },
     hero: {
       title: { en: 'Team and guest messaging', ar: 'الفريق ومراسلة الضيوف' },
@@ -285,7 +285,7 @@ export const MODULE_PAGES: SolutionSubpage[] = [
       subtitle: { en: 'Email templates, SMS and one inbox for conversations, with staff roles for access.', ar: 'قوالب البريد والرسائل النصية وصندوق وارد واحد للمحادثات، مع أدوار للموظفين تحدد الصلاحيات.' },
     },
     shots: [
-      { shot: 'pmEmails', title: { en: 'Email templates', ar: 'قوالب البريد' }, text: { en: 'Confirmations, check-ins and cancellations, ready to use.', ar: 'التأكيدات وتسجيل الوصول والإلغاء، جاهزة للاستخدام.' } },
+      { shot: 'pmEmails', title: { en: 'Email templates', ar: 'قوالب البريد' }, text: { en: 'Templates for confirmations, check-ins and cancellations.', ar: 'قوالب للتأكيدات وتسجيل الوصول والإلغاء.' } },
       { shot: 'pmIntegrations', title: { en: 'SMS through Twilio', ar: 'الرسائل النصية عبر Twilio' }, text: { en: 'Connect SMS from the integrations page.', ar: 'اربط الرسائل النصية من صفحة التكاملات.' } },
     ],
     points: [

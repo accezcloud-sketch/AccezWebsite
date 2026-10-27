@@ -46,7 +46,7 @@ export const SHOTS = {
   spTeam: shot('sp', 'team', 'The team: each member has a login and their own services', 'الفريق: لكل عضو تسجيل دخول وخدماته الخاصة'),
   spHours: shot('sp', 'hours', 'Business hours with split shifts per day', 'ساعات العمل مع فترات متعددة في اليوم'),
   spPolicies: shot('sp', 'policies', 'Policies: business timezone and upfront deposit', 'السياسات: المنطقة الزمنية للنشاط والعربون المسبق'),
-  spCalendar: shot('sp', 'calendar', 'The booking calendar for the whole team', 'تقويم الحجوزات للفريق كاملًا'),
+  spCalendar: shot('sp', 'calendar', 'The weekly booking calendar', 'تقويم الحجوزات الأسبوعي'),
   spIntegrations: shot('sp', 'integrations', 'Integrations: Tap payments, Stripe, analytics and SMS', 'التكاملات: مدفوعات Tap وStripe والتحليلات والرسائل النصية'),
 } satisfies Record<string, Shot>
 

@@ -5,12 +5,12 @@
 export const PROVIDER_PRICING_COPY = {
   en: {
     pricingEyebrow: 'Provider Pricing',
-    pricingTitleLead: 'Plans built for',
-    pricingTitleAccent: 'exposure',
+    pricingTitleLead: 'Plans for',
+    pricingTitleAccent: 'service providers',
     pricingSubtitle:
       'Start free and get listed. Every plan includes a marketplace listing; higher plans add more staff, more services, and a lower platform fee on each booking. Pricing is separate from Accez property management plans.',
     perMonth: '/mo',
-    mostPopular: 'Most popular',
+    mostPopular: 'Recommended',
     feeSuffix: 'platform fee per booking',
     plans: [
       {
@@ -45,7 +45,7 @@ export const PROVIDER_PRICING_COPY = {
         name: 'Growth',
         price: 'SAR 184',
         platformFee: '3.5%',
-        tagline: 'For growing teams that want it all.',
+        tagline: 'More staff, more services and the lowest fee.',
         cta: 'Choose Growth',
         highlight: true,
         features: [
@@ -58,16 +58,16 @@ export const PROVIDER_PRICING_COPY = {
         ],
       },
     ],
-    pricingNote: 'The platform fee is a small percentage of each completed booking, and it drops as you move up a plan. Change or cancel your plan at any time.',
+    pricingNote: 'The platform fee is a percentage of each booking, and it is lower on higher plans.',
   },
   ar: {
     pricingEyebrow: 'أسعار مقدمي الخدمات',
-    pricingTitleLead: 'خطط مصممة',
-    pricingTitleAccent: 'للظهور',
+    pricingTitleLead: 'خطط',
+    pricingTitleAccent: 'لمقدمي الخدمات',
     pricingSubtitle:
       'ابدأ مجانًا واحصل على صفحتك. كل خطة تتضمن صفحة في السوق؛ والخطط الأعلى تضيف المزيد من الموظفين والخدمات ورسوم منصة أقل على كل حجز. الأسعار منفصلة عن خطط إدارة العقارات في أكسيز.',
     perMonth: '/شهريًا',
-    mostPopular: 'الأكثر شيوعًا',
+    mostPopular: 'موصى بها',
     feeSuffix: 'رسوم المنصة لكل حجز',
     plans: [
       {
@@ -102,7 +102,7 @@ export const PROVIDER_PRICING_COPY = {
         name: 'النمو',
         price: '184 ريال',
         platformFee: '3.5%',
-        tagline: 'للفرق المتنامية التي تريد كل شيء.',
+        tagline: 'موظفون وخدمات أكثر وأقل رسوم.',
         cta: 'اختر النمو',
         highlight: true,
         features: [
@@ -115,7 +115,7 @@ export const PROVIDER_PRICING_COPY = {
         ],
       },
     ],
-    pricingNote: 'رسوم المنصة هي نسبة صغيرة من كل حجز مكتمل، وتنخفض كلما ارتقيت في الخطة. يمكنك تغيير خطتك أو إلغاؤها في أي وقت.',
+    pricingNote: 'رسوم المنصة نسبة من كل حجز، وتكون أقل في الخطط الأعلى.',
   },
 } as const
 
