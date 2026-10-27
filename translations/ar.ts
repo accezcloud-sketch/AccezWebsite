@@ -37,7 +37,7 @@ export const ar = {
     eyebrow: 'الأسعار',
     titleLead: 'أسعار بسيطة،',
     titleAccent: 'لكل محفظة',
-    newSubtitle: 'ابدأ مجانًا وانتقل إلى خطة أكبر عند الحاجة. لا حاجة لبطاقة ائتمان للخطة المجانية.',
+    newSubtitle: 'ابدأ مجانًا وانتقل إلى خطة أكبر عند الحاجة.',
     freeDescription: 'جرّب المنصة بعقار واحد.',
     basicDescription: 'للملاك الأفراد في بدايتهم.',
     professionalDescription: 'لمديري العقارات الذين تنمو أعمالهم.',
@@ -61,7 +61,6 @@ export const ar = {
     // CTA buttons
     startFree: 'ابدأ مجاناً',
     // Billing notes
-    noCreditCard: 'لا حاجة لبطاقة ائتمان',
     // Free plan features
     freeProperty1: 'عقار واحد فقط',
     freeCheckIns10: '10 تسجيلات دخول شهرياً',
@@ -74,16 +73,10 @@ export const ar = {
     unitsEach: '(وحدات غير محدودة)',
     propertyManagement: 'إدارة العقارات',
     workOrdersManagement: 'إدارة أوامر العمل',
-    moveInOutTracking: 'تتبع تسجيل الدخول/الخروج',
     everythingInBasic: 'كل شيء في الأساسية',
     everythingInProfessional: 'كل شيء في الاحترافية',
-    integratedCommunications: 'الاتصالات المتكاملة',
-    autoCalendarSync: 'مزامنة التقويم التلقائية (iCal)',
     upTo3Channels: 'ربط حتى 3 قنوات',
-    dedicatedAccountManager: 'مدير حساب مخصص',
     prioritySupport: 'دعم بأولوية',
-    customDevelopment: 'تطوير مخصص',
-    bulkDataImport: 'استيراد البيانات بالجملة',
   },
 
   // FAQ

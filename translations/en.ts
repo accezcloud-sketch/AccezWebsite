@@ -37,7 +37,7 @@ export const en = {
     eyebrow: 'Pricing',
     titleLead: 'Simple pricing,',
     titleAccent: 'for every portfolio',
-    newSubtitle: 'Start free and move to a bigger plan when you need it. No credit card required for the Free plan.',
+    newSubtitle: 'Start free and move to a bigger plan when you need it.',
     freeDescription: 'Try the platform with one property.',
     basicDescription: 'For independent landlords getting started.',
     professionalDescription: 'For growing property managers.',
@@ -61,7 +61,6 @@ export const en = {
     // CTA buttons
     startFree: 'Start Free',
     // Billing notes
-    noCreditCard: 'No credit card required',
     // Free plan features
     freeProperty1: '1 Property only',
     freeCheckIns10: '10 Check-ins per month',
@@ -74,16 +73,10 @@ export const en = {
     unitsEach: '(unlimited units)',
     propertyManagement: 'Property Management',
     workOrdersManagement: 'Work Orders Management',
-    moveInOutTracking: 'Check-In/Out Tracking',
     everythingInBasic: 'Everything in Basic',
     everythingInProfessional: 'Everything in Professional',
-    integratedCommunications: 'Integrated Communications',
-    autoCalendarSync: 'Auto Calendar Sync (iCal)',
     upTo3Channels: 'Up to 3 channels',
-    dedicatedAccountManager: 'Dedicated Account Manager',
     prioritySupport: 'Priority support',
-    customDevelopment: 'Custom Development',
-    bulkDataImport: 'Bulk Data Import',
   },
 
   // FAQ
