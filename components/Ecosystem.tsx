@@ -16,85 +16,85 @@ interface Party {
   titleAr: string
   blurb: string
   blurbAr: string
-  /** 'property' businesses that supply space, 'people' who use it. */
+  /** Which of the two independent solutions the customer type uses. */
   side: 'property' | 'people'
 }
 
 const PARTIES: Party[] = [
   {
-    icon: Building2,
-    title: 'Real estate companies',
-    titleAr: 'شركات العقارات',
-    blurb: 'List and manage portfolios at scale',
-    blurbAr: 'إدراج وإدارة المحافظ العقارية على نطاق واسع',
-    side: 'property',
-  },
-  {
     icon: Briefcase,
-    title: 'Property managers',
-    titleAr: 'مديرو العقارات',
-    blurb: 'Run bookings, rent and operations',
-    blurbAr: 'إدارة الحجوزات والإيجارات والعمليات',
+    title: 'Residential and compounds',
+    titleAr: 'المباني السكنية والمجمعات',
+    blurb: 'Leases, rent, work orders and resident messages',
+    blurbAr: 'العقود والإيجارات وأوامر العمل ورسائل السكان',
     side: 'property',
   },
   {
     icon: Home,
     title: 'Vacation rentals',
-    titleAr: 'الإيجارات السياحية',
-    blurb: 'Sync Airbnb, Booking.com & Expedia',
-    blurbAr: 'مزامنة Airbnb وBooking.com وExpedia',
+    titleAr: 'الإيجارات قصيرة الأجل',
+    blurb: 'Stays synced with Airbnb, Booking.com and Expedia',
+    blurbAr: 'حجوزات متزامنة مع Airbnb وBooking.com وExpedia',
     side: 'property',
   },
   {
     icon: Hotel,
-    title: 'Hotels',
-    titleAr: 'الفنادق',
-    blurb: 'Manage rooms, guests and services',
-    blurbAr: 'إدارة الغرف والنزلاء والخدمات',
+    title: 'Serviced apartments',
+    titleAr: 'الشقق المخدومة',
+    blurb: 'Reservations, add-ons and guest emails',
+    blurbAr: 'الحجوزات والإضافات ورسائل الضيوف',
     side: 'property',
   },
   {
-    icon: UsersRound,
-    title: 'Residents & guests',
-    titleAr: 'السكان والنزلاء',
-    blurb: 'Book stays and services in a tap',
-    blurbAr: 'حجز الإقامة والخدمات بلمسة واحدة',
-    side: 'people',
+    icon: Building2,
+    title: 'Developers and sales teams',
+    titleAr: 'المطورون وفرق المبيعات',
+    blurb: 'Projects, sale units and the sales path',
+    blurbAr: 'المشاريع ووحدات البيع ومسار المبيعات',
+    side: 'property',
   },
   {
     icon: Wrench,
-    title: 'Service providers',
-    titleAr: 'مقدمو الخدمات',
-    blurb: 'Reach customers and take bookings',
-    blurbAr: 'الوصول إلى العملاء واستقبال الحجوزات',
+    title: 'Barbers, salons and spas',
+    titleAr: 'الحلاقون والصالونات والسبا',
+    blurb: 'Bookings, a calendar and your clients',
+    blurbAr: 'الحجوزات والتقويم وعملاؤك',
+    side: 'people',
+  },
+  {
+    icon: UsersRound,
+    title: 'Coaches and personal trainers',
+    titleAr: 'المدربون الشخصيون',
+    blurb: 'One-to-one sessions, hours and clients',
+    blurbAr: 'الجلسات الفردية والساعات والعملاء',
     side: 'people',
   },
 ]
 
 const CONTENT = {
   en: {
-    eyebrow: 'The Accez Ecosystem',
+    eyebrow: 'Who Accez is for',
     titleLead: 'One platform,',
-    titleAccent: 'every party connected',
+    titleAccent: 'two solutions',
     subtitle:
-      'Accez is the connective layer for the whole property world. On one side, the businesses that own and run space. On the other, the people inside it and the providers who serve them. Accez links all of them in one place.',
+      'Accez has two separate solutions on one platform. Property management for residential buildings and compounds, vacation rentals, serviced apartments and developers. Bookings for service businesses such as barbers, salons, spas and coaches. Each solution has its own app, plans and sign-in.',
     hub: 'Accez',
-    hubSub: 'One connected platform',
-    tagline: 'One platform. Every party connected.',
-    propertySide: 'They supply the space',
-    peopleSide: 'They live, stay and serve',
+    hubSub: 'Two solutions',
+    tagline: 'One platform. Two solutions.',
+    propertySide: 'Property management solution',
+    peopleSide: 'Service provider solution',
   },
   ar: {
-    eyebrow: 'منظومة أكسيز',
+    eyebrow: 'لمن أكسيز',
     titleLead: 'منصة واحدة،',
-    titleAccent: 'والجميع متصل',
+    titleAccent: 'وحلّان',
     subtitle:
-      'أكسيز هي الطبقة التي تربط عالم العقارات بأكمله. في جانب، الأنشطة التي تملك المساحات وتديرها. وفي الجانب الآخر، الأشخاص داخلها ومقدمو الخدمات الذين يخدمونهم. تربط أكسيز بينهم جميعًا في مكان واحد.',
+      'تضم أكسيز حلّين منفصلين على منصة واحدة: إدارة العقارات للمباني السكنية والمجمعات والإيجارات قصيرة الأجل والشقق المخدومة والمطورين، والحجوزات للأنشطة الخدمية مثل الحلاقين والصالونات والسبا والمدربين. ولكل حل تطبيقه وباقاته وتسجيل دخوله.',
     hub: 'أكسيز',
-    hubSub: 'منصة واحدة متصلة',
-    tagline: 'منصة واحدة. والجميع متصل.',
-    propertySide: 'يوفّرون المساحة',
-    peopleSide: 'يقيمون ويخدمون',
+    hubSub: 'حلّان',
+    tagline: 'منصة واحدة. وحلّان.',
+    propertySide: 'حل إدارة العقارات',
+    peopleSide: 'حل مقدمي الخدمات',
   },
 } as const
 
