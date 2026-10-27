@@ -35,9 +35,9 @@ export const FAQS: FaqItem[] = [
     question: 'What is Accez.cloud and how does it work?',
     questionAr: 'ما هو Accez.cloud وكيف يعمل؟',
     answer:
-      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and hotel operators: reservations synced with Airbnb, Booking.com and Expedia, rent, work orders, owners and payouts, and sales. The service provider marketplace lets salons, spas, fitness coaches, photographers and home services list their business and take bookings from their own clients and new customers. The two solutions are separate account types.',
+      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and serviced apartment operators: reservations synced with Airbnb, Booking.com and Expedia, rent, work orders, owners and payouts, and sales. The service provider marketplace lets salons, spas, fitness coaches, photographers and home services list their business and take bookings from their own clients and new customers. The two solutions are separate account types.',
     answerAr:
-      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الفنادق: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للصالونات والمنتجعات الصحية ومدربي اللياقة والمصورين والخدمات المنزلية إدراج نشاطهم واستقبال الحجوزات من عملائهم ومن عملاء جدد. والحلّان نوعا حساب منفصلان.',
+      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الشقق المخدومة: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للصالونات والمنتجعات الصحية ومدربي اللياقة والمصورين والخدمات المنزلية إدراج نشاطهم واستقبال الحجوزات من عملائهم ومن عملاء جدد. والحلّان نوعا حساب منفصلان.',
   },
   {
     category: 'pricingBilling',
@@ -62,9 +62,9 @@ export const FAQS: FaqItem[] = [
     question: 'Who can become a service provider on Accez?',
     questionAr: 'من يمكنه أن يصبح مقدم خدمة على أكسيز؟',
     answer:
-      'Any independent business, not only property related trades. Salons and barbers, spas and wellness studios, fitness coaches, photographers and home services all list on the Accez marketplace. Service Provider is its own account type, completely separate from a property manager account.',
+      'Any independent business, not only property related trades. Barbers and salons, spas and wellness studios, and coaches and personal trainers can all list on the Accez marketplace. Service Provider is its own account type, completely separate from a property manager account.',
     answerAr:
-      'أي نشاط تجاري مستقل، وليس فقط المهن المرتبطة بالعقارات. صالونات الحلاقة والتجميل، المنتجعات الصحية، مدربو اللياقة، المصورون والخدمات المنزلية، جميعهم يظهرون في سوق أكسيز. مقدم الخدمة هو نوع حساب مستقل تمامًا عن حساب مدير العقارات.',
+      'أي نشاط تجاري مستقل، وليس فقط المهن المرتبطة بالعقارات. الحلاقون والصالونات، والمنتجعات الصحية، والمدربون الشخصيون، جميعهم يمكنهم الظهور في سوق أكسيز. مقدم الخدمة هو نوع حساب مستقل تمامًا عن حساب مدير العقارات.',
   },
   {
     category: 'serviceMarketplace',
@@ -80,9 +80,9 @@ export const FAQS: FaqItem[] = [
     question: 'How do customers find and book me?',
     questionAr: 'كيف يجدني العملاء ويحجزون خدماتي؟',
     answer:
-      'Your business gets its own public listing on the Accez marketplace. Customers browse by category such as Beauty, Spa and Wellness, Fitness, Photography and Home services, search by name, or find you on the map. They see your service list with durations and prices in SAR, book inside your opening hours, and can leave a rating and review afterwards.',
+      'Your business gets its own public listing on the Accez marketplace. Customers browse by category, search by name, or find you on the map. They see your service list with durations and prices in SAR, book inside your opening hours, and can leave a rating and review afterwards.',
     answerAr:
-      'يحصل نشاطك على صفحة عامة خاصة به في سوق أكسيز. يتصفح العملاء حسب الفئة مثل التجميل والمنتجعات الصحية واللياقة والتصوير والخدمات المنزلية، أو يبحثون بالاسم، أو يجدونك على الخريطة. يرون قائمة خدماتك بمددها وأسعارها بالريال، ويحجزون ضمن ساعات عملك، ويمكنهم ترك تقييم ومراجعة بعد ذلك.',
+      'يحصل نشاطك على صفحة عامة خاصة به في سوق أكسيز. يتصفح العملاء حسب الفئة، أو يبحثون بالاسم، أو يجدونك على الخريطة. يرون قائمة خدماتك بمددها وأسعارها بالريال، ويحجزون ضمن ساعات عملك، ويمكنهم ترك تقييم ومراجعة بعد ذلك.',
   },
   {
     category: 'securityData',
