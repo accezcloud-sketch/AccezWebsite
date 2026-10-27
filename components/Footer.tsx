@@ -3,7 +3,6 @@ import Image from 'next/image'
 import FooterLanguageSwitch from '@/components/nav/FooterLanguageSwitch'
 import CookieSettingsButton from '@/components/nav/CookieSettingsButton'
 import { PLATFORM_SOLUTIONS } from '@/lib/platform/solutions'
-import { SOLUTION_SUBPAGES, subpageHref } from '@/lib/platform/subpages'
 import { localeHref, type Locale } from '@/lib/i18n'
 import { LEGAL_DOCUMENTS, legalHref } from '@/lib/legal/documents'
 import { translations } from '@/translations'
@@ -88,11 +87,8 @@ export default function Footer({ locale }: { locale: Locale }) {
         { label: language === 'ar' ? 'أنشئ حسابًا' : 'Create an account', href: s.signUpUrl, external: true },
       ],
     })),
-    // Every module page (lib/platform/modules.ts), kept out of the header menus.
-    {
-      heading: language === 'ar' ? 'الوحدات' : 'Modules',
-      links: SOLUTION_SUBPAGES.filter((p) => p.kind === 'module').map((p) => ({ label: p.name[language], href: subpageHref(p) })),
-    },
+    // Module pages are property management only, so they are linked from that
+    // solution's page, not from the footer every visitor sees.
     {
       heading: language === 'ar' ? 'الشركة' : 'Company',
       links: [
@@ -140,7 +136,7 @@ export default function Footer({ locale }: { locale: Locale }) {
 
       <div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-8 lg:gap-10 py-14 lg:py-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-10 py-14 lg:py-16">
             {/* Brand column */}
             <div className="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col gap-5">
               <Link href={localeHref("/", language)} prefetch={false} aria-label={language === 'ar' ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'} className="inline-flex items-center gap-2.5 w-fit rounded-lg transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
