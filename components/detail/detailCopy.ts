@@ -2,7 +2,8 @@
  * The wording every detail page shares (section titles and the per-solution
  * actions), and helpers to resolve detail data into a page's language.
  */
-import { getAllPosts, type BlogPostMeta } from '@/lib/blog'
+import { getPostsForPage } from '@/lib/blog'
+import type { PostAudience } from '@/lib/content/postAudience'
 import { RIYADH_CENTRE, SHOPPING_CENTRE } from '@/components/hero/photos'
 import type { HeroBackdrop } from '@/components/hero/CenteredHero'
 import type { HeroAction } from '@/components/hero/HeroActions'
@@ -69,14 +70,14 @@ export function solutionLinks(solution: PlatformSolution, locale: Locale): Detai
   ]
 }
 
-/** Existing posts, by slug, in the order given. */
-export function postsBySlug(slugs: string[]): BlogPostMeta[] {
-  const all = getAllPosts()
-  return slugs.map((s) => all.find((p) => p.slug === s)).filter((p): p is BlogPostMeta => !!p)
+/** What a detail page is about, in the English words its blog posts are matched on. */
+export function pageSubject(page: DetailPageData): string {
+  return [page.name.en, page.summary.en, page.metaTitle.en, page.hero.title.en, page.hero.subtitle.en, ...page.points.map((p) => p.title.en)].join('. ')
 }
 
 /** The parts of a view that come straight from the page's data. */
-export function dataView(page: DetailPageData, locale: Locale) {
+/** `audience`: whose blog posts to show; omit when the page serves both solutions. */
+export function dataView(page: DetailPageData, locale: Locale, audience?: PostAudience) {
   const c = DETAIL_COPY[locale]
   return {
     locale,
@@ -90,6 +91,6 @@ export function dataView(page: DetailPageData, locale: Locale) {
     faqs: page.faqs.map((f) => ({ q: f.q[locale], a: f.a[locale] })),
     linksTitle: c.links,
     postsTitle: c.posts,
-    posts: postsBySlug(page.posts),
+    posts: getPostsForPage({ about: pageSubject(page), audience, pinned: page.posts }),
   }
 }

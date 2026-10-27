@@ -4,6 +4,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Band from '@/components/ui/Band'
 import PricingFaq from '@/components/pricing/PricingFaq'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import type { PostAudience } from '@/lib/content/postAudience'
 import { SOLUTION_PRICING } from '@/components/pricing/solutionPricing'
 import type { Locale } from '@/lib/i18n'
 import { PLATFORM_SOLUTIONS, solutionByKey } from '@/lib/platform/solutions'
@@ -32,6 +34,11 @@ export function pricingRoute(locale: Locale) {
             <Plans headingLevel="h1" locale={locale} />
           </div>
           <Band shade="alt"><PricingFaq locale={locale} /></Band>
+          <RelatedPosts
+            about={`${solution.pageTitle.en} pricing: how much it costs, plans, price, fees, subscription and billing.`}
+            audience={solution.key as PostAudience}
+            locale={locale}
+          />
           <Footer locale={locale} />
         </main>
       )

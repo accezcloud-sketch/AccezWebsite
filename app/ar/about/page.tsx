@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AboutPage from '@/components/AboutPage'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 import { alternatesFor, localeUrl } from '@/lib/i18n'
 
 // Arabic version of /about/. The page component already contains the Arabic
@@ -28,6 +29,7 @@ export default function Page() {
     <main className="min-h-screen">
       <Header />
       <AboutPage locale="ar" />
+      <RelatedPosts about={'Accez, property management software and a booking platform for service providers in Saudi Arabia, built in Riyadh.'} locale="ar" />
       <Footer locale="ar" />
     </main>
   )

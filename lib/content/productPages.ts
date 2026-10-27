@@ -20,15 +20,32 @@ export interface ProductCtaContent {
   learnMore: string
   bookDemo: string
   startFree: string
+  /** The service provider box has one button: create a provider account. */
+  providerSignUp?: string
 }
+
+/** A product page key, or the service provider solution for posts written for providers. */
+export type ProductCtaKey = ProductPageKey | 'providers'
 
 /** The page of the property management solution that covers each topic (lib/platform/subpages.ts). */
 const PAGE: Record<Exclude<ProductPageKey, 'modules'>, string> = { owners: 'billing-and-payments', sales: 'sales-and-projects', hotels: 'hotels-and-serviced-apartments' }
 
-export function productCta(key: ProductPageKey, locale: Locale): ProductCtaContent {
+export function productCta(key: ProductCtaKey, locale: Locale): ProductCtaContent {
   const modules = MODULES_COPY[locale]
   const ar = locale === 'ar'
   const shared = { learnMore: modules.linked, bookDemo: modules.ctaPrimary, startFree: modules.ctaSecondary }
+
+  if (key === 'providers') {
+    const sp = solutionByKey('service-providers')!
+    return {
+      route: sp.href,
+      eyebrow: sp.name[locale],
+      title: sp.pageTitle[locale],
+      description: sp.pageDescription[locale],
+      ...shared,
+      providerSignUp: sp.primaryAction.label[locale],
+    }
+  }
 
   if (key === 'modules') {
     return {

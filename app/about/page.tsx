@@ -3,6 +3,7 @@ import { alternatesFor } from '@/lib/i18n'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AboutPage from '@/components/AboutPage'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: 'About Accez, one platform with two solutions',
@@ -23,6 +24,7 @@ export default function Page() {
     <main className="min-h-screen">
       <Header />
       <AboutPage locale="en" />
+      <RelatedPosts about={'Accez, property management software and a booking platform for service providers in Saudi Arabia, built in Riyadh.'} locale="en" />
       <Footer locale="en" />
     </main>
   )

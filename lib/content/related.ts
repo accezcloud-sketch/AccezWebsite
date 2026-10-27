@@ -121,6 +121,7 @@ function cosine(a: Vector, b: Vector): number {
 export class RelatedIndex {
   private readonly docs: Map<string, RelatableDoc>
   private readonly vectors = new Map<string, Vector>()
+  private readonly idf = new Map<string, number>()
 
   constructor(corpus: RelatableDoc[]) {
     this.docs = new Map(corpus.map((d) => [d.slug, d]))
@@ -130,11 +131,12 @@ export class RelatedIndex {
     counts.forEach(([, c]) => c.forEach((_, term) => docFreq.set(term, (docFreq.get(term) ?? 0) + 1)))
 
     const n = corpus.length
+    // Smoothed IDF; a term present in every post scores ~0.
+    docFreq.forEach((df, term) => this.idf.set(term, Math.log((1 + n) / (1 + df))))
     counts.forEach(([slug, c]) => {
       const vec: Vector = new Map()
       c.forEach((tf, term) => {
-        // Smoothed IDF; a term present in every post scores ~0.
-        const idf = Math.log((1 + n) / (1 + (docFreq.get(term) ?? 0)))
+        const idf = this.idf.get(term) ?? 0
         if (idf > 0) vec.set(term, (1 + Math.log(tf)) * idf)
       })
       this.vectors.set(slug, vec)
@@ -167,5 +169,31 @@ export class RelatedIndex {
 
     return [...picked, ...ranked.slice(0, limit - picked.length).map((r) => r.doc.slug)]
   }
-}
 
+  /**
+   * Posts closest to a piece of text (a page's subject), best first. Terms
+   * the corpus never uses are ignored, so the text needs no special wording.
+   */
+  rankForText(
+    text: string,
+    { limit = 3, minScore = 0.02, only, exclude }: RankOptions & { only?: Set<string>; exclude?: Set<string> } = {},
+  ): string[] {
+    if (limit <= 0) return []
+    const counts = new Map<string, number>()
+    for (const term of tokenize(text)) counts.set(term, (counts.get(term) ?? 0) + 1)
+    const query: Vector = new Map()
+    counts.forEach((tf, term) => {
+      const idf = this.idf.get(term) ?? 0
+      if (idf > 0) query.set(term, (1 + Math.log(tf)) * idf)
+    })
+    if (query.size === 0) return []
+
+    return Array.from(this.docs.values())
+      .filter((d) => (!only || only.has(d.slug)) && !exclude?.has(d.slug))
+      .map((d) => ({ doc: d, score: cosine(query, this.vectors.get(d.slug)!) }))
+      .filter((r) => r.score >= minScore)
+      .sort((x, y) => y.score - x.score || y.doc.date.localeCompare(x.doc.date) || x.doc.slug.localeCompare(y.doc.slug))
+      .slice(0, limit)
+      .map((r) => r.doc.slug)
+  }
+}

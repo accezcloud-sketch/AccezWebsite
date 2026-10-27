@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 import Band from '@/components/ui/Band'
 import CenteredHero from '@/components/hero/CenteredHero'
 import HeroActions from '@/components/hero/HeroActions'
@@ -89,6 +90,7 @@ export default function IntegrationsHub({ locale }: { locale: Locale }) {
         ))}
 
         <PhotoCta title={COPY[locale].ctaTitle} subtitle={COPY[locale].ctaSub} photo={RIYADH_CENTRE} actions={actions} />
+        <RelatedPosts about={`${HUB.metaTitle.en}. ${HUB.metaDescription.en}`} locale={locale} />
         <Footer locale={locale} />
       </main>
     </>

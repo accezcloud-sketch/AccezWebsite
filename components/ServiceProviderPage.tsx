@@ -12,6 +12,8 @@ import FeatureSteps, { type FeatureStep } from '@/components/product/FeatureStep
 import MoreFeatures from '@/components/product/MoreFeatures'
 import ProviderPricing from '@/components/ProviderPricing'
 import AudienceLinks from '@/components/solutions/AudienceLinks'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import { solutionByKey, solutionSubject } from '@/lib/platform/solutions'
 
 interface Area {
   id: 'bookings' | 'team'
@@ -186,6 +188,7 @@ export default function ServiceProviderPage({ locale }: { locale: Locale }) {
         photo={SHOPPING_CENTRE}
         actions={<HeroActions primary={{ label: t.ctaPrimary, href: PROVIDER_SIGN_UP, external: true }} />}
       />
+      <RelatedPosts about={solutionSubject(solutionByKey('service-providers')!)} audience="service-providers" locale={locale} />
     </>
   )
 }

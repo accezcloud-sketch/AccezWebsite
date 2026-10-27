@@ -72,7 +72,7 @@ describe('reviewed frontmatter', () => {
     const post = {
       slug: 'p', title: 'T', titleAr: 'ع', excerpt: 'E', excerptAr: 'م', date: '2026-09-01', author: 'Accez Team', authorAr: 'فريق أكسيز',
       coverImage: '/images/blog/p.webp', coverImageAlt: '', category: '', categoryAr: '', tags: [], tagsAr: [],
-      topic: 'saudi-regulations', readingMinutes: 3, readingMinutesAr: 3,
+      topic: 'saudi-regulations', audience: 'property-managers', readingMinutes: 3, readingMinutesAr: 3,
     } as BlogPostMeta
     const modified = (p: BlogPostMeta) => (postSchemas(p, 'en')[0] as Record<string, string>).dateModified
     expect(modified({ ...post, reviewed: '2026-10-26' })).toBe('2026-10-26')

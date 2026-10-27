@@ -9,7 +9,8 @@ import ProductShot from '@/components/product/ProductShot'
 import FeatureSteps, { type FeatureStep } from '@/components/product/FeatureSteps'
 import MoreFeatures from '@/components/product/MoreFeatures'
 import Pricing from '@/components/Pricing'
-import BlogStrip from '@/components/blog/BlogStrip'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import { solutionByKey, solutionSubject } from '@/lib/platform/solutions'
 import { MODULES_COPY } from '@/lib/content/modulesCopy'
 import { subpageBySlug, subpageHref } from '@/lib/platform/subpages'
 import ModuleLinks from './ModuleLinks'
@@ -186,7 +187,7 @@ export default function PropertyManagementPage({ locale }: { locale: Locale }) {
       <AudienceLinks solution="property-managers" locale={locale} shade="alt" />
       <Band shade="base"><Pricing locale={locale} /></Band>
       <ClosingCta locale={locale} />
-      <Band shade="base"><BlogStrip locale={locale} /></Band>
+      <RelatedPosts about={solutionSubject(solutionByKey('property-managers')!)} audience="property-managers" locale={locale} />
     </>
   )
 }

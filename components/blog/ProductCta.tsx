@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { localeHref, type Locale } from '@/lib/i18n'
-import { PORTAL_SIGN_UP } from '@/lib/links'
+import { PORTAL_SIGN_UP, PROVIDER_SIGN_UP } from '@/lib/links'
 import { productCta } from '@/lib/content/productPages'
-import type { ProductPageKey } from '@/lib/content/productMatch'
+import type { ProductCtaKey } from '@/lib/content/productPages'
 
 /**
  * End-of-post call to action pointing at the product page that matches the
@@ -14,7 +14,7 @@ import type { ProductPageKey } from '@/lib/content/productMatch'
  */
 
 interface ProductCtaProps {
-  product: ProductPageKey
+  product: ProductCtaKey
   locale: Locale
 }
 
@@ -49,21 +49,30 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
             {c.description}
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:items-center">
-            <a
-              href={localeHref('/#contact', locale)}
-              className="ui-btn ui-btn-primary"
-            >
-              {c.bookDemo}
-              {arrow}
-            </a>
-            <a
-              href={PORTAL_SIGN_UP}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ui-btn ui-btn-glass"
-            >
-              {c.startFree}
-            </a>
+            {c.providerSignUp ? (
+              <a href={PROVIDER_SIGN_UP} target="_blank" rel="noopener noreferrer" className="ui-btn ui-btn-primary">
+                {c.providerSignUp}
+                {arrow}
+              </a>
+            ) : (
+              <>
+                <a
+                  href={localeHref('/#contact', locale)}
+                  className="ui-btn ui-btn-primary"
+                >
+                  {c.bookDemo}
+                  {arrow}
+                </a>
+                <a
+                  href={PORTAL_SIGN_UP}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ui-btn ui-btn-glass"
+                >
+                  {c.startFree}
+                </a>
+              </>
+            )}
             <Link
               href={localeHref(c.route, locale)}
               prefetch={false}

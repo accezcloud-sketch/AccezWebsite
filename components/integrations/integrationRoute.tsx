@@ -10,6 +10,7 @@ import type { Locale } from '@/lib/i18n'
 import { solutionByKey } from '@/lib/platform/solutions'
 import { subpageBySlug, subpageHref } from '@/lib/platform/subpages'
 import { INTEGRATIONS, INTEGRATIONS_HREF, INTEGRATIONS_HUB, integrationBySlug, integrationHref, type Integration } from '@/lib/platform/integrations'
+import type { PostAudience } from '@/lib/content/postAudience'
 
 interface PageProps {
   params: Promise<{ integration: string }>
@@ -52,7 +53,8 @@ export function integrationView(i: Integration, locale: Locale): DetailView {
   const actions = solutionActions(main, locale)
   const secondary = other ? solutionActions(other, locale).primary : actions.secondary
   return {
-    ...dataView(i, locale),
+    // An integration in one solution shows that solution's posts; one in both shows any.
+    ...dataView(i, locale, i.solutions.length === 1 ? (i.solutions[0] as PostAudience) : undefined),
     crumbs: trail(i, locale).map((t, n, all) => ({ label: t.name, href: n < all.length - 1 ? t.route || '/' : undefined })),
     primary: actions.primary,
     secondary,

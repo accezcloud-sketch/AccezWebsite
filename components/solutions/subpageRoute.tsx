@@ -7,6 +7,7 @@ import { dataView, solutionActions, solutionCta, solutionLinks } from '@/compone
 import { breadcrumbSchema, HOME_CRUMB } from '@/lib/content/breadcrumbSchema'
 import { staticPageMetadata } from '@/lib/content/pageMetadata'
 import type { Locale } from '@/lib/i18n'
+import type { PostAudience } from '@/lib/content/postAudience'
 import { solutionByKey } from '@/lib/platform/solutions'
 import { integrationLinks } from '@/components/integrations/integrationRoute'
 import { SOLUTION_SUBPAGES, subpageBySlug, subpageHref, subpagesOf, type SolutionSubpage } from '@/lib/platform/subpages'
@@ -40,7 +41,7 @@ export function subpageView(page: SolutionSubpage, locale: Locale): DetailView {
     ? subpagesOf(page.solution, 'audience').filter((p) => p.slug !== page.slug).map((p) => ({ label: p.name[locale], text: p.summary[locale], href: subpageHref(p) }))
     : []
   return {
-    ...dataView(page, locale),
+    ...dataView(page, locale, page.solution as PostAudience),
     crumbs: trail(page, locale).map((t, i, all) => ({ label: t.name, href: i < all.length - 1 ? t.route || '/' : undefined })),
     ...solutionActions(solution, locale),
     links: [...modules, ...integrationLinks(page.integrations, locale), ...siblings, ...solutionLinks(solution, locale)],

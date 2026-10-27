@@ -7,6 +7,7 @@ import { readingMinutes } from './content/readingMinutes'
 import { topicOf, type TopicKey } from './content/topics'
 import { tagKey } from './content/blogFilters'
 import { matchProductPage, type ProductPageKey } from './content/productMatch'
+import { postAudience, type PostAudience } from './content/postAudience'
 import { toIsoDay } from './content/postDates'
 
 const blogDirectory = path.join(process.cwd(), 'content/blog')
@@ -79,6 +80,8 @@ export interface BlogPostMeta {
    * the post's subject unless the frontmatter sets `topic` explicitly.
    */
   topic: TopicKey
+  /** Which solution's readers the post is for (see lib/content/postAudience.ts). */
+  audience: PostAudience
   /** Minutes to read the English article. */
   readingMinutes: number
   /** Minutes to read the Arabic article. */
@@ -134,6 +137,13 @@ function toMeta(slug: string, data: Record<string, any>, body: { en: string; ar:
       topic: data.topic,
       category: data.category,
     }),
+    audience: postAudience({
+      title: data.title || '',
+      excerpt: data.excerpt || '',
+      tags: data.tags || [],
+      primaryKeyword: data.primaryKeyword,
+      audience: data.audience,
+    }),
     readingMinutes: readingMinutes(body.en),
     readingMinutesAr: readingMinutes(body.ar),
   }
@@ -143,6 +153,18 @@ export interface BlogRepository {
   getAllPosts(): BlogPostMeta[]
   getPostBySlug(slug: string): BlogPost | null
   getRelatedPosts(slug: string, limit?: number): BlogPostMeta[]
+  getPostsForPage(page: PagePostsQuery): BlogPostMeta[]
+}
+
+/** What a page is about, for picking the blog posts shown on it. */
+export interface PagePostsQuery {
+  /** The page's subject in plain English words (its name, headline and main points). */
+  about: string
+  /** Only posts for this solution's readers; omit for pages about the whole platform. */
+  audience?: PostAudience
+  /** Hand-picked slugs shown first, in order. */
+  pinned?: string[]
+  limit?: number
 }
 
 /**
@@ -205,10 +227,41 @@ export function createBlogRepository(directory: string): BlogRepository {
     getRelatedPosts(slug, limit = 3) {
       const { posts, index } = load()
       const bySlug = new Map(posts.map((p) => [p.slug, p]))
-      return index
-        .relatedTo(slug, { limit })
+      const audience = bySlug.get(slug)?.audience
+      // Rank against every post, then keep the post's own audience: a barber reading about no-shows gets no lease posts.
+      const related = index
+        .relatedTo(slug, { limit: posts.length })
         .map((s) => bySlug.get(s))
-        .filter((p): p is BlogPostMeta => p !== undefined)
+        .filter((p): p is BlogPostMeta => p !== undefined && p.audience === audience)
+        .slice(0, limit)
+      // Few posts on a subject yet: fill with the newest of the same audience.
+      for (const p of posts) {
+        if (related.length >= limit) break
+        if (p.slug !== slug && p.audience === audience && !related.includes(p)) related.push(p)
+      }
+      return related
+    },
+
+    /**
+     * Posts for a page that is not a post: hand-picked ones first, then the
+     * posts closest to the page's subject, then the newest, all for the
+     * page's audience. New posts appear on the right pages without editing
+     * them. Empty only when the audience has no posts yet.
+     */
+    getPostsForPage({ about, audience, pinned = [], limit = 3 }) {
+      const { posts, index } = load()
+      const candidates = audience ? posts.filter((p) => p.audience === audience) : posts
+      const allowed = new Set(candidates.map((p) => p.slug))
+      const picked = pinned.filter((slug, i) => allowed.has(slug) && pinned.indexOf(slug) === i).slice(0, limit)
+      const closest = index.rankForText(about, { limit: limit - picked.length, only: allowed, exclude: new Set(picked) })
+      const chosen = [...picked, ...closest]
+      // Posts are newest first, so this fills any remaining slots with the newest.
+      for (const p of candidates) {
+        if (chosen.length >= limit) break
+        if (!chosen.includes(p.slug)) chosen.push(p.slug)
+      }
+      const bySlug = new Map(posts.map((p) => [p.slug, p]))
+      return chosen.map((s) => bySlug.get(s)!)
     },
   }
 }
@@ -219,6 +272,7 @@ export const getAllPosts = (): BlogPostMeta[] => defaultRepository.getAllPosts()
 export const getPostBySlug = (slug: string): BlogPost | null => defaultRepository.getPostBySlug(slug)
 export const getRelatedPosts = (slug: string, limit?: number): BlogPostMeta[] =>
   defaultRepository.getRelatedPosts(slug, limit)
+export const getPostsForPage = (page: PagePostsQuery): BlogPostMeta[] => defaultRepository.getPostsForPage(page)
 
 /**
  * Newest posts whose topic leads to the given product page. For the general

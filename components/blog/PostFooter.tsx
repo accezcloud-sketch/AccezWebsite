@@ -16,7 +16,7 @@ export default function PostFooter({ slug, locale }: { slug: string; locale: Loc
 
   return (
     <>
-      <ProductCta product={matchProductPage(post)} locale={locale} />
+      <ProductCta product={post.audience === 'service-providers' ? 'providers' : matchProductPage(post)} locale={locale} />
       <PostStrip id="related-articles" heading={HEADING[locale]} posts={getRelatedPosts(slug)} locale={locale} />
     </>
   )

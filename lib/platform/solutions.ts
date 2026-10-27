@@ -95,8 +95,8 @@ export const PLATFORM_SOLUTIONS: PlatformSolution[] = [
     },
     pricingHref: '/pricing/service-providers',
     pricingDescription: {
-      en: 'Plans and prices for service providers on Accez: a free marketplace listing, bookings, team and customers, with a lower platform fee on higher plans.',
-      ar: 'باقات وأسعار مقدمي الخدمات في أكسيز: إدراج مجاني في السوق، والحجوزات، والفريق والعملاء، مع رسوم منصة أقل في الباقات الأعلى.',
+      en: 'Plans and prices for service providers on Accez: a free marketplace listing, bookings, team and customers. On the Free plan, a 10% fee per booking.',
+      ar: 'باقات وأسعار مقدمي الخدمات في أكسيز: إدراج مجاني في السوق، والحجوزات، والفريق والعملاء، ورسوم 10% لكل حجز في الباقة المجانية.',
     },
     pricingNote: { en: 'Free to list, with a 10% fee per booking', ar: 'الإدراج مجاني، مع رسوم 10% لكل حجز' },
     signUpUrl: PROVIDER_SIGN_UP,
@@ -120,3 +120,8 @@ export function solutionForPath(pathname: string): PlatformSolution | undefined 
 }
 
 export const pick = (b: Bilingual, locale: 'en' | 'ar') => b[locale]
+
+/** What a solution is about, in the English words blog posts are matched on. */
+export function solutionSubject(solution: PlatformSolution): string {
+  return [solution.pageTitle.en, solution.pageDescription.en, solution.roleSummary.en].join('. ')
+}
