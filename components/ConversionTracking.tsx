@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { classifyClick, trackEvent } from '@/lib/analytics/conversions'
+import { rememberCampaign } from '@/lib/analytics/campaign'
 
 /**
  * Records conversion clicks site-wide (sign-up, WhatsApp, Book a demo) from a
@@ -10,6 +11,8 @@ import { classifyClick, trackEvent } from '@/lib/analytics/conversions'
  */
 export default function ConversionTracking() {
   useEffect(() => {
+    // Remember where this visit came from, for the "Book a demo" Lead.
+    rememberCampaign()
     const onClick = (e: MouseEvent) => {
       const link = (e.target as Element | null)?.closest?.('a[href]') as HTMLAnchorElement | null
       if (!link) return

@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Script from 'next/script'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { thankYouUrl } from '@/lib/analytics/conversions'
+import { campaignNote, storedCampaign } from '@/lib/analytics/campaign'
 
 export default function Contact() {
   const { t, isRTL, language } = useLanguage()
@@ -124,6 +125,14 @@ export default function Contact() {
                   <form
                     action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D41000002kA0p"
                     method="POST"
+                    onSubmit={(e) => {
+                      // Add where the visitor came from to the Lead's description (no Salesforce setup needed).
+                      const note = campaignNote(storedCampaign())
+                      const field = e.currentTarget.elements.namedItem('description') as HTMLTextAreaElement | null
+                      if (note && field && !field.value.includes('[Website visit]')) {
+                        field.value = (field.value ? field.value + '\n\n' : '') + note
+                      }
+                    }}
                   >
                     {/* Hidden Salesforce Fields */}
                     <input
