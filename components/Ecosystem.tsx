@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import {
+  BedDouble,
   Building2,
-  Briefcase,
-  Home,
-  Hotel,
-  UsersRound,
-  Wrench,
+  Dumbbell,
+  HardHat,
+  Scissors,
+  TreePalm,
   type LucideIcon,
 } from 'lucide-react'
 import type { CSSProperties } from 'react'
@@ -15,39 +15,18 @@ interface Party {
   icon: LucideIcon
   title: string
   titleAr: string
+  blurb: string
+  blurbAr: string
 }
 
+// Wording follows each customer type's own page in lib/platform/audiences.ts.
 const PARTIES: Party[] = [
-  {
-    icon: Briefcase,
-    title: 'Residential and compounds',
-    titleAr: 'المباني السكنية والمجمعات',
-  },
-  {
-    icon: Home,
-    title: 'Vacation rentals',
-    titleAr: 'الإيجارات قصيرة الأجل',
-  },
-  {
-    icon: Hotel,
-    title: 'Serviced apartments',
-    titleAr: 'الشقق المخدومة',
-  },
-  {
-    icon: Building2,
-    title: 'Developers and sales teams',
-    titleAr: 'المطورون وفرق المبيعات',
-  },
-  {
-    icon: Wrench,
-    title: 'Barbers, salons and spas',
-    titleAr: 'الحلاقون والصالونات والسبا',
-  },
-  {
-    icon: UsersRound,
-    title: 'Coaches and personal trainers',
-    titleAr: 'المدربون الشخصيون',
-  },
+  { icon: Building2, title: 'Residential and compounds', titleAr: 'المباني السكنية والمجمعات', blurb: 'Leases and rent', blurbAr: 'العقود والإيجارات' },
+  { icon: TreePalm, title: 'Vacation rentals', titleAr: 'الإيجارات قصيرة الأجل', blurb: 'Channel sync', blurbAr: 'مزامنة القنوات' },
+  { icon: BedDouble, title: 'Serviced apartments', titleAr: 'الشقق المخدومة', blurb: 'Stays and add-ons', blurbAr: 'الإقامات والإضافات' },
+  { icon: HardHat, title: 'Developers and sales teams', titleAr: 'المطورون وفرق المبيعات', blurb: 'Projects and sale units', blurbAr: 'المشاريع ووحدات البيع' },
+  { icon: Scissors, title: 'Barbers, salons and spas', titleAr: 'الحلاقون والصالونات والسبا', blurb: 'Bookings and clients', blurbAr: 'الحجوزات والعملاء' },
+  { icon: Dumbbell, title: 'Coaches and personal trainers', titleAr: 'المدربون الشخصيون', blurb: 'One-to-one sessions', blurbAr: 'جلسات فردية' },
 ]
 
 const CONTENT = {
@@ -83,9 +62,23 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
   return (
     <section className="section-y" id="ecosystem" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <style>{`
-        .eco-ring { --r: 124px; --card: 92px; --hub: 96px; width: 340px; height: 340px; }
+        .eco-ring { --r: 122px; --card-w: 96px; --card-h: 100px; --hub: 96px; --wave: 1.4; width: 320px; height: 320px; }
         @media (min-width: 768px) {
-          .eco-ring { --r: 205px; --card: 178px; --hub: 140px; width: 500px; height: 500px; }
+          .eco-ring { --r: 236px; --card-w: 214px; --card-h: 72px; --hub: 140px; --wave: 1.7; width: 540px; height: 540px; }
+        }
+        .eco-path {
+          border: 1px solid var(--accent-line);
+          box-shadow: 0 0 18px rgb(var(--accent-rgb) / 0.18), inset 0 0 18px rgb(var(--accent-rgb) / 0.10);
+        }
+        .eco-wave {
+          position: absolute; left: 50%; top: 50%;
+          width: var(--hub); height: var(--hub); margin: calc(var(--hub) / -2) 0 0 calc(var(--hub) / -2);
+          border-radius: 9999px; border: 1.5px solid var(--accent-hi);
+          opacity: 0; animation: eco-wave 4.5s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+        }
+        @keyframes eco-wave {
+          0% { transform: scale(1); opacity: 0.5; }
+          100% { transform: scale(var(--wave)); opacity: 0; }
         }
         .eco-orbit { position: absolute; inset: 0; animation: eco-spin 90s linear infinite; }
         .eco-slot {
@@ -94,15 +87,16 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
         }
         .eco-upright { width: 0; height: 0; animation: eco-spin 90s linear infinite reverse; }
         .eco-card {
-          position: absolute; left: 0; top: 0; width: var(--card);
+          position: absolute; left: 0; top: 0; width: var(--card-w); height: var(--card-h);
           transform: translate(-50%, -50%);
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          transition: border-color 0.3s ease;
         }
         .eco-card:hover { border-color: var(--accent-line); }
         .eco-ring:hover .eco-orbit, .eco-ring:hover .eco-upright { animation-play-state: paused; }
         @keyframes eco-spin { to { transform: rotate(360deg); } }
         @media (prefers-reduced-motion: reduce) {
           .eco-orbit, .eco-upright { animation: none; }
+          .eco-wave { display: none; }
         }
       `}</style>
 
@@ -125,15 +119,21 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
           {/* The path the cards travel on */}
           <div
             aria-hidden="true"
-            className="absolute rounded-full"
+            className="eco-path absolute rounded-full"
             style={{
               left: 'calc(50% - var(--r))',
               top: 'calc(50% - var(--r))',
               width: 'calc(2 * var(--r))',
               height: 'calc(2 * var(--r))',
-              border: '1px solid rgb(var(--fg-rgb) / 0.06)',
             }}
           />
+
+          {/* Waves leave the centre and fade before they reach the cards */}
+          <div aria-hidden="true">
+            {[0, 1.5, 3].map((d) => (
+              <span key={d} className="eco-wave" style={{ animationDelay: `${d}s` }} />
+            ))}
+          </div>
 
           <div
             className="absolute z-10 flex flex-col items-center justify-center rounded-full text-center"
@@ -161,16 +161,21 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
               return (
                 <li key={party.title} className="eco-slot" style={{ '--a': `${ANGLES[i]}deg` } as CSSProperties}>
                   <div className="eco-upright">
-                    <div className="ui-card eco-card flex flex-col md:flex-row items-center gap-1.5 md:gap-3 px-2 py-2.5 md:px-3.5 md:py-3 text-center md:text-start">
+                    <div className="ui-card eco-card flex flex-col md:flex-row items-center justify-center md:justify-start gap-1.5 md:gap-3 px-2 md:px-3.5 text-center md:text-start">
                       <div
                         className="w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                         style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}
                       >
                         <Icon size={17} color="var(--accent-hi)" strokeWidth={1.75} />
                       </div>
-                      <p className="min-w-0 text-strong font-semibold leading-tight text-[11px] md:text-[13.5px]">
-                        {language === 'ar' ? party.titleAr : party.title}
-                      </p>
+                      <div className="min-w-0">
+                        <p className="text-strong font-semibold leading-tight text-[11px] md:text-[13px] md:line-clamp-2">
+                          {language === 'ar' ? party.titleAr : party.title}
+                        </p>
+                        <p className="hidden md:block leading-tight mt-0.5 truncate" style={{ fontSize: 11.5, color: 'var(--text-faint)' }}>
+                          {language === 'ar' ? party.blurbAr : party.blurb}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </li>
