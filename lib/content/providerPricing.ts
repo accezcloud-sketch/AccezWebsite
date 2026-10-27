@@ -8,7 +8,7 @@ export const PROVIDER_PRICING_COPY = {
     pricingTitleLead: 'Plans for',
     pricingTitleAccent: 'service providers',
     pricingSubtitle:
-      'Start free and get listed. Every plan includes a marketplace listing; higher plans add more staff, more services, and a lower platform fee on each booking. Pricing is separate from Accez property management plans.',
+      'Start free and get listed. Every plan includes a marketplace listing; higher plans add more staff and more services. Pricing is separate from Accez property management plans.',
     perMonth: '/mo',
     mostPopular: 'Recommended',
     feeSuffix: 'platform fee per booking',
@@ -60,7 +60,7 @@ export const PROVIDER_PRICING_COPY = {
     pricingTitleLead: 'خطط',
     pricingTitleAccent: 'لمقدمي الخدمات',
     pricingSubtitle:
-      'ابدأ مجانًا واحصل على صفحتك. كل خطة تتضمن صفحة في السوق؛ والخطط الأعلى تضيف المزيد من الموظفين والخدمات ورسوم منصة أقل على كل حجز. الأسعار منفصلة عن خطط إدارة العقارات في أكسيز.',
+      'ابدأ مجانًا واحصل على صفحتك. كل خطة تتضمن صفحة في السوق؛ والخطط الأعلى تضيف المزيد من الموظفين والخدمات. الأسعار منفصلة عن خطط إدارة العقارات في أكسيز.',
     perMonth: '/شهريًا',
     mostPopular: 'موصى بها',
     feeSuffix: 'رسوم المنصة لكل حجز',
