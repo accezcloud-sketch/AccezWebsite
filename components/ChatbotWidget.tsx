@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation'
 import { useDocumentTheme } from '@/lib/theme/useDocumentTheme'
 import type { Theme } from '@/lib/theme/theme'
 
-// Accez Assistant (the new bot, hosted on Railway). The previous bot's link is kept below so the team can switch back.
+// Accez Assistant, hosted on AWS Lightsail. The previous bot's link is kept below so the team can switch back.
 // const WIDGET_ORIGIN = 'https://accez-chatbot-production.up.railway.app' // previous bot
-const WIDGET_ORIGIN = 'https://accezchatbot-production.up.railway.app'
+const WIDGET_ORIGIN = 'https://container-service-1.h37pcew53d6xm.ap-south-1.cs.amazonlightsail.com'
 
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false)
