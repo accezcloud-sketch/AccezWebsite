@@ -42,7 +42,7 @@ const PLANS: PlanConfig[] = [
     accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
-    glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
+    glowShadow: '0 1px 2px rgb(var(--shadow-rgb) / calc(0.14 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'startFree',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -66,7 +66,7 @@ const PLANS: PlanConfig[] = [
     accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
-    glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
+    glowShadow: '0 1px 2px rgb(var(--shadow-rgb) / calc(0.14 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -86,9 +86,9 @@ const PLANS: PlanConfig[] = [
     ...PM_PLAN_PRICES.professional,
     highlight: true,
     accentColor: 'var(--accent)',
-    borderColor: 'rgb(var(--accent-rgb) / 0.4)',
-    bgColor: 'rgb(var(--accent-rgb) / 0.06)',
-    glowShadow: '0 0 0 1px rgb(var(--accent-rgb) / 0.2), 0 20px 60px rgb(var(--accent-rgb) / 0.2), 0 4px 16px rgb(var(--shadow-rgb) / calc(0.3 * var(--shadow-k)))',
+    borderColor: 'var(--accent-line)',
+    bgColor: 'var(--card-bg)',
+    glowShadow: '0 0 0 1px var(--accent-line), 0 8px 24px rgb(var(--shadow-rgb) / calc(0.16 * var(--shadow-k)))',
     ctaStyle: 'primary',
     ctaLabelKey: 'getStarted',
     ctaHref: 'https://portal.accez.cloud/sign-up',
@@ -111,7 +111,7 @@ const PLANS: PlanConfig[] = [
     accentColor: 'var(--accent)',
     borderColor: 'var(--card-border)',
     bgColor: 'var(--card-bg)',
-    glowShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--card-ring), 0 10px 30px rgb(var(--shadow-rgb) / calc(0.22 * var(--shadow-k)))',
+    glowShadow: '0 1px 2px rgb(var(--shadow-rgb) / calc(0.14 * var(--shadow-k)))',
     ctaStyle: 'secondary',
     ctaLabelKey: 'contactSales',
     ctaHref: '/#contact',
@@ -149,14 +149,6 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
       id="pricing"
       style={{ background: 'var(--section-bg, var(--bg))' }}
     >
-      <style>{`
-        @media (max-width: 767px) {
-          .pricing-card-highlight {
-            transform: none !important;
-          }
-        }
-      `}</style>
-
       <div className="container mx-auto px-4">
         <div>
           <div className="text-center mb-10">
@@ -199,7 +191,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                 className="relative w-14 h-7 rounded-full flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                 style={{
                   background: isYearly
-                    ? 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))'
+                    ? 'var(--accent-solid)'
                     : 'rgb(var(--fg-rgb) / 0.1)',
                   border: '1px solid var(--border-hi)',
                   transition: 'background 0.3s ease',
@@ -210,7 +202,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
               >
                 <span
                   className="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow-md"
-                  style={{ transform: `translateX(${isYearly ? 28 : 0}px)`, transition: 'transform .25s cubic-bezier(.34,1.3,.64,1)' }}
+                  style={{ transform: `translateX(${isYearly ? 28 : 0}px)`, transition: 'transform .18s cubic-bezier(.22,1,.36,1)' }}
                 />
               </button>
 
@@ -233,36 +225,24 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
             return (
               <div
                 key={plan.id}
-                className={`${plan.mobileOrder} ${plan.desktopOrder} ${plan.highlight ? 'pricing-card-highlight' : ''}`}
+                className={`${plan.mobileOrder} ${plan.desktopOrder}`}
               >
                 <div
                   className="ui-card relative flex flex-col overflow-hidden h-full"
                   style={{
-                    // The recommended plan sits slightly forward of the others.
-                    transform: plan.highlight ? 'translateY(-8px) scale(1.03)' : undefined,
+                    // The recommended plan is marked by its border and badge, at the same size as the others.
                     background: plan.bgColor,
                     border: `1px solid ${plan.borderColor}`,
                     boxShadow: plan.glowShadow,
                   }}
                 >
-                  {/* Accent top border */}
-                  <div
-                    className="absolute top-0 left-0 right-0 h-[3px]"
-                    style={{
-                      background: plan.highlight
-                        ? 'linear-gradient(90deg, var(--accent-solid), var(--accent-hi))'
-                        : 'linear-gradient(90deg, rgb(var(--accent-rgb) / 0.4), transparent)',
-                    }}
-                  />
-
                   {/* Most Popular badge */}
                   {plan.highlight && (
                     <div className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'}`}>
                       <span
-                        className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase"
+                        className="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium"
                         style={{
-                          background: 'rgb(var(--accent-rgb) / 0.15)',
-                          border: '1px solid rgb(var(--accent-rgb) / 0.35)',
+                          background: 'var(--accent-dim)',
                           color: 'var(--accent-hi)',
                         }}
                       >
@@ -275,7 +255,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                     {/* Plan name + description */}
                     <div>
                       <h3
-                        className="font-bold text-strong mb-1.5"
+                        className="font-semibold text-strong mb-1.5"
                         style={{ fontSize: 18 }}
                       >
                         {getText(plan.nameKey)}
@@ -291,7 +271,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                         {!isCustom ? (
                           <>
                             <span
-                              className="text-strong font-bold leading-none"
+                              className="text-strong font-medium leading-none tabular-nums"
                               style={{ fontSize: 'clamp(36px, 5vw, 48px)' }}
                             >
                               {/* The first price is in the static HTML, still; only a
@@ -310,7 +290,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                           </>
                         ) : (
                           <span
-                            className="font-bold text-strong leading-none"
+                            className="font-medium text-strong leading-none"
                             style={{ fontSize: 'clamp(28px, 4vw, 36px)' }}
                           >
                             {tp.tailored}
@@ -324,7 +304,7 @@ export default function Pricing({ headingLevel = 'h2', locale }: { headingLevel?
                     <a
                       href={plan.ctaHref.startsWith('/') ? localeHref(plan.ctaHref, language) : plan.ctaHref}
                       {...(plan.ctaHref.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                      className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
+                      className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-[background-color,border-color,box-shadow] duration-150"
                       style={
                         plan.ctaStyle === 'primary'
                           ? {

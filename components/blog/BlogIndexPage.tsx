@@ -51,11 +51,6 @@ export default function BlogIndexPage({ locale, topic, page = 1 }: { locale: Loc
 
       {/* Hero, server-rendered, fully crawlable */}
       <section className="relative overflow-hidden page-top pb-8" style={{ background: 'var(--section-bg, var(--bg))' }}>
-        <div
-          className="absolute inset-x-0 top-0 pointer-events-none"
-          style={{ height: '100%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }}
-          aria-hidden="true"
-        />
         <div className="container mx-auto px-4 text-center relative z-10">
           <span
             className="ui-chip mb-5"

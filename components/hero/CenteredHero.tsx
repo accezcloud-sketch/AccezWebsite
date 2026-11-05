@@ -46,13 +46,7 @@ export default function CenteredHero({
           <div className="absolute inset-0 hero-photo-shade" />
           <div className="hero-photo-fade" />
         </div>
-      ) : (
-        <div
-          className="absolute inset-x-0 top-0 pointer-events-none"
-          style={{ height: '70%', background: 'radial-gradient(110% 60% at 50% 0%, var(--glow) 0%, var(--glow-fade) 32%, transparent 64%)' }}
-          aria-hidden="true"
-        />
-      )}
+      ) : null}
       <div className="page-top relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pb-16 lg:pb-24">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {above && <div className="mb-6">{above}</div>}

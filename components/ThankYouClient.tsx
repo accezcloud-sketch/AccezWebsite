@@ -27,12 +27,12 @@ export default function ThankYou() {
 
   const content = {
     en: {
-      title: 'Thank You!',
+      title: 'Thank you',
       message: 'Your message has been successfully submitted. Our team will get back to you within 24-48 hours.',
-      backHome: 'Back to Home',
+      backHome: 'Back to home',
     },
     ar: {
-      title: 'شكراً لك!',
+      title: 'شكرًا لك',
       message: 'تم إرسال رسالتك بنجاح. سيتواصل معك فريقنا خلال 24-48 ساعة.',
       backHome: 'العودة للرئيسية',
     },
@@ -71,11 +71,11 @@ export default function ThankYou() {
               height={32}
               className="rounded-lg"
             />
-            <span className="text-2xl font-bold text-strong">Accez.cloud</span>
+            <span className="text-2xl font-medium text-strong">Accez.cloud</span>
           </div>
 
           {/* Message */}
-          <h1 className="text-3xl font-bold text-strong mb-4">{t.title}</h1>
+          <h1 className="hero-display text-3xl text-strong mb-4">{t.title}</h1>
           <p className="text-muted mb-8">{t.message}</p>
 
           {/* Back Button */}

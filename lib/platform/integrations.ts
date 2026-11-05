@@ -39,7 +39,7 @@ export const INTEGRATIONS_HUB = {
     accent: { en: 'that connect to Accez', ar: 'المتصلة بأكسيز' },
     subtitle: { en: 'Booking channels, payments, analytics and SMS, in the solution that uses them.', ar: 'قنوات الحجز والمدفوعات والتحليلات والرسائل النصية، في الحل الذي يستخدمها.' },
   },
-  shot: { shot: 'pmIntegrations' as const, title: { en: 'The integrations page', ar: 'صفحة التكاملات' }, text: { en: 'Connect each service from your Accez account.', ar: 'اربط كل خدمة من حسابك في أكسيز.' } },
+  shot: { shot: 'pmIntegrations' as const, title: { en: 'The integrations page', ar: 'صفحة التكاملات' }, text: { en: 'Connect each service from your Accez account', ar: 'اربط كل خدمة من حسابك في أكسيز' } },
 }
 
 const PM = ['property-managers']
@@ -47,16 +47,16 @@ const BOTH = ['property-managers', 'service-providers']
 
 /** Every service, in the order the /integrations/ page lists them. */
 export const INTEGRATION_SERVICES: IntegrationService[] = [
-  { name: { en: 'Airbnb', ar: 'Airbnb' }, group: 'channels', summary: { en: 'Calendar sync with Airbnb.', ar: 'مزامنة التقويم مع Airbnb.' }, solutions: PM },
-  { name: { en: 'Booking.com', ar: 'Booking.com' }, group: 'channels', summary: { en: 'Calendar sync with Booking.com.', ar: 'مزامنة التقويم مع Booking.com.' }, solutions: PM },
-  { name: { en: 'Expedia', ar: 'Expedia' }, group: 'channels', summary: { en: 'Calendar sync with Expedia.', ar: 'مزامنة التقويم مع Expedia.' }, solutions: PM },
-  { name: { en: 'RoomCloud', ar: 'RoomCloud' }, group: 'channels', summary: { en: 'Map your units to RoomCloud rooms and sync availability.', ar: 'اربط وحداتك بغرف RoomCloud وزامن التوفر.' }, solutions: PM },
-  { name: { en: 'iCal calendars', ar: 'تقاويم iCal' }, group: 'channels', summary: { en: 'Import a calendar by iCal link or .ics file.', ar: 'استورد تقويمًا برابط iCal أو بملف .ics.' }, solutions: PM },
-  { name: { en: 'Stripe', ar: 'Stripe' }, group: 'payments', summary: { en: 'Take payments through Stripe.', ar: 'استلم المدفوعات عبر Stripe.' }, solutions: BOTH },
-  { name: { en: 'Tap', ar: 'Tap' }, group: 'payments', summary: { en: 'Take payments through Tap.', ar: 'استلم المدفوعات عبر Tap.' }, solutions: BOTH },
-  { name: { en: 'Google Analytics', ar: 'Google Analytics' }, group: 'analytics', summary: { en: 'Connect your own Google Analytics.', ar: 'اربط حساب Google Analytics الخاص بك.' }, solutions: BOTH },
-  { name: { en: 'Meta Pixel', ar: 'Meta Pixel' }, group: 'analytics', summary: { en: 'Connect your own Meta Pixel.', ar: 'اربط Meta Pixel الخاص بك.' }, solutions: BOTH },
-  { name: { en: 'SMS (Twilio)', ar: 'الرسائل النصية (Twilio)' }, group: 'messaging', summary: { en: 'Text guests, tenants and customers through Twilio.', ar: 'راسل الضيوف والمستأجرين والعملاء عبر Twilio.' }, solutions: BOTH },
+  { name: { en: 'Airbnb', ar: 'Airbnb' }, group: 'channels', summary: { en: 'Calendar sync with Airbnb', ar: 'مزامنة التقويم مع Airbnb' }, solutions: PM },
+  { name: { en: 'Booking.com', ar: 'Booking.com' }, group: 'channels', summary: { en: 'Calendar sync with Booking.com', ar: 'مزامنة التقويم مع Booking.com' }, solutions: PM },
+  { name: { en: 'Expedia', ar: 'Expedia' }, group: 'channels', summary: { en: 'Calendar sync with Expedia', ar: 'مزامنة التقويم مع Expedia' }, solutions: PM },
+  { name: { en: 'RoomCloud', ar: 'RoomCloud' }, group: 'channels', summary: { en: 'Map your units to RoomCloud rooms and sync availability', ar: 'اربط وحداتك بغرف RoomCloud وزامن التوفر' }, solutions: PM },
+  { name: { en: 'iCal calendars', ar: 'تقاويم iCal' }, group: 'channels', summary: { en: 'Import a calendar by iCal link or .ics file', ar: 'استورد تقويمًا برابط iCal أو بملف .ics' }, solutions: PM },
+  { name: { en: 'Stripe', ar: 'Stripe' }, group: 'payments', summary: { en: 'Take payments through Stripe', ar: 'استلم المدفوعات عبر Stripe' }, solutions: BOTH },
+  { name: { en: 'Tap', ar: 'Tap' }, group: 'payments', summary: { en: 'Take payments through Tap', ar: 'استلم المدفوعات عبر Tap' }, solutions: BOTH },
+  { name: { en: 'Google Analytics', ar: 'Google Analytics' }, group: 'analytics', summary: { en: 'Connect your own Google Analytics', ar: 'اربط حساب Google Analytics الخاص بك' }, solutions: BOTH },
+  { name: { en: 'Meta Pixel', ar: 'Meta Pixel' }, group: 'analytics', summary: { en: 'Connect your own Meta Pixel', ar: 'اربط Meta Pixel الخاص بك' }, solutions: BOTH },
+  { name: { en: 'SMS (Twilio)', ar: 'الرسائل النصية (Twilio)' }, group: 'messaging', summary: { en: 'Text guests, tenants and customers through Twilio', ar: 'راسل الضيوف والمستأجرين والعملاء عبر Twilio' }, solutions: BOTH },
 ]
 
 /** Where a group sits on the /integrations/ page. */

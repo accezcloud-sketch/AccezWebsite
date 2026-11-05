@@ -15,7 +15,7 @@ import { topicLabel } from '@/lib/content/topics'
  */
 
 const COPY: Record<Locale, { viewAll: string; readMore: string }> = {
-  en: { viewAll: 'View all articles', readMore: 'Read More' },
+  en: { viewAll: 'View all articles', readMore: 'Read more' },
   ar: { viewAll: 'عرض جميع المقالات', readMore: 'اقرأ المزيد' },
 }
 

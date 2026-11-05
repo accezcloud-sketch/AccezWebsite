@@ -19,16 +19,16 @@ const CONTENT = {
       'Property managers in the region were running their business across booking channels, spreadsheets, chat apps and disconnected tools. Service businesses were taking bookings by phone and chat, with no page of their own and no clear view of their week. Accez gives each of them one place to work: property management for operators, and a booking solution for providers, on one platform built in Saudi Arabia.',
     valuesHeading: 'What we believe',
     values: [
-      { title: 'One platform, two solutions', desc: 'Property management and service providers each get their own dashboard, plans and sign-in, on the same platform.' },
-      { title: 'Arabic and English, side by side', desc: 'Every screen works in both languages, right to left in Arabic, so teams and customers use the one they prefer.' },
-      { title: 'Built in Saudi Arabia', desc: 'From Riyadh, close to the market, the regulations and the people we build for.' },
+      { title: 'One platform, two solutions', desc: 'Property management and service providers each get their own dashboard, plans and sign-in, on the same platform' },
+      { title: 'Arabic and English, side by side', desc: 'Every screen works in both languages, right to left in Arabic, so teams and customers use the one they prefer' },
+      { title: 'Built in Saudi Arabia', desc: 'From Riyadh, close to the market, the regulations and the people we build for' },
     ],
     company: 'Company',
     companyName: 'Cloud Valley LLC dba Accez.cloud',
     location: 'Location',
     locationVal: 'Almalqa, Riyadh, Saudi Arabia',
     languages: 'Languages',
-    languagesVal: 'Arabic & English',
+    languagesVal: 'Arabic and English',
     ctaTitle: 'Find the solution that fits you',
     ctaSub: 'Each solution has its own page, plans and sign-in.',
   },
@@ -42,9 +42,9 @@ const CONTENT = {
       'كان مديرو العقارات في المنطقة يديرون أعمالهم عبر قنوات الحجز وجداول البيانات وتطبيقات المحادثة وأدوات غير مترابطة. وكانت أنشطة الخدمات تستقبل الحجوزات عبر الهاتف والمحادثات، دون صفحة خاصة بها ودون رؤية واضحة لأسبوعها. تمنح أكسيز كلًّا منهم مكانًا واحدًا للعمل: إدارة العقارات للمشغّلين، وحل حجز لمقدمي الخدمات، على منصة واحدة مبنية في السعودية.',
     valuesHeading: 'بماذا نؤمن',
     values: [
-      { title: 'منصة واحدة، وحلّان', desc: 'لكل من إدارة العقارات ومقدمي الخدمات لوحة تحكم وخطط وتسجيل دخول خاص به، على المنصة نفسها.' },
-      { title: 'العربية والإنجليزية جنبًا إلى جنب', desc: 'كل شاشة تعمل باللغتين، ومن اليمين إلى اليسار بالعربية، ليستخدم الفريق والعملاء اللغة التي يفضلونها.' },
-      { title: 'مبنية في السعودية', desc: 'من الرياض، قريبون من السوق والأنظمة والأشخاص الذين نبني لهم.' },
+      { title: 'منصة واحدة، وحلّان', desc: 'لكل من إدارة العقارات ومقدمي الخدمات لوحة تحكم وخطط وتسجيل دخول خاص به، على المنصة نفسها' },
+      { title: 'العربية والإنجليزية جنبًا إلى جنب', desc: 'كل شاشة تعمل باللغتين، ومن اليمين إلى اليسار بالعربية، ليستخدم الفريق والعملاء اللغة التي يفضلونها' },
+      { title: 'مبنية في السعودية', desc: 'من الرياض، قريبون من السوق والأنظمة والأشخاص الذين نبني لهم' },
     ],
     company: 'الشركة',
     companyName: 'شركة وادي السحاب، أكسيز.كلاود',
@@ -93,7 +93,7 @@ export default function AboutPage({ locale: language }: { locale: Locale }) {
                 <li key={label} className="flex items-start gap-4">
                   <span className="ui-icon"><FactIcon size={20} color="var(--accent-hi)" strokeWidth={1.75} /></span>
                   <span>
-                    <span className="block text-xs uppercase tracking-wider text-faint mb-0.5">{label}</span>
+                    <span className="block text-xs text-faint mb-0.5">{label}</span>
                     <span className="block text-strong font-medium">{value}</span>
                   </span>
                 </li>
@@ -132,7 +132,7 @@ export default function AboutPage({ locale: language }: { locale: Locale }) {
               {PLATFORM_SOLUTIONS.map((s) => (
                 <li key={s.key}>
                   <Link href={localeHref(s.href, language)} prefetch={false} className="ui-card ui-card-interactive group flex h-full flex-col gap-1 px-5 py-4">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.12em]" style={{ color: 'var(--accent-hi)' }}>{s.audience[language]}</span>
+                    <span className="text-xs font-medium" style={{ color: 'var(--accent-hi)' }}>{s.audience[language]}</span>
                     <span className="flex items-center justify-between gap-3 font-semibold text-strong" style={{ fontSize: 16 }}>
                       {s.name[language]}
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 rtl:-scale-x-100" aria-hidden="true">

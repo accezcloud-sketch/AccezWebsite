@@ -32,7 +32,7 @@ export type SolutionSlug = 'owners' | 'sales' | 'hotels'
 
 export const SOLUTIONS: Record<SolutionSlug, Solution> = {
   owners: {
-    eyebrow: 'Owner Management', eyebrowAr: 'إدارة الملاك',
+    eyebrow: 'Owner management', eyebrowAr: 'إدارة الملاك',
     title: 'Keep owners informed and', titleAr: 'أبقِ الملاك على اطلاع',
     accent: 'paid on time', accentAr: 'وادفع لهم في وقتهم',
     subtitle: 'A clear ledger, statements and tracked payouts for each owner.',
@@ -62,7 +62,7 @@ export const SOLUTIONS: Record<SolutionSlug, Solution> = {
   },
 
   sales: {
-    eyebrow: 'Sales & Projects', eyebrowAr: 'المبيعات والمشاريع',
+    eyebrow: 'Sales and projects', eyebrowAr: 'المبيعات والمشاريع',
     title: 'Sell units and projects', titleAr: 'بِع الوحدات والمشاريع',
     accent: 'without the spreadsheet', accentAr: 'دون جداول البيانات',
     subtitle: 'Sale units, the sales path to a signed contract and projects, in Arabic and English, on the same platform that runs the units after they sell.',
@@ -85,7 +85,7 @@ export const SOLUTIONS: Record<SolutionSlug, Solution> = {
       { en: 'Customer / lead records', ar: 'سجلات العملاء والمهتمّين' },
       { en: 'Sales-agent performance', ar: 'أداء وكلاء المبيعات' },
       { en: 'Project-to-unit mapping', ar: 'ربط المشاريع بالوحدات' },
-      { en: 'Arabic & English', ar: 'العربية والإنجليزية' },
+      { en: 'Arabic and English', ar: 'العربية والإنجليزية' },
     ],
     ctaTitle: 'Move your sales off the spreadsheet.', ctaTitleAr: 'انقل مبيعاتك من جداول البيانات.',
   },

@@ -24,7 +24,7 @@ const ICONS: Record<string, LucideIcon> = {
   'security-deposits': Wallet,
 }
 
-const labelClass = 'text-[11px] font-semibold uppercase tracking-[0.12em] text-faint mb-1.5'
+const labelClass = 'text-xs font-medium text-faint mb-1.5'
 
 /**
  * /resources/saudi-regulations/ in either language: one card per regulation

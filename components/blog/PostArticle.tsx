@@ -73,7 +73,7 @@ export default function PostArticle({ post, locale, contentHtml, toc, afterArtic
       <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
         <Header />
         <div className="container mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl font-bold text-strong mb-4">{t.notFound}</h1>
+          <h1 className="hero-display text-4xl text-strong mb-4">{t.notFound}</h1>
           <p className="text-muted mb-8">{t.notFoundDesc}</p>
           <Link
             href={localeHref("/blog", language)}

@@ -115,24 +115,8 @@ export default function Footer({ locale }: { locale: Locale }) {
 
   return (
     <footer className="relative overflow-hidden" style={{ background: 'var(--bg-deep)' }}>
-      {/* Top gradient border */}
-      <div
-        className="absolute top-0 left-0 right-0 h-px"
-        style={{
-          background:
-            'linear-gradient(90deg, transparent, rgb(var(--accent-rgb) / 0.4), rgb(var(--accent-rgb) / 0.4), transparent)',
-        }}
-      />
-
-      {/* Background glow */}
-      <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] rounded-full pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse, rgb(var(--accent-rgb) / 0.04) 0%, transparent 70%)',
-        }}
-        aria-hidden="true"
-      />
+      {/* Top hairline */}
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'var(--border)' }} aria-hidden="true" />
 
       <div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
@@ -169,7 +153,7 @@ export default function Footer({ locale }: { locale: Locale }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center text-faint transition-all duration-200 hover:text-strong hover:-translate-y-0.5"
+                    className="w-9 h-9 rounded-xl flex items-center justify-center text-faint transition-colors duration-150 hover:text-strong"
                     style={{
                       background: 'var(--surface)',
                       border: '1px solid var(--border)',

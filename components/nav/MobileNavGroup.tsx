@@ -31,7 +31,7 @@ export default function MobileNavGroup({ name, label, sections, onNavigate }: { 
             {sections.map((section, i) => (
               <div key={section.heading ?? i} className="pb-2">
                 {section.heading && (
-                  <p className="pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: 'var(--accent-hi)' }}>
+                  <p className="pt-2 pb-1 text-xs font-medium" style={{ color: 'var(--accent-hi)' }}>
                     {section.heading}
                   </p>
                 )}

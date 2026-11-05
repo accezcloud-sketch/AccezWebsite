@@ -110,7 +110,7 @@ export default function NavDropdown({ name, label, sections, align = 'start', tr
               {sections.map((section, i) => (
                 <div key={section.heading ?? i} className="flex flex-col" style={i > 0 ? { borderTop: '1px solid var(--border)', marginTop: 4, paddingTop: 4 } : undefined}>
                   {section.heading && (
-                    <p className="px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: 'var(--accent-hi)' }}>
+                    <p className="px-3 pt-2 pb-1 text-xs font-medium" style={{ color: 'var(--accent-hi)' }}>
                       {section.heading}
                     </p>
                   )}

@@ -50,7 +50,7 @@ export default function PostCard({
           src={coverImage}
           alt={coverImageAlt}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          className="object-cover"
         />
         <div className="absolute top-4 start-4">
           <span className="text-white text-xs px-3 py-1 rounded-full font-medium" style={{ background: 'var(--accent-solid)', boxShadow: '0 0 0 1px var(--accent-ring)' }}>

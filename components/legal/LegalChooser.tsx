@@ -17,7 +17,6 @@ function Shell({ title, subtitle, locale, children }: { title: string; subtitle:
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
       <Header />
       <section className="relative overflow-hidden page-top pb-24">
-        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '70%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h1 className="hero-display text-strong tracking-tight mb-4" style={{ fontSize: 'clamp(30px, 4.5vw, 46px)' }}>

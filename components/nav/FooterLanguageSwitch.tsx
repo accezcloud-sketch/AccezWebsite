@@ -1,5 +1,6 @@
 'use client'
 
+import { Globe } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { Locale } from '@/lib/i18n'
 
@@ -8,7 +9,7 @@ export default function FooterLanguageSwitch({ language }: { language: Locale })
   const { setLanguage } = useLanguage()
   return (
     <div className="flex items-center gap-1.5">
-      <span className="text-faint">🌐</span>
+      <Globe size={14} strokeWidth={1.5} className="text-faint" aria-hidden="true" />
       <button
         onClick={() => setLanguage('en')}
         className={`transition-colors duration-150 ${

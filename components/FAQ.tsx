@@ -59,15 +59,6 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
         className="relative py-20 px-4 sm:px-6 lg:px-12 overflow-hidden"
         style={{ background: 'var(--section-bg, var(--bg))' }}
       >
-        {/* Background glow */}
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
-          style={{
-            background: 'radial-gradient(ellipse, rgb(var(--accent-rgb) / 0.05) 0%, transparent 70%)',
-          }}
-          aria-hidden="true"
-        />
-
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <div className="flex justify-center mb-4"><span className="ui-chip">{tf.eyebrow}</span></div>
@@ -105,7 +96,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                   setActiveCategory(key)
                   setOpenIndex(null)
                 }}
-                className="px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200"
+                className="px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-150"
                 style={
                   activeCategory === key
                     ? {
@@ -132,7 +123,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
               return (
                 <div key={faq.question}>
                   <div
-                    className="rounded-xl overflow-hidden transition-all duration-200"
+                    className="rounded-xl overflow-hidden transition-[border-color,background-color] duration-150"
                     style={{
                       background: isOpen ? 'rgb(var(--accent-rgb) / 0.06)' : 'rgb(var(--fg-rgb) / 0.03)',
                       border: isOpen
@@ -147,10 +138,6 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
                       aria-controls={`faq-answer-${index}`}
                     >
                       <div className="flex items-start gap-3 min-w-0">
-                        <span
-                          className="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0"
-                          style={{ background: 'var(--accent)' }}
-                        />
                         <span
                           className="font-medium text-strong leading-snug"
                           style={{ fontSize: 15 }}
@@ -218,7 +205,7 @@ export default function FAQ({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2
               </div>
               <a
                 href={localeHref("/#contact", language)}
-                className="w-full sm:w-auto flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
+                className="w-full sm:w-auto flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-[filter] duration-150 hover:brightness-110"
                 style={{
                   background: 'linear-gradient(135deg, var(--accent-solid), var(--accent-solid-hover))',
                   boxShadow: '0 0 0 1px var(--accent-ring), 0 4px 16px rgb(var(--accent-rgb) / 0.3)',

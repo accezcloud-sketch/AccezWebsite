@@ -90,19 +90,10 @@ export default function LegalLayout({
 
       {/* Masthead */}
       <section className="relative overflow-hidden page-top pb-10">
-        <div
-          className="absolute inset-x-0 top-0 pointer-events-none"
-          style={{
-            height: '100%',
-            background:
-              'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)',
-          }}
-          aria-hidden="true"
-        />
         <div className="container mx-auto px-4 relative z-10">
           <div className="mx-auto" style={{ maxWidth: 820 }}>
             {solution && (
-              <p className="text-xs font-semibold uppercase tracking-[0.12em] mb-3" style={{ color: 'var(--accent-hi)' }}>
+              <p className="text-xs font-medium mb-3" style={{ color: 'var(--accent-hi)' }}>
                 {solution.audience[language]}
               </p>
             )}
@@ -246,7 +237,7 @@ export function LegalTable({
               {head.map((h) => (
                 <th
                   key={h}
-                  className="text-start px-4 py-3 text-xs font-semibold uppercase tracking-wider"
+                  className="text-start px-4 py-3 text-xs font-medium"
                   style={{
                     color: 'var(--text-muted)',
                     borderBottom: '1px solid var(--border-hi)',

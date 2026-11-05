@@ -27,11 +27,11 @@ export default function ProviderPricing({ headingLevel = 'h2', locale: language 
               <div key={plan.name} className="h-full">
                 <div
                   className="ui-card relative flex flex-col p-6 h-full"
-                  style={plan.highlight ? { borderColor: 'var(--accent-line)', boxShadow: 'inset 0 1px 0 var(--card-highlight), 0 0 0 1px var(--accent-line), 0 20px 60px rgb(var(--accent-rgb) / 0.16)' } : undefined}
+                  style={plan.highlight ? { borderColor: 'var(--accent-line)', boxShadow: '0 0 0 1px var(--accent-line), 0 8px 24px rgb(var(--shadow-rgb) / calc(0.16 * var(--shadow-k)))' } : undefined}
                 >
                   {plan.highlight && (
                     <span
-                      className="absolute -top-3 start-6 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide"
+                      className="absolute -top-3 start-6 px-2.5 py-0.5 rounded-md text-xs font-medium"
                       style={{ background: 'var(--accent-solid)', color: 'var(--on-accent)', boxShadow: '0 0 0 1px var(--accent-ring)' }}
                     >
                       {p.mostPopular}
@@ -42,7 +42,7 @@ export default function ProviderPricing({ headingLevel = 'h2', locale: language 
                   <p className="mb-4" style={{ fontSize: 13.5, color: 'var(--text-muted)' }}>{plan.tagline}</p>
 
                   <div className="flex items-end gap-1.5 mb-2">
-                    <span className="hero-display text-strong tracking-tight" style={{ fontSize: 34 }}>{plan.price}</span>
+                    <span className="hero-display text-strong tabular-nums" style={{ fontSize: 34 }}>{plan.price}</span>
                     {plan.price !== p.plans[0].price && (
                       <span className="mb-1.5" style={{ fontSize: 14, color: 'var(--text-faint)' }}>{p.perMonth}</span>
                     )}
@@ -54,7 +54,7 @@ export default function ProviderPricing({ headingLevel = 'h2', locale: language 
                       className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg mb-6 self-start"
                       style={{ background: 'var(--accent-dim)', border: '1px solid var(--accent-line)' }}
                     >
-                      <span className="font-bold" style={{ fontSize: 13, color: 'var(--accent-hi)' }}>{plan.platformFee}</span>
+                      <span className="font-semibold" style={{ fontSize: 13, color: 'var(--accent-hi)' }}>{plan.platformFee}</span>
                       <span style={{ fontSize: 11.5, color: 'var(--text-muted)' }}>{p.feeSuffix}</span>
                     </div>
                   ) : (
@@ -65,7 +65,7 @@ export default function ProviderPricing({ headingLevel = 'h2', locale: language 
                     href={PROVIDER_SIGN_UP}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5 mb-6"
+                    className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-[background-color,border-color,box-shadow] duration-150 mb-6"
                     style={
                       plan.highlight
                         ? { background: 'var(--accent-solid)', color: 'var(--on-accent)', boxShadow: '0 0 0 1px var(--accent-ring)', fontSize: 14.5 }

@@ -59,12 +59,11 @@ function Content({ locale }: { locale: Locale }) {
   return (
     <div data-nf={locale} lang={locale} dir={ar ? 'rtl' : 'ltr'}>
       <section className="nf-hero relative overflow-hidden px-4 pb-16" style={{ paddingTop: 'calc(var(--nav-h) + 56px)' }}>
-        <div className="nf-ring mx-auto flex items-center justify-center">
-          {[0, 1.5, 3].map((d) => <span key={d} className="nf-wave" style={{ animationDelay: `${d}s` }} aria-hidden="true" />)}
-          <p className="relative hero-display grad-text leading-none" style={{ fontSize: 'clamp(80px, 14vw, 150px)' }} dir="ltr">404</p>
+        <div className="flex items-center justify-center">
+          <p className="hero-display leading-none tabular-nums" style={{ fontSize: 'clamp(80px, 14vw, 150px)', color: 'var(--text-faint)' }} dir="ltr">404</p>
         </div>
         <div className="relative text-center max-w-2xl mx-auto">
-          <h1 className="hero-display text-strong tracking-tight mt-10" style={{ fontSize: 'clamp(26px, 4vw, 40px)' }}>{c.title}</h1>
+          <h1 className="hero-display text-strong mt-6" style={{ fontSize: 'clamp(26px, 4vw, 40px)' }}>{c.title}</h1>
           <p className="mt-4 leading-relaxed mx-auto" style={{ fontSize: 17, color: 'var(--text-muted)', maxWidth: '34rem' }}>{c.body}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <Link href={localeHref('/', locale)} className="ui-btn ui-btn-primary">
@@ -107,23 +106,6 @@ export default function NotFound() {
       <style>{`
         [data-nf="ar"], html.nf-ar [data-nf="en"] { display: none; }
         html.nf-ar [data-nf="ar"] { display: block; }
-        .nf-hero { --nf-size: 260px; }
-        @media (min-width: 768px) { .nf-hero { --nf-size: 340px; } }
-        .nf-hero::before {
-          content: ''; position: absolute; inset: 0; pointer-events: none;
-          background: radial-gradient(60% 50% at 50% 30%, rgb(var(--accent-rgb) / 0.14), transparent 70%);
-        }
-        .nf-ring {
-          position: relative; width: var(--nf-size); height: var(--nf-size); border-radius: 9999px;
-          border: 1px solid var(--accent-line);
-          box-shadow: 0 0 24px rgb(var(--accent-rgb) / 0.16), inset 0 0 24px rgb(var(--accent-rgb) / 0.08);
-        }
-        .nf-wave {
-          position: absolute; inset: 22%; border-radius: 9999px; border: 1.5px solid var(--accent-hi);
-          opacity: 0; animation: nf-wave 4.5s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
-        }
-        @keyframes nf-wave { 0% { transform: scale(1); opacity: 0.45; } 100% { transform: scale(1.75); opacity: 0; } }
-        @media (prefers-reduced-motion: reduce) { .nf-wave { display: none; } }
       `}</style>
       <script dangerouslySetInnerHTML={{ __html: PICK_LANGUAGE }} />
       <Header />

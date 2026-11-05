@@ -143,9 +143,9 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
               transform: 'translate(-50%, -50%)',
               width: 'var(--hub)',
               height: 'var(--hub)',
-              background: 'radial-gradient(circle at 50% 40%, rgb(var(--accent-rgb) / 0.22), var(--panel))',
+              background: 'var(--card-bg)',
               border: '1px solid var(--accent-line)',
-              boxShadow: '0 0 0 8px rgb(var(--accent-rgb) / 0.05), 0 20px 60px rgb(var(--accent-rgb) / 0.3)',
+              boxShadow: '0 8px 24px rgb(var(--shadow-rgb) / calc(0.16 * var(--shadow-k)))',
             }}
           >
             <Image src="/images/accez-logo.png" alt="Accez" width={36} height={36} className="rounded-lg mb-1.5 w-7 h-7 md:w-9 md:h-9" />

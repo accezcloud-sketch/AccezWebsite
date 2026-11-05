@@ -86,7 +86,7 @@ export default function Select({ value, onChange, options, ariaLabel, isRTL = fa
         aria-label={ariaLabel}
         onClick={() => setOpen((v) => !v)}
         onKeyDown={onKeyDown}
-        className="w-full flex items-center justify-between gap-2 px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-start focus:ring-2"
+        className="w-full flex items-center justify-between gap-2 px-4 py-3 rounded-lg border transition-[border-color,box-shadow] duration-150 outline-none text-start focus:ring-2"
         style={{
           background: 'var(--surface)',
           borderColor: open ? 'var(--accent)' : 'var(--border-hi)',

@@ -31,7 +31,7 @@ export default function ProductCta({ product, locale }: ProductCtaProps) {
       <div className="container mx-auto px-4">
         <div
           className="rounded-3xl px-6 py-10 sm:px-10 max-w-3xl mx-auto"
-          style={{ background: 'linear-gradient(135deg, rgb(var(--accent-rgb) / 0.14), var(--surface))', border: '1px solid var(--accent-line)' }}
+          style={{ background: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
         >
           <span
             className="ui-chip mb-4"

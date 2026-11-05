@@ -15,7 +15,7 @@ export default function SupportPage() {
       eyebrow: 'Support',
       title: 'How can we help?',
       subtitle: 'Need help? Submit a support ticket and our team in Riyadh will get back to you as soon as possible.',
-      contactName: 'Contact Name',
+      contactName: 'Contact name',
       email: 'Email',
       phone: 'Phone',
       subject: 'Subject',
@@ -27,7 +27,7 @@ export default function SupportPage() {
         email: 'your@email.com',
         phone: '+966 5X XXX XXXX',
         subject: 'Brief summary of your issue',
-        description: 'Please describe your issue in detail...',
+        description: 'Describe the issue',
         company: 'Your company name',
       },
     },
@@ -47,7 +47,7 @@ export default function SupportPage() {
         email: 'بريدك@الإلكتروني.com',
         phone: '+966 5X XXX XXXX',
         subject: 'ملخص موجز لمشكلتك',
-        description: 'يرجى وصف مشكلتك بالتفصيل...',
+        description: 'صف المشكلة',
         company: 'اسم شركتك',
       },
     },
@@ -72,7 +72,7 @@ export default function SupportPage() {
   }, [])
 
   const fieldClass =
-    'w-full px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-strong focus:ring-2'
+    'w-full px-4 py-3 rounded-lg border transition-[border-color,box-shadow] duration-150 outline-none text-strong focus:ring-2'
   const fieldStyle = {
     background: 'var(--bg)',
     borderColor: 'var(--border-hi)',
@@ -87,7 +87,6 @@ export default function SupportPage() {
       <Header />
 
       <section className="relative overflow-hidden page-top pb-20">
-        <div className="absolute inset-x-0 top-0 pointer-events-none" style={{ height: '60%', background: 'radial-gradient(120% 70% at 50% 0%, var(--glow) 0%, var(--glow-fade) 30%, transparent 62%)' }} aria-hidden="true" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-10">

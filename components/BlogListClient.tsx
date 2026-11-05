@@ -43,15 +43,15 @@ export default function BlogListClient({ posts, topics = [], tags, scopeTopic, p
 
   const content = {
     en: {
-      searchPlaceholder: 'Search articles...',
-      allTopics: 'All Topics',
-      allTags: 'All Tags',
-      readMore: 'Read More',
+      searchPlaceholder: 'Search articles',
+      allTopics: 'All topics',
+      allTags: 'All tags',
+      readMore: 'Read more',
       noPosts: 'No blog posts found.',
       by: 'By',
     },
     ar: {
-      searchPlaceholder: 'البحث في المقالات...',
+      searchPlaceholder: 'البحث في المقالات',
       allTopics: 'جميع المواضيع',
       allTags: 'جميع الوسوم',
       readMore: 'اقرأ المزيد',
@@ -85,7 +85,7 @@ export default function BlogListClient({ posts, topics = [], tags, scopeTopic, p
   }
 
   const controlClass =
-    'w-full px-4 py-3 rounded-lg border transition-all duration-200 outline-none text-strong focus:ring-2'
+    'w-full px-4 py-3 rounded-lg border transition-[border-color,box-shadow] duration-150 outline-none text-strong focus:ring-2'
   const controlStyle = {
     background: 'var(--surface)',
     borderColor: 'var(--border-hi)',

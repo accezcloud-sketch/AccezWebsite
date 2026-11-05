@@ -28,7 +28,7 @@ export default function Contact() {
   }, [])
 
   const inputClass =
-    'w-full px-4 py-3 rounded-lg text-strong placeholder:text-faint transition-all duration-200 outline-none focus:ring-2 focus:ring-[rgb(var(--accent-rgb)/0.6)] focus:border-transparent'
+    'w-full px-4 py-3 rounded-lg text-strong placeholder:text-faint transition-[border-color,box-shadow] duration-150 outline-none focus:ring-2 focus:ring-[rgb(var(--accent-rgb)/0.6)] focus:border-transparent'
 
   const inputStyle: React.CSSProperties = {
     background: 'var(--surface)',
@@ -106,7 +106,7 @@ export default function Contact() {
                     href="https://wa.me/18444603371"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
+                    className="mt-6 inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 rounded-xl font-semibold transition-colors duration-150"
                     style={{ background: 'rgba(37,211,102,0.12)', border: '1px solid rgba(37,211,102,0.35)', color: 'var(--text)' }}
                   >
                     <svg className="w-5 h-5" fill="#25D366" viewBox="0 0 24 24" aria-hidden="true">

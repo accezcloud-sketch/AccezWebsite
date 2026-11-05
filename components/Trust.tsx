@@ -18,7 +18,7 @@ const INTEGRATIONS: IntegrationGroup[] = [
     items: ['Airbnb', 'Booking.com', 'Expedia'],
   },
   {
-    label: 'Channel manager & calendars',
+    label: 'Channel manager and calendars',
     labelAr: 'مدير القنوات والتقاويم',
     items: ['RoomCloud', 'iCal sync'],
   },
@@ -45,16 +45,16 @@ interface TrustPoint {
 const POINTS: TrustPoint[] = [
   {
     icon: ArabicEnglishIcon,
-    title: 'Arabic & English, native',
+    title: 'Arabic and English, native',
     titleAr: 'العربية والإنجليزية بشكل أصيل',
-    desc: 'Every screen in both languages, right-to-left throughout, not a bolted-on translation.',
+    desc: 'Every screen in both languages, right-to-left throughout, not a bolted-on translation',
     descAr: 'كل شاشة باللغتين، مع دعم كامل للكتابة من اليمين لليسار، وليست مجرد ترجمة مضافة.',
   },
   {
     icon: CreditCard,
     title: 'Card payments',
     titleAr: 'مدفوعات بالبطاقات',
-    desc: 'Collect rent, fees and bookings through secure online card payments.',
+    desc: 'Collect rent, fees and bookings through secure online card payments',
     descAr: 'حصّل الإيجارات والرسوم والحجوزات عبر مدفوعات بطاقات آمنة عبر الإنترنت.',
 
   },
@@ -62,7 +62,7 @@ const POINTS: TrustPoint[] = [
     icon: ShieldCheck,
     title: 'Security built in',
     titleAr: 'أمان مدمج',
-    desc: 'Encrypted credentials, token sessions, CSRF and rate-limit protection, and per-record access control.',
+    desc: 'Encrypted credentials, token sessions, CSRF and rate-limit protection, and per-record access control',
     descAr: 'بيانات اعتماد مشفّرة، وجلسات موثّقة، وحماية من CSRF وتحديد المعدل، وتحكّم بالوصول على مستوى كل سجل.',
   },
   {
@@ -76,19 +76,19 @@ const POINTS: TrustPoint[] = [
 
 const CONTENT = {
   en: {
-    eyebrow: 'Integrations & Trust',
-    titleLead: 'Connected to your stack,',
-    titleAccent: 'built for Saudi Arabia',
+    eyebrow: 'Integrations and trust',
+    titleLead: 'Connected to the tools you use,',
+    titleAccent: 'built in Riyadh',
     subtitle:
-      'Accez plugs into the channels, payment rails and tools you already use, and runs on real security, in both languages, from Riyadh.',
+      'Airbnb, Booking.com, Expedia, Stripe, Tap and SMS connect to Accez, and every screen works in Arabic and English.',
     integrationsHeading: 'Works with',
   },
   ar: {
     eyebrow: 'التكاملات والثقة',
     titleLead: 'متصلة بأدواتك،',
-    titleAccent: 'ومبنية للسعودية',
+    titleAccent: 'ومبنية في الرياض',
     subtitle:
-      'تتكامل أكسيز مع القنوات وأنظمة الدفع والأدوات التي تستخدمها بالفعل، وتعمل بأمان حقيقي، وباللغتين، من الرياض.',
+      'يتصل أكسيز بـAirbnb وBooking.com وExpedia وStripe وTap والرسائل النصية، وتعمل كل شاشاته بالعربية والإنجليزية.',
     integrationsHeading: 'تعمل مع',
   },
 } as const
@@ -116,11 +116,11 @@ export default function Trust({ locale: language }: { locale: Locale }) {
         {/* Integrations and trust points in one panel. */}
         <div>
           <div className="ui-card max-w-6xl mx-auto rounded-[var(--radius-lg)] p-5 sm:p-8">
-            <p className="text-center text-xs font-semibold tracking-widest uppercase mb-6 text-faint">{t.integrationsHeading}</p>
+            <p className="text-center text-xs font-medium mb-6 text-faint">{t.integrationsHeading}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 sm:mb-10">
               {INTEGRATIONS.map((group) => (
                 <div key={group.label} className="flex flex-col items-center gap-3 text-center">
-                  <p className="text-[11px] font-semibold uppercase" style={{ color: 'var(--accent-hi)', letterSpacing: '0.06em' }}>
+                  <p className="text-xs font-medium" style={{ color: 'var(--accent-hi)' }}>
                     {language === 'ar' ? group.labelAr : group.label}
                   </p>
                   <div className="flex flex-wrap justify-center gap-2">

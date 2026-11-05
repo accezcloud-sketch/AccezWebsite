@@ -119,7 +119,7 @@ export const ar = {
     mobile: 'الجوال',
     city: 'المدينة',
     comments: 'التعليقات',
-    commentsPlaceholder: 'أخبرنا كيف يمكننا مساعدتك...',
+    commentsPlaceholder: 'أخبرنا كيف يمكننا مساعدتك',
     placeholders: {
       firstName: 'اسمك الأول',
       lastName: 'اسم العائلة',

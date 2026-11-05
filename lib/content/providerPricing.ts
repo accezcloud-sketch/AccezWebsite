@@ -4,7 +4,7 @@
  */
 export const PROVIDER_PRICING_COPY = {
   en: {
-    pricingEyebrow: 'Provider Pricing',
+    pricingEyebrow: 'Provider pricing',
     pricingTitleLead: 'Plans for',
     pricingTitleAccent: 'service providers',
     pricingSubtitle:

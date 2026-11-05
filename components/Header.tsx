@@ -117,7 +117,7 @@ export default function Header() {
     <header
       className={[
         'fixed top-0 left-0 right-0 z-[100] w-full border-b',
-        'transition-all duration-300 ease-in-out',
+        'transition-[background-color,border-color,box-shadow] duration-200 ease-out',
         // The open mobile menu needs the bar's own background: its buttons switch to
         // dark text, which would vanish over a dark photo on a transparent bar.
         scrolled || isMobileMenuOpen ? 'glass-bar' : 'border-transparent',
@@ -204,7 +204,7 @@ export default function Header() {
 
                   {/* Sign in: flat, since a nested dropdown in a drawer is an extra tap. */}
                   <div className="mt-3 pt-3 flex flex-col gap-1" style={{ borderTop: '1px solid var(--border)' }}>
-                    <p className="text-[0.7rem] uppercase tracking-wider pb-1 text-muted">{t.header.signIn}</p>
+                    <p className="text-xs pb-1 text-muted">{t.header.signIn}</p>
                     {PLATFORM_SOLUTIONS.map((s) => (
                       <a key={s.key} href={s.loginUrl} target="_blank" rel="noopener noreferrer" onClick={closeMobile} className="text-soft hover:text-strong font-medium transition-colors duration-200 py-2">
                         {s.role[language]}
@@ -226,7 +226,7 @@ export default function Header() {
       <div
         ref={progressRef}
         className="absolute bottom-0 left-0 right-0 h-[1.5px] origin-left"
-        style={{ transform: 'scaleX(0)', transition: 'transform .12s linear', background: 'linear-gradient(90deg, var(--accent), var(--accent-hi))' }}
+        style={{ transform: 'scaleX(0)', transition: 'transform .12s linear', background: 'var(--accent)' }}
       />
     </header>
   )
