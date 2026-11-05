@@ -133,7 +133,7 @@ export default function Header() {
             aria-label={ar ? 'أكسيز.كلاود، الصفحة الرئيسية' : 'Accez.cloud, go to home'}
             className="flex items-center shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           >
-            <Image src="/images/accez-logo.png" alt="" width={40} height={40} className="rounded-lg" priority />
+            <Image src="/images/accez-logo.png" alt="" width={112} height={116} className="rounded-lg w-10 h-auto" priority />
           </Link>
 
           {/* Desktop navigation */}

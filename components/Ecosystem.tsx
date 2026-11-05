@@ -148,7 +148,7 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
               boxShadow: '0 8px 24px rgb(var(--shadow-rgb) / calc(0.16 * var(--shadow-k)))',
             }}
           >
-            <Image src="/images/accez-logo.png" alt="Accez" width={36} height={36} className="rounded-lg mb-1.5 w-7 h-7 md:w-9 md:h-9" />
+            <Image src="/images/accez-logo.png" alt="Accez" width={112} height={116} className="rounded-lg mb-1.5 w-7 md:w-9 h-auto" />
             <span className="hero-display text-strong text-sm md:text-lg leading-none">{t.hub}</span>
             <span className="text-[10px] md:text-[11px] mt-1 leading-tight" style={{ color: 'var(--text-faint)' }}>
               {t.hubSub}

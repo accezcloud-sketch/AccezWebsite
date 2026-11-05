@@ -67,9 +67,9 @@ export default function ThankYou() {
             <Image
               src="/images/accez-logo.png"
               alt="Accez Logo"
-              width={32}
-              height={32}
-              className="rounded-lg"
+              width={112}
+              height={116}
+              className="rounded-lg w-8 h-auto"
             />
             <span className="text-2xl font-medium text-strong">Accez.cloud</span>
           </div>

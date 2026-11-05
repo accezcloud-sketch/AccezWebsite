@@ -127,9 +127,9 @@ export default function Footer({ locale }: { locale: Locale }) {
                 <Image
                   src="/images/accez-logo.png"
                   alt="Accez Logo"
-                  width={28}
-                  height={28}
-                  className="rounded-md"
+                  width={112}
+                  height={116}
+                  className="rounded-md w-7 h-auto"
                 />
                 <span
                   className="hero-display text-strong text-lg"

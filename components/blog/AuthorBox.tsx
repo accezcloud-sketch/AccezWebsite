@@ -23,7 +23,7 @@ export default function AuthorBox({ locale }: { locale: Locale }) {
   const c = COPY[locale]
   return (
     <aside aria-labelledby="post-author" className="ui-card mt-10 p-5 sm:p-6 flex items-start gap-4">
-      <Image src="/images/accez-logo.png" alt="" width={44} height={44} className="rounded-xl shrink-0" />
+      <Image src="/images/accez-logo.png" alt="" width={112} height={116} className="rounded-xl shrink-0 w-11 h-auto" />
       <div className="min-w-0">
         <h2 id="post-author" className="text-strong font-semibold mb-1.5" style={{ fontSize: 16 }}>
           {c.heading}
