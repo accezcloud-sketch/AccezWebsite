@@ -35,9 +35,9 @@ export const FAQS: FaqItem[] = [
     question: 'What is Accez.cloud and how does it work?',
     questionAr: 'ما هو Accez.cloud وكيف يعمل؟',
     answer:
-      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and serviced apartment operators: reservations synced with Airbnb, Booking.com and Expedia, rent, work orders, owners and payouts, and sales. The service provider marketplace lets salons, spas, fitness coaches, photographers and home services list their business and take bookings from their own clients and new customers. The two solutions are separate account types.',
+      'Accez.cloud is one platform with two solutions. Property management runs the whole operation for property managers, landlords and serviced apartment operators: reservations synced with Airbnb, Booking.com and Expedia, rent, work orders, owners and payouts, and sales. The service provider marketplace lets barbers, salons, spas, coaches and personal trainers list their business and take bookings from their own clients and new customers. The two solutions are separate account types.',
     answerAr:
-      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الشقق المخدومة: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للصالونات والمنتجعات الصحية ومدربي اللياقة والمصورين والخدمات المنزلية إدراج نشاطهم واستقبال الحجوزات من عملائهم ومن عملاء جدد. والحلّان نوعا حساب منفصلان.',
+      'Accez.cloud منصة واحدة بحلّين. إدارة العقارات تدير العملية بالكامل لمديري العقارات والملاك ومشغّلي الشقق المخدومة: حجوزات متزامنة مع Airbnb وBooking.com وExpedia، والإيجارات، وأوامر العمل، والملاك والمدفوعات، والمبيعات. وسوق مقدمي الخدمات يتيح للحلاقين والصالونات والسبا والمدربين الشخصيين إدراج نشاطهم واستقبال الحجوزات من عملائهم ومن عملاء جدد. والحلّان نوعا حساب منفصلان.',
   },
   {
     category: 'pricingBilling',
