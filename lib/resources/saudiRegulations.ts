@@ -29,6 +29,12 @@ export interface RegulationTopic {
   sources: OfficialLink[]
   /** Blog posts that explain it, best first. */
   postSlugs: string[]
+  /**
+   * Words in a post's English title or address that file it under this topic.
+   * New posts (the blog automation adds them) appear after the hand-picked ones,
+   * so the hub never misses a post the blog files under Saudi regulations.
+   */
+  match: RegExp
 }
 
 /** Domains the hub may link to: the authorities' own sites. */
@@ -94,6 +100,7 @@ export const REGULATION_TOPICS: RegulationTopic[] = [
       },
     ],
     postSlugs: ['ejar-compliance-made-simple-automating-saudi-rental-regulations', 'handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia'],
+    match: /\bejar\b|lease (?:documentation|contract)|unified lease|brokerage|\bfal\b|\brega\b|real estate (?:registry|ad\b|advertis)|\bwafi\b|off[\s-]plan|owners? associations?|mullak/i,
   },
   {
     id: 'zatca-tax',
@@ -111,6 +118,7 @@ export const REGULATION_TOPICS: RegulationTopic[] = [
       },
     ],
     postSlugs: ['vat-and-property-management-keeping-your-books-clean-and-compliant', 'zatca-e-invoicing-fatoora-what-property-managers-must-do'],
+    match: /zatca|\bvat\b|e-?invoic|fatoora|\btax\b/i,
   },
   {
     id: 'pdpl',
@@ -127,6 +135,7 @@ export const REGULATION_TOPICS: RegulationTopic[] = [
       },
     ],
     postSlugs: ['pdpl-and-tenant-data-what-saudi-arabia-s-privacy-law-means-for-property-managers'],
+    match: /pdpl|data protection|privacy/i,
   },
   {
     id: 'tourism-licensing',
@@ -138,6 +147,7 @@ export const REGULATION_TOPICS: RegulationTopic[] = [
     authority: { name: { en: 'Ministry of Tourism', ar: 'وزارة السياحة' }, url: 'https://mt.gov.sa/' },
     sources: [],
     postSlugs: ['saudi-s-short-term-rental-licensing-getting-your-str-permit'],
+    match: /tourism|\bstr\b|short[\s-]term rental licen|holiday home|shomoos|licen[cs]|permit|balady/i,
   },
   {
     id: 'riyadh-rent-rules',
@@ -154,6 +164,7 @@ export const REGULATION_TOPICS: RegulationTopic[] = [
       },
     ],
     postSlugs: ['rent-increases-and-lease-renewals', 'handling-tenant-disputes-and-evictions-the-right-way-in-saudi-arabia'],
+    match: /riyadh|rent (?:increase|freeze|cap)|rent rules/i,
   },
   {
     id: 'security-deposits',
@@ -165,6 +176,7 @@ export const REGULATION_TOPICS: RegulationTopic[] = [
     authority: { name: { en: 'Ejar platform, under REGA', ar: 'منصة إيجار، التابعة للهيئة العامة للعقار' }, url: 'https://www.ejar.sa/' },
     sources: [],
     postSlugs: ['security-deposits-done-right-avoiding-disputes-at-move-out', 'move-in-move-out-inspections-protecting-every-property'],
+    match: /deposit|move[\s-]in|move[\s-]out/i,
   },
 ]
 
@@ -180,14 +192,35 @@ export interface RegulationGuide {
  */
 export function guidesFor(topic: RegulationTopic, posts: BlogPostMeta[], locale: Locale): RegulationGuide[] {
   const bySlug = new Map(posts.map((p) => [p.slug, p]))
-  return topic.postSlugs.map((slug) => {
+  return topicPostSlugs(topic, posts).map((slug) => {
     const post = bySlug.get(slug)
     if (!post) throw new Error(`Saudi regulations hub: no post "${slug}" (topic ${topic.id})`)
     return { slug, title: locale === 'ar' ? post.titleAr : post.title, reviewed: post.reviewed }
   })
 }
 
-/** Every post the hub links to, once. */
-export function hubPostSlugs(): string[] {
-  return [...new Set(REGULATION_TOPICS.flatMap((t) => t.postSlugs))]
+type HubPost = Pick<BlogPostMeta, 'slug' | 'title' | 'date' | 'topic'>
+
+/** The topic a Saudi regulations post belongs to: the first whose words match, else Ejar and leases. */
+export function regulationTopicOf(post: Pick<BlogPostMeta, 'slug' | 'title'>): string {
+  const text = post.title + ' ' + post.slug.replace(/-/g, ' ')
+  return (REGULATION_TOPICS.find((t) => t.match.test(text)) ?? REGULATION_TOPICS[0]).id
+}
+
+/**
+ * A topic's posts: the hand-picked ones first, then every other post the blog
+ * files under Saudi regulations that belongs to this topic, newest first.
+ */
+export function topicPostSlugs(topic: RegulationTopic, posts: HubPost[]): string[] {
+  const picked = new Set(REGULATION_TOPICS.flatMap((t) => t.postSlugs))
+  const added = posts
+    .filter((p) => p.topic === 'saudi-regulations' && !picked.has(p.slug) && regulationTopicOf(p) === topic.id)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .map((p) => p.slug)
+  return [...topic.postSlugs, ...added]
+}
+
+/** Every post the hub links to, once (hand-picked only when no posts are given). */
+export function hubPostSlugs(posts: HubPost[] = []): string[] {
+  return [...new Set(REGULATION_TOPICS.flatMap((t) => topicPostSlugs(t, posts)))]
 }

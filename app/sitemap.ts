@@ -26,8 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Pages that show a strip of posts change when those posts do.
   const lastModifiedFor = (route: string): string => {
     const own = staticPageDate(route)
-    const linked = PAGES_LINKING_POSTS[route]
-    if (linked) return newestDate(getAllPosts().filter((p) => linked.includes(p.slug)), own)
+    const linkedFor = PAGES_LINKING_POSTS[route]
+    if (linkedFor) {
+      const linked = linkedFor(getAllPosts())
+      return newestDate(getAllPosts().filter((p) => linked.includes(p.slug)), own)
+    }
     const shows = POST_LISTING_PAGES[route]
     if (!shows) return own
     const posts = shows === 'all' ? getAllPosts() : getPostsForProduct(shows, Number.MAX_SAFE_INTEGER)

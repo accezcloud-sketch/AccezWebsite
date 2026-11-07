@@ -48,8 +48,8 @@ export function newestDate(posts: DatedPost[], fallback: string): string {
  * Pages that link to a fixed set of posts and show each one's review date
  * (the Saudi regulations hub): they change when one of those posts does.
  */
-export const PAGES_LINKING_POSTS: Record<string, string[]> = {
-  [REGULATIONS_HUB_ROUTE]: hubPostSlugs(),
+export const PAGES_LINKING_POSTS: Record<string, (posts: Parameters<typeof hubPostSlugs>[0]) => string[]> = {
+  [REGULATIONS_HUB_ROUTE]: (posts) => hubPostSlugs(posts),
 }
 
 /** Every static page in the sitemap (both languages each), as route keys. */

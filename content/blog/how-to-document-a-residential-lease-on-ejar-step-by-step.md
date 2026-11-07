@@ -1,7 +1,7 @@
 ---
 title: "How to Document a Residential Lease on Ejar, Step by Step"
 titleAr: "كيفية توثيق عقد إيجار سكني عبر منصة إيجار، خطوة بخطوة"
-metaTitle: "Document Residential Lease Ejar: Step-by-Step Guide"
+metaTitle: "How to Document a Residential Lease on Ejar"
 metaTitleAr: "توثيق عقد الإيجار السكني في إيجار: دليل خطوة بخطوة"
 metaDescription: "Learn how to document a residential lease on Saudi Arabia's Ejar platform with our easy-to-follow, step-by-step guide for property managers."
 metaDescriptionAr: "تعرف على كيفية توثيق عقد إيجار سكني على منصة إيجار السعودية من خلال دليلنا المبسّط خطوة بخطوة، المصمم لمديري العقارات."
@@ -11,10 +11,10 @@ excerptAr: "إتقان منصة إيجار للعقود السكنية أمر ح
 date: "2026-11-07"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
-coverImage: "/images/blog/how-to-document-a-residential-lease-on-ejar-step-by-step.jpg"
-coverImageAlt: "A wooden rubber stamp resting on an open German legal document"
-coverImageCredit: "Photo by Markus Spiske on Unsplash"
-coverImageCreditUrl: "https://unsplash.com/photos/rubber-stamp-on-legal-document-7PMGUqYQpYc"
+coverImage: "/images/blog/how-to-document-a-residential-lease-on-ejar-step-by-step.webp"
+coverImageAlt: "A hand ticking off items on a handwritten checklist in a notebook"
+coverImageCredit: "Photo by Jakub Żerdzicki on Unsplash"
+coverImageCreditUrl: "https://unsplash.com/photos/hand-checking-off-items-on-a-to-do-list-fXlL5I0IvK0"
 category: "Industry Insights"
 categoryAr: "رؤى الصناعة"
 tags: ["Ejar", "Saudi Arabia", "Lease Agreement", "Property Management", "Rental Laws"]
@@ -23,7 +23,7 @@ tagsAr: ["إيجار", "السعودية", "عقد إيجار", "إدارة ال
 
 > Documenting residential leases on Saudi Arabia's Ejar platform is a mandatory step for property managers and owners to ensure legal compliance and streamline rental processes. This guide breaks down the entire procedure, from initial preparation to final registration, detailing each required step to successfully complete your rental contracts. Avoid common pitfalls by understanding the nuances of the Ejar system.
 
-The rental market in Saudi Arabia is increasingly digital, with government initiatives like Ejar mandating the formal documentation of all residential lease agreements. For property managers, owners, and operators, understanding and adhering to this process is not just a regulatory requirement but a fundamental aspect of professional operations. It ensures transparency, protects both parties, and facilitates smoother transactions. Navigating the Ejar platform can seem complex, but with a clear, step-by-step approach, it becomes a manageable and essential part of your workflow.
+The rental market in Saudi Arabia is increasingly digital, and residential lease agreements are documented on the official [Ejar platform](https://www.ejar.sa/). For property managers, owners, and operators, understanding and adhering to this process is not just a regulatory requirement but a fundamental aspect of professional operations. It ensures transparency, protects both parties, and facilitates smoother transactions. Navigating the Ejar platform can seem complex, but with a clear, step-by-step approach, it becomes a manageable and essential part of your workflow.
 
 ## Preparing for Lease Documentation on Ejar
 
@@ -39,7 +39,6 @@ The Ejar platform requires specific details about the property being leased and 
     *   **Building Number, Street Name, District, City:** Standard address components.
     *   **Property Usage:** Residential or commercial (though this guide focuses on residential).
     *   **Building Area and Unit Number:** Specifics of the leased unit.
-    *   **Property Photos:** Clear images of the property, both exterior and interior, are often required.
 *   **Tenant Information:**
     *   **Tenant's Iqama (Residency Permit) Number:** For expatriate tenants.
     *   **Tenant's National ID Number:** For Saudi nationals.
@@ -81,7 +80,7 @@ Navigate to the section for creating new rental contracts. This is usually found
 You will be prompted to enter detailed information about the property.
 
 *   **Search for Existing Property:** If the property is already registered on Ejar, you may be able to search for it by its registered details or national address.
-*   **Add New Property:** If it's a new registration, you will need to input all the property information gathered during the preparation phase, including the national address, building and unit numbers, and property type. Upload clear photos of the property as required.
+*   **Add New Property:** If it's a new registration, you will need to input all the property information gathered during the preparation phase, including the national address, building and unit numbers, and property type.
 
 ### Step 4: Input Tenant and Owner Information
 
@@ -110,12 +109,12 @@ Once you have reviewed and confirmed the contract details, the tenant will need 
 *   **Tenant Verification:** The tenant will receive an SMS or email with a link or code to access the contract on the Ejar platform. They will be required to log in to their Ejar account (or register one if they haven't already) to review and electronically agree to the lease.
 *   **Confirmation:** Once the tenant agrees, the contract status will update on your Ejar dashboard, indicating it has been accepted by both parties.
 
-### Step 8: Ejar Contract Issuance and Payment Link Generation
+### Step 8: Contract Issuance and Rent Payment
 
 Upon successful tenant verification and agreement, the Ejar system will issue the official digital rental contract.
 
 *   **Official Contract:** This contract is legally binding and serves as proof of the rental agreement. It is stored securely within the Ejar platform.
-*   **Payment Link:** Ejar will generate a payment link or direct you to the appropriate payment gateway (like the one managed through the Saudi Central Bank's system) for rent payments. This is how tenants will pay rent, and how owners will receive it, ensuring secure and regulated transactions.
+*   **Rent Payments:** Rent can then be paid through Ejar's digital payment channels, so each payment is recorded against the documented contract.
 
 ## Common Mistakes to Avoid When Documenting Leases on Ejar
 
@@ -143,7 +142,7 @@ While Ejar handles the official registration and payment facilitation, Accez can
 
 ### How do I register a property on Ejar?
 
-To register a property on Ejar, you must first create an Ejar account. Then, navigate to the property registration section, enter the verified National Address and all property details such as type, size, and unit number, and upload necessary documents or photos.
+To register a property on Ejar, you must first create an Ejar account. Then, navigate to the property registration section, enter the verified National Address and all property details such as type, size, and unit number, and add any documents the platform asks for.
 
 ### What happens if a tenant refuses to agree to the lease on Ejar?
 
@@ -175,7 +174,7 @@ See how the [Accez property management solution](/solutions/property-managers/) 
 
 > يعد توثيق عقود الإيجار السكنية على منصة إيجار السعودية خطوة إلزامية لمديري العقارات والملاك لضمان الامتثال القانوني وتبسيط إجراءات التأجير. يفصّل هذا الدليل الإجراء الكامل، من التحضير الأولي إلى التسجيل النهائي، مع شرح لكل خطوة مطلوبة لإتمام عقود الإيجار بنجاح. تجنب الأخطاء الشائعة بفهم تفاصيل نظام إيجار.
 
-يشهد سوق الإيجار في المملكة العربية السعودية تحولاً رقمياً متزايداً، حيث تتطلب المبادرات الحكومية مثل إيجار التوثيق الرسمي لجميع عقود الإيجار السكنية. بالنسبة لمديري العقارات والملاك والمشغلين، فإن فهم هذه العملية والالتزام بها ليس مجرد مطلب تنظيمي، بل هو جانب أساسي من جوانب العمل الاحترافي. يضمن ذلك الشفافية، ويحمي الطرفين، ويسهّل المعاملات بسلاسة. قد تبدو الاستفادة من منصة إيجار معقدة، ولكن مع نهج واضح خطوة بخطوة، تصبح جزءًا يمكن إدارته وضروريًا في سير عملك.
+يشهد سوق الإيجار في المملكة العربية السعودية تحولاً رقمياً متزايداً، وتُوثَّق عقود الإيجار السكنية عبر [منصة إيجار](https://www.ejar.sa/) الرسمية. بالنسبة لمديري العقارات والملاك والمشغلين، فإن فهم هذه العملية والالتزام بها ليس مجرد مطلب تنظيمي، بل هو جانب أساسي من جوانب العمل الاحترافي. يضمن ذلك الشفافية، ويحمي الطرفين، ويسهّل المعاملات بسلاسة. قد تبدو الاستفادة من منصة إيجار معقدة، ولكن مع نهج واضح خطوة بخطوة، تصبح جزءًا يمكن إدارته وضروريًا في سير عملك.
 
 ## التحضير لتوثيق عقود الإيجار على منصة إيجار
 
@@ -191,7 +190,6 @@ See how the [Accez property management solution](/solutions/property-managers/) 
     *   **رقم المبنى، اسم الشارع، الحي، المدينة:** مكونات العنوان القياسية.
     *   **استخدام العقار:** سكني أو تجاري (على الرغم من أن هذا الدليل يركز على السكني).
     *   **مساحة المبنى ورقم الوحدة:** تفاصيل الوحدة المؤجرة.
-    *   **صور العقار:** صور واضحة للعقار، من الخارج والداخل، غالبًا ما تكون مطلوبة.
 *   **معلومات المستأجر:**
     *   **رقم هوية المستأجر (إقامة):** للمستأجرين من الوافدين.
     *   **رقم الهوية الوطنية للمستأجر:** للمواطنين السعوديين.
@@ -233,7 +231,7 @@ See how the [Accez property management solution](/solutions/property-managers/) 
 سيُطلب منك إدخال معلومات تفصيلية حول العقار.
 
 *   **البحث عن عقار موجود:** إذا كان العقار مسجلاً بالفعل في إيجار، فقد تتمكن من البحث عنه بتفاصيله المسجلة أو بالعنوان الوطني.
-*   **إضافة عقار جديد:** إذا كان تسجيلًا جديدًا، فستحتاج إلى إدخال جميع معلومات العقار التي تم جمعها خلال مرحلة التحضير، بما في ذلك العنوان الوطني، أرقام المبنى والوحدة، ونوع العقار. قم بتحميل صور واضحة للعقار حسب المطلوب.
+*   **إضافة عقار جديد:** إذا كان تسجيلًا جديدًا، فستحتاج إلى إدخال جميع معلومات العقار التي تم جمعها خلال مرحلة التحضير، بما في ذلك العنوان الوطني، أرقام المبنى والوحدة، ونوع العقار.
 
 ### الخطوة 4: إدخال معلومات المستأجر والمالك
 
@@ -262,12 +260,12 @@ See how the [Accez property management solution](/solutions/property-managers/) 
 *   **تحقق المستأجر:** سيتلقى المستأجر رسالة نصية قصيرة أو بريدًا إلكترونيًا يتضمن رابطًا أو رمزًا للوصول إلى العقد على منصة إيجار. سيُطلب منه تسجيل الدخول إلى حسابه في إيجار (أو إنشاء حساب إذا لم يكن لديه بالفعل) لمراجعة الإيجار والموافقة عليه إلكترونيًا.
 *   **التأكيد:** بمجرد موافقة المستأجر، سيتم تحديث حالة العقد في لوحة التحكم الخاصة بك على إيجار، مشيرًا إلى أنه تم قبوله من قبل الطرفين.
 
-### الخطوة 8: إصدار عقد إيجار من منصة إيجار وإنشاء رابط الدفع
+### الخطوة 8: إصدار العقد ودفع الإيجار
 
 بعد التحقق الناجح من المستأجر وموافقته، ستقوم منصة إيجار بإصدار عقد الإيجار الرقمي الرسمي.
 
 *   **العقد الرسمي:** هذا العقد ملزم قانونًا ويعمل كدليل على اتفاقية الإيجار. يتم تخزينه بشكل آمن داخل منصة إيجار.
-*   **رابط الدفع:** ستقوم منصة إيجار بإنشاء رابط دفع أو توجيهك إلى بوابة الدفع المناسبة (مثل تلك التي تتم إدارتها عبر نظام البنك المركزي السعودي) لدفعات الإيجار. هذه هي الطريقة التي سيدفع بها المستأجرون الإيجار، وكيف سيستلمه الملاك، مما يضمن معاملات آمنة ومنظمة.
+*   **دفع الإيجار:** يمكن بعد ذلك دفع الإيجار عبر قنوات الدفع الرقمية في منصة إيجار، فتُسجَّل كل دفعة مقابل العقد الموثق.
 
 ## الأخطاء الشائعة التي يجب تجنبها عند توثيق عقود الإيجار على منصة إيجار
 
@@ -295,7 +293,7 @@ See how the [Accez property management solution](/solutions/property-managers/) 
 
 ### كيف أقوم بتسجيل عقار في منصة إيجار؟
 
-لتسجيل عقار في إيجار، يجب عليك أولاً إنشاء حساب إيجار. بعد ذلك، انتقل إلى قسم تسجيل العقار، وأدخل العنوان الوطني المُتحقق منه وجميع تفاصيل العقار مثل النوع، الحجم، ورقم الوحدة، وقم بتحميل المستندات أو الصور اللازمة.
+لتسجيل عقار في إيجار، يجب عليك أولاً إنشاء حساب إيجار. بعد ذلك، انتقل إلى قسم تسجيل العقار، وأدخل العنوان الوطني المُتحقق منه وجميع تفاصيل العقار مثل النوع، الحجم، ورقم الوحدة، وأضف أي مستندات تطلبها المنصة.
 
 ### ماذا يحدث إذا رفض المستأجر الموافقة على عقد الإيجار في منصة إيجار؟
 

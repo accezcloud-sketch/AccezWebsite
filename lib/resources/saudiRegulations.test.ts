@@ -26,8 +26,18 @@ describe('Saudi regulations hub', () => {
 
   it('links to real posts, and to every post filed under Saudi regulations', () => {
     const slugs = new Set(posts.map((p) => p.slug))
-    for (const slug of hubPostSlugs()) expect(slugs.has(slug), slug).toBe(true)
-    for (const p of getPostsByTopic('saudi-regulations')) expect(hubPostSlugs(), p.slug).toContain(p.slug)
+    for (const slug of hubPostSlugs(posts)) expect(slugs.has(slug), slug).toBe(true)
+    for (const p of getPostsByTopic('saudi-regulations')) expect(hubPostSlugs(posts), p.slug).toContain(p.slug)
+  })
+
+  it('files a new Saudi regulations post (from the blog automation) under the right topic automatically', () => {
+    const fresh = (slug: string, title: string) => ({ ...posts[0], slug, title, date: '2099-01-01', topic: 'saudi-regulations' as const })
+    const extra = [fresh('paying-rent-through-ejar-digital-channels', "Paying Rent Through Ejar's Digital Channels"), fresh('selling-gift-cards-vat', 'VAT on Gift Cards'), fresh('shomoos-guest-registration', 'Shomoos Guest Registration for Furnished Apartments')]
+    const all = [...posts, ...extra]
+    const ids = Object.fromEntries(extra.map((p) => [p.slug, REGULATION_TOPICS.find((t) => guidesFor(t, all, 'en').some((g) => g.slug === p.slug))?.id]))
+    expect(ids).toEqual({ 'paying-rent-through-ejar-digital-channels': 'ejar-leases', 'selling-gift-cards-vat': 'zatca-tax', 'shomoos-guest-registration': 'tourism-licensing' })
+    const ejar = guidesFor(REGULATION_TOPICS[0], all, 'en').map((g) => g.slug)
+    expect(ejar.slice(0, REGULATION_TOPICS[0].postSlugs.length)).toEqual(REGULATION_TOPICS[0].postSlugs)
   })
 
   it('resolves each topic to post titles in both languages, with the review date', () => {
