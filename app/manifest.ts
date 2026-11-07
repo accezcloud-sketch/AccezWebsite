@@ -13,7 +13,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Accez | Property Management & Service Marketplace for Saudi Arabia',
     short_name: 'Accez',
     description:
-      'Run reservations, rent, maintenance, owners, sales and serviced apartments in one platform. Property operations for Saudi Arabia, in Arabic and English.',
+      'One platform, two solutions for Saudi Arabia: property management, and booking for barbers, salons, spas and coaches. In Arabic and English.',
     lang: 'en',
     dir: 'ltr',
     categories: ['business', 'productivity'],

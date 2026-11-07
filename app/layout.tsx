@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: HOME_TITLE.en,
-    description: 'Run reservations, rent, maintenance, owners, sales and serviced apartments in one platform. Built for Saudi operators, in Arabic and English.',
+    description: 'One platform, two solutions for Saudi Arabia: property management for rentals, serviced apartments and owners, and booking software for barbers, salons, spas and coaches.',
     type: 'website',
     siteName: 'Accez',
     url: 'https://www.accez.cloud',
