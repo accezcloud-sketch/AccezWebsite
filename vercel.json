@@ -2240,6 +2240,66 @@
       "source": "/ar/blog/the-tenant-app-advantage-self-service-that-saves-you-hours/",
       "destination": "/ar/blog/the-saudi-tenant-in-2026-digital-expectations-meet-traditional-properties/",
       "permanent": true
+    },
+    {
+      "source": "/blog/writing-sops-the-playbooks-that-keep-operations-consistent-a",
+      "destination": "/blog/writing-sops-the-playbooks-that-keep-operations-consistent-at-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/writing-sops-the-playbooks-that-keep-operations-consistent-a/",
+      "destination": "/blog/writing-sops-the-playbooks-that-keep-operations-consistent-at-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/writing-sops-the-playbooks-that-keep-operations-consistent-a",
+      "destination": "/ar/blog/writing-sops-the-playbooks-that-keep-operations-consistent-at-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/writing-sops-the-playbooks-that-keep-operations-consistent-a/",
+      "destination": "/ar/blog/writing-sops-the-playbooks-that-keep-operations-consistent-at-scale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/building-and-structuring-a-property-management-team-as-you-g",
+      "destination": "/blog/building-and-structuring-a-property-management-team-as-you-grow/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/building-and-structuring-a-property-management-team-as-you-g/",
+      "destination": "/blog/building-and-structuring-a-property-management-team-as-you-grow/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/building-and-structuring-a-property-management-team-as-you-g",
+      "destination": "/ar/blog/building-and-structuring-a-property-management-team-as-you-grow/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/building-and-structuring-a-property-management-team-as-you-g/",
+      "destination": "/ar/blog/building-and-structuring-a-property-management-team-as-you-grow/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-hoas-and-owners-associations-beyond-single-unit-ren",
+      "destination": "/blog/managing-hoas-and-owners-associations-beyond-single-unit-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-hoas-and-owners-associations-beyond-single-unit-ren/",
+      "destination": "/blog/managing-hoas-and-owners-associations-beyond-single-unit-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/managing-hoas-and-owners-associations-beyond-single-unit-ren",
+      "destination": "/ar/blog/managing-hoas-and-owners-associations-beyond-single-unit-rentals/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/blog/managing-hoas-and-owners-associations-beyond-single-unit-ren/",
+      "destination": "/ar/blog/managing-hoas-and-owners-associations-beyond-single-unit-rentals/",
+      "permanent": true
     }
   ],
   "headers": [
