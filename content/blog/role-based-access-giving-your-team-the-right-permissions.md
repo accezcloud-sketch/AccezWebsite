@@ -49,7 +49,7 @@ Once roles are defined, you can begin mapping specific permissions to each role.
 
 RBAC is not a set-it-and-forget-it solution. The operational landscape and your team's composition will change over time. Therefore, it's imperative to conduct regular audits of user access and permissions. This means periodically reviewing who has access to what, verifying that those permissions are still appropriate for their current role, and removing access for employees who have moved to different positions or have left the company. Breaches often go unnoticed for months, which is why proactive monitoring and timely reviews matter. Regularly scheduled reviews, perhaps quarterly or semi-annually, help you spot misuse sooner and reduce the potential damage of a breach. Access reviews belong alongside the other safeguards in our guide to [cybersecurity for property managers](/blog/cybersecurity-for-property-managers-protecting-tenant-and-owner-data/).
 
-## Navigating Saudi Arabia's Property Operations Landscape with RBAC
+## Role-Based Access in the Saudi Property Market
 
 In Saudi Arabia, the property sector is undergoing rapid modernization, heavily influenced by Vision 2030's ambitions for a thriving economy and improved quality of life. For property managers and operators, this translates into a growing need for secure, efficient, and compliant digital operations. Adopting RBAC is not just good practice; it’s becoming a necessity for navigating this evolving landscape, especially when dealing with regulatory frameworks like Ejar and the widespread adoption of digital communication channels.
 
