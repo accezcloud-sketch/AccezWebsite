@@ -1,7 +1,7 @@
 import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { PRIVACY_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
-const LAST_UPDATED = '٢٥ أغسطس ٢٠٢٦'
+const LAST_UPDATED = '٧ نوفمبر ٢٠٢٦'
 const EFFECTIVE = '٢٥ أغسطس ٢٠٢٦'
 
 export default function PrivacyContentAr({ audience }: { audience: AudienceView }) {
@@ -393,6 +393,12 @@ export default function PrivacyContentAr({ audience }: { audience: AudienceView 
         <p>
           ويمكنك حظر ملفات الارتباط أو حذفها من إعدادات المتصفح، غير أن الملفات الضرورية لازمة لعمل
           تسجيل الدخول. ولا نستخدم ملفات الارتباط لبناء ملفات إعلانية، ولا نبيع بيانات التصفح.
+        </p>
+        <p>
+          <strong>على هذا الموقع (www.accez.cloud)</strong>: نستخدم Google Analytics فقط إذا ضغطت
+          «قبول» في شريط ملفات تعريف الارتباط. وقبل ذلك لا يُحمَّل أي نص تحليلي ولا تُحفظ أي ملفات
+          ارتباط تحليلية. وإذا ضغطت «رفض» فلا يُحمَّل شيء، وتُحذف أي ملفات ارتباط تحليلية حُفظت بعد
+          موافقة سابقة. ويمكنك تغيير اختيارك في أي وقت من «إعدادات ملفات تعريف الارتباط» أسفل كل صفحة.
         </p>
       </S>
 

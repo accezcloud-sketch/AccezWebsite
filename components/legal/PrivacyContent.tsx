@@ -1,7 +1,7 @@
 import LegalLayout, { LegalCallout, LegalTable, legalDocumentParts } from '@/components/LegalLayout'
 import { PRIVACY_SECTIONS, type AudienceView } from '@/lib/legal/audience'
 
-const LAST_UPDATED = '25 August 2026'
+const LAST_UPDATED = '7 November 2026'
 const EFFECTIVE = '25 August 2026'
 
 export default function PrivacyContent({ audience }: { audience: AudienceView }) {
@@ -420,6 +420,13 @@ export default function PrivacyContent({ audience }: { audience: AudienceView })
           You can block or delete cookies in your browser settings, but strictly necessary cookies
           are required for sign-in to work. We do not use cookies to build advertising profiles and
           we do not sell browsing data.
+        </p>
+        <p>
+          <strong>On this website (www.accez.cloud)</strong>: we use Google Analytics only if you
+          press Accept on the cookie banner. Until then no analytics script loads and no analytics
+          cookies are set. If you press Decline, nothing is loaded and any analytics cookies from an
+          earlier Accept are deleted. You can change your choice at any time from Cookie settings at
+          the bottom of every page.
         </p>
       </S>
 
