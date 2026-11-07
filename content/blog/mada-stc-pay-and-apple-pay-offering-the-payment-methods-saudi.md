@@ -66,7 +66,7 @@ The Saudi government's focus on digital transformation, as set out in [Vision 20
 
 ## How Accez.Cloud Helps You Manage Payments
 
-Accez.Cloud, as an all-in-one property operations platform, helps property managers keep every payment visible and organised.
+Accez.Cloud, a property operations platform, helps property managers keep every payment visible and organised.
 
 - **Billing and Payments**: Track revenue, invoices and refunds in one place.
 - **Payment Gateway Integrations**: Connect Stripe or Tap to take online payments. Which payment methods your customers can use depends on your gateway agreement and what is enabled on your merchant account, so confirm them with Stripe or Tap.
@@ -153,7 +153,7 @@ See how billing and payments through Stripe and Tap work on the [property manage
 
 ## كيف يساعدك Accez.Cloud في إدارة المدفوعات
 
-يساعد Accez.Cloud، بصفته منصة شاملة لعمليات العقارات، مديري العقارات على إبقاء كل دفعة واضحة ومنظمة.
+يساعد Accez.Cloud، بصفته منصة لعمليات العقارات، مديري العقارات على إبقاء كل دفعة واضحة ومنظمة.
 
 - **الفوترة والمدفوعات**: تابع الإيرادات والفواتير والمبالغ المستردة في مكان واحد.
 - **تكامل بوابات الدفع**: اربط Stripe أو Tap لقبول المدفوعات عبر الإنترنت. وتعتمد طرق الدفع المتاحة لعملائك على اتفاقك مع بوابة الدفع وما هو مفعّل في حساب التاجر لديك، لذا تأكد منها مع Stripe أو Tap.

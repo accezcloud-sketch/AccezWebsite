@@ -48,7 +48,7 @@ Leading operators don't wait until they're ready to launch a listing to look int
 
 The Kingdom's push towards digital transformation means licensing is handled online, and the license number has to appear on your listings. Airbnb, for example, asks hosts to enter the private tourism accommodation number, which is shown publicly on the listing, along with a national identification number used only for government verification. High performers keep license numbers, expiry dates, title deeds or lease contracts and safety documents organized in one place, so every listing on every channel shows valid details and renewals are never missed. If you manage units you lease rather than own, remember that the lease itself must be registered on Ejar; our guide to [Ejar compliance for property managers](/blog/ejar-compliance-made-simple-automating-saudi-rental-regulations/) covers that side.
 
-## Navigating the Saudi STR Licensing Landscape: Vision 2030 and Beyond
+## Short-Term Rental Licensing in Saudi Arabia: Vision 2030 and Beyond
 
 Saudi Arabia's Vision 2030 places tourism at the center of economic diversification, and demand for short-term stays has grown with it. This growth makes a clear licensing framework essential to ensure quality, safety and a positive experience for visitors.
 

@@ -27,7 +27,7 @@ As your property management business expands, you will reach a point where the c
 
 This stage is not only about hiring more people. It is about structuring the team so the work has a clear path, and so that adding the next ten properties does not depend on the same two people working longer hours.
 
-## The Growing Pains: What Breaks and Why
+## Growing Pains: Where a Small Team Starts to Struggle
 
 The flat structure that worked for a small portfolio starts to buckle as the business grows. Usually the founder or a small core team is juggling leasing, maintenance, finance and owner communication at once. Each new property adds work to every one of those areas, and the same few people become the bottleneck for all of them.
 
@@ -44,7 +44,7 @@ Watch for these signals rather than a fixed number of units:
 
 When two or more of these are true, the next hire is usually overdue.
 
-## What High Performers Do Differently
+## How Successful Firms Structure Their Teams
 
 Successful property management firms do not simply hire more generalists. They build specialized teams with clear responsibilities.
 
@@ -136,7 +136,7 @@ See how a growing team works from one system on the [property managers solution 
 
 هذه المرحلة لا تتعلق بتوظيف المزيد فقط، بل بهيكلة الفريق بحيث يكون للعمل مسار واضح، وبحيث لا تعتمد إضافة العقارات العشرة التالية على الشخصين أنفسهما وهما يعملان ساعات أطول.
 
-## آلام النمو: ما الذي يتعطل ولماذا
+## آلام النمو: أين يبدأ الفريق الصغير بالتعثر
 
 الهيكل المسطح الذي نجح مع محفظة صغيرة يبدأ بالتعثر مع النمو. فغالبًا ما يتولى المؤسس أو فريق صغير التأجير والصيانة والمالية والتواصل مع الملاك في الوقت نفسه. وكل عقار جديد يضيف عملًا إلى كل هذه المجالات، فيصبح الأشخاص القلائل أنفسهم عنق الزجاجة لها جميعًا.
 
@@ -153,7 +153,7 @@ See how a growing team works from one system on the [property managers solution 
 
 حين ينطبق مؤشران أو أكثر، فالتوظيف التالي غالبًا متأخر.
 
-## ما الذي تفعله الجهات الرائدة بشكل مختلف
+## كيف تنظم الشركات الناجحة فرقها
 
 لا تكتفي شركات إدارة العقارات الناجحة بتوظيف المزيد من الموظفين العامين، بل تبني فرقًا متخصصة بمسؤوليات واضحة.
 

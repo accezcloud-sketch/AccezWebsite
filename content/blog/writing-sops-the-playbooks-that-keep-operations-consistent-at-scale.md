@@ -27,7 +27,7 @@ Most property businesses start without written procedures, and for a while that 
 
 That changes as the portfolio grows. New staff learn by watching whoever is free that day, each person develops their own way of handling the same task, and results start to depend on who happened to be on shift. Growth stalls not because demand is missing, but because the business cannot repeat its own good work.
 
-## What Breaks Without a Playbook
+## What Goes Wrong Without Written Procedures
 
 Without written procedures, onboarding becomes a long stretch of trial and error. A new team member asks the same questions their predecessor asked, gets slightly different answers from different colleagues, and takes weeks to work at full speed.
 
@@ -66,7 +66,7 @@ State the result that ends the task: the guest has received the access code, the
 
 Write down what to do when the normal path fails: the guest arrives early, the technician cannot attend, the tenant disputes a deduction. Exceptions are where untrained staff improvise, so they deserve explicit steps.
 
-## What High Performers Do Differently
+## Practices That Keep Operations Consistent
 
 ### Standardizing Guest and Resident Communication
 
@@ -147,7 +147,7 @@ See how teams run these processes in one place on the [property managers solutio
 
 لكن الوضع يتغير مع نمو المحفظة. يتعلم الموظفون الجدد بمراقبة من يتوفر في ذلك اليوم، ويطور كل شخص طريقته الخاصة في المهمة نفسها، وتصبح النتائج مرهونة بمن كان في المناوبة. ويتوقف النمو لا لغياب الطلب، بل لأن الشركة لا تستطيع تكرار نجاحها.
 
-## ما الذي يتعطل دون دليل عمل
+## مشكلات العمل دون إجراءات مكتوبة
 
 دون إجراءات مكتوبة يتحول تأهيل الموظفين إلى فترة طويلة من التجربة والخطأ. يطرح الموظف الجديد الأسئلة نفسها التي طرحها من سبقه، ويتلقى إجابات مختلفة قليلًا من زملاء مختلفين، ويحتاج أسابيع ليعمل بكامل طاقته.
 
@@ -186,7 +186,7 @@ See how teams run these processes in one place on the [property managers solutio
 
 اكتب ما يجب فعله حين يتعطل المسار المعتاد: وصل الضيف مبكرًا، تعذر حضور الفني، اعترض المستأجر على خصم. في الاستثناءات يرتجل الموظفون غير المدربين، لذا تستحق خطوات صريحة.
 
-## ما الذي تفعله الجهات الرائدة بشكل مختلف
+## ممارسات تحافظ على اتساق العمليات
 
 ### توحيد التواصل مع الضيوف والمقيمين
 

@@ -46,9 +46,9 @@ Not every platform is built for the same job. Knowing the categories helps you a
 | Residential | Apartments, villas and multi-family buildings | Leases, rent tracking, maintenance, tenant communication |
 | Commercial | Offices, retail and industrial space | Complex lease structures, service charge reconciliation, multi-tenant billing |
 | Vacation rental | Nightly and short stays | Channel connections to booking sites, reservations, pricing tools, guest messaging |
-| All-in-one | Mixed portfolios | Long-term leases and short-term stays in one system, often with sales and owner accounting |
+| Combined platform | Mixed portfolios | Long-term leases and short-term stays in one system, often with sales and owner accounting |
 
-If you manage both long-term and short-term units, look for one platform that handles both rather than running two systems side by side. Our guide to [managing a mixed portfolio](/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/) explains why. Accez is an example of the all-in-one type: it combines long-term leases, short-term rentals with channel sync, sales units and projects, billing and owner payouts in a single platform.
+If you manage both long-term and short-term units, look for one platform that handles both rather than running two systems side by side. Our guide to [managing a mixed portfolio](/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/) explains why. Accez is an example of the combined type: it combines long-term leases, short-term rentals with channel sync, sales units and projects, billing and owner payouts in a single platform.
 
 ## Key Features to Look For
 
@@ -129,7 +129,7 @@ It depends on the pricing model and the size of your portfolio. Accez has a free
 
 ### Can one platform handle both long-term and short-term rentals?
 
-Some platforms specialize in one, but all-in-one platforms such as Accez handle both. For mixed portfolios this avoids data silos and double administration.
+Some platforms specialize in one, but combined platforms such as Accez handle both. For mixed portfolios this avoids data silos and double administration.
 
 ### What matters most for property management in Saudi Arabia?
 
@@ -138,7 +138,7 @@ Lease records that line up with Ejar, clear tracking of rent paid and due, Arabi
 ## Key Takeaways
 
 - Property management software puts properties, leases, rent, bookings, maintenance, payments and communication in one system.
-- Choose the type that matches your portfolio; mixed portfolios benefit most from an all-in-one platform.
+- Choose the type that matches your portfolio; mixed portfolios benefit most from a combined platform.
 - Payment tracking and maintenance management usually deliver the quickest wins.
 - Compare pricing models and hidden costs such as setup, processing and migration fees.
 - Start with one property, migrate clean data, set up templates and train your team.
@@ -172,9 +172,9 @@ See how Accez brings every part of property management into one platform on the 
 | السكني | الشقق والفلل والمباني متعددة الوحدات | عقود الإيجار، ومتابعة الإيجار، والصيانة، والتواصل مع المستأجرين |
 | التجاري | المكاتب والمحلات والمساحات الصناعية | هياكل عقود معقدة، وتسوية رسوم الخدمات، وفوترة متعددة المستأجرين |
 | تأجير العطلات | الإقامات الليلية والقصيرة | ربط القنوات بمواقع الحجز، والحجوزات، وأدوات التسعير، ومراسلة الضيوف |
-| الشامل | المحافظ المختلطة | العقود طويلة الأجل والإقامات القصيرة في نظام واحد، وغالبًا مع المبيعات ومحاسبة الملاك |
+| المنصة الموحدة | المحافظ المختلطة | العقود طويلة الأجل والإقامات القصيرة في نظام واحد، وغالبًا مع المبيعات ومحاسبة الملاك |
 
-وإذا كنت تدير وحدات طويلة الأجل وأخرى قصيرة الأجل، فابحث عن منصة واحدة تتعامل مع الاثنتين بدل تشغيل نظامين متوازيين، ويشرح دليلنا عن [إدارة المحفظة المختلطة](/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/) السبب. ويُعد Accez مثالًا على النوع الشامل: فهو يجمع عقود الإيجار طويلة الأجل، والإيجارات قصيرة الأجل مع مزامنة القنوات، ووحدات البيع والمشروعات، والفوترة، ومدفوعات الملاك في منصة واحدة.
+وإذا كنت تدير وحدات طويلة الأجل وأخرى قصيرة الأجل، فابحث عن منصة واحدة تتعامل مع الاثنتين بدل تشغيل نظامين متوازيين، ويشرح دليلنا عن [إدارة المحفظة المختلطة](/ar/blog/short-term-vs-long-term-rentals-managing-a-mixed-portfolio/) السبب. ويُعد Accez مثالًا على النوع الموحد: فهو يجمع عقود الإيجار طويلة الأجل، والإيجارات قصيرة الأجل مع مزامنة القنوات، ووحدات البيع والمشروعات، والفوترة، ومدفوعات الملاك في منصة واحدة.
 
 ## الميزات التي يجب البحث عنها
 
@@ -255,7 +255,7 @@ See how Accez brings every part of property management into one platform on the 
 
 ### هل يمكن لمنصة واحدة إدارة الإيجارات طويلة الأجل وقصيرة الأجل معًا؟
 
-تتخصص بعض المنصات في أحدهما، لكن المنصات الشاملة مثل Accez تتعامل مع الاثنين. وهذا يجنب المحافظ المختلطة تشتت البيانات وازدواج العمل الإداري.
+تتخصص بعض المنصات في أحدهما، لكن المنصات الموحدة مثل Accez تتعامل مع الاثنين. وهذا يجنب المحافظ المختلطة تشتت البيانات وازدواج العمل الإداري.
 
 ### ما الأهم لإدارة العقارات في السعودية؟
 
@@ -264,7 +264,7 @@ See how Accez brings every part of property management into one platform on the 
 ## أبرز النقاط
 
 - يجمع برنامج إدارة العقارات العقارات والعقود والإيجار والحجوزات والصيانة والمدفوعات والتواصل في نظام واحد.
-- اختر النوع المناسب لمحفظتك، فالمحافظ المختلطة هي الأكثر استفادة من المنصة الشاملة.
+- اختر النوع المناسب لمحفظتك، فالمحافظ المختلطة هي الأكثر استفادة من المنصة الموحدة.
 - غالبًا ما تحقق متابعة المدفوعات وإدارة الصيانة أسرع النتائج.
 - قارن نماذج التسعير والتكاليف الخفية مثل رسوم الإعداد والمعالجة ونقل البيانات.
 - ابدأ بعقار واحد، وانقل بيانات نظيفة، وأعدّ القوالب، ودرّب فريقك.

@@ -59,7 +59,7 @@ Vision 2030 is driving a fundamental shift in service expectations, making stand
 
 ## How Accez.Cloud Helps You Streamline
 
-Accez.Cloud offers an all-in-one [property management platform for rentals](/solutions/property-managers/#rentals) designed to tackle the complexities of managing a growing portfolio. It does not replace your cleaning checklists, but it gives your housekeeping plan the booking data and records it depends on.
+Accez.Cloud offers a [property management platform for rentals](/solutions/property-managers/#rentals) designed to tackle the complexities of managing a growing portfolio. It does not replace your cleaning checklists, but it gives your housekeeping plan the booking data and records it depends on.
 
 - **Availability calendar and reservations:** Bookings from Airbnb, Booking.com and Expedia land in one calendar, and each stay has its own timeline, so you can plan cleans around real check-out and check-in dates.
 - **Work orders:** When a cleaner finds a broken fixture or a leak, log it as a work order and follow it from request to done.
