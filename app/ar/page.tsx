@@ -8,7 +8,7 @@ import { HOME_TITLE } from '@/lib/site'
 // with the locale pinned so the Arabic copy is server-rendered.
 const TITLE = HOME_TITLE.ar
 const DESCRIPTION =
-  'منصة واحدة بحلّين: إدارة العقارات للإيجارات والفنادق والملاك، وسوق خدمات يحصل فيه مقدمو الخدمات على الحجوزات. مبنية للسعودية بالعربية والإنجليزية.'
+  'منصة واحدة بحلّين: إدارة العقارات للإيجارات والشقق المخدومة والملاك، وسوق خدمات يحصل فيه مقدمو الخدمات على الحجوزات. مبنية للسعودية بالعربية والإنجليزية.'
 
 export const metadata: Metadata = {
   // `absolute`: the title already names the brand; the layout's '%s | Accez'

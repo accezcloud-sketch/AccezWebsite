@@ -39,7 +39,7 @@ export function organizationSchema() {
       url: 'https://www.accez.cloud/images/accez-logo.png',
     },
     description:
-      'All-in-one property operations platform for Saudi Arabia. Reservations, rent, maintenance, owners, sales and hotels in one system, in Arabic and English.',
+      'Property operations platform for Saudi Arabia. Reservations, rent, maintenance, owners, sales and serviced apartments in one system, in Arabic and English.',
     // The office shown on the About page and in the contact section.
     address: {
       '@type': 'PostalAddress',

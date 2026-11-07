@@ -21,7 +21,7 @@ export const HOME_TITLE = {
 
 /** The site's default meta description: what Accez is, in one sentence pair. */
 export const SITE_DESCRIPTION =
-  'One platform, two solutions: property management for rentals, hotels and owners, and a marketplace where service providers get booked. Built for Saudi Arabia.'
+  'One platform, two solutions for Saudi Arabia: property management for rentals, serviced apartments and owners, and a marketplace where providers get booked.'
 
 /** The company's X (Twitter) account, attributed on link previews. */
 export const X_HANDLE = '@accez_cloud'
