@@ -62,7 +62,9 @@ export default function Ecosystem({ locale: language }: { locale: Locale }) {
   return (
     <section className="section-y" id="ecosystem" style={{ background: 'var(--section-bg, var(--bg))' }}>
       <style>{`
-        .eco-ring { --r: 122px; --card-w: 96px; --card-h: 100px; --hub: 96px; --wave: 1.4; width: 320px; height: 320px; }
+        /* margin-block: room for a card passing the top or bottom of the circle
+           (half a card plus a gap), so a turning card never reaches the section edge. */
+        .eco-ring { --r: 122px; --card-w: 96px; --card-h: 100px; --hub: 96px; --wave: 1.4; width: 320px; height: 320px; margin-block: calc(var(--card-h) / 2 + 16px); }
         @media (min-width: 768px) {
           .eco-ring { --r: 236px; --card-w: 214px; --card-h: 72px; --hub: 140px; --wave: 1.7; width: 540px; height: 540px; }
         }
