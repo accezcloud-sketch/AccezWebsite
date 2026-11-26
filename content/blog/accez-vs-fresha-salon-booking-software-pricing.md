@@ -32,7 +32,6 @@ The headline price rarely tells the whole story. This guide compares Accez and F
 | Monthly subscription | Free: SAR 0, up to 10 staff. Growth: SAR 185, unlimited staff | $14.95 per bookable team member |
 | Direct bookings | No fee | No fee |
 | New client's first marketplace booking | 5% (Free) or 3.5% (Growth) | 20%, minimum $6 |
-| Later marketplace bookings | No fee | No fee |
 | Card processing | Through Tap, charged separately | Optional, 2.2% to 3.3% plus $0.20 |
 
 Fresha figures are its US prices in November 2026, and its new client fee is capped on higher value bookings. Its [help centre](https://www.fresha.com/help-center/knowledge-base/billing-and-fees/101357-marketplace-new-client-fees) lists Saudi Arabia among the countries where the fee applies. See the [Fresha pricing page](https://www.fresha.com/pricing) for amounts in your currency. Where we convert Fresha prices to riyals below, we use 3.75 riyals to the dollar.
@@ -164,7 +163,6 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 | الاشتراك الشهري | المجانية: 0 ريال حتى 10 موظفين. النمو: 185 ريالًا لعدد غير محدود من الموظفين | 14.95 دولارًا لكل موظف يستقبل الحجوزات |
 | الحجوزات المباشرة | بلا رسوم | بلا رسوم |
 | أول حجز لعميل جديد من السوق | 5% (المجانية) أو 3.5% (النمو) | 20% بحد أدنى 6 دولارات |
-| حجوزات السوق اللاحقة | بلا رسوم | بلا رسوم |
 | معالجة البطاقات | عبر Tap وتُحتسب بشكل منفصل | اختيارية، من 2.2% إلى 3.3% إضافة إلى 0.20 دولار |
 
 أرقام فريشا هي أسعارها في الولايات المتحدة في نوفمبر 2026، ولرسوم العميل الجديد في فريشا حد أقصى على الحجوزات مرتفعة القيمة. ويضع [مركز المساعدة لديها](https://www.fresha.com/help-center/knowledge-base/billing-and-fees/101357-marketplace-new-client-fees) السعودية ضمن الدول التي تُطبق فيها هذه الرسوم. راجع [صفحة أسعار فريشا](https://www.fresha.com/pricing) لمعرفة المبالغ بعملتك. وحين نحوّل أسعار فريشا إلى الريال فيما يلي، نستخدم سعر 3.75 ريال للدولار.
