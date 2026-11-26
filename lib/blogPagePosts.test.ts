@@ -35,8 +35,12 @@ describe('postAudience', () => {
   it('lets the frontmatter decide', () => {
     expect(postAudience({ title: 'Lease renewals', excerpt: '', tags: [], audience: 'service-providers' })).toBe('service-providers')
   })
-  it('puts every current post with property managers', () => {
-    expect(getAllPosts().filter((p) => p.audience !== 'property-managers').map((p) => p.slug)).toEqual([])
+  it('files every current post under one of the two audiences, salon and barber posts under service providers', () => {
+    const posts = getAllPosts()
+    expect(posts.filter((p) => !['property-managers', 'service-providers'].includes(p.audience)).map((p) => p.slug)).toEqual([])
+    const salon = posts.filter((p) => /salon|barber/i.test(p.slug))
+    expect(salon.length).toBeGreaterThan(0)
+    expect(salon.filter((p) => p.audience !== 'service-providers').map((p) => p.slug)).toEqual([])
   })
 })
 
