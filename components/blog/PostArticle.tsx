@@ -12,7 +12,6 @@ import TableOfContents from '@/components/blog/TableOfContents'
 import type { TocEntry } from '@/lib/content/markdown'
 import { blogFiltersQuery } from '@/lib/content/blogFilters'
 import { formatReadingTime } from '@/lib/content/readingTime'
-import { photoCreditText } from '@/lib/content/credit'
 import { topicLabel } from '@/lib/content/topics'
 import { formatDay, reviewedLabel } from '@/lib/content/postDates'
 
@@ -152,13 +151,6 @@ export default function PostArticle({ post, locale, contentHtml, toc, afterArtic
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10" style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)' }}>
               <Image src={post.coverImage} alt={post.coverImageAlt} fill className="object-cover" priority />
             </div>
-            {post.coverImageCredit && post.coverImageCreditUrl && (
-              <p className="text-sm -mt-8 mb-10 text-center" style={{ color: 'var(--text-faint)' }}>
-                <a href={post.coverImageCreditUrl} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: 'var(--accent-hi)' }}>
-                  {photoCreditText(post.coverImageCredit)}
-                </a>
-              </p>
-            )}
 
             <TableOfContents toc={toc} locale={language} />
 
