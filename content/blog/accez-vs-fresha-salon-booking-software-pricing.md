@@ -3,11 +3,11 @@ title: "Accez vs Fresha: Salon Booking Software Pricing Compared"
 titleAr: "أكسيز أم فريشا: مقارنة أسعار برامج حجز الصالونات"
 metaTitle: "Accez vs Fresha: Salon Booking Software Pricing Compared"
 metaTitleAr: "أكسيز أم فريشا: مقارنة أسعار برامج حجز الصالونات"
-metaDescription: "Fresha charges per team member and 20% once on new marketplace clients. Accez has no seat fee and takes 5% or 3.5% of marketplace bookings. Compare both."
-metaDescriptionAr: "تحاسب فريشا على كل موظف و20% مرة واحدة على العميل الجديد من السوق، وأكسيز بلا رسوم مقاعد وتأخذ 5% أو 3.5% من حجوزات السوق. قارن بينهما."
+metaDescription: "Fresha charges per team member and 20% once on new marketplace clients. Accez has no seat fee and charges new marketplace clients 5% or 3.5% once."
+metaDescriptionAr: "تحاسب فريشا على كل موظف و20% مرة واحدة على العميل الجديد من السوق، وأكسيز بلا رسوم مقاعد وتأخذ 5% أو 3.5% مرة واحدة على العميل الجديد."
 primaryKeyword: "accez vs fresha"
-excerpt: "Fresha charges a monthly fee per bookable team member and a one time 20% fee on a new client's first marketplace booking. Accez has no per seat charge and takes 5% or 3.5% of each marketplace booking. Neither charges for direct bookings. Here is how the two compare for a salon in Saudi Arabia."
-excerptAr: "تحاسب فريشا برسوم شهرية لكل موظف يستقبل الحجوزات ورسوم 20% لمرة واحدة على أول حجز لعميل جديد من السوق. أما أكسيز فبلا رسوم لكل موظف وتأخذ 5% أو 3.5% من كل حجز عبر السوق. ولا تفرض أي منهما رسومًا على الحجوزات المباشرة. إليك المقارنة لصالون في السعودية."
+excerpt: "Fresha charges a monthly fee per bookable team member and a one time 20% fee on a new client's first marketplace booking. Accez has no per seat charge and takes 5% or 3.5% of a new client's first marketplace booking. Neither charges for direct bookings. Here is how the two compare for a salon in Saudi Arabia."
+excerptAr: "تحاسب فريشا برسوم شهرية لكل موظف يستقبل الحجوزات ورسوم 20% لمرة واحدة على أول حجز لعميل جديد من السوق. أما أكسيز فبلا رسوم لكل موظف وتأخذ 5% أو 3.5% من أول حجز لعميل جديد من السوق. ولا تفرض أي منهما رسومًا على الحجوزات المباشرة. إليك المقارنة لصالون في السعودية."
 date: "2026-11-26"
 author: "Accez Team"
 authorAr: "فريق أكسيز"
@@ -21,7 +21,7 @@ tags: ["accez vs fresha", "fresha alternative", "salon booking software", "prici
 tagsAr: ["أكسيز أم فريشا", "بديل فريشا", "برامج حجز الصالونات", "الأسعار", "صالونات الحلاقة", "السعودية"]
 ---
 
-Fresha charges a monthly fee for each bookable team member, plus a one time 20% fee on a new client's first marketplace booking; that client's later bookings carry no Fresha fee. Accez has no per seat charge: Free covers up to 10 staff, and Growth covers unlimited staff for SAR 185 a month. Accez takes 5% on Free or 3.5% on Growth of each booking made through its marketplace. Neither platform charges for direct bookings. In our Accez vs Fresha example, at Fresha's US prices, a salon with 8 stylists pays SAR 400 a month on Accez against about SAR 749 on Fresha.
+Fresha charges a monthly fee for each bookable team member, plus a one time 20% fee on a new client's first marketplace booking; that client's later bookings carry no Fresha fee. Accez has no per seat charge: Free covers up to 10 staff, and Growth covers unlimited staff for SAR 185 a month. Accez takes 5% on Free or 3.5% on Growth of a new client's first marketplace booking, and nothing on that client's later bookings. Neither platform charges for direct bookings. In our Accez vs Fresha example, at Fresha's US prices, a salon with 8 stylists pays SAR 75 a month on Accez against about SAR 749 on Fresha.
 
 The headline price rarely tells the whole story. This guide compares Accez and Fresha line by line: the monthly subscription, staff costs, direct bookings, marketplace fees and card processing. It then works through three salons of different sizes and explains what each Accez plan includes.
 
@@ -32,7 +32,7 @@ The headline price rarely tells the whole story. This guide compares Accez and F
 | Monthly subscription | Free: SAR 0, up to 10 staff. Growth: SAR 185, unlimited staff | $14.95 per bookable team member |
 | Direct bookings | No fee | No fee |
 | New client's first marketplace booking | 5% (Free) or 3.5% (Growth) | 20%, minimum $6 |
-| Later marketplace bookings | 5% (Free) or 3.5% (Growth) | No fee |
+| Later marketplace bookings | No fee | No fee |
 | Card processing | Through Tap, charged separately | Optional, 2.2% to 3.3% plus $0.20 |
 
 Fresha figures are its US prices in November 2026, and its new client fee is capped on higher value bookings. Its [help centre](https://www.fresha.com/help-center/knowledge-base/billing-and-fees/101357-marketplace-new-client-fees) lists Saudi Arabia among the countries where the fee applies. See the [Fresha pricing page](https://www.fresha.com/pricing) for amounts in your currency. Where we convert Fresha prices to riyals below, we use 3.75 riyals to the dollar.
@@ -50,7 +50,7 @@ Accez has two plans for service providers, and neither charges per seat.
 - **Free:** SAR 0 a month for up to 10 staff and up to 20 services.
 - **Growth:** SAR 185 a month for unlimited staff and unlimited services.
 
-Instead of a seat fee, Accez takes a platform fee on bookings that come through its marketplace: 5% on Free and 3.5% on Growth. Bookings you take directly carry no platform fee on either plan. See the full plan details on the [Accez service provider pricing page](/pricing/service-providers/).
+Instead of a seat fee, Accez takes a platform fee on a new client's first booking through its marketplace: 5% on Free and 3.5% on Growth. That client's later bookings, and bookings you take directly, carry no platform fee on either plan. See the full plan details on the [Accez service provider pricing page](/pricing/service-providers/).
 
 ## Staff Costs as Your Team Grows
 
@@ -69,11 +69,11 @@ Each new stylist on Fresha adds about SAR 56 a month at US prices, and the seat 
 
 Neither platform charges a fee on direct bookings. On Fresha, bookings that come through your own website, direct booking links, Instagram or Facebook carry no booking fee. On Accez, bookings that do not come through the Accez marketplace carry no platform fee.
 
-On Accez, encouraging regular clients to rebook with you directly keeps those bookings free of platform fees.
+On both platforms, regular clients who rebook with you carry no platform fee.
 
 ## How the Marketplace Fees Work
 
-Both platforms list your business in a marketplace where people looking for a barber, salon or spa can find you and book. This is where the fee structures are opposite.
+Both platforms list your business in a marketplace where people looking for a barber, salon or spa can find you and book. Both charge once per new client; the difference is the rate.
 
 ### Fresha's new client fee
 
@@ -81,7 +81,7 @@ Fresha charges a one time fee on the first booking of a brand new client who dis
 
 ### Accez's marketplace fee
 
-Accez takes 5% on Free or 3.5% on Growth of each booking made through the Accez marketplace, whether the client is new or returning. There is no separate new client fee and no charge per lead.
+Accez takes 5% on Free or 3.5% on Growth of a new client's first booking through the Accez marketplace. That client's later bookings carry no Accez fee, and there is no charge per lead.
 
 On a SAR 150 first visit, Fresha's fee is SAR 30. On Accez the fee on the same booking is SAR 7.50 on Free or SAR 5.25 on Growth.
 
@@ -95,37 +95,37 @@ Taking a deposit when a client books also protects your income, because every no
 
 To compare total monthly cost, we worked through three salons of different sizes. In each, every new client's first visit is SAR 150 (below the level where Fresha's cap applies), Fresha is priced at its US prices, and the figures are before card processing on both platforms.
 
-| Salon | Marketplace bookings this month | Fresha | Accez |
+| Salon | New marketplace clients this month | Fresha | Accez |
 |---|---|---|---|
-| 3 stylists | SAR 3,000, including 5 new clients | About SAR 318 | SAR 150 on Free |
-| 8 stylists | SAR 8,000, including 10 new clients | About SAR 749 | SAR 400 on Free |
-| 12 stylists | SAR 12,000, including 15 new clients | About SAR 1,123 | SAR 605 on Growth |
+| 3 stylists | 5 (SAR 750 of first visits) | About SAR 318 | SAR 37.50 on Free |
+| 8 stylists | 10 (SAR 1,500 of first visits) | About SAR 749 | SAR 75 on Free |
+| 12 stylists | 15 (SAR 2,250 of first visits) | About SAR 1,123 | SAR 263.75 on Growth |
 
 ### A small barbershop with 3 stylists
 
-Fresha: 3 seats at $14.95 is $44.85, about SAR 168, plus new client fees of 20% on SAR 750 of first visits, which is SAR 150. Total: about SAR 318. Accez Free: 5% of SAR 3,000, which is SAR 150.
+Fresha: 3 seats at $14.95 is $44.85, about SAR 168, plus new client fees of 20% on SAR 750 of first visits, which is SAR 150. Total: about SAR 318. Accez Free: 5% of SAR 750, which is SAR 37.50.
 
 ### A salon with 8 stylists
 
-Fresha: 8 seats at $14.95 is $119.60, about SAR 449, plus new client fees of 20% on SAR 1,500 of first visits, which is SAR 300. Total: about SAR 749. Accez Free: 5% of SAR 8,000, which is SAR 400. On Accez Growth the same month costs SAR 185 plus 3.5% of SAR 8,000, which is SAR 465.
+Fresha: 8 seats at $14.95 is $119.60, about SAR 449, plus new client fees of 20% on SAR 1,500 of first visits, which is SAR 300. Total: about SAR 749. Accez Free: 5% of SAR 1,500, which is SAR 75. On Accez Growth the same month costs SAR 185 plus 3.5% of SAR 1,500, which is SAR 237.50.
 
 ### A larger salon with 12 stylists
 
-With more than 10 staff, this salon is on Accez Growth. Fresha: 12 seats at $14.95 is $179.40, about SAR 673, plus new client fees of 20% on SAR 2,250 of first visits, which is SAR 450. Total: about SAR 1,123. Accez Growth: SAR 185 plus 3.5% of SAR 12,000, which is SAR 420. Total: SAR 605.
+With more than 10 staff, this salon is on Accez Growth. Fresha: 12 seats at $14.95 is $179.40, about SAR 673, plus new client fees of 20% on SAR 2,250 of first visits, which is SAR 450. Total: about SAR 1,123. Accez Growth: SAR 185 plus 3.5% of SAR 2,250, which is SAR 78.75. Total: SAR 263.75.
 
-In each of these months, Accez costs less: SAR 168 less for the small barbershop, SAR 349 less for the 8 stylist salon and SAR 518 less for the larger salon.
+In each of these months, Accez costs less: about SAR 281 less for the small barbershop, about SAR 674 less for the 8 stylist salon and about SAR 859 less for the larger salon.
 
 ## Accez Free or Growth: Which Plan Fits
 
-**Free** suits most salons and barbershops with up to 10 staff. It includes your marketplace listing, online booking, the calendar, reviews and staff management, for up to 10 staff and 20 services, with a 5% fee on marketplace bookings and nothing on direct bookings.
+**Free** suits most salons and barbershops with up to 10 staff. It includes your marketplace listing, online booking, the calendar, reviews and staff management, for up to 10 staff and 20 services, with a 5% fee on a new client's first marketplace booking and nothing on later or direct bookings.
 
-**Growth** costs SAR 185 a month and adds unlimited staff and services, promo codes, priority listing in the marketplace and basic analytics, with a lower 3.5% fee on marketplace bookings. For a salon within the Free limits, Growth pays for itself once marketplace bookings pass about SAR 12,333 a month. Salons with more than 10 staff or 20 services need Growth.
+**Growth** costs SAR 185 a month and adds unlimited staff and services, promo codes, priority listing in the marketplace and basic analytics, with a lower 3.5% fee on a new client's first marketplace booking. For a salon within the Free limits, Growth pays for itself once first visits from new marketplace clients pass about SAR 12,333 a month. Salons with more than 10 staff or 20 services need Growth.
 
 ## Frequently Asked Questions
 
 ### Is Accez cheaper than Fresha?
 
-Yes, in all three of our examples. Accez has no per seat charge and no fee on direct bookings, and takes 5% or 3.5% of each marketplace booking, while Fresha takes 20% of a new client's first one. At Fresha's US prices, Accez costs SAR 168 to SAR 518 less a month in our examples.
+Yes, in all three of our examples. Accez has no per seat charge and no fee on direct bookings, and on a new client's first marketplace booking it takes 5% or 3.5% where Fresha takes 20%. At Fresha's US prices, Accez costs about SAR 281 to SAR 859 less a month in our examples.
 
 ### Does Fresha charge a fee on a client's later bookings?
 
@@ -133,7 +133,7 @@ No. Fresha's new client fee applies once, on the first booking from a client who
 
 ### Does Accez charge for direct bookings?
 
-No. Accez charges a platform fee only on bookings made through the Accez marketplace: 5% on Free and 3.5% on Growth.
+No. Accez charges a platform fee only on a new client's first booking through the Accez marketplace: 5% on Free and 3.5% on Growth.
 
 ### How many staff can I add on the Accez Free plan?
 
@@ -143,8 +143,8 @@ Up to 10 staff and up to 20 services. For more, Growth at SAR 185 a month includ
 
 - Fresha charges $14.95 a month per bookable team member; Accez's Free plan is SAR 0 for up to 10 staff, and Growth covers unlimited staff for SAR 185 a month.
 - Neither platform charges a fee on direct bookings.
-- Fresha takes 20% once, on a new marketplace client's first booking; Accez takes 5% or 3.5% of every marketplace booking.
-- In our three example salons, Accez costs SAR 168 to SAR 518 less a month than Fresha at its US prices.
+- On a new marketplace client's first booking, Fresha takes 20% and Accez takes 5% or 3.5%; later bookings carry no fee on either.
+- In our three example salons, Accez costs about SAR 281 to SAR 859 less a month than Fresha at its US prices.
 - Card processing is separate on both: Tap for Accez, an optional add on for Fresha.
 
 *Fresha is a trademark of its owner. Accez is not affiliated with Fresha. Fresha prices may change.*
@@ -153,7 +153,7 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 
 <!-- AR -->
 
-تفرض فريشا رسومًا شهرية على كل موظف يستقبل الحجوزات، إضافة إلى رسوم 20% لمرة واحدة على أول حجز لعميل جديد من السوق، ولا رسوم من فريشا على حجوزاته اللاحقة. أما أكسيز فبلا رسوم لكل موظف: الباقة المجانية تشمل حتى 10 موظفين، وباقة النمو تشمل عددًا غير محدود من الموظفين بسعر 185 ريالًا شهريًا. وتأخذ أكسيز 5% في المجانية أو 3.5% في النمو من كل حجز يتم عبر سوقها. ولا تفرض أي من المنصتين رسومًا على الحجوزات المباشرة. وفي مثالنا للمقارنة بين أكسيز وفريشا، وبأسعار فريشا الأمريكية، يدفع صالون فيه 8 مصففين 400 ريال شهريًا في أكسيز مقابل نحو 749 ريالًا في فريشا.
+تفرض فريشا رسومًا شهرية على كل موظف يستقبل الحجوزات، إضافة إلى رسوم 20% لمرة واحدة على أول حجز لعميل جديد من السوق، ولا رسوم من فريشا على حجوزاته اللاحقة. أما أكسيز فبلا رسوم لكل موظف: الباقة المجانية تشمل حتى 10 موظفين، وباقة النمو تشمل عددًا غير محدود من الموظفين بسعر 185 ريالًا شهريًا. وتأخذ أكسيز 5% في المجانية أو 3.5% في النمو من أول حجز لعميل جديد من سوقها، ولا شيء على حجوزاته اللاحقة. ولا تفرض أي من المنصتين رسومًا على الحجوزات المباشرة. وفي مثالنا للمقارنة بين أكسيز وفريشا، وبأسعار فريشا الأمريكية، يدفع صالون فيه 8 مصففين 75 ريالًا شهريًا في أكسيز مقابل نحو 749 ريالًا في فريشا.
 
 ونادرًا ما يروي السعر المعلن القصة كاملة. يقارن هذا الدليل بين أكسيز وفريشا بندًا بندًا: الاشتراك الشهري، وتكلفة الموظفين، والحجوزات المباشرة، ورسوم السوق، ومعالجة البطاقات. ثم يحسب التكلفة لثلاثة صالونات بأحجام مختلفة، ويشرح ما تشمله كل باقة في أكسيز.
 
@@ -164,7 +164,7 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 | الاشتراك الشهري | المجانية: 0 ريال حتى 10 موظفين. النمو: 185 ريالًا لعدد غير محدود من الموظفين | 14.95 دولارًا لكل موظف يستقبل الحجوزات |
 | الحجوزات المباشرة | بلا رسوم | بلا رسوم |
 | أول حجز لعميل جديد من السوق | 5% (المجانية) أو 3.5% (النمو) | 20% بحد أدنى 6 دولارات |
-| حجوزات السوق اللاحقة | 5% (المجانية) أو 3.5% (النمو) | بلا رسوم |
+| حجوزات السوق اللاحقة | بلا رسوم | بلا رسوم |
 | معالجة البطاقات | عبر Tap وتُحتسب بشكل منفصل | اختيارية، من 2.2% إلى 3.3% إضافة إلى 0.20 دولار |
 
 أرقام فريشا هي أسعارها في الولايات المتحدة في نوفمبر 2026، ولرسوم العميل الجديد في فريشا حد أقصى على الحجوزات مرتفعة القيمة. ويضع [مركز المساعدة لديها](https://www.fresha.com/help-center/knowledge-base/billing-and-fees/101357-marketplace-new-client-fees) السعودية ضمن الدول التي تُطبق فيها هذه الرسوم. راجع [صفحة أسعار فريشا](https://www.fresha.com/pricing) لمعرفة المبالغ بعملتك. وحين نحوّل أسعار فريشا إلى الريال فيما يلي، نستخدم سعر 3.75 ريال للدولار.
@@ -182,7 +182,7 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 - **المجانية:** 0 ريال شهريًا لما يصل إلى 10 موظفين و20 خدمة.
 - **النمو:** 185 ريالًا شهريًا لعدد غير محدود من الموظفين والخدمات.
 
-وبدل رسوم المقاعد، تأخذ أكسيز رسوم منصة على الحجوزات التي تأتي عبر سوقها: 5% في المجانية و3.5% في النمو. أما الحجوزات التي تستقبلها مباشرة فبلا رسوم منصة في الباقتين. اطّلع على تفاصيل الباقات في [صفحة أسعار مقدمي الخدمات في أكسيز](/ar/pricing/service-providers/).
+وبدل رسوم المقاعد، تأخذ أكسيز رسوم منصة على أول حجز لعميل جديد عبر سوقها: 5% في المجانية و3.5% في النمو. أما حجوزات ذلك العميل اللاحقة والحجوزات التي تستقبلها مباشرة فبلا رسوم منصة في الباقتين. اطّلع على تفاصيل الباقات في [صفحة أسعار مقدمي الخدمات في أكسيز](/ar/pricing/service-providers/).
 
 ## تكلفة الموظفين مع نمو الفريق
 
@@ -201,11 +201,11 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 
 لا تفرض أي من المنصتين رسومًا على الحجوزات المباشرة. ففي فريشا، الحجوزات التي تأتي عبر موقعك أو روابط الحجز المباشرة أو إنستغرام أو فيسبوك بلا رسوم حجز. وفي أكسيز، الحجوزات التي لا تأتي عبر سوق أكسيز بلا رسوم منصة.
 
-وفي أكسيز، تشجيع العملاء الدائمين على إعادة الحجز معك مباشرة يُبقي هذه الحجوزات بلا رسوم منصة.
+وفي المنصتين، لا رسوم منصة على العملاء الدائمين الذين يعيدون الحجز معك.
 
 ## كيف تعمل رسوم السوق
 
-تعرض المنصتان نشاطك في سوق يجدك فيه من يبحث عن حلاق أو صالون أو مركز سبا ويحجز. وهنا يختلف هيكلا الرسوم تمامًا.
+تعرض المنصتان نشاطك في سوق يجدك فيه من يبحث عن حلاق أو صالون أو مركز سبا ويحجز. وكلتاهما تفرض الرسوم مرة واحدة لكل عميل جديد، والفرق في النسبة.
 
 ### رسوم العميل الجديد في فريشا
 
@@ -213,7 +213,7 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 
 ### رسوم السوق في أكسيز
 
-تأخذ أكسيز 5% في المجانية أو 3.5% في النمو من كل حجز يتم عبر سوق أكسيز، سواء كان العميل جديدًا أو عائدًا. ولا توجد رسوم منفصلة على العميل الجديد ولا رسوم لكل عميل محتمل.
+تأخذ أكسيز 5% في المجانية أو 3.5% في النمو من أول حجز لعميل جديد عبر سوق أكسيز. ولا رسوم من أكسيز على حجوزات ذلك العميل اللاحقة، ولا رسوم لكل عميل محتمل.
 
 وعلى زيارة أولى بقيمة 150 ريالًا، تبلغ رسوم فريشا 30 ريالًا، بينما تبلغ رسوم أكسيز على الحجز نفسه 7.50 ريال في المجانية أو 5.25 ريال في النمو.
 
@@ -227,37 +227,37 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 
 لمقارنة التكلفة الشهرية الإجمالية، حسبنا الأرقام لثلاثة صالونات بأحجام مختلفة. في كل منها تبلغ الزيارة الأولى لكل عميل جديد 150 ريالًا (دون المستوى الذي يُطبق فيه الحد الأقصى لدى فريشا)، وتُحتسب فريشا بأسعارها الأمريكية، والأرقام قبل معالجة البطاقات في المنصتين.
 
-| الصالون | حجوزات السوق هذا الشهر | فريشا | أكسيز |
+| الصالون | العملاء الجدد من السوق هذا الشهر | فريشا | أكسيز |
 |---|---|---|---|
-| 3 مصففين | 3,000 ريال، منها 5 عملاء جدد | نحو 318 ريالًا | 150 ريالًا في المجانية |
-| 8 مصففين | 8,000 ريال، منها 10 عملاء جدد | نحو 749 ريالًا | 400 ريال في المجانية |
-| 12 مصففًا | 12,000 ريال، منها 15 عميلًا جديدًا | نحو 1,123 ريالًا | 605 ريالات في النمو |
+| 3 مصففين | 5 (750 ريالًا من الزيارات الأولى) | نحو 318 ريالًا | 37.50 ريال في المجانية |
+| 8 مصففين | 10 (1,500 ريال من الزيارات الأولى) | نحو 749 ريالًا | 75 ريالًا في المجانية |
+| 12 مصففًا | 15 (2,250 ريالًا من الزيارات الأولى) | نحو 1,123 ريالًا | 263.75 ريال في النمو |
 
 ### محل حلاقة صغير فيه 3 مصففين
 
-فريشا: 3 مقاعد بسعر 14.95 دولارًا تساوي 44.85 دولارًا، أي نحو 168 ريالًا، إضافة إلى رسوم العملاء الجدد بنسبة 20% على 750 ريالًا من الزيارات الأولى، أي 150 ريالًا. المجموع: نحو 318 ريالًا. أكسيز المجانية: 5% من 3,000 ريال، أي 150 ريالًا.
+فريشا: 3 مقاعد بسعر 14.95 دولارًا تساوي 44.85 دولارًا، أي نحو 168 ريالًا، إضافة إلى رسوم العملاء الجدد بنسبة 20% على 750 ريالًا من الزيارات الأولى، أي 150 ريالًا. المجموع: نحو 318 ريالًا. أكسيز المجانية: 5% من 750 ريالًا، أي 37.50 ريال.
 
 ### صالون فيه 8 مصففين
 
-فريشا: 8 مقاعد بسعر 14.95 دولارًا تساوي 119.60 دولارًا، أي نحو 449 ريالًا، إضافة إلى رسوم العملاء الجدد بنسبة 20% على 1,500 ريال من الزيارات الأولى، أي 300 ريال. المجموع: نحو 749 ريالًا. أكسيز المجانية: 5% من 8,000 ريال، أي 400 ريال. وفي باقة أكسيز للنمو يكلف الشهر نفسه 185 ريالًا إضافة إلى 3.5% من 8,000 ريال، أي 465 ريالًا.
+فريشا: 8 مقاعد بسعر 14.95 دولارًا تساوي 119.60 دولارًا، أي نحو 449 ريالًا، إضافة إلى رسوم العملاء الجدد بنسبة 20% على 1,500 ريال من الزيارات الأولى، أي 300 ريال. المجموع: نحو 749 ريالًا. أكسيز المجانية: 5% من 1,500 ريال، أي 75 ريالًا. وفي باقة أكسيز للنمو يكلف الشهر نفسه 185 ريالًا إضافة إلى 3.5% من 1,500 ريال، أي 237.50 ريال.
 
 ### صالون أكبر فيه 12 مصففًا
 
-بما أن الفريق يزيد على 10 موظفين، فهذا الصالون على باقة أكسيز للنمو. فريشا: 12 مقعدًا بسعر 14.95 دولارًا تساوي 179.40 دولارًا، أي نحو 673 ريالًا، إضافة إلى رسوم العملاء الجدد بنسبة 20% على 2,250 ريالًا من الزيارات الأولى، أي 450 ريالًا. المجموع: نحو 1,123 ريالًا. أكسيز النمو: 185 ريالًا إضافة إلى 3.5% من 12,000 ريال، أي 420 ريالًا. المجموع: 605 ريالات.
+بما أن الفريق يزيد على 10 موظفين، فهذا الصالون على باقة أكسيز للنمو. فريشا: 12 مقعدًا بسعر 14.95 دولارًا تساوي 179.40 دولارًا، أي نحو 673 ريالًا، إضافة إلى رسوم العملاء الجدد بنسبة 20% على 2,250 ريالًا من الزيارات الأولى، أي 450 ريالًا. المجموع: نحو 1,123 ريالًا. أكسيز النمو: 185 ريالًا إضافة إلى 3.5% من 2,250 ريالًا، أي 78.75 ريال. المجموع: 263.75 ريال.
 
-وفي كل شهر من هذه الأشهر تكلف أكسيز أقل: أقل بـ168 ريالًا لمحل الحلاقة الصغير، وبـ349 ريالًا لصالون المصففين الثمانية، وبـ518 ريالًا للصالون الأكبر.
+وفي كل شهر من هذه الأشهر تكلف أكسيز أقل: بنحو 281 ريالًا لمحل الحلاقة الصغير، وبنحو 674 ريالًا لصالون المصففين الثمانية، وبنحو 859 ريالًا للصالون الأكبر.
 
 ## المجانية أم النمو: أي باقة تناسبك
 
-**المجانية** تناسب معظم الصالونات ومحلات الحلاقة التي فيها حتى 10 موظفين. وتشمل الظهور في السوق، والحجز عبر الإنترنت، والتقويم، والتقييمات، وإدارة الموظفين، لما يصل إلى 10 موظفين و20 خدمة، مع رسوم 5% على حجوزات السوق ولا شيء على الحجوزات المباشرة.
+**المجانية** تناسب معظم الصالونات ومحلات الحلاقة التي فيها حتى 10 موظفين. وتشمل الظهور في السوق، والحجز عبر الإنترنت، والتقويم، والتقييمات، وإدارة الموظفين، لما يصل إلى 10 موظفين و20 خدمة، مع رسوم 5% على أول حجز لعميل جديد من السوق ولا شيء على الحجوزات اللاحقة أو المباشرة.
 
-**باقة النمو** بسعر 185 ريالًا شهريًا، وتضيف عددًا غير محدود من الموظفين والخدمات، وأكواد الخصم، والأولوية في الظهور بالسوق، والتحليلات الأساسية، مع رسوم أقل تبلغ 3.5% على حجوزات السوق. وللصالون الذي يبقى ضمن حدود الباقة المجانية، تغطي باقة النمو تكلفتها حين تتجاوز حجوزات السوق نحو 12,333 ريالًا شهريًا. أما الصالونات التي يزيد فريقها على 10 موظفين أو خدماتها على 20 خدمة فتحتاج إلى باقة النمو.
+**باقة النمو** بسعر 185 ريالًا شهريًا، وتضيف عددًا غير محدود من الموظفين والخدمات، وأكواد الخصم، والأولوية في الظهور بالسوق، والتحليلات الأساسية، مع رسوم أقل تبلغ 3.5% على أول حجز لعميل جديد من السوق. وللصالون الذي يبقى ضمن حدود الباقة المجانية، تغطي باقة النمو تكلفتها حين تتجاوز الزيارات الأولى للعملاء الجدد من السوق نحو 12,333 ريالًا شهريًا. أما الصالونات التي يزيد فريقها على 10 موظفين أو خدماتها على 20 خدمة فتحتاج إلى باقة النمو.
 
 ## الأسئلة الشائعة
 
 ### هل أكسيز أرخص من فريشا؟
 
-نعم، في أمثلتنا الثلاثة كلها. فأكسيز بلا رسوم لكل موظف وبلا رسوم على الحجوزات المباشرة، وتأخذ 5% أو 3.5% من كل حجز عبر السوق، بينما تأخذ فريشا 20% من أول حجز للعميل الجديد. وبأسعار فريشا الأمريكية، يتراوح التوفير مع أكسيز في أمثلتنا بين 168 و518 ريالًا شهريًا.
+نعم، في أمثلتنا الثلاثة كلها. فأكسيز بلا رسوم لكل موظف وبلا رسوم على الحجوزات المباشرة، وعلى أول حجز لعميل جديد من السوق تأخذ 5% أو 3.5% بينما تأخذ فريشا 20%. وبأسعار فريشا الأمريكية، يتراوح التوفير مع أكسيز في أمثلتنا بين نحو 281 و859 ريالًا شهريًا.
 
 ### هل تفرض فريشا رسومًا على الحجوزات اللاحقة للعميل؟
 
@@ -265,7 +265,7 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 
 ### هل تفرض أكسيز رسومًا على الحجوزات المباشرة؟
 
-لا. تفرض أكسيز رسوم منصة فقط على الحجوزات التي تتم عبر سوق أكسيز: 5% في المجانية و3.5% في النمو.
+لا. تفرض أكسيز رسوم منصة فقط على أول حجز لعميل جديد عبر سوق أكسيز: 5% في المجانية و3.5% في النمو.
 
 ### كم موظفًا يمكنني إضافته في باقة أكسيز المجانية؟
 
@@ -275,8 +275,8 @@ See how the [Accez service provider solution](/solutions/service-providers/) run
 
 - تتقاضى فريشا 14.95 دولارًا شهريًا لكل موظف يستقبل الحجوزات، والباقة المجانية في أكسيز بـ0 ريال حتى 10 موظفين، وتشمل باقة النمو عددًا غير محدود بسعر 185 ريالًا شهريًا.
 - لا تفرض أي من المنصتين رسومًا على الحجوزات المباشرة.
-- تأخذ فريشا 20% مرة واحدة على أول حجز لعميل جديد من السوق، وتأخذ أكسيز 5% أو 3.5% من كل حجز عبر السوق.
-- في صالوناتنا الثلاثة كمثال، تكلف أكسيز أقل من فريشا بما بين 168 و518 ريالًا شهريًا بأسعار فريشا الأمريكية.
+- على أول حجز لعميل جديد من السوق تأخذ فريشا 20% وتأخذ أكسيز 5% أو 3.5%، ولا رسوم في أي منهما على الحجوزات اللاحقة.
+- في صالوناتنا الثلاثة كمثال، تكلف أكسيز أقل من فريشا بما بين نحو 281 و859 ريالًا شهريًا بأسعار فريشا الأمريكية.
 - معالجة البطاقات منفصلة في المنصتين: عبر Tap في أكسيز، وكإضافة اختيارية في فريشا.
 
 *فريشا علامة تجارية مملوكة لأصحابها، وأكسيز غير مرتبطة بفريشا. وقد تتغير أسعار فريشا.*
